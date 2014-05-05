@@ -1,0 +1,62 @@
+.page {
+  @media only screen and (min-width : 1024px) {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+/* header styles */
+header {
+  float: left;
+  width: 100%;
+}
+header h1 {
+  display: inline-block;
+  margin: 0 0;
+}
+header nav{
+  float: right;
+}
+header nav ul{
+  list-style: none;
+}
+header nav ul li{
+  float: left;
+  display: inline-block;
+  margin: 0 5px;
+}
+header .search{
+  float: right;
+}
+header .search input, header .search .gosearch{
+  float: left;
+}
+
+/* item page styles */
+main.item{
+  float: left;
+  width: 100%;
+}
+main.item article{
+  float: left;
+  @media only screen and (min-width : 1024px) {
+    width: 850px;
+    margin-right: 5px;
+  }
+}
+main.item aside.related{
+  float: left;
+  @media only screen and (min-width : 1024px) {
+    width: 169px;
+  }
+}
+
+main.item aside.related .related-item{
+  float: left;
+  @media only screen and (min-width : 1024px) {
+    width: 169px;
+    height: 130px;
+    margin: 0 0 5px 0;
+  }
+  background-color: brown;
+}
