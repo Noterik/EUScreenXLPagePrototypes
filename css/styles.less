@@ -1,16 +1,16 @@
 .page {
-  @media only screen and (min-width : 800px) {
-    max-width: 1024px;
+    max-width: 800px;
     width: 100%;
     height: auto;
     margin: 0 auto;
-  }
 }
 
 /* header styles */
 header {
   float: left;
   width: 100%;
+  height: 100px;
+  display: table;
 }
 header h1 {
   display: inline-block;
@@ -18,6 +18,7 @@ header h1 {
 }
 header nav{
   float: right;
+  height: 100%;
 }
 header nav ul{
   list-style: none;
@@ -28,10 +29,15 @@ header nav ul li{
   margin: 0 5px;
 }
 header .search{
+  height: 100%;
+  margin-top: 15px;
   float: right;
 }
-header .search input, header .search .gosearch{
+header .search input, header .search .go-search{
   float: left;
+}
+header .search input{
+  width: 175px;
 }
 
 /* item page styles */
@@ -40,34 +46,119 @@ main.item{
   position: relative;
   width: 100%;
 }
-main.item article{
-  position: relative;
-  @media only screen and (min-width : 800px) {
-    width: auto;
-    margin-right: -170px;
-  }
-}
-main.item article .view-item{
+main.item .article-wrapper{
   width: 100%;
-  max-width: 640px;
-  background-color: black;
-}
-main.item aside.related{
-  @media only screen and (min-width : 800px) {
-    width: 170px;
-    display: inline-block;
-    position: relative;
-    top: 0;
-    right: 0;
-  }
+  float: left;
 }
 
-main.item aside.related .related-item{
-  float: left;
-  @media only screen and (min-width : 800px) {
-    width: 170px;
-    height: 130px;
-    margin: 0 0 5px 0;
-  }
-  background-color: brown;
+main.item .article-wrapper article{
+   margin-right: 170px;
 }
+main.item article .view-item-wrapper{
+  height: auto;
+  max-width: 640px;
+  width: 100%;
+}
+main.item article .view-item-wrapper .view-item {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-bottom: 56%;
+  text-align: center;
+}
+
+main.item .right-column{
+  float: left;
+  width: 165px;
+  margin-left: -165px;
+}
+
+main.item aside.related{
+    float: left;
+    width: 163px;
+    border: 1px solid dodgerblue;
+}
+main.item aside.related .related-item{
+    text-align: center;
+    float: left;
+    width: 163px;
+    height: 95px;
+    margin: 0 0 10px 0;
+    background-color: brown;
+}
+main.item .ad{
+  float: left;
+  width: 163px;
+  height: 95px;
+  margin-top: 5px;
+  border: 1px solid dodgerblue;
+  text-align: center;
+}
+main.item article .meta-information{
+  float: left;
+  border: 1px solid dodgerblue;
+}
+main.item article .meta-information .header{
+  width: 100%;
+  float: left;
+  position: relative;
+  border-bottom: 1px solid dodgerblue;
+}
+main.item article .meta-information .header h2{
+  margin: 5px 0;
+  float: left;
+  display: inline-block;
+}
+main.item article .meta-information .header .actions{
+  float: right;
+}
+main.item article .meta-information .columns-container{
+  float: left;
+}
+main.item article .meta-information .columns-container .column{
+  float: left;
+  width: 50%;
+}
+main.item article .meta-information span.label{
+  margin: 0 5px 0 0;
+  color: dodgerblue;
+}
+
+main.item article .meta-information .more-info{
+  margin-top: 20px;
+  color: dodgerblue;
+}
+
+/* footer */
+footer{
+  float: left;
+  width: 100%;
+  font-size: 12px;
+}
+footer .footer-note{
+  float: left;
+}
+footer .links{
+  float: right;
+}
+footer .links ul{
+  margin: 0 0;
+  list-style: none;
+}
+footer .links ul li{
+  display: inline-block;
+}
+footer .affiliates{
+  width: 100%;
+  float: left;
+}
+footer .affiliates .affiliate-icon{
+  width: 50px;
+  height: 40px;
+  background-color: rosybrown;
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+
+
