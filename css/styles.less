@@ -1,6 +1,8 @@
 .page {
-  @media only screen and (min-width : 1024px) {
-    width: 1024px;
+  @media only screen and (min-width : 800px) {
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
   }
 }
@@ -35,26 +37,35 @@ header .search input, header .search .gosearch{
 /* item page styles */
 main.item{
   float: left;
+  position: relative;
   width: 100%;
 }
 main.item article{
-  float: left;
-  @media only screen and (min-width : 1024px) {
-    width: 850px;
-    margin-right: 5px;
+  position: relative;
+  @media only screen and (min-width : 800px) {
+    width: auto;
+    margin-right: -170px;
   }
 }
+main.item article .view-item{
+  width: 100%;
+  max-width: 640px;
+  background-color: black;
+}
 main.item aside.related{
-  float: left;
-  @media only screen and (min-width : 1024px) {
-    width: 169px;
+  @media only screen and (min-width : 800px) {
+    width: 170px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    right: 0;
   }
 }
 
 main.item aside.related .related-item{
   float: left;
-  @media only screen and (min-width : 1024px) {
-    width: 169px;
+  @media only screen and (min-width : 800px) {
+    width: 170px;
     height: 130px;
     margin: 0 0 5px 0;
   }
