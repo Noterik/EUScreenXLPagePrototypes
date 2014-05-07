@@ -16,16 +16,21 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css" />
 
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="page desktop">
+<div class="page">
     <header>
-        <h1><img src="img/logo.png" alt="euscreen.eu | Lorum Ipsum" ></h1>
+        <h1 class="desktop">EUSCREEN</h1>
+        <span class="options-button mobile">
+            <button class="mobile-options">O</button>
+        </span>
+        <span class="search-button mobile">
+            <button class="mobile-search">S</button>
+        </span>
         <nav>
             <ul>
                 <li>
@@ -42,7 +47,7 @@
         <span class="search"><input type="search" name="search"><button class="go-search">Q</button><button class="settings">S</button></span>
     </header>
     <main class="item">
-        <div class="article-wrapper">
+        <div class="column item">
             <article>
                 <div class="view-item-wrapper">
                     <div class="view-item">
@@ -52,35 +57,29 @@
                 <div class="meta-information">
                     <div class="header">
                         <h2>Lorum Ipsum</h2>
-                        <span class="actions">
-                            <button class="item-action">action</button>
-                            <button class="item-action">action</button>
-                            <button class="item-action">action</button>
-                        </span>
                     </div>
-                    <div class="columns-container">
-                        <div class="column">
-                            <div class="info">
-                                <span class="label">Original title:</span><span class="value">Thatcher's Speech</span><br />
-                                <span class="label">Provider:</span><span class="value">BBC</span><br />
-                                <span class="label">Production year:</span><span class="value">1992</span><br />
-                                <span class="label">Country of production:</span><span class="value">United Kingdom</span><br />
+                    <span class="actions">
+                        <button class="item-action">action</button>
+                        <button class="item-action">action</button>
+                        <button class="item-action">action</button>
+                    </span>
+                    <div class="column fields">
+                        <span class="label">Original title:</span><span class="value">Thatcher's Speech</span><br />
+                        <span class="label">Provider:</span><span class="value">BBC</span><br />
+                        <span class="label">Production year:</span><span class="value">1992</span><br />
+                        <span class="label">Country of production:</span><span class="value">United Kingdom</span><br />
 
-                                <div class="more-info">+ MORE INFO</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="info">
-                                <span class="label summary">Summary</span>
-                                <p>The Conservatives won the general election in May 1979 and their leader, Mrs Thatcher became the UK's first female minister</p>
-                                <p>This is part of the the series <a href="series">Best of BBC</a></p>
-                            </div>
-                        </div>
+                        <div class="more-info">+ MORE INFO</div>
+                    </div>
+                    <div class="column description">
+                        <span class="label summary">Summary</span>
+                        <p>The Conservatives won the general election in May 1979 and their leader, Mrs Thatcher became the UK's first female minister</p>
+                        <p>This is part of the the series <a href="series">Best of BBC</a></p>
                     </div>
                 </div>
             </article>
         </div>
-        <div class="right-column">
+        <div class="column related">
             <aside class="related">
                 <h3>Related</h3>
                 <div class="related-item">RELATED ITEM</div>
