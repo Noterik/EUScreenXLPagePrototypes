@@ -18,6 +18,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
   overflow: hidden;
 
   header{
+
+      header{
+        h1{
+          display: inline-block;
+          margin: 0 0;
+        }
+      }
       float: left;
       width: 100%;
       height: 100%;
@@ -38,6 +45,14 @@ only screen and (min-device-pixel-ratio : 1.5) {
       float: left;
       width: 100%;
       position: relative;
+
+      .view-item{
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding-bottom: 56%;
+        text-align: center;
+      }
   }
 }
 
@@ -110,22 +125,6 @@ and (max-device-width : 480px) {
         .column{
           width: 100%;
           float: left;
-        }
-
-        .column.item{
-          article{
-            .view-item-wrapper{
-              width: 100%;
-
-              .view-item{
-                background-color: black;
-                color: white;
-                width: 100%;
-                padding-bottom: 56%;
-                text-align: center;
-              }
-            }
-          }
         }
       }
   }
@@ -296,5 +295,33 @@ and (min-width : 768px) {
             }
         }
     }
+}
+
+/* desktop styles */
+@media only screen
+and (min-width : 481px) {
+  .page{
+    width: 100%;
+  }
+
+  header{
+    h1{
+      display: inline-block;
+      float: left;
+    }
+    nav{
+      float: right;
+      height: 50px;
+
+      ul li{
+        float: left;
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .search{
+      float: right;
+    }
+  }
 }
 
