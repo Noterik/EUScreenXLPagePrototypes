@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css" />
 
+    <!-- BOOTSTRAP -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -59,9 +67,30 @@
                         <h2>Lorum Ipsum</h2>
                     </div>
                     <span class="actions">
-                        <button class="item-action">action</button>
-                        <button class="item-action">action</button>
-                        <button class="item-action">action</button>
+                        <button type="button"
+                                class="item-action popover-button terms btn btn-default"
+                                data-container="body"
+                                data-toggle="popover"
+                                data-contentContainer=".popover-contents.terms"
+                                data-placement="bottom">
+                            terms
+                        </button>
+                        <button type="button"
+                                class="item-action popover-button social btn btn-default"
+                                data-container="body"
+                                data-toggle="popover"
+                                data-contentContainer=".popover-contents.social"
+                                data-placement="bottom">
+                            social
+                        </button>
+                        <button type="button"
+                                class="item-action popover-button bookmark btn btn-default"
+                                data-container="body"
+                                data-toggle="popover"
+                                data-contentContainer=".popover-contents.bookmark"
+                                data-placement="bottom">
+                            bookmark
+                        </button>
                     </span>
                     <div class="column fields">
                         <span class="label">Original title:</span><span class="value">Thatcher's Speech</span><br />
@@ -109,7 +138,26 @@
     </footer>
 </div>
 
+<div class="popover-contents terms">
+    <h3>TERMS OF USE</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
+    </p>
+</div>
+<div class="popover-contents social">
+    <h3>SHARE THIS ITEM</h3>
+    <p>
+        <button>facebook</button>
+        <button>twitter</button>
+        <button>google+</button>
+    </p>
+</div>
+
 <script src="js/vendor/jquery-1.10.2.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!-- END BOOTSTRAP -->
 
 <!-- header javascripts -->
 <script src="js/header.js"></script>

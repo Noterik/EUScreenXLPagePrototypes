@@ -1,24 +1,15 @@
-/*Hide all mobile items when at desktop size */
-
-/*Hide all desktop items when at mobile size */
-
-
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-  /* Styles */
+/* GENERIC STYLES */
+/* cross device generic styles */
+.popover-contents{
+  display: none;
 }
 
-/* cross device styles */
 .page{
   width: 100%;
   height: auto;
   overflow: hidden;
 
   header{
-
       header{
         h1{
           display: inline-block;
@@ -45,30 +36,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
       float: left;
       width: 100%;
       position: relative;
-
-      .view-item{
-        background-color: black;
-        color: white;
-        width: 100%;
-        padding-bottom: 56%;
-        text-align: center;
-      }
   }
 }
-
-/* end cross device styles */
-
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-  /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-  /* Styles */
-}
+/* end cross device generic styles */
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
@@ -121,17 +91,11 @@ and (max-device-width : 480px) {
               display: block;
           }
       }
-      main.item{
-        .column{
-          width: 100%;
-          float: left;
-        }
-      }
   }
   /* end header styles */
 }
 
-/* desktop styles */
+/* Desktops ----------- */
 @media only screen
 and (min-width : 768px) {
     .page {
@@ -203,101 +167,10 @@ and (min-width : 768px) {
               }
             }
         }
-        main.item{
-            @leftColumnWidth: 600px;
-            @rightColumnWidth: 168px;
-
-            .column.item{
-              width: 100%;
-              float: left;
-
-              article{
-                margin-right: @rightColumnWidth;
-
-                .view-item-wrapper{
-                  height: auto;
-                  max-width: @leftColumnWidth;
-                  width: 100%;
-
-                  .view-item{
-                    background-color: black;
-                    color: white;
-                    width: 100%;
-                    padding-bottom: 56%;
-                    text-align: center;
-                  }
-                }
-                .meta-information{
-                  position: relative;
-                  float: left;
-                  border: 1px solid dodgerblue;
-
-                  .header{
-                    width: 100%;
-                    float: left;
-                    position: relative;
-                    border-bottom: 1px solid dodgerblue;
-
-                    h2{
-                      margin: 5px 0;
-                      float: left;
-                      display: inline-block;
-                    }
-
-                  }
-                  .actions{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                  }
-                  .column{
-                    float: left;
-                    width: 50%;
-                  }
-                  .label{
-                    margin: 0 5px 0 0;
-                    color: dodgerblue;
-                  }
-                  .more-info{
-                    margin-top: 20px;
-                    color: dodgerblue;
-                  }
-                }
-              }
-            }
-            .column.related{
-              float: left;
-              width: @rightColumnWidth;
-              margin-left: -@rightColumnWidth;
-
-              aside.related{
-                float: left;
-                width: 161px;
-                margin-left: 5px;
-                border: 1px solid dodgerblue;
-
-                .related-item{
-                  text-align: center;
-                  width: 151px;
-                  padding-bottom: 56%;
-                  margin: 10px auto;
-                  background-color: brown;
-                }
-              }
-              .ad{
-                float: left;
-                width: 161px;
-                padding-bottom: 56%;
-                margin: 5px 0 0 5px;
-                border: 1px solid dodgerblue;
-                text-align: center;
-              }
-            }
-        }
     }
 }
 
-/* desktop styles */
+/* Tablets ----------- */
 @media only screen
 and (min-width : 481px) {
   .page{
@@ -321,6 +194,129 @@ and (min-width : 481px) {
     }
     .search{
       float: right;
+    }
+  }
+}
+/* END GENERIC STYLES */
+
+/* From here specific styles for item.html, etc etc*/
+
+/* PAGE: item.html */
+
+/* Cross device ----------- */
+.page{
+  main.item {
+    .view-item {
+      background-color: black;
+      color: white;
+      width: 100%;
+      padding-bottom: 56%;
+      text-align: center;
+    }
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .page{
+    main.item{
+      .column{
+        width: 100%;
+        float: left;
+      }
+    }
+  }
+  /* end header styles */
+}
+
+/* Desktops ----------- */
+@media only screen
+and (min-width : 768px) {
+  .page {
+    main.item{
+      @leftColumnWidth: 600px;
+      @rightColumnWidth: 168px;
+
+      .column.item{
+        width: 100%;
+        float: left;
+
+        article{
+          margin-right: @rightColumnWidth;
+
+          .view-item-wrapper{
+            height: auto;
+            max-width: @leftColumnWidth;
+            width: 100%;
+          }
+          .meta-information{
+            position: relative;
+            float: left;
+            border: 1px solid dodgerblue;
+
+            .header{
+              width: 100%;
+              float: left;
+              position: relative;
+              border-bottom: 1px solid dodgerblue;
+
+              h2{
+                margin: 5px 0;
+                float: left;
+                display: inline-block;
+              }
+
+            }
+            .actions{
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+            .column{
+              float: left;
+              width: 50%;
+            }
+            .label{
+              margin: 0 5px 0 0;
+              color: dodgerblue;
+            }
+            .more-info{
+              margin-top: 20px;
+              color: dodgerblue;
+            }
+          }
+        }
+      }
+      .column.related{
+        float: left;
+        width: @rightColumnWidth;
+        margin-left: -@rightColumnWidth;
+
+        aside.related{
+          float: left;
+          width: 161px;
+          margin-left: 5px;
+          border: 1px solid dodgerblue;
+
+          .related-item{
+            text-align: center;
+            width: 151px;
+            padding-bottom: 56%;
+            margin: 10px auto;
+            background-color: brown;
+          }
+        }
+        .ad{
+          float: left;
+          width: 161px;
+          padding-bottom: 56%;
+          margin: 5px 0 0 5px;
+          border: 1px solid dodgerblue;
+          text-align: center;
+        }
+      }
     }
   }
 }

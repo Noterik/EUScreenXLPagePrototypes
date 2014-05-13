@@ -1,50 +1,20 @@
 $(document).ready(function(){
-    /*
-    var wWidth, wHeight, mobileElements = $('.mobile'),
-        desktopElements = $('.desktop');
 
-    function getWindowSize(){
-        vWidth = $(window).width();
-        vHeight = $(window).height();
-    };
-
-    function hideMobileElements(){
-        console.log("hideMobileElements()");
-        mobileElements.hide();
-    };
-
-    function hideDesktopElements(){
-        console.log("hideDesktopElements()");
-        desktopElements.hide();
-    };
-
-    function showMobileElements(){
-        console.log("showMobileElements()");
-        mobileElements.show();
-    };
-
-    function showDesktopElements(){
-        console.log("showDesktopElements();")
-        desktopElements.show();
-    };
-
-    function showElementsForWindowSize(){
-        if(vWidth < 800){
-            hideDesktopElements();
-            showMobileElements();
-        }else{
-            hideMobileElements();
-            showDesktopElements();
-        }
-    };
-
-    function onResize(){
-        getWindowSize();
-        showElementsForWindowSize();
+    var createPopovers = function(){
+        $('button.popover-button').each(function(){
+            var $this = $(this);
+            var content = $($this.attr('data-contentContainer')).html();
+            $(this).popover({
+                content: content,
+                html: true
+            }).on('show.bs.popover', function(){
+                var self = this;
+                $('button.popover-button').filter(function(){
+                    return this != self;
+                }).popover('hide');
+            })
+        })
     }
 
-    $(window).on('resize', onResize);
-    onResize();
-
-    */
+    createPopovers();
 });
