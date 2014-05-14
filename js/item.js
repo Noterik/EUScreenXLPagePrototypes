@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    var $moreInfoButton = $('button.more-info');
+    var $lessInfoButton = $('button.less-info');
+    var $moreInfo = $('.row.more-info');
+
     var createPopovers = function(){
         $('button.popover-button').each(function(){
             var $this = $(this);
@@ -14,7 +18,18 @@ $(document).ready(function(){
                 }).popover('hide');
             })
         })
-    }
+    };
 
     createPopovers();
+
+    $moreInfoButton.on('click', function(){
+        $(this).hide();
+        $moreInfo.addClass('visible');
+    });
+
+    $lessInfoButton.on('click', function(){
+        $moreInfo.removeClass('visible');
+        $moreInfoButton.show();
+    })
+
 });
