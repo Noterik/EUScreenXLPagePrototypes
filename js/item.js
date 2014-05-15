@@ -24,7 +24,7 @@ $(document).ready(function(){
         }
     };
 
-    //This function creates the popups you see when you press an action button on the page. Depending on the device should either use bootstrap popover or our custom slidePanel to display the popup
+    //This function creates the popups you see when you press an action button on the page. Depending on the device should either use bootstrap popover or our custom jquery.slidePanel to display the popup
     var createPopups = function(){
 
         var popupMethod;

@@ -1,0 +1,3 @@
+[submodule "SlidePanel"]
+	path = SlidePanel
+	url = ssh://git@github.com:Noterik/SlidePanel
