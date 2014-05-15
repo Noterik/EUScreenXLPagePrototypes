@@ -1,6 +1,16 @@
+/* VARIOUS HACKS*/
+@media screen and (-webkit-min-device-pixel-ratio:0) { // stops annoying automatic zoomin on input focus on iphone / ipad
+  select:focus, textarea:focus, input:focus {
+    font-size: 16px;
+    background:#eee;
+  }
+}
+/* END VARIOUS HACKS */
+
 /* GENERIC STYLES */
+
 /* cross device generic styles */
-.popover-contents{
+.popup{
   display: none;
 }
 
@@ -46,6 +56,7 @@
 /* end cross device generic styles */
 
 /* Smartphones (portrait and landscape) ----------- */
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
@@ -209,6 +220,20 @@ and (min-width : 481px) {
 /* PAGE: item.html */
 
 /* Cross device ----------- */
+.popover, .slide-panel{
+  .login-form {
+    display: none;
+  }
+  .login-form.visible{
+    display: block;
+  }
+  .bookmarks{
+    display: none;
+  }
+  .bookmarks.visible{
+    display: block;
+  }
+}
 .page{
   main.item {
     .view-item {

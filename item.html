@@ -14,8 +14,9 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
 
+    <link rel="stylesheet" href="js/custom-components/slidePanel/jquery.slide-panel.css">
     <!-- BOOTSTRAP -->
 
     <!-- Latest compiled and minified CSS -->
@@ -62,33 +63,36 @@
                         MEDIA HERE
                     </div>
                 </div>
-                <div class="meta-information">
+                <div class="meta-information" id="meta-information">
                     <div class="header">
                         <h2>Lorum Ipsum</h2>
                     </div>
                     <span class="actions">
                         <button type="button"
-                                class="item-action popover-button terms btn btn-default"
+                                data-title="TERMS"
+                                class="btn btn-default terms"
                                 data-container="body"
-                                data-toggle="popover"
-                                data-contentContainer=".popover-contents.terms"
-                                data-placement="bottom">
+                                data-popup=".popup.terms"
+                                data-placement="bottom"
+                                data-height="70%">
                             <span class="glyphicon glyphicon-copyright-mark"></span>
                         </button>
                         <button type="button"
-                                class="item-action popover-button social btn btn-default"
+                                class="btn btn-default social"
+                                data-title="SOCIAL"
                                 data-container="body"
-                                data-toggle="popover"
-                                data-contentContainer=".popover-contents.social"
-                                data-placement="bottom">
+                                data-popup=".popup.social"
+                                data-placement="bottom"
+                                data-height="70%">
                             <span class="glyphicon glyphicon-user"></span>
                         </button>
                         <button type="button"
-                                class="item-action popover-button bookmark btn btn-default"
+                                class="btn btn-default bookmark"
+                                data-title="BOOKMARK"
                                 data-container="body"
-                                data-toggle="popover"
-                                data-contentContainer=".popover-contents.bookmark"
-                                data-placement="bottom">
+                                data-popup=".popup.bookmark"
+                                data-placement="bottom"
+                                data-height="70%">
                             <span class="glyphicon glyphicon-star"></span>
                         </button>
                     </span>
@@ -153,13 +157,12 @@
 </div>
 
 <!-- POPOVER CONTENTS -->
-<div class="popover-contents terms">
-    <h4>TERMS OF USE</h4>
+<div class="popup terms">
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
     </p>
 </div>
-<div class="popover-contents social">
+<div class="popup social">
     <h4>SHARE THIS ITEM</h4>
     <p>
         <button>facebook</button>
@@ -167,16 +170,27 @@
         <button>google+</button>
     </p>
 </div>
-<div class="popover-contents bookmark">
-    <h4>LOGIN TO BOOKMARK THIS ITEM</h4>
-    <form class="login">
-        <label for="bookmark-user-email">Username:</label>
-        <input id="bookmark-user-email" class="form-control" type="text"/>
-        <label for="bookmark-user-password">Password:</label>
-        <input id="bookmark-user-password" class="form-control" type="password" />
-        <input type="submit" value="LOGIN" class="btn btn-default"/>
-    </form>
-    <span class="extra"><a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a></span>
+<div class="popup bookmark">
+    <div class="login-form visible">
+        <form class="login">
+            <label for="bookmark-user-email">Email:</label>
+            <input id="bookmark-user-email" class="form-control" type="text"/>
+            <label for="bookmark-user-password">Password:</label>
+            <input id="bookmark-user-password" class="form-control" type="password" />
+            <input type="submit" value="LOGIN" class="btn btn-default"/>
+        </form>
+        <span class="extra"><a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a></span>
+    </div>
+    <div class="bookmarks">
+        <div class="list-group">
+            <a class="list-group-item active">
+                <h5 class="list-group-item-heading">My bookmarks</h5>
+            </a>
+            <div class="list-group-item">
+                <button class="btn btn-default"><span class="glyphicon glyphicon-plus"> Add new bookmark</span></button>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- END POPOVER CONTENTS -->
 
@@ -185,6 +199,10 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <!-- END BOOTSTRAP -->
+
+<script src="js/custom-components/slidePanel/jquery.slide-panel.js"></script>
+
+<script src="js/vendor/promise-1.0.0.min.js"></script>
 
 <!-- header javascripts -->
 <script src="js/header.js"></script>
