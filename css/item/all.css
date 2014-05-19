@@ -35,6 +35,13 @@
     width: 100%;
     padding-bottom: 56%;
     text-align: center;
+    position: relative;
+}
+
+.page main.item .view-item > video {
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 .page main.item .column.item article .meta-information {
