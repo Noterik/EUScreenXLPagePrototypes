@@ -1,0 +1,138 @@
+/* Cross device ----------- */
+.popover .login-form,
+.slide-panel .login-form {
+  display: none;
+}
+.popover .login-form.visible,
+.slide-panel .login-form.visible {
+  display: block;
+}
+.popover .bookmarks,
+.slide-panel .bookmarks {
+  display: none;
+}
+.popover .bookmarks.visible,
+.slide-panel .bookmarks.visible {
+  display: block;
+}
+.popover .menu,
+.slide-panel .menu {
+  width: 100%;
+}
+.page main.item .view-item {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-bottom: 56%;
+  text-align: center;
+}
+.page main.item .column.item article .meta-information {
+  position: relative;
+}
+.page main.item .column.item article .meta-information > .row.more-info {
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.page main.item .column.item article .meta-information > .row.more-info.visible {
+  height: auto;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .page main.item .column {
+    width: 100%;
+    float: left;
+  }
+  .page main.item .column.item article .meta-information .header {
+    position: relative;
+    padding-right: 50px;
+  }
+  .page main.item .column.item article .meta-information .actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+  }
+  .page main.item .column.item article .meta-information .row.basic-info {
+    padding-right: 50px;
+  }
+}
+/* Larger screens (iPads and Desktops) ----------- */
+@media only screen and (min-width: 768px) {
+  .page main.item .column.item {
+    width: 100%;
+    float: left;
+  }
+  .page main.item .column.item article {
+    margin-right: 168px;
+  }
+  .page main.item .column.item article .view-item-wrapper {
+    height: auto;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+  }
+  .page main.item .column.item article .meta-information {
+    position: relative;
+    float: left;
+    border: 1px solid dodgerblue;
+  }
+  .page main.item .column.item article .meta-information .header {
+    width: 100%;
+    float: left;
+    position: relative;
+    border-bottom: 1px solid dodgerblue;
+  }
+  .page main.item .column.item article .meta-information .header h2 {
+    margin: 5px 0;
+    float: left;
+    display: inline-block;
+  }
+  .page main.item .column.item article .meta-information .actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .page main.item .column.item article .meta-information > .row {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .page main.item .column.item article .meta-information > .row.more-info {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  .page main.item .column.item article .meta-information > .row.more-info.visible {
+    height: auto;
+  }
+  .page main.item .column.item article .meta-information .column {
+    float: left;
+    width: 50%;
+  }
+  .page main.item .column.related {
+    float: left;
+    width: 168px;
+    margin-left: -168px;
+  }
+  .page main.item .column.related aside.related {
+    float: left;
+    width: 161px;
+    margin-left: 5px;
+    border: 1px solid dodgerblue;
+  }
+  .page main.item .column.related aside.related .related-item {
+    text-align: center;
+    width: 151px;
+    padding-bottom: 56%;
+    margin: 10px auto;
+    background-color: brown;
+  }
+  .page main.item .column.related .ad {
+    float: left;
+    width: 161px;
+    padding-bottom: 56%;
+    margin: 5px 0 0 5px;
+    border: 1px solid dodgerblue;
+    text-align: center;
+  }
+}
