@@ -1,0 +1,61 @@
+/**
+* css/generic/tablet.less
+*
+* This file contains the generic rules for tablet devices, these rules should be applied for all pages on
+* tablet devices. However, rules may be overwritten in page specific cases.
+*/
+
+.page.tablet {
+  width: 100%;
+  max-width: none;
+  //Show for ipad
+  .mobile {
+    display: block;
+  }
+}
+
+header {
+  @headerHeight: 60px;
+
+  height: @headerHeight;
+  background-color: tomato;
+
+  h1 {
+    overflow: hidden;
+    width: 200px;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -100px;
+    height: 100%;
+    text-align: center;
+
+    img {
+      display: none;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+  nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+  }
+  .search {
+    position: absolute;
+    width: 100%;
+    right: -100%;
+  }
+  button {
+    width: @headerHeight;
+    height: @headerHeight;
+  }
+  .options-button {
+    float: left;
+    display: block;
+  }
+  .search-button {
+    float: right;
+    display: block;
+  }
+}

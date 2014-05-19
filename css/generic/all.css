@@ -1,0 +1,46 @@
+/**
+* generic.less
+*
+* This file contains the generic styles which are to be applied on all devices for EUScreenXLPagePrototypes.
+* Certain device may override these styles in their own stylesheet.
+*/
+.euscr-popup {
+    display: none;
+}
+
+.euscr-row {
+    margin: 0 5px 0 5px;
+}
+
+.page {
+    min-width: 768px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.page header {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.page header header h1 {
+    display: inline-block;
+    margin: 0 0;
+}
+
+.page header nav ul {
+    list-style: none;
+}
+
+.page main {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.page main .label {
+    margin: 0 5px 0 0;
+    color: dodgerblue;
+}

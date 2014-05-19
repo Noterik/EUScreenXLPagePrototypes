@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/item.css">
+    <link rel="stylesheet" href="css/generic/all.css">
+    <link rel="stylesheet" href="css/item/all.css">
 
     <link rel="stylesheet" href="js/custom-components/SlidePanel/css/jquery.slide-panel.css">
     <!-- BOOTSTRAP -->
@@ -40,7 +41,7 @@
                     type="button"
                     class="mobile-options btn btn-default"
                     data-contaier="body"
-                    data-popup=".popup.menu"
+                    data-popup="#popup-contents-menu"
                     data-placement="top"
                     data-height="100%">
                 <span class="glyphicon glyphicon-align-justify"></span>
@@ -81,7 +82,7 @@
                                 data-title="TERMS"
                                 class="btn btn-default terms"
                                 data-container="body"
-                                data-popup=".popup.terms"
+                                data-popup="#popup-contents-terms"
                                 data-placement="bottom"
                                 data-height="70%">
                             <span class="glyphicon glyphicon-copyright-mark"></span>
@@ -90,7 +91,7 @@
                                 class="btn btn-default social"
                                 data-title="SOCIAL"
                                 data-container="body"
-                                data-popup=".popup.social"
+                                data-popup="#popup-contents-social"
                                 data-placement="bottom"
                                 data-height="70%">
                             <span class="glyphicon glyphicon-user"></span>
@@ -99,14 +100,15 @@
                                 class="btn btn-default bookmark"
                                 data-title="BOOKMARK"
                                 data-container="body"
-                                data-popup=".popup.bookmark"
+                                data-popup="#popup-contents-bookmark"
                                 data-placement="bottom"
                                 data-height="70%">
                             <span class="glyphicon glyphicon-star"></span>
                         </button>
                     </span>
-                    <div class="row basic-info">
-                        <div class="column fields">
+
+                    <div class="euscr-row basic-info">
+                    <div class="column fields">
                             <span class="label">Original title:</span><span class="value">Thatcher's Speech</span><br />
                             <span class="label">Provider:</span><span class="value">BBC</span><br />
                             <span class="label">Production year:</span><span class="value">1992</span><br />
@@ -119,12 +121,12 @@
                         </div>
                     </div>
                     <button class="btn btn-default btn-sm more-info"><span class="glyphicon glyphicon-plus"> More info</span></button>
-                    <div class="row more-info">
-                        <div class="row buttons">
-                            <button class="btn btn-default btn-sm less-info"><span class="glyphicon glyphicon-minus"> Less info</span></button>
+                    <div class="euscr-row more-info">
+                        <div class="euscr-row buttons">
+                        <button class="btn btn-default btn-sm less-info"><span class="glyphicon glyphicon-minus"> Less info</span></button>
                         </div>
-                        <div class="row">
-                            <div class="column fields">
+                        <div class="euscr-row">
+                        <div class="column fields">
                                 <span class="label">Clip title:</span><span class="value">Thatcher attacks European integration</span><br />
                                 <span class="label">Publisher/Broadcaster:</span><span class="value">BBC</span><br />
                                 <span class="label">Broadcast date:</span><span class="value">15.05.1992</span><br />
@@ -170,21 +172,21 @@
 </div>
 
 <!-- POPOVER CONTENTS -->
-<div class="popup terms">
-    <p>
+<div class="euscr-popup terms" id="popup-contents-terms">
+<p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
     </p>
 </div>
-<div class="popup social">
-    <h4>SHARE THIS ITEM</h4>
+<div class="euscr-popup" id="popup-contents-social">
+<h4>SHARE THIS ITEM</h4>
     <p>
         <button>facebook</button>
         <button>twitter</button>
         <button>google+</button>
     </p>
 </div>
-<div class="popup menu">
-    <div class="menu-header" class="btn-lg">
+<div class="euscr-popup mobile" id="popup-contents-menu">
+<div class="menu-header" class="btn-lg">
         <button class="btn btn-lg btn-default" data-popup-close="true"><span class="glyphicon glyphicon-align-justify"></span></button>
     </div>
     <div class="btn-group-vertical menu">
@@ -197,8 +199,8 @@
         <button class="btn btn-default btn-lg">PRIVACY</button>
     </div>
 </div>
-<div class="popup bookmark">
-    <div class="login-form visible">
+<div class="euscr-popup" id="popup-contents-bookmark">
+<div class="login-form visible">
         <form class="login">
             <label for="bookmark-user-email">Email:</label>
             <input id="bookmark-user-email" class="form-control" type="text"/>

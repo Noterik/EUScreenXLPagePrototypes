@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     //Device and orientation variables
     var device, orientation;
 
@@ -6,25 +7,36 @@ $(document).ready(function(){
     var $moreInfoButton = $('button.more-info');
     var $lessInfoButton = $('button.less-info');
     var $loginButton = $('form.login input[type="submit"]');
-    var $moreInfo = $('.row.more-info');
+    var $moreInfo = $('.euscr-row.more-info');
 
     //Other elements
     var $loginElement = $('.login-form');
     var $bookmarksElement = $('.bookmarks');
 
-
     //This detects the device by using CSS media queries and saves it to the device variable.
     var detectDeviceContext = function(){
         var mobileMediaQuery = "(min-device-width : 320px) and (max-device-width : 480px)";
         var tabletMediaQuery = "(min-device-width: 768px) and (max-device-width: 1024px)";
-        var desktopMediaQuery = "(min-width : 768px)";
         if(window.matchMedia(mobileMediaQuery).matches){
             device = "mobile";
         }else if(window.matchMedia(tabletMediaQuery).matches){
             device = "tablet";
-        }else if(window.matchMedia(desktopMediaQuery).matches){
+        } else {
             device = "desktop";
         }
+    };
+
+    //This adds the device name to the .page element as a class.
+    var addDeviceClass = function () {
+        $('body > .page').addClass(device);
+    };
+
+    //This inserts the correct stylesheet into the page.
+    var addDeviceSpecificStylesheet = function () {
+        var genericStyleElement = $('<link rel="stylesheet" href="css/generic/' + device + '.css">');
+        var styleElement = $('<link rel="stylesheet" href="css/item/' + device + '.css">');
+        $('head').append(genericStyleElement);
+        $('head').append(styleElement);
     };
 
     //This function creates the popups you see when you press an action button on the page. Depending on the device should either use bootstrap popover or our custom jquery.slidePanel to display the popup
@@ -91,6 +103,8 @@ $(document).ready(function(){
     //Initializing functions, calls all the necessary initialization functions.
     var initializePage = function(){
         detectDeviceContext();
+        addDeviceClass();
+        addDeviceSpecificStylesheet();
         createPopups();
     }
 

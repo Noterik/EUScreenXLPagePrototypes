@@ -1,0 +1,25 @@
+/**
+* css/item/mobile.less
+*
+* This file contains the styles for the item.html page for mobile devices
+*/
+.page.mobile main.item .column {
+    width: 100%;
+    float: left;
+}
+
+.page.mobile main.item .column.item article .meta-information .header {
+    position: relative;
+    padding-right: 50px;
+}
+
+.page.mobile main.item .column.item article .meta-information .actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}
+
+.page.mobile main.item .column.item article .meta-information .row.basic-info {
+    padding-right: 50px;
+}
