@@ -1,5 +1,5 @@
 /* VARIOUS HACKS*/
-@media screen and (-webkit-min-device-pixel-ratio:0) { // stops annoying automatic zoomin on input focus on iphone / ipad
+@media screen and (-webkit-min-device-pixel-ratio:0) {
   select:focus, textarea:focus, input:focus {
     font-size: 16px;
     background:#eee;
@@ -13,386 +13,254 @@
 .popup{
   display: none;
 }
-
+.row{
+  margin: 0 0 0 0;
+}
 .page{
   width: 100%;
   height: auto;
   overflow: hidden;
 
   header{
-      header{
-        h1{
-          display: inline-block;
-          margin: 0 0;
-        }
+    header{
+      h1{
+        display: inline-block;
+        margin: 0 0;
       }
-      float: left;
-      width: 100%;
-      height: 100%;
-      position: relative;
+    }
+    float: left;
+    width: 100%;
+    position: relative;
 
-      nav ul{
-          list-style: none;
-      }
-      .options-button{
-          display: none;
-      }
-      .search-button{
-          display: none;
-      }
+    nav ul{
+      list-style: none;
+    }
   }
 
   main{
-      float: left;
-      width: 100%;
-      position: relative;
+    float: left;
+    width: 100%;
+    position: relative;
 
-      .label{
-        margin: 0 5px 0 0;
-        color: dodgerblue;
-      }
+    .label{
+      margin: 0 5px 0 0;
+      color: dodgerblue;
+    }
   }
 }
 /* end cross device generic styles */
 
 /* Smartphones (portrait and landscape) ----------- */
-
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
   .page{
-      width: 100%;
-      header{
-          @headerHeight: 50px;
+    width: 100%;
+    header{
+      @headerHeight: 50px;
 
-          height: @headerHeight;
-          background-color: tomato;
+      height: @headerHeight;
+      background-color: tomato;
 
-          h1{
-              overflow: hidden;
-              width: 200px;
-              top: 0;
-              position: absolute;
-              left: 50%;
-              margin: 0 0 0 -100px;
-              height: 100%;
-              text-align: center;
+      h1{
+        overflow: hidden;
+        width: 200px;
+        top: 0;
+        position: absolute;
+        left: 50%;
+        margin: 0 0 0 -100px;
+        height: 100%;
+        text-align: center;
 
-              img{
-                  display: none;
-                  height: 100%;
-                  margin: 0 auto;
-              }
-          }
-          nav{
-              position: absolute;
-              width: 100%;
-              left: -100%;
-          }
-          .search{
-              position: absolute;
-              width: 100%;
-              right: -100%;
-          }
-          button{
-              width: @headerHeight;
-              height: @headerHeight;
-          }
-          .options-button{
-              float: left;
-              display: block;
-           }
-          .search-button{
-              float: right;
-              display: block;
-          }
+        img{
+          display: none;
+          height: 100%;
+          margin: 0 auto;
+        }
       }
+      nav{
+        position: absolute;
+        width: 100%;
+        left: -100%;
+      }
+      .search{
+        position: absolute;
+        width: 100%;
+        right: -100%;
+      }
+      button{
+        width: @headerHeight;
+        height: @headerHeight;
+      }
+      .options-button{
+        float: left;
+        display: block;
+      }
+      .search-button{
+        float: right;
+        display: block;
+      }
+    }
   }
-  /* end header styles */
+  /* Styles */
 }
 
-/* Desktops ----------- */
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  /* Styles */
+}
+
+/* Larger Screens ----------- */
+/* Desktops and laptops and tablets ----------- */
 @media only screen
 and (min-width : 768px) {
-    .page {
-        max-width: 768px;
-        margin: 0 auto;
-        overflow: hidden;
-
-        header{
-            h1 {
-                display: inline-block;
-                margin: 0 0;
-            }
-
-            nav {
-                position: relative;
-                float: right;
-                height: 100%;
-
-                ul li{
-                    float: left;
-                    display: inline-block;
-                    margin: 0 5px;
-                }
-            }
-
-            .search{
-                height: 100%;
-                margin-top: 15px;
-                float: right;
-
-                input, .go-search{
-                    float: left;
-                }
-                input{
-                    width: 175px;
-                }
-            }
-        }
-        footer{
-            float: left;
-            width: 100%;
-            font-size: 12px;
-
-            .footer-note{
-                float: left;
-            }
-            .links{
-                float: right;
-
-                ul{
-                    margin: 0 0;
-                    list-style: none;
-
-                    li{
-                        display: inline-block;
-                    }
-                }
-            }
-            .affiliates{
-              width: 100%;
-              float: left;
-
-              .affiliate-icon{
-                width: 50px;
-                height: 40px;
-                background-color: rosybrown;
-                float: left;
-                margin: 0 5px 0 0;
-              }
-            }
-        }
-    }
-}
-
-/* Tablets ----------- */
-@media only screen
-and (min-width : 481px) {
-  .page{
-    width: 100%;
+  /* Styles */
+  .mobile{
+    display: none;
   }
+  .page {
+    max-width: 768px;
+    margin: 0 auto;
+    overflow: hidden;
 
-  header{
-    h1{
-      display: inline-block;
-      float: left;
-    }
-    nav{
-      float: right;
-      height: 50px;
+    header{
+      h1 {
 
-      ul li{
-        float: left;
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 0;
+      }
+
+      nav {
+        position: relative;
+        float: right;
+        height: 100%;
+
+        ul li{
+          float: left;
+          display: inline-block;
+          margin: 0 5px;
+        }
+      }
+
+      .search{
+        height: 100%;
+        margin-top: 15px;
+        float: right;
+
+        input, .go-search{
+          float: left;
+        }
+        input{
+          width: 175px;
+        }
       }
     }
-    .search{
-      float: right;
+    footer{
+      float: left;
+      width: 100%;
+      font-size: 12px;
+
+      .footer-note{
+        float: left;
+      }
+      .links{
+        float: right;
+
+        ul{
+          margin: 0 0;
+          list-style: none;
+
+          li{
+            display: inline-block;
+          }
+        }
+      }
+      .affiliates{
+        width: 100%;
+        float: left;
+
+        .affiliate-icon{
+          width: 50px;
+          height: 40px;
+          background-color: rosybrown;
+          float: left;
+          margin: 0 5px 0 0;
+        }
+      }
     }
   }
 }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  /* Styles */
+  .page{
+    width: 100%;
+    max-width: none;
+    //Show for ipad
+    .mobile{
+      display: block;
+    }
+  }
+  header{
+    @headerHeight: 60px;
+
+    height: @headerHeight;
+    background-color: tomato;
+
+    h1{
+      overflow: hidden;
+      width: 200px;
+      top: 0;
+      position: absolute;
+      left: 50%;
+      margin: 0 0 0 -100px;
+      height: 100%;
+      text-align: center;
+
+      img{
+        display: none;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+    nav{
+      position: absolute;
+      width: 100%;
+      left: -100%;
+    }
+    .search{
+      position: absolute;
+      width: 100%;
+      right: -100%;
+    }
+    button{
+      width: @headerHeight;
+      height: @headerHeight;
+    }
+    .options-button{
+      float: left;
+      display: block;
+    }
+    .search-button{
+      float: right;
+      display: block;
+    }
+  }
+}
+
+
 /* END GENERIC STYLES */
 
 /* From here specific styles for item.html, etc etc*/
-
 /* PAGE: item.html */
-
-/* Cross device ----------- */
-.popover, .slide-panel{
-  .login-form {
-    display: none;
-  }
-  .login-form.visible{
-    display: block;
-  }
-  .bookmarks{
-    display: none;
-  }
-  .bookmarks.visible{
-    display: block;
-  }
-}
-.page{
-  main.item {
-    .view-item {
-      background-color: black;
-      color: white;
-      width: 100%;
-      padding-bottom: 56%;
-      text-align: center;
-    }
-
-    .column.item{
-      article{
-        .meta-information {
-          position: relative;
-          > .row {
-            width: 100%;
-            margin: 0 0 0 0;
-          }
-          > .row.more-info {
-            height: 0;
-            margin: 0;
-            overflow: hidden;
-          }
-          > .row.more-info.visible {
-            height: auto;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-  .page{
-    main.item{
-      .column{
-        width: 100%;
-        float: left;
-      }
-
-      .column.item{
-        article{
-          .meta-information{
-            .header{
-              position: relative;
-              padding-right: 50px;
-            }
-            .actions{
-              position: absolute;
-              top: 0;
-              right: 0;
-              width: 50px;
-            }
-            .row.basic-info{
-              padding-right: 50px;
-            }
-          }
-        }
-      }
-
-    }
-  }
-  /* end header styles */
-}
-
-/* Desktops ----------- */
-@media only screen
-and (min-width : 768px) {
-  .page {
-    main.item{
-      @leftColumnWidth: 600px;
-      @rightColumnWidth: 168px;
-
-      .column.item{
-        width: 100%;
-        float: left;
-
-        article{
-          margin-right: @rightColumnWidth;
-
-          .view-item-wrapper{
-            height: auto;
-            max-width: @leftColumnWidth;
-            width: 100%;
-          }
-          .meta-information{
-            position: relative;
-            float: left;
-            border: 1px solid dodgerblue;
-
-            .header{
-              width: 100%;
-              float: left;
-              position: relative;
-              border-bottom: 1px solid dodgerblue;
-
-              h2{
-                margin: 5px 0;
-                float: left;
-                display: inline-block;
-              }
-
-            }
-            .actions{
-              position: absolute;
-              top: 0;
-              right: 0;
-            }
-            >.row{
-              width: 100%;
-              margin: 0 0 0 0;
-            }
-            >.row.more-info{
-              height: 0;
-              margin: 0;
-              overflow: hidden;
-            }
-            >.row.more-info.visible{
-              height: auto;
-            }
-            .column{
-              float: left;
-              width: 50%;
-            }
-          }
-        }
-      }
-      .column.related{
-        float: left;
-        width: @rightColumnWidth;
-        margin-left: -@rightColumnWidth;
-
-        aside.related{
-          float: left;
-          width: 161px;
-          margin-left: 5px;
-          border: 1px solid dodgerblue;
-
-          .related-item{
-            text-align: center;
-            width: 151px;
-            padding-bottom: 56%;
-            margin: 10px auto;
-            background-color: brown;
-          }
-        }
-        .ad{
-          float: left;
-          width: 161px;
-          padding-bottom: 56%;
-          margin: 5px 0 0 5px;
-          border: 1px solid dodgerblue;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
-
+@import url("item.css");

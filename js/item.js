@@ -13,12 +13,15 @@ $(document).ready(function(){
     var $bookmarksElement = $('.bookmarks');
 
 
-    //This detects the device by using CSS media queries
+    //This detects the device by using CSS media queries and saves it to the device variable.
     var detectDeviceContext = function(){
         var mobileMediaQuery = "(min-device-width : 320px) and (max-device-width : 480px)";
+        var tabletMediaQuery = "(min-device-width: 768px) and (max-device-width: 1024px)";
         var desktopMediaQuery = "(min-width : 768px)";
         if(window.matchMedia(mobileMediaQuery).matches){
             device = "mobile";
+        }else if(window.matchMedia(tabletMediaQuery).matches){
+            device = "tablet";
         }else if(window.matchMedia(desktopMediaQuery).matches){
             device = "desktop";
         }
@@ -33,6 +36,7 @@ $(document).ready(function(){
             case "mobile":
                 popupMethod = 'slidePanel';
                 break;
+            case "tablet":
             case "desktop":
                 popupMethod = 'popover';
                 break;
@@ -87,7 +91,6 @@ $(document).ready(function(){
     //Initializing functions, calls all the necessary initialization functions.
     var initializePage = function(){
         detectDeviceContext();
-        console.log(device);
         createPopups();
     }
 

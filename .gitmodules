@@ -1,3 +1,6 @@
 [submodule "SlidePanel"]
 	path = SlidePanel
 	url = ssh://git@github.com:Noterik/SlidePanel
+[submodule "js/custom-components/SlidePanel"]
+	path = js/custom-components/SlidePanel
+	url = git@github.com:Noterik/SlidePanel

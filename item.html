@@ -12,18 +12,19 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <link rel="stylesheet" href="js/custom-components/slidePanel/jquery.slide-panel.css">
-    <!-- BOOTSTRAP -->
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/item.css">
+
+    <link rel="stylesheet" href="js/custom-components/SlidePanel/css/jquery.slide-panel.css">
+    <!-- BOOTSTRAP -->
 
 </head>
 <body>
@@ -35,10 +36,18 @@
     <header>
         <h1 class="desktop">EUSCREEN</h1>
         <span class="options-button mobile">
-            <button class="mobile-options">O</button>
+            <button
+                    type="button"
+                    class="mobile-options btn btn-default"
+                    data-contaier="body"
+                    data-popup=".popup.menu"
+                    data-placement="top"
+                    data-height="100%">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
         </span>
         <span class="search-button mobile">
-            <button class="mobile-search">S</button>
+            <button class="mobile-search btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
         </span>
         <nav>
             <ul>
@@ -111,16 +120,20 @@
                     </div>
                     <button class="btn btn-default btn-sm more-info"><span class="glyphicon glyphicon-plus"> More info</span></button>
                     <div class="row more-info">
-                        <button class="btn btn-default btn-sm less-info"><span class="glyphicon glyphicon-minus"> Less info</span></button>
-                        <div class="column fields">
-                            <span class="label">Clip title:</span><span class="value">Thatcher attacks European integration</span><br />
-                            <span class="label">Publisher/Broadcaster:</span><span class="value">BBC</span><br />
-                            <span class="label">Broadcast date:</span><span class="value">15.05.1992</span><br />
-                            <span class="label">First broadcast channel:</span><span class="value">-</span><br />
-                            <span class="label">Country of production:</span><span class="value">United Kingdom</span>
+                        <div class="row buttons">
+                            <button class="btn btn-default btn-sm less-info"><span class="glyphicon glyphicon-minus"> Less info</span></button>
                         </div>
-                        <div class="column description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin ante ac urna consectetur, ut cursus mauris porta. Integer nec tempus urna. Morbi pulvinar blandit velit vel dignissim. Pellentesque ac dolor ut ante bibendum vehicula id vel orci. Proin at dapibus tortor. Morbi a nibh ut sapien suscipit rhoncus. Nunc hendrerit urna orci, vitae eleifend erat lobortis quis. Pellentesque scelerisque vehicula sapien. Etiam laoreet dolor nisi, et tincidunt tellus consectetur vitae. Quisque sit amet nunc turpis. Morbi dapibus mi mauris, vel pretium tortor egestas laoreet.
+                        <div class="row">
+                            <div class="column fields">
+                                <span class="label">Clip title:</span><span class="value">Thatcher attacks European integration</span><br />
+                                <span class="label">Publisher/Broadcaster:</span><span class="value">BBC</span><br />
+                                <span class="label">Broadcast date:</span><span class="value">15.05.1992</span><br />
+                                <span class="label">First broadcast channel:</span><span class="value">-</span><br />
+                                <span class="label">Country of production:</span><span class="value">United Kingdom</span>
+                            </div>
+                            <div class="column description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin ante ac urna consectetur, ut cursus mauris porta. Integer nec tempus urna. Morbi pulvinar blandit velit vel dignissim. Pellentesque ac dolor ut ante bibendum vehicula id vel orci. Proin at dapibus tortor. Morbi a nibh ut sapien suscipit rhoncus. Nunc hendrerit urna orci, vitae eleifend erat lobortis quis. Pellentesque scelerisque vehicula sapien. Etiam laoreet dolor nisi, et tincidunt tellus consectetur vitae. Quisque sit amet nunc turpis. Morbi dapibus mi mauris, vel pretium tortor egestas laoreet.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,6 +183,20 @@
         <button>google+</button>
     </p>
 </div>
+<div class="popup menu">
+    <div class="menu-header" class="btn-lg">
+        <button class="btn btn-lg btn-default" data-popup-close="true"><span class="glyphicon glyphicon-align-justify"></span></button>
+    </div>
+    <div class="btn-group-vertical menu">
+
+        <button class="btn btn-default btn-lg">MYEUSCREEN</button>
+        <button class="btn btn-default btn-lg">HOME</button>
+        <button class="btn btn-default btn-lg">ABOUT</button>
+        <button class="btn btn-default btn-lg">CONTACT</button>
+        <button class="btn btn-default btn-lg">TERMS OF USE</button>
+        <button class="btn btn-default btn-lg">PRIVACY</button>
+    </div>
+</div>
 <div class="popup bookmark">
     <div class="login-form visible">
         <form class="login">
@@ -200,7 +227,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <!-- END BOOTSTRAP -->
 
-<script src="js/custom-components/slidePanel/jquery.slide-panel.js"></script>
+<script src="js/custom-components/SlidePanel/js/jquery.slide-panel.js"></script>
 
 <script src="js/vendor/promise-1.0.0.min.js"></script>
 

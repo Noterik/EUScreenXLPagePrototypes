@@ -1,3 +1,4 @@
+@import url("item.css");
 /* VARIOUS HACKS*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select:focus,
@@ -13,6 +14,9 @@
 .popup {
   display: none;
 }
+.row {
+  margin: 0 0 0 0;
+}
 .page {
   width: 100%;
   height: auto;
@@ -21,7 +25,6 @@
 .page header {
   float: left;
   width: 100%;
-  height: 100%;
   position: relative;
 }
 .page header header h1 {
@@ -30,12 +33,6 @@
 }
 .page header nav ul {
   list-style: none;
-}
-.page header .options-button {
-  display: none;
-}
-.page header .search-button {
-  display: none;
 }
 .page main {
   float: left;
@@ -93,10 +90,23 @@
     float: right;
     display: block;
   }
-  /* end header styles */
+  /* Styles */
 }
-/* Desktops ----------- */
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* Larger Screens ----------- */
+/* Desktops and laptops and tablets ----------- */
 @media only screen and (min-width: 768px) {
+  /* Styles */
+  .mobile {
+    display: none;
+  }
   .page {
     max-width: 768px;
     margin: 0 auto;
@@ -158,166 +168,58 @@
     margin: 0 5px 0 0;
   }
 }
-/* Tablets ----------- */
-@media only screen and (min-width: 481px) {
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
   .page {
     width: 100%;
+    max-width: none;
+  }
+  .page .mobile {
+    display: block;
+  }
+  header {
+    height: 60px;
+    background-color: tomato;
   }
   header h1 {
-    display: inline-block;
-    float: left;
+    overflow: hidden;
+    width: 200px;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -100px;
+    height: 100%;
+    text-align: center;
+  }
+  header h1 img {
+    display: none;
+    height: 100%;
+    margin: 0 auto;
   }
   header nav {
-    float: right;
-    height: 50px;
-  }
-  header nav ul li {
-    float: left;
-    display: inline-block;
-    margin: 0 5px;
+    position: absolute;
+    width: 100%;
+    left: -100%;
   }
   header .search {
+    position: absolute;
+    width: 100%;
+    right: -100%;
+  }
+  header button {
+    width: 60px;
+    height: 60px;
+  }
+  header .options-button {
+    float: left;
+    display: block;
+  }
+  header .search-button {
     float: right;
+    display: block;
   }
 }
 /* END GENERIC STYLES */
 /* From here specific styles for item.html, etc etc*/
 /* PAGE: item.html */
-/* Cross device ----------- */
-.popover .login-form,
-.slide-panel .login-form {
-  display: none;
-}
-.popover .login-form.visible,
-.slide-panel .login-form.visible {
-  display: block;
-}
-.popover .bookmarks,
-.slide-panel .bookmarks {
-  display: none;
-}
-.popover .bookmarks.visible,
-.slide-panel .bookmarks.visible {
-  display: block;
-}
-.page main.item .view-item {
-  background-color: black;
-  color: white;
-  width: 100%;
-  padding-bottom: 56%;
-  text-align: center;
-}
-.page main.item .column.item article .meta-information {
-  position: relative;
-}
-.page main.item .column.item article .meta-information > .row {
-  width: 100%;
-  margin: 0 0 0 0;
-}
-.page main.item .column.item article .meta-information > .row.more-info {
-  height: 0;
-  margin: 0;
-  overflow: hidden;
-}
-.page main.item .column.item article .meta-information > .row.more-info.visible {
-  height: auto;
-}
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .page main.item .column {
-    width: 100%;
-    float: left;
-  }
-  .page main.item .column.item article .meta-information .header {
-    position: relative;
-    padding-right: 50px;
-  }
-  .page main.item .column.item article .meta-information .actions {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-  }
-  .page main.item .column.item article .meta-information .row.basic-info {
-    padding-right: 50px;
-  }
-  /* end header styles */
-}
-/* Desktops ----------- */
-@media only screen and (min-width: 768px) {
-  .page main.item .column.item {
-    width: 100%;
-    float: left;
-  }
-  .page main.item .column.item article {
-    margin-right: 168px;
-  }
-  .page main.item .column.item article .view-item-wrapper {
-    height: auto;
-    max-width: 600px;
-    width: 100%;
-  }
-  .page main.item .column.item article .meta-information {
-    position: relative;
-    float: left;
-    border: 1px solid dodgerblue;
-  }
-  .page main.item .column.item article .meta-information .header {
-    width: 100%;
-    float: left;
-    position: relative;
-    border-bottom: 1px solid dodgerblue;
-  }
-  .page main.item .column.item article .meta-information .header h2 {
-    margin: 5px 0;
-    float: left;
-    display: inline-block;
-  }
-  .page main.item .column.item article .meta-information .actions {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .page main.item .column.item article .meta-information > .row {
-    width: 100%;
-    margin: 0 0 0 0;
-  }
-  .page main.item .column.item article .meta-information > .row.more-info {
-    height: 0;
-    margin: 0;
-    overflow: hidden;
-  }
-  .page main.item .column.item article .meta-information > .row.more-info.visible {
-    height: auto;
-  }
-  .page main.item .column.item article .meta-information .column {
-    float: left;
-    width: 50%;
-  }
-  .page main.item .column.related {
-    float: left;
-    width: 168px;
-    margin-left: -168px;
-  }
-  .page main.item .column.related aside.related {
-    float: left;
-    width: 161px;
-    margin-left: 5px;
-    border: 1px solid dodgerblue;
-  }
-  .page main.item .column.related aside.related .related-item {
-    text-align: center;
-    width: 151px;
-    padding-bottom: 56%;
-    margin: 10px auto;
-    background-color: brown;
-  }
-  .page main.item .column.related .ad {
-    float: left;
-    width: 161px;
-    padding-bottom: 56%;
-    margin: 5px 0 0 5px;
-    border: 1px solid dodgerblue;
-    text-align: center;
-  }
-}
