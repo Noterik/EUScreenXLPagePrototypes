@@ -8,12 +8,6 @@
     display: none;
 }
 
-.page.desktop {
-    max-width: 768px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
 .page.desktop footer .affiliates .affiliate-icon {
     width: 50px;
     height: 40px;
