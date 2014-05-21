@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/generic/all.css">
-    <link rel="stylesheet" href="css/item/all.css">
 
     <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
     <!-- BOOTSTRAP -->
@@ -39,83 +38,216 @@
 <![endif]-->
 
 <div class="page container">
-    <header class="row">
-        <h1 class="desktop">EUSCREEN</h1>
-        <span class="options-button mobile">
-            <button
-                    type="button"
-                    class="mobile-options btn btn-default"
-                    data-contaier="body"
-                    data-popup="#popup-contents-menu"
-                    data-placement="top"
-                    data-height="100%">
-                <span class="glyphicon glyphicon-align-justify"></span>
-            </button>
-        </span>
-        <span class="search-button mobile">
-            <button class="mobile-search btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-        </span>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="about.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="myeuscreen.html">MYEUSCREEN</a>
-                </li>
-            </ul>
-        </nav>
-        <span class="search"><input type="search" name="search"><button class="go-search">Q</button><button
-                class="settings">S
-        </button></span>
-    </header>
-    <main class="search-results row">
-        <div class="col-md-8">
-            <div class="row">
-                <div class="column-md-12">
-                    <div class="input-group">
-                        <input type="text" class="form-control search-field">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default search" type="button"><span
-                                    class="glyphicon glyphicon-search"></span></button>
-                        </span>
-                    </div>
-                    <div class="input-group">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
+    <header>
+        <div class="row">
+            <div class="col-md-12 no-padding">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">EUScreen</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="myeuscreen.html">MYEUSCREEN</a>
+                                </li>
                             </ul>
+                            <form class="navbar-form navbar-right" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="search-results">
+        <div class="row">
+            <div class="col-md-8 search-results">
+                <div class="row search-bar">
+                    <div class="col-md-12 search-bar">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row search-bar-actions">
+                    <div class="col-md-12">
+                        <div class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <ul class="nav navbar-nav navbar-left pull-left">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort by Title<b
+                                                class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Sort By Year</a></li>
+                                            <li><a href="#">Sort By X</a></li>
+                                            <li><a href="#">Sort By Y</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="nav navbar-nav navbar-right" style="float: right">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                            data-target="#search-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">744 results</a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="search-collapse">
+                                    <div class="nav navbar-nav navbar-left">
+                                        <button type="button" class="btn btn-default navbar-btn">All</button>
+                                        <button type="button" class="btn btn-default navbar-btn">
+                                            <span class="glyphicon glyphicon-facetime-video"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-default navbar-btn">
+                                            <span class="glyphicon glyphicon-camera"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-default navbar-btn">
+                                            <span class="glyphicon glyphicon-volume-up"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-default navbar-btn">
+                                            <span class="glyphicon glyphicon-file"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.navbar -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row search-results-list">
+                    <div class="col-md-12">
+                        <div class="row media-item">
+                            <div class="media-image col-xs-4">
+                                <img class="media-object" width="100%"
+                                     src="http://images1.noterik.com/domain/euscreen/user/eu_kb/video/1773/shots/1/h/0/m/0/sec5.jpg"
+                                     alt="Airplanes">
+                            </div>
+                            <div class="media-metadata col-xs-8">
+                                <h3 class="media-heading">Lorum Ipsum <span class="badge pull-right">Label</span></h3>
+                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
+                                <span class="label">Provider:</span><span class="value">BBC/United Kingdom</span><br/>
+                                <span class="label">Production year:</span><span class="value">1954</span><br/>
+                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
+                                <span class="label">Language:</span><span class="value">English</span>
+                            </div>
+                        </div>
+                        <div class="row media-item">
+                            <div class="media-image col-xs-4">
+                                <img class="media-object" width="100%"
+                                     src="http://images1.noterik.com/domain/euscreen/user/eu_kb/video/1949/shots/1/h/0/m/0/sec5.jpg"
+                                     alt="Airplanes">
+                            </div>
+                            <div class="media-metadata col-xs-8">
+                                <h3 class="media-heading">Lorum Ipsum</h3>
+                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
+                                <span class="label">Provider:</span><span class="value">BBC/United Kingdom</span><br/>
+                                <span class="label">Production year:</span><span class="value">1954</span><br/>
+                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
+                                <span class="label">Language:</span><span class="value">English</span>
+                            </div>
+                        </div>
+                        <div class="row media-item">
+                            <div class="media-image col-xs-4">
+                                <img class="media-object" width="100%"
+                                     src="http://images3.noterik.com/domain/euscreenxl/user/eu_kb/video/EUS_043AFC4C04327651A45D3CBEC4201975/shots/1/h/0/m/0/sec5.jpg"
+                                     alt="Airplanes">
+                            </div>
+                            <div class="media-metadata col-xs-8">
+                                <h3 class="media-heading">Lorum Ipsum</h3>
+                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
+                                <span class="label">Provider:</span><span class="value">BBC/United Kingdom</span><br/>
+                                <span class="label">Production year:</span><span class="value">1954</span><br/>
+                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
+                                <span class="label">Language:</span><span class="value">English</span>
+                            </div>
+                        </div>
+                        <div class="row media-item">
+                            <div class="media-image col-xs-4">
+                                <img class="media-object" width="100%"
+                                     src="http://images1.noterik.com/domain/euscreen/user/eu_kb/video/3146/shots/1/h/0/m/0/sec5.jpg"
+                                     alt="Airplanes">
+                            </div>
+                            <div class="media-metadata col-xs-8">
+                                <h3 class="media-heading">Lorum Ipsum</h3>
+                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
+                                <span class="label">Provider:</span><span class="value">BBC/United Kingdom</span><br/>
+                                <span class="label">Production year:</span><span class="value">1954</span><br/>
+                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
+                                <span class="label">Language:</span><span class="value">English</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 refine-search">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Refine Search</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">REFINE SEARCH</div>
+        <!-- /.row -->
     </main>
-    <footer class="row">
-        <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
-        <span class="links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Terms of Use</a></li>
-                <li><a href="index.html">Privacy</a></li>
-                <li><a href="index.html">Contact</a></li>
-            </ul>
-        </span>
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
+            </div>
+            <div class="col-md-6">
+                <span class="links">
+                    <ul class="no-break">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Terms of Use</a></li>
+                        <li><a href="index.html">Privacy</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
 
-        <div class="affiliates">
-            <div class="affiliate-icon"></div>
-            <div class="affiliate-icon"></div>
+        <!-- Affiliate icons here -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="affiliates">
+                    <div class="affiliate-icon"></div>
+                    <div class="affiliate-icon"></div>
+                </div>
+            </div>
         </div>
     </footer>
 </div>
@@ -136,8 +268,11 @@
 <!-- footer javascripts -->
 <script src="js/footer.js"></script>
 
+<script src="js/libs/DeviceDetect/device-detect.js"></script>
+<script src="js/libs/Page/page.js"></script>
+
 <!-- page specific javascripts -->
-<script src="js/item.js"></script>
+<script src="js/search-results.js"></script>
 
 </body>
 </html>

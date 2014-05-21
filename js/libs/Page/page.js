@@ -30,8 +30,11 @@ EUScreenXL.Page.prototype._bindEvents = function () {
     }
 };
 EUScreenXL.Page.prototype._addDeviceSpecificStylesheet = function () {
+    console.log("Page.prototpye._addDeviceSpecificStylesheet()");
+    console.log(this);
+    console.log(this.name);
     var genericStyleElement = jQuery('<link rel="stylesheet" href="css/generic/' + this.device + '.css">');
-    var styleElement = jQuery('<link rel="stylesheet" href="css/item/' + this.device + '.css">');
+    var styleElement = jQuery('<link rel="stylesheet" href="css/' + this.name + '/' + this.device + '.css">');
     jQuery('head').append(genericStyleElement);
     jQuery('head').append(styleElement);
 };

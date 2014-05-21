@@ -20,6 +20,7 @@ $(document).ready(function () {
             this.$bookmarksElement.addClass('visible');
         }
     };
+    EUScreenXL.ItemPage.prototype.name = "item";
 
     new EUScreenXL.ItemPage();
 });
