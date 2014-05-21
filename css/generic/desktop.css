@@ -9,70 +9,9 @@
 }
 
 .page.desktop {
-    min-width: 768px;
     max-width: 768px;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.page.desktop header h1 {
-    display: inline-block;
-    margin: 0 0;
-}
-
-.page.desktop header nav {
-    position: relative;
-    float: right;
-    height: 100%;
-}
-
-.page.desktop header nav ul li {
-    float: left;
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.page.desktop header .search {
-    height: 100%;
-    margin-top: 15px;
-    float: right;
-}
-
-.page.desktop header .search input,
-.page.desktop header .search .go-search {
-    float: left;
-}
-
-.page.desktop header .search input {
-    width: 175px;
-}
-
-.page.desktop footer {
-    float: left;
-    width: 100%;
-    font-size: 12px;
-}
-
-.page.desktop footer .footer-note {
-    float: left;
-}
-
-.page.desktop footer .links {
-    float: right;
-}
-
-.page.desktop footer .links ul {
-    margin: 0 0;
-    list-style: none;
-}
-
-.page.desktop footer .links ul li {
-    display: inline-block;
-}
-
-.page.desktop footer .affiliates {
-    width: 100%;
-    float: left;
 }
 
 .page.desktop footer .affiliates .affiliate-icon {

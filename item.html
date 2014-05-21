@@ -20,7 +20,6 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/generic/all.css">
     <link rel="stylesheet" href="css/item/all.css">
 
@@ -33,144 +32,220 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="page">
+<div class="page container-fluid">
     <header>
-        <h1 class="desktop">EUSCREEN</h1>
-        <span class="options-button mobile">
-            <button
-                    type="button"
-                    class="mobile-options btn btn-default"
-                    data-contaier="body"
-                    data-popup="#popup-contents-menu"
-                    data-placement="top"
-                    data-height="100%">
-                <span class="glyphicon glyphicon-align-justify"></span>
-            </button>
-        </span>
-        <span class="search-button mobile">
-            <button class="mobile-search btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-        </span>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="about.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="myeuscreen.html">MYEUSCREEN</a>
-                </li>
-            </ul>
-        </nav>
-        <span class="search"><input type="search" name="search"><button class="go-search">Q</button><button class="settings">S</button></span>
+        <div class="row">
+            <div class="col-md-12 no-padding">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">EUScreen</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="myeuscreen.html">MYEUSCREEN</a>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-right" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span
+                                        class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
     </header>
     <main class="item">
-        <div class="column item">
-            <article>
-                <div class="view-item-wrapper">
-                    <div class="view-item">
-                        <video width="100%" height="100%" controls="controls">
-                            <source src="http://stream16.noterik.com/progressive/stream16/domain/euscreen/user/eu_kb/video/2964/rawvideo/1/raw.mp4"
-                                    type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+        <div class="row">
+            <div class="col-md-8 item">
+                <article>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="view-item-wrapper">
+                                <div class="view-item">
+                                    <video width="100%" height="100%" controls="controls">
+                                        <source src="http://stream16.noterik.com/progressive/stream16/domain/euscreen/user/eu_kb/video/2964/rawvideo/1/raw.mp4"
+                                                type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="meta-information" id="meta-information">
-                    <div class="header">
-                        <h2>Lorum Ipsum</h2>
-                    </div>
-                    <span class="actions">
-                        <button type="button"
-                                data-title="TERMS"
-                                class="btn btn-default terms"
-                                data-container="body"
-                                data-popup="#popup-contents-terms"
-                                data-placement="bottom"
-                                data-height="70%">
-                            <span class="glyphicon glyphicon-copyright-mark"></span>
-                        </button>
-                        <button type="button"
-                                class="btn btn-default social"
-                                data-title="SOCIAL"
-                                data-container="body"
-                                data-popup="#popup-contents-social"
-                                data-placement="bottom"
-                                data-height="70%">
-                            <span class="glyphicon glyphicon-user"></span>
-                        </button>
-                        <button type="button"
-                                class="btn btn-default bookmark"
-                                data-title="BOOKMARK"
-                                data-container="body"
-                                data-popup="#popup-contents-bookmark"
-                                data-placement="bottom"
-                                data-height="70%">
-                            <span class="glyphicon glyphicon-star"></span>
-                        </button>
-                    </span>
+                    <div class="row">
+                        <div class="col-md-12 meta-information">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="navbar-default">
+                                        <div class="container-fluid">
+                                            <!-- Brand and toggle get grouped for better mobile display -->
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                                        data-target="#bs-example-navbar-collapse-2">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                                <a class="navbar-brand" href="#">Lorum Ipsum</a>
+                                            </div>
 
-                    <div class="euscr-row basic-info">
-                    <div class="column fields">
-                            <span class="label">Original title:</span><span class="value">Thatcher's Speech</span><br />
-                            <span class="label">Provider:</span><span class="value">BBC</span><br />
-                            <span class="label">Production year:</span><span class="value">1992</span><br />
-                            <span class="label">Country of production:</span><span class="value">United Kingdom</span><br />
-                        </div>
-                        <div class="column description">
-                            <span class="label summary">Summary:</span>
-                            <p>The Conservatives won the general election in May 1979 and their leader, Mrs Thatcher became the UK's first female minister</p>
-                            <p>This is part of the the series <a href="series">Best of BBC</a></p>
+                                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                                <form class="navbar-form navbar-right">
+                                                    <div class="form-group">
+                                                        <button type="button"
+                                                                data-title="TERMS"
+                                                                class="btn btn-default terms"
+                                                                data-container="body"
+                                                                data-popup="#popup-contents-terms"
+                                                                data-placement="bottom"
+                                                                data-height="70%">
+                                                            <span class="glyphicon glyphicon-copyright-mark"></span>
+                                                        </button>
+                                                        <button type="button"
+                                                                class="btn btn-default social"
+                                                                data-title="SOCIAL"
+                                                                data-container="body"
+                                                                data-popup="#popup-contents-social"
+                                                                data-placement="bottom"
+                                                                data-height="70%">
+                                                            <span class="glyphicon glyphicon-user"></span>
+                                                        </button>
+                                                        <button type="button"
+                                                                class="btn btn-default bookmark"
+                                                                data-title="BOOKMARK"
+                                                                data-container="body"
+                                                                data-popup="#popup-contents-bookmark"
+                                                                data-placement="bottom"
+                                                                data-height="70%">
+                                                            <span class="glyphicon glyphicon-star"></span>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- /.navbar-collapse -->
+                                        </div>
+                                        <!-- /.container-fluid -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row basic-info">
+                                <div class="col-md-6">
+                                    <span class="label">Original title:</span><span
+                                        class="value">Thatcher's Speech</span><br/>
+                                    <span class="label">Provider:</span><span class="value">BBC</span><br/>
+                                    <span class="label">Production year:</span><span class="value">1992</span><br/>
+                                    <span class="label">Country of production:</span><span
+                                        class="value">United Kingdom</span><br/>
+
+                                </div>
+
+                                <div class="col-md-6 description">
+                                    <span class="label summary">Summary:</span>
+
+                                    <p>The Conservatives won the general election in May 1979 and their leader, Mrs
+                                        Thatcher became the UK's first female minister</p>
+
+                                    <p>This is part of the the series <a href="series">Best of BBC</a></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-default btn-sm more-info" data-toggle="collapse"
+                                            data-target="#item-more-info"><span class="glyphicon glyphicon-plus"> More info</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row more-info collapse" id="item-more-info">
+                                <div class="col-md-6">
+                                    <span class="label">Clip title:</span><span class="value">Thatcher attacks European integration</span><br/>
+                                    <span class="label">Publisher/Broadcaster:</span><span class="value">BBC</span><br/>
+                                    <span class="label">Broadcast date:</span><span class="value">15.05.1992</span><br/>
+                                    <span class="label">First broadcast channel:</span><span class="value">-</span><br/>
+                                    <span class="label">Country of production:</span><span
+                                        class="value">United Kingdom</span>
+                                </div>
+                                <div class="col-md-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin ante
+                                    ac urna consectetur, ut cursus mauris porta. Integer nec tempus urna. Morbi pulvinar
+                                    blandit velit vel dignissim. Pellentesque ac dolor ut ante bibendum vehicula id vel
+                                    orci. Proin at dapibus tortor. Morbi a nibh ut sapien suscipit rhoncus. Nunc
+                                    hendrerit urna orci, vitae eleifend erat lobortis quis. Pellentesque scelerisque
+                                    vehicula sapien. Etiam laoreet dolor nisi, et tincidunt tellus consectetur vitae.
+                                    Quisque sit amet nunc turpis. Morbi dapibus mi mauris, vel pretium tortor egestas
+                                    laoreet.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="btn btn-default btn-sm more-info"><span class="glyphicon glyphicon-plus"> More info</span></button>
-                    <div class="euscr-row more-info">
-                        <div class="euscr-row buttons">
-                        <button class="btn btn-default btn-sm less-info"><span class="glyphicon glyphicon-minus"> Less info</span></button>
-                        </div>
-                        <div class="euscr-row">
-                        <div class="column fields">
-                                <span class="label">Clip title:</span><span class="value">Thatcher attacks European integration</span><br />
-                                <span class="label">Publisher/Broadcaster:</span><span class="value">BBC</span><br />
-                                <span class="label">Broadcast date:</span><span class="value">15.05.1992</span><br />
-                                <span class="label">First broadcast channel:</span><span class="value">-</span><br />
-                                <span class="label">Country of production:</span><span class="value">United Kingdom</span>
-                            </div>
-                            <div class="column description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin ante ac urna consectetur, ut cursus mauris porta. Integer nec tempus urna. Morbi pulvinar blandit velit vel dignissim. Pellentesque ac dolor ut ante bibendum vehicula id vel orci. Proin at dapibus tortor. Morbi a nibh ut sapien suscipit rhoncus. Nunc hendrerit urna orci, vitae eleifend erat lobortis quis. Pellentesque scelerisque vehicula sapien. Etiam laoreet dolor nisi, et tincidunt tellus consectetur vitae. Quisque sit amet nunc turpis. Morbi dapibus mi mauris, vel pretium tortor egestas laoreet.
-                            </div>
+                </article>
+            </div>
+            <div class="col-md-4 related">
+                <div class="row">
+                    <div class="col-md-12">
+                        <aside class="related">
+                            <h3>Related</h3>
+
+                            <div class="related-item">RELATED ITEM</div>
+                            <div class="related-item">RELATED ITEM</div>
+                            <div class="related-item">RELATED ITEM</div>
+                        </aside>
+                        <div class="ad">
+                            ADVERTISEMENT
                         </div>
                     </div>
                 </div>
-            </article>
-        </div>
-        <div class="column related">
-            <aside class="related">
-                <h3>Related</h3>
-                <div class="related-item">RELATED ITEM</div>
-                <div class="related-item">RELATED ITEM</div>
-                <div class="related-item">RELATED ITEM</div>
-            </aside>
-            <div class="ad">
-                ADVERTISEMENT
             </div>
         </div>
     </main>
     <footer>
-        <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
-        <span class="links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Terms of Use</a></li>
-                <li><a href="index.html">Privacy</a></li>
-                <li><a href="index.html">Contact</a></li>
-            </ul>
-        </span>
-        <div class="affiliates">
-            <div class="affiliate-icon"></div>
-            <div class="affiliate-icon"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
+            </div>
+            <div class="col-md-6">
+                <span class="links">
+                    <ul class="no-break">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Terms of Use</a></li>
+                        <li><a href="index.html">Privacy</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+
+        <!-- Affiliate icons here -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="affiliates">
+                    <div class="affiliate-icon"></div>
+                    <div class="affiliate-icon"></div>
+                </div>
+            </div>
         </div>
     </footer>
 </div>

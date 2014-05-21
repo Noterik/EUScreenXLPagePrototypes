@@ -43,21 +43,3 @@
     left: 0;
     position: absolute;
 }
-
-.page main.item .column.item article .meta-information {
-    position: relative;
-}
-
-.page main.item .column.item article .meta-information > .euscr-row {
-    float: left;
-}
-
-.page main.item .column.item article .meta-information > .euscr-row.more-info {
-    height: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-.page main.item .column.item article .meta-information > .euscr-row.more-info.visible {
-    height: auto;
-}

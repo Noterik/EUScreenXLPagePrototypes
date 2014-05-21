@@ -9,37 +9,32 @@
   display: none;
 }
 
-.euscr-row {
-  margin: 0 5px 0 5px;
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+ul.no-break {
+  margin: 0 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
 }
 
 .page {
-  min-width: 768px;
+  max-width: 768px;
   width: 100%;
   height: auto;
-  overflow: hidden;
 
   header {
-    header {
-      h1 {
-        display: inline-block;
-        margin: 0 0;
-      }
-    }
-    float: left;
-    width: 100%;
-    position: relative;
-
     nav ul {
       list-style: none;
     }
   }
 
   main {
-    float: left;
-    width: 100%;
-    position: relative;
-
     .label {
       margin: 0 5px 0 0;
       color: dodgerblue;

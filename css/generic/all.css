@@ -8,36 +8,28 @@
     display: none;
 }
 
-.euscr-row {
-    margin: 0 5px 0 5px;
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+ul.no-break {
+    margin: 0 0;
+    list-style: none;
+}
+
+ul.no-break li {
+    display: inline-block;
 }
 
 .page {
-    min-width: 768px;
+    max-width: 768px;
     width: 100%;
     height: auto;
-    overflow: hidden;
-}
-
-.page header {
-    float: left;
-    width: 100%;
-    position: relative;
-}
-
-.page header header h1 {
-    display: inline-block;
-    margin: 0 0;
 }
 
 .page header nav ul {
     list-style: none;
-}
-
-.page main {
-    float: left;
-    width: 100%;
-    position: relative;
 }
 
 .page main .label {

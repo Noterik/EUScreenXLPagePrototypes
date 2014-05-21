@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     //Device and orientation variables
     var device, orientation;
@@ -14,12 +14,12 @@ $(document).ready(function(){
     var $bookmarksElement = $('.bookmarks');
 
     //This detects the device by using CSS media queries and saves it to the device variable.
-    var detectDeviceContext = function(){
+    var detectDeviceContext = function () {
         var mobileMediaQuery = "(min-device-width : 320px) and (max-device-width : 480px)";
         var tabletMediaQuery = "(min-device-width: 768px) and (max-device-width: 1024px)";
-        if(window.matchMedia(mobileMediaQuery).matches){
+        if (window.matchMedia(mobileMediaQuery).matches) {
             device = "mobile";
-        }else if(window.matchMedia(tabletMediaQuery).matches){
+        } else if (window.matchMedia(tabletMediaQuery).matches) {
             device = "tablet";
         } else {
             device = "desktop";
@@ -40,11 +40,11 @@ $(document).ready(function(){
     };
 
     //This function creates the popups you see when you press an action button on the page. Depending on the device should either use bootstrap popover or our custom jquery.slidePanel to display the popup
-    var createPopups = function(){
+    var createPopups = function () {
 
         var popupMethod;
 
-        switch(device){
+        switch (device) {
             case "mobile":
                 popupMethod = 'slidePanel';
                 break;
@@ -55,7 +55,7 @@ $(document).ready(function(){
         }
 
         var popupButtons = $('button[data-popup]')
-        popupButtons.each(function(){
+        popupButtons.each(function () {
             var $this = $(this);
             var selector = $this.attr('data-popup');
             var placement = $this.attr('data-placement');
@@ -69,12 +69,12 @@ $(document).ready(function(){
                 container: container,
                 title: title,
                 height: height,
-                content: function(){
+                content: function () {
                     return $(selector).children();
                 }
-            }).on('show.bs.popover', function(){
+            }).on('show.bs.popover', function () {
                 var self = this;
-                popupButtons.filter(function(){
+                popupButtons.filter(function () {
                     return this != self;
                 }).popover('hide');
             });
@@ -82,18 +82,19 @@ $(document).ready(function(){
     };
 
     //Button listeners
-    $moreInfoButton.on('click', function(){
-        console.log($(this).selector);
-        $(this).hide();
-        $moreInfo.addClass('visible');
-    });
+    /*
+     $moreInfoButton.on('click', function(){
+     console.log($(this).selector);
+     $(this).hide();
+     $moreInfo.addClass('visible');
+     });*/
 
-    $lessInfoButton.on('click', function(){
+    $lessInfoButton.on('click', function () {
         $moreInfo.removeClass('visible');
         $moreInfoButton.show();
     });
 
-    $loginButton.on('click', function(){
+    $loginButton.on('click', function () {
         event.preventDefault();
         $loginElement.removeClass('visible');
         $bookmarksElement.addClass('visible');
@@ -101,7 +102,7 @@ $(document).ready(function(){
     //END Button listeners
 
     //Initializing functions, calls all the necessary initialization functions.
-    var initializePage = function(){
+    var initializePage = function () {
         detectDeviceContext();
         addDeviceClass();
         addDeviceSpecificStylesheet();
