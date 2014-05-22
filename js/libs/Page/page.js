@@ -24,9 +24,12 @@ EUScreenXL.Page.prototype._bindEvents = function () {
         var actions = actionsStr.split(",");
 
         var callback = this.events[event];
-        jQuery(selector).on(actions.join(" "), function (event) {
-            callback.apply(self, [event, this]);
-        });
+
+        jQuery(selector).on(actions.join(" "), (function (callback) {
+            return function (event) {
+                callback.apply(self, [event, self]);
+            }
+        })(callback));
     }
 };
 EUScreenXL.Page.prototype._addDeviceSpecificStylesheet = function () {

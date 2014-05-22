@@ -218,6 +218,218 @@
                         <h2>Refine Search</h2>
                     </div>
                 </div>
+                <div class="row active-filters">
+                    <div class="col-md-12">
+                        <div class="filter badge">
+                            <button class="btn btn-default btn-xs">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                            <span class="filter-label">Provider: BBC / United Kingdom</span>
+                        </div>
+                        <div class="filter badge">
+                            <button class="btn btn-default btn-xs">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                            <span class="filter-label">Language: English</span>
+                        </div>
+                        <div class="filter badge">
+                            <button class="btn btn-default btn-xs">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                            <span class="filter-label">Decade: 1960</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-default">
+                            <span>Clear all</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.row.active-filters -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-default" data-toggle="collapse" data-target="#extra-filters"
+                                id="hide-extra-filters">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Less options
+                        </button>
+                    </div>
+                </div>
+                <div class="row basic-filters">
+                    <div class="col-md-12">
+                        <div class="panel-group" id="filter-accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filter-accordion"
+                                           href="#filter-language">
+                                            Language
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="filter-language" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <select multiple class="form-control">
+                                            <option>English</option>
+                                            <option>German</option>
+                                            <option>French</option>
+                                            <option>Chinese</option>
+                                            <option>Swahili</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filter-accordion" href="#filter-decade">
+                                            Decade
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="filter-decade" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <select multiple class="form-control">
+                                            <option>1940's</option>
+                                            <option>1950's</option>
+                                            <option>1960's</option>
+                                            <option>1970's</option>
+                                            <option>1980's</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filter-accordion" href="#filter-topic">
+                                            Topic
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="filter-topic" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <select multiple class="form-control">
+                                            <option>Bicycles</option>
+                                            <option>Worms</option>
+                                            <option>Haircuts</option>
+                                            <option>Plants</option>
+                                            <option>Music</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default extra-option">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filter-accordion"
+                                           href="#filter-provider">
+                                            Provider
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="filter-provider" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <select multiple class="form-control">
+                                            <option>BBC</option>
+                                            <option>KB</option>
+                                            <option>DW</option>
+                                            <option>RTE</option>
+                                            <option>SASE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default extra-option">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filter-accordion"
+                                           href="#filter-publisher">
+                                            Publisher
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="filter-publisher" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <select multiple class="form-control">
+                                            <option>BBC</option>
+                                            <option>KB</option>
+                                            <option>DW</option>
+                                            <option>RTE</option>
+                                            <option>SASE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default extra-option">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filter-accordion" href="#filter-genre">
+                                            Genre
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="filter-genre" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <select multiple class="form-control">
+                                            <option>Documentary</option>
+                                            <option>TV-Show</option>
+                                            <option>News</option>
+                                            <option>Commercial</option>
+                                            <option>Movie</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default extra-option">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#filter-accordion"
+                                           href="#filter-country-production">
+                                            Country of production
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="filter-country-production" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <select multiple class="form-control">
+                                            <option>Germany</option>
+                                            <option>Sweden</option>
+                                            <option>The Netherlands</option>
+                                            <option>Belgium</option>
+                                            <option>Czech Republic</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row.basic-filters -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-default" id="show-extra-filters">
+                            <span class="glyphicon glyphicon-plus"></span>
+                            More options
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-md-4.refine-search -->
+            <div class="col-md-4">
+                <p>
+                    Did not find what you where looking for?
+                    <br/>
+                    <br/>
+                    Try out the similar search on EUROPEANA.
+                    <br/>
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin metus ac neque
+                    suscipit, vel varius quam rutrum. Suspendisse nunc nisl, varius nec condimentum et, tempus non erat.
+                    Quisque in porttitor turpis, sed pulvinar quam. Fusce consectetur aliquam lectus et sagittis.
+                    Curabitur quis tempor diam. Proin imperdiet facilisis ipsum, quis pulvinar diam. Etiam mauris justo,
+                    consequat nec consequat non, tincidunt id mauris.
+                </p>
             </div>
         </div>
         <!-- /.row -->
