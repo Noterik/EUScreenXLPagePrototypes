@@ -1,0 +1,16 @@
+.row.media-item {
+    margin-top: 10px;
+}
+
+.row.media-item .media-wrapper {
+    position: relative;
+}
+
+.row.media-item .media-wrapper .media-type {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
