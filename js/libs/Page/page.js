@@ -36,10 +36,13 @@ EUScreenXL.Page.prototype._addDeviceSpecificStylesheet = function () {
     console.log("Page.prototpye._addDeviceSpecificStylesheet()");
     console.log(this);
     console.log(this.name);
+    var head = jQuery('head');
     var genericStyleElement = jQuery('<link rel="stylesheet" href="css/generic/' + this.device + '.css">');
+    var stylesForPageForAllDevices = jQuery('<link rel="stylesheet" href="css/' + this.name + '/all.css">')
     var styleElement = jQuery('<link rel="stylesheet" href="css/' + this.name + '/' + this.device + '.css">');
-    jQuery('head').append(genericStyleElement);
-    jQuery('head').append(styleElement);
+    head.append(genericStyleElement);
+    head.append(stylesForPageForAllDevices);
+    head.append(styleElement);
 };
 EUScreenXL.Page.prototype._createPopups = function () {
     var popupMethod;
