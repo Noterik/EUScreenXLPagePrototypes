@@ -1,0 +1,45 @@
+/**
+* css/item/all.less
+*
+* This file contains the generic styles for the item page. These styles should be applied on all devices,
+* but might be overwritten in specific cases for certain devices.
+*/
+.popover .login-form,
+.slide-panel .login-form {
+    display: none;
+}
+
+.popover .login-form.visible,
+.slide-panel .login-form.visible {
+    display: block;
+}
+
+.popover .bookmarks,
+.slide-panel .bookmarks {
+    display: none;
+}
+
+.popover .bookmarks.visible,
+.slide-panel .bookmarks.visible {
+    display: block;
+}
+
+.popover .menu,
+.slide-panel .menu {
+    width: 100%;
+}
+
+.page main.item .view-item {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-bottom: 56%;
+    text-align: center;
+    position: relative;
+}
+
+.page main.item .view-item > video {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
