@@ -306,9 +306,6 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
   body {
     margin-bottom: 183px;
   }
-  body .page header .navbar {
-    border-bottom: 0px;
-  }
   body .page header .navbar .container {
     padding-left: 0px;
     padding-right: 0px;
@@ -317,11 +314,17 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
     margin-left: -15px;
   }
   body .page .main {
-    padding-top: 76px;
+    padding-top: 75px;
     padding-bottom: 50px;
+  }
+  body .page .main .left .row .searchbar {
+    display: block;
   }
   body .page .main .left .row .searchbar .form-control {
     font-size: 1.071em;
+  }
+  body .page .main .left .row .selectedfilter {
+    display: block;
   }
   body .page .main .left .row .selectedfilter .tags .tag {
     margin: 0 5px 4px 0;
@@ -330,8 +333,14 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
     font-size: 0.786em;
     padding: 2px 10px 1px 10px;
   }
+  body .page .main .left .row .filters {
+    display: block;
+  }
   body .page .main .right {
     border-right: 0px;
+  }
+  body .page .main .right .row .mediatab {
+    display: block;
   }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
     font-size: 1.286em;
