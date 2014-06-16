@@ -7,519 +7,439 @@
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page prototypes</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/generic/all.css">
-
-    <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
-    <!-- BOOTSTRAP -->
-
-</head>
-<body>
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<div class="page container">
-    <header>
-        <div class="row">
-            <div class="col-md-12 no-padding">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">EUScreen</a>
-                        </div>
-
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="index.html">HOME</a>
-                                </li>
-                                <li>
-                                    <a href="about.html">ABOUT</a>
-                                </li>
-                                <li>
-                                    <a href="myeuscreen.html">MYEUSCREEN</a>
-                                </li>
-                            </ul>
-                            <form class="navbar-form navbar-right" role="search">
+	<head>
+		
+		<!-- Meta-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>EUscreenXL - Search</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name='apple-mobile-web-app-capable' content='yes'>
+	
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="css/tmp/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/tmp/bootstrap-theme.min.css">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    <link rel="stylesheet" href="css/generic/all.css">
+	    <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+		    your browser</a> to improve your experience.</p>
+		<![endif]-->
+		
+		<!-- page -->
+		<div class="page">
+		
+		    <!-- wrap -->
+			<header>
+				<div class="navbar navbar-fixed-top" role="navigation">
+					<div class="container">
+						
+						<!-- header -->
+						<div class="navbar-header">
+							
+							<!-- menu icon -->
+							<div class="menuicon visible-xs pull-left">
+								<button type="button" class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
+							</div>
+							
+							<!-- search icon -->
+							<div class="searchicon visible-xs pull-right">
+								<button type="button" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+							</div>
+							
+							<!-- logo -->
+							<a class="navbar-brand" href="#"><span class="colorblack">EU</span>SCREEN</a>
+						</div>
+						
+						<!-- collapse -->
+						<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+							
+							<!-- navigation -->
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="about.html">ABOUT</a></li>
+								<li><a href="myeuscreen.html">MYEUSCREEN</a></li>
+							</ul>
+							
+							<!-- form -->
+							<form class="navbar-form navbar-left" role="search">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                    <input type="text" class="form-control" placeholder="Search the collection">
                                 </div>
-                                <button type="submit" class="btn btn-default">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                </button>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                             </form>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main class="search-results">
-        <div class="row">
-            <div class="col-md-8 search-results">
-                <div class="row search-bar">
-                    <div class="col-md-12 search-bar">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row search-bar-actions">
-                    <div class="col-md-12">
-                        <div class="navbar navbar-default">
-                            <div class="container-fluid">
-                                <ul class="nav navbar-nav navbar-left pull-left">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort by Title<b
-                                                class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Sort By Year</a></li>
-                                            <li><a href="#">Sort By X</a></li>
-                                            <li><a href="#">Sort By Y</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <div class="nav navbar-nav navbar-right" style="float: right">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                            data-target="#search-collapse">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                    <a class="navbar-brand" href="#">744 results</a>
-                                </div>
-                                <div class="collapse navbar-collapse" id="search-collapse">
-                                    <div class="nav navbar-nav navbar-left">
-                                        <button type="button" class="btn btn-default navbar-btn">All</button>
-                                        <button type="button" class="btn btn-default navbar-btn">
-                                            <span class="glyphicon glyphicon-facetime-video"></span>
-                                        </button>
-                                        <button type="button" class="btn btn-default navbar-btn">
-                                            <span class="glyphicon glyphicon-camera"></span>
-                                        </button>
-                                        <button type="button" class="btn btn-default navbar-btn">
-                                            <span class="glyphicon glyphicon-volume-up"></span>
-                                        </button>
-                                        <button type="button" class="btn btn-default navbar-btn">
-                                            <span class="glyphicon glyphicon-file"></span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.navbar -->
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-                <div class="row search-results-list">
-                    <div class="col-md-12">
-                        <div class="row media-item">
-                            <div class="media-image col-xs-4">
-                                <div class="media-wrapper">
-                                    <img class="media-object" width="100%"
-                                         src="http://images1.noterik.com/domain/euscreen/user/eu_kb/video/1773/shots/1/h/0/m/0/sec5.jpg"
-                                         alt="Airplanes">
-
-                                    <div class="media-type">
-                                        <span class="glyphicon glyphicon-file document"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="media-metadata col-xs-8">
-                                <h3 class="media-heading">Lorum Ipsum <span class="badge pull-right">Label</span></h3>
-                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
-                                <span class="label">Provider:</span><span class="value">BBC/United Kingdom</span><br/>
-                                <span class="label">Production year:</span><span class="value">1954</span><br/>
-                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
-                                <span class="label">Language:</span><span class="value">English</span>
-                            </div>
-                        </div>
-                        <div class="row media-item">
-                            <div class="media-image col-xs-4">
-                                <div class="media-wrapper">
-                                    <img class="media-object" width="100%"
-                                         src="http://images1.noterik.com/domain/euscreen/user/eu_kb/video/1949/shots/1/h/0/m/0/sec5.jpg"
-                                         alt="Airplanes">
-
-                                    <div class="media-type">
-                                        <span class="glyphicon glyphicon-camera picture"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="media-metadata col-xs-8">
-                                <h3 class="media-heading">Lorum Ipsum</h3>
-                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
-                                <span class="label">Provider:</span><span class="value">BBC/United Kingdom</span><br/>
-                                <span class="label">Production year:</span><span class="value">1954</span><br/>
-                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
-                                <span class="label">Language:</span><span class="value">English</span>
-                            </div>
-                        </div>
-                        <div class="row media-item">
-                            <div class="media-image col-xs-4">
-                                <div class="media-wrapper">
-                                    <img class="media-object" width="100%"
-                                         src="http://images3.noterik.com/domain/euscreenxl/user/eu_kb/video/EUS_043AFC4C04327651A45D3CBEC4201975/shots/1/h/0/m/0/sec5.jpg"
-                                         alt="Airplanes">
-
-                                    <div class="media-type">
-                                        <span class="video">01:12:44</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="media-metadata col-xs-8">
-                                <h3 class="media-heading">Lorum Ipsum</h3>
-                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
-                                <span class="label">Provider:</span><span class="value">BBC/United Kingdom</span><br/>
-                                <span class="label">Production year:</span><span class="value">1954</span><br/>
-                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
-                                <span class="label">Language:</span><span class="value">English</span>
-                            </div>
-                        </div>
-                        <div class="row media-item">
-                            <div class="media-image col-xs-4">
-                                <div class="media-wrapper">
-                                    <img class="media-object" width="100%"
-                                         src="http://images1.noterik.com/domain/euscreen/user/eu_kb/video/3146/shots/1/h/0/m/0/sec5.jpg"
-                                         alt="Airplanes">
-
-                                    <div class="media-type">
-                                        <span class="audio glyphicon glyphicon-volume-up"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="media-metadata col-xs-8">
-                                <h3 class="media-heading">Lorum Ipsum</h3>
-                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
-                                <span class="label">Provider:</span><span class="value">BBC/United Kingdom</span><br/>
-                                <span class="label">Production year:</span><span class="value">1954</span><br/>
-                                <span class="label">Original Title:</span><span class="value">Airplanes</span><br/>
-                                <span class="label">Language:</span><span class="value">English</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 refine-search">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Refine Search</h2>
-                    </div>
-                </div>
-                <div class="row active-filters">
-                    <div class="col-md-12">
-                        <div class="filter badge">
-                            <button class="btn btn-default btn-xs">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                            <span class="filter-label">Provider: BBC / United Kingdom</span>
-                        </div>
-                        <div class="filter badge">
-                            <button class="btn btn-default btn-xs">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                            <span class="filter-label">Language: English</span>
-                        </div>
-                        <div class="filter badge">
-                            <button class="btn btn-default btn-xs">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                            <span class="filter-label">Decade: 1960</span>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <button class="btn btn-default">
-                            <span>Clear all</span>
-                        </button>
-                    </div>
-                </div>
-                <!-- /.row.active-filters -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <button class="btn btn-default" data-toggle="collapse" data-target="#extra-filters"
-                                id="hide-extra-filters">
-                            <span class="glyphicon glyphicon-minus"></span>
-                            Less options
-                        </button>
-                    </div>
-                </div>
-                <div class="row basic-filters">
-                    <div class="col-md-12">
-                        <div class="panel-group" id="filter-accordion">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#filter-accordion"
-                                           href="#filter-language">
-                                            Language
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="filter-language" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <select multiple class="form-control">
-                                            <option>English</option>
-                                            <option>German</option>
-                                            <option>French</option>
-                                            <option>Chinese</option>
-                                            <option>Swahili</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#filter-accordion" href="#filter-decade">
-                                            Decade
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="filter-decade" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <select multiple class="form-control">
-                                            <option>1940's</option>
-                                            <option>1950's</option>
-                                            <option>1960's</option>
-                                            <option>1970's</option>
-                                            <option>1980's</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#filter-accordion" href="#filter-topic">
-                                            Topic
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="filter-topic" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <select multiple class="form-control">
-                                            <option>Bicycles</option>
-                                            <option>Worms</option>
-                                            <option>Haircuts</option>
-                                            <option>Plants</option>
-                                            <option>Music</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default extra-option">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#filter-accordion"
-                                           href="#filter-provider">
-                                            Provider
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="filter-provider" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <select multiple class="form-control">
-                                            <option>BBC</option>
-                                            <option>KB</option>
-                                            <option>DW</option>
-                                            <option>RTE</option>
-                                            <option>SASE</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default extra-option">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#filter-accordion"
-                                           href="#filter-publisher">
-                                            Publisher
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="filter-publisher" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <select multiple class="form-control">
-                                            <option>BBC</option>
-                                            <option>KB</option>
-                                            <option>DW</option>
-                                            <option>RTE</option>
-                                            <option>SASE</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default extra-option">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#filter-accordion" href="#filter-genre">
-                                            Genre
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="filter-genre" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <select multiple class="form-control">
-                                            <option>Documentary</option>
-                                            <option>TV-Show</option>
-                                            <option>News</option>
-                                            <option>Commercial</option>
-                                            <option>Movie</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default extra-option">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#filter-accordion"
-                                           href="#filter-country-production">
-                                            Country of production
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="filter-country-production" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <select multiple class="form-control">
-                                            <option>Germany</option>
-                                            <option>Sweden</option>
-                                            <option>The Netherlands</option>
-                                            <option>Belgium</option>
-                                            <option>Czech Republic</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row.basic-filters -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <button class="btn btn-default" id="show-extra-filters">
-                            <span class="glyphicon glyphicon-plus"></span>
-                            More options
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- /.col-md-4.refine-search -->
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            Did not find what you where looking for?
-                            <br/>
-                            <br/>
-                            Try out the similar search on EUROPEANA.
-                            <br/>
-                            <br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin metus ac neque
-                            suscipit, vel varius quam rutrum. Suspendisse nunc nisl, varius nec condimentum et, tempus
-                            non erat.
-                            Quisque in porttitor turpis, sed pulvinar quam. Fusce consectetur aliquam lectus et
-                            sagittis.
-                            Curabitur quis tempor diam. Proin imperdiet facilisis ipsum, quis pulvinar diam. Etiam
-                            mauris justo,
-                            consequat nec consequat non, tincidunt id mauris.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <button class="btn btn-default">Give it a go!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-    </main>
-    <footer>
-        <div class="row">
-            <div class="col-md-6">
-                <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
-            </div>
-            <div class="col-md-6">
-                <span class="links">
-                    <ul class="no-break">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="index.html">Terms of Use</a></li>
-                        <li><a href="index.html">Privacy</a></li>
-                        <li><a href="index.html">Contact</a></li>
-                    </ul>
-                </span>
-            </div>
-        </div>
-
-        <!-- Affiliate icons here -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="affiliates">
-                    <div class="affiliate-icon"></div>
-                    <div class="affiliate-icon"></div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
-
-<script src="js/vendor/jquery-1.10.2.min.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<!-- END BOOTSTRAP -->
-
-<script src="js/libs/SlidePanel/js/jquery.slide-panel.js"></script>
-
-<script src="js/vendor/promise-1.0.0.min.js"></script>
-
-<!-- header javascripts -->
-<script src="js/header.js"></script>
-
-<!-- footer javascripts -->
-<script src="js/footer.js"></script>
-
-<script src="js/libs/DeviceDetect/device-detect.js"></script>
-<script src="js/libs/Page/page.js"></script>
-
-<!-- page specific javascripts -->
-<script src="js/search-results.js"></script>
-
-</body>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<!-- main section-->
+		    <div class="container main search-results">
+		        <div class="row">
+		        	
+		        	<!-- left column -->
+		        	<div class="left col-md-4 col-sm-4">
+			        	
+			        	<!-- search bar -->
+			        	<div class="row">
+			        		<div class="searchbar col-md-12">
+		        				<i class="glyphicon glyphicon-search"></i>
+		        				<input type="text" class="form-control" placeholder="Enter search terms">
+			        		</div>
+			        	</div>
+			        	
+			        	<!-- selected filters -->
+			        	<div class="row">
+			        		<div class="selectedfilter col-md-12">
+		        				<span class="header">SELECTED FILTERS</span>
+		        				<div class="tags" id="tags">
+		        					<ul class="tag list-inline">
+		        						<li class="title">LANGUAGE</li>
+		        						<li class="content">ENGLISH</li>
+		        						<li class="action"><a href="#"><i class="glyphicon glyphicon-remove"></i></a></li>
+		        					</ul>
+		        					<ul class="tag list-inline">
+		        						<li class="title">DECADES</li>
+		        						<li class="content">1990</li>
+		        						<li class="action"><a href="#"><i class="glyphicon glyphicon-remove"></i></a></li>
+		        					</ul>
+		        					<ul class="tag list-inline">
+		        						<li class="title">PUBLISHER</li>
+		        						<li class="content">BBC</li>
+		        						<li class="action"><a href="#"><i class="glyphicon glyphicon-remove"></i></a></li>
+		        					</ul>
+		        				</div>
+			        		</div>
+			        	</div>
+			        	
+			        	<!-- filters -->
+			        	<div class="row">
+			        		<div class="filters col-md-12">
+			        			<span class="header">FILTERS</span>
+			        			<div class="accordion">
+			        				
+			        				<!-- Language -->
+			        				<div class="filter">
+				        				<a class="name" data-toggle="collapse" data-target="#languages">
+				        					LANGUAGES 
+				        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
+				        				</a>
+				        				<div id="languages" class="collapse filtercontent">
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> English </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> Italian </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> Spanish </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> Dutch </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+				        				</div>
+			        				</div>
+			        				
+			        				<!-- Decades -->
+			        				<div class="filter">
+				        				<a class="name" data-toggle="collapse" data-target="#decades">
+				        					DECADES
+				        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
+				        				</a>
+				        				<div id="decades" class="collapse filtercontent">
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> 2010 </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> 2000 </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> 1990 </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> 1980 </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+				        				</div>
+			        				</div>
+			        				
+			        				<!-- Topics -->
+			        				<div class="filter">
+				        				<a class="name" data-toggle="collapse" data-target="#topics">
+				        					TOPICS
+				        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
+				        				</a>
+				        				<div id="topics" class="collapse filtercontent">
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> Hollywood </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> History </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> War </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+					        				<div class="checkbox">
+					        					<label> <input type="checkbox" value=""> Sports </label>
+					        					<span class="label label-primary pull-right">23</span>
+					        				</div>
+				        				</div>
+			        				</div>
+			        				
+			        				<!-- Extra Filters -->
+			        				<div class="extrafilters collapse" id="extrafilters">
+			        				
+			        					<!-- Publisher -->
+				        				<div class="filter">
+					        				<a class="name" data-toggle="collapse" data-target="#publisher">
+					        					PUBLISHER
+					        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
+					        				</a>
+					        				<div id="publisher" class="collapse filtercontent">
+						        				<div class="checkbox">
+						        					<label> <input type="checkbox" value=""> 2010 </label>
+						        					<span class="label label-primary pull-right">23</span>
+						        				</div>
+						        				<div class="checkbox">
+						        					<label> <input type="checkbox" value=""> 2000 </label>
+						        					<span class="label label-primary pull-right">23</span>
+						        				</div>
+						        				<div class="checkbox">
+						        					<label> <input type="checkbox" value=""> 1990 </label>
+						        					<span class="label label-primary pull-right">23</span>
+						        				</div>
+						        				<div class="checkbox">
+						        					<label> <input type="checkbox" value=""> 1980 </label>
+						        					<span class="label label-primary pull-right">23</span>
+						        				</div>
+					        				</div>
+				        				</div>
+				        				
+				        				<!-- Country of production -->
+				        				<div class="filter">
+					        				<a class="name" data-toggle="collapse" data-target="#country">
+					        					COUNTRY OF PRODUCTION
+					        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
+					        				</a>
+					        				<div id="country" class="collapse filtercontent">
+						        				<div class="checkbox">
+						        					<label> <input type="checkbox" value=""> Hollywood </label>
+						        					<span class="label label-primary pull-right">23</span>
+						        				</div>
+						        				<div class="checkbox">
+						        					<label> <input type="checkbox" value=""> History </label>
+						        					<span class="label label-primary pull-right">23</span>
+						        				</div>
+						        				<div class="checkbox">
+						        					<label> <input type="checkbox" value=""> War </label>
+						        					<span class="label label-primary pull-right">23</span>
+						        				</div>
+						        				<div class="checkbox">
+						        					<label> <input type="checkbox" value=""> Sports </label>
+						        					<span class="label label-primary pull-right">23</span>
+						        				</div>
+					        				</div>
+				        				</div>
+			        				</div>
+			        				
+			        				<!-- More/Less Button -->
+			        				<div class="more">
+			        					<a data-toggle="collapse" id="show-extra-filters" data-target="#extrafilters">SHOW MORE</a>
+			        					<a data-toggle="collapse" id="hide-extra-filters" data-target="#extrafilters">SHOW LESS</a>
+			        				</div>
+			        			</div>
+			        		</div>
+			        	</div>
+			        	
+			        	<!-- ads -->
+			        	<div class="row">
+			        		<div class="ads  col-md-12 hidden-xs">
+			        			<span class="wrap">
+			        				<a href="http://www.europeana.eu" target="_blank">
+					        			<span class="text">
+						        			CANT FIND WHAT YOU'RE LOOKING FOR? TRY OUT SIMILAR
+						        			SEARCH ON EUROPEANA
+					        			</span>
+			        				</a>
+			        			</span>
+			        			<img src="img/img-ads.gif" class="img-responsive"/>
+			        		</div>
+			        	</div>
+			        </div>
+		        	
+		        	<!-- results -->
+		            <div class="right col-md-8 col-sm-8">
+		            	
+	            		<!-- media tab -->
+	            		<div class="row">
+	            			<div class="mediatab col-md-12">
+		            			<ul class="nav nav-tabs">
+		            				<li class="active"><a href="#">All</a></li>
+		            				<li><a href="#">Videos</a></li>
+		            				<li><a href="#">Images</a></li>
+		            				<li><a href="#">Audios</a></li>
+		            				<li><a href="#">Texts</a></li>
+		            			</ul>
+	            			</div>
+	            		</div>
+		            		
+		                <!-- result action -->
+		                <div class="row">
+		                	<div class="counter col-md-12">
+		                		<span class="pull-left"><span class="number">210</span> RESULTS</span>
+		                		<span class="pull-right">
+		                			<ul class="list-inline">
+		                				<li>SORT BY</li>
+		                				<li class="active"><a href="#">TITLE</a></li>
+		                				<li><a href="#">UPLOAD</a></li>
+		                			</ul>
+		                		</span>
+		                	</div>
+		                </div>
+			                
+		                <!-- results -->
+		                <div class="row">
+			                <div class="results col-md-12">
+			                
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                    <img class="media-object img-responsive" src="img/a.jpg" alt="Airplanes">
+		                                    <span class="media-length">
+		                                        12:32
+		                                    </span>
+		                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+		                                    <i class="media-type video"></i>
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <h3 class="media-heading">Lorem Ipsum</h3>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                	
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+		                                    <span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
+		                                    <i class="media-type text"></i>
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <h3 class="media-heading">Lorem Ipsum</h3>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                	
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+		                                    <span class="media-length">
+		                                        12:32
+		                                    </span>
+		                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+		                                    <span class="media-type audio"></span>
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <h3 class="media-heading">Lorem Ipsum</h3>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                	
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                    <img class="media-object img-responsive" src="img/b.jpg" alt="Airplanes">
+		                                    <span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
+		                                    <span class="media-type image"></span>		                                
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <h3 class="media-heading">Lorem Ipsum</h3>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    
+		    <!-- footer -->
+		    <footer class="hidden-xs">
+		    	<div class="container">
+		    		
+		    		<!-- footer content -->
+			        <div class="row">
+			            <div class="col-md-6 col-sm-7">
+			            	<span class="links">
+			                    <ul class="list-inline">
+			                        <li><a href="index.html">Home</a></li>
+			                        <li><a href="index.html">About</a></li>
+			                        <li><a href="index.html">Terms of Use</a></li>
+			                        <li><a href="index.html">Privacy</a></li>
+			                        <li><a href="index.html">Contact</a></li>
+			                    </ul>
+			                </span>
+			                <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
+			            </div>
+			            <div class="col-md-6 col-sm-5">
+			                <div class="affiliates">
+			                    <ul class="list-inline">
+			                    	<li class="europeana"></li>
+			                    	<li class="europeancomission"></li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </div>
+		    	</div>
+		    </footer>
+		</div>
+		
+		<!-- Scripts -->
+		<script src="js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/libs/SlidePanel/js/jquery.slide-panel.js"></script>
+		<script src="js/vendor/promise-1.0.0.min.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+		<script src="js/libs/DeviceDetect/device-detect.js"></script>
+		<script src="js/libs/Page/page.js"></script>
+		<script src="js/search-results.js"></script>
+	</body>
 </html>

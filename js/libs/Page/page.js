@@ -34,6 +34,8 @@ EUScreenXL.Page.prototype._bindEvents = function () {
 };
 EUScreenXL.Page.prototype._addDeviceSpecificStylesheet = function () {
     console.log("Page.prototpye._addDeviceSpecificStylesheet()");
+    
+    console.log("DEVICE: "+this.device );
     var head = jQuery('head');
     var genericStyleElement = jQuery('<link rel="stylesheet" href="css/generic/' + this.device + '.css">');
     var stylesForPageForAllDevices = jQuery('<link rel="stylesheet" href="css/' + this.name + '/all.css">')

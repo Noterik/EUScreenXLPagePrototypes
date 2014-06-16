@@ -4,7 +4,3 @@
 * This file contains the generic rules for tablet devices, these rules should be applied for all pages on
 * tablet devices. However, rules may be overwritten in page specific cases.
 */
-.page.tablet {
-    width: 100%;
-    max-width: none;
-}

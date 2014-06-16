@@ -1,0 +1,214 @@
+/**
+* responsive.less
+*
+* This file contains the the specific stylesheets for different devices
+* Try to reuse a lot of built-in bootstrap's utilities for responsiveness (http://getbootstrap.com/css/#grid & http://getbootstrap.com/css/#responsive-utilities)
+* NOTE: it's only temporary, since euscreenxl is using JS to ingest specific stylesheets for different devices
+* It is imported in generic/all.less
+*/
+
+
+/* Extra small devices (mobiles, 480px and up) */
+@media (min-width: @screen-xs-min) {
+	
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	
+	// ze body
+	body {
+		margin-bottom: 183px; // le height of the footer	
+		
+		// the content
+		.page {
+	
+			// header
+			header {
+				
+				// navbar
+				.navbar {
+					border-bottom: 0px; // remove bottom border
+					
+					// remove container padding on big display -> edge to edge
+					.container {
+						padding-left: 0px;
+						padding-right: 0px;
+						
+						// header
+						.navbar-header {
+							
+							// the logo
+							a.navbar-brand {
+								margin-left: -15px;
+							}
+						}
+					}
+				}
+			}
+			
+			// main
+			.main {
+				padding-top: 76px; // make the top and bottom padding bigger in big devices
+				padding-bottom: 50px;
+				
+				// refine
+				.left {
+					
+					// wrap
+					.row {
+						
+						// searchbar
+						.searchbar {
+							
+							// form input
+							.form-control {
+								font-size: 1.071em;
+							}
+						}
+						
+						// selected filter
+						.selectedfilter {
+							
+							// tags
+							.tags {
+								
+								// tag
+								.tag {
+									margin: 0 5px 4px 0;
+									li {
+										font-size: 0.786em;
+										padding: 2px 10px 1px 10px;
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				// results
+				.right {
+					border-right: 0px;
+					
+					// row
+					.row {
+						
+						// result
+						.results {
+							.media-item {
+								.media-metadata {
+									h3.media-heading {
+										font-size: 1.286em;
+									}
+									.line {
+										margin-bottom: 4px;
+										margin: 0 0 -1px 0;
+										font-size: 0.929em;
+										
+										.label {
+											font-size: 0.929em;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+	
+	// ze body
+	body {
+		
+		// main page
+		.page {
+			
+			// header
+			header {
+				
+				// navbar
+				.navbar {
+					
+					// form
+					.navbar-form {
+						border-right: 1px solid @background-color;
+						
+						// form group
+						.form-group {
+							margin-left: 30px;
+							
+							// icon 
+							.glyphicon-search {
+								display: inline-block;
+							}
+							
+							// form control
+							.form-control {
+								width: 280px;
+							}
+						}
+					}
+				}
+			}
+			
+			// main
+			.main {
+			
+				// results
+				.right {
+					
+					// row
+					.row {
+						
+						// result
+						.results {
+							.media-item {
+								.media-metadata {
+									h3.media-heading {
+										margin-bottom: 8px;
+									}
+									.line {
+										font-size: 1em;
+										margin-bottom: 4px;
+										
+										.label {
+											font-size: 1em;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			// header
+			footer {
+				
+				// affiliates
+				.affiliates {
+										
+					// logo
+					.list-inline {
+						
+						// general
+						li {
+							margin-left: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 
+	
+}

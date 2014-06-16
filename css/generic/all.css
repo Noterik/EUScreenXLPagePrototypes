@@ -1,36 +1,379 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
 /**
-* generic.less
+* variables.less
+*
+* This file contains the variables that will be used throughout the stylesheets (LESS)
+* Things like general font size, colors and font family can be change here, without messing with the individual CSS
+* It is imported in all less files that needs it
+*/
+/**
+* mixins.less
+*
+* This file contains the the predefined CSS classes/functions that can be used in other LESS files
+* to avoid typing the same CSS styles (reusing)
+* It is imported in all less files that needs it
+*/
+/**
+* all.less
 *
 * This file contains the generic styles which are to be applied on all devices for EUScreenXLPagePrototypes.
 * Certain device may override these styles in their own stylesheet.
 */
-.euscr-popup {
-    display: none;
+a {
+  color: #00aeef;
+  cursor: pointer;
 }
+a:hover {
+  color: #008dc1;
+  text-decoration: none;
+}
+a:active {
+  color: #006b93;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+input {
+  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.colorblack {
+  color: #000000;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+html,
+body {
+  font-size: 14px;
+  line-height: 1.5em;
+  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f2f2f2;
+}
+.page header .navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  height: 70px;
+}
+.page header .navbar ul li a {
+  font-size: 1.071em;
+  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  color: #808080;
+  padding: 25px 30px 0px 30px;
+  border-right: 1px solid #f2f2f2;
+  height: 70px;
+}
+.page header .navbar ul li a:hover {
+  background: none;
+  color: #00aeef;
+}
+.page header .navbar ul li:first-child a {
+  border-left: 1px solid #f2f2f2;
+}
+.page header .navbar ul li:last-child {
+  padding: 17px 0 0 30px;
+}
+.page header .navbar ul li:last-child a {
+  padding: 7px 25px 9px 25px;
+  background-color: #00aeef;
+  height: auto;
+  color: #ffffff;
+  border-radius: 3px;
+  border-right: none;
+  transition: background-color 0.2s ease-out;
+}
+.page header .navbar ul li:last-child a:hover {
+  transition: background-color 0.3s ease-out;
+  background-color: #0090c6;
+}
+.page header .navbar .navbar-header {
+  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  border-right: 1px solid #f2f2f2;
+  height: 70px;
+  text-align: center;
+}
+.page header .navbar .navbar-header a.navbar-brand {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.571em;
+  height: auto;
+  color: #00aeef;
+  padding-top: 25px;
+  font-weight: 600;
+  float: none;
+}
+.page header .navbar .navbar-header .menuicon button {
+  height: 70px;
+  border-radius: 0px;
+  background: none;
+  width: 70px;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  line-height: normal;
+  border-left: 0px;
+  font-size: 1.5em;
+  color: #555555;
+}
+.page header .navbar .navbar-header .menuicon button:active {
+  background: #00aeef;
+  box-shadow: none;
+  color: #fff;
+  border-left: 1px solid #00aeef;
+  border-right: 1px solid #00aeef;
+}
+.page header .navbar .navbar-header .searchicon button {
+  height: 70px;
+  border-radius: 0px;
+  background: none;
+  width: 70px;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  line-height: normal;
+  border-right: 0px;
+  font-size: 1.5em;
+  color: #555555;
+  margin-right: -1px;
+}
+.page header .navbar .navbar-header .searchicon button:active {
+  background: #00aeef;
+  box-shadow: none;
+  color: #fff;
+  border-left: 1px solid #00aeef;
+  border-right: 1px solid #00aeef;
+}
+.page header .navbar .navbar-form {
+  padding: 8px 0 0 0;
+  margin: 0;
+  height: 70px;
+}
+.page header .navbar .navbar-form .form-group {
+  margin: 0 10px 0 20px;
+}
+.page header .navbar .navbar-form .form-group .form-control {
+  height: 54px;
+  width: 157px;
+  padding: 0px;
+  font-size: 1.071em;
+  line-height: inherit;
+  border-radius: 0px;
+  border: 0px;
+  box-shadow: none;
+}
+.page header .navbar .navbar-form .form-group .form-control:-moz-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.page header .navbar .navbar-form .form-group .form-control::-moz-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.page header .navbar .navbar-form .form-group .form-control:-ms-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.page header .navbar .navbar-form .form-group .form-control::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+select.page header .navbar .navbar-form .form-group .form-control {
+  height: 54px;
+  line-height: 54px;
+}
+textarea.page header .navbar .navbar-form .form-group .form-control {
+  height: auto;
+}
+.page header .navbar .navbar-form .form-group .glyphicon-search {
+  color: #00aeef;
+  font-size: 1.2em;
+  margin: 16px 20px 0 0;
+  display: none;
+  float: left;
+}
+.page header .navbar .navbar-form button {
+  display: none;
+}
+.page .main {
+  padding-top: 70px;
+}
+.page footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 183px;
+  background-color: #ffffff;
+}
+.page footer [class*='col-'] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.page footer .links {
+  display: block;
+  padding: 55px 0 0 0;
+}
+.page footer .links .list-inline li {
+  margin: 0 10px 0 0;
+}
+.page footer .links .list-inline li a {
+  color: #787878;
+}
+.page footer .affiliates {
+  text-align: right;
+  padding-top: 40px;
+}
+.page footer .affiliates .list-inline li {
+  margin-left: 10px;
+}
+.page footer .affiliates .list-inline .europeancomission {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
 
-.no-padding {
+  filter: gray;
+  /* IE6-9 */
+
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+
+  -webkit-transition: all .35s ease;
+  /* Fade to color for Chrome and Safari */
+
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+
+  -moz-transition: all .35s ease;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  background: url("../../img/sprites.png");
+  width: 117px;
+  height: 82px;
+  display: inline-block;
+}
+.page footer .affiliates .list-inline .europeancomission:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+  opacity: 100;
+  filter: alpha(opacity=10000);
+}
+.page footer .affiliates .list-inline .europeana {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
+
+  filter: gray;
+  /* IE6-9 */
+
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+
+  -webkit-transition: all .35s ease;
+  /* Fade to color for Chrome and Safari */
+
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+
+  -moz-transition: all .35s ease;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  background: url("../../img/sprites.png") -117px 0;
+  width: 136px;
+  height: 80px;
+  display: inline-block;
+}
+.page footer .affiliates .list-inline .europeana:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+  opacity: 100;
+  filter: alpha(opacity=10000);
+}
+.page footer .footer-note {
+  color: #787878;
+}
+/**
+* responsive.less
+*
+* This file contains the the specific stylesheets for different devices
+* Try to reuse a lot of built-in bootstrap's utilities for responsiveness (http://getbootstrap.com/css/#grid & http://getbootstrap.com/css/#responsive-utilities)
+* NOTE: it's only temporary, since euscreenxl is using JS to ingest specific stylesheets for different devices
+* It is imported in generic/all.less
+*/
+/* Extra small devices (mobiles, 480px and up) */
+@media (min-width: 480px) {
+  
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    margin-bottom: 183px;
+  }
+  body .page header .navbar {
+    border-bottom: 0px;
+  }
+  body .page header .navbar .container {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  body .page header .navbar .container .navbar-header a.navbar-brand {
+    margin-left: -15px;
+  }
+  body .page .main {
+    padding-top: 76px;
+    padding-bottom: 50px;
+  }
+  body .page .main .left .row .searchbar .form-control {
+    font-size: 1.071em;
+  }
+  body .page .main .left .row .selectedfilter .tags .tag {
+    margin: 0 5px 4px 0;
+  }
+  body .page .main .left .row .selectedfilter .tags .tag li {
+    font-size: 0.786em;
+    padding: 2px 10px 1px 10px;
+  }
+  body .page .main .right {
+    border-right: 0px;
+  }
+  body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
+    font-size: 1.286em;
+  }
+  body .page .main .right .row .results .media-item .media-metadata .line {
+    margin-bottom: 4px;
+    margin: 0 0 -1px 0;
+    font-size: 0.929em;
+  }
+  body .page .main .right .row .results .media-item .media-metadata .line .label {
+    font-size: 0.929em;
+  }
 }
-
-ul.no-break {
-    margin: 0 0;
-    list-style: none;
-}
-
-ul.no-break li {
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body .page header .navbar .navbar-form {
+    border-right: 1px solid #f2f2f2;
+  }
+  body .page header .navbar .navbar-form .form-group {
+    margin-left: 30px;
+  }
+  body .page header .navbar .navbar-form .form-group .glyphicon-search {
     display: inline-block;
+  }
+  body .page header .navbar .navbar-form .form-group .form-control {
+    width: 280px;
+  }
+  body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
+    margin-bottom: 8px;
+  }
+  body .page .main .right .row .results .media-item .media-metadata .line {
+    font-size: 1em;
+    margin-bottom: 4px;
+  }
+  body .page .main .right .row .results .media-item .media-metadata .line .label {
+    font-size: 1em;
+  }
+  body .page footer .affiliates .list-inline li {
+    margin-left: 30px;
+  }
 }
-
-.page {
-    height: auto;
-}
-
-.page header nav ul {
-    list-style: none;
-}
-
-.page main .label {
-    margin: 0 5px 0 0;
-    color: dodgerblue;
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
 }

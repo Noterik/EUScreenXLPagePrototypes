@@ -1,17 +1,389 @@
-.row.media-item {
-  margin-top: 10px;
+// Import generic variables
+@import "../generic/variables.less";
+@import "../generic/mixins.less";
 
-  .media-wrapper {
-    position: relative;
+/**
+* all.less
+*
+* This file contains the search results styles which are to be applied on all devices specifically for search results page.
+* Certain device may override these styles in their own stylesheet.
+*/
 
-    .media-type {
-      position: absolute;
-      right: 5px;
-      bottom: 5px;
-      color: white;
-      padding: 2px 5px 2px 5px;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-  }
-
+// main
+.page {
+	
+	// header
+	header {
+		
+		// navbar
+		.navbar {
+			
+			// form
+			.navbar-form {
+				display: none;
+			}
+		}
+	}
+	
+	// main
+	.main {
+		
+		// refine
+		.left {
+			
+			// wrap
+			.row {
+				
+				// remove column padding
+				.removeColumnPadding();
+				
+				// header
+				.header {
+					display: block;
+					padding: 25px 25px 10px 25px;
+					font-size: 0.857em;
+					color: @euscreen-gray;
+				}
+				
+				// searchbar
+				.searchbar {
+					background: @euscreen-white;
+					height: 65px;
+					
+					// form input
+					.form-control {
+						.placeholder(#d2d2d2,italic);
+						.input-size(100%; 75%; 1.5em ; inherit; 0px; 0px ; inherit; none);
+					}
+					
+					// search icon
+					.glyphicon-search {
+						color: @euscreen-blue;
+						font-size: 1.3em;
+						margin: 21px 15px 0 25px; 
+						float: left;
+					}
+				}
+				
+				// selected filter
+				.selectedfilter {
+					background: @euscreen-white;
+					margin: 1px 0 0 0;
+					width: 100%;
+					
+					// tags
+					.tags {
+						padding: 0 25px 25px 25px;
+						
+						// tag
+						.tag {
+							display: inline-block;
+							margin: 0 6px 5px 0;
+							
+							li {
+								display: inline-block;
+								padding: 2px 10px 1px 10px;
+								font-size: 1em;
+								color: @euscreen-white;
+								margin-right: -4px; // remove space between inline-block
+							}
+							.title {
+								background: @euscreen-green;
+							}
+							.content {
+								background: @euscreen-lightgreen;
+								padding-right: 5px;
+							}
+							.action {
+								background: @euscreen-lightgreen;
+								padding-left: 5px;
+								a {
+									color: @euscreen-white;
+								}
+								
+							}
+						}
+					}
+				}
+				
+				// filter
+				.filters {
+					background: @euscreen-white;
+					margin: 1px 0 6px 0;
+					width: 100%;
+					
+					// header
+					a.name {
+						border-top:1px solid @border-color;
+						width: 100%;
+						display: block;
+						cursor: pointer;
+						font-size: 1.071em;
+						padding: 20px 25px 18px 25px;
+						color: @gray;
+					}
+					
+					// content
+					.filtercontent {
+						border-top:1px solid @border-color;
+						
+						.checkbox {
+							padding: 11px 25px 8px 42px;
+							margin:0px;
+							
+							// label
+							label {
+								width: 80%;
+								display: inline-block;
+							}
+							
+							// counter
+							.label {
+								border-radius: 0px;
+								box-shadow: none;
+								background: @euscreen-green;
+								padding: 5px 7px 3px;
+								margin-top:2px;	
+							}
+							
+							// on hover
+							&:hover, &.selected {
+								background: @euscreen-lightgreen;
+								label {
+									color: @euscreen-white;
+								}
+								.label {
+									background: @euscreen-white;
+									color: @euscreen-green;
+								}
+							}
+						}
+					}
+					
+					// more
+					.more {
+						font-family: @font-family-monospace;
+						text-align: center;
+						border-top:1px solid @border-color;
+						padding: 20px 0 20px 0;
+						
+						// button
+						#hide-extra-filters {
+							display: none;
+						}
+					}
+				}
+				
+				// ads
+				.ads {
+					.advertising();
+				}
+			}
+		}
+		
+		// results
+		.right {
+		
+			// create spacing on the left side, has to be the same with the background color
+			border-left: 6px solid @background-color; 
+			border-right: 6px solid @background-color; 
+			
+			// wrap
+			.row {
+			
+				// result
+				.mediatab {
+					padding-left: 0px;
+					padding-right: 0px;
+					background: @euscreen-white;
+					border-bottom: 5px solid @euscreen-blue;
+					
+					// tab
+					.nav {
+						margin-top:0px;
+						border:0px;
+						
+						// list
+						li {
+							margin:0px;
+							
+							a {
+								font-family: @font-family-monospace;
+								border:0px;
+								border-right: 1px solid @border-color;
+								border-radius: 0px;
+								margin:0px;
+								height: 60px;
+								line-height: inherit;
+								font-size: 1.071em;
+								color: @euscreen-gray;
+								padding: 20px;
+								
+								&:hover {
+									background: @euscreen-blue;
+									border-radius: 0px;
+									border-right: 1px solid @euscreen-blue;
+									color: @euscreen-white;
+									font-family: @font-family-monospace;
+								}
+							}
+							
+							// active
+							&.active {
+								a {
+									background: @euscreen-blue;
+									border-radius: 0px;
+									border-right: 1px solid @euscreen-blue;
+									color: @euscreen-white;
+									font-family: @font-family-monospace;
+								}
+							}
+						}
+					}
+				}
+				
+				// counter
+				.counter {
+					.clearfix;
+					background: #fff;
+					height: 60px;
+					font-size: 0.929em;
+					color: @euscreen-gray;
+					margin:6px 0 0 0;
+					padding-left: 20px;
+					padding-right: 20px;
+					
+					// left
+					.pull-left {
+						margin: 20px 0 0 0;
+						.number {
+							color: @euscreen-blue;
+							font-weight: bold;
+						}
+					}
+					
+					// right
+					.pull-right {
+						margin-top:8px;
+						ul {
+							li {
+								padding-right: 0px;
+								padding-left: 10px;
+								a {
+									color: @euscreen-gray;
+								}
+								&.active {
+									a {
+										color: @euscreen-blue;
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				// results
+				.results {
+					background: #fff;
+					margin: 1px 0 0 0;
+					padding-left: 20px;
+					padding-right: 20px;
+					padding-bottom: 20px;
+					
+					// media item
+					.media-item {
+						padding-top:20px;
+						
+						// metadata
+						.media-metadata {
+							padding-left: 0px;
+							color:@gray-dark;
+							
+							h3.media-heading {
+								font-size: 1.429em;
+								font-weight: bold;
+								margin: 0 0 9px 0;
+							}
+							.line {
+								display: block;
+								margin: 0 0 5px 0;
+								font-size: 1.071em;
+								.label {
+									color: @euscreen-gray;
+									font-weight: normal;
+									padding-left: 0px;
+									font-size: 1.143em;
+								}
+							}
+						}
+						
+						// thumbnails
+						.media-wrapper {
+							position: relative;
+							
+							// media
+							.media-object {
+								width: 100%;
+							}
+							
+							// type
+							.media-length {
+								position: absolute;
+								bottom: 10px;
+								left: 10px;
+								border-radius: 3px;
+								border:1px solid @euscreen-white;
+								color: @euscreen-white;
+								padding: 1px 6px 1px 6px;
+								line-height: 1.48em;
+								font-size: 0.857em;
+								background: rgba(0, 0, 0, 0.1);
+								font-family: @font-family-monospace;
+								z-index: 7;
+							}
+							
+							// media type
+							.media-type {
+								.medias();
+								bottom: 14px;
+								right: 10px;
+								z-index: 7;
+							}
+							
+							// hue
+							.media-hue {
+								background: @euscreen-rgba-green-60;
+								position: absolute;
+								z-index: 2;
+								top:0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								color: @euscreen-white;
+								text-align: center;
+								font-size: 1.8em;
+								opacity: 0;
+								transition: opacity 0.35s;
+								
+								// align vertically
+								i {
+									top:50%;
+									margin-top:-20px;
+								}
+							}
+						}
+						
+						// hover
+						&:hover {
+							.media-wrapper {
+								.media-hue {
+									opacity: 1;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
 }
