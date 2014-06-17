@@ -13,9 +13,9 @@
 	
 }
 
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
+	
 	
 	// ze body
 	body {
@@ -62,10 +62,17 @@
 						// searchbar
 						.searchbar {
 							display: block;
+							border-bottom: 0px;
 							
 							// form input
 							.form-control {
 								font-size: 1.071em;
+								margin-left: 0px;
+							}
+							
+							// icon
+							.glyphicon-search  {
+								display: block;
 							}
 						}
 						
@@ -114,8 +121,7 @@
 										font-size: 1.286em;
 									}
 									.line {
-										margin-bottom: 4px;
-										margin: 0 0 -1px 0;
+										margin: 0 0 0 0;
 										font-size: 0.929em;
 										
 										.label {
@@ -124,6 +130,11 @@
 									}
 								}
 							}
+						}
+						
+						// counter
+						.counter {
+							font-size: 0.929em;
 						}
 					}
 				}
@@ -146,6 +157,21 @@
 				
 				// navbar
 				.navbar {
+					
+					// remove container padding on big display -> edge to edge
+					.container {
+						padding-left: 0px;
+						padding-right: 0px;
+						
+						// header
+						.navbar-header {
+							
+							// the logo
+							a.navbar-brand {
+								margin-right: 15px;
+							}
+						}
+					}
 					
 					// form
 					.navbar-form {
@@ -187,7 +213,7 @@
 									}
 									.line {
 										font-size: 1em;
-										margin-bottom: 4px;
+										margin-bottom: 2px;
 										
 										.label {
 											font-size: 1em;
