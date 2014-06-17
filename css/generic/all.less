@@ -1,6 +1,6 @@
 // Import generic variables
-@import "../generic/variables.less";
-@import "../generic/mixins.less";
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
 
 /**
 * all.less
@@ -35,7 +35,7 @@ input {
 
 // colors
 .colorblack { color: @euscreen-black; }
-
+.colorgray { color: @euscreen-gray; }
 
 // main style
 html {
@@ -93,7 +93,7 @@ html, body {
 						padding:17px 0 0 30px;
 						
 						a {
-							padding: 7px 25px 9px 25px;
+							padding: 7px 26px 8px 26px;
 							background-color: @euscreen-blue;
 							height: auto;
 							color: @euscreen-white;
@@ -166,8 +166,8 @@ html, body {
 					
 					// input
 					.form-control {
-						.placeholder(#d2d2d2,italic);
-						.input-size(54px; 157px; 1.071em ; inherit; 0px; 0px; 0px; none);
+						.placeholderItalic(#d2d2d2,italic);
+						.inputStyling(54px; 157px; 1.071em ; inherit; 0px; 0px; 0px; none);
 					}
 					
 					// magnifying icon
@@ -265,4 +265,4 @@ html, body {
 }
 
 // Import responsive variables (temporary, until js is fix)
-@import "../generic/responsive.less";
+@import "../bootstrap/responsive-euscreen.less";

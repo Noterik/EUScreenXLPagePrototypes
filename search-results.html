@@ -18,9 +18,8 @@
     	<meta name='apple-mobile-web-app-capable' content='yes'>
 	
 	    <!-- CSS -->
-	    <link rel="stylesheet" href="css/tmp/bootstrap.min.css">
-	    <link rel="stylesheet" href="css/tmp/bootstrap-theme.min.css">
-	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+	    <link rel="stylesheet" href="css/bootstrap/theme.css">	    
 	    <link rel="stylesheet" href="css/main.css">
 	    <link rel="stylesheet" href="css/generic/all.css">
 	    <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
@@ -102,17 +101,17 @@
 		        					<ul class="tag list-inline">
 		        						<li class="title">LANGUAGE</li>
 		        						<li class="content">ENGLISH</li>
-		        						<li class="action"><a href="#"><i class="glyphicon glyphicon-remove"></i></a></li>
+		        						<li class="action"><a href="#">X</a></li>
 		        					</ul>
 		        					<ul class="tag list-inline">
 		        						<li class="title">DECADES</li>
 		        						<li class="content">1990</li>
-		        						<li class="action"><a href="#"><i class="glyphicon glyphicon-remove"></i></a></li>
+		        						<li class="action"><a href="#">X</a></li>
 		        					</ul>
 		        					<ul class="tag list-inline">
 		        						<li class="title">PUBLISHER</li>
 		        						<li class="content">BBC</li>
-		        						<li class="action"><a href="#"><i class="glyphicon glyphicon-remove"></i></a></li>
+		        						<li class="action"><a href="#">X</a></li>
 		        					</ul>
 		        				</div>
 			        		</div>
@@ -304,11 +303,15 @@
 		                	<div class="counter col-md-12">
 		                		<span class="pull-left"><span class="number">210</span> RESULTS</span>
 		                		<span class="pull-right">
-		                			<ul class="list-inline">
-		                				<li>SORT BY</li>
-		                				<li class="active"><a href="#">TITLE</a></li>
-		                				<li><a href="#">UPLOAD</a></li>
-		                			</ul>
+		                			<div class="dropdown">
+										<a role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+									    	<span class="colorgray">SORT BY</span> TITLE <span class="caret"></span>
+									    </a>
+									    <ul id="sortBy" class="dropdown-menu pull-right" role="menu" aria-labelledby="sortBy">
+			                				<li><a href="#" value="TITLE">TITLE</a></li>
+			                				<li><a href="#" value="UPLOAD DATE">UPLOAD DATE</a></li>
+			                			</ul>
+		                			</div>
 		                		</span>
 		                	</div>
 		                </div>
@@ -322,7 +325,7 @@
 			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
 		                                <div class="media-wrapper">
 		                                	<a href="#">
-			                                    <img class="media-object img-responsive" src="img/a.jpg" alt="Airplanes">
+			                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
 			                                    <span class="media-length">
 			                                        12:32
 			                                    </span>
@@ -388,7 +391,7 @@
 			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
 		                                <div class="media-wrapper">
 		                                	<a href="#">
-		                                    	<img class="media-object img-responsive" src="img/b.jpg" alt="Airplanes">
+		                                    	<img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
 		                                    	<span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
 		                                    	<span class="media-type image"></span>
 		                                	</a>		                                

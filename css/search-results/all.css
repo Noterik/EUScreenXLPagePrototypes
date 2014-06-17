@@ -1,19 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
 /**
-* variables.less
-*
-* This file contains the variables that will be used throughout the stylesheets (LESS)
-* Things like general font size, colors and font family can be change here, without messing with the individual CSS
-* It is imported in all less files that needs it
-*/
-/**
-* mixins.less
-*
-* This file contains the the predefined CSS classes/functions that can be used in other LESS files
-* to avoid typing the same CSS styles (reusing)
-* It is imported in all less files that needs it
-*/
-/**
 * all.less
 *
 * This file contains the search results styles which are to be applied on all devices specifically for search results page.
@@ -35,7 +21,7 @@
 .page .main .left .row .searchbar {
   background: #ffffff;
   height: 65px;
-  display: none;
+  border-bottom: 5px solid #00aeef;
 }
 .page .main .left .row .searchbar .form-control {
   height: 100%;
@@ -46,14 +32,12 @@
   border-radius: 0px;
   border: 0px;
   box-shadow: none;
-}
-.page .main .left .row .searchbar .form-control:-moz-placeholder {
-  color: #d2d2d2;
-  font-style: italic;
+  margin-left: 23px;
 }
 .page .main .left .row .searchbar .form-control::-moz-placeholder {
   color: #d2d2d2;
   font-style: italic;
+  opacity: 1;
 }
 .page .main .left .row .searchbar .form-control:-ms-input-placeholder {
   color: #d2d2d2;
@@ -75,6 +59,7 @@ textarea.page .main .left .row .searchbar .form-control {
   font-size: 1.3em;
   margin: 21px 15px 0 25px;
   float: left;
+  display: none;
 }
 .page .main .left .row .selectedfilter {
   background: #ffffff;
@@ -105,7 +90,7 @@ textarea.page .main .left .row .searchbar .form-control {
 }
 .page .main .left .row .selectedfilter .tags .tag .action {
   background: #a8d46d;
-  padding-left: 5px;
+  font-weight: bold;
 }
 .page .main .left .row .selectedfilter .tags .tag .action a {
   color: #ffffff;
@@ -140,8 +125,8 @@ textarea.page .main .left .row .searchbar .form-control {
   border-radius: 0px;
   box-shadow: none;
   background: #a8d46d;
-  padding: 5px 7px 3px;
-  margin-top: 2px;
+  padding: 4px 7px 4px 7px;
+  margin-top: 1px;
 }
 .page .main .left .row .filters .filtercontent .checkbox:hover,
 .page .main .left .row .filters .filtercontent .checkbox.selected {
@@ -234,6 +219,7 @@ textarea.page .main .left .row .searchbar .form-control {
   font-size: 1.071em;
   color: #808080;
   padding: 20px;
+  transition: background 0.2s;
 }
 .page .main .right .row .mediatab .nav li a:hover {
   background: #00aeef;
@@ -251,44 +237,49 @@ textarea.page .main .left .row .searchbar .form-control {
 }
 .page .main .right .row .counter {
   background: #fff;
-  height: 60px;
-  font-size: 0.929em;
+  font-size: 1.429em;
+  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
   color: #808080;
   margin: 6px 0 0 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 .page .main .right .row .counter:before,
 .page .main .right .row .counter:after {
   content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
 }
 .page .main .right .row .counter:after {
   clear: both;
-}
-.page .main .right .row .counter .pull-left {
-  margin: 20px 0 0 0;
 }
 .page .main .right .row .counter .pull-left .number {
   color: #00aeef;
   font-weight: bold;
 }
-.page .main .right .row .counter .pull-right {
-  margin-top: 8px;
+.page .main .right .row .counter .pull-right ul.dropdown-menu {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 1px 1px 0px 1px;
+  font-size: 1em;
 }
-.page .main .right .row .counter .pull-right ul li {
-  padding-right: 0px;
-  padding-left: 10px;
+.page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a,
+.page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a:hover,
+.page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a:active {
+  background-color: #00aeef;
+  background-image: none;
+  color: #ffffff;
 }
-.page .main .right .row .counter .pull-right ul li a {
+.page .main .right .row .counter .pull-right ul.dropdown-menu a {
   color: #808080;
+  margin-bottom: 1px;
 }
-.page .main .right .row .counter .pull-right ul li.active a {
-  color: #00aeef;
+.page .main .right .row .counter .pull-right ul.dropdown-menu a:hover {
+  background-color: #00aeef;
+  background-image: none;
+  color: #ffffff;
 }
 .page .main .right .row .results {
   background: #fff;
@@ -301,19 +292,20 @@ textarea.page .main .left .row .searchbar .form-control {
   padding-top: 20px;
 }
 .page .main .right .row .results .media-item .media-metadata {
-  padding-left: 0px;
+  padding-left: 5px;
   color: #333333;
 }
 .page .main .right .row .results .media-item .media-metadata a h3.media-heading {
-  font-size: 1.429em;
-  font-weight: bold;
-  margin: 0 0 9px 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: -4px 0 9px 0;
   color: #333333;
   transition: color 0.35s;
+  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
 }
 .page .main .right .row .results .media-item .media-metadata .line {
   display: block;
-  margin: 0 0 5px 0;
+  margin: 0 0 2px 0;
   font-size: 1.071em;
 }
 .page .main .right .row .results .media-item .media-metadata .line .label {
@@ -386,8 +378,11 @@ textarea.page .main .left .row .searchbar .form-control {
   transition: opacity 0.35s;
 }
 .page .main .right .row .results .media-item .media-wrapper .media-hue i {
+  display: block;
   top: 50%;
-  margin-top: -20px;
+  left: 50%;
+  margin: -15px 0 0 -12px;
+  position: absolute;
 }
 .page .main .right .row .results .media-item:hover .media-wrapper .media-hue {
   opacity: 1;
@@ -401,6 +396,7 @@ textarea.page .main .left .row .searchbar .form-control {
   border-top: 1px solid #f2f2f2;
   padding: 23px 0 23px 0;
   background: #fff;
+  margin-bottom: 6px;
 }
 .page .main .right .row .more a {
   color: #808080;

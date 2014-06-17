@@ -1,6 +1,6 @@
-// Import generic variables
-@import "../generic/variables.less";
-@import "../generic/mixins.less";
+// Import generic variables & mixins
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
 
 /**
 * all.less
@@ -49,12 +49,13 @@
 				.searchbar {
 					background: @euscreen-white;
 					height: 65px;
-					display: none;
+					border-bottom: 5px solid @euscreen-blue;
 					
 					// form input
 					.form-control {
-						.placeholder(#d2d2d2,italic);
-						.input-size(100%; 75%; 1.5em ; inherit; 0px; 0px ; inherit; none);
+						.placeholderItalic(#d2d2d2,italic);
+						.inputStyling(100%; 75%; 1.5em ; inherit; 0px; 0px ; inherit; none);
+						margin-left: 23px;
 					}
 					
 					// search icon
@@ -63,6 +64,7 @@
 						font-size: 1.3em;
 						margin: 21px 15px 0 25px; 
 						float: left;
+						display: none;
 					}
 				}
 				
@@ -98,11 +100,10 @@
 							}
 							.action {
 								background: @euscreen-lightgreen;
-								padding-left: 5px;
+								font-weight: bold;
 								a {
 									color: @euscreen-white;
 								}
-								
 							}
 						}
 					}
@@ -145,8 +146,8 @@
 								border-radius: 0px;
 								box-shadow: none;
 								background: @euscreen-lightgreen;
-								padding: 5px 7px 3px;
-								margin-top:2px;	
+								padding: 4px 7px 4px 7px;
+								margin-top:1px;	
 							}
 							
 							// on hover
@@ -219,6 +220,7 @@
 								font-size: 1.071em;
 								color: @euscreen-gray;
 								padding: 20px;
+								transition: background 0.2s;
 								
 								&:hover {
 									background: @euscreen-blue;
@@ -247,16 +249,14 @@
 				.counter {
 					.clearfix;
 					background: #fff;
-					height: 60px;
-					font-size: 0.929em;
+					font-size: 1.429em;
+					font-family: @font-family-monospace;
 					color: @euscreen-gray;
 					margin:6px 0 0 0;
-					padding-left: 20px;
-					padding-right: 20px;
+					padding: 20px;
 					
 					// left
 					.pull-left {
-						margin: 20px 0 0 0;
 						.number {
 							color: @euscreen-blue;
 							font-weight: bold;
@@ -265,18 +265,31 @@
 					
 					// right
 					.pull-right {
-						margin-top:8px;
-						ul {
-							li {
-								padding-right: 0px;
-								padding-left: 10px;
-								a {
-									color: @euscreen-gray;
+						
+						// overwrite the default dropdown style
+						ul.dropdown-menu {
+							margin-top:0px;
+							margin-bottom: 0px;
+							background: @euscreen-white;
+							border: 1px solid @border-color;
+							border-radius: 0px;
+							box-shadow: none;
+							padding: 1px 1px 0px 1px;
+							font-size: 1em;
+							> .active {
+								> a, > a:hover, > a:active {
+									background-color: @euscreen-blue;
+									background-image: none;
+									color: @euscreen-white;
 								}
-								&.active {
-									a {
-										color: @euscreen-blue;
-									}
+							}
+							a {
+								color: @euscreen-gray;
+								margin-bottom: 1px;
+								&:hover {
+									background-color: @euscreen-blue;
+									background-image: none;
+									color: @euscreen-white;
 								}
 							}
 						}
@@ -297,19 +310,20 @@
 						
 						// metadata
 						.media-metadata {
-							padding-left: 0px;
+							padding-left: 5px;
 							color:@gray-dark;
 							
 							a h3.media-heading {
-								font-size: 1.429em;
-								font-weight: bold;
-								margin: 0 0 9px 0;
+								font-size: 1.4em;
+								font-weight: 600;
+								margin: -4px 0 9px 0;
 								color: @gray-dark;
 								transition: color 0.35s;
+								font-family: @font-family-monospace;
 							}
 							.line {
 								display: block;
-								margin: 0 0 5px 0;
+								margin: 0 0 2px 0;
 								font-size: 1.071em;
 								.label {
 									color: @euscreen-gray;
@@ -370,8 +384,11 @@
 								
 								// align vertically
 								i {
+									display: block;
 									top:50%;
-									margin-top:-20px;
+									left: 50%;
+									margin: -15px 0 0 -12px;
+									position: absolute;
 								}
 							}
 						}
@@ -398,6 +415,7 @@
 				// more
 				.more {
 					.moreButton();
+					margin-bottom: 6px;
 				}
 			}
 		}

@@ -1,19 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
 /**
-* variables.less
-*
-* This file contains the variables that will be used throughout the stylesheets (LESS)
-* Things like general font size, colors and font family can be change here, without messing with the individual CSS
-* It is imported in all less files that needs it
-*/
-/**
-* mixins.less
-*
-* This file contains the the predefined CSS classes/functions that can be used in other LESS files
-* to avoid typing the same CSS styles (reusing)
-* It is imported in all less files that needs it
-*/
-/**
 * all.less
 *
 * This file contains the generic styles which are to be applied on all devices for EUScreenXLPagePrototypes.
@@ -41,6 +27,9 @@ input {
 .colorblack {
   color: #000000;
 }
+.colorgray {
+  color: #808080;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -48,7 +37,7 @@ html {
 html,
 body {
   font-size: 14px;
-  line-height: 1.5em;
+  line-height: 1.42857143;
   font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #f2f2f2;
 }
@@ -76,7 +65,7 @@ body {
   padding: 17px 0 0 30px;
 }
 .page header .navbar ul li:last-child a {
-  padding: 7px 25px 9px 25px;
+  padding: 7px 26px 8px 26px;
   background-color: #00aeef;
   height: auto;
   color: #ffffff;
@@ -162,13 +151,10 @@ body {
   border: 0px;
   box-shadow: none;
 }
-.page header .navbar .navbar-form .form-group .form-control:-moz-placeholder {
-  color: #d2d2d2;
-  font-style: italic;
-}
 .page header .navbar .navbar-form .form-group .form-control::-moz-placeholder {
   color: #d2d2d2;
   font-style: italic;
+  opacity: 1;
 }
 .page header .navbar .navbar-form .form-group .form-control:-ms-input-placeholder {
   color: #d2d2d2;
@@ -229,19 +215,14 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
 .page footer .affiliates .list-inline .europeancomission {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   /* Firefox 10+ */
-
   filter: gray;
   /* IE6-9 */
-
   -webkit-filter: grayscale(100%);
   /* Chrome 19+ & Safari 6+ */
-
   -webkit-transition: all .35s ease;
   /* Fade to color for Chrome and Safari */
-
   -webkit-backface-visibility: hidden;
   /* Fix for transition flickering */
-
   -moz-transition: all .35s ease;
   opacity: 0.7;
   filter: alpha(opacity=70);
@@ -259,19 +240,14 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
 .page footer .affiliates .list-inline .europeana {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   /* Firefox 10+ */
-
   filter: gray;
   /* IE6-9 */
-
   -webkit-filter: grayscale(100%);
   /* Chrome 19+ & Safari 6+ */
-
   -webkit-transition: all .35s ease;
   /* Fade to color for Chrome and Safari */
-
   -webkit-backface-visibility: hidden;
   /* Fix for transition flickering */
-
   -moz-transition: all .35s ease;
   opacity: 0.7;
   filter: alpha(opacity=70);
@@ -298,9 +274,6 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
 * It is imported in generic/all.less
 */
 /* Extra small devices (mobiles, 480px and up) */
-@media (min-width: 480px) {
-  
-}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
@@ -319,9 +292,14 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
   }
   body .page .main .left .row .searchbar {
     display: block;
+    border-bottom: 0px;
   }
   body .page .main .left .row .searchbar .form-control {
     font-size: 1.071em;
+    margin-left: 0px;
+  }
+  body .page .main .left .row .searchbar .glyphicon-search {
+    display: block;
   }
   body .page .main .left .row .selectedfilter {
     display: block;
@@ -346,16 +324,25 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
     font-size: 1.286em;
   }
   body .page .main .right .row .results .media-item .media-metadata .line {
-    margin-bottom: 4px;
-    margin: 0 0 -1px 0;
+    margin: 0 0 0 0;
     font-size: 0.929em;
   }
   body .page .main .right .row .results .media-item .media-metadata .line .label {
     font-size: 0.929em;
   }
+  body .page .main .right .row .counter {
+    font-size: 0.929em;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  body .page header .navbar .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  body .page header .navbar .container .navbar-header a.navbar-brand {
+    margin-right: 15px;
+  }
   body .page header .navbar .navbar-form {
     border-right: 1px solid #f2f2f2;
   }
@@ -373,7 +360,7 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
   }
   body .page .main .right .row .results .media-item .media-metadata .line {
     font-size: 1em;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
   }
   body .page .main .right .row .results .media-item .media-metadata .line .label {
     font-size: 1em;
@@ -383,6 +370,3 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
   }
 }
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  
-}
