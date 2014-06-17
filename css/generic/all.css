@@ -87,12 +87,23 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.571em;
-  height: auto;
-  color: #00aeef;
-  padding-top: 25px;
-  font-weight: 600;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  width: 172px;
+  height: 53px;
+  background: url("../../img/sprites.png") -320px 0;
+  margin-top: 8px;
   float: none;
+  /*.text-hide();
+					font-size: 1.571em;
+					height: auto;
+					color: @euscreen-blue;
+					padding-top:25px;
+					font-weight: 600;
+					float: none;*/
 }
 .page header .navbar .navbar-header .menuicon button {
   height: 70px;
@@ -285,6 +296,7 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
   }
   body .page header .navbar .container .navbar-header a.navbar-brand {
     margin-left: -15px;
+    margin-right: 20px;
   }
   body .page .main {
     padding-top: 75px;
@@ -341,7 +353,7 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
     padding-right: 0px;
   }
   body .page header .navbar .container .navbar-header a.navbar-brand {
-    margin-right: 15px;
+    margin-right: 30px;
   }
   body .page header .navbar .navbar-form {
     border-right: 1px solid #f2f2f2;
