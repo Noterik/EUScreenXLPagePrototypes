@@ -63,6 +63,9 @@
 						.searchbar {
 							display: block;
 							border-bottom: 0px;
+							position: inherit;
+							z-index: auto;
+							.opacity(1);
 							
 							// form input
 							.form-control {
@@ -78,7 +81,15 @@
 						
 						// selected filter
 						.selectedfilter {
-							display: block;
+							border-left: 0px;
+							border-right: 0px;
+							margin:1px 0 0 0;
+							padding-top:0px;
+							
+							// header
+							.header {
+								display: block;	
+							}
 							
 							// tags
 							.tags {
@@ -88,7 +99,7 @@
 									margin: 0 5px 4px 0;
 									li {
 										font-size: 0.786em;
-										padding: 2px 10px 1px 10px;
+										padding: 3px 10px 1px 10px;
 									}
 								}
 							}
@@ -96,7 +107,44 @@
 						
 						// filters
 						.filters {
+							background: rgba(255,255,255,1);
+							margin: 1px 0 6px 0;
+							width: 100%;
+							position: inherit;
+							top:auto;
+							left: auto;
+							z-index: auto;
+							padding: 0px;
 							display: block;
+							border-bottom: 0px;
+							
+							// header
+							.header {
+								padding-left: 25px;
+							}
+							
+							// accordion
+							.accordion {
+							
+								// more
+								.more {
+									display: block;
+								}
+								
+								// filter
+								.filter {
+									border-left: 0px;
+									border-right: 0px;
+									background: none;							
+								}
+							}
+						}
+						
+						// mediaselector
+						.mediaselector {
+							&.mobile {
+								display: none;
+							}
 						}
 					}
 				}
@@ -135,6 +183,7 @@
 						// counter
 						.counter {
 							font-size: 0.929em;
+							margin:6px 0 0 0;
 						}
 					}
 				}
@@ -175,7 +224,7 @@
 					
 					// form
 					.navbar-form {
-						border-right: 1px solid @background-color;
+						border-right: 1px solid @border-color;
 						
 						// form group
 						.form-group {

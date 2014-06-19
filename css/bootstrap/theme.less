@@ -60,12 +60,25 @@
 }
 
 // Apply the mixin to the buttons
-.btn-default { .btn-styles(@btn-default-bg); text-shadow: 0 1px 0 #fff; border-color: #ccc; }
+.btn-default { .btn-styles(@btn-default-bg);   }
 .btn-primary { .btn-styles(@btn-primary-bg); }
 .btn-success { .btn-styles(@btn-success-bg); }
 .btn-info    { .btn-styles(@btn-info-bg); }
 .btn-warning { .btn-styles(@btn-warning-bg); }
 .btn-danger  { .btn-styles(@btn-danger-bg); }
+.btn-euscreen  { 
+	.btn-styles(@btn-danger-bg); 
+	border-radius: 0px;
+	background: @euscreen-green;
+	border:0;
+	color: @euscreen-white;
+	font-family: @font-family-monospace;
+	padding: 10px;
+	&:hover, &:focus, &:active {
+		background: darken(@euscreen-green, 8%);
+		color: @euscreen-white;
+	}
+}
 
 
 

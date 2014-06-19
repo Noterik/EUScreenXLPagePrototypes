@@ -11,15 +11,11 @@
 
 // anchor settings
 a {
-	color: @link-color;
 	cursor: pointer;
-	
 	&:hover {
-		color: @link-hover-color;
 		text-decoration: none;
 	}
 	&:active {
-		color: @link-active-color;
 		text-decoration: none;
 	}
 	&:focus {
@@ -42,11 +38,8 @@ html {
 	position: relative;
 	min-height: 100%;
 }
-html, body {
-    font-size: @font-size-base;
-    line-height: @line-height-base;
-    font-family: @font-family-base;
-    background: @background-color;
+body {
+	height: 100%;
 }
 
 // main page
@@ -58,7 +51,7 @@ html, body {
 		// navbar
 		.navbar {
 			background: @euscreen-white;
-			border-bottom: 1px solid @background-color;
+			border-bottom: 1px solid @body-bg;
 			height: 70px;
 			
 			// nav
@@ -99,10 +92,10 @@ html, body {
 							color: @euscreen-white;
 							border-radius: 3px;
 							border-right: none;
-							transition: background-color 0.2s ease-out;
+							.transition(background-color 0.2s ease-out);
 							
 							&:hover {
-								transition: background-color 0.3s ease-out;
+								.transition(background-color 0.3s ease-out);
 								background-color: darken(@euscreen-blue, 8%);
 							}
 						}
@@ -121,13 +114,14 @@ html, body {
 				// the logo
 				a.navbar-brand {
 					.center-block();
+					
 					.text-hide();
 					width: 172px;
 					height: 53px;
 					background: url(@sprites-path) -320px 0;
 					margin-top:8px;
 					float: none;
-					/*.text-hide();
+					/*
 					font-size: 1.571em;
 					height: auto;
 					color: @euscreen-blue;
@@ -218,7 +212,7 @@ html, body {
 		// links
 		.links {
 			display: block;
-			padding: 55px 0 0 0;
+			padding: 60px 0 0 0;
 		  
 			.list-inline {
 			  	li {
@@ -270,6 +264,69 @@ html, body {
 		  	color: #787878;
 		}
 	}
+}
+
+// mobile navigation
+.mobilenav {
+	position: fixed;
+	overflow-y: auto;
+	width: 250px;
+	height: 100%;
+	top:0;
+	left: -250px;
+	background: @euscreen-panel-gray;
+	
+	// main
+	.main, .secondary, .info {
+		margin-bottom: 0px;
+		color: #a6abab;
+		padding: 30px 30px 20px 30px;
+		border-bottom: 1px solid #464646;
+		
+		// default
+		li {
+			list-style: none;
+			margin: 0 0 10px 0;
+			.clearfix;
+			
+			// nav
+			a {
+				color: inherit;
+				font-size: 1.429em;
+			}
+			
+			// active
+			&.active {
+				a {
+					color: @euscreen-white;
+				}
+			}	
+		}
+	}
+	
+	// secondary
+	.secondary {
+		li {
+			a {
+				font-size: 1em;
+			}
+		}
+	}
+	
+	// info
+	.info {
+		border-bottom: 0px;
+		display: block;
+	}
+}
+
+// style for slidePanelJS plugin
+.slided {
+	position: relative;
+	left: 0px;
+	top:0px;
+	overflow: hidden;
+	width: 100%;
 }
 
 // Import responsive variables (temporary, until js is fix)

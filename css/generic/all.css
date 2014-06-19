@@ -6,15 +6,12 @@
 * Certain device may override these styles in their own stylesheet.
 */
 a {
-  color: #00aeef;
   cursor: pointer;
 }
 a:hover {
-  color: #008dc1;
   text-decoration: none;
 }
 a:active {
-  color: #006b93;
   text-decoration: none;
 }
 a:focus {
@@ -34,12 +31,8 @@ html {
   position: relative;
   min-height: 100%;
 }
-html,
 body {
-  font-size: 14px;
-  line-height: 1.42857143;
-  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #f2f2f2;
+  height: 100%;
 }
 .page header .navbar {
   background: #ffffff;
@@ -48,7 +41,7 @@ body {
 }
 .page header .navbar ul li a {
   font-size: 1.071em;
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
   color: #808080;
   padding: 25px 30px 0px 30px;
   border-right: 1px solid #f2f2f2;
@@ -71,14 +64,16 @@ body {
   color: #ffffff;
   border-radius: 3px;
   border-right: none;
+  -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
 }
 .page header .navbar ul li:last-child a:hover {
+  -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
   background-color: #0090c6;
 }
 .page header .navbar .navbar-header {
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
   border-right: 1px solid #f2f2f2;
   height: 70px;
   text-align: center;
@@ -97,7 +92,7 @@ body {
   background: url("../../img/sprites.png") -320px 0;
   margin-top: 8px;
   float: none;
-  /*.text-hide();
+  /*
 					font-size: 1.571em;
 					height: auto;
 					color: @euscreen-blue;
@@ -117,7 +112,8 @@ body {
   font-size: 1.5em;
   color: #555555;
 }
-.page header .navbar .navbar-header .menuicon button:active {
+.page header .navbar .navbar-header .menuicon button:active,
+.page header .navbar .navbar-header .menuicon button.active {
   background: #00aeef;
   box-shadow: none;
   color: #fff;
@@ -137,7 +133,8 @@ body {
   color: #555555;
   margin-right: -1px;
 }
-.page header .navbar .navbar-header .searchicon button:active {
+.page header .navbar .navbar-header .searchicon button:active,
+.page header .navbar .navbar-header .searchicon button.active {
   background: #00aeef;
   box-shadow: none;
   color: #fff;
@@ -208,7 +205,7 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
 }
 .page footer .links {
   display: block;
-  padding: 55px 0 0 0;
+  padding: 60px 0 0 0;
 }
 .page footer .links .list-inline li {
   margin: 0 10px 0 0;
@@ -276,6 +273,68 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
 .page footer .footer-note {
   color: #787878;
 }
+.mobilenav {
+  position: fixed;
+  overflow-y: auto;
+  width: 250px;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  background: #343434;
+}
+.mobilenav .main,
+.mobilenav .secondary,
+.mobilenav .info {
+  margin-bottom: 0px;
+  color: #a6abab;
+  padding: 30px 30px 20px 30px;
+  border-bottom: 1px solid #464646;
+}
+.mobilenav .main li,
+.mobilenav .secondary li,
+.mobilenav .info li {
+  list-style: none;
+  margin: 0 0 10px 0;
+}
+.mobilenav .main li:before,
+.mobilenav .secondary li:before,
+.mobilenav .info li:before,
+.mobilenav .main li:after,
+.mobilenav .secondary li:after,
+.mobilenav .info li:after {
+  content: " ";
+  display: table;
+}
+.mobilenav .main li:after,
+.mobilenav .secondary li:after,
+.mobilenav .info li:after {
+  clear: both;
+}
+.mobilenav .main li a,
+.mobilenav .secondary li a,
+.mobilenav .info li a {
+  color: inherit;
+  font-size: 1.429em;
+}
+.mobilenav .main li.active a,
+.mobilenav .secondary li.active a,
+.mobilenav .info li.active a {
+  color: #ffffff;
+}
+.mobilenav .secondary li a {
+  font-size: 1em;
+}
+.mobilenav .info {
+  border-bottom: 0px;
+  display: block;
+}
+.slided {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+}
 /**
 * responsive.less
 *
@@ -305,6 +364,10 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
   body .page .main .left .row .searchbar {
     display: block;
     border-bottom: 0px;
+    position: inherit;
+    z-index: auto;
+    opacity: 1;
+    filter: alpha(opacity=100);
   }
   body .page .main .left .row .searchbar .form-control {
     font-size: 1.071em;
@@ -314,6 +377,12 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
     display: block;
   }
   body .page .main .left .row .selectedfilter {
+    border-left: 0px;
+    border-right: 0px;
+    margin: 1px 0 0 0;
+    padding-top: 0px;
+  }
+  body .page .main .left .row .selectedfilter .header {
     display: block;
   }
   body .page .main .left .row .selectedfilter .tags .tag {
@@ -321,10 +390,33 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
   }
   body .page .main .left .row .selectedfilter .tags .tag li {
     font-size: 0.786em;
-    padding: 2px 10px 1px 10px;
+    padding: 3px 10px 1px 10px;
   }
   body .page .main .left .row .filters {
+    background: #ffffff;
+    margin: 1px 0 6px 0;
+    width: 100%;
+    position: inherit;
+    top: auto;
+    left: auto;
+    z-index: auto;
+    padding: 0px;
     display: block;
+    border-bottom: 0px;
+  }
+  body .page .main .left .row .filters .header {
+    padding-left: 25px;
+  }
+  body .page .main .left .row .filters .accordion .more {
+    display: block;
+  }
+  body .page .main .left .row .filters .accordion .filter {
+    border-left: 0px;
+    border-right: 0px;
+    background: none;
+  }
+  body .page .main .left .row .mediaselector.mobile {
+    display: none;
   }
   body .page .main .right {
     border-right: 0px;
@@ -344,6 +436,7 @@ textarea.page header .navbar .navbar-form .form-group .form-control {
   }
   body .page .main .right .row .counter {
     font-size: 0.929em;
+    margin: 6px 0 0 0;
   }
 }
 /* Medium devices (desktops, 992px and up) */

@@ -6,7 +6,15 @@ $(document).ready(function () {
 
     EUScreenXL.SearchResultsPage = function () {
         EUScreenXL.Page.apply(this, arguments);
-        //this.extraFilters.hide(); //Bootstrap seems to override the display: none on mobile devices. Hide it again, by doing this.
+        this.$navElement = jQuery('#navpanel');
+        
+        // nav panel
+        this.$navElement.slidePanelJS({
+	        openButton: '#menubutton',
+            pageSection:'#page',
+            navbarSection:'#navbar',
+            speed:200
+        });
     };
 
     EUScreenXL.SearchResultsPage.prototype = Object.create(EUScreenXL.Page.prototype);
@@ -14,15 +22,15 @@ $(document).ready(function () {
     EUScreenXL.SearchResultsPage.prototype.extraFilters = jQuery(".extra-option");
     EUScreenXL.SearchResultsPage.prototype.showExtraFiltersButton = jQuery("#show-extra-filters");
     EUScreenXL.SearchResultsPage.prototype.hideExtraFiltersButton = jQuery("#hide-extra-filters");
-    EUScreenXL.SearchResultsPage.prototype.sortBy = jQuery("#sortBy");
+    EUScreenXL.SearchResultsPage.prototype.optionButton = jQuery("#optionbutton");
+    EUScreenXL.SearchResultsPage.prototype.filtersSection = jQuery(".filters");
+    EUScreenXL.SearchResultsPage.prototype.mediaSelector = jQuery(".mediaselector");
     EUScreenXL.SearchResultsPage.prototype.events = {
         "click #show-extra-filters": function (event) {
-            //this.extraFilters.show();
             this.showExtraFiltersButton.hide();
             this.hideExtraFiltersButton.show();
         },
         "click #hide-extra-filters": function (event) {
-            //this.extraFilters.hide();
             this.hideExtraFiltersButton.hide();
             this.showExtraFiltersButton.show();
         },
@@ -32,8 +40,17 @@ $(document).ready(function () {
         "hide.bs.collapse .filtercontent": function(event) {
 	    	$("#"+event.currentTarget.id).parent().find("i").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
         },
-        "click #sortBy li": function (event) {
-        
+        "click #optionbutton": function(event) {
+        	if(this.optionButton.hasClass("active")) {
+	        	this.optionButton.removeClass("active"); // toggle style
+	        	this.filtersSection.removeClass('mobile'); // hide the filter
+	        	this.mediaSelector.removeClass('mobile'); // hide the media selector
+        	} else {
+	        	this.optionButton.addClass("active"); // toggle style
+	        	this.filtersSection.addClass('mobile'); // show the filter
+	        	this.mediaSelector.addClass('mobile'); // show the media selector
+        	}
+        	
         }
     }
 

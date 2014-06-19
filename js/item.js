@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     if (!EUScreenXL) {
         throw "EUScreenXL required libraries not there!";
     }
@@ -8,6 +9,15 @@ $(document).ready(function () {
 
         this.$loginElement = jQuery('.login-form');
         this.$bookmarksElement = jQuery('.bookmarks');
+        this.$navElement = jQuery('#navpanel');
+        
+        // nav panel
+        this.$navElement.slidePanelJS({
+	        openButton: '#menubutton',
+            pageSection:'#page',
+            navbarSection:'#navbar',
+            speed:200
+        });
     };
     EUScreenXL.ItemPage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.ItemPage.prototype.events = {

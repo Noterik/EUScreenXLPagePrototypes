@@ -22,10 +22,12 @@
   background: #ffffff;
   height: 65px;
   border-bottom: 5px solid #00aeef;
+  position: relative;
+  width: 100%;
 }
 .page .main .left .row .searchbar .form-control {
   height: 100%;
-  width: 75%;
+  width: 70%;
   padding: inherit;
   font-size: 1.5em;
   line-height: inherit;
@@ -61,10 +63,49 @@ textarea.page .main .left .row .searchbar .form-control {
   float: left;
   display: none;
 }
+.page .main .left .row .searchbar .optionbutton {
+  height: 70px;
+  border-radius: 0px;
+  background: none;
+  width: 70px;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  line-height: normal;
+  float: right;
+  margin-top: -60px;
+  border-right: 0px;
+  font-size: 1.5em;
+  color: #555555;
+  height: 60px;
+}
+.page .main .left .row .searchbar .optionbutton:active,
+.page .main .left .row .searchbar .optionbutton.active {
+  background: #00aeef;
+  box-shadow: none;
+  color: #fff;
+  border-left: 1px solid #00aeef;
+  border-right: 1px solid #00aeef;
+}
+.page .main .left .row .searchbar .optionbar {
+  position: absolute;
+  top: 65px;
+  z-index: 8;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  height: 300px;
+  border-bottom: 5px solid #00aeef;
+  display: none;
+}
 .page .main .left .row .selectedfilter {
   background: #ffffff;
-  margin: 1px 0 0 0;
+  margin: 6px 0 0 0;
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
   width: 100%;
+  padding-top: 25px;
+}
+.page .main .left .row .selectedfilter .header {
   display: none;
 }
 .page .main .left .row .selectedfilter .tags {
@@ -95,14 +136,44 @@ textarea.page .main .left .row .searchbar .form-control {
 .page .main .left .row .selectedfilter .tags .tag .action a {
   color: #ffffff;
 }
-.page .main .left .row .filters {
-  background: #ffffff;
-  margin: 1px 0 6px 0;
-  width: 100%;
+.page .main .left .row .filters,
+.page .main .left .row .mediaselector {
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
   display: none;
+  left: 0;
+  top: 178px;
+  z-index: 8;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  border-bottom: 5px solid #00aeef;
 }
-.page .main .left .row .filters a.name {
+.page .main .left .row .filters.mobile,
+.page .main .left .row .mediaselector.mobile {
+  display: block;
+}
+.page .main .left .row .filters .header,
+.page .main .left .row .mediaselector .header {
+  padding-left: 0px;
+}
+.page .main .left .row .filters .accordion .filter,
+.page .main .left .row .mediaselector .accordion .filter {
   border-top: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  background: #ffffff;
+  margin-top: -1px;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent {
+  border-bottom: 1px solid #f2f2f2;
+}
+.page .main .left .row .filters .accordion a.name,
+.page .main .left .row .mediaselector .accordion a.name {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  border-bottom: 1px solid #f2f2f2;
   width: 100%;
   display: block;
   cursor: pointer;
@@ -110,52 +181,51 @@ textarea.page .main .left .row .searchbar .form-control {
   padding: 20px 25px 18px 25px;
   color: #555555;
 }
-.page .main .left .row .filters .filtercontent {
-  border-top: 1px solid #f2f2f2;
-}
-.page .main .left .row .filters .filtercontent .checkbox {
-  padding: 11px 25px 8px 42px;
-  margin: 0px;
-}
-.page .main .left .row .filters .filtercontent .checkbox label {
-  width: 80%;
-  display: inline-block;
-}
-.page .main .left .row .filters .filtercontent .checkbox .label {
-  border-radius: 0px;
-  box-shadow: none;
-  background: #a8d46d;
-  padding: 4px 7px 4px 7px;
-  margin-top: 1px;
-}
-.page .main .left .row .filters .filtercontent .checkbox:hover,
-.page .main .left .row .filters .filtercontent .checkbox.selected {
-  background: #a8d46d;
-}
-.page .main .left .row .filters .filtercontent .checkbox:hover label,
-.page .main .left .row .filters .filtercontent .checkbox.selected label {
-  color: #ffffff;
-}
-.page .main .left .row .filters .filtercontent .checkbox:hover .label,
-.page .main .left .row .filters .filtercontent .checkbox.selected .label {
-  background: #ffffff;
-  color: #8cc63f;
-}
-.page .main .left .row .filters .more {
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+.page .main .left .row .filters .accordion .more,
+.page .main .left .row .mediaselector .accordion .more {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
   text-align: center;
   border-top: 1px solid #f2f2f2;
   padding: 23px 0 23px 0;
   background: #fff;
+  display: none;
+  border-top: 0px;
 }
-.page .main .left .row .filters .more a {
+.page .main .left .row .filters .accordion .more a,
+.page .main .left .row .mediaselector .accordion .more a {
   color: #808080;
 }
-.page .main .left .row .filters .more a:hover {
+.page .main .left .row .filters .accordion .more a:hover,
+.page .main .left .row .mediaselector .accordion .more a:hover {
   color: #00aeef;
 }
-.page .main .left .row .filters .more #hide-extra-filters {
+.page .main .left .row .filters .accordion .more #hide-extra-filters,
+.page .main .left .row .mediaselector .accordion .more #hide-extra-filters {
   display: none;
+}
+.page .main .left .row .filters .accordion .done button.btn-euscreen,
+.page .main .left .row .mediaselector .accordion .done button.btn-euscreen {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 15px;
+  margin: 30px 0 0 0;
+}
+.page .main .left .row .mediaselector {
+  top: 65px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+}
+.page .main .left .row .mediaselector select.form-control {
+  border-radius: 0px;
+  background-color: #8cc63f;
+  border: 0px;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  color: #ffffff;
+  font-size: 1.2em;
+  height: 60px;
+  box-shadow: none;
+  -webkit-appearance: none;
+  padding: 14px;
 }
 .page .main .left .row .ads {
   position: relative;
@@ -170,7 +240,7 @@ textarea.page .main .left .row .searchbar .form-control {
 .page .main .left .row .ads .wrap .text {
   background: rgba(0, 174, 239, 0.6);
   display: block;
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
   font-size: 1.214em;
   color: #ffffff;
   width: 92%;
@@ -189,6 +259,48 @@ textarea.page .main .left .row .searchbar .form-control {
 }
 .page .main .left .row .ads img {
   width: 100%;
+}
+.page .main .left .listing {
+  margin: 0;
+  padding: 0;
+}
+.page .main .left .listing li {
+  list-style: none;
+}
+.page .main .left .listing li:before,
+.page .main .left .listing li:after {
+  content: " ";
+  display: table;
+}
+.page .main .left .listing li:after {
+  clear: both;
+}
+.page .main .left .listing li a {
+  padding: 9px 0 9px 25px;
+  display: block;
+  width: 70%;
+  float: left;
+  color: #808080;
+}
+.page .main .left .listing li:hover {
+  background: #a8d46d;
+  color: #fff;
+}
+.page .main .left .listing li:hover a {
+  color: #ffffff;
+}
+.page .main .left .listing li:hover .badge {
+  color: #a8d46d;
+  background: #ffffff;
+}
+.page .main .left .listing li .badge {
+  border-radius: 0px;
+  width: 40px;
+  text-align: center;
+  box-shadow: none;
+  background: #a8d46d;
+  padding: 4px 0px 3px;
+  margin: 10px 25px 0 0;
 }
 .page .main .right {
   border-left: 6px solid #f2f2f2;
@@ -209,7 +321,7 @@ textarea.page .main .left .row .searchbar .form-control {
   margin: 0px;
 }
 .page .main .right .row .mediatab .nav li a {
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
   border: 0px;
   border-right: 1px solid #f2f2f2;
   border-radius: 0px;
@@ -219,6 +331,7 @@ textarea.page .main .left .row .searchbar .form-control {
   font-size: 1.071em;
   color: #808080;
   padding: 20px;
+  -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
 .page .main .right .row .mediatab .nav li a:hover {
@@ -226,21 +339,21 @@ textarea.page .main .left .row .searchbar .form-control {
   border-radius: 0px;
   border-right: 1px solid #00aeef;
   color: #ffffff;
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
 }
 .page .main .right .row .mediatab .nav li.active a {
   background: #00aeef;
   border-radius: 0px;
   border-right: 1px solid #00aeef;
   color: #ffffff;
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
 }
 .page .main .right .row .counter {
   background: #fff;
   font-size: 1.429em;
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
   color: #808080;
-  margin: 6px 0 0 0;
+  margin: 1px 0 0 0;
   padding: 20px;
 }
 .page .main .right .row .counter:before,
@@ -259,7 +372,6 @@ textarea.page .main .left .row .searchbar .form-control {
   margin-top: 0px;
   margin-bottom: 0px;
   background: #ffffff;
-  border: 1px solid #f2f2f2;
   border-radius: 0px;
   box-shadow: none;
   padding: 1px 1px 0px 1px;
@@ -268,16 +380,13 @@ textarea.page .main .left .row .searchbar .form-control {
 .page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a,
 .page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a:hover,
 .page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a:active {
-  background-color: #00aeef;
   background-image: none;
-  color: #ffffff;
 }
 .page .main .right .row .counter .pull-right ul.dropdown-menu a {
   color: #808080;
   margin-bottom: 1px;
 }
 .page .main .right .row .counter .pull-right ul.dropdown-menu a:hover {
-  background-color: #00aeef;
   background-image: none;
   color: #ffffff;
 }
@@ -290,18 +399,21 @@ textarea.page .main .left .row .searchbar .form-control {
 }
 .page .main .right .row .results .media-item {
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 .page .main .right .row .results .media-item .media-metadata {
   padding-left: 5px;
   color: #333333;
 }
 .page .main .right .row .results .media-item .media-metadata a h3.media-heading {
-  font-size: 1.4em;
-  font-weight: 600;
-  margin: -4px 0 9px 0;
+  font-size: 1.33em;
+  line-height: 1.3em;
+  font-weight: normal;
+  margin: -5px 0 9px 0;
   color: #333333;
+  -webkit-transition: color 0.35s;
   transition: color 0.35s;
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
 }
 .page .main .right .row .results .media-item .media-metadata .line {
   display: block;
@@ -331,7 +443,7 @@ textarea.page .main .left .row .searchbar .form-control {
   line-height: 1.48em;
   font-size: 0.857em;
   background: rgba(0, 0, 0, 0.1);
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
   z-index: 7;
 }
 .page .main .right .row .results .media-item .media-wrapper .media-type {
@@ -375,6 +487,7 @@ textarea.page .main .left .row .searchbar .form-control {
   text-align: center;
   font-size: 1.8em;
   opacity: 0;
+  -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 .page .main .right .row .results .media-item .media-wrapper .media-hue i {
@@ -388,10 +501,10 @@ textarea.page .main .left .row .searchbar .form-control {
   opacity: 1;
 }
 .page .main .right .row .results .media-item:hover .media-metadata a h3.media-heading {
-  color: #8cc63f;
+  color: #71a230;
 }
 .page .main .right .row .more {
-  font-family: 'Titillium Web', 'DIN', Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
   text-align: center;
   border-top: 1px solid #f2f2f2;
   padding: 23px 0 23px 0;

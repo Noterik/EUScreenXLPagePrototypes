@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
 <html class="no-js"> <!--<![endif]-->
 	<head>
 		
-		<!-- Meta-->
+		<!-- meta -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>EUscreenXL - Search</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     	<meta name='apple-mobile-web-app-capable' content='yes'>
-	
-	    <!-- CSS -->
+    	<link rel="icon" type="image/png" href="favicon.png">
+    	
+	    <!-- css -->
 	    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 	    <link rel="stylesheet" href="css/bootstrap/theme.css">	    
 	    <link rel="stylesheet" href="css/main.css">
@@ -25,17 +23,19 @@
 	    <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
 	</head>
 	<body>
+	
+		<!-- update browser-->
 		<!--[if lt IE 7]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
 		    your browser</a> to improve your experience.</p>
 		<![endif]-->
 		
-		<!-- page -->
-		<div class="page">
-		
+		<!-- container -->
+		<div class="page" id="page">
+			
 		    <!-- wrap -->
 			<header>
-				<div class="navbar navbar-fixed-top" role="navigation">
+				<div class="navbar navbar-fixed-top" role="navigation" id="navbar">
 					<div class="container">
 						
 						<!-- header -->
@@ -43,7 +43,7 @@
 							
 							<!-- menu icon -->
 							<div class="menuicon visible-xs pull-left">
-								<button type="button" class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
+								<button type="button" id="menubutton" class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
 							</div>
 							
 							<!-- search icon -->
@@ -83,13 +83,16 @@
 		        <div class="row">
 		        	
 		        	<!-- left column -->
-		        	<div class="left col-md-4 col-sm-4">
+		        	<div class="left col-md-4 col-sm-4" id="sidebar">
 			        	
 			        	<!-- search bar -->
 			        	<div class="row">
 			        		<div class="searchbar col-md-12">
 		        				<i class="glyphicon glyphicon-search"></i>
 		        				<input type="text" class="form-control" placeholder="Enter search terms">
+		        				
+		        				<!-- option button -->
+					        	<button id="optionbutton" type="button" class="visible-xs btn optionbutton"><span class="glyphicon glyphicon-cog"></span></button>
 			        		</div>
 			        	</div>
 			        	
@@ -117,6 +120,20 @@
 			        		</div>
 			        	</div>
 			        	
+			        	<!-- media type selector, only shown in mobile mode -->
+			        	<div class="row">
+			        		<div class="mediaselector col-md-12">
+			        			<span class="header">MEDIA TYPE</span>
+			        			<select class="form-control">
+				        			<option>All Media</option>
+				        			<option>Videos</option>
+				        			<option>Images</option>
+				        			<option>Texts</option>
+				        			<option>Audios</option>
+				        		</select>
+			        		</div>
+			        	</div>
+			        	
 			        	<!-- filters -->
 			        	<div class="row">
 			        		<div class="filters col-md-12">
@@ -130,22 +147,12 @@
 				        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
 				        				</a>
 				        				<div id="languages" class="collapse filtercontent">
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> English </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> Italian </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> Spanish </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> Dutch </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
+					        				<ul class="listing">
+					        					<li><a href="#">English</a> <span class="badge label-primary pull-right">223</span></li>
+					        					<li><a href="#">Italian</a> <span class="badge label-primary pull-right">123</span></li>
+					        					<li><a href="#">Spanish</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">Dutch</a> <span class="badge label-primary pull-right">9</span></li>
+					        				</ul>
 				        				</div>
 			        				</div>
 			        				
@@ -156,22 +163,12 @@
 				        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
 				        				</a>
 				        				<div id="decades" class="collapse filtercontent">
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> 2010 </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> 2000 </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> 1990 </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> 1980 </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
+					        				<ul class="listing">
+					        					<li><a href="#">2010's</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">2000's</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">1990's</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">1980's</a> <span class="badge label-primary pull-right">23</span></li>
+					        				</ul>
 				        				</div>
 			        				</div>
 			        				
@@ -182,27 +179,17 @@
 				        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
 				        				</a>
 				        				<div id="topics" class="collapse filtercontent">
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> Hollywood </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> History </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> War </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
-					        				<div class="checkbox">
-					        					<label> <input type="checkbox" value=""> Sports </label>
-					        					<span class="label label-primary pull-right">23</span>
-					        				</div>
+					        				<ul class="listing">
+					        					<li><a href="#">Sports</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">History</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">TV</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">Economic</a> <span class="badge label-primary pull-right">23</span></li>
+					        				</ul>
 				        				</div>
 			        				</div>
 			        				
 			        				<!-- Extra Filters -->
-			        				<div class="extrafilters collapse" id="extrafilters">
+			        				<div class="extrafilters collapse hidden-xs" id="extrafilters">
 			        				
 			        					<!-- Publisher -->
 				        				<div class="filter">
@@ -211,22 +198,12 @@
 					        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
 					        				</a>
 					        				<div id="publisher" class="collapse filtercontent">
-						        				<div class="checkbox">
-						        					<label> <input type="checkbox" value=""> 2010 </label>
-						        					<span class="label label-primary pull-right">23</span>
-						        				</div>
-						        				<div class="checkbox">
-						        					<label> <input type="checkbox" value=""> 2000 </label>
-						        					<span class="label label-primary pull-right">23</span>
-						        				</div>
-						        				<div class="checkbox">
-						        					<label> <input type="checkbox" value=""> 1990 </label>
-						        					<span class="label label-primary pull-right">23</span>
-						        				</div>
-						        				<div class="checkbox">
-						        					<label> <input type="checkbox" value=""> 1980 </label>
-						        					<span class="label label-primary pull-right">23</span>
-						        				</div>
+						        				<ul class="listing">
+					        					<li><a href="#">Sports</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">History</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">TV</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">Economic</a> <span class="badge label-primary pull-right">23</span></li>
+					        				</ul>
 					        				</div>
 				        				</div>
 				        				
@@ -237,22 +214,12 @@
 					        					<i class="glyphicon glyphicon-chevron-down pull-right"></i>
 					        				</a>
 					        				<div id="country" class="collapse filtercontent">
-						        				<div class="checkbox">
-						        					<label> <input type="checkbox" value=""> Hollywood </label>
-						        					<span class="label label-primary pull-right">23</span>
-						        				</div>
-						        				<div class="checkbox">
-						        					<label> <input type="checkbox" value=""> History </label>
-						        					<span class="label label-primary pull-right">23</span>
-						        				</div>
-						        				<div class="checkbox">
-						        					<label> <input type="checkbox" value=""> War </label>
-						        					<span class="label label-primary pull-right">23</span>
-						        				</div>
-						        				<div class="checkbox">
-						        					<label> <input type="checkbox" value=""> Sports </label>
-						        					<span class="label label-primary pull-right">23</span>
-						        				</div>
+						        				<ul class="listing">
+					        					<li><a href="#">Kazakhstan</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">Uganda</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">Iceland</a> <span class="badge label-primary pull-right">23</span></li>
+					        					<li><a href="#">Papua New Guinnea</a> <span class="badge label-primary pull-right">23</span></li>
+					        				</ul>
 					        				</div>
 				        				</div>
 			        				</div>
@@ -262,13 +229,18 @@
 			        					<a data-toggle="collapse" id="show-extra-filters" data-target="#extrafilters">SHOW MORE</a>
 			        					<a data-toggle="collapse" id="hide-extra-filters" data-target="#extrafilters">SHOW LESS</a>
 			        				</div>
+			        				
+			        				<!-- Done Button -->
+			        				<div class="done visible-xs">
+			        					<button type="button" class="btn btn-euscreen">DONE</button>
+			        				</div>
 			        			</div>
 			        		</div>
 			        	</div>
 			        	
 			        	<!-- ads -->
 			        	<div class="row">
-			        		<div class="ads  col-md-12 hidden-xs">
+			        		<div class="ads col-md-12 hidden-xs">
 			        			<span class="wrap">
 			        				<a href="http://www.europeana.eu" target="_blank">
 					        			<span class="text">
@@ -335,7 +307,7 @@
 		                                </div>
 		                            </div>
 		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
-		                                <a href="#"><h3 class="media-heading">Lorem Ipsum</h3></a>
+		                                <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
 		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
 		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
 		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
@@ -355,7 +327,7 @@
 		                                </div>
 		                            </div>
 		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
-		                                <a href="#"><h3 class="media-heading">Lorem Ipsum</h3></a>
+		                                <a href="#"><h3 class="media-heading">58 million Dutch people and the beautiful nature</h3></a>
 		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
 		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
 		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
@@ -378,7 +350,7 @@
 		                                </div>
 		                            </div>
 		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
-		                                <a href="#"><h3 class="media-heading">Lorem Ipsum</h3></a>
+		                                <a href="#"><h3 class="media-heading">Reimer Bo. Illegaly into hiding</h3></a>
 		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
 		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
 		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
@@ -398,7 +370,116 @@
 		                                </div>
 		                            </div>
 		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
-		                                <a href="#"><h3 class="media-heading">Lorem Ipsum</h3></a>
+		                                <a href="#"><h3 class="media-heading">Kolaric's heirs</h3></a>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                	
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                    <a href="#">
+			                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+			                                    <span class="media-length">
+			                                        12:32
+			                                    </span>
+			                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+			                                    <span class="media-type audio"></span>
+		                                    </a>
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <a href="#"><h3 class="media-heading">Reimer Bo. Illegaly into hiding</h3></a>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                	
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                	<a href="#">
+		                                    	<img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+		                                    	<span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
+		                                    	<span class="media-type image"></span>
+		                                	</a>		                                
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <a href="#"><h3 class="media-heading">Kolaric's heirs</h3></a>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                	
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                	<a href="#">
+			                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+			                                    <span class="media-length">
+			                                        12:32
+			                                    </span>
+			                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+			                                    <i class="media-type video"></i>
+		                                	</a>
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                	
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                	<a href="#">
+		                                    	<img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+		                                    	<span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
+		                                    	<i class="media-type text"></i>
+		                                	</a>
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <a href="#"><h3 class="media-heading">58 million Dutch people and the beautiful nature</h3></a>
+		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
+		                                <span class="line"><span class="label">Language: </span><span class="value">English</span></span>
+		                            </div>
+			                	</div>
+			                	
+			                	<!-- media -->
+			                	<div class="row media-item">
+			                		<div class="media-image col-md-4 col-sm-5 col-xs-5">
+		                                <div class="media-wrapper">
+		                                    <a href="#">
+			                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+			                                    <span class="media-length">
+			                                        12:32
+			                                    </span>
+			                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+			                                    <span class="media-type audio"></span>
+		                                    </a>
+		                                </div>
+		                            </div>
+		                            <div class="media-metadata col-md-8 col-sm-7 col-xs-7">
+		                                <a href="#"><h3 class="media-heading">Reimer Bo. Illegaly into hiding</h3></a>
 		                                <span class="line"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
 		                                <span class="line"><span class="label">Provider: </span><span class="value">BBC/United Kingdom</span></span>
 		                                <span class="line"><span class="label">Production year: </span><span class="value">1954</span></span>
@@ -449,6 +530,23 @@
 		    </footer>
 		</div>
 		
+		<!-- nav -->
+		<div id="navpanel" class="mobilenav">
+			<ul class="main">
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">MYEUSCREEN</a></li>
+			</ul>
+			<ul class="secondary">
+				<li><a href="#">Terms of use</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<span class="info">
+				Euscreen is founded by the European Comission within the eContentplus programme. 
+			</span>
+		</div>
+		
 		<!-- Scripts -->
 		<script src="js/vendor/jquery-1.10.2.min.js"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
@@ -458,6 +556,7 @@
 		<script src="js/footer.js"></script>
 		<script src="js/libs/DeviceDetect/device-detect.js"></script>
 		<script src="js/libs/Page/page.js"></script>
+		<script src="js/plugins.js"></script>
 		<script src="js/search-results.js"></script>
 	</body>
 </html>

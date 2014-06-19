@@ -22,7 +22,7 @@
 	    <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
 	</head>
 	<body>
-		
+
 		<!-- update browser-->
 		<!--[if lt IE 7]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade 
@@ -30,11 +30,11 @@
 		<![endif]-->
 		
 		<!-- container -->
-		<div class="page">
+		<div class="page" id="page">
 			
 			<!-- wrap -->
 			<header>
-				<div class="navbar navbar-fixed-top" role="navigation">
+				<div class="navbar navbar-fixed-top" role="navigation" id="navbar">
 					<div class="container">
 						
 						<!-- header -->
@@ -42,12 +42,14 @@
 							
 							<!-- menu icon -->
 							<div class="menuicon visible-xs pull-left">
-								<button type="button" class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
+								<button type="button" id="menu" class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
 							</div>
+							
 							<!-- search icon -->
 							<div class="searchicon visible-xs pull-right">
 								<button type="button" class="btn"><span class="glyphicon glyphicon-search"></span></button>
 							</div>
+							
 							<!-- logo -->
 							<a class="navbar-brand" href="#"><span class="colorblack">EU</span>SCREEN</a>
 						</div>
@@ -104,6 +106,23 @@
 			        </div>
 		    	</div>
 		    </footer>
+		</div>
+		
+		<!-- nav -->
+		<div id="navpanel" class="mobilenav">
+			<ul class="main">
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">MYEUSCREEN</a></li>
+			</ul>
+			<ul class="secondary">
+				<li><a href="#">Terms of use</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<span class="info">
+				Euscreen is founded by the European Comission within the eContentplus programme. 
+			</span>
 		</div>
 
 		<!-- scripts -->

@@ -9,11 +9,11 @@
 	border-radius: 0px;
 	background: none;
 	width: 70px;
-	border-left: 1px solid @background-color;
-	border-right: 1px solid @background-color;
+	border-left: 1px solid @body-bg;
+	border-right: 1px solid @body-bg;
 	line-height: normal; // fix a bit of bug on icon's vertical align
 	
-	&:active {
+	&:active, &.active {
 		background: @euscreen-blue;
 		box-shadow: none;
 		color: #fff;
@@ -147,22 +147,22 @@
 
 // style input
 .inputStyling(@input-height; @input-width; @font-size; @line-height; @border-radius; @border; @padding; @box-shadow) {
-  height: @input-height;
-  width: @input-width;
-  padding: @padding;
-  font-size: @font-size;
-  line-height: @line-height;
-  border-radius: @border-radius;
-  border: @border;
-  box-shadow: @box-shadow;
+	  height: @input-height;
+	  width: @input-width;
+	  padding: @padding;
+	  font-size: @font-size;
+	  line-height: @line-height;
+	  border-radius: @border-radius;
+	  border: @border;
+	  box-shadow: @box-shadow;
 
   select& {
-    height: @input-height;
-    line-height: @input-height;
+	  height: @input-height;
+	  line-height: @input-height;
   }
 
   textarea& {
-    height: auto;
+	  height: auto;
   }
 }
 

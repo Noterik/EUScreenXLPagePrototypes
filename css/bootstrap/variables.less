@@ -1,33 +1,12 @@
 //
 // START (Custom for EuscreenXL)
-// Do not change variable name below this customs variables
 // --------------------------------------------------
+
 // Import Font
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
 
 // Background & Border Color
-@background-color:		#f2f2f2;
-@border-color:			@background-color;
-
-// END (Custom for EuscreenXL)
-// --------------------------------------------------
-
-//== Colors
-//
-//## Gray and brand colors for use across Bootstrap.
-
-
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:           lighten(#000, 93.5%); // #eee
-
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@border-color:			@body-bg;
 
 // EUscreen colors
 // -------------------------
@@ -40,14 +19,37 @@
 @euscreen-black:		#000;
 @euscreen-rgba-green-60:rgba(140, 198, 63, 0.6);
 @euscreen-rgba-blue-60:	rgba(0, 174, 239, 0.6);
+@euscreen-panel-gray:   #343434;
 
+// Sprites
+@sprites-path:			  "../../img/sprites.png";
+
+// END (Custom for EuscreenXL)
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+@brand-primary:         @euscreen-blue;
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
 
 //== Scaffolding
 //
 // ## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               @background-color;
+@body-bg:               #f2f2f2;
+
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 
@@ -63,7 +65,7 @@
 
 @font-family-sans-serif:  'Proxima Nova',"Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
-@font-family-monospace:   'Titillium Web','DIN', Monaco, Menlo, Consolas, monospace;
+@font-family-monospace:   'Titillium Web','DIN',"Helvetica Neue", Monaco, Menlo, Consolas, monospace;
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          14px;
@@ -78,7 +80,8 @@
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.5; // 20/14
+
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
@@ -93,13 +96,10 @@
 //
 //## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
-@icon-font-path:          "../fonts/";
+@icon-font-path:          "fonts/";
 @icon-font-name:          "glyphicons-halflings-regular";
 @icon-font-svg-id:        "glyphicons_halflingsregular";
 
-// Sprites
-// -------------------------
-@sprites-path:			  "../../img/sprites.png";
 
 //== Components
 //
@@ -233,21 +233,21 @@
 //** Background for the dropdown menu.
 @dropdown-bg:                    #fff;
 //** Dropdown menu `border-color`.
-@dropdown-border:                rgba(0,0,0,.15);
+@dropdown-border:                @border-color;
 //** Dropdown menu `border-color` **for IE8**.
-@dropdown-fallback-border:       #ccc;
+@dropdown-fallback-border:       #f2f2f2;
 //** Divider color for between dropdown items.
 @dropdown-divider-bg:            #e5e5e5;
 
 //** Dropdown link text color.
 @dropdown-link-color:            @gray-dark;
 //** Hover color for dropdown links.
-@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+@dropdown-link-hover-color:      @euscreen-white;
 //** Hover background for dropdown links.
-@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-hover-bg:         @euscreen-blue;
 
 //** Active dropdown menu item text color.
-@dropdown-link-active-color:     @component-active-color;
+@dropdown-link-active-color:     @euscreen-white;
 //** Active dropdown menu item background color.
 @dropdown-link-active-bg:        @component-active-bg;
 
