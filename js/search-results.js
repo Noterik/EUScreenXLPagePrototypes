@@ -25,6 +25,8 @@ $(document).ready(function () {
     EUScreenXL.SearchResultsPage.prototype.optionButton = jQuery("#optionbutton");
     EUScreenXL.SearchResultsPage.prototype.filtersSection = jQuery(".filters");
     EUScreenXL.SearchResultsPage.prototype.mediaSelector = jQuery(".mediaselector");
+    EUScreenXL.SearchResultsPage.prototype.searchButton = jQuery("#searchbutton");
+    EUScreenXL.SearchResultsPage.prototype.searchInputText = jQuery("#searchkeyword");
     EUScreenXL.SearchResultsPage.prototype.events = {
         "click #show-extra-filters": function (event) {
             this.showExtraFiltersButton.hide();
@@ -50,7 +52,9 @@ $(document).ready(function () {
 	        	this.filtersSection.addClass('mobile'); // show the filter
 	        	this.mediaSelector.addClass('mobile'); // show the media selector
         	}
-        	
+        },
+        "click #searchbutton": function(event) {
+	        this.searchInputText.focus(); // focus on the search field
         }
     }
 

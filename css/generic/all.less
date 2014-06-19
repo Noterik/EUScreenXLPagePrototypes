@@ -40,6 +40,16 @@ html {
 }
 body {
 	height: 100%;
+	
+	// browsehappy
+	.browsehappy {
+		position: fixed;
+		text-align: center;
+		width: auto;
+		top:80px;
+		left: 10px; right: 10px;
+		z-index: 10;
+	}
 }
 
 // main page
@@ -53,7 +63,7 @@ body {
 			background: @euscreen-white;
 			border-bottom: 1px solid @body-bg;
 			height: 70px;
-			
+		
 			// nav
 			ul {
 				li {
@@ -106,28 +116,29 @@ body {
 			// logo
 			.navbar-header {
 				font-family: @font-family-monospace;
-				border-right: 1px solid @border-color;
 				height: 70px;
 				text-align: center;
 				
+				// reset the default gutter
+				margin-left: -15px;
 				
 				// the logo
 				a.navbar-brand {
 					.center-block();
-					
+					/*
 					.text-hide();
 					width: 172px;
 					height: 53px;
 					background: url(@sprites-path) -320px 0;
 					margin-top:8px;
-					float: none;
-					/*
-					font-size: 1.571em;
-					height: auto;
-					color: @euscreen-blue;
-					padding-top:25px;
-					font-weight: 600;
 					float: none;*/
+					
+					font-size: 1.571em;
+					height: 70px;
+					color: @euscreen-blue;
+					padding-top:23px;
+					font-weight: 600;
+					float: none;
 					
 				}
 				
@@ -152,39 +163,57 @@ body {
 						border-right: 0px;
 						font-size: 1.5em;
 						color: @gray;
-						margin-right: -1px; // for weird reason, there was 1 pixel space on the right
 					}
 				}
-			}
-			
-			// form
-			.navbar-form {
-				padding: 8px 0 0 0;
-				margin:0;
-				height: 70px;
 				
-				.form-group {
-					margin: 0 10px 0 20px;
+				// form
+				.navbar-form {
+					padding: 8px 0 0 0;
+					margin:0;
+					height: 70px;
+					float: left;
+					border-left: 1px solid @border-color;
+					visibility: hidden; // hide by default, will show in bigger screen (except on searchpage, where we set display to none)
 					
-					// input
-					.form-control {
-						.placeholderItalic(#d2d2d2,italic);
-						.inputStyling(54px; 157px; 1.071em ; inherit; 0px; 0px; 0px; none);
+					// form group
+					.form-group {
+						margin: 0 10px 0 20px;
+						
+						// input
+						input[type="text"] {
+							.placeholderItalic(#d2d2d2,italic);
+							.inputStyling(54px; 165px; 1.286em ; inherit; 0px; 0px; 0px; none);
+						}
+						
+						// magnifying icon
+						.glyphicon-search {
+							color: @euscreen-blue;
+							font-size: 1.2em;
+							margin: 16px 20px 0 0;
+							display: none;
+							float: left;
+						}
 					}
 					
-					// magnifying icon
-					.glyphicon-search {
-						color: @euscreen-blue;
-						font-size: 1.2em;
-						margin: 16px 20px 0 0;
+					// hide for this project
+					button {
 						display: none;
-						float: left;
 					}
 				}
 				
-				// hide for this project
-				button {
-					display: none;
+				// when the search is opened by clicking the magnifying icon, apply this class
+				&.searchopened {
+					
+					// makes the form visible
+					.navbar-form {
+						visibility: visible;
+						border-left: 0px;
+					}
+					
+					// and hide the brand
+					a.navbar-brand {
+						display: none;
+					}
 				}
 			}
 		}

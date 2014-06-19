@@ -5,7 +5,7 @@
 * This file contains the search results styles which are to be applied on all devices specifically for search results page.
 * Certain device may override these styles in their own stylesheet.
 */
-.page header .navbar .navbar-form {
+.page header .container .navbar-header .navbar-form {
   display: none;
 }
 .page .main .left .row [class*='col-'] {
@@ -131,7 +131,6 @@ textarea.page .main .left .row .searchbar .form-control {
 }
 .page .main .left .row .selectedfilter .tags .tag .action {
   background: #a8d46d;
-  font-weight: bold;
 }
 .page .main .left .row .selectedfilter .tags .tag .action a {
   color: #ffffff;
@@ -226,6 +225,10 @@ textarea.page .main .left .row .searchbar .form-control {
   box-shadow: none;
   -webkit-appearance: none;
   padding: 14px;
+}
+.page .main .left .row .mediaselector select.form-control option {
+  background: #ffffff;
+  color: #8cc63f;
 }
 .page .main .left .row .ads {
   position: relative;

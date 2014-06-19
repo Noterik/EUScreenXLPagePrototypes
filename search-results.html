@@ -23,11 +23,14 @@
 	    <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
 	</head>
 	<body>
-	
+		
 		<!-- update browser-->
 		<!--[if lt IE 7]>
-			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-		    your browser</a> to improve your experience.</p>
+			<div class="browsehappy alert alert-info alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				You are using an <strong>outdated</strong> browser.
+				Please <a class="alert-link" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+			</div>
 		<![endif]-->
 		
 		<!-- container -->
@@ -48,11 +51,20 @@
 							
 							<!-- search icon -->
 							<div class="searchicon visible-xs pull-right">
-								<button type="button" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+								<button type="button" id="searchbutton" class="btn"><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 							
 							<!-- logo -->
 							<a class="navbar-brand" href="#"><span class="colorblack">EU</span>SCREEN</a>
+							
+							<!-- form -->
+							<form class="navbar-form navbar-left" id="headerform" role="search">
+                                <div class="form-group">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                    <input type="text" class="form-control" placeholder="Search the collection">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </form>
 						</div>
 						
 						<!-- collapse -->
@@ -64,15 +76,6 @@
 								<li><a href="about.html">ABOUT</a></li>
 								<li><a href="myeuscreen.html">MYEUSCREEN</a></li>
 							</ul>
-							
-							<!-- form -->
-							<form class="navbar-form navbar-left" role="search">
-                                <div class="form-group">
-                                    <i class="glyphicon glyphicon-search"></i>
-                                    <input type="text" class="form-control" placeholder="Search the collection">
-                                </div>
-                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                            </form>
 						</div>
 					</div>
 				</div>
@@ -89,7 +92,7 @@
 			        	<div class="row">
 			        		<div class="searchbar col-md-12">
 		        				<i class="glyphicon glyphicon-search"></i>
-		        				<input type="text" class="form-control" placeholder="Enter search terms">
+		        				<input type="text" id="searchkeyword" class="form-control" placeholder="Enter search terms">
 		        				
 		        				<!-- option button -->
 					        	<button id="optionbutton" type="button" class="visible-xs btn optionbutton"><span class="glyphicon glyphicon-cog"></span></button>

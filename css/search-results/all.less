@@ -11,19 +11,19 @@
 
 // main
 .page {
-		
+	
 	// header
 	header {
-		
-		// navbar
-		.navbar {
-			
-			// form
-			.navbar-form {
-				display: none;
+		.container {
+			.navbar-header {
+				
+				// hide the search bar on the header for search page
+				.navbar-form {
+					display: none;
+				}	
 			}
 		}
-	}
+	}	
 	
 	// main
 	.main {
@@ -133,7 +133,7 @@
 							}
 							.action {
 								background: @euscreen-lightgreen;
-								font-weight: bold;
+								
 								a {
 									color: @euscreen-white;
 								}
@@ -236,6 +236,11 @@
 						box-shadow: none;
 						-webkit-appearance: none;
 						padding: 14px;
+						
+						option {
+							background: @euscreen-white;
+							color: @euscreen-green;
+						}
 					}
 				}
 				

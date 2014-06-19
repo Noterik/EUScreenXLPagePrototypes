@@ -29,11 +29,8 @@
 				// navbar
 				.navbar {
 					
-					
 					// remove container padding on big display -> edge to edge
 					.container {
-						padding-left: 0px;
-						padding-right: 0px;
 						
 						// header
 						.navbar-header {
@@ -42,6 +39,31 @@
 							a.navbar-brand {
 								margin-left: -15px;
 								margin-right: 20px;
+								float: left;
+							}
+							
+							// by default, make the font smaller on wide 
+							.navbar-form {
+							
+								// make it visible on bigger screen, eventhough is hidden on small
+								visibility: visible;
+								input[type="text"] {
+									font-size: 1.071em;
+								}
+							}
+							
+							// when search is opened and the windows is wide
+							&.searchopened {
+								
+								// make the font smaller
+								.navbar-form {
+									border-left: 1px solid @border-color;
+								}
+								
+								// always show the logo on wide screen
+								a.navbar-brand {
+									display: block;
+								}
 							}
 						}
 					}
@@ -68,7 +90,7 @@
 							.opacity(1);
 							
 							// form input
-							.form-control {
+							input[type="text"] {
 								font-size: 1.071em;
 								margin-left: 0px;
 							}
@@ -209,8 +231,6 @@
 					
 					// remove container padding on big display -> edge to edge
 					.container {
-						padding-left: 0px;
-						padding-right: 0px;
 						
 						// header
 						.navbar-header {
@@ -219,28 +239,28 @@
 							a.navbar-brand {
 								margin-right: 30px;
 							}
-						}
-					}
-					
-					// form
-					.navbar-form {
-						border-right: 1px solid @border-color;
-						
-						// form group
-						.form-group {
-							margin-left: 30px;
 							
-							// icon 
-							.glyphicon-search {
-								display: inline-block;
-							}
-							
-							// form control
-							.form-control {
-								width: 280px;
+							// form
+							.navbar-form {
+								border-right: 1px solid @border-color;
+								
+								// form group
+								.form-group {
+									margin-left: 30px;
+									
+									// icon 
+									.glyphicon-search {
+										display: inline-block;
+									}
+									
+									// form control
+									.form-control {
+										width: 280px;
+									}
+								}
 							}
 						}
-					}
+					}				
 				}
 			}
 			
