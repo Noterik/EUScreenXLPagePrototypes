@@ -134,10 +134,6 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   width: 100%;
   border-bottom: 5px solid #00aeef;
 }
-.page .main .left .row .filters.mobile,
-.page .main .left .row .mediaselector.mobile {
-  display: block;
-}
 .page .main .left .row .filters .header,
 .page .main .left .row .mediaselector .header {
   padding-left: 0px;
@@ -153,6 +149,58 @@ textarea.page .main .left .row .searchbar input[type="text"] {
 .page .main .left .row .filters .accordion .filter .filtercontent,
 .page .main .left .row .mediaselector .accordion .filter .filtercontent {
   border-bottom: 1px solid #f2f2f2;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing {
+  margin: 0;
+  padding: 0;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li {
+  list-style: none;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li:before,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:before,
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li:after,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:after {
+  content: " ";
+  display: table;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li:after,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:after {
+  clear: both;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li a,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li a {
+  padding: 9px 0 9px 25px;
+  display: block;
+  width: 70%;
+  float: left;
+  color: #808080;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li:hover,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover {
+  background: #a8d46d;
+  color: #fff;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li:hover a,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a {
+  color: #ffffff;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li:hover .badge,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge {
+  color: #a8d46d;
+  background: #ffffff;
+}
+.page .main .left .row .filters .accordion .filter .filtercontent .listing li .badge,
+.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li .badge {
+  border-radius: 0px;
+  width: 40px;
+  text-align: center;
+  box-shadow: none;
+  background: #a8d46d;
+  padding: 4px 0px 3px;
+  margin: 10px 25px 0 0;
 }
 .page .main .left .row .filters .accordion a.name,
 .page .main .left .row .mediaselector .accordion a.name {
@@ -248,47 +296,9 @@ textarea.page .main .left .row .searchbar input[type="text"] {
 .page .main .left .row .ads img {
   width: 100%;
 }
-.page .main .left .listing {
-  margin: 0;
-  padding: 0;
-}
-.page .main .left .listing li {
-  list-style: none;
-}
-.page .main .left .listing li:before,
-.page .main .left .listing li:after {
-  content: " ";
-  display: table;
-}
-.page .main .left .listing li:after {
-  clear: both;
-}
-.page .main .left .listing li a {
-  padding: 9px 0 9px 25px;
+.page .main .left.optionOpened .row .filters,
+.page .main .left.optionOpened .row .mediaselector {
   display: block;
-  width: 70%;
-  float: left;
-  color: #808080;
-}
-.page .main .left .listing li:hover {
-  background: #a8d46d;
-  color: #fff;
-}
-.page .main .left .listing li:hover a {
-  color: #ffffff;
-}
-.page .main .left .listing li:hover .badge {
-  color: #a8d46d;
-  background: #ffffff;
-}
-.page .main .left .listing li .badge {
-  border-radius: 0px;
-  width: 40px;
-  text-align: center;
-  box-shadow: none;
-  background: #a8d46d;
-  padding: 4px 0px 3px;
-  margin: 10px 25px 0 0;
 }
 .page .main .right {
   border-left: 6px solid #f2f2f2;

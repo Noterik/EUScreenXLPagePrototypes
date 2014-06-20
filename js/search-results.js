@@ -7,8 +7,7 @@ $(document).ready(function () {
     EUScreenXL.SearchResultsPage = function () {
         EUScreenXL.Page.apply(this, arguments);
         this.$navElement = jQuery('#navpanel');
-        this.$filterElement = jQuery('.filters');
-        this.$mediaTypeElement = jQuery('.mediaselector');
+        this.$sideBarElements = jQuery('#sidebar');
         this.$searchInputElement = jQuery('#searchkeyword');
         
         // nav panel
@@ -45,16 +44,14 @@ $(document).ready(function () {
         "click #optionbutton": function(event) {
         	if(this.optionButton.hasClass("active")) {
 	        	this.optionButton.removeClass("active"); // toggle style
-	        	this.$filterElement.removeClass('mobile'); // hide the filter
-	        	this.$mediaTypeElement.removeClass('mobile'); // hide the media selector
+	        	this.$sideBarElements.removeClass("optionOpened"); // will hide the filters and media selector
         	} else {
 	        	this.optionButton.addClass("active"); // toggle style
-	        	this.$filterElement.addClass('mobile'); // show the filter
-	        	this.$mediaTypeElement.addClass('mobile'); // show the media selector
+	        	this.$sideBarElements.addClass("optionOpened"); // will show the filters and media selector
         	}
         },
         "click #searchbutton": function(event) {
-	        this.$searchInputElement.focus(); // focus on the search field
+	        this.$searchInputElement.focus(); // focus on the search field, instead of opening the searchbox on top
         }
     }
 

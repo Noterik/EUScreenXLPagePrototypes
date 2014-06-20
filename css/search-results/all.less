@@ -126,11 +126,13 @@
 					}
 				}
 				
-				// filter
+				// filters and media selector wrap
+				// it's will act as an overlay so set transparant and absolute position 
+				// hide on default, activated by adding .optionOpened class to #sidebar via JS (js/search-results.js)
 				.filters, .mediaselector {
-					background: rgba(255,255,255,0.95);
+					background: rgba(255,255,255,0.95); 
 					position: absolute;
-					display: none;
+					display: none; 
 					left: 0;
 					top:178px;
 					z-index: 8;
@@ -138,12 +140,7 @@
 					padding-right: 25px;
 					padding-bottom: 25px;
 					width: 100%;
-					border-bottom: 5px solid @euscreen-blue;
-					
-					// mobile
-					&.mobile {
-						display: block;
-					}
+					border-bottom: 5px solid @euscreen-blue; // set border to give end marking to the overlay
 					
 					// header
 					.header {
@@ -161,8 +158,56 @@
 							background: rgba(255,255,255,1);
 							margin-top:-1px;
 							
+							// the wrapper of the filter
 							.filtercontent {
+							
+								// give the border to distinguish with other filter
+								// when it is opened
 								border-bottom: 1px solid @border-color;
+								
+								// listing filter item
+								.listing {
+									margin:0; 
+									padding: 0;
+									
+									// default
+									li {
+										list-style: none;
+										.clearfix;
+											
+										a {
+											padding: 9px 0 9px 25px;
+											display: block;
+											width: 70%;
+											float: left;
+											color: @euscreen-gray;
+										}
+										
+										// hover
+										&:hover {
+											background: @euscreen-lightgreen;
+											color: #fff;
+											a {
+												color: @euscreen-white;
+											}
+											.badge {
+												color: @euscreen-lightgreen;
+												background: @euscreen-white;
+											}
+										}
+										
+										// counter
+										.badge {
+											border-radius: 0px;
+											width: 40px;
+											text-align: center;
+											box-shadow: none;
+											background: @euscreen-lightgreen;
+											padding: 4px 0px 3px;
+											margin:10px 25px 0 0;	
+										}
+									}
+								}
 							}
 						}
 						
@@ -234,46 +279,17 @@
 				}
 			}
 			
-			// listing filter item
-			.listing {
-				margin:0; 
-				padding: 0;
+			// when optionOpened class is added to #sidebar via JS
+			// on js/search-results.js
+			&.optionOpened {
 				
-				// default
-				li {
-					list-style: none;
-					.clearfix;
-						
-					a {
-						padding: 9px 0 9px 25px;
+				// take a look at each row
+				.row {
+					
+					// find .filters and .mediaselector
+					// and set show it
+					.filters, .mediaselector {
 						display: block;
-						width: 70%;
-						float: left;
-						color: @euscreen-gray;
-					}
-					
-					// hover
-					&:hover {
-						background: @euscreen-lightgreen;
-						color: #fff;
-						a {
-							color: @euscreen-white;
-						}
-						.badge {
-							color: @euscreen-lightgreen;
-							background: @euscreen-white;
-						}
-					}
-					
-					// counter
-					.badge {
-						border-radius: 0px;
-						width: 40px;
-						text-align: center;
-						box-shadow: none;
-						background: @euscreen-lightgreen;
-						padding: 4px 0px 3px;
-						margin:10px 25px 0 0;	
 					}
 				}
 			}

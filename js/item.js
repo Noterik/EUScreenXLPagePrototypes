@@ -34,10 +34,10 @@ $(document).ready(function () {
         'click #searchbutton': function(event) {
 	        if(this.searchButton.hasClass("active")) {
 	        	this.searchButton.removeClass("active"); // toggle style
-	        	this.$navbarElement.removeClass('searchopened');
+	        	this.$navbarElement.removeClass('searchOpened');
         	} else {
 	        	this.searchButton.addClass("active"); // toggle style
-	        	this.$navbarElement.addClass('searchopened');
+	        	this.$navbarElement.addClass('searchOpened');
 	        	this.$formElement.find('input[type="text"]').focus();
         	}
         }

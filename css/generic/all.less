@@ -164,7 +164,8 @@ body {
 					}
 					
 					// form, hidden by default.
-					// will be shown if triggered by JS by adding .searchopened class to navbar-header
+					// will be shown if triggered by JS by adding .searchOpened class to .navbar-header
+					// the JS is currently on (js/[page-name].js)
 					.navbar-form {
 						padding: 8px 0 0 0;
 						margin:0;
@@ -199,9 +200,10 @@ body {
 						}
 					}
 					
-					// when the search is opened by clicking the magnifying icon, apply this class
+					// when the search is opened by clicking the magnifying icon, JS will append this class
 					// and remove it when it deactivates
-					&.searchopened {
+					// JS currently on (js/[page-name].js)
+					&.searchOpened {
 						
 						// makes the form visible
 						.navbar-form {

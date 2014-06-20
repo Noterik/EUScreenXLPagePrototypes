@@ -188,11 +188,11 @@ body .page header .navbar .navbar-header .navbar-form .form-group .glyphicon-sea
 body .page header .navbar .navbar-header .navbar-form button {
   display: none;
 }
-body .page header .navbar .navbar-header.searchopened .navbar-form {
+body .page header .navbar .navbar-header.searchOpened .navbar-form {
   visibility: visible;
   border-left: 0px;
 }
-body .page header .navbar .navbar-header.searchopened a.navbar-brand {
+body .page header .navbar .navbar-header.searchOpened a.navbar-brand {
   display: none;
 }
 body .page .main {
@@ -375,10 +375,10 @@ body .mobilenav .info {
   body .page header .navbar .container .navbar-header .navbar-form input[type="text"] {
     font-size: 1.071em;
   }
-  body .page header .navbar .container .navbar-header.searchopened .navbar-form {
+  body .page header .navbar .container .navbar-header.searchOpened .navbar-form {
     border-left: 1px solid #f2f2f2;
   }
-  body .page header .navbar .container .navbar-header.searchopened a.navbar-brand {
+  body .page header .navbar .container .navbar-header.searchOpened a.navbar-brand {
     display: block;
   }
   body .page .main {
