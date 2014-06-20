@@ -82,20 +82,23 @@ body .page header .navbar .navbar-header a.navbar-brand {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-left: -15px;
-  /*
-						.text-hide();
-						width: 172px;
-						height: 53px;
-						background: url(@sprites-path) -320px 0;
-						margin-top:8px;
-						float: none;*/
-  font-size: 1.571em;
-  height: 70px;
-  color: #00aeef;
-  padding-top: 23px;
-  font-weight: 600;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  width: 172px;
+  height: 53px;
+  background: url("../../img/sprites.png") -320px 0;
+  margin: 8px auto ;
   float: none;
+  /*
+						font-size: 1.571em;
+						height: 70px;
+						color: @euscreen-blue;
+						padding-top:23px;
+						font-weight: 600;
+						float: none;*/
 }
 body .page header .navbar .navbar-header .menuicon button {
   height: 70px;
@@ -146,11 +149,11 @@ body .page header .navbar .navbar-header .navbar-form {
   visibility: hidden;
 }
 body .page header .navbar .navbar-header .navbar-form .form-group {
-  margin: 0 10px 0 20px;
+  margin: 0 0 0 20px;
 }
 body .page header .navbar .navbar-header .navbar-form .form-group input[type="text"] {
   height: 54px;
-  width: 165px;
+  width: 100%;
   padding: 0px;
   font-size: 1.286em;
   line-height: inherit;
@@ -367,6 +370,7 @@ body .mobilenav .info {
   }
   body .page header .navbar .container .navbar-header a.navbar-brand {
     margin-right: 20px;
+    margin-left: -15px;
     float: left;
   }
   body .page header .navbar .container .navbar-header .navbar-form {
