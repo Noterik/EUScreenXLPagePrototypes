@@ -25,7 +25,7 @@
   position: relative;
   width: 100%;
 }
-.page .main .left .row .searchbar .form-control {
+.page .main .left .row .searchbar input[type="text"] {
   height: 100%;
   width: 70%;
   padding: inherit;
@@ -36,24 +36,24 @@
   box-shadow: none;
   margin-left: 23px;
 }
-.page .main .left .row .searchbar .form-control::-moz-placeholder {
+.page .main .left .row .searchbar input[type="text"]::-moz-placeholder {
   color: #d2d2d2;
   font-style: italic;
   opacity: 1;
 }
-.page .main .left .row .searchbar .form-control:-ms-input-placeholder {
+.page .main .left .row .searchbar input[type="text"]:-ms-input-placeholder {
   color: #d2d2d2;
   font-style: italic;
 }
-.page .main .left .row .searchbar .form-control::-webkit-input-placeholder {
+.page .main .left .row .searchbar input[type="text"]::-webkit-input-placeholder {
   color: #d2d2d2;
   font-style: italic;
 }
-select.page .main .left .row .searchbar .form-control {
+select.page .main .left .row .searchbar input[type="text"] {
   height: 100%;
   line-height: 100%;
 }
-textarea.page .main .left .row .searchbar .form-control {
+textarea.page .main .left .row .searchbar input[type="text"] {
   height: auto;
 }
 .page .main .left .row .searchbar .glyphicon-search {
@@ -61,7 +61,6 @@ textarea.page .main .left .row .searchbar .form-control {
   font-size: 1.3em;
   margin: 21px 15px 0 25px;
   float: left;
-  display: none;
 }
 .page .main .left .row .searchbar .optionbutton {
   height: 70px;
@@ -86,17 +85,6 @@ textarea.page .main .left .row .searchbar .form-control {
   border-left: 1px solid #00aeef;
   border-right: 1px solid #00aeef;
 }
-.page .main .left .row .searchbar .optionbar {
-  position: absolute;
-  top: 65px;
-  z-index: 8;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  height: 300px;
-  border-bottom: 5px solid #00aeef;
-  display: none;
-}
 .page .main .left .row .selectedfilter {
   background: #ffffff;
   margin: 6px 0 0 0;
@@ -104,9 +92,6 @@ textarea.page .main .left .row .searchbar .form-control {
   border-right: 6px solid #f2f2f2;
   width: 100%;
   padding-top: 25px;
-}
-.page .main .left .row .selectedfilter .header {
-  display: none;
 }
 .page .main .left .row .selectedfilter .tags {
   padding: 0 25px 25px 25px;
@@ -512,7 +497,6 @@ textarea.page .main .left .row .searchbar .form-control {
   border-top: 1px solid #f2f2f2;
   padding: 23px 0 23px 0;
   background: #fff;
-  margin-bottom: 6px;
 }
 .page .main .right .row .more a {
   color: #808080;

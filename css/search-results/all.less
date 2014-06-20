@@ -9,7 +9,8 @@
 * Certain device may override these styles in their own stylesheet.
 */
 
-// main
+// every page starts with .page class selector
+// for body element styling, go to generic/all.css
 .page {
 	
 	// header
@@ -28,16 +29,16 @@
 	// main
 	.main {
 		
-		// refine
+		// left side (sidebars)
 		.left {
 			 
-			// wrap
+			// rows
 			.row {
 				
 				// remove column padding
 				.removeColumnPadding();
 				
-				// header
+				// small header of the filters
 				.header {
 					display: block;
 					padding: 25px 25px 10px 25px;
@@ -54,22 +55,21 @@
 					width: 100%;
 					
 					// form input
-					.form-control {
+					input[type="text"] {
 						.placeholderItalic(#d2d2d2,italic);
 						.inputStyling(100%; 70%; 1.5em ; inherit; 0px; 0px ; inherit; none);
 						margin-left: 23px;
 					}
 					
-					// search icon
+					// search icon, hide on mobile, shown on wide screens by setting hidden-xs class
 					.glyphicon-search {
 						color: @euscreen-blue;
 						font-size: 1.3em;
 						margin: 21px 15px 0 25px; 
 						float: left;
-						display: none;
 					}
 					
-					// option butto
+					// option button, only shown on mobile by setting visible-xs class
 					.optionbutton {
 						.btn-eumenu();
 						float: right;
@@ -79,22 +79,11 @@
 						color: @gray;
 						height: 60px;
 					}
-					
-					// optionbar
-					.optionbar {
-						position: absolute;
-						top: 65px;
-						z-index: 8;
-						left: 0;
-						width: 100%;
-						background: rgba(255,255,255,0.95);
-						height: 300px;
-						border-bottom: 5px solid @euscreen-blue;
-						display: none;
-					}
 				}
 				
 				// selected filter
+				// add border left and right to create gutter space on mobile
+				// remove it on wide screens (bootstrap/responsive-euscreen.less)
 				.selectedfilter {
 					background: @euscreen-white;
 					margin: 6px 0 0 0;
@@ -102,11 +91,6 @@
 					border-right: 6px solid @body-bg;
 					width: 100%;
 					padding-top:25px;
-					
-					// header
-					.header {
-						display: none;
-					}
 					
 					// tags
 					.tags {
@@ -526,7 +510,6 @@
 				// more
 				.more {
 					.moreButton();
-					margin-bottom: 6px;
 				}
 			}
 		}

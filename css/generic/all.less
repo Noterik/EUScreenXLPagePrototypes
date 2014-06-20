@@ -9,7 +9,8 @@
 * Certain device may override these styles in their own stylesheet.
 */
 
-// anchor settings
+// anchor settings, bootstrap already adds some stuff by default
+// remove unnecessary styling
 a {
 	cursor: pointer;
 	&:hover {
@@ -24,12 +25,12 @@ a {
 	}
 }
 
-// general input
+// general styling for input
 input {
 	font-family: @font-family-base;
 }
 
-// colors
+// quick styling for colors
 .colorblack { color: @euscreen-black; }
 .colorgray { color: @euscreen-gray; }
 
@@ -38,314 +39,317 @@ html {
 	position: relative;
 	min-height: 100%;
 }
+
+// body
 body {
+
+	// height set to 100% to pushes the footer
 	height: 100%;
 	
-	// browsehappy
-	.browsehappy {
-		position: fixed;
-		text-align: center;
-		width: auto;
-		top:80px;
-		left: 10px; right: 10px;
-		z-index: 10;
-	}
-}
-
-// main page
-.page {
-	
-	// header
-	header {
+	// main page
+	.page {
 		
-		// navbar
-		.navbar {
-			background: @euscreen-white;
-			border-bottom: 1px solid @body-bg;
-			height: 70px;
-		
-			// nav
-			ul {
-				li {
-					
-					// general nav style
-					a {
-						font-size: 1.071em;
-						font-family: @font-family-monospace;
-						color: @euscreen-gray;
-						padding: 25px 30px 0px 30px;
-						border-right: 1px solid @border-color;
-						height: 70px;
+		// header
+		header {
+			
+			// navbar
+			.navbar {
+				background: @euscreen-white;
+				border-bottom: 1px solid @body-bg;
+				height: 70px;
+			
+				// nav
+				ul {
+					li {
 						
-						// on hover
-						&:hover {
-							background: none;
-							color:@euscreen-blue;
-						}
-					}
-					
-					// first element
-					&:first-child {
+						// general nav style
 						a {
-							border-left: 1px solid @border-color;
-						}
-					}
-					
-					// last child (myeuscreen)
-					&:last-child {
-						padding:17px 0 0 30px;
-						
-						a {
-							padding: 7px 26px 8px 26px;
-							background-color: @euscreen-blue;
-							height: auto;
-							color: @euscreen-white;
-							border-radius: 3px;
-							border-right: none;
-							.transition(background-color 0.2s ease-out);
+							font-size: 1.071em;
+							font-family: @font-family-monospace;
+							color: @euscreen-gray;
+							padding: 25px 30px 0px 30px;
+							border-right: 1px solid @border-color;
+							height: 70px;
 							
+							// on hover
 							&:hover {
-								.transition(background-color 0.3s ease-out);
-								background-color: darken(@euscreen-blue, 8%);
+								background: none;
+								color:@euscreen-blue;
+							}
+						}
+						
+						// first element
+						&:first-child {
+							a {
+								border-left: 1px solid @border-color;
+							}
+						}
+						
+						// last child (myeuscreen)
+						// show blue button instead
+						&:last-child {
+							padding:17px 0 0 30px;
+							
+							a {
+								padding: 7px 26px 8px 26px;
+								background-color: @euscreen-blue;
+								height: auto;
+								color: @euscreen-white;
+								border-radius: 3px;
+								border-right: none;
+								.transition(background-color 0.2s ease-out);
+								
+								&:hover {
+									.transition(background-color 0.3s ease-out);
+									background-color: darken(@euscreen-blue, 8%);
+								}
 							}
 						}
 					}
 				}
-			}
-			
-			// logo
-			.navbar-header {
-				font-family: @font-family-monospace;
-				height: 70px;
-				text-align: center;
 				
-				// reset the default gutter
-				margin-left: -15px;
-				
-				// the logo
-				a.navbar-brand {
-					.center-block();
-					/*
-					.text-hide();
-					width: 172px;
-					height: 53px;
-					background: url(@sprites-path) -320px 0;
-					margin-top:8px;
-					float: none;*/
-					
-					font-size: 1.571em;
+				// the header section
+				.navbar-header {
+					font-family: @font-family-monospace;
 					height: 70px;
-					color: @euscreen-blue;
-					padding-top:23px;
-					font-weight: 600;
-					float: none;
+					text-align: center;
 					
-				}
-				
-				// menu icon
-				.menuicon {
+					// reset the default gutter
+					// bootstrap added 15px padding on the left of container
+					margin-left: -15px;
 					
-					// the button
-					button {
-						.btn-eumenu();
-						border-left: 0px;
-						font-size: 1.5em;
-						color: @gray;
-					}
-				}
-				
-				// menu icon
-				.searchicon {
-					
-					// the button
-					button {
-						.btn-eumenu();
-						border-right: 0px;
-						font-size: 1.5em;
-						color: @gray;
-					}
-				}
-				
-				// form
-				.navbar-form {
-					padding: 8px 0 0 0;
-					margin:0;
-					height: 70px;
-					float: left;
-					border-left: 1px solid @border-color;
-					visibility: hidden; // hide by default, will show in bigger screen (except on searchpage, where we set display to none)
-					
-					// form group
-					.form-group {
-						margin: 0 10px 0 20px;
-						
-						// input
-						input[type="text"] {
-							.placeholderItalic(#d2d2d2,italic);
-							.inputStyling(54px; 165px; 1.286em ; inherit; 0px; 0px; 0px; none);
-						}
-						
-						// magnifying icon
-						.glyphicon-search {
-							color: @euscreen-blue;
-							font-size: 1.2em;
-							margin: 16px 20px 0 0;
-							display: none;
-							float: left;
-						}
-					}
-					
-					// hide for this project
-					button {
-						display: none;
-					}
-				}
-				
-				// when the search is opened by clicking the magnifying icon, apply this class
-				&.searchopened {
-					
-					// makes the form visible
-					.navbar-form {
-						visibility: visible;
-						border-left: 0px;
-					}
-					
-					// and hide the brand
+					// the logo
 					a.navbar-brand {
-						display: none;
+						.center-block();
+						margin-left: -15px; // bootstrap adds another 15px padding on the left of navbar-brand, remove them
+						
+						/*
+						.text-hide();
+						width: 172px;
+						height: 53px;
+						background: url(@sprites-path) -320px 0;
+						margin-top:8px;
+						float: none;*/
+						
+						font-size: 1.571em;
+						height: 70px;
+						color: @euscreen-blue;
+						padding-top:23px;
+						font-weight: 600;
+						float: none;
+					}
+					
+					// menu icon, shown on mobile, hidden on wide screens
+					.menuicon {
+						
+						// the button
+						button {
+							.btn-eumenu();
+							border-left: 0px;
+							font-size: 1.5em;
+							color: @gray;
+						}
+					}
+					
+					// menu icon, shown on mobile, hidden on wide screens
+					.searchicon {
+						
+						// the button
+						button {
+							.btn-eumenu();
+							border-right: 0px;
+							font-size: 1.5em;
+							color: @gray;
+						}
+					}
+					
+					// form, hidden by default.
+					// will be shown if triggered by JS by adding .searchopened class to navbar-header
+					.navbar-form {
+						padding: 8px 0 0 0;
+						margin:0;
+						height: 70px;
+						float: left;
+						border-left: 1px solid @border-color;
+						visibility: hidden; // hide by default, will show in bigger screen (except on searchpage, where we set display to none)
+						
+						// form group
+						.form-group {
+							margin: 0 10px 0 20px;
+							
+							// input text
+							input[type="text"] {
+								.placeholderItalic(#d2d2d2,italic);
+								.inputStyling(54px; 165px; 1.286em ; inherit; 0px; 0px; 0px; none);
+							}
+							
+							// magnifying icon
+							.glyphicon-search {
+								color: @euscreen-blue;
+								font-size: 1.2em;
+								margin: 16px 20px 0 0;
+								display: none;
+								float: left;
+							}
+						}
+						
+						// hide for EUscreenXL, search action will be done from enter key event
+						button {
+							display: none;
+						}
+					}
+					
+					// when the search is opened by clicking the magnifying icon, apply this class
+					// and remove it when it deactivates
+					&.searchopened {
+						
+						// makes the form visible
+						.navbar-form {
+							visibility: visible;
+							border-left: 0px;
+						}
+						
+						// and hide the brand
+						a.navbar-brand {
+							display: none;
+						}
 					}
 				}
 			}
 		}
-	}
-	
-	// main
-	.main {
-		padding-top: 70px; // add space to accomodate the fixed header
-	}
-	
-	// footer
-	footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		height: 183px; // fix height of the footer
-		background-color: @euscreen-white;
 		
-		// remove padding
-		[class*='col-'] {
-			padding-left: 0px;
-			padding-right: 0px;
+		// main
+		.main {
+		
+			// add space to accomodate the fixed navbar, add 1px space betwen main and navbar (default/mobile)
+			// it will be extended to 6px on wide screens, so set padding 75px on wide screens
+			padding-top: 70px;
+			padding-bottom: 6px; // default bottom space is 6px (mobile) 
 		}
+		
+		// footer
+		footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: @euscreen-footer-height; // fix height of the footer
+			background-color: @euscreen-white;
+			
+			// remove bootstrap gutter padding to get the correct styling
+			[class*='col-'] {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+					
+			// links
+			.links {
+				display: block;
+				padding: 60px 0 0 0;
+			  
+				.list-inline {
+				  	li {
+				  		margin: 0 10px 0 0;
+				  		a {
+				  			color: #787878;
+				  		}
+				  	}
+				}
+			}
+			
+			// affiliates logo at the bottom
+			.affiliates {
+				text-align: right;
+				padding-top:40px;
 				
-		// links
-		.links {
-			display: block;
-			padding: 60px 0 0 0;
+				// logo
+				.list-inline {
+					
+					// general
+					li {
+						margin-left: 10px;
+					}
+					
+					// european comission
+					.europeancomission {
+						.grayscale();
+						.opacity(0.7);
+						background: url(@sprites-path);
+						width: 117px;
+						height: 82px;
+						display: inline-block;
+					}
+					
+					// europeana
+					.europeana {
+						.grayscale();
+						.opacity(0.7);
+						background: url(@sprites-path) -117px 0;
+						width: 136px;
+						height: 80px;
+						display: inline-block;
+					}
+				}
+			}
 		  
-			.list-inline {
-			  	li {
-			  		margin: 0 10px 0 0;
-			  		a {
-			  			color: #787878;
-			  		}
-			  	}
+			// note
+			.footer-note {
+			  	color: #787878;
 			}
-		}
-		
-		// affiliates
-		.affiliates {
-			text-align: right;
-			padding-top:40px;
-			
-			// logo
-			.list-inline {
-				
-				// general
-				li {
-					margin-left: 10px;
-				}
-				
-				// european comission
-				.europeancomission {
-					.grayscale();
-					.opacity(0.7);
-					background: url(@sprites-path);
-					width: 117px;
-					height: 82px;
-					display: inline-block;
-				}
-				
-				// europeana
-				.europeana {
-					.grayscale();
-					.opacity(0.7);
-					background: url(@sprites-path) -117px 0;
-					width: 136px;
-					height: 80px;
-					display: inline-block;
-				}
-			}
-		}
-	  
-		// note
-		.footer-note {
-		  	color: #787878;
 		}
 	}
-}
-
-// mobile navigation
-.mobilenav {
-	position: fixed;
-	overflow-y: auto;
-	width: 250px;
-	height: 100%;
-	top:0;
-	left: -250px;
-	background: @euscreen-panel-gray;
 	
-	// main
-	.main, .secondary, .info {
-		margin-bottom: 0px;
-		color: #a6abab;
-		padding: 30px 30px 20px 30px;
-		border-bottom: 1px solid #464646;
+	// mobile navigation
+	.mobilenav {
+		position: fixed;
+		overflow-y: auto;
+		width: @euscreen-mobile-navigation-width; // width can be set in variables.less
+		height: 100%;
+		top:0;
+		left: -@euscreen-mobile-navigation-width; // hide it for now
+		background: @euscreen-panel-gray;
 		
-		// default
-		li {
-			list-style: none;
-			margin: 0 0 10px 0;
-			.clearfix;
+		// main
+		.main, .secondary, .info {
+			margin-bottom: 0px;
+			color: #a6abab;
+			padding: 30px 30px 20px 30px;
+			border-bottom: 1px solid #464646;
 			
-			// nav
-			a {
-				color: inherit;
-				font-size: 1.429em;
-			}
-			
-			// active
-			&.active {
+			// default
+			li {
+				list-style: none;
+				margin: 0 0 10px 0;
+				.clearfix;
+				
+				// nav
 				a {
-					color: @euscreen-white;
+					color: inherit;
+					font-size: 1.429em;
 				}
-			}	
-		}
-	}
-	
-	// secondary
-	.secondary {
-		li {
-			a {
-				font-size: 1em;
+				
+				// active
+				&.active {
+					a {
+						color: @euscreen-white;
+					}
+				}	
 			}
 		}
-	}
-	
-	// info
-	.info {
-		border-bottom: 0px;
-		display: block;
+		
+		// secondary
+		.secondary {
+			li {
+				a {
+					font-size: 1em;
+				}
+			}
+		}
+		
+		// info
+		.info {
+			border-bottom: 0px;
+			display: block;
+		}
 	}
 }
 
@@ -356,6 +360,16 @@ body {
 	top:0px;
 	overflow: hidden;
 	width: 100%;
+}
+
+// browsehappy
+.browsehappy {
+	position: fixed;
+	text-align: center;
+	width: auto;
+	top:80px;
+	left: 10px; right: 10px;
+	z-index: 10;
 }
 
 // Import responsive variables (temporary, until js is fix)

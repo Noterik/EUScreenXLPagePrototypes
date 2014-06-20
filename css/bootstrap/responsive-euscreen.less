@@ -11,6 +11,8 @@
 /* Extra small devices (mobiles, 480px and up) */
 @media (min-width: @screen-xs-min) {
 	
+	// Default style for mobiles devices is on each page specific stylesheets
+	// It starts with mobile design and scale up to desktop (not the other way around)
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -18,7 +20,9 @@
 	
 	// ze body
 	body {
-		margin-bottom: 183px; // le height of the footer	
+		
+		// the height of the footer, set in variables.less
+		margin-bottom: @euscreen-footer-height;	
 		
 		// the content
 		.page {
@@ -29,7 +33,7 @@
 				// navbar
 				.navbar {
 					
-					// remove container padding on big display -> edge to edge
+					// container on navbar
 					.container {
 						
 						// header
@@ -37,30 +41,30 @@
 							
 							// the logo
 							a.navbar-brand {
-								margin-left: -15px;
-								margin-right: 20px;
-								float: left;
+								margin-right: 20px; // set spacing between brand and form
+								float: left; // float it to left, since there is search form next to it
 							}
 							
 							// by default, make the font smaller on wide 
 							.navbar-form {
 							
-								// make it visible on bigger screen, eventhough is hidden on small
+								// make it visible on bigger screen, eventhough is hidden on small (default)
 								visibility: visible;
 								input[type="text"] {
 									font-size: 1.071em;
 								}
 							}
 							
-							// when search is opened and the windows is wide
+							// when search is opened and the windows is stretch
 							&.searchopened {
 								
-								// make the font smaller
+								// set border, to separate brand and form
 								.navbar-form {
 									border-left: 1px solid @border-color;
 								}
 								
-								// always show the logo on wide screen
+								// eventhough brand is hidden when search is pressed, always show it when the windows is stretch
+								// overwrite the default styling on generic/all.css
 								a.navbar-brand {
 									display: block;
 								}
@@ -72,16 +76,16 @@
 			
 			// main
 			.main {
-				padding-top: 75px; // make the top and bottom padding bigger in big devices
-				padding-bottom: 50px;
+				padding-top: 75px; // because the navbar is in fixed position, we need to add padding and create 6px gap between navbar and main
+				padding-bottom: 50px; // extend the bottom padding from 6px to 50px in big screens
 				
-				// refine
+				// left side in searchpage
 				.left {
 					
-					// wrap
+					// rows
 					.row {
 						
-						// searchbar
+						// show left search bar, by default is hidden (mobile)
 						.searchbar {
 							display: block;
 							border-bottom: 0px;
@@ -89,26 +93,23 @@
 							z-index: auto;
 							.opacity(1);
 							
-							// form input
+							// makes the text smaller and remove margin
+							// by default the text size is 1.5em and left margin is 23px
 							input[type="text"] {
 								font-size: 1.071em;
 								margin-left: 0px;
 							}
-							
-							// icon
-							.glyphicon-search  {
-								display: block;
-							}
 						}
 						
-						// selected filter
+						// remove border left and right on selected filter
+						// it was added by default to create a spacing effect on the right/left side
 						.selectedfilter {
 							border-left: 0px;
 							border-right: 0px;
-							margin:1px 0 0 0;
+							margin: 1px 0 0 0; // make the margin smaller
 							padding-top:0px;
 							
-							// header
+							// show the header, hidden by default (mobile)
 							.header {
 								display: block;	
 							}
@@ -127,7 +128,8 @@
 							}
 						}
 						
-						// filters
+						// remove background transparancy, set position to inherit (previously is absolute) to make modal effect
+						// many stuff (border, z-index, top, left, etc) changed during default to wide screen transitions
 						.filters {
 							background: rgba(255,255,255,1);
 							margin: 1px 0 6px 0;
@@ -140,20 +142,21 @@
 							display: block;
 							border-bottom: 0px;
 							
-							// header
+							// add padding to the left side
 							.header {
 								padding-left: 25px;
 							}
 							
-							// accordion
+							// the filter items
 							.accordion {
 							
-								// more
+								// show more on wide screens, it was hidden by default (mobile)
+								// only shows language, decades and topics by default (mobile), extra filter is hidden by default (hidden-xs)
 								.more {
 									display: block;
 								}
 								
-								// filter
+								// remove border and no background
 								.filter {
 									border-left: 0px;
 									border-right: 0px;
@@ -162,7 +165,8 @@
 							}
 						}
 						
-						// mediaselector
+						// when the media selector is opened and the screen is stretched, then hide it
+						// because it should only shows in mobile 
 						.mediaselector {
 							&.mobile {
 								display: none;
@@ -171,25 +175,37 @@
 					}
 				}
 				
-				// results
+				// right side in searchpage
 				.right {
+					
+					// remove border, previously border is added by default on mobile 
+					// to create spacing effect
 					border-right: 0px;
 					
-					// row
+					// rows
 					.row {
 						
-						// mediatab
+						// always show media tab on wide screens, hidden by default (mobile)
 						.mediatab {
 							display: block;
 						}
 						
-						// result
+						// results wrapper
 						.results {
+							
+							// each result
 							.media-item {
+								
+								// on media metadata
 								.media-metadata {
+									
+									// make the heading smaller, on mobile is 1.33em
 									h3.media-heading {
 										font-size: 1.286em;
 									}
+									
+									// line is the space between metadata items (original title, provider, etc)
+									// remove the margin and set the font smaller to accomodate tight spaces
 									.line {
 										margin: 0 0 0 0;
 										font-size: 0.929em;
@@ -202,7 +218,8 @@
 							}
 						}
 						
-						// counter
+						// counter and sorting options
+						// make the size smaller and set margin top to 6px (spaces to the mediatab)
 						.counter {
 							font-size: 0.929em;
 							margin:6px 0 0 0;
@@ -229,32 +246,32 @@
 				// navbar
 				.navbar {
 					
-					// remove container padding on big display -> edge to edge
+					// the container
 					.container {
 						
 						// header
 						.navbar-header {
 							
-							// the logo
+							// because of the added space, add margin right to make it more spacious
 							a.navbar-brand {
 								margin-right: 30px;
 							}
 							
-							// form
+							// gives the form right border, so the user knows the size of the text input
 							.navbar-form {
 								border-right: 1px solid @border-color;
 								
-								// form group
+								// add space to the brand on the left, make it more spacious
 								.form-group {
 									margin-left: 30px;
 									
-									// icon 
+									// show the search icon on wider screens 
 									.glyphicon-search {
 										display: inline-block;
 									}
 									
-									// form control
-									.form-control {
+									// set the width to be wider, because we have unused spaces
+									input[type="text"] {
 										width: 280px;
 									}
 								}
@@ -267,19 +284,28 @@
 			// main
 			.main {
 			
-				// results
+				// right sections on the search page
 				.right {
 					
-					// row
+					// rows
 					.row {
 						
-						// result
+						// results wrapper
 						.results {
+							
+							// each result
 							.media-item {
+								
+								// create more spaces on the metadata
 								.media-metadata {
+								
+									// add more space below title heading
 									h3.media-heading {
 										margin-bottom: 8px;
 									}
+									
+									// each of the small metadata properties
+									// make the font bigger and add space below them
 									.line {
 										font-size: 1em;
 										margin-bottom: 2px;
@@ -317,5 +343,8 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { 
+
+	// do nothing for now
+	// bootstrap columns already setting it adaptive
 	
 }

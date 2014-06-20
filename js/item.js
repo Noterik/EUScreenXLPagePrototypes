@@ -6,13 +6,11 @@ $(document).ready(function () {
 
     EUScreenXL.ItemPage = function () {
         EUScreenXL.Page.apply(this, arguments);
-
+        this.$navElement = jQuery('#navpanel');
         this.$loginElement = jQuery('.login-form');
         this.$bookmarksElement = jQuery('.bookmarks');
         this.$navbarElement = jQuery('.navbar-header');
-        this.$logoElement = jQuery('.navbar-brand');
         this.$formElement = jQuery('#headerform');
-        this.$navElement = jQuery('#navpanel');
         
         // nav panel
         this.$navElement.slidePanelJS({
@@ -24,7 +22,6 @@ $(document).ready(function () {
     };
     EUScreenXL.ItemPage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.ItemPage.prototype.searchButton = jQuery("#searchbutton");
-    EUScreenXL.ItemPage.prototype.headerForm = jQuery("#headerform");
     EUScreenXL.ItemPage.prototype.events = {
         'click button.more-info': function () {
             console.log("MORE INFO BUTTON CLICKED!");
