@@ -166,11 +166,17 @@
 								}
 							}
 						}
+					}
+					
+					// when the media selector is opened and the screen is stretched, then hide it
+					// because it should only shows in mobile 
+					&.optionOpened {
 						
-						// when the media selector is opened and the screen is stretched, then hide it
-						// because it should only shows in mobile 
-						.mediaselector {
-							&.mobile {
+						// row
+						.row {
+						
+							// option opened
+							.mediaselector {
 								display: none;
 							}
 						}

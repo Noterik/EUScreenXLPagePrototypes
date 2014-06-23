@@ -101,8 +101,7 @@ body .page header .navbar .navbar-header a.navbar-brand {
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
-						float: none;
-						*/
+						float: none;*/
 }
 body .page header .navbar .navbar-header .menuicon button {
   height: 70px;
@@ -479,7 +478,7 @@ body .mobilenav .info {
     border-right: 0px;
     background: none;
   }
-  body .page .main .left .row .mediaselector.mobile {
+  body .page .main .left.optionOpened .row .mediaselector {
     display: none;
   }
   body .page .main .right {
