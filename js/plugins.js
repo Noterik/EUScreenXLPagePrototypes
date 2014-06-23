@@ -98,3 +98,33 @@
         
 	};
 })(jQuery);
+
+/*
+    stickySidebarJS
+*/
+(function($) {
+	$.fn.stickySidebarJS = function(customSettings) {
+		var settings = $.extend({
+            parentElement:	'#parentDiv'             
+        }, customSettings || {});
+        
+        // vars 
+        settings.parentElement = $(settings.parentElement);
+        obj = this;
+        
+        // do
+        var leftOffset = obj.offset().top,
+        	rightOffset = settings.parentElement.offset().top,
+        	leftHeight  = obj.height(),
+        	rightHeight  = settings.parentElement.height(),
+        	rightBottomPosition = rightOffset + rightHeight;
+        
+        $(window).bind("scroll", function() {
+        	var offset = $(this).scrollTop(),
+        		leftPosition = offset + leftOffset;
+        	if((leftPosition + leftHeight) <= rightBottomPosition) {
+	        	obj.css({'margin-top':offset+'px'});
+        	}
+        });
+	};
+})(jQuery);

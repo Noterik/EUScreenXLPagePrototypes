@@ -19,10 +19,23 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+        
+        // tooltip
+        $('.media-action a').tooltip();
     };
     EUScreenXL.ItemPage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.ItemPage.prototype.searchButton = jQuery("#searchbutton");
+    EUScreenXL.ItemPage.prototype.showExtraFiltersButton = jQuery("#show-extra-filters");
+    EUScreenXL.ItemPage.prototype.hideExtraFiltersButton = jQuery("#hide-extra-filters");
     EUScreenXL.ItemPage.prototype.events = {
+    	"click #show-extra-filters": function (event) {
+            this.showExtraFiltersButton.hide();
+            this.hideExtraFiltersButton.show();
+        },
+        "click #hide-extra-filters": function (event) {
+            this.hideExtraFiltersButton.hide();
+            this.showExtraFiltersButton.show();
+        },
         'click button.more-info': function () {
             console.log("MORE INFO BUTTON CLICKED!");
         },

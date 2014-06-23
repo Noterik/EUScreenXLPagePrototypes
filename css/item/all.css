@@ -1,37 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
 /**
 * css/item/all.less
 *
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
-#slidepanel {
-  width: 250px;
-  min-height: 100%;
+.page .main .row .left .row .media-player.aspect-ratio {
+  position: relative;
+  height: 0;
+}
+.page .main .row .left .row .media-player.aspect-ratio .player,
+.page .main .row .left .row .media-player.aspect-ratio embed,
+.page .main .row .left .row .media-player.aspect-ratio object,
+.page .main .row .left .row .media-player.aspect-ratio video {
   position: absolute;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
-  background: #666;
-  display: none;
+  background: #000;
 }
-.popover .login-form,
-.slide-panel .login-form {
-  display: none;
+.page .main .row .left .row .media-player.aspect-ratio.wide {
+  padding-bottom: 56.25%;
 }
-.popover .login-form.visible,
-.slide-panel .login-form.visible {
+.page .main .row .left .row .media-player.aspect-ratio.normal {
+  padding-bottom: 75%;
+}
+.page .main .row .left .row .media-action {
+  background: #ffffff;
+  margin-top: 6px;
+  padding-right: 0px;
+}
+.page .main .row .left .row .media-action:before,
+.page .main .row .left .row .media-action:after {
+  content: " ";
+  display: table;
+}
+.page .main .row .left .row .media-action:after {
+  clear: both;
+}
+.page .main .row .left .row .media-action ul {
+  margin: 0;
+  padding: 0;
+}
+.page .main .row .left .row .media-action ul li {
+  border-left: 1px solid #f2f2f2;
+  margin-left: -4px;
+  padding: 0px;
+  position: relative;
+}
+.page .main .row .left .row .media-action ul li a {
+  text-align: center;
+  font-size: 1.7em;
+  padding-top: 15px;
+  height: 60px;
+  width: 60px;
   display: block;
 }
-.popover .bookmarks,
-.slide-panel .bookmarks {
+.page .main .row .left .row .media-metadata {
+  background: #ffffff;
+  margin: 1px 0 0 0;
+  padding: 20px;
+}
+.page .main .row .left .row .media-metadata h1 {
+  margin: 10px 0 25px 0;
+}
+.page .main .row .left .row .media-metadata .row .item {
+  margin: 0 0 13px 0;
+}
+.page .main .row .left .row .media-metadata .row .item.space {
+  margin-bottom: 30px;
+}
+.page .main .row .left .row .media-metadata .row .header {
+  display: block;
+  font-size: 0.857em;
+  color: #808080;
+}
+.page .main .row .left .row .more-less {
+  background: #ffffff;
+  margin: 1px 0 0 0;
+}
+.page .main .row .left .row .more-less .more {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  text-align: center;
+  border-top: 1px solid #f2f2f2;
+  padding: 23px 0 23px 0;
+  background: #fff;
+  border-top: 0px;
+}
+.page .main .row .left .row .more-less .more a {
+  color: #808080;
+}
+.page .main .row .left .row .more-less .more a:hover {
+  color: #00aeef;
+}
+.page .main .row .left .row .more-less .more #hide-extra-filters {
   display: none;
 }
-.popover .bookmarks.visible,
-.slide-panel .bookmarks.visible {
-  display: block;
+.page .main .row .right {
+  border-left: 6px solid #f2f2f2;
 }
-.popover .menu,
-.slide-panel .menu {
-  width: 100%;
+.page .main .row .right .row [class*='col-'] {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .page main.item .view-item {
   background-color: black;

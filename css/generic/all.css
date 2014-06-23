@@ -27,6 +27,9 @@ input {
 .colorgray {
   color: #808080;
 }
+.colorred {
+  color: #ec008c;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -98,7 +101,8 @@ body .page header .navbar .navbar-header a.navbar-brand {
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
-						float: none;*/
+						float: none;
+						*/
 }
 body .page header .navbar .navbar-header .menuicon button {
   height: 70px;
@@ -144,6 +148,7 @@ body .page header .navbar .navbar-header .navbar-form {
   padding: 8px 0 0 0;
   margin: 0;
   height: 70px;
+  width: 187px;
   float: left;
   border-left: 1px solid #f2f2f2;
   visibility: hidden;
@@ -201,6 +206,39 @@ body .page header .navbar .navbar-header.searchOpened a.navbar-brand {
 body .page .main {
   padding-top: 70px;
   padding-bottom: 6px;
+}
+body .page .main .ads {
+  position: relative;
+}
+body .page .main .ads .wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(140, 198, 63, 0.6);
+  transition: background 0.35s ease-out;
+}
+body .page .main .ads .wrap .text {
+  background: rgba(0, 174, 239, 0.6);
+  display: block;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-size: 1.214em;
+  color: #ffffff;
+  width: 92%;
+  padding: 20px;
+  bottom: 20px;
+  position: absolute;
+  border-left: 6px solid #00aeef;
+  transition: background 0.35s ease-out;
+}
+body .page .main .ads .wrap:hover {
+  background: rgba(0, 174, 239, 0.6);
+}
+body .page .main .ads .wrap:hover .text {
+  background: rgba(140, 198, 63, 0.6);
+  border-left: 6px solid #8cc63f;
+}
+body .page .main .ads img {
+  width: 100%;
 }
 body .page footer {
   position: absolute;
@@ -374,6 +412,7 @@ body .mobilenav .info {
     float: left;
   }
   body .page header .navbar .container .navbar-header .navbar-form {
+    width: 170px;
     visibility: visible;
   }
   body .page header .navbar .container .navbar-header .navbar-form input[type="text"] {
@@ -471,6 +510,7 @@ body .mobilenav .info {
   }
   body .page header .navbar .container .navbar-header .navbar-form {
     border-right: 1px solid #f2f2f2;
+    width: auto;
   }
   body .page header .navbar .container .navbar-header .navbar-form .form-group {
     margin-left: 30px;

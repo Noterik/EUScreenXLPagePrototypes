@@ -48,7 +48,8 @@
 							
 							// by default, make the font smaller on wide 
 							.navbar-form {
-							
+								width: 170px; // set the width in wide screen
+								
 								// make it visible on bigger screen, eventhough is hidden on small (default)
 								visibility: visible;
 								input[type="text"] {
@@ -261,6 +262,7 @@
 							// gives the form right border, so the user knows the size of the text input
 							.navbar-form {
 								border-right: 1px solid @border-color;
+								width: auto; // set the form wrap to be bigger
 								
 								// add space to the brand on the left, make it more spacious
 								.form-group {

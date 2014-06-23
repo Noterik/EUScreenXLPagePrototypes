@@ -33,6 +33,7 @@ input {
 // quick styling for colors
 .colorblack { color: @euscreen-black; }
 .colorgray { color: @euscreen-gray; }
+.colorred { color: @euscreen-red; }
 
 // main style
 html {
@@ -135,7 +136,8 @@ body {
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
-						float: none;*/
+						float: none;
+						*/
 					}
 					
 					// menu icon, shown on mobile, hidden on wide screens
@@ -169,6 +171,7 @@ body {
 						padding: 8px 0 0 0;
 						margin:0;
 						height: 70px;
+						width: 187px;
 						float: left;
 						border-left: 1px solid @border-color;
 						visibility: hidden; // hide by default, will show in bigger screen (except on searchpage, where we set display to none)
@@ -226,6 +229,11 @@ body {
 			// it will be extended to 6px on wide screens, so set padding 75px on wide screens
 			padding-top: 70px;
 			padding-bottom: 6px; // default bottom space is 6px (mobile) 
+			
+			// ads
+			.ads {
+				.advertising();
+			}
 		}
 		
 		// footer

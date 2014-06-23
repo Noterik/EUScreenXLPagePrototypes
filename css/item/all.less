@@ -1,36 +1,158 @@
+// Import generic variables & mixins
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+
 /**
 * css/item/all.less
 *
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
-
-#slidepanel {
-    width:250px;
-    min-height:100%;
-    position: absolute;
-    left: 0;
-    top:0;
-    background: #666;
-    display: none;
-}
-
-.popover, .slide-panel {
-  .login-form {
-    display: none;
-  }
-  .login-form.visible {
-    display: block;
-  }
-  .bookmarks {
-    display: none;
-  }
-  .bookmarks.visible {
-    display: block;
-  }
-  .menu {
-    width: 100%;
-  }
+// every page starts with .page class selector
+// for body element styling, go to generic/all.css
+.page {
+	
+	
+	// main
+	.main {
+	
+		// row
+		.row {
+			
+			// left
+			.left {
+				
+				// rows
+				.row {
+				
+					// media player
+					.media-player {
+					
+						// this is to set the correct aspect ratio in player
+						// select 16:9 or 4:3
+						&.aspect-ratio {
+							position: relative;
+							height: 0;
+							
+							// player
+							.player, embed, object, video {
+								position: absolute;
+								width: 100%;
+								height: 100%;
+								left: 0;
+								top: 0;
+								background: #000;
+							}
+							
+							// 16:9 ratio, apply this class to aspect-ratio selector in HTML to give 16:9 aspect ratio
+							&.wide { padding-bottom:56.25%; }
+							
+							// 4:3 ratio, apply this class to aspect-ratio selector in HTML to give 4:3 aspect ratio
+							&.normal { padding-bottom:75%; }
+						}
+					}
+					
+					// media action
+					.media-action {
+						.clearfix;
+						background: @euscreen-white;
+						margin-top:6px;
+						padding-right: 0px;
+						
+						// ul
+						ul {
+							margin:0;
+							padding: 0;
+							
+							// lists
+							li {
+								border-left: 1px solid @border-color;
+								margin-left: -4px;
+								padding:0px;
+								position: relative;
+								
+								// anchor elements
+								a {
+									text-align: center;
+									font-size: 1.7em;
+									padding-top:15px;
+									height: 60px;
+									width: 60px;
+									display: block; 
+								}
+							}
+						}
+					}
+					
+					// media metadata
+					.media-metadata {
+						background: @euscreen-white;
+						margin:1px 0 0 0;
+						padding:20px;
+						
+						// header
+						h1 {
+							margin: 10px 0 25px 0;
+						}
+						
+						// rows
+						.row {
+							
+							// item
+							.item {
+								margin: 0 0 13px 0;
+								
+								// apply space to add a bit of space, after the item
+								&.space {
+									margin-bottom: 30px;
+								}
+							}
+							
+							
+							// header
+							.header {
+								.sectionHeading();
+							}
+						}
+					}
+					
+					// more/less button
+					.more-less {
+						background: @euscreen-white;
+						margin:1px 0 0 0;
+						
+						// more
+						.more {
+							.moreButton();
+							border-top:0px;
+							
+							// button
+							#hide-extra-filters {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		
+			// right
+			.right {
+				
+				// add spacing on the left side of the section
+				// a bit of a hack, but its better than to mess with bootstrap gutter
+				border-left: 6px solid @body-bg;
+				
+				// row
+				.row {
+					
+					// remove padding
+					.removeColumnPadding();
+				}
+			}
+		}
+		
+		
+	}	
 }
 
 .page {

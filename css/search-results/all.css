@@ -14,9 +14,9 @@
 }
 .page .main .left .row .header {
   display: block;
-  padding: 25px 25px 10px 25px;
   font-size: 0.857em;
   color: #808080;
+  padding: 25px 25px 10px 25px;
 }
 .page .main .left .row .searchbar {
   background: #ffffff;
@@ -262,39 +262,6 @@ textarea.page .main .left .row .searchbar input[type="text"] {
 .page .main .left .row .mediaselector select.form-control option {
   background: #ffffff;
   color: #8cc63f;
-}
-.page .main .left .row .ads {
-  position: relative;
-}
-.page .main .left .row .ads .wrap {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(140, 198, 63, 0.6);
-  transition: background 0.35s ease-out;
-}
-.page .main .left .row .ads .wrap .text {
-  background: rgba(0, 174, 239, 0.6);
-  display: block;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
-  font-size: 1.214em;
-  color: #ffffff;
-  width: 92%;
-  padding: 20px;
-  bottom: 20px;
-  position: absolute;
-  border-left: 6px solid #00aeef;
-  transition: background 0.35s ease-out;
-}
-.page .main .left .row .ads .wrap:hover {
-  background: rgba(0, 174, 239, 0.6);
-}
-.page .main .left .row .ads .wrap:hover .text {
-  background: rgba(140, 198, 63, 0.6);
-  border-left: 6px solid #8cc63f;
-}
-.page .main .left .row .ads img {
-  width: 100%;
 }
 .page .main .left.optionOpened .row .filters,
 .page .main .left.optionOpened .row .mediaselector {
