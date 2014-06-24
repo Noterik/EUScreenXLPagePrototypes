@@ -204,7 +204,7 @@ textarea.page .main .left .row .searchbar input[type="text"] {
 }
 .page .main .left .row .filters .accordion a.name,
 .page .main .left .row .mediaselector .accordion a.name {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   border-bottom: 1px solid #f2f2f2;
   width: 100%;
   display: block;
@@ -215,7 +215,7 @@ textarea.page .main .left .row .searchbar input[type="text"] {
 }
 .page .main .left .row .filters .accordion .more,
 .page .main .left .row .mediaselector .accordion .more {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-align: center;
   border-top: 1px solid #f2f2f2;
   padding: 23px 0 23px 0;
@@ -251,7 +251,7 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   border-radius: 0px;
   background-color: #8cc63f;
   border: 0px;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #ffffff;
   font-size: 1.2em;
   height: 60px;
@@ -286,7 +286,7 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   margin: 0px;
 }
 .page .main .right .row .mediatab .nav li a {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   border: 0px;
   border-right: 1px solid #f2f2f2;
   border-radius: 0px;
@@ -304,19 +304,19 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   border-radius: 0px;
   border-right: 1px solid #00aeef;
   color: #ffffff;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
 .page .main .right .row .mediatab .nav li.active a {
   background: #00aeef;
   border-radius: 0px;
   border-right: 1px solid #00aeef;
   color: #ffffff;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
 .page .main .right .row .counter {
   background: #fff;
   font-size: 1.429em;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #808080;
   margin: 1px 0 0 0;
   padding: 20px;
@@ -378,7 +378,7 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   color: #333333;
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
 .page .main .right .row .results .media-item .media-metadata .line {
   display: block;
@@ -408,7 +408,7 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   line-height: 1.48em;
   font-size: 0.857em;
   background: rgba(0, 0, 0, 0.1);
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   z-index: 7;
 }
 .page .main .right .row .results .media-item .media-wrapper .media-type {
@@ -469,7 +469,7 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   color: #71a230;
 }
 .page .main .right .row .more {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-align: center;
   border-top: 1px solid #f2f2f2;
   padding: 23px 0 23px 0;

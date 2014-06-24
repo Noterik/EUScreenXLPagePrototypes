@@ -44,7 +44,7 @@ body .page header .navbar {
 }
 body .page header .navbar ul li a {
   font-size: 1.071em;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #808080;
   padding: 25px 30px 0px 30px;
   border-right: 1px solid #f2f2f2;
@@ -76,7 +76,7 @@ body .page header .navbar ul li:last-child a:hover {
   background-color: #0090c6;
 }
 body .page header .navbar .navbar-header {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   height: 70px;
   text-align: center;
   margin-left: -15px;
@@ -95,13 +95,14 @@ body .page header .navbar .navbar-header a.navbar-brand {
   background: url("../../img/sprites.png") -320px 0;
   margin: 8px auto ;
   float: none;
-  /*
-						font-size: 1.571em;
-						height: 70px;
-						color: @euscreen-blue;
-						padding-top:23px;
-						font-weight: 600;
-						float: none;*/
+}
+body .page header .navbar .navbar-header a.navbar-brand.texts {
+  font-size: 1.571em;
+  height: 70px;
+  color: #00aeef;
+  padding-top: 23px;
+  font-weight: 600;
+  float: none;
 }
 body .page header .navbar .navbar-header .menuicon button {
   height: 70px;
@@ -111,7 +112,6 @@ body .page header .navbar .navbar-header .menuicon button {
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #f2f2f2;
   line-height: normal;
-  border-left: 0px;
   font-size: 1.5em;
   color: #555555;
 }
@@ -131,7 +131,6 @@ body .page header .navbar .navbar-header .searchicon button {
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #f2f2f2;
   line-height: normal;
-  border-right: 0px;
   font-size: 1.5em;
   color: #555555;
 }
@@ -147,13 +146,14 @@ body .page header .navbar .navbar-header .navbar-form {
   padding: 8px 0 0 0;
   margin: 0;
   height: 70px;
-  width: 187px;
+  width: 70%;
   float: left;
   border-left: 1px solid #f2f2f2;
   visibility: hidden;
 }
 body .page header .navbar .navbar-header .navbar-form .form-group {
   margin: 0 0 0 20px;
+  width: 100%;
 }
 body .page header .navbar .navbar-header .navbar-form .form-group input[type="text"] {
   height: 54px;
@@ -197,7 +197,6 @@ body .page header .navbar .navbar-header .navbar-form button {
 }
 body .page header .navbar .navbar-header.searchOpened .navbar-form {
   visibility: visible;
-  border-left: 0px;
 }
 body .page header .navbar .navbar-header.searchOpened a.navbar-brand {
   display: none;
@@ -219,7 +218,7 @@ body .page .main .ads .wrap {
 body .page .main .ads .wrap .text {
   background: rgba(0, 174, 239, 0.6);
   display: block;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   font-size: 1.214em;
   color: #ffffff;
   width: 92%;
@@ -405,23 +404,38 @@ body .mobilenav .info {
   body {
     margin-bottom: 183px;
   }
-  body .page header .navbar .container .navbar-header a.navbar-brand {
-    margin-right: 20px;
-    margin-left: -15px;
-    float: left;
+  body .page header .navbar .container .navbar-header {
+    /* the logo
+							a.navbar-brand {
+								margin-right: 20px; // set spacing between brand and form
+								margin-left: -15px; // bootstrap adds another 15px padding on the left of navbar-brand, remove them on wide screen only
+								float: left; // float it to left, since there is search form next to it
+							}*/
+    /* by default, make the font smaller on wide 
+							.navbar-form {
+								width: 170px; // set the width in wide screen
+								
+								// make it visible on bigger screen, eventhough is hidden on small (default)
+								visibility: visible;
+								input[type="text"] {
+									font-size: 1.071em;
+								}
+							}*/
   }
-  body .page header .navbar .container .navbar-header .navbar-form {
-    width: 170px;
-    visibility: visible;
-  }
-  body .page header .navbar .container .navbar-header .navbar-form input[type="text"] {
-    font-size: 1.071em;
-  }
-  body .page header .navbar .container .navbar-header.searchOpened .navbar-form {
-    border-left: 1px solid #f2f2f2;
-  }
-  body .page header .navbar .container .navbar-header.searchOpened a.navbar-brand {
-    display: block;
+  body .page header .navbar .container .navbar-header.searchOpened {
+    /* set border, to separate brand and form
+								.navbar-form {
+									width: auto;
+									border-left: 1px solid @border-color;
+									
+									// form group
+									.form-group {
+										width: auto;
+									}
+								}*/
+    /*a.navbar-brand {
+									display: block;
+								}*/
   }
   body .page .main {
     padding-top: 75px;
@@ -506,19 +520,29 @@ body .mobilenav .info {
 @media (min-width: 992px) {
   body .page header .navbar .container .navbar-header a.navbar-brand {
     margin-right: 30px;
+    margin-left: -15px;
+    float: left;
   }
   body .page header .navbar .container .navbar-header .navbar-form {
     border-right: 1px solid #f2f2f2;
     width: auto;
+    visibility: visible;
+  }
+  body .page header .navbar .container .navbar-header .navbar-form input[type="text"] {
+    font-size: 1.071em;
   }
   body .page header .navbar .container .navbar-header .navbar-form .form-group {
     margin-left: 30px;
+    width: auto;
   }
   body .page header .navbar .container .navbar-header .navbar-form .form-group .glyphicon-search {
     display: inline-block;
   }
   body .page header .navbar .container .navbar-header .navbar-form .form-group input[type="text"] {
     width: 280px;
+  }
+  body .page header .navbar .container .navbar-header.searchOpened a.navbar-brand {
+    display: block;
   }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
     margin-bottom: 8px;

@@ -70,7 +70,7 @@
 
 @font-family-sans-serif:  'Proxima Nova',"Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
-@font-family-monospace:   'Titillium Web','DIN',"Helvetica Neue", Monaco, Menlo, Consolas, monospace;
+@font-family-monospace:   'Titillium Web','DIN',"Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          14px;
@@ -326,7 +326,7 @@
 @grid-gutter-width:         30px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-@grid-float-breakpoint:     @screen-sm-min;
+@grid-float-breakpoint:     @screen-md-min; // changed from @screen-xs-min
 //** Point at which the navbar begins collapsing.
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
 

@@ -45,17 +45,18 @@
 						<div class="navbar-header">
 							
 							<!-- menu icon -->
-							<div class="menuicon visible-xs pull-left">
+							<div class="menuicon visible-sm visible-xs pull-left">
 								<button type="button" id="menubutton" class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
 							</div>
 							
 							<!-- search icon -->
-							<div class="searchicon visible-xs pull-right">
+							<div class="searchicon visible-sm visible-xs pull-right">
 								<button type="button" id="searchbutton" class="btn"><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 							
 							<!-- logo -->
-							<a class="navbar-brand" href="#"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>
+							<!-- <a class="navbar-brand texts" href="#"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>-->
+							<a class="navbar-brand" href="#">EUSCREENXL</a>
 							
 							<!-- form -->
 							<form class="navbar-form navbar-left" id="headerform" role="search">
@@ -86,7 +87,7 @@
 		    	<div class="row">
 		    	
 			    	<!-- left -->
-			    	<div class="left col-md-8 col-sm-8">
+			    	<div class="left col-md-8 col-sm-12">
 			    		
 			    		<!-- player -->
 			    		<div class="row">
@@ -94,7 +95,12 @@
 			    				<div class="player" id="media-player">
 			    					
 			    					<!-- replace with actual video player -->
-			    					<video id="sampleMovie" width="640" poster="img/poster.gif" height="360" preload controls></video>
+			    					<video id="sampleMovie" width="640" poster="img/poster.gif" height="360" preload controls>
+			    						<source src=video/small.webm type=video/webm>
+										<source src=video/small.ogv type=video/ogg>
+										<source src=video/small.mp4 type=video/mp4>
+										<source src=video/small.3gp type=video/3gp>
+			    					</video>
 			    				</div>
 			    			</div>
 			    		</div>
@@ -301,7 +307,7 @@
 			    	</div>
 			    	
 			    	<!-- right --> 
-			    	<div class="right col-md-4 col-sm-4">
+			    	<div class="right col-md-4 col-sm-12">
 			    		
 			    		<!-- related items -->
 			    		<div class="row">
@@ -312,7 +318,7 @@
 			    		
 			    		<!-- ads -->
 			    		<div class="row">
-			    			<div class="ads col-md-12 hidden-xs">
+			    			<div class="ads col-md-12 hidden-sm	">
 			        			<span class="wrap">
 			        				<a href="http://www.europeana.eu" target="_blank">
 					        			<span class="text">
@@ -362,8 +368,8 @@
 		<!-- nav -->
 		<div id="navpanel" class="mobilenav">
 			<ul class="main">
-				<li class="active"><a href="#">HOME</a></li>
-				<li><a href="#">ABOUT</a></li>
+				<li class="active"><a href="search-results.html">HOME</a></li>
+				<li><a href="item.html">ABOUT</a></li>
 				<li><a href="#">MYEUSCREEN</a></li>
 			</ul>
 			<ul class="secondary">

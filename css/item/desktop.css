@@ -3,24 +3,3 @@
 *
 * This file contains the styles for item.html for desktops and laptops.
 */
-.page.desktop main.item .related aside.related {
-  float: left;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid dodgerblue;
-  margin-bottom: 10px;
-}
-.page.desktop main.item .related aside.related .related-item {
-  text-align: center;
-  width: 100%;
-  padding-bottom: 56%;
-  margin: 10px 0 10px 0;
-  background-color: brown;
-}
-.page.desktop main.item .related .ad {
-  float: left;
-  width: 100%;
-  padding-bottom: 56%;
-  border: 1px solid dodgerblue;
-  text-align: center;
-}

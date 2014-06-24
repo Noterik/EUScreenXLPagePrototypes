@@ -122,7 +122,6 @@ body {
 					// the logo
 					a.navbar-brand {
 						.center-block();
-						 
 						.text-hide();
 						width: 172px;
 						height: 53px;
@@ -130,13 +129,15 @@ body {
 						margin:8px auto ;
 						float: none;
 						
-						/*
-						font-size: 1.571em;
-						height: 70px;
-						color: @euscreen-blue;
-						padding-top:23px;
-						font-weight: 600;
-						float: none;*/
+						// texts only
+						&.texts {
+							font-size: 1.571em;
+							height: 70px;
+							color: @euscreen-blue;
+							padding-top:23px;
+							font-weight: 600;
+							float: none;
+						}
 					}
 					
 					// menu icon, shown on mobile, hidden on wide screens
@@ -145,7 +146,6 @@ body {
 						// the button
 						button {
 							.btn-eumenu();
-							border-left: 0px;
 							font-size: 1.5em;
 							color: @gray;
 						}
@@ -157,7 +157,6 @@ body {
 						// the button
 						button {
 							.btn-eumenu();
-							border-right: 0px;
 							font-size: 1.5em;
 							color: @gray;
 						}
@@ -170,7 +169,7 @@ body {
 						padding: 8px 0 0 0;
 						margin:0;
 						height: 70px;
-						width: 187px;
+						width: 70%;
 						float: left;
 						border-left: 1px solid @border-color;
 						visibility: hidden; // hide by default, will show in bigger screen (except on searchpage, where we set display to none)
@@ -178,6 +177,7 @@ body {
 						// form group
 						.form-group {
 							margin: 0 0 0 20px;
+							width: 100%;
 							
 							// input text
 							input[type="text"] {
@@ -209,7 +209,6 @@ body {
 						// makes the form visible
 						.navbar-form {
 							visibility: visible;
-							border-left: 0px;
 						}
 						
 						// and hide the brand

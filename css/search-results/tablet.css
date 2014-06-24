@@ -1,9 +1,0 @@
-.page .main .active-filters {
-  display: none;
-}
-.active-filters {
-  margin-bottom: 15px;
-}
-.active-filters .badge.filter {
-  margin: 5px;
-}
