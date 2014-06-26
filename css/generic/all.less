@@ -1,6 +1,7 @@
 // Import generic variables
 @import "../bootstrap/variables.less";
 @import "../bootstrap/mixins.less";
+@import "../bootstrap/font-awesome.min.css";
 
 /**
 * all.less
@@ -52,7 +53,7 @@ body {
 		
 		// header
 		header {
-			
+		
 			// navbar
 			.navbar {
 				background: @euscreen-white;
@@ -122,22 +123,21 @@ body {
 					// the logo
 					a.navbar-brand {
 						.center-block();
+						/*
 						.text-hide();
 						width: 172px;
 						height: 53px;
-						background: url(@sprites-path) -320px 0;
+						background: url(@sprites-path) -321px 0;
 						margin:8px auto ;
-						float: none;
+						float: none;*/
 						
-						// texts only
-						&.texts {
-							font-size: 1.571em;
-							height: 70px;
-							color: @euscreen-blue;
-							padding-top:23px;
-							font-weight: 600;
-							float: none;
-						}
+						 
+						font-size: 1.571em;
+						height: 70px;
+						color: @euscreen-blue;
+						padding-top:23px;
+						font-weight: 600;
+						float: none;
 					}
 					
 					// menu icon, shown on mobile, hidden on wide screens
@@ -183,6 +183,7 @@ body {
 							input[type="text"] {
 								.placeholderItalic(#d2d2d2,italic);
 								.inputStyling(54px; 100%; 1.286em ; inherit; 0px; 0px; 0px; none);
+								background: rgba(255, 255, 254, 0.6); // weird webkit behaviour when on focus, the background turns grey. this is the workaround
 							}
 							
 							// magnifying icon
@@ -231,6 +232,115 @@ body {
 			// ads
 			.ads {
 				.advertising();
+			}
+			
+			// media item
+			.media-item {
+				
+				// metadata
+				.media-metadata {
+					color:@gray-dark;
+					
+					// title header
+					a h3.media-heading {
+						font-size: 1.33em;
+						line-height: 1.3em;
+						font-weight: normal;
+						margin: -5px 0 9px 0;
+						color: @gray-dark;
+						.transition(color 0.35s);
+						font-family: @font-family-monospace;
+					}
+					
+					// separator between media metadata
+					.line {
+						display: block;
+						margin: 0 0 2px 0;
+						font-size: 1.071em;
+						.label {
+							color: @euscreen-gray;
+							font-weight: normal;
+							padding-left: 0px;
+							font-size: 1.071em;
+						}
+					}
+				}
+				
+				// thumbnails
+				.media-wrapper {
+					position: relative;
+					
+					// media
+					.media-object {
+						width: 100%;
+					}
+					
+					// type
+					.media-length {
+						position: absolute;
+						bottom: 10px;
+						left: 10px;
+						border-radius: 3px;
+						border:1px solid @euscreen-white;
+						color: @euscreen-white;
+						padding: 1px 6px 1px 6px;
+						line-height: 1.48em;
+						font-size: 0.857em;
+						background: rgba(0, 0, 0, 0.1);
+						font-family: @font-family-monospace;
+						z-index: 7;
+					}
+					
+					// media type
+					.media-type {
+						.medias();
+						bottom: 14px;
+						right: 10px;
+						z-index: 7;
+					}
+					
+					// hue
+					.media-hue {
+						background: @euscreen-rgba-green-60;
+						position: absolute;
+						z-index: 2;
+						top:0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						color: @euscreen-white;
+						text-align: center;
+						font-size: 1.8em;
+						opacity: 0;
+						.transition(opacity 0.35s);
+						
+						// align vertically
+						i {
+							display: block;
+							top:50%;
+							left: 50%;
+							margin: -15px 0 0 -12px;
+							position: absolute;
+						}
+					}
+				}
+				
+				// hover
+				&:hover {
+					// turn on the hue
+					.media-wrapper {
+						.media-hue {
+							opacity: 1;
+						}
+					}
+					
+					// media metadata
+					.media-metadata {
+						a h3.media-heading {
+							color: darken(@euscreen-green, 10%);
+						}
+					}
+				}
 			}
 		}
 		
@@ -356,6 +466,72 @@ body {
 		.info {
 			border-bottom: 0px;
 			display: block;
+		}
+	}
+	
+	// iconography addition for euscreenxl
+	i, span, div {
+		
+		// icon
+		&.icono {
+			background-image: url(@sprites-path);
+			display: inline-block;
+		}
+		
+		// copyright
+		&.icono-copyright {
+			background-position: -253px -16px;
+			width: 24px; height: 27px;
+		}
+		
+		// add bookmark
+		&.icono-bookmark {
+			background-position: -298px -16px;
+			width: 23px; height: 27px;
+		}
+		
+		// share
+		&.icono-share {
+			background-position: -277px -16px;
+			width: 21px; height: 27px;
+		}
+	}
+	
+	// select wrapper
+	// custom selectbox styling to be consistent on all platforms
+	.select-wrap {
+		width: 100%;
+		background: @euscreen-green;
+		overflow: hidden;
+		position: relative;
+		
+		// caret
+		i {
+			position: absolute;
+			right: 0px;
+			top:0px;
+			color: @euscreen-white;
+			font-size: 1em;
+		}
+		
+		// the actual select
+		// the width is set bigger than the wrapper to remove the default dropdown caret
+		select {
+			background: transparent;
+			padding: 5px;
+			font-size: 1em;
+			border: 0px;
+			border-radius: 0px;
+			font-family: @font-family-monospace;
+			-webkit-appearance:none; -moz-appearance: none; appearance: none;
+			width: 105%;
+			color: @euscreen-white;
+			
+			// option to be white background with green texts
+			option {
+				background: @euscreen-white;
+				color: @euscreen-green;
+			}
 		}
 	}
 }

@@ -34,7 +34,7 @@
 		<![endif]-->
 		
 		<!-- container -->
-		<div class="page" id="page">
+		<div class="page item" id="page">
 			
 			<!-- wrap -->
 			<header>
@@ -46,17 +46,17 @@
 							
 							<!-- menu icon -->
 							<div class="menuicon visible-sm visible-xs pull-left">
-								<button type="button" id="menubutton" class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
+								<button type="button" id="menubutton" class="btn"><i class="fa fa-bars"></i></button>
 							</div>
 							
 							<!-- search icon -->
 							<div class="searchicon visible-sm visible-xs pull-right">
-								<button type="button" id="searchbutton" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+								<button type="button" id="searchbutton" class="btn"><i class="fa fa-search"></i></button>
 							</div>
 							
 							<!-- logo -->
-							<!-- <a class="navbar-brand texts" href="#"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>-->
-							<a class="navbar-brand" href="#">EUSCREENXL</a>
+							<a class="navbar-brand" href="#"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>
+							<!-- <a class="navbar-brand" href="#">EUSCREENXL</a> -->
 							
 							<!-- form -->
 							<form class="navbar-form navbar-left" id="headerform" role="search">
@@ -109,9 +109,9 @@
 			    		<div class="row">
 			    			<div class="media-action col-md-12" id="media-action">
 			    				<ul class="list-inline pull-right">
-			    					<li class="copyright"><a href="#" data-toggle="tooltip" title="COPYRIGHT"><i class="glyphicon glyphicon-copyright-mark"></i></a></li>
-			    					<li class="share"><a href="#"  data-toggle="tooltip" title="SHARE"><i class="glyphicon glyphicon-link"></i></a></li>
-			    					<li class="bookmark"><a href="#"  data-toggle="tooltip" title="ADD TO BOOKMARK"><i class=" glyphicon glyphicon-heart-empty"></i></a></li>
+			    					<li class="copyright"><a href="#" data-toggle="tooltip" title="COPYRIGHT"><i class="icono icono-copyright"></i></a></li>
+			    					<li class="share"><a href="#"  data-toggle="tooltip" title="SHARE"><i class="icono icono-share"></i></a></li>
+			    					<li class="bookmark"><a href="#"  data-toggle="tooltip" title="ADD TO BOOKMARK"><i class="icono icono-bookmark"></i></a></li>
 			    				</ul>
 			    			</div>
 			    		</div>
@@ -183,7 +183,7 @@
 				    					</div>
 				    					<div class="item">
 			    							<span class="header">FIRST BROADCAST CHANNEL</span>
-				    						<span>-</span>
+				    						<span>Channel V</span>
 				    					</div>
 				    					<div class="item">
 				    						<span class="header">COUNTRY OF PRODUCTION</span>
@@ -309,16 +309,127 @@
 			    	<!-- right --> 
 			    	<div class="right col-md-4 col-sm-12">
 			    		
-			    		<!-- related items -->
+			    		<!-- section tab (related items/discover more) -->
 			    		<div class="row">
-			    			<div class="media-relate col-md-12" id="media-related">
+			    			<div class="sectiontab col-md-12">
 			    				
+					    		<!-- Nav tabs -->
+								<ul class="nav nav-tabs nav-justified">
+									<li class="active"><a href="#home" data-toggle="tab">Related Items</a></li>
+									<li><a href="#profile" data-toggle="tab">Discover More</a></li>
+								</ul>
 			    			</div>
 			    		</div>
 			    		
+						<!-- section's content -->
+			    		<div class="row">
+			    			<div class="section-content col-md-12 tab-content" id="media-related">
+		
+								<!-- related items -->
+								<div class="tab-pane active media-relate" id="home">
+									
+									<!-- media -->
+				                	<div class="row media-item">
+				                		<div class="media-image col-md-5 col-sm-5 col-xs-6">
+			                                <div class="media-wrapper">
+			                                	<a href="#">
+				                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+				                                    <span class="media-length">
+				                                        12:32
+				                                    </span>
+				                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+				                                    <i class="media-type video"></i>
+			                                	</a>
+			                                </div>
+			                            </div>
+			                            <div class="media-metadata col-md-7 col-sm-7 col-xs-6">
+			                                <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
+			                                <span class="line"><span class="label">By</span><span class="value">BBC/United Kingdom</span></span>
+			                            </div>
+				                	</div>
+				                	
+				                	<!-- media -->
+				                	<div class="row media-item">
+				                		<div class="media-image col-md-5 col-sm-5 col-xs-6">
+			                                <div class="media-wrapper">
+			                                	<a href="#">
+				                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+				                                    <span class="media-length">
+				                                        12:32
+				                                    </span>
+				                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+				                                    <i class="media-type video"></i>
+			                                	</a>
+			                                </div>
+			                            </div>
+			                            <div class="media-metadata col-md-7 col-sm-7 col-xs-6">
+			                                <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
+			                                <span class="line"><span class="label">By</span><span class="value">BBC/United Kingdom</span></span>
+			                            </div>
+				                	</div>
+				                	
+				                	<!-- media -->
+				                	<div class="row media-item">
+				                		<div class="media-image col-md-5 col-sm-5 col-xs-6">
+			                                <div class="media-wrapper">
+			                                	<a href="#">
+				                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+				                                    <span class="media-length">
+				                                        12:32
+				                                    </span>
+				                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+				                                    <i class="media-type video"></i>
+			                                	</a>
+			                                </div>
+			                            </div>
+			                            <div class="media-metadata col-md-7 col-sm-7 col-xs-6">
+			                                <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
+			                                <span class="line"><span class="label">By</span><span class="value">BBC/United Kingdom</span></span>
+			                            </div>
+				                	</div>
+				                	
+				                	<!-- media -->
+				                	<div class="row media-item">
+				                		<div class="media-image col-md-5 col-sm-5 col-xs-6">
+			                                <div class="media-wrapper">
+			                                	<a href="#">
+				                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+				                                    <span class="media-length">
+				                                        12:32
+				                                    </span>
+				                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+				                                    <i class="media-type video"></i>
+			                                	</a>
+			                                </div>
+			                            </div>
+			                            <div class="media-metadata col-md-7 col-sm-7 col-xs-6">
+			                                <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
+			                                <span class="line"><span class="label">By</span><span class="value">BBC/United Kingdom</span></span>
+			                            </div>
+				                	</div>
+				                	
+				                	<!-- results -->
+					                <div class="row more">
+						                <div class="more-button col-md-12">
+						                	<a href="#">SHOW MORE</a>
+						                </div>
+					                </div>
+								</div>
+								
+								<!-- discover more -->
+								<div class="tab-pane discover-more" id="profile">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+									laboris nisi ut aliquip ex ea commodo consequat. 
+								</div>
+			    			</div>
+			    		</div>
+			    		
+			    		
+			    		
 			    		<!-- ads -->
 			    		<div class="row">
-			    			<div class="ads col-md-12 hidden-sm	">
+			    			<div class="ads col-md-12 hidden-sm	hidden-xs">
 			        			<span class="wrap">
 			        				<a href="http://www.europeana.eu" target="_blank">
 					        			<span class="text">

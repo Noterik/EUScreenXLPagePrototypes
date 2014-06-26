@@ -10,8 +10,7 @@
 */
 // every page starts with .page class selector
 // for body element styling, go to generic/all.css
-.page {
-	
+.item {
 	
 	// main
 	.main {
@@ -53,20 +52,30 @@
 					}
 					
 					// media action
+					// icon at the bottom of the media player
 					.media-action {
 						.clearfix;
+						border-left: 6px solid @body-bg;
+						border-right: 6px solid @body-bg;
 						background: @euscreen-white;
 						margin-top:6px;
 						padding-right: 0px;
 						
 						// ul
+						// default style is absolute, will switch to inherit on wide screens
 						ul {
 							margin:0;
 							padding: 0;
+							position: absolute;
+							right:0;
+							top:0;
+							z-index: 5;
 							
 							// lists
 							li {
 								border-left: 1px solid @border-color;
+								border-bottom: 1px solid @border-color;
+								display: block;
 								margin-left: -4px;
 								padding:0px;
 								position: relative;
@@ -75,10 +84,26 @@
 								a {
 									text-align: center;
 									font-size: 1.7em;
-									padding-top:15px;
+									padding-top:18px;
 									height: 60px;
 									width: 60px;
 									display: block; 
+									
+									// on hover
+									&:hover, &:active {
+										background: @euscreen-blue;
+										
+										// flip to white icons
+										i.icono-copyright {
+											background-position: -253px -43px;
+										}
+										i.icono-share {
+											background-position: -277px -43px;
+										}
+										i.icono-bookmark {
+											background-position: -298px -43px;
+										}
+									}
 								}
 							}
 						}
@@ -87,12 +112,15 @@
 					// media metadata
 					.media-metadata {
 						background: @euscreen-white;
-						margin:1px 0 0 0;
+						border-left: 6px solid @body-bg;
+						border-right: 6px solid @body-bg;
 						padding:20px;
 						
 						// header
 						h1 {
-							margin: 10px 0 25px 0;
+							margin: 5px 0 22px 0;
+							width: 70%;
+							line-height: 1.3em;
 						}
 						
 						// rows
@@ -102,14 +130,14 @@
 							.item {
 								margin: 0 0 13px 0;
 								
-								// apply space to add a bit of space, after the item
+								// apply margin to add a bit of space, after the item
+								// if the user wants it.
 								&.space {
 									margin-bottom: 30px;
 								}
 							}
 							
-							
-							// header
+							// header, styling is in bootstrap/mixins.less
 							.header {
 								.sectionHeading();
 							}
@@ -117,9 +145,12 @@
 					}
 					
 					// more/less button
+					// hide/show interactivity can be found in js/item.js
 					.more-less {
 						background: @euscreen-white;
 						margin:1px 0 0 0;
+						border-left: 6px solid @body-bg;
+						border-right: 6px solid @body-bg;
 						
 						// more
 						.more {
@@ -141,16 +172,121 @@
 				// add spacing on the left side of the section
 				// a bit of a hack, but its better than to mess with bootstrap gutter
 				border-left: 6px solid @body-bg;
+				border-right: 6px solid @body-bg;
+				
+				// add space to the top content
+				// default for mobile, will be remove on the wide screems
+				margin-top: 6px;
 				
 				// row
 				.row {
 					
-					// remove padding
+					// remove padding for UI styling
+					// bootstrap bu default adds 15px padding on the left and the right side
 					.removeColumnPadding();
+					
+					
+					// tabs
+					.sectiontab {
+						background: @euscreen-white;
+						border-bottom: 5px solid @euscreen-blue;
+						
+						// nav ul
+						.nav {
+							
+							// list
+							li {
+								width: 1%;
+								display: table-cell;
+								
+								// anchor link, there is already default style on bootstrap
+								// we reset the style according to our need
+								a {
+									font-family: @font-family-monospace;
+									border:0px;
+									color: @euscreen-gray;
+									background: @euscreen-white;
+									border-radius: 0px;
+									border:0px;
+									font-size: 1.286em;
+									margin-bottom: 0px;
+									padding: 15px;
+									
+									// on hover, exactly the same as active mode
+									&:hover {
+										background: @euscreen-blue;
+										color: @euscreen-white;
+									}
+								}
+								
+								// on selected
+								&.active {
+									a {
+										background: @euscreen-blue;
+										color: @euscreen-white;
+									}
+								}
+							}
+						}
+					}
+					
+					// section content
+					.section-content {
+						background: @euscreen-white; // set bg
+						margin-top:6px;
+						
+						// related media
+						// dont set padding here, we need more/less button to be full width
+						// set padding on media item instead
+						.media-relate {
+							.clearfix;
+							margin: 0px 0 0 0;
+							
+							// row
+							.row {
+								
+								// media item
+								// general styling on media item can be found on generic/all.less
+								// we just adjust them properly for the item page.
+								&.media-item {
+									margin-left: 0px;
+									margin-right: 0px;
+									padding: 20px 20px 0px 20px;
+									
+									// metadata
+									.media-metadata {
+										padding-left: 20px;
+									}
+								}
+							}
+							
+							// more
+							// styling for more button can be found in the bootstrap/mixins.less
+							.more {
+								margin-left: 0px;
+								margin-right: 0px;
+								margin-top:20px;
+								
+								.more-button {
+									.moreButton();
+								}
+							}
+						}
+						
+						// discover more section
+						.discover-more {
+							padding: 20px;
+						}
+					}
+					
+					// declaration of the ads selector can be found in generic/all.css
+					// while the actual styling is in generic/all.less
+					// here, we adjust them to the requirement of the item page.
+					.ads {
+						margin-top:6px;
+					}
 				}
 			}
 		}
-		
-		
 	}	
 }

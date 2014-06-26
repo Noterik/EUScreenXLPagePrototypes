@@ -34,7 +34,7 @@
 		<![endif]-->
 		
 		<!-- container -->
-		<div class="page" id="page">
+		<div class="page search" id="page">
 			
 		    <!-- wrap -->
 			<header>
@@ -46,17 +46,17 @@
 							
 							<!-- menu icon -->
 							<div class="menuicon visible-sm visible-xs pull-left">
-								<button type="button" id="menubutton" class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
+								<button type="button" id="menubutton" class="btn"><i class="fa fa-bars"></i></button>
 							</div>
 							
 							<!-- search icon -->
 							<div class="searchicon visible-sm visible-xs pull-right">
-								<button type="button" id="searchbutton" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+								<button type="button" id="searchbutton" class="btn"><i class="fa fa-search"></i></button>
 							</div>
 							
 							<!-- logo -->
-							<!-- <a class="navbar-brand" href="#"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>-->
-							<a class="navbar-brand" href="#">EUSCREENXL</a>
+							<a class="navbar-brand" href="#"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>
+							<!-- <a class="navbar-brand" href="#">EUSCREENXL</a> -->
 							
 							<!-- form -->
 							<form class="navbar-form navbar-left" id="headerform" role="search">
@@ -96,7 +96,7 @@
 		        				<input type="text" id="searchkeyword" class="form-control" placeholder="Enter search terms">
 		        				
 		        				<!-- option button -->
-					        	<button id="optionbutton" type="button" class="visible-xs btn optionbutton"><span class="glyphicon glyphicon-cog"></span></button>
+					        	<button id="optionbutton" type="button" class="visible-xs btn optionbutton"><i class="glyphicon glyphicon-cog"></i></button>
 			        		</div>
 			        	</div>
 			        	
@@ -128,13 +128,16 @@
 			        	<div class="row">
 			        		<div class="mediaselector col-md-12">
 			        			<span class="header">MEDIA TYPE</span>
-			        			<select class="form-control">
-				        			<option>All Media</option>
-				        			<option>Videos</option>
-				        			<option>Images</option>
-				        			<option>Texts</option>
-				        			<option>Audios</option>
-				        		</select>
+			        			<div class="select-wrap">
+				        			<select>
+					        			<option>All Media</option>
+					        			<option>Videos</option>
+					        			<option>Images</option>
+					        			<option>Texts</option>
+					        			<option>Audios</option>
+					        		</select>
+					        		<i class="glyphicon glyphicon-chevron-down"></i>
+			        			</div>
 			        		</div>
 			        	</div>
 			        	
@@ -285,9 +288,10 @@
 									    </a>
 									    <ul id="sortBy" class="dropdown-menu pull-right" role="menu" aria-labelledby="sortBy">
 			                				<li><a href="#" value="TITLE">TITLE</a></li>
-			                				<li><a href="#" value="UPLOAD DATE">UPLOAD DATE</a></li>
+			                				<li><a href="#" value="YEAR">YEAR</a></li>
 			                			</ul>
 		                			</div>
+		                			<div class="sortOption"><a href="#"><i class="fa fa-sort-alpha-desc"></i></a></div>
 		                		</span>
 		                	</div>
 		                </div>

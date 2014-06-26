@@ -5,27 +5,27 @@
 * This file contains the search results styles which are to be applied on all devices specifically for search results page.
 * Certain device may override these styles in their own stylesheet.
 */
-.page header .container .navbar-header .navbar-form {
+.search header .container .navbar-header .navbar-form {
   display: none;
 }
-.page .main .left .row [class*='col-'] {
+.search .main .left .row [class*='col-'] {
   padding-left: 0px;
   padding-right: 0px;
 }
-.page .main .left .row .header {
+.search .main .left .row .header {
   display: block;
   font-size: 0.857em;
   color: #808080;
   padding: 25px 25px 10px 25px;
 }
-.page .main .left .row .searchbar {
+.search .main .left .row .searchbar {
   background: #ffffff;
   height: 65px;
   border-bottom: 5px solid #00aeef;
   position: relative;
   width: 100%;
 }
-.page .main .left .row .searchbar input[type="text"] {
+.search .main .left .row .searchbar input[type="text"] {
   height: 100%;
   width: 70%;
   padding: inherit;
@@ -35,34 +35,35 @@
   border: 0px;
   box-shadow: none;
   margin-left: 23px;
+  background: rgba(255, 255, 254, 0.6);
 }
-.page .main .left .row .searchbar input[type="text"]::-moz-placeholder {
+.search .main .left .row .searchbar input[type="text"]::-moz-placeholder {
   color: #d2d2d2;
   font-style: italic;
   opacity: 1;
 }
-.page .main .left .row .searchbar input[type="text"]:-ms-input-placeholder {
+.search .main .left .row .searchbar input[type="text"]:-ms-input-placeholder {
   color: #d2d2d2;
   font-style: italic;
 }
-.page .main .left .row .searchbar input[type="text"]::-webkit-input-placeholder {
+.search .main .left .row .searchbar input[type="text"]::-webkit-input-placeholder {
   color: #d2d2d2;
   font-style: italic;
 }
-select.page .main .left .row .searchbar input[type="text"] {
+select.search .main .left .row .searchbar input[type="text"] {
   height: 100%;
   line-height: 100%;
 }
-textarea.page .main .left .row .searchbar input[type="text"] {
+textarea.search .main .left .row .searchbar input[type="text"] {
   height: auto;
 }
-.page .main .left .row .searchbar .glyphicon-search {
+.search .main .left .row .searchbar .glyphicon-search {
   color: #00aeef;
   font-size: 1.3em;
   margin: 21px 15px 0 25px;
   float: left;
 }
-.page .main .left .row .searchbar .optionbutton {
+.search .main .left .row .searchbar .optionbutton {
   height: 70px;
   border-radius: 0px;
   background: none;
@@ -77,15 +78,15 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   color: #555555;
   height: 60px;
 }
-.page .main .left .row .searchbar .optionbutton:active,
-.page .main .left .row .searchbar .optionbutton.active {
+.search .main .left .row .searchbar .optionbutton:active,
+.search .main .left .row .searchbar .optionbutton.active {
   background: #00aeef;
   box-shadow: none;
   color: #fff;
   border-left: 1px solid #00aeef;
   border-right: 1px solid #00aeef;
 }
-.page .main .left .row .selectedfilter {
+.search .main .left .row .selectedfilter {
   background: #ffffff;
   margin: 6px 0 0 0;
   border-left: 6px solid #f2f2f2;
@@ -93,35 +94,35 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   width: 100%;
   padding-top: 25px;
 }
-.page .main .left .row .selectedfilter .tags {
+.search .main .left .row .selectedfilter .tags {
   padding: 0 25px 25px 25px;
 }
-.page .main .left .row .selectedfilter .tags .tag {
+.search .main .left .row .selectedfilter .tags .tag {
   display: inline-block;
   margin: 0 6px 5px 0;
 }
-.page .main .left .row .selectedfilter .tags .tag li {
+.search .main .left .row .selectedfilter .tags .tag li {
   display: inline-block;
   padding: 2px 10px 1px 10px;
   font-size: 1em;
   color: #ffffff;
   margin-right: -4px;
 }
-.page .main .left .row .selectedfilter .tags .tag .title {
+.search .main .left .row .selectedfilter .tags .tag .title {
   background: #8cc63f;
 }
-.page .main .left .row .selectedfilter .tags .tag .content {
+.search .main .left .row .selectedfilter .tags .tag .content {
   background: #a8d46d;
   padding-right: 5px;
 }
-.page .main .left .row .selectedfilter .tags .tag .action {
+.search .main .left .row .selectedfilter .tags .tag .action {
   background: #a8d46d;
 }
-.page .main .left .row .selectedfilter .tags .tag .action a {
+.search .main .left .row .selectedfilter .tags .tag .action a {
   color: #ffffff;
 }
-.page .main .left .row .filters,
-.page .main .left .row .mediaselector {
+.search .main .left .row .filters,
+.search .main .left .row .mediaselector {
   background: rgba(255, 255, 255, 0.95);
   position: absolute;
   display: none;
@@ -134,66 +135,66 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   width: 100%;
   border-bottom: 5px solid #00aeef;
 }
-.page .main .left .row .filters .header,
-.page .main .left .row .mediaselector .header {
+.search .main .left .row .filters .header,
+.search .main .left .row .mediaselector .header {
   padding-left: 0px;
 }
-.page .main .left .row .filters .accordion .filter,
-.page .main .left .row .mediaselector .accordion .filter {
+.search .main .left .row .filters .accordion .filter,
+.search .main .left .row .mediaselector .accordion .filter {
   border-top: 1px solid #f2f2f2;
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #f2f2f2;
   background: #ffffff;
   margin-top: -1px;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent {
+.search .main .left .row .filters .accordion .filter .filtercontent,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent {
   border-bottom: 1px solid #f2f2f2;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing {
   margin: 0;
   padding: 0;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li {
   list-style: none;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li:before,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:before,
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li:after,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:after {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li:before,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:before,
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li:after,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:after {
   content: " ";
   display: table;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li:after,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:after {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li:after,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:after {
   clear: both;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li a,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li a {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li a,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li a {
   padding: 9px 0 9px 25px;
   display: block;
   width: 70%;
   float: left;
   color: #808080;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li:hover,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover {
   background: #a8d46d;
   color: #fff;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li:hover a,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover a,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a {
   color: #ffffff;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li:hover .badge,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover .badge,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge {
   color: #a8d46d;
   background: #ffffff;
 }
-.page .main .left .row .filters .accordion .filter .filtercontent .listing li .badge,
-.page .main .left .row .mediaselector .accordion .filter .filtercontent .listing li .badge {
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li .badge,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li .badge {
   border-radius: 0px;
   width: 40px;
   text-align: center;
@@ -202,8 +203,8 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   padding: 4px 0px 3px;
   margin: 10px 25px 0 0;
 }
-.page .main .left .row .filters .accordion a.name,
-.page .main .left .row .mediaselector .accordion a.name {
+.search .main .left .row .filters .accordion a.name,
+.search .main .left .row .mediaselector .accordion a.name {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   border-bottom: 1px solid #f2f2f2;
   width: 100%;
@@ -213,8 +214,8 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   padding: 20px 25px 18px 25px;
   color: #555555;
 }
-.page .main .left .row .filters .accordion .more,
-.page .main .left .row .mediaselector .accordion .more {
+.search .main .left .row .filters .accordion .more,
+.search .main .left .row .mediaselector .accordion .more {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-align: center;
   border-top: 1px solid #f2f2f2;
@@ -223,69 +224,62 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   display: none;
   border-top: 0px;
 }
-.page .main .left .row .filters .accordion .more a,
-.page .main .left .row .mediaselector .accordion .more a {
+.search .main .left .row .filters .accordion .more a,
+.search .main .left .row .mediaselector .accordion .more a {
   color: #808080;
 }
-.page .main .left .row .filters .accordion .more a:hover,
-.page .main .left .row .mediaselector .accordion .more a:hover {
+.search .main .left .row .filters .accordion .more a:hover,
+.search .main .left .row .mediaselector .accordion .more a:hover {
   color: #00aeef;
 }
-.page .main .left .row .filters .accordion .more #hide-extra-filters,
-.page .main .left .row .mediaselector .accordion .more #hide-extra-filters {
+.search .main .left .row .filters .accordion .more #hide-extra-filters,
+.search .main .left .row .mediaselector .accordion .more #hide-extra-filters {
   display: none;
 }
-.page .main .left .row .filters .accordion .done button.btn-euscreen,
-.page .main .left .row .mediaselector .accordion .done button.btn-euscreen {
+.search .main .left .row .filters .accordion .done button.btn-euscreen,
+.search .main .left .row .mediaselector .accordion .done button.btn-euscreen {
   width: 100%;
   font-size: 1.2em;
   padding: 15px;
   margin: 30px 0 0 0;
 }
-.page .main .left .row .mediaselector {
+.search .main .left .row .mediaselector {
   top: 65px;
   padding-bottom: 0px;
   border-bottom: 0px;
 }
-.page .main .left .row .mediaselector select.form-control {
-  border-radius: 0px;
-  background-color: #8cc63f;
-  border: 0px;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
-  color: #ffffff;
+.search .main .left .row .mediaselector .select-wrap i {
+  right: 20px;
+  top: 20px;
   font-size: 1.2em;
-  height: 60px;
-  box-shadow: none;
-  -webkit-appearance: none;
+}
+.search .main .left .row .mediaselector .select-wrap select {
   padding: 14px;
+  font-size: 1.2em;
 }
-.page .main .left .row .mediaselector select.form-control option {
-  background: #ffffff;
-  color: #8cc63f;
-}
-.page .main .left.optionOpened .row .filters,
-.page .main .left.optionOpened .row .mediaselector {
+.search .main .left.optionOpened .row .filters,
+.search .main .left.optionOpened .row .mediaselector {
   display: block;
 }
-.page .main .right {
+.search .main .right {
   border-left: 6px solid #f2f2f2;
   border-right: 6px solid #f2f2f2;
 }
-.page .main .right .row .mediatab {
+.search .main .right .row .mediatab {
   padding-left: 0px;
   padding-right: 0px;
   background: #ffffff;
   border-bottom: 5px solid #00aeef;
   display: none;
 }
-.page .main .right .row .mediatab .nav {
+.search .main .right .row .mediatab .nav {
   margin-top: 0px;
   border: 0px;
 }
-.page .main .right .row .mediatab .nav li {
+.search .main .right .row .mediatab .nav li {
   margin: 0px;
 }
-.page .main .right .row .mediatab .nav li a {
+.search .main .right .row .mediatab .nav li a {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   border: 0px;
   border-right: 1px solid #f2f2f2;
@@ -299,41 +293,44 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
-.page .main .right .row .mediatab .nav li a:hover {
+.search .main .right .row .mediatab .nav li a:hover {
   background: #00aeef;
   border-radius: 0px;
   border-right: 1px solid #00aeef;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
-.page .main .right .row .mediatab .nav li.active a {
+.search .main .right .row .mediatab .nav li.active a {
   background: #00aeef;
   border-radius: 0px;
   border-right: 1px solid #00aeef;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
-.page .main .right .row .counter {
+.search .main .right .row .counter {
   background: #fff;
-  font-size: 1.429em;
+  font-size: 1.28em;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #808080;
   margin: 1px 0 0 0;
   padding: 20px;
 }
-.page .main .right .row .counter:before,
-.page .main .right .row .counter:after {
+.search .main .right .row .counter:before,
+.search .main .right .row .counter:after {
   content: " ";
   display: table;
 }
-.page .main .right .row .counter:after {
+.search .main .right .row .counter:after {
   clear: both;
 }
-.page .main .right .row .counter .pull-left .number {
+.search .main .right .row .counter .pull-left .number {
   color: #00aeef;
   font-weight: bold;
 }
-.page .main .right .row .counter .pull-right ul.dropdown-menu {
+.search .main .right .row .counter .pull-right .dropdown {
+  display: inline-block;
+}
+.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu {
   margin-top: 0px;
   margin-bottom: 0px;
   background: #ffffff;
@@ -342,142 +339,47 @@ textarea.page .main .left .row .searchbar input[type="text"] {
   padding: 1px 1px 0px 1px;
   font-size: 1em;
 }
-.page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a,
-.page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a:hover,
-.page .main .right .row .counter .pull-right ul.dropdown-menu > .active > a:active {
+.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu > .active > a,
+.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu > .active > a:hover,
+.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu > .active > a:active {
   background-image: none;
 }
-.page .main .right .row .counter .pull-right ul.dropdown-menu a {
+.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu a {
   color: #808080;
   margin-bottom: 1px;
 }
-.page .main .right .row .counter .pull-right ul.dropdown-menu a:hover {
+.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu a:hover {
   background-image: none;
   color: #ffffff;
 }
-.page .main .right .row .results {
+.search .main .right .row .counter .pull-right .sortOption {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+.search .main .right .row .results {
   background: #fff;
   margin: 1px 0 0 0;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
-.page .main .right .row .results .media-item {
+.search .main .right .row .results .media-item {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.page .main .right .row .results .media-item .media-metadata {
+.search .main .right .row .results .media-item .media-metadata {
   padding-left: 5px;
-  color: #333333;
 }
-.page .main .right .row .results .media-item .media-metadata a h3.media-heading {
-  font-size: 1.33em;
-  line-height: 1.3em;
-  font-weight: normal;
-  margin: -5px 0 9px 0;
-  color: #333333;
-  -webkit-transition: color 0.35s;
-  transition: color 0.35s;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
-}
-.page .main .right .row .results .media-item .media-metadata .line {
-  display: block;
-  margin: 0 0 2px 0;
-  font-size: 1.071em;
-}
-.page .main .right .row .results .media-item .media-metadata .line .label {
-  color: #808080;
-  font-weight: normal;
-  padding-left: 0px;
-  font-size: 1.071em;
-}
-.page .main .right .row .results .media-item .media-wrapper {
-  position: relative;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-object {
-  width: 100%;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-length {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  border-radius: 3px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  padding: 1px 6px 1px 6px;
-  line-height: 1.48em;
-  font-size: 0.857em;
-  background: rgba(0, 0, 0, 0.1);
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
-  z-index: 7;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-type {
-  background: url("../../img/sprites.png");
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  bottom: 14px;
-  right: 10px;
-  z-index: 7;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-type.video {
-  width: 18px;
-  height: 14px;
-  background-position: -253px 0;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-type.audio {
-  width: 18px;
-  height: 15px;
-  background-position: -286px 0;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-type.text {
-  width: 16px;
-  height: 16px;
-  background-position: -304px 0;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-type.image {
-  width: 15px;
-  height: 14px;
-  background-position: -271px 0;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-hue {
-  background: rgba(140, 198, 63, 0.6);
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.8em;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-.page .main .right .row .results .media-item .media-wrapper .media-hue i {
-  display: block;
-  top: 50%;
-  left: 50%;
-  margin: -15px 0 0 -12px;
-  position: absolute;
-}
-.page .main .right .row .results .media-item:hover .media-wrapper .media-hue {
-  opacity: 1;
-}
-.page .main .right .row .results .media-item:hover .media-metadata a h3.media-heading {
-  color: #71a230;
-}
-.page .main .right .row .more {
+.search .main .right .row .more {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-align: center;
   border-top: 1px solid #f2f2f2;
   padding: 23px 0 23px 0;
   background: #fff;
 }
-.page .main .right .row .more a {
+.search .main .right .row .more a {
   color: #808080;
 }
-.page .main .right .row .more a:hover {
+.search .main .right .row .more a:hover {
   color: #00aeef;
 }

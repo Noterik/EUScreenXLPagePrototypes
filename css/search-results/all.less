@@ -11,7 +11,7 @@
 
 // every page starts with .page class selector
 // for body element styling, go to generic/all.css
-.page {
+.search {
 	
 	// header
 	header {
@@ -57,6 +57,7 @@
 						.placeholderItalic(#d2d2d2,italic);
 						.inputStyling(100%; 70%; 1.5em ; inherit; 0px; 0px ; inherit; none);
 						margin-left: 23px;
+						background: rgba(255, 255, 254, 0.6); // weird webkit behaviour when on focus, the background turns grey. this is the workaround
 					}
 					
 					// search icon, hide on mobile, shown on wide screens by setting hidden-xs class
@@ -251,22 +252,21 @@
 					padding-bottom: 0px;
 					border-bottom: 0px;
 					
-					// select
-					select.form-control {
-						border-radius: 0px;
-						background-color: @euscreen-green;
-						border:0px;
-						font-family: @font-family-monospace;
-						color: @euscreen-white;
-						font-size: 1.2em;
-						height: 60px;
-						box-shadow: none;
-						-webkit-appearance: none;
-						padding: 14px;
+					// select wrapper, the styling can be found on generic/all.less
+					// here we just adapt them with search results requirement
+					.select-wrap {
 						
-						option {
-							background: @euscreen-white;
-							color: @euscreen-green;
+						// caret
+						i {
+							right: 20px;
+							top:20px;
+							font-size: 1.2em;
+						}
+						
+						// the actual select
+						select {
+							padding: 14px;
+							font-size: 1.2em;
 						}
 					}
 				}
@@ -355,7 +355,7 @@
 				.counter {
 					.clearfix;
 					background: #fff;
-					font-size: 1.429em;
+					font-size: 1.28em;
 					font-family: @font-family-monospace;
 					color: @euscreen-gray;
 					margin:1px 0 0 0;
@@ -372,28 +372,39 @@
 					// right
 					.pull-right {
 						
-						// overwrite the default dropdown style
-						ul.dropdown-menu {
-							margin-top:0px;
-							margin-bottom: 0px;
-							background: @euscreen-white;
-							border-radius: 0px;
-							box-shadow: none;
-							padding: 1px 1px 0px 1px;
-							font-size: 1em;
-							> .active {
-								> a, > a:hover, > a:active {
-									background-image: none;
+						// dropdown
+						.dropdown {
+							display: inline-block;
+							
+							// overwrite the default dropdown style
+							ul.dropdown-menu {
+								margin-top:0px;
+								margin-bottom: 0px;
+								background: @euscreen-white;
+								border-radius: 0px;
+								box-shadow: none;
+								padding: 1px 1px 0px 1px;
+								font-size: 1em;
+								> .active {
+									> a, > a:hover, > a:active {
+										background-image: none;
+									}
+								}
+								a {
+									color: @euscreen-gray;
+									margin-bottom: 1px;
+									&:hover {
+										background-image: none;
+										color: @euscreen-white;
+									}
 								}
 							}
-							a {
-								color: @euscreen-gray;
-								margin-bottom: 1px;
-								&:hover {
-									background-image: none;
-									color: @euscreen-white;
-								}
-							}
+						}
+						
+						// sort option
+						.sortOption {
+							display: inline-block;
+							margin: 0 0 0 10px;	
 						}
 					}
 				}
@@ -414,104 +425,6 @@
 						// metadata
 						.media-metadata {
 							padding-left: 5px;
-							color:@gray-dark;
-							
-							a h3.media-heading {
-								font-size: 1.33em;
-								line-height: 1.3em;
-								font-weight: normal;
-								margin: -5px 0 9px 0;
-								color: @gray-dark;
-								.transition(color 0.35s);
-								font-family: @font-family-monospace;
-							}
-							.line {
-								display: block;
-								margin: 0 0 2px 0;
-								font-size: 1.071em;
-								.label {
-									color: @euscreen-gray;
-									font-weight: normal;
-									padding-left: 0px;
-									font-size: 1.071em;
-								}
-							}
-						}
-						
-						// thumbnails
-						.media-wrapper {
-							position: relative;
-							
-							// media
-							.media-object {
-								width: 100%;
-							}
-							
-							// type
-							.media-length {
-								position: absolute;
-								bottom: 10px;
-								left: 10px;
-								border-radius: 3px;
-								border:1px solid @euscreen-white;
-								color: @euscreen-white;
-								padding: 1px 6px 1px 6px;
-								line-height: 1.48em;
-								font-size: 0.857em;
-								background: rgba(0, 0, 0, 0.1);
-								font-family: @font-family-monospace;
-								z-index: 7;
-							}
-							
-							// media type
-							.media-type {
-								.medias();
-								bottom: 14px;
-								right: 10px;
-								z-index: 7;
-							}
-							
-							// hue
-							.media-hue {
-								background: @euscreen-rgba-green-60;
-								position: absolute;
-								z-index: 2;
-								top:0;
-								left: 0;
-								width: 100%;
-								height: 100%;
-								color: @euscreen-white;
-								text-align: center;
-								font-size: 1.8em;
-								opacity: 0;
-								.transition(opacity 0.35s);
-								
-								// align vertically
-								i {
-									display: block;
-									top:50%;
-									left: 50%;
-									margin: -15px 0 0 -12px;
-									position: absolute;
-								}
-							}
-						}
-						
-						// hover
-						&:hover {
-							// turn on the hue
-							.media-wrapper {
-								.media-hue {
-									opacity: 1;
-								}
-							}
-							
-							// media metadata
-							.media-metadata {
-								a h3.media-heading {
-									color: darken(@euscreen-green, 10%);
-								}
-							}
 						}
 					}
 				}

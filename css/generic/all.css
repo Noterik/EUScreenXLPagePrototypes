@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
+@import "../bootstrap/font-awesome.min.css";
 /**
 * all.less
 *
@@ -85,18 +86,13 @@ body .page header .navbar .navbar-header a.navbar-brand {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  width: 172px;
-  height: 53px;
-  background: url("../../img/sprites.png") -320px 0;
-  margin: 8px auto ;
-  float: none;
-}
-body .page header .navbar .navbar-header a.navbar-brand.texts {
+  /*
+						.text-hide();
+						width: 172px;
+						height: 53px;
+						background: url(@sprites-path) -321px 0;
+						margin:8px auto ;
+						float: none;*/
   font-size: 1.571em;
   height: 70px;
   color: #00aeef;
@@ -164,6 +160,7 @@ body .page header .navbar .navbar-header .navbar-form .form-group input[type="te
   border-radius: 0px;
   border: 0px;
   box-shadow: none;
+  background: rgba(255, 255, 254, 0.6);
 }
 body .page header .navbar .navbar-header .navbar-form .form-group input[type="text"]::-moz-placeholder {
   color: #d2d2d2;
@@ -237,6 +234,107 @@ body .page .main .ads .wrap:hover .text {
 }
 body .page .main .ads img {
   width: 100%;
+}
+body .page .main .media-item .media-metadata {
+  color: #333333;
+}
+body .page .main .media-item .media-metadata a h3.media-heading {
+  font-size: 1.33em;
+  line-height: 1.3em;
+  font-weight: normal;
+  margin: -5px 0 9px 0;
+  color: #333333;
+  -webkit-transition: color 0.35s;
+  transition: color 0.35s;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+body .page .main .media-item .media-metadata .line {
+  display: block;
+  margin: 0 0 2px 0;
+  font-size: 1.071em;
+}
+body .page .main .media-item .media-metadata .line .label {
+  color: #808080;
+  font-weight: normal;
+  padding-left: 0px;
+  font-size: 1.071em;
+}
+body .page .main .media-item .media-wrapper {
+  position: relative;
+}
+body .page .main .media-item .media-wrapper .media-object {
+  width: 100%;
+}
+body .page .main .media-item .media-wrapper .media-length {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 1px 6px 1px 6px;
+  line-height: 1.48em;
+  font-size: 0.857em;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  z-index: 7;
+}
+body .page .main .media-item .media-wrapper .media-type {
+  background: url("../../img/sprites.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  bottom: 14px;
+  right: 10px;
+  z-index: 7;
+}
+body .page .main .media-item .media-wrapper .media-type.video {
+  width: 18px;
+  height: 14px;
+  background-position: -253px 0;
+}
+body .page .main .media-item .media-wrapper .media-type.audio {
+  width: 18px;
+  height: 15px;
+  background-position: -286px 0;
+}
+body .page .main .media-item .media-wrapper .media-type.text {
+  width: 16px;
+  height: 16px;
+  background-position: -304px 0;
+}
+body .page .main .media-item .media-wrapper .media-type.image {
+  width: 15px;
+  height: 14px;
+  background-position: -271px 0;
+}
+body .page .main .media-item .media-wrapper .media-hue {
+  background: rgba(140, 198, 63, 0.6);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.8em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+body .page .main .media-item .media-wrapper .media-hue i {
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin: -15px 0 0 -12px;
+  position: absolute;
+}
+body .page .main .media-item:hover .media-wrapper .media-hue {
+  opacity: 1;
+}
+body .page .main .media-item:hover .media-metadata a h3.media-heading {
+  color: #71a230;
 }
 body .page footer {
   position: absolute;
@@ -374,6 +472,63 @@ body .mobilenav .info {
   border-bottom: 0px;
   display: block;
 }
+body i.icono,
+body span.icono,
+body div.icono {
+  background-image: url("../../img/sprites.png");
+  display: inline-block;
+}
+body i.icono-copyright,
+body span.icono-copyright,
+body div.icono-copyright {
+  background-position: -253px -16px;
+  width: 24px;
+  height: 27px;
+}
+body i.icono-bookmark,
+body span.icono-bookmark,
+body div.icono-bookmark {
+  background-position: -298px -16px;
+  width: 23px;
+  height: 27px;
+}
+body i.icono-share,
+body span.icono-share,
+body div.icono-share {
+  background-position: -277px -16px;
+  width: 21px;
+  height: 27px;
+}
+body .select-wrap {
+  width: 100%;
+  background: #8cc63f;
+  overflow: hidden;
+  position: relative;
+}
+body .select-wrap i {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #ffffff;
+  font-size: 1em;
+}
+body .select-wrap select {
+  background: transparent;
+  padding: 5px;
+  font-size: 1em;
+  border: 0px;
+  border-radius: 0px;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 105%;
+  color: #ffffff;
+}
+body .select-wrap select option {
+  background: #ffffff;
+  color: #8cc63f;
+}
 .slided {
   position: relative;
   left: 0px;
@@ -403,39 +558,6 @@ body .mobilenav .info {
 @media (min-width: 768px) {
   body {
     margin-bottom: 183px;
-  }
-  body .page header .navbar .container .navbar-header {
-    /* the logo
-							a.navbar-brand {
-								margin-right: 20px; // set spacing between brand and form
-								margin-left: -15px; // bootstrap adds another 15px padding on the left of navbar-brand, remove them on wide screen only
-								float: left; // float it to left, since there is search form next to it
-							}*/
-    /* by default, make the font smaller on wide 
-							.navbar-form {
-								width: 170px; // set the width in wide screen
-								
-								// make it visible on bigger screen, eventhough is hidden on small (default)
-								visibility: visible;
-								input[type="text"] {
-									font-size: 1.071em;
-								}
-							}*/
-  }
-  body .page header .navbar .container .navbar-header.searchOpened {
-    /* set border, to separate brand and form
-								.navbar-form {
-									width: auto;
-									border-left: 1px solid @border-color;
-									
-									// form group
-									.form-group {
-										width: auto;
-									}
-								}*/
-    /*a.navbar-brand {
-									display: block;
-								}*/
   }
   body .page .main {
     padding-top: 75px;
@@ -501,19 +623,47 @@ body .mobilenav .info {
   body .page .main .right .row .mediatab {
     display: block;
   }
-  body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
+  body .page .main .right .row .results .media-item .media-metadata h3.media-heading,
+  body .page .main .right .row .media-relate .media-item .media-metadata h3.media-heading {
     font-size: 1.286em;
   }
-  body .page .main .right .row .results .media-item .media-metadata .line {
+  body .page .main .right .row .results .media-item .media-metadata .line,
+  body .page .main .right .row .media-relate .media-item .media-metadata .line {
     margin: 0 0 0 0;
     font-size: 0.929em;
   }
-  body .page .main .right .row .results .media-item .media-metadata .line .label {
+  body .page .main .right .row .results .media-item .media-metadata .line .label,
+  body .page .main .right .row .media-relate .media-item .media-metadata .line .label {
     font-size: 0.929em;
   }
   body .page .main .right .row .counter {
     font-size: 0.929em;
     margin: 6px 0 0 0;
+  }
+  body .item .main .row .right {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  body .item .main .row .right .row .sectiontab .nav li a {
+    font-size: 1.071em;
+  }
+  body .item .main .row .left .row .media-action,
+  body .item .main .row .left .row .media-metadata,
+  body .item .main .row .left .row .more-less {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  body .item .main .row .left .row .media-action ul {
+    position: inherit;
+    top: auto;
+    right: auto;
+  }
+  body .item .main .row .left .row .media-action ul li {
+    display: inline-block;
+    border-bottom: 0px;
+  }
+  body .item .main .row .left .row .media-metadata {
+    margin: 1px 0 0 0;
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -556,6 +706,10 @@ body .mobilenav .info {
   }
   body .page footer .affiliates .list-inline li {
     margin-left: 30px;
+  }
+  body .item .main .row .right {
+    margin-top: 0px;
+    border-left: 6px solid #f2f2f2;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
