@@ -57,11 +57,11 @@ EUScreenXL.Page.prototype._createPopups = function () {
             break;
     }
 
-    var popupButtons = jQuery('button[data-popup]')
+    var popupButtons = jQuery('button[data-popup]');
     popupButtons.each(function () {
         var $this = jQuery(this);
         var selector = $this.attr('data-popup');
-        var placement = $this.attr('data-placement');
+        var placement = $this.attr('data-placement-popover');
         var container = $this.attr('data-container');
         var title = $this.attr('data-title');
         var height = $this.attr('data-height');
@@ -77,9 +77,13 @@ EUScreenXL.Page.prototype._createPopups = function () {
             }
         }).on('show.bs.popover', function () {
             var self = this;
+            popupButtons.removeClass('active');
             popupButtons.filter(function () {
                 return this != self;
             }).popover('hide');
+        });
+        $this.click(function(){
+        	$this.toggleClass("active");
         });
     });
 };

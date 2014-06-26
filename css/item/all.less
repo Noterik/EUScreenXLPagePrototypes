@@ -64,7 +64,7 @@
 						// ul
 						// default style is absolute, will switch to inherit on wide screens
 						ul {
-							margin:0;
+							margin: 0;
 							padding: 0;
 							position: absolute;
 							right:0;
@@ -80,17 +80,26 @@
 								padding:0px;
 								position: relative;
 								
+								// popover
+								.popover-content {
+									display: none;
+								}
+
 								// anchor elements
-								a {
+								button {
 									text-align: center;
 									font-size: 1.7em;
 									padding-top:18px;
 									height: 60px;
 									width: 60px;
 									display: block; 
+									border: 0px;
+									border-radius: 0px;
+									box-shadow: none;
+									background: @euscreen-white;
 									
 									// on hover
-									&:hover, &:active {
+									&:hover, &:active, &.active {
 										background: @euscreen-blue;
 										
 										// flip to white icons
@@ -110,6 +119,7 @@
 					}
 					
 					// media metadata
+					// at the bottom of the player
 					.media-metadata {
 						background: @euscreen-white;
 						border-left: 6px solid @body-bg;
@@ -121,6 +131,7 @@
 							margin: 5px 0 22px 0;
 							width: 70%;
 							line-height: 1.3em;
+							font-family: @font-family-monospace;
 						}
 						
 						// rows

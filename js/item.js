@@ -21,7 +21,9 @@ $(document).ready(function () {
         });
         
         // tooltip
-        $('.media-action a').tooltip();
+        $('.media-action button').tooltip();
+
+        
     };
     EUScreenXL.ItemPage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.ItemPage.prototype.searchButton = jQuery("#searchbutton");

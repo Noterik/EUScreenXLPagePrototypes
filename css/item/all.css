@@ -57,28 +57,39 @@
   padding: 0px;
   position: relative;
 }
-.item .main .row .left .row .media-action ul li a {
+.item .main .row .left .row .media-action ul li .popover-content {
+  display: none;
+}
+.item .main .row .left .row .media-action ul li button {
   text-align: center;
   font-size: 1.7em;
   padding-top: 18px;
   height: 60px;
   width: 60px;
   display: block;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+  background: #ffffff;
 }
-.item .main .row .left .row .media-action ul li a:hover,
-.item .main .row .left .row .media-action ul li a:active {
+.item .main .row .left .row .media-action ul li button:hover,
+.item .main .row .left .row .media-action ul li button:active,
+.item .main .row .left .row .media-action ul li button.active {
   background: #00aeef;
 }
-.item .main .row .left .row .media-action ul li a:hover i.icono-copyright,
-.item .main .row .left .row .media-action ul li a:active i.icono-copyright {
+.item .main .row .left .row .media-action ul li button:hover i.icono-copyright,
+.item .main .row .left .row .media-action ul li button:active i.icono-copyright,
+.item .main .row .left .row .media-action ul li button.active i.icono-copyright {
   background-position: -253px -43px;
 }
-.item .main .row .left .row .media-action ul li a:hover i.icono-share,
-.item .main .row .left .row .media-action ul li a:active i.icono-share {
+.item .main .row .left .row .media-action ul li button:hover i.icono-share,
+.item .main .row .left .row .media-action ul li button:active i.icono-share,
+.item .main .row .left .row .media-action ul li button.active i.icono-share {
   background-position: -277px -43px;
 }
-.item .main .row .left .row .media-action ul li a:hover i.icono-bookmark,
-.item .main .row .left .row .media-action ul li a:active i.icono-bookmark {
+.item .main .row .left .row .media-action ul li button:hover i.icono-bookmark,
+.item .main .row .left .row .media-action ul li button:active i.icono-bookmark,
+.item .main .row .left .row .media-action ul li button.active i.icono-bookmark {
   background-position: -298px -43px;
 }
 .item .main .row .left .row .media-metadata {
@@ -91,6 +102,7 @@
   margin: 5px 0 22px 0;
   width: 70%;
   line-height: 1.3em;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
 .item .main .row .left .row .media-metadata .row .item {
   margin: 0 0 13px 0;

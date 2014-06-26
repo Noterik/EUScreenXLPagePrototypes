@@ -86,23 +86,19 @@ body .page header .navbar .navbar-header a.navbar-brand {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  width: 172px;
-  height: 53px;
-  background: url("../../img/sprites.png") -321px 0;
-  margin: 8px auto ;
-  float: none;
   /*
-						font-size: 1.571em;
-						height: 70px;
-						color: @euscreen-blue;
-						padding-top:23px;
-						font-weight: 600;
+						.text-hide();
+						width: 172px;
+						height: 53px;
+						background: url(@sprites-path) -321px 0;
+						margin:8px auto ;
 						float: none;*/
+  font-size: 1.571em;
+  height: 70px;
+  color: #00aeef;
+  padding-top: 23px;
+  font-weight: 600;
+  float: none;
 }
 body .page header .navbar .navbar-header .menuicon button {
   height: 70px;
@@ -661,6 +657,7 @@ body .select-wrap select option {
     position: inherit;
     top: auto;
     right: auto;
+    height: 60px;
   }
   body .item .main .row .left .row .media-action ul li {
     display: inline-block;
@@ -714,6 +711,12 @@ body .select-wrap select option {
   body .item .main .row .right {
     margin-top: 0px;
     border-left: 6px solid #f2f2f2;
+  }
+  body .item .main .row .right .row .sectiontab {
+    display: none;
+  }
+  body .item .main .row .right .row .section-content {
+    margin-top: 0px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

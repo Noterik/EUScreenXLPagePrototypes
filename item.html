@@ -13,8 +13,9 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     	<meta name='apple-mobile-web-app-capable' content='yes'>
-    	<link rel="icon" type="image/png" href="favicon.png">
-	
+    	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+
 	    <!-- css -->
 	    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 	    <link rel="stylesheet" href="css/bootstrap/theme.css">
@@ -109,9 +110,45 @@
 			    		<div class="row">
 			    			<div class="media-action col-md-12" id="media-action">
 			    				<ul class="list-inline pull-right">
-			    					<li class="copyright"><a href="#" data-toggle="tooltip" title="COPYRIGHT"><i class="icono icono-copyright"></i></a></li>
-			    					<li class="share"><a href="#"  data-toggle="tooltip" title="SHARE"><i class="icono icono-share"></i></a></li>
-			    					<li class="bookmark"><a href="#"  data-toggle="tooltip" title="ADD TO BOOKMARK"><i class="icono icono-bookmark"></i></a></li>
+			    					<li class="copyright">
+			    						<button 
+			    							data-toggle="tooltip" 
+			    							data-placement="top"
+			    							data-title="TERMS"
+                                            class="btn btn-default"
+                                            data-container="body"
+                                            data-placement-popover="bottom"
+                                            data-popup="#terms-content"
+                                            data-height="70%">
+			    							<i class="icono icono-copyright"></i>
+			    						</button>
+			    					</li>
+			    					<li class="share">
+			    						<button 
+			    							data-toggle="tooltip" 
+			    							data-placement="top"
+			    							data-title="SHARE"
+                                            class="btn btn-default"
+                                            data-container="body"
+                                            data-placement-popover="bottom"
+                                            data-popup="#share-content"
+                                            data-height="70%">
+			    							<i class="icono icono-share"></i>
+			    						</button>
+			    					</li>
+			    					<li class="bookmark">
+			    						<button 
+			    							data-toggle="tooltip" 
+			    							data-placement="top"
+			    							data-title="ADD TO BOOKMARK"
+                                            class="btn btn-default"
+                                            data-container="body"
+                                            data-placement-popover="bottom"
+                                            data-popup="#bookmark-content"
+                                            data-height="70%">
+			    							<i class="icono icono-bookmark"></i>
+			    						</button>
+			    					</li>
 			    				</ul>
 			    			</div>
 			    		</div>
@@ -492,7 +529,27 @@
 				Euscreen is founded by the European Comission within the eContentplus programme. 
 			</span>
 		</div>
-
+		
+		<!-- popovers -->
+		<div class="hide" id="terms-content">
+			<p>
+		        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. 
+		        Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
+		    </p>
+		</div>
+		<div class="hide" id="share-content">
+			<p>
+		        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. 
+		        Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
+		    </p>
+		</div>
+		<div class="hide" id="bookmark-content">
+			<p>
+		        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. 
+		        Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
+		    </p>
+		</div>
+			
 		<!-- scripts -->
 		<script src="js/vendor/jquery-1.10.2.min.js"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
