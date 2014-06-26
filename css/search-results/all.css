@@ -250,11 +250,11 @@ textarea.search .main .left .row .searchbar input[type="text"] {
 }
 .search .main .left .row .mediaselector .select-wrap i {
   right: 20px;
-  top: 20px;
+  top: 22px;
   font-size: 1.2em;
 }
 .search .main .left .row .mediaselector .select-wrap select {
-  padding: 14px;
+  padding: 18px;
   font-size: 1.2em;
 }
 .search .main .left.optionOpened .row .filters,

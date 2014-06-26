@@ -86,19 +86,23 @@ body .page header .navbar .navbar-header a.navbar-brand {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /*
-						.text-hide();
-						width: 172px;
-						height: 53px;
-						background: url(@sprites-path) -321px 0;
-						margin:8px auto ;
-						float: none;*/
-  font-size: 1.571em;
-  height: 70px;
-  color: #00aeef;
-  padding-top: 23px;
-  font-weight: 600;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  width: 172px;
+  height: 53px;
+  background: url("../../img/sprites.png") -321px 0;
+  margin: 8px auto ;
   float: none;
+  /*
+						font-size: 1.571em;
+						height: 70px;
+						color: @euscreen-blue;
+						padding-top:23px;
+						font-weight: 600;
+						float: none;*/
 }
 body .page header .navbar .navbar-header .menuicon button {
   height: 70px;
