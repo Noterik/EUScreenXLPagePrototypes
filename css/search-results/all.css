@@ -5,9 +5,6 @@
 * This file contains the search results styles which are to be applied on all devices specifically for search results page.
 * Certain device may override these styles in their own stylesheet.
 */
-.search header .container .navbar-header .navbar-form {
-  display: none;
-}
 .search .main .left .row [class*='col-'] {
   padding-left: 0px;
   padding-right: 0px;

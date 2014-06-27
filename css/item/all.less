@@ -61,9 +61,44 @@
 						margin-top:6px;
 						padding-right: 0px;
 						
+						
+						// overlaycontent
+						.overlaycontent {
+							.clearfix;
+							width: 300px;
+							position: absolute;
+							top:59px;
+							right: 0px;
+							background: rgba(255,255,255,0.95);
+							z-index: 5;
+							border-top:5px solid @euscreen-blue;
+							padding: 20px;
+							box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+							display: none;
+
+							h3 {
+								font-family: @font-family-monospace;
+								color: @euscreen-blue;
+								font-size: 1.286em;
+								margin-top:0px;
+								margin-bottom: 15px;
+							}
+							ul {
+								li {
+									padding:0px;
+								}
+							}
+							.login {
+
+								input {
+									margin-bottom: 5px;
+								}
+							}
+						}
+
 						// ul
 						// default style is absolute, will switch to inherit on wide screens
-						ul {
+						.button-list {
 							margin: 0;
 							padding: 0;
 							position: absolute;
@@ -72,24 +107,18 @@
 							z-index: 5;
 							
 							// lists
-							li {
+							> li {
 								border-left: 1px solid @border-color;
 								border-bottom: 1px solid @border-color;
 								display: block;
 								margin-left: -4px;
 								padding:0px;
 								position: relative;
-								
-								// popover
-								.popover-content {
-									display: none;
-								}
 
 								// anchor elements
 								button {
-									text-align: center;
 									font-size: 1.7em;
-									padding-top:18px;
+									padding-top:17px;
 									height: 60px;
 									width: 60px;
 									display: block; 

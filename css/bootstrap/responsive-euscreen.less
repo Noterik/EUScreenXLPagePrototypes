@@ -13,6 +13,8 @@
 	
 	// Default style for mobiles devices is on each page specific stylesheets
 	// It starts with mobile design and scale up to desktop (not the other way around)
+
+
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -235,14 +237,14 @@
 							.media-action {
 								
 								// ul
-								ul {
+								.button-list {
 									position: inherit;
 									top:auto;
 									right: auto;
 									height: 60px;
 									
 									// list
-									li {
+									> li {
 										display: inline-block;
 										border-bottom: 0px;
 									}
@@ -287,7 +289,6 @@
 								margin-right: 30px;
 								margin-left: -15px; // bootstrap adds another 15px padding on the left of navbar-brand, remove them on wide screen only
 								float: left; // float it to left, since there is search form next to it
-								//margin-right: 20px; // set spacing between brand and form
 							}
 							
 							// gives the form right border, so the user knows the size of the text input
@@ -296,7 +297,8 @@
 								width: auto; // set the form wrap to be bigger
 								
 								// make it visible on bigger screen, eventhough is hidden on small (default)
-								visibility: visible;
+								// and make the font smaller
+								display: inline-block;
 								input[type="text"] {
 									font-size: 1.071em;
 								}
@@ -416,6 +418,33 @@
 							// while remove the margin top on section content
 							.section-content {
 								margin-top: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// style only on search page
+		.search {
+			
+			// header
+			header {
+				
+				// navbar
+				.navbar {
+					
+					// the container
+					.container {
+						
+						// header
+						.navbar-header {
+
+							// form
+							.navbar-form {
+
+								// hide, because there is already search bar in search page
+								display: none;
 							}
 						}
 					}

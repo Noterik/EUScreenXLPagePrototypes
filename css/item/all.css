@@ -41,7 +41,40 @@
 .item .main .row .left .row .media-action:after {
   clear: both;
 }
-.item .main .row .left .row .media-action ul {
+.item .main .row .left .row .media-action .overlaycontent {
+  width: 300px;
+  position: absolute;
+  top: 59px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 5;
+  border-top: 5px solid #00aeef;
+  padding: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.item .main .row .left .row .media-action .overlaycontent:before,
+.item .main .row .left .row .media-action .overlaycontent:after {
+  content: " ";
+  display: table;
+}
+.item .main .row .left .row .media-action .overlaycontent:after {
+  clear: both;
+}
+.item .main .row .left .row .media-action .overlaycontent h3 {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  color: #00aeef;
+  font-size: 1.286em;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.item .main .row .left .row .media-action .overlaycontent ul li {
+  padding: 0px;
+}
+.item .main .row .left .row .media-action .overlaycontent .login input {
+  margin-bottom: 5px;
+}
+.item .main .row .left .row .media-action .button-list {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -49,7 +82,7 @@
   top: 0;
   z-index: 5;
 }
-.item .main .row .left .row .media-action ul li {
+.item .main .row .left .row .media-action .button-list > li {
   border-left: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   display: block;
@@ -57,13 +90,9 @@
   padding: 0px;
   position: relative;
 }
-.item .main .row .left .row .media-action ul li .popover-content {
-  display: none;
-}
-.item .main .row .left .row .media-action ul li button {
-  text-align: center;
+.item .main .row .left .row .media-action .button-list > li button {
   font-size: 1.7em;
-  padding-top: 18px;
+  padding-top: 17px;
   height: 60px;
   width: 60px;
   display: block;
@@ -72,24 +101,24 @@
   box-shadow: none;
   background: #ffffff;
 }
-.item .main .row .left .row .media-action ul li button:hover,
-.item .main .row .left .row .media-action ul li button:active,
-.item .main .row .left .row .media-action ul li button.active {
+.item .main .row .left .row .media-action .button-list > li button:hover,
+.item .main .row .left .row .media-action .button-list > li button:active,
+.item .main .row .left .row .media-action .button-list > li button.active {
   background: #00aeef;
 }
-.item .main .row .left .row .media-action ul li button:hover i.icono-copyright,
-.item .main .row .left .row .media-action ul li button:active i.icono-copyright,
-.item .main .row .left .row .media-action ul li button.active i.icono-copyright {
+.item .main .row .left .row .media-action .button-list > li button:hover i.icono-copyright,
+.item .main .row .left .row .media-action .button-list > li button:active i.icono-copyright,
+.item .main .row .left .row .media-action .button-list > li button.active i.icono-copyright {
   background-position: -253px -43px;
 }
-.item .main .row .left .row .media-action ul li button:hover i.icono-share,
-.item .main .row .left .row .media-action ul li button:active i.icono-share,
-.item .main .row .left .row .media-action ul li button.active i.icono-share {
+.item .main .row .left .row .media-action .button-list > li button:hover i.icono-share,
+.item .main .row .left .row .media-action .button-list > li button:active i.icono-share,
+.item .main .row .left .row .media-action .button-list > li button.active i.icono-share {
   background-position: -277px -43px;
 }
-.item .main .row .left .row .media-action ul li button:hover i.icono-bookmark,
-.item .main .row .left .row .media-action ul li button:active i.icono-bookmark,
-.item .main .row .left .row .media-action ul li button.active i.icono-bookmark {
+.item .main .row .left .row .media-action .button-list > li button:hover i.icono-bookmark,
+.item .main .row .left .row .media-action .button-list > li button:active i.icono-bookmark,
+.item .main .row .left .row .media-action .button-list > li button.active i.icono-bookmark {
   background-position: -298px -43px;
 }
 .item .main .row .left .row .media-metadata {

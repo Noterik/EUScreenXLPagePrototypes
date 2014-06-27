@@ -11,6 +11,9 @@ $(document).ready(function () {
         this.$bookmarksElement = jQuery('.bookmarks');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
+        this.$popElement = jQuery('#media-action');
+        this.$overlayContents = jQuery('.overlaycontent');
+        this.$overlayButtons = jQuery('button[data-overlay]');
         
         // nav panel
         this.$navElement.slidePanelJS({
@@ -19,11 +22,27 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
-        
-        // tooltip
-        $('.media-action button').tooltip();
 
-        
+        // popover & tooltip
+        // bootstrap popover doesn't play too nicely with mobile version
+        // and it doesnt fit with euscreenxl the mobile designs
+        var overlayButton = this.$overlayButtons,
+            overlayContents = this.$overlayContents;
+        overlayButton.each(function () {
+            var $this = jQuery(this);
+            var content = $this.attr("data-overlay");
+            $this.click(function(e){
+                e.preventDefault();
+                self = this;
+                if($this.hasClass('active')) { 
+                    $(content).hide(); $this.removeClass('active');
+                } else { 
+                    $(content).show(); $this.addClass('active');
+                    overlayButton.not(self).removeClass('active');
+                    overlayContents.not($(content)).hide();
+                }
+            });
+        });
     };
     EUScreenXL.ItemPage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.ItemPage.prototype.searchButton = jQuery("#searchbutton");

@@ -123,21 +123,21 @@ body {
 					// the logo
 					a.navbar-brand {
 						.center-block();
-						/*
+						
 						.text-hide();
 						width: 172px;
 						height: 53px;
 						background: url(@sprites-path) -321px 0;
 						margin:8px auto ;
-						float: none;*/
+						float: none;
 						
-						 
+						 /*
 						font-size: 1.571em;
 						height: 70px;
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
-						float: none;
+						float: none;*/
 					}
 					
 					// menu icon, shown on mobile, hidden on wide screens
@@ -172,8 +172,8 @@ body {
 						width: 70%;
 						float: left;
 						border-left: 1px solid @border-color;
-						visibility: hidden; // hide by default, will show in bigger screen (except on searchpage, where we set display to none)
-						
+						display: none;
+
 						// form group
 						.form-group {
 							margin: 0 0 0 20px;
@@ -209,7 +209,7 @@ body {
 						
 						// makes the form visible
 						.navbar-form {
-							visibility: visible;
+							display: inline-block;
 						}
 						
 						// and hide the brand
@@ -534,7 +534,29 @@ body {
 			}
 		}
 	}
+
+	// style for popover
+	.popover {
+		border-radius: 0px;
+		border: 0px;
+		border-top:5px solid @euscreen-blue;
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+		background: rgba(255,255,255,0.9);
+		width: 300px;
+
+		.popover-title {
+			border-radius: 0px;
+			background: none;
+			border: 0px;
+			font-family: @font-family-monospace;
+			font-size: 18px;
+			color:@euscreen-blue;
+			padding: 20px 14px 5px 14px;
+		}
+	}
 }
+
+
 
 // style for slidePanelJS plugin
 .slided {

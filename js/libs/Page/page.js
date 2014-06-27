@@ -49,7 +49,7 @@ EUScreenXL.Page.prototype._createPopups = function () {
 
     switch (this.device) {
         case "mobile":
-            popupMethod = 'slidePanel';
+            popupMethod = 'popover';
             break;
         case "tablet":
         case "desktop":
@@ -73,14 +73,13 @@ EUScreenXL.Page.prototype._createPopups = function () {
             title: title,
             height: height,
             content: function () {
-                return jQuery(selector).children();
+                return jQuery(selector).html();
             }
         }).on('show.bs.popover', function () {
             var self = this;
-            popupButtons.removeClass('active');
             popupButtons.filter(function () {
                 return this != self;
-            }).popover('hide');
+            }).removeClass('active').popover('hide');
         });
         $this.click(function(){
         	$this.toggleClass("active");

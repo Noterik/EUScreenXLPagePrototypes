@@ -109,45 +109,76 @@
 			    		<!-- player action -->
 			    		<div class="row">
 			    			<div class="media-action col-md-12" id="media-action">
-			    				<ul class="list-inline pull-right">
+			    				<ul class="list-inline pull-right button-list">
 			    					<li class="copyright">
-			    						<button 
-			    							data-toggle="tooltip" 
-			    							data-placement="top"
-			    							data-title="TERMS"
-                                            class="btn btn-default"
-                                            data-container="body"
-                                            data-placement-popover="bottom"
-                                            data-popup="#terms-content"
-                                            data-height="70%">
+			    						<button data-toggle="tooltip" data-placement="top" data-title="TERMS" data-overlay="#terms-content">
 			    							<i class="icono icono-copyright"></i>
 			    						</button>
+			    						<div class="overlaycontent" id="terms-content">
+											<h3>TERMS</h3>
+											<p>
+										    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+										    </p>
+										    <p>
+										   		<a href="#">Contact the provider</a>
+										    </p>
+										</div>
 			    					</li>
 			    					<li class="share">
-			    						<button 
-			    							data-toggle="tooltip" 
-			    							data-placement="top"
-			    							data-title="SHARE"
-                                            class="btn btn-default"
-                                            data-container="body"
-                                            data-placement-popover="bottom"
-                                            data-popup="#share-content"
-                                            data-height="70%">
+			    						<button data-toggle="tooltip" class="btn" data-placement="top" data-title="SHARE" data-overlay="#share-content">
 			    							<i class="icono icono-share"></i>
 			    						</button>
+			    						<div class="overlaycontent" id="share-content">
+			    							<h3>SHARE</h3>
+											<ul class="list-inline">	
+												<li><a href="#">
+													<span class="fa-stack fa-lg">
+														<i class="fa fa-circle-thin fa-stack-2x"></i>
+														<i class="fa fa-facebook fa-stack-1x"></i>
+													</span>
+												</a></li>
+												<li><a href="#">
+													<span class="fa-stack fa-lg">
+														<i class="fa fa-circle-thin fa-stack-2x"></i>
+														<i class="fa fa-twitter fa-stack-1x"></i>
+													</span>
+												</a></li>
+												<li><a href="#">
+													<span class="fa-stack fa-lg">
+														<i class="fa fa-circle-thin fa-stack-2x"></i>
+														<i class="fa fa-google-plus fa-stack-1x"></i>
+													</span>
+												</a></li>
+											</ul>
+										</div>
 			    					</li>
 			    					<li class="bookmark">
-			    						<button 
-			    							data-toggle="tooltip" 
-			    							data-placement="top"
-			    							data-title="ADD TO BOOKMARK"
-                                            class="btn btn-default"
-                                            data-container="body"
-                                            data-placement-popover="bottom"
-                                            data-popup="#bookmark-content"
-                                            data-height="70%">
+			    						<button data-toggle="tooltip" data-placement="top" data-title="ADD TO BOOKMARK" data-overlay="#bookmark-content">
 			    							<i class="icono icono-bookmark"></i>
 			    						</button>
+			    						<div class="overlaycontent" id="bookmark-content">
+			    							<h3>ADD TO BOOKMARK</h3>
+											<div class="login-form visible">
+										        <form class="login">
+									                <input id="bookmark-user-email" placeholder="Email" class="form-control" type="text"/>
+									                <input id="bookmark-user-password" placeholder="Password" class="form-control" type="password" />
+									                <input type="submit" value="LOGIN" class="btn btn-primary btn-block"/>
+									            </form>
+										        <span class="extra">
+										        	<a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a>
+										        </span>
+										    </div>
+										    <div class="bookmarks hidden">
+									            <div class="list-group">
+									                <a class="list-group-item active">
+									                    <h5 class="list-group-item-heading">My bookmarks</h5>
+									                </a>
+									                <div class="list-group-item">
+									                    <button class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+									                </div>
+									            </div>
+										    </div>
+										</div>
 			    					</li>
 			    				</ul>
 			    			</div>
@@ -329,6 +360,8 @@
 				    					</div>
 			    					</div>
 			    				</div>
+
+
 			    			</div>
 			    		</div>
 			    		
@@ -529,27 +562,7 @@
 				Euscreen is founded by the European Comission within the eContentplus programme. 
 			</span>
 		</div>
-		
-		<!-- popovers -->
-		<div class="hide" id="terms-content">
-			<p>
-		        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. 
-		        Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
-		    </p>
-		</div>
-		<div class="hide" id="share-content">
-			<p>
-		        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. 
-		        Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
-		    </p>
-		</div>
-		<div class="hide" id="bookmark-content">
-			<p>
-		        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat id odio vitae condimentum. 
-		        Ut urna nisl, porttitor placerat dapibus sed, sollicitudin vel tortor.
-		    </p>
-		</div>
-			
+
 		<!-- scripts -->
 		<script src="js/vendor/jquery-1.10.2.min.js"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
