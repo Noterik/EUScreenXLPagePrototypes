@@ -110,12 +110,16 @@
 			    		<div class="row">
 			    			<div class="media-action col-md-12" id="media-action">
 			    				<ul class="list-inline pull-right button-list">
+			    					
+			    					<!-- copyright button -->
 			    					<li class="copyright">
 			    						<button data-toggle="tooltip" data-placement="top" data-title="TERMS" data-overlay="#terms-content">
 			    							<i class="icono icono-copyright"></i>
 			    						</button>
+
+			    						<!-- terms of use content -->
 			    						<div class="overlaycontent" id="terms-content">
-											<h3>TERMS</h3>
+											<h3>TERMS OF USE</h3>
 											<p>
 										    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
 										    </p>
@@ -124,60 +128,75 @@
 										    </p>
 										</div>
 			    					</li>
+
+			    					<!-- share buttons -->
 			    					<li class="share">
-			    						<button data-toggle="tooltip" class="btn" data-placement="top" data-title="SHARE" data-overlay="#share-content">
+			    						<button data-toggle="tooltip" data-placement="top" data-title="SHARE" data-overlay="#share-content">
 			    							<i class="icono icono-share"></i>
 			    						</button>
+
+			    						<!-- share item content -->
 			    						<div class="overlaycontent" id="share-content">
-			    							<h3>SHARE</h3>
+			    							<h3>SHARE THIS ITEM</h3>
 											<ul class="list-inline">	
-												<li><a href="#">
+												<li><a href="#" title="Share to Facebook">
 													<span class="fa-stack fa-lg">
-														<i class="fa fa-circle-thin fa-stack-2x"></i>
-														<i class="fa fa-facebook fa-stack-1x"></i>
+														<i class="fa fa-circle fa-stack-2x"></i>
+														<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 													</span>
 												</a></li>
-												<li><a href="#">
+												<li><a href="#" title="Share to Twitter">
 													<span class="fa-stack fa-lg">
-														<i class="fa fa-circle-thin fa-stack-2x"></i>
-														<i class="fa fa-twitter fa-stack-1x"></i>
+														<i class="fa fa-circle fa-stack-2x"></i>
+														<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 													</span>
 												</a></li>
-												<li><a href="#">
+												<li><a href="#" title="Share to Google +">
 													<span class="fa-stack fa-lg">
-														<i class="fa fa-circle-thin fa-stack-2x"></i>
-														<i class="fa fa-google-plus fa-stack-1x"></i>
+														<i class="fa fa-circle fa-stack-2x"></i>
+														<i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
 													</span>
 												</a></li>
 											</ul>
 										</div>
 			    					</li>
+
+			    					<!-- bookmark button -->
 			    					<li class="bookmark">
 			    						<button data-toggle="tooltip" data-placement="top" data-title="ADD TO BOOKMARK" data-overlay="#bookmark-content">
 			    							<i class="icono icono-bookmark"></i>
 			    						</button>
 			    						<div class="overlaycontent" id="bookmark-content">
-			    							<h3>ADD TO BOOKMARK</h3>
-											<div class="login-form visible">
-										        <form class="login">
-									                <input id="bookmark-user-email" placeholder="Email" class="form-control" type="text"/>
-									                <input id="bookmark-user-password" placeholder="Password" class="form-control" type="password" />
-									                <input type="submit" value="LOGIN" class="btn btn-primary btn-block"/>
-									            </form>
-										        <span class="extra">
-										        	<a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a>
-										        </span>
-										    </div>
-										    <div class="bookmarks hidden">
-									            <div class="list-group">
-									                <a class="list-group-item active">
-									                    <h5 class="list-group-item-heading">My bookmarks</h5>
-									                </a>
-									                <div class="list-group-item">
-									                    <button class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
-									                </div>
-									            </div>
-										    </div>
+
+			    							<!-- login form when user has not logged in -->
+			    							<div id="login-form">
+			    								<h3>SIGN IN TO BOOKMARK</h3>
+												<div class="login-form visible">
+											        <form class="login">
+										                <input id="bookmark-user-email" placeholder="Email" class="form-control" type="text"/>
+										                <input id="bookmark-user-password" placeholder="Password" class="form-control" type="password" />
+										                <input type="submit" value="LOGIN" class="btn btn-primary btn-euscreen btn-block"/>
+										            </form>
+											        <span class="extra">
+											        	<a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a>
+											        </span>
+											    </div>
+											</div>
+
+											<!-- bookmark form -->
+											<div id="bookmark-form" class="hidden" >
+			    								<h3>ADD ITEM TO</h3>
+			    								<div>
+			    									<div class="list-group">
+														<a href="#" class="list-group-item active"><span class="badge">14</span> My first folder</a>
+														<a href="#" class="list-group-item "><span class="badge">14</span> My second folder</a>
+  														<a href="#" class="list-group-item disabled">
+  															Add new folder 
+  														</a>
+													</div>
+													<input type="submit" value="DONE" class="btn btn-primary btn-euscreen btn-block"/>
+			    								</div>
+											</div>
 										</div>
 			    					</li>
 			    				</ul>
@@ -360,8 +379,6 @@
 				    					</div>
 			    					</div>
 			    				</div>
-
-
 			    			</div>
 			    		</div>
 			    		

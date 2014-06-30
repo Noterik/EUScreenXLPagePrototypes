@@ -71,8 +71,48 @@
 .item .main .row .left .row .media-action .overlaycontent ul li {
   padding: 0px;
 }
-.item .main .row .left .row .media-action .overlaycontent .login input {
+.item .main .row .left .row .media-action .overlaycontent ul li .fa-lg {
+  font-size: 1.4em;
+}
+.item .main .row .left .row .media-action .overlaycontent .extra {
+  font-size: 0.929em;
+  display: inline-block;
+  margin: 5px 0 0 0;
+  color: #808080;
+}
+.item .main .row .left .row .media-action .overlaycontent .extra a {
+  color: inherit;
+}
+.item .main .row .left .row .media-action .overlaycontent .login input[type="text"],
+.item .main .row .left .row .media-action .overlaycontent .login input[type="password"] {
   margin-bottom: 5px;
+  border-radius: 0px;
+  padding: 10px;
+  height: auto;
+  font-size: 1.071em;
+  background: rgba(255, 255, 254, 0.6);
+}
+.item .main .row .left .row .media-action .overlaycontent .login input[type="text"]::-moz-placeholder,
+.item .main .row .left .row .media-action .overlaycontent .login input[type="password"]::-moz-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+  opacity: 1;
+}
+.item .main .row .left .row .media-action .overlaycontent .login input[type="text"]:-ms-input-placeholder,
+.item .main .row .left .row .media-action .overlaycontent .login input[type="password"]:-ms-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.item .main .row .left .row .media-action .overlaycontent .login input[type="text"]::-webkit-input-placeholder,
+.item .main .row .left .row .media-action .overlaycontent .login input[type="password"]::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.item .main .row .left .row .media-action .overlaycontent .list-group .plus-sign {
+  margin-top: 5px;
+}
+.item .main .row .left .row .media-action .overlaycontent .btn-euscreen {
+  margin-top: 6px;
 }
 .item .main .row .left .row .media-action .button-list {
   margin: 0;

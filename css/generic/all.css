@@ -533,22 +533,19 @@ body .select-wrap select option {
   background: #ffffff;
   color: #8cc63f;
 }
-body .popover {
+body .list-group {
+  margin-bottom: 0px;
   border-radius: 0px;
-  border: 0px;
-  border-top: 5px solid #00aeef;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.9);
-  width: 300px;
+  box-shadow: none;
 }
-body .popover .popover-title {
+body .list-group a.list-group-item.active {
+  border-color: #00aeef;
+  background-image: none;
+  text-shadow: none;
+}
+body .list-group a.list-group-item:first-child,
+body .list-group a.list-group-item:last-child {
   border-radius: 0px;
-  background: none;
-  border: 0px;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
-  font-size: 18px;
-  color: #00aeef;
-  padding: 20px 14px 5px 14px;
 }
 .slided {
   position: relative;

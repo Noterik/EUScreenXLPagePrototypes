@@ -17,11 +17,6 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
-        
-        /* sticky sidebar
-        this.$sideBarElements.stickySidebarJS({
-	        parentElement: '#results'
-        });*/
     };
 
     EUScreenXL.SearchResultsPage.prototype = Object.create(EUScreenXL.Page.prototype);

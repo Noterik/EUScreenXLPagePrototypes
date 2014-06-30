@@ -23,7 +23,14 @@ $(document).ready(function () {
             speed:200
         });
 
-        // popover & tooltip
+        // only activates tooltip on desktop
+        // otherwise it takes two tap to view overlay content
+        if(EUScreenXL.Page.prototype.device == "desktop") {
+            // activate tooltip
+            this.$overlayButtons.tooltip();
+        }
+
+        // popover
         // bootstrap popover doesn't play too nicely with mobile version
         // and it doesnt fit with euscreenxl the mobile designs
         var overlayButton = this.$overlayButtons,
@@ -34,10 +41,10 @@ $(document).ready(function () {
             $this.click(function(e){
                 e.preventDefault();
                 self = this;
-                if($this.hasClass('active')) { 
-                    $(content).hide(); $this.removeClass('active');
+                if($(content).is(":visible")) { 
+                    $(content).hide(); $(self).removeClass('active');
                 } else { 
-                    $(content).show(); $this.addClass('active');
+                    $(content).show(); $(self).addClass('active');
                     overlayButton.not(self).removeClass('active');
                     overlayContents.not($(content)).hide();
                 }

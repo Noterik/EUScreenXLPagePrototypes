@@ -76,6 +76,7 @@
 							box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 							display: none;
 
+							// header style
 							h3 {
 								font-family: @font-family-monospace;
 								color: @euscreen-blue;
@@ -83,16 +84,49 @@
 								margin-top:0px;
 								margin-bottom: 15px;
 							}
+
+							// share icons
 							ul {
 								li {
 									padding:0px;
+									.fa-lg {
+										font-size: 1.4em;
+									}
 								}
 							}
-							.login {
 
-								input {
-									margin-bottom: 5px;
+							// small text below the login button
+							.extra {
+								font-size: 0.929em;
+								display: inline-block;
+								margin: 5px 0 0 0;
+								color: @euscreen-gray;
+								a {
+									color: inherit;
 								}
+							}
+
+							// bookmark's login
+							.login {
+								input[type="text"], input[type="password"] {
+									.placeholderItalic(#d2d2d2,italic);
+									margin-bottom: 5px;
+									border-radius: 0px;
+									padding: 10px;
+									height: auto;
+									font-size:1.071em; 
+									background: rgba(255, 255, 254, 0.6);
+								}
+							}
+
+							// list-group
+							.list-group .plus-sign {
+								margin-top:5px;
+							}
+
+							// button
+							.btn-euscreen {
+								margin-top:6px;
 							}
 						}
 
