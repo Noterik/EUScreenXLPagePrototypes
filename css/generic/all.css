@@ -726,6 +726,15 @@ body .list-group a.list-group-item:last-child {
   body .page footer .affiliates .list-inline li {
     margin-left: 30px;
   }
+  body .item .main .row .left .row .media-action .overlaycontent {
+    font-size: 1em;
+  }
+  body .item .main .row .left .row .media-action .overlaycontent .extra {
+    font-size: 0.929em;
+  }
+  body .item .main .row .left .row .media-metadata {
+    font-size: 1em;
+  }
   body .item .main .row .right {
     margin-top: 0px;
     border-left: 6px solid #f2f2f2;
@@ -735,6 +744,9 @@ body .list-group a.list-group-item:last-child {
   }
   body .item .main .row .right .row .section-content {
     margin-top: 0px;
+  }
+  body .item .main .row .right .row .section-content .discover-more {
+    font-size: 1em;
   }
   body .search header .navbar .container .navbar-header .navbar-form {
     display: none;

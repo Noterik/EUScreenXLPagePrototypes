@@ -61,45 +61,43 @@
 						margin-top:6px;
 						padding-right: 0px;
 						
-						
-						// overlaycontent
+						// the content of the overlay
+						// at the bottom of the icon
+						// hide by default, being shown by js (item.js)
 						.overlaycontent {
-							.clearfix;
-							width: 300px;
+							.clearfix;	
+							font-size: 1.143em;
 							position: absolute;
-							top:59px;
+							width: 300px; // set width (less than 320)
 							right: 0px;
-							background: rgba(255,255,255,0.95);
-							z-index: 5;
+							z-index: 2;
+							background: rgba(255,255,255,0.95); // transparency
 							border-top:5px solid @euscreen-blue;
 							padding: 20px;
 							box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-							display: none;
+							display: none; // hide by default
 
 							// header style
 							h3 {
 								font-family: @font-family-monospace;
 								color: @euscreen-blue;
 								font-size: 1.286em;
-								margin-top:0px;
-								margin-bottom: 15px;
+								margin: 0 0 15px 0;
 							}
 
 							// share icons
-							ul {
-								li {
-									padding:0px;
-									.fa-lg {
-										font-size: 1.4em;
-									}
+							ul li {
+								padding:0px;
+								.fa-lg {
+									font-size: 1.4em;
 								}
 							}
 
 							// small text below the login button
 							.extra {
-								font-size: 0.929em;
+								font-size: 1.071em;
 								display: inline-block;
-								margin: 5px 0 0 0;
+								margin: 10px 0 0 0;
 								color: @euscreen-gray;
 								a {
 									color: inherit;
@@ -188,6 +186,7 @@
 						border-left: 6px solid @body-bg;
 						border-right: 6px solid @body-bg;
 						padding:20px;
+						font-size: 1.143em;
 						
 						// header
 						h1 {
@@ -261,14 +260,17 @@
 					
 					
 					// tabs
+					// section tab will only shows in mobile and tablets
 					.sectiontab {
+
+						// set background and bottom border
 						background: @euscreen-white;
 						border-bottom: 5px solid @euscreen-blue;
 						
 						// nav ul
 						.nav {
 							
-							// list
+							// make list full width
 							li {
 								width: 1%;
 								display: table-cell;
@@ -281,11 +283,10 @@
 									color: @euscreen-gray;
 									background: @euscreen-white;
 									border-radius: 0px;
-									border:0px;
 									font-size: 1.286em;
-									margin-bottom: 0px;
 									padding: 15px;
-									
+									margin-bottom: 0px;
+
 									// on hover, exactly the same as active mode
 									&:hover {
 										background: @euscreen-blue;
@@ -307,7 +308,7 @@
 					// section content
 					.section-content {
 						background: @euscreen-white; // set bg
-						margin-top:6px;
+						margin-top:6px; // a bit of space to the tab
 						
 						// related media
 						// dont set padding here, we need more/less button to be full width
@@ -349,6 +350,7 @@
 						
 						// discover more section
 						.discover-more {
+							font-size: 1.143em;
 							padding: 20px;
 						}
 					}

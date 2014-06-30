@@ -42,12 +42,12 @@
   clear: both;
 }
 .item .main .row .left .row .media-action .overlaycontent {
-  width: 300px;
+  font-size: 1.143em;
   position: absolute;
-  top: 59px;
+  width: 300px;
   right: 0px;
+  z-index: 2;
   background: rgba(255, 255, 255, 0.95);
-  z-index: 5;
   border-top: 5px solid #00aeef;
   padding: 20px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -65,8 +65,7 @@
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #00aeef;
   font-size: 1.286em;
-  margin-top: 0px;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 .item .main .row .left .row .media-action .overlaycontent ul li {
   padding: 0px;
@@ -75,9 +74,9 @@
   font-size: 1.4em;
 }
 .item .main .row .left .row .media-action .overlaycontent .extra {
-  font-size: 0.929em;
+  font-size: 1.071em;
   display: inline-block;
-  margin: 5px 0 0 0;
+  margin: 10px 0 0 0;
   color: #808080;
 }
 .item .main .row .left .row .media-action .overlaycontent .extra a {
@@ -166,6 +165,7 @@
   border-left: 6px solid #f2f2f2;
   border-right: 6px solid #f2f2f2;
   padding: 20px;
+  font-size: 1.143em;
 }
 .item .main .row .left .row .media-metadata h1 {
   margin: 5px 0 22px 0;
@@ -226,13 +226,13 @@
 }
 .item .main .row .right .row .sectiontab .nav li a {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  border: 0px;
   color: #808080;
   background: #ffffff;
   border-radius: 0px;
-  border: 0px;
   font-size: 1.286em;
-  margin-bottom: 0px;
   padding: 15px;
+  margin-bottom: 0px;
 }
 .item .main .row .right .row .sectiontab .nav li a:hover {
   background: #00aeef;
@@ -284,6 +284,7 @@
   color: #00aeef;
 }
 .item .main .row .right .row .section-content .discover-more {
+  font-size: 1.143em;
   padding: 20px;
 }
 .item .main .row .right .row .ads {
