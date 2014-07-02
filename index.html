@@ -1,35 +1,294 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
 <html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page prototypes</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        
+        <!-- meta-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EUscreenXL - Item</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- css -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap/theme.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/generic/all.css">
+        <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
+    </head>
+    <body>
+        
+        <!-- update browser-->
+        <!--[if lt IE 7]>
+            <div class="browsehappy alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                You are using an <strong>outdated</strong> browser.
+                Please <a class="alert-link" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+            </div>
+        <![endif]-->
+        
+        <!-- container -->
+        <div class="page home" id="page">
+            
+            <!-- wrap -->
+            <header>
+                <div class="navbar navbar-fixed-top" role="navigation" id="navbar">
+                    <div class="container">
+                        
+                        <!-- header -->
+                        <div class="navbar-header">
+                            
+                            <!-- menu icon -->
+                            <div class="menuicon visible-sm visible-xs pull-left">
+                                <button type="button" id="menubutton" class="btn"><i class="fa fa-bars"></i></button>
+                            </div>
+                            
+                            <!-- search icon -->
+                            <div class="searchicon visible-sm visible-xs pull-right">
+                                <button type="button" id="searchbutton" class="btn"><i class="fa fa-search"></i></button>
+                            </div>
+                            
+                            <!-- logo -->
+                            <a class="navbar-brand" href="#"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>
+                            <!-- <a class="navbar-brand" href="#">EUSCREENXL</a> -->
+                            
+                            <!-- form -->
+                            <form class="navbar-form navbar-left" id="headerform" role="search">
+                                <div class="form-group">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                    <input type="text" class="form-control" placeholder="Search the collection">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </div>
+                        
+                        <!-- collapse -->
+                        <div class="navbar-collapse collapse">
+                            
+                            <!-- navigation -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="search-results.html">ABOUT</a></li>
+                                <li><a href="item.html">MYEUSCREEN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- main section-->
+            <div class="container main">
+                <div class="row">
+                    <div class="col-md-12 jumbotron">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+                        <!-- le carrousel -->
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            </ol>
 
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
 
-<!-- Add your site or application content here -->
-<p>Overview of page prototypes</p>
+                                <!-- slide 1 -->
+                                <div class="item active">
+                                    <div class="bg bg-1">
+                                        <div class="wrap">
+                                            <div class="carousel-caption">
+                                                <h1>DISCOVER EUROPE’S TELEVISION HISTORY</h1>
+                                                <p>
+                                                    EUscreen offers free online access to videos, stills, texts and 
+                                                    audio from European broadcasters and audiovisual archives. Explore 
+                                                    selected content from early 1900s until today.
+                                                </p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- slide 1 -->
+                                <div class="item ">
+                                    <div class="bg bg-2">
+                                        <div class="wrap">
+                                            <div class="carousel-caption">
+                                                <h1>DISCOVER EUROPE’S TELEVISION HISTORY</h1>
+                                                <p>
+                                                    EUscreen offers free online access to videos, stills, texts and 
+                                                    audio from European broadcasters and audiovisual archives. Explore 
+                                                    selected content from early 1900s until today.
+                                                </p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-<ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="search-results.html">Search Results</a></li>
-    <li><a href="item.html">Item Page</a></li>
-    <li><a href="about.html">About</a></li>
-</ul>
-</body>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row -->
+                <div class="row hidden-xs">
+                    <div class="col-md-12 collection-viewer-tab">
+                        
+                        <!-- row -->
+                        <div class="row">
+
+                            <!-- tabs -->
+                            <div class="col-md-9 col-sm-8 tabs">
+                                <ul class="list-inline">
+                                    <li><button class="btn btn-euscreen">Video Highlights</button></li>
+                                    <li><button class="btn btn-euscreen">In The News</button></li>
+                                    <li><button class="btn btn-euscreen">Series Picks</button></li>
+                                </ul>
+                            </div>
+
+                            <!-- action icons -->
+                            <div class="col-md-3 col-sm-4 col-cs-8 action">
+                                <ul class="list-inline">
+                                    <li><button class="btn">
+                                        <span class="fa-stack fa-lg">   
+                                            <i class="fa fa-square-o fa-stack-2x"></i>
+                                            <i class="fa fa-info fa-stack-1x"></i>
+                                        </span>
+                                    </button></li>
+                                    <li><button class="btn">
+                                        <span class="fa-stack fa-lg">   
+                                            <i class="fa fa-square-o fa-stack-2x"></i>
+                                            <i class="fa fa-expand fa-stack-1x"></i>
+                                        </span>
+                                    </button></li>
+                                </ul>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+
+                <!-- row -->
+                <div class="row hidden-xs">
+                    <div class="col-md-12 collection-viewer">
+                        
+                        <!-- big thumbnail at the start, the rest is small -->
+                        <div class="row">
+                            <div class="col-md-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                            <div class="col-md-6">
+                                <div class="row" style="margin:0px;">
+                                    <div class="col-md-6 ">
+                                        <img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" />
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="item col-md-6 "><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                    <div class="item col-md-6 "><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                    <div class="item col-md-6 "><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- one line of equal size thumbnails 
+                        <div class="row">
+                            <div class="item col-md-3"><img src="img/ic_thumbnail.gif" class="img-responsive" /></div>
+                            <div class="item col-md-3"><img src="img/ic_thumbnail.gif" class="img-responsive" /></div>
+                            <div class="item col-md-3"><img src="img/ic_thumbnail.gif" class="img-responsive" /></div>
+                            <div class="item col-md-3"><img src="img/ic_thumbnail.gif" class="img-responsive" /></div>
+                        </div>-->
+
+                        <!-- big thumbnail at the end, the rest is small -->
+                        <div class="row">                            
+                            <div class="col-md-6">
+                                <div class="row" style="margin:0px;">
+                                    <div class="item col-md-6 "><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                    <div class="item col-md-6 "><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                    <div class="item col-md-6 "><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                    <div class="item col-md-6 "><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- results -->
+                <div class="row hidden-xs">
+                    <div class="more col-md-12">
+                        <a href="#">SHOW MORE</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- footer -->
+            <footer class="hidden-xs">
+                <div class="container">
+                    
+                    <!-- footer content -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-7">
+                            <span class="links">
+                                <ul class="list-inline">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.html">About</a></li>
+                                    <li><a href="index.html">Terms of Use</a></li>
+                                    <li><a href="index.html">Privacy</a></li>
+                                    <li><a href="index.html">Contact</a></li>
+                                </ul>
+                            </span>
+                            <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
+                        </div>
+                        <div class="col-md-6 col-sm-5">
+                            <div class="affiliates">
+                                <ul class="list-inline">
+                                    <li class="europeana"></li>
+                                    <li class="europeancomission"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- nav -->
+        <div id="navpanel" class="mobilenav">
+            <ul class="main">
+                <li class="active"><a href="search-results.html">HOME</a></li>
+                <li><a href="item.html">ABOUT</a></li>
+                <li><a href="#">MYEUSCREEN</a></li>
+            </ul>
+            <ul class="secondary">
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span class="info">
+                Euscreen is founded by the European Comission within the eContentplus programme. 
+            </span>
+        </div>
+
+        <!-- scripts -->
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/libs/SlidePanel/js/jquery.slide-panel.js"></script>
+        <script src="js/vendor/promise-1.0.0.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="js/libs/DeviceDetect/device-detect.js"></script>
+        <script src="js/libs/Page/page.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/home.js"></script>
+    </body>
 </html>

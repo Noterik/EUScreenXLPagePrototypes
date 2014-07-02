@@ -102,7 +102,8 @@ body .page header .navbar .navbar-header a.navbar-brand {
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
-						float: none;*/
+						float: none;
+						*/
 }
 body .page header .navbar .navbar-header .menuicon button {
   height: 70px;
@@ -353,7 +354,10 @@ body .page footer [class*='col-'] {
 }
 body .page footer .links {
   display: block;
-  padding: 60px 0 0 0;
+  padding: 70px 0 0 0;
+}
+body .page footer .links .list-inline {
+  margin-bottom: 10px;
 }
 body .page footer .links .list-inline li {
   margin: 0 10px 0 0;
@@ -363,7 +367,7 @@ body .page footer .links .list-inline li a {
 }
 body .page footer .affiliates {
   text-align: right;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 body .page footer .affiliates .list-inline li {
   margin-left: 10px;
@@ -502,6 +506,23 @@ body div.icono-share {
   background-position: -277px -16px;
   width: 21px;
   height: 27px;
+}
+body .more {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  text-align: center;
+  border-top: 1px solid #f2f2f2;
+  padding: 23px 0 23px 0;
+  background: #fff;
+  border-top: 0px;
+}
+body .more a {
+  color: #808080;
+}
+body .more a:hover {
+  color: #00aeef;
+}
+body .more #hide-extra-filters {
+  display: none;
 }
 body .select-wrap {
   width: 100%;
@@ -684,6 +705,16 @@ body .list-group a.list-group-item:last-child {
   body .item .main .row .left .row .media-metadata {
     margin: 1px 0 0 0;
   }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption {
+    top: 25%;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
+    font-size: 2.286em;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
+    font-size: 1.143em;
+    width: 87%;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -750,6 +781,9 @@ body .list-group a.list-group-item:last-child {
   }
   body .search header .navbar .container .navbar-header .navbar-form {
     display: none;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
+    width: 55%;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

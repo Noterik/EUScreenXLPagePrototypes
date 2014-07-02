@@ -190,23 +190,6 @@
   border-left: 6px solid #f2f2f2;
   border-right: 6px solid #f2f2f2;
 }
-.item .main .row .left .row .more-less .more {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
-  text-align: center;
-  border-top: 1px solid #f2f2f2;
-  padding: 23px 0 23px 0;
-  background: #fff;
-  border-top: 0px;
-}
-.item .main .row .left .row .more-less .more a {
-  color: #808080;
-}
-.item .main .row .left .row .more-less .more a:hover {
-  color: #00aeef;
-}
-.item .main .row .left .row .more-less .more #hide-extra-filters {
-  display: none;
-}
 .item .main .row .right {
   border-left: 6px solid #f2f2f2;
   border-right: 6px solid #f2f2f2;
@@ -268,7 +251,7 @@
 .item .main .row .right .row .section-content .media-relate .more {
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 20px;
+  padding-bottom: 0px;
 }
 .item .main .row .right .row .section-content .media-relate .more .more-button {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;

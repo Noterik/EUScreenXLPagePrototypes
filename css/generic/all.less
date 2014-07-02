@@ -137,7 +137,8 @@ body {
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
-						float: none;*/
+						float: none;
+						*/
 					}
 					
 					// menu icon, shown on mobile, hidden on wide screens
@@ -361,9 +362,11 @@ body {
 			// links
 			.links {
 				display: block;
-				padding: 60px 0 0 0;
+				padding: 70px 0 0 0;
 			  
 				.list-inline {
+					margin-bottom: 10px;
+					
 				  	li {
 				  		margin: 0 10px 0 0;
 				  		a {
@@ -376,7 +379,7 @@ body {
 			// affiliates logo at the bottom
 			.affiliates {
 				text-align: right;
-				padding-top:40px;
+				padding-top:50px;
 				
 				// logo
 				.list-inline {
@@ -494,6 +497,17 @@ body {
 		&.icono-share {
 			background-position: -277px -16px;
 			width: 21px; height: 27px;
+		}
+	}
+
+	// more
+	.more {
+		.moreButton();
+		border-top:0px;
+		
+		// button
+		#hide-extra-filters {
+			display: none;
 		}
 	}
 	

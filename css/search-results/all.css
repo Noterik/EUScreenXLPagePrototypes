@@ -177,16 +177,22 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   color: #808080;
 }
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover {
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover,
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li.active,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li.active {
   background: #a8d46d;
   color: #fff;
 }
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover a,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a {
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a,
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li.active a,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li.active a {
   color: #ffffff;
 }
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover .badge,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge {
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge,
+.search .main .left .row .filters .accordion .filter .filtercontent .listing li.active .badge,
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li.active .badge {
   color: #a8d46d;
   background: #ffffff;
 }

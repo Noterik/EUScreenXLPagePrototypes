@@ -1,45 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
 /**
-* css/item/all.less
+* css/home/all.less
 *
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
-.popover .login-form,
-.slide-panel .login-form {
-    display: none;
+.home .main .row .jumbotron {
+  border-radius: 0px;
+  height: 418px;
+  padding: 0px;
+  margin-bottom: 0px;
 }
-
-.popover .login-form.visible,
-.slide-panel .login-form.visible {
-    display: block;
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg {
+  background: url('../../img/bg-home-1.gif') no-repeat;
+  width: 100%;
+  height: 418px;
 }
-
-.popover .bookmarks,
-.slide-panel .bookmarks {
-    display: none;
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 250px #000;
+  overflow: hidden;
 }
-
-.popover .bookmarks.visible,
-.slide-panel .bookmarks.visible {
-    display: block;
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption {
+  padding: 0px;
+  left: 7%;
+  right: 7%;
+  text-align: left;
+  bottom: auto;
+  top: 17%;
 }
-
-.popover .menu,
-.slide-panel .menu {
-    width: 100%;
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1,
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
+  font-size: 1.9em;
+  padding: 11px 20px 15px 20px;
+  margin-bottom: 0px;
+  display: table;
+  background: rgba(140, 198, 63, 0.8);
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  text-shadow: none;
 }
-
-.page main.item .view-item {
-    background-color: black;
-    color: white;
-    width: 100%;
-    padding-bottom: 56%;
-    text-align: center;
-    position: relative;
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
+  font-size: 1.071em;
+  margin-top: 5px;
 }
-
-.page main.item .view-item > video {
-    top: 0;
-    left: 0;
-    position: absolute;
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg-1 {
+  background: url('../../img/bg-home-1.gif') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg-2 {
+  background: url('../../img/bg-home-2.gif') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg-3 {
+  background: url('../../img/bg-home-3.gif') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home .main .row .jumbotron .carousel .carousel-control {
+  width: 10%;
+}
+.home .main .row .jumbotron .carousel .carousel-indicators {
+  bottom: 10px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.home .main .row .jumbotron .carousel .carousel-indicators li.active {
+  margin: 1px;
+  width: 10px;
+  height: 10px;
+}
+.home .main .row .collection-viewer-tab {
+  background-color: #ffffff;
+  margin-top: 6px;
+  height: 60px;
+  border-bottom: 5px solid #00aeef;
+}
+.home .main .row .collection-viewer-tab .row [class*='col-'] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.home .main .row .collection-viewer-tab .row .action {
+  text-align: right;
+}
+.home .main .row .collection-viewer {
+  margin-top: 6px;
+}
+.home .main .row .collection-viewer .row [class*='col-'] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.home .main .row .collection-viewer .row .item-thumbnail {
+  width: 100%;
+  height: 100%;
+  outline: 5px solid #f2f2f2;
+  border-radius: 0px;
+}
+.home .main .row .more {
+  margin-top: 6px;
 }

@@ -1,42 +1,162 @@
+// Import generic variables & mixins
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+
 /**
-* css/item/all.less
+* css/home/all.less
 *
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
+// every page starts with .page class selector
+// for body element styling, go to generic/all.css
+.home {
 
-.popover, .slide-panel {
-  .login-form {
-    display: none;
-  }
-  .login-form.visible {
-    display: block;
-  }
-  .bookmarks {
-    display: none;
-  }
-  .bookmarks.visible {
-    display: block;
-  }
-  .menu {
-    width: 100%;
-  }
-}
+	// main
+	.main {
 
-.page {
-  main.item {
-    .view-item {
-      background-color: black;
-      color: white;
-      width: 100%;
-      padding-bottom: 56%;
-      text-align: center;
-      position: relative;
-      > video {
-        top: 0;
-        left: 0;
-        position: absolute;
-      }
-    }
-  }
+		// row
+		.row {
+
+			// jumbo
+			.jumbotron {
+				border-radius: 0px;
+				height: 418px;
+				padding: 0px;
+				margin-bottom: 0px;
+
+				// carousel
+				.carousel {
+
+					// inner
+					.carousel-inner {
+
+						// item
+						.item {
+
+							// bg 1
+							.bg {
+								background: url('../../img/bg-home-1.gif') no-repeat;
+								width: 100%;
+								height: 418px;
+
+								// wrap
+								.wrap {
+									width: 100%;
+									height: 100%;
+									box-shadow: inset 0 0 250px #000;
+									overflow: hidden;
+
+									// carousel caption
+									.carousel-caption {
+										padding:0px;
+										left: 7%;
+										right: 7%;
+										text-align: left;
+										bottom: auto;
+										top:17%;
+
+										// style of header and text on jumbotron
+										h1, p {
+											font-size: 1.9em;
+											padding: 11px 20px 15px 20px;
+											margin-bottom: 0px;
+											display: table;
+											background: @euscreen-rgba-green-90; // the background
+											font-family: @font-family-monospace;
+											text-shadow: none;
+										}
+										p {
+											font-size: 1.071em;
+											margin-top:5px;
+										}
+									}
+								}
+							}
+
+							// set different background on each slide
+							// one alternatives is to use image url
+							.bg-1 {
+								background: url('../../img/bg-home-1.gif') no-repeat;
+								.background-size(cover);
+							}
+							.bg-2 {
+								background: url('../../img/bg-home-2.gif') no-repeat;
+								.background-size(cover);
+							}
+							.bg-3 {
+								background: url('../../img/bg-home-3.gif') no-repeat;
+								.background-size(cover);
+							}
+						}
+					}
+
+					// carousel control
+					.carousel-control {
+						width: 10%;
+					}
+
+					// carousel indicator
+					.carousel-indicators {
+						bottom: 10px;
+						.opacity(0.5);
+
+						// bullets
+						li {
+							&.active {
+								margin: 1px;
+								width: 10px;
+								height: 10px;
+							}
+						}
+					}
+				}
+			}
+
+			// tab
+			.collection-viewer-tab {
+				background-color: @euscreen-white;
+				margin-top:6px;
+				height: 60px;
+				border-bottom: 5px solid @euscreen-blue;
+
+				// row
+				.row {
+
+					// col
+					.removeColumnPadding();
+
+					// tab action
+					.action {
+						text-align: right;
+					}
+				}
+			}
+
+			// tab
+			.collection-viewer {
+				margin-top:6px;
+
+				// row
+				.row {
+
+					// col
+					.removeColumnPadding();
+
+					// col
+					.item-thumbnail {
+							width: 100%;
+							height: 100%;
+							outline: 5px solid @body-bg;
+							border-radius: 0px;
+						}
+				}
+			}
+
+			//
+			.more {
+				margin-top:6px;
+			}
+		}
+	}
 }
