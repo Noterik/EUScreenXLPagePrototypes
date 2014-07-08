@@ -507,6 +507,20 @@ body div.icono-share {
   width: 21px;
   height: 27px;
 }
+body i.icono-info,
+body span.icono-info,
+body div.icono-info {
+  background-position: -24px -82px;
+  width: 24px;
+  height: 24px;
+}
+body i.icono-expand,
+body span.icono-expand,
+body div.icono-expand {
+  background-position: 0px -82px;
+  width: 24px;
+  height: 24px;
+}
 body .more {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-align: center;
@@ -784,6 +798,12 @@ body .list-group a.list-group-item:last-child {
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
     width: 55%;
+  }
+  body .home .main .row .collection-viewer-tab .second-nav .list-inline li {
+    margin-right: 10px;
+  }
+  body .home .main .row .collection-viewer-tab .second-nav .list-inline li a {
+    font-size: 1em;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

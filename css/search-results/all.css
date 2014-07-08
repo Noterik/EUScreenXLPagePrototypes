@@ -281,11 +281,11 @@ textarea.search .main .left .row .searchbar input[type="text"] {
 }
 .search .main .right .row .mediatab .nav li {
   margin: 0px;
+  border-right: 1px solid #f2f2f2;
 }
 .search .main .right .row .mediatab .nav li a {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   border: 0px;
-  border-right: 1px solid #f2f2f2;
   border-radius: 0px;
   margin: 0px;
   height: 60px;
@@ -299,14 +299,15 @@ textarea.search .main .left .row .searchbar input[type="text"] {
 .search .main .right .row .mediatab .nav li a:hover {
   background: #00aeef;
   border-radius: 0px;
-  border-right: 1px solid #00aeef;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+.search .main .right .row .mediatab .nav li.active {
+  border-right: 1px solid #00aeef;
 }
 .search .main .right .row .mediatab .nav li.active a {
   background: #00aeef;
   border-radius: 0px;
-  border-right: 1px solid #00aeef;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }

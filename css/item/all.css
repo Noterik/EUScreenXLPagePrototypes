@@ -139,6 +139,8 @@
   border-radius: 0px;
   box-shadow: none;
   background: #ffffff;
+  -webkit-transition: background 0.35s;
+  transition: background 0.35s;
 }
 .item .main .row .left .row .media-action .button-list > li button:hover,
 .item .main .row .left .row .media-action .button-list > li button:active,

@@ -8,6 +8,7 @@ $(document).ready(function () {
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
+        this.$overlayButtons = jQuery('button[data-overlay]');
 
          // nav panel
         this.$navElement.slidePanelJS({
@@ -16,6 +17,13 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+        
+        // only activates tooltip on desktop
+        // otherwise it takes two tap to view overlay content
+        if(EUScreenXL.Page.prototype.device == "desktop") {
+            // activate tooltip
+            this.$overlayButtons.tooltip();
+        }
     };
 
     EUScreenXL.HomePage.prototype = Object.create(EUScreenXL.Page.prototype);

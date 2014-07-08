@@ -79,10 +79,36 @@
   height: 10px;
 }
 .home .main .row .collection-viewer-tab {
-  background-color: #ffffff;
   margin-top: 6px;
-  height: 60px;
+}
+.home .main .row .collection-viewer-tab .main-nav {
+  background-color: #ffffff;
+}
+.home .main .row .collection-viewer-tab .second-nav {
+  background-color: #ffffff;
   border-bottom: 5px solid #00aeef;
+  margin-top: 1px;
+}
+.home .main .row .collection-viewer-tab .second-nav .list-inline {
+  padding: 13px 20px 2px 20px;
+}
+.home .main .row .collection-viewer-tab .second-nav .list-inline li {
+  margin-right: 5px;
+}
+.home .main .row .collection-viewer-tab .second-nav .list-inline li a {
+  color: #808080;
+  font-size: 0.929em;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+.home .main .row .collection-viewer-tab .second-nav .list-inline li a:hover,
+.home .main .row .collection-viewer-tab .second-nav .list-inline li a:active {
+  color: #00aeef;
+}
+.home .main .row .collection-viewer-tab .second-nav .list-inline li.active a {
+  color: #00aeef;
+}
+.home .main .row .collection-viewer-tab .second-nav .list-inline li:last-child {
+  margin-right: 0px;
 }
 .home .main .row .collection-viewer-tab .row [class*='col-'] {
   padding-left: 0px;
@@ -90,6 +116,81 @@
 }
 .home .main .row .collection-viewer-tab .row .action {
   text-align: right;
+}
+.home .main .row .collection-viewer-tab .row .tabs .nav {
+  margin-top: 0px;
+  border: 0px;
+}
+.home .main .row .collection-viewer-tab .row .tabs .nav li {
+  margin: 0px;
+  border-right: 1px solid #f2f2f2;
+}
+.home .main .row .collection-viewer-tab .row .tabs .nav li a {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  border: 0px;
+  border-radius: 0px;
+  margin: 0px;
+  height: 60px;
+  line-height: inherit;
+  font-size: 1.071em;
+  color: #808080;
+  padding: 20px;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.home .main .row .collection-viewer-tab .row .tabs .nav li a:hover {
+  background: #00aeef;
+  border-radius: 0px;
+  color: #ffffff;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+.home .main .row .collection-viewer-tab .row .tabs .nav li.active {
+  border-right: 1px solid #00aeef;
+}
+.home .main .row .collection-viewer-tab .row .tabs .nav li.active a {
+  background: #00aeef;
+  border-radius: 0px;
+  color: #ffffff;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+.home .main .row .collection-viewer-tab .row .action .button-list {
+  margin: 0;
+  padding: 0;
+}
+.home .main .row .collection-viewer-tab .row .action .button-list > li {
+  border-left: 1px solid #f2f2f2;
+  display: inline-block;
+  margin-left: -4px;
+  padding: 0px;
+  position: relative;
+  line-height: 14px;
+}
+.home .main .row .collection-viewer-tab .row .action .button-list > li button {
+  padding-top: 5px;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+  background: #ffffff;
+  -webkit-transition: background 0.35s;
+  transition: background 0.35s;
+}
+.home .main .row .collection-viewer-tab .row .action .button-list > li button:hover,
+.home .main .row .collection-viewer-tab .row .action .button-list > li button:active,
+.home .main .row .collection-viewer-tab .row .action .button-list > li button.active {
+  background: #00aeef;
+}
+.home .main .row .collection-viewer-tab .row .action .button-list > li button:hover i.icono-info,
+.home .main .row .collection-viewer-tab .row .action .button-list > li button:active i.icono-info,
+.home .main .row .collection-viewer-tab .row .action .button-list > li button.active i.icono-info {
+  background-position: -24px -106px;
+}
+.home .main .row .collection-viewer-tab .row .action .button-list > li button:hover i.icono-expand,
+.home .main .row .collection-viewer-tab .row .action .button-list > li button:active i.icono-expand,
+.home .main .row .collection-viewer-tab .row .action .button-list > li button.active i.icono-expand {
+  background-position: 0px -106px;
 }
 .home .main .row .collection-viewer {
   margin-top: 6px;

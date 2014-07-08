@@ -295,46 +295,7 @@
 					
 					// tab
 					.nav {
-						margin-top:0px;
-						border:0px;
-						
-						// list
-						li {
-							margin:0px;
-							
-							a {
-								font-family: @font-family-monospace;
-								border:0px;
-								border-right: 1px solid @border-color;
-								border-radius: 0px;
-								margin:0px;
-								height: 60px;
-								line-height: inherit;
-								font-size: 1.071em;
-								color: @euscreen-gray;
-								padding: 20px;
-								.transition(background 0.2s);
-								
-								&:hover {
-									background: @euscreen-blue;
-									border-radius: 0px;
-									border-right: 1px solid @euscreen-blue;
-									color: @euscreen-white;
-									font-family: @font-family-monospace;
-								}
-							}
-							
-							// active
-							&.active {
-								a {
-									background: @euscreen-blue;
-									border-radius: 0px;
-									border-right: 1px solid @euscreen-blue;
-									color: @euscreen-white;
-									font-family: @font-family-monospace;
-								}
-							}
-						}
+						.navigation-tab();
 					}
 				}
 				
