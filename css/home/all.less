@@ -120,8 +120,6 @@
 				// first line
 				.main-nav {
 					background-color: @euscreen-white;
-					//border-bottom: 5px solid @euscreen-blue;
-					
 				}
 				
 				// themes
@@ -132,11 +130,11 @@
 					
 					// list
 					.list-inline {
-						padding: 13px 20px 2px 20px;
+						padding: 13px 0px 2px 20px;
 						
 						// the list
 						li {
-							margin-right: 5px;
+							margin-right: 2px;
 							
 							// anchor
 							a {
@@ -184,47 +182,44 @@
 							.navigation-tab();
 						}
 					}
-					
-					// action
-					.action {
-						
-						// list
-						.button-list {
-							margin: 0;
-							padding: 0;
-							
-							// lists
-							> li {
-								border-left: 1px solid @border-color;
-								display: inline-block;
-								margin-left: -4px;
-								padding:0px;
-								position: relative;
-								line-height: 14px;
+				}
+			}
 
-								// anchor elements
-								button {
-									padding-top:5px;
-									height: 60px;
-									width: 60px;
-									display: inline-block; 
-									border: 0px;
-									border-radius: 0px;
-									box-shadow: none;
-									background: @euscreen-white;
-									.transition(background 0.35s);
-									
-									// on hover
-									&:hover, &:active, &.active {
-										background: @euscreen-blue;
-										
-										// flip to white icons
-										i.icono-info {
-											background-position: -24px -106px;
-										}
-										i.icono-expand {
-											background-position: 0px -106px;
-										}
+			// collection viewer styling
+			.collection-viewer {
+				margin-top:3px;
+
+				// row
+				.row {
+
+					// col
+					.removeColumnPadding();
+					
+					// media item styling is on
+					// generic/all.less and it is being used
+					// throughout the sites, here we just adjust them for the collection viewer
+					.media-item {
+
+						// padding 2px to create some spaces between item
+						padding: 2px;
+
+						// add media-big class to make the icon and text bigger (assigned to media-image class selector)
+						// the actual styling to make it bigger is using bootstrap's row and column
+						&.media-big {
+							.media-wrapper {
+
+								// make title bigger
+								.media-title {
+									h3 {
+										font-size: 1.3em;
+									}
+								}
+
+								// make play icon bigger
+								.media-hue {
+									i {
+										margin:-22px 0 0 -15px;
+										font-size: 1.7em;
 									}
 								}
 							}
@@ -232,31 +227,95 @@
 					}
 				}
 			}
-
-			// tab
-			.collection-viewer {
-				margin-top:6px;
-
-				// row
-				.row {
-
-					// col
-					.removeColumnPadding();
-
-					// col
-					.item-thumbnail {
-						width: 100%;
-						height: 100%;
-						outline: 5px solid @body-bg;
-						border-radius: 0px;
-					}
-				}
+			
+			// we make the row slighty wider (default is -15px) to accomodate
+			// the 2px padding of each item
+			&.row-collection-viewer {
+				margin-left: -17px;
+				margin-right: -17px;
 			}
 
 			// more button
 			.more {
-				margin-top:6px;
+				margin-top:3px;
 			}
+		}
+	}
+}
+
+// body
+.fs {
+	margin-bottom: 6px;
+	overflow-x: hidden;
+	
+	// page
+	.home {
+
+		// header
+		header, footer {
+			display: none;
+		}
+
+		// fullscreen mode
+		.main {
+			padding-top: 0px;
+			padding-bottom: 0px;
+
+			// row
+			.row {
+
+				// jumbo
+				.jumbotron {
+					display: none;
+				}
+
+				// collection viewer
+				.collection-viewer-tab {
+					margin-top: 0px;
+
+					// main
+					.main-nav {
+						.media-action {
+							.button-list {
+								li {
+									button {
+										.icono-expand {
+											background-position: -48px -82px;
+										}
+
+										// on hover
+										&:hover, &:active, &.active {
+											.icono-expand {
+												background-position: -48px -106px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				// collection viewer
+				.collection-viewer, .more {
+					border-left: 6px solid @body-bg;
+					border-right: 6px solid @body-bg;
+				}
+			}
+		}
+	}
+}
+
+// modal
+.modal {
+	.modal-body {
+		iframe {
+			position: absolute;
+			width: 100%;
+			top:0px;
+			right: 0px;
+			left: 0px;
+			bottom: 0px;
 		}
 	}
 }

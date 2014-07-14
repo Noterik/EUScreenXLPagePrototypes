@@ -11,8 +11,9 @@
 }
 .search .main .left .row .header {
   display: block;
-  font-size: 0.857em;
+  font-size: 0.77em;
   color: #808080;
+  letter-spacing: 1px;
   padding: 25px 25px 10px 25px;
 }
 .search .main .left .row .searchbar {

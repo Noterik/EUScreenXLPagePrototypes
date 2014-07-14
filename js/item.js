@@ -14,6 +14,7 @@ $(document).ready(function () {
         this.$popElement = jQuery('#media-action');
         this.$overlayContents = jQuery('.overlaycontent');
         this.$overlayButtons = jQuery('button[data-overlay]');
+        this.$tooltipButtons = jQuery('button[data-toggle]');
         
         // nav panel
         this.$navElement.slidePanelJS({
@@ -27,28 +28,15 @@ $(document).ready(function () {
         // otherwise it takes two tap to view overlay content
         if(EUScreenXL.Page.prototype.device == "desktop") {
             // activate tooltip
-            this.$overlayButtons.tooltip();
+           this.$tooltipButtons.tooltip();
         }
 
-        // popover
+        // popover overlay
         // bootstrap popover doesn't play too nicely with mobile version
         // and it doesnt fit with euscreenxl the mobile designs
-        var overlayButton = this.$overlayButtons,
-            overlayContents = this.$overlayContents;
-        overlayButton.each(function () {
-            var $this = jQuery(this);
-            var content = $this.attr("data-overlay");
-            $this.click(function(e){
-                e.preventDefault();
-                self = this;
-                if($(content).is(":visible")) { 
-                    $(content).hide(); $(self).removeClass('active');
-                } else { 
-                    $(content).show(); $(self).addClass('active');
-                    overlayButton.not(self).removeClass('active');
-                    overlayContents.not($(content)).hide();
-                }
-            });
+        this.$overlayButtons.popupOverlayJS({
+            $overlayContents : this.$overlayContents,
+            contentOverlayIdAttr : 'data-overlay'
         });
     };
     EUScreenXL.ItemPage.prototype = Object.create(EUScreenXL.Page.prototype);

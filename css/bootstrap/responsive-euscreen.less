@@ -14,7 +14,6 @@
 	// Default style for mobiles devices is on each page specific stylesheets
 	// It starts with mobile design and scale up to desktop (not the other way around)
 
-
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -307,7 +306,6 @@
 						}
 					}
 				}
-
 			}
 		}	
 	}
@@ -574,8 +572,25 @@
 						}
 					}
 					
-					// collection viewer
+					// left
 					.collection-viewer-tab {
+
+						// row
+						.main-nav {
+
+							// mediatab
+							.media-action {
+
+								// overlay
+								// make the font smaller on wide screens
+								.overlaycontent {
+									font-size: 1em;
+									.extra {
+										font-size: 0.929em;
+									}
+								}
+							}
+						}
 						
 						// themes
 						.second-nav {
@@ -591,6 +606,29 @@
 							}
 						}
 					}
+
+					// collection viewer
+					.collection-viewer {
+
+						// row
+						.row {
+
+							// media item
+							.media-item {
+
+								// wrapper
+								.media-wrapper {
+
+									// title
+									.media-title {
+										h3 {
+											font-size: 1.1em;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -599,8 +637,74 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { 
-
+	
 	// do nothing for now
 	// bootstrap columns already setting it adaptive
+	body {
+	
+		// homepage
+		.home {
+	
+			// main
+			.main {
+	
+				// row
+				.row {
+					
+					// collection viewer
+					.collection-viewer {
+
+						// row
+						.row {
+
+							// media item
+							.media-item {
+
+								// wrapper
+								.media-wrapper {
+
+									// make title bigger
+									.media-title {
+										h3 {
+											font-size: 1.2em;
+										}
+									}
+
+									// make play icon bigger
+									.media-hue {
+										i {
+											margin:-30px 0 0 -20px;
+											font-size: 1.5em;
+										}
+									}
+								}
+
+								// media big
+								&.media-big {
+									.media-wrapper {
+
+										// make title bigger
+										.media-title {
+											h3 {
+												font-size: 1.4em;
+											}
+										}
+
+										// make play icon bigger
+										.media-hue {
+											i {
+												margin:-30px 0 0 -20px;
+												font-size: 2.2em;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	
 }

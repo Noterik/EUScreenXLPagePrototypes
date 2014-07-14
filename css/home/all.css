@@ -90,10 +90,10 @@
   margin-top: 1px;
 }
 .home .main .row .collection-viewer-tab .second-nav .list-inline {
-  padding: 13px 20px 2px 20px;
+  padding: 13px 0px 2px 20px;
 }
 .home .main .row .collection-viewer-tab .second-nav .list-inline li {
-  margin-right: 5px;
+  margin-right: 2px;
 }
 .home .main .row .collection-viewer-tab .second-nav .list-inline li a {
   color: #808080;
@@ -153,58 +153,66 @@
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
-.home .main .row .collection-viewer-tab .row .action .button-list {
-  margin: 0;
-  padding: 0;
-}
-.home .main .row .collection-viewer-tab .row .action .button-list > li {
-  border-left: 1px solid #f2f2f2;
-  display: inline-block;
-  margin-left: -4px;
-  padding: 0px;
-  position: relative;
-  line-height: 14px;
-}
-.home .main .row .collection-viewer-tab .row .action .button-list > li button {
-  padding-top: 5px;
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-  border: 0px;
-  border-radius: 0px;
-  box-shadow: none;
-  background: #ffffff;
-  -webkit-transition: background 0.35s;
-  transition: background 0.35s;
-}
-.home .main .row .collection-viewer-tab .row .action .button-list > li button:hover,
-.home .main .row .collection-viewer-tab .row .action .button-list > li button:active,
-.home .main .row .collection-viewer-tab .row .action .button-list > li button.active {
-  background: #00aeef;
-}
-.home .main .row .collection-viewer-tab .row .action .button-list > li button:hover i.icono-info,
-.home .main .row .collection-viewer-tab .row .action .button-list > li button:active i.icono-info,
-.home .main .row .collection-viewer-tab .row .action .button-list > li button.active i.icono-info {
-  background-position: -24px -106px;
-}
-.home .main .row .collection-viewer-tab .row .action .button-list > li button:hover i.icono-expand,
-.home .main .row .collection-viewer-tab .row .action .button-list > li button:active i.icono-expand,
-.home .main .row .collection-viewer-tab .row .action .button-list > li button.active i.icono-expand {
-  background-position: 0px -106px;
-}
 .home .main .row .collection-viewer {
-  margin-top: 6px;
+  margin-top: 3px;
 }
 .home .main .row .collection-viewer .row [class*='col-'] {
   padding-left: 0px;
   padding-right: 0px;
 }
-.home .main .row .collection-viewer .row .item-thumbnail {
-  width: 100%;
-  height: 100%;
-  outline: 5px solid #f2f2f2;
-  border-radius: 0px;
+.home .main .row .collection-viewer .row .media-item {
+  padding: 2px;
+}
+.home .main .row .collection-viewer .row .media-item.media-big .media-wrapper .media-title h3 {
+  font-size: 1.3em;
+}
+.home .main .row .collection-viewer .row .media-item.media-big .media-wrapper .media-hue i {
+  margin: -22px 0 0 -15px;
+  font-size: 1.7em;
+}
+.home .main .row.row-collection-viewer {
+  margin-left: -17px;
+  margin-right: -17px;
 }
 .home .main .row .more {
-  margin-top: 6px;
+  margin-top: 3px;
+}
+.fs {
+  margin-bottom: 6px;
+  overflow-x: hidden;
+}
+.fs .home header,
+.fs .home footer {
+  display: none;
+}
+.fs .home .main {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.fs .home .main .row .jumbotron {
+  display: none;
+}
+.fs .home .main .row .collection-viewer-tab {
+  margin-top: 0px;
+}
+.fs .home .main .row .collection-viewer-tab .main-nav .media-action .button-list li button .icono-expand {
+  background-position: -48px -82px;
+}
+.fs .home .main .row .collection-viewer-tab .main-nav .media-action .button-list li button:hover .icono-expand,
+.fs .home .main .row .collection-viewer-tab .main-nav .media-action .button-list li button:active .icono-expand,
+.fs .home .main .row .collection-viewer-tab .main-nav .media-action .button-list li button.active .icono-expand {
+  background-position: -48px -106px;
+}
+.fs .home .main .row .collection-viewer,
+.fs .home .main .row .more {
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
+}
+.modal .modal-body iframe {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
 }

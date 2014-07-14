@@ -9,7 +9,7 @@
         <!-- meta-->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>EUscreenXL - Item</title>
+        <title>EUscreenXL</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name='apple-mobile-web-app-capable' content='yes'>
@@ -76,7 +76,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="index.html">HOME</a></li>
                                 <li><a href="search-results.html">ABOUT</a></li>
-                                <li><a href="item.html">MYEUSCREEN</a></li>
+                                <li><a class="modal-button" data-toggle="modal" data-target="#myModal">MYEUSCREEN</a></li>
                             </ul>
                         </div>
                     </div>
@@ -158,15 +158,24 @@
                             </div>
 
                             <!-- action icons -->
-                            <div class="col-md-3 col-sm-4 col-cs-8 action">
+                            <div class="col-md-3 col-sm-4 col-cs-8 media-action">
                             	<ul class="list-inline pull-right button-list">
                             		<li>
-	                            		<button data-toggle="tooltip" data-placement="top" data-title="INFO" data-overlay="#terms-content">
+                            			<!-- button info -->
+	                            		<button data-toggle="tooltip" data-placement="top" data-title="SECTION INFO" data-overlay="#info-content">
 			    							<i class="icono icono-info"></i>
 			    						</button>
+			    						
+			    						<!-- info content -->
+			    						<div class="overlaycontent" id="info-content">
+			    							<h3>Video Highlights</h3>
+											<p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                            </p>
+										</div>
                             		</li>
                             		<li>
-	                            		<button data-toggle="tooltip" data-placement="top" data-title="EXPAND TO FULLSCREEN" data-overlay="#terms-content">
+	                            		<button data-toggle="tooltip" data-placement="top" data-title="EXPAND TO FULLSCREEN" id="fullscreen-button">
 			    							<i class="icono icono-expand"></i>
 			    						</button>
                             		</li>
@@ -194,46 +203,213 @@
                 </div>
 
                 <!-- row -->
-                <div class="row hidden-xs">
-                    <div class="col-md-12 collection-viewer">
+                <div class="row hidden-xs row-collection-viewer">
+                    <div class="col-md-12 collection-viewer" id="collection-viewer-container">
                         
                         <!-- big thumbnail at the start, the rest is small -->
                         <div class="row">
-                            <div class="col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                            <div class="media-item media-big col-md-6 col-sm-6">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit amet</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-6 col-sm-6">
-                                <div class="row" style="margin:0px;">
-                                    <div class="col-md-6 col-sm-6">
-                                        <img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" />
-                                        <div>
-
+                                <div class="row nomargin">
+                                    <div class="media-item col-md-6 col-sm-6">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="item col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
-                                    <div class="item col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
-                                    <div class="item col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                    <div class="media-item col-md-6 col-sm-6">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item col-md-6 col-sm-6">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item col-md-6 col-sm-6">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- one line of equal size thumbnails 
-                        <div class="row">
-                            <div class="item col-md-3"><img src="img/ic_thumbnail.gif" class="img-responsive" /></div>
-                            <div class="item col-md-3"><img src="img/ic_thumbnail.gif" class="img-responsive" /></div>
-                            <div class="item col-md-3"><img src="img/ic_thumbnail.gif" class="img-responsive" /></div>
-                            <div class="item col-md-3"><img src="img/ic_thumbnail.gif" class="img-responsive" /></div>
-                        </div>-->
+                        <!-- one row of small thumbnail -->
+                        <div class="row">                            
+                            <div class="col-md-12 col-sm-12">
+                                <div class="row nomargin">
+                                    <div class="media-item col-md-3 col-sm-3">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item col-md-3 col-sm-3">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item col-md-3 col-sm-3">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item col-md-3 col-sm-3">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- big thumbnail at the end, the rest is small -->
                         <div class="row">                            
                             <div class="col-md-6 col-sm-6">
-                                <div class="row" style="margin:0px;">
-                                    <div class="item col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
-                                    <div class="item col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
-                                    <div class="item col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
-                                    <div class="item col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                                <div class="row nomargin">
+                                    <div class="media-item col-md-6 col-sm-6">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item col-md-6 col-sm-6">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item col-md-6 col-sm-6">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item col-md-6 col-sm-6">
+                                        <div class="media-image">
+                                            <div class="media-wrapper">
+                                                <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                                    <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-title">
+                                                        <h3>Lorem ipsum dolor sit</h3>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6"><img src="img/ic_thumbnail.gif" class="item-thumbnail img-responsive" /></div>
+                            <div class="media-item  media-big col-md-6 col-sm-6">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#myModal">
+                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,7 +457,7 @@
         <div id="navpanel" class="mobilenav">
             <ul class="main">
                 <li class="active"><a href="search-results.html">HOME</a></li>
-                <li><a href="item.html">ABOUT</a></li>
+                <li><a class="modal-button" data-toggle="modal" data-target="#myModal">ABOUT</a></li>
                 <li><a href="#">MYEUSCREEN</a></li>
             </ul>
             <ul class="secondary">
@@ -292,6 +468,27 @@
             <span class="info">
                 Euscreen is founded by the European Comission within the eContentplus programme. 
             </span>
+        </div>
+
+        <!-- modal -->
+        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body media-player aspect-ratio normal">
+                        <!-- replace with actual video player -->
+                        <video id="sampleMovie" width="640" poster="img/poster.gif" height="360" preload controls>
+                            <source src=video/small.webm type=video/webm>
+                            <source src=video/small.ogv type=video/ogg>
+                            <source src=video/small.mp4 type=video/mp4>
+                            <source src=video/small.3gp type=video/3gp>
+                        </video>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- scripts -->

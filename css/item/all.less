@@ -23,159 +23,22 @@
 				
 				// rows
 				.row {
-				
-					// media player
-					.media-player {
-					
-						// this is to set the correct aspect ratio in player
-						// select 16:9 or 4:3
-						&.aspect-ratio {
-							position: relative;
-							height: 0;
-							
-							// player
-							.player, embed, object, video {
-								position: absolute;
-								width: 100%;
-								height: 100%;
-								left: 0;
-								top: 0;
-								background: #000;
-							}
-							
-							// 16:9 ratio, apply this class to aspect-ratio selector in HTML to give 16:9 aspect ratio
-							&.wide { padding-bottom:56.25%; }
-							
-							// 4:3 ratio, apply this class to aspect-ratio selector in HTML to give 4:3 aspect ratio
-							&.normal { padding-bottom:75%; }
-						}
-					}
 					
 					// media action
 					// icon at the bottom of the media player
 					.media-action {
-						.clearfix;
+						margin-top:6px;
 						border-left: 6px solid @body-bg;
 						border-right: 6px solid @body-bg;
-						background: @euscreen-white;
-						margin-top:6px;
-						padding-right: 0px;
-						
-						// the content of the overlay
-						// at the bottom of the icon
-						// hide by default, being shown by js (item.js)
-						.overlaycontent {
-							.clearfix;	
-							font-size: 1.143em;
-							position: absolute;
-							width: 300px; // set width (less than 320)
-							right: 0px;
-							z-index: 2;
-							background: rgba(255,255,255,0.95); // transparency
-							border-top:5px solid @euscreen-blue;
-							padding: 20px;
-							box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-							display: none; // hide by default
 
-							// header style
-							h3 {
-								font-family: @font-family-monospace;
-								color: @euscreen-blue;
-								font-size: 1.286em;
-								margin: 0 0 15px 0;
-							}
-
-							// share icons
-							ul li {
-								padding:0px;
-								.fa-lg {
-									font-size: 1.4em;
-								}
-							}
-
-							// small text below the login button
-							.extra {
-								font-size: 1.071em;
-								display: inline-block;
-								margin: 10px 0 0 0;
-								color: @euscreen-gray;
-								a {
-									color: inherit;
-								}
-							}
-
-							// bookmark's login
-							.login {
-								input[type="text"], input[type="password"] {
-									.placeholderItalic(#d2d2d2,italic);
-									margin-bottom: 5px;
-									border-radius: 0px;
-									padding: 10px;
-									height: auto;
-									font-size:1.071em; 
-									background: rgba(255, 255, 254, 0.6);
-								}
-							}
-
-							// list-group
-							.list-group .plus-sign {
-								margin-top:5px;
-							}
-
-							// button
-							.btn-euscreen {
-								margin-top:6px;
-							}
-						}
 
 						// ul
 						// default style is absolute, will switch to inherit on wide screens
 						.button-list {
-							margin: 0;
-							padding: 0;
-							position: absolute;
-							right:0;
-							top:0;
-							z-index: 5;
 							
 							// lists
 							> li {
-								border-left: 1px solid @border-color;
-								border-bottom: 1px solid @border-color;
 								display: block;
-								margin-left: -4px;
-								padding:0px;
-								position: relative;
-
-								// anchor elements
-								button {
-									font-size: 1.7em;
-									padding-top:17px;
-									height: 60px;
-									width: 60px;
-									display: block; 
-									border: 0px;
-									border-radius: 0px;
-									box-shadow: none;
-									background: @euscreen-white;
-									.transition(background 0.35s);
-									
-									// on hover
-									&:hover, &:active, &.active {
-										background: @euscreen-blue;
-										
-										// flip to white icons
-										i.icono-copyright {
-											background-position: -253px -43px;
-										}
-										i.icono-share {
-											background-position: -277px -43px;
-										}
-										i.icono-bookmark {
-											background-position: -298px -43px;
-										}
-									}
-								}
 							}
 						}
 					}
