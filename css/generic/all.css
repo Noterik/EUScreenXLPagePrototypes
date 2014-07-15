@@ -794,7 +794,7 @@ body .modal .modal-dialog .modal-content {
 }
 body .modal .modal-dialog .modal-content .modal-header {
   border-bottom: 0px;
-  padding: 0 0 15px 0;
+  padding: 50px 0 15px 0;
 }
 body .modal .modal-dialog .modal-content .modal-header h4 {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
