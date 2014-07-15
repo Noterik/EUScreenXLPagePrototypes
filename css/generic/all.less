@@ -668,6 +668,12 @@ body {
 			background-position: 0px -82px;
 			width: 24px; height: 24px;
 		}
+		
+		// share
+		&.icono-remove {
+			background-position: -72px -106px;
+			width: 24px; height: 24px;
+		}
 	}
 
 	// more
@@ -774,6 +780,59 @@ body {
 	// modal
 	.modal {
 		
+		// close button
+		.close {
+			.opacity(1);
+			margin: 20px 20px 0 0;
+		}
+		
+		// dialog
+		.modal-dialog {
+			
+			// content
+			.modal-content {
+				background: none;
+				box-shadow: none;
+				border:0px;
+				
+				// header
+				.modal-header {
+					border-bottom: 0px;
+					padding: 0 0 15px 0;
+					
+					// title
+					h4 {
+						font-family: @font-family-monospace;
+						color: @euscreen-white;
+					}
+					
+					// item page link
+					.item-anchor {
+						margin-top:5px;
+						
+						
+						a {
+							color: #fff;
+							
+							.fa-external-link {
+								margin: 5px 0 0 10px;
+								float: right;
+							}
+							&:hover {
+								color: @euscreen-blue;
+								
+							}
+						}
+					}
+				}
+				
+				// body
+				.modal-body {
+					box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+					
+				}
+			}
+		}
 	}
 	
 	// style for slidePanelJS plugin
