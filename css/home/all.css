@@ -5,6 +5,9 @@
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
+.home .main {
+  padding-bottom: 0px !important;
+}
 .home .main .row .jumbotron {
   border-radius: 0px;
   height: 418px;
@@ -32,7 +35,7 @@
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1,
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
-  font-size: 1.9em;
+  font-size: 1.8em;
   padding: 11px 20px 15px 20px;
   margin-bottom: 0px;
   display: table;
