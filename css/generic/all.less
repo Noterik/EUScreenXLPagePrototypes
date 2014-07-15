@@ -743,52 +743,56 @@ body {
 			}
 		}
 	}
-}
-
-// media player
-.media-player {
-
-	// this is to set the correct aspect ratio in player
-	// select 16:9 or 4:3
-	&.aspect-ratio {
-		position: relative;
-		height: 0;
-		
-		// player
-		.player, embed, object, video {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			left: 0;
-			top: 0;
-			background: #000;
+	
+	// media player
+	.media-player {
+	
+		// this is to set the correct aspect ratio in player
+		// select 16:9 or 4:3
+		&.aspect-ratio {
+			position: relative;
+			height: 0;
+			
+			// player
+			.player, embed, object, video {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: #000;
+			}
+			
+			// 16:9 ratio, apply this class to aspect-ratio selector in HTML to give 16:9 aspect ratio
+			&.wide { padding-bottom:56.25%; }
+			
+			// 4:3 ratio, apply this class to aspect-ratio selector in HTML to give 4:3 aspect ratio
+			&.normal { padding-bottom:75%; }
 		}
-		
-		// 16:9 ratio, apply this class to aspect-ratio selector in HTML to give 16:9 aspect ratio
-		&.wide { padding-bottom:56.25%; }
-		
-		// 4:3 ratio, apply this class to aspect-ratio selector in HTML to give 4:3 aspect ratio
-		&.normal { padding-bottom:75%; }
 	}
-}
-
-// style for slidePanelJS plugin
-.slided {
-	position: relative;
-	left: 0px;
-	top:0px;
-	overflow: hidden;
-	width: 100%;
-}
-
-// browsehappy
-.browsehappy {
-	position: fixed;
-	text-align: center;
-	width: auto;
-	top:80px;
-	left: 10px; right: 10px;
-	z-index: 10;
+	
+	// modal
+	.modal {
+		
+	}
+	
+	// style for slidePanelJS plugin
+	.slided {
+		left: 0px;
+		top:0px;
+		overflow: hidden;
+		width: 100%;
+	}
+	
+	// browsehappy
+	.browsehappy {
+		position: fixed;
+		text-align: center;
+		width: auto;
+		top:80px;
+		left: 10px; right: 10px;
+		z-index: 10;
+	}
 }
 
 // Import responsive variables (temporary, until js is fix)

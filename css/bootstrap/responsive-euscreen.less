@@ -574,37 +574,42 @@
 					
 					// left
 					.collection-viewer-tab {
-
+						
 						// row
-						.main-nav {
-
-							// mediatab
-							.media-action {
-
-								// overlay
-								// make the font smaller on wide screens
-								.overlaycontent {
-									font-size: 1em;
-									.extra {
-										font-size: 0.929em;
+						.row {
+							
+							// row
+							&.main-nav {
+	
+								// mediatab
+								.media-action {
+	
+									// overlay
+									// make the font smaller on wide screens
+									.overlaycontent {
+										font-size: 1em;
+										.extra {
+											font-size: 0.929em;
+										}
+									}
+								}
+							}
+							
+							// themes
+							&.second-nav {
+								
+								// list
+								.list-inline {
+									li {
+										margin-right: 10px;
+										a {
+											font-size: 1em;
+										}
 									}
 								}
 							}
 						}
 						
-						// themes
-						.second-nav {
-							
-							// list
-							.list-inline {
-								li {
-									margin-right: 10px;
-									a {
-										font-size: 1em;
-									}
-								}
-							}
-						}
 					}
 
 					// collection viewer
@@ -706,5 +711,4 @@
 			}
 		}
 	}
-	
 }

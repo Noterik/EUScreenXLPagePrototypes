@@ -113,73 +113,71 @@
 				}
 			}
 
-			// tab
+			// collection viewer tab
 			.collection-viewer-tab {
+				
+				// set space to the jumbotron
 				margin-top:6px;
-				
-				// first line
-				.main-nav {
-					background-color: @euscreen-white;
-				}
-				
-				// themes
-				.second-nav {
-					background-color: @euscreen-white;
-					border-bottom: 5px solid @euscreen-blue;
-					margin-top:1px;
-					
-					// list
-					.list-inline {
-						padding: 13px 0px 2px 20px;
-						
-						// the list
-						li {
-							margin-right: 2px;
-							
-							// anchor
-							a {
-								color: @euscreen-gray;
-								font-size: 0.929em;
-								font-family: @font-family-monospace;
-								
-								// on hover, should be the same with active
-								&:hover, &:active {
-									color: @euscreen-blue;
-								}
-							}
-							
-							// active links
-							&.active {
-								a {
-									color: @euscreen-blue;
-								}
-							}
-							
-							// no right margin on the last item
-							&:last-child {
-								margin-right: 0px;
-							}
-						}
-					}
-				}
 				
 				// row
 				.row {
-
-					// col
+				
+					// remove column padding inside row
 					.removeColumnPadding();
-
-					// tab action
-					.action {
-						text-align: right;
+					
+					// main navigation
+					&.main-nav {
+						background-color: @euscreen-white;
+						
+						// tabs
+						.tabs {
+						
+							// navigation tab
+							// styling can be found on bootstrap/mixins.less
+							.nav {
+								.navigation-tab();
+							}
+						}
 					}
 					
-					// tabs
-					.tabs {
-					
-						// navigation tab
-						.nav {
-							.navigation-tab();
+					// themes
+					&.second-nav {
+						background-color: @euscreen-white;
+						border-bottom: 5px solid @euscreen-blue;
+						margin-top:1px;
+						
+						// list
+						.list-inline {
+							padding: 13px 0px 2px 20px;
+							
+							// the list
+							li {
+								margin-right: 2px;
+								
+								// anchor
+								a {
+									color: @euscreen-gray;
+									font-size: 0.929em;
+									font-family: @font-family-monospace;
+									
+									// on hover, should be the same with active
+									&:hover, &:active {
+										color: @euscreen-blue;
+									}
+								}
+								
+								// active links
+								&.active {
+									a {
+										color: @euscreen-blue;
+									}
+								}
+								
+								// no right margin on the last item
+								&:last-child {
+									margin-right: 0px;
+								}
+							}
 						}
 					}
 				}
@@ -187,12 +185,14 @@
 
 			// collection viewer styling
 			.collection-viewer {
+				
+				// set spacing to the top
 				margin-top:3px;
 
 				// row
 				.row {
 
-					// col
+					// remove column padding inside row
 					.removeColumnPadding();
 					
 					// media item styling is on
@@ -206,20 +206,26 @@
 						// add media-big class to make the icon and text bigger (assigned to media-image class selector)
 						// the actual styling to make it bigger is using bootstrap's row and column
 						&.media-big {
-							.media-wrapper {
+							
+							// image
+							.media-image {
+								
+								// elements wrapper
+								.media-wrapper {
 
-								// make title bigger
-								.media-title {
-									h3 {
-										font-size: 1.3em;
+									// make title bigger
+									.media-title {
+										h3 {
+											font-size: 1.3em;
+										}
 									}
-								}
-
-								// make play icon bigger
-								.media-hue {
-									i {
-										margin:-22px 0 0 -15px;
-										font-size: 1.7em;
+	
+									// make play icon bigger
+									.media-hue {
+										i {
+											margin:-22px 0 0 -15px;
+											font-size: 1.7em;
+										}
 									}
 								}
 							}
@@ -243,20 +249,23 @@
 	}
 }
 
-// body
+// when fullscreen
+// add this class to the body to adjust all elements
 .fs {
+
+	// add space to the top and hide horizontal scrolling
 	margin-bottom: 6px;
 	overflow-x: hidden;
 	
 	// page
 	.home {
 
-		// header
+		// hide header and footer on fullscreen
 		header, footer {
 			display: none;
 		}
 
-		// fullscreen mode
+		// remove padding top and bottom
 		.main {
 			padding-top: 0px;
 			padding-bottom: 0px;
@@ -264,26 +273,30 @@
 			// row
 			.row {
 
-				// jumbo
+				// hide jumbotron
 				.jumbotron {
 					display: none;
 				}
 
-				// collection viewer
+				// remove the margin
+				// because the tab will be the header
 				.collection-viewer-tab {
 					margin-top: 0px;
 
-					// main
+					// here, we will switch the fullscreen icon
+					// to the minimize icon
 					.main-nav {
 						.media-action {
 							.button-list {
 								li {
 									button {
+										
+										// change the icon to minimize
 										.icono-expand {
 											background-position: -48px -82px;
 										}
 
-										// on hover
+										// on hover also
 										&:hover, &:active, &.active {
 											.icono-expand {
 												background-position: -48px -106px;
@@ -296,26 +309,13 @@
 					}
 				}
 
-				// collection viewer
+				// add right and left spacing
+				// to the collection viewer and more button
 				.collection-viewer, .more {
 					border-left: 6px solid @body-bg;
 					border-right: 6px solid @body-bg;
 				}
 			}
-		}
-	}
-}
-
-// modal
-.modal {
-	.modal-body {
-		iframe {
-			position: absolute;
-			width: 100%;
-			top:0px;
-			right: 0px;
-			left: 0px;
-			bottom: 0px;
 		}
 	}
 }

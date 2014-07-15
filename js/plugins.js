@@ -69,7 +69,7 @@
         	
         	// animate
         	obj.animate({left:0}, settings.speed);
-        	settings.pageSection.animate({left:obj.width()}, settings.speed);
+        	settings.pageSection.animate({marginLeft:obj.width()}, settings.speed);
         	settings.navbarSection.css({width:'100%'}).animate({left:obj.width()}, settings.speed);
         	
         	// hide scrolling
@@ -85,7 +85,7 @@
         	
         	// animate
         	obj.animate({left:'-'+obj.width()}, settings.speed);
-        	settings.pageSection.animate({left:0}, settings.speed);
+        	settings.pageSection.animate({marginLeft:0}, settings.speed);
         	settings.navbarSection.animate({left:0}, settings.speed, function(){ settings.pageSection.removeClass('slided'); });
         	
         	// reset scrolling
