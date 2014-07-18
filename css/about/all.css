@@ -33,16 +33,11 @@
   -webkit-transition: color 0.35s, border-color 0.35s;
   transition: color 0.35s, border-color 0.35s;
 }
-.about .jumbotron-wide .navigate a.green-overlay:hover {
+.about .jumbotron-wide .navigate a:hover {
   color: #8cc63f;
   border-color: #8cc63f;
 }
-.about .jumbotron-wide .navigate a.blue-overlay:hover {
-  color: #00aeef;
-  border-color: #00aeef;
-}
 .about .main .row .welcome-text {
-  margin: 6px 0 0 0;
   background: #ffffff;
 }
 .about .main .row .welcome-text .wrap {
@@ -63,6 +58,9 @@
   margin-top: 20px;
   font-size: 1.071em;
   line-height: 2em;
+}
+.about .main .row.about-section {
+  margin-top: 6px;
 }
 .about .main .row.about-section [class*='col-'] {
   padding-left: 0px;
@@ -94,7 +92,7 @@
   font-size: 1.429em;
   color: #ffffff;
   padding: 20px;
-  margin-top: 33%;
+  margin-top: 31%;
   line-height: 1.4em;
   text-align: center;
 }

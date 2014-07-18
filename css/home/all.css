@@ -43,6 +43,7 @@
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
   font-size: 1.071em;
   margin-top: 5px;
+  padding: 14px 20px 20px 20px;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-1 {
   background: url('../../img/bg-home-1.gif') no-repeat;

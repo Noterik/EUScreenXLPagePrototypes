@@ -47,24 +47,10 @@
 				color: @euscreen-white;
 				.transition(color 0.35s, border-color 0.35s;);
 				
-				// greem
-				&.green-overlay {
-					
-					// hover
-					&:hover {
-						color: @euscreen-green;
-						border-color: @euscreen-green;
-					}
-				}
-				
-				// blue
-				&.blue-overlay {
-					
-					// hover
-					&:hover {
-						color: @euscreen-blue;
-						border-color: @euscreen-blue;
-					}
+				// hover
+				&:hover {
+					color: @euscreen-green;
+					border-color: @euscreen-green;
 				}
 			}
 		}
@@ -78,7 +64,6 @@
 					
 			// welcome-text
 			.welcome-text {
-				margin: 6px 0 0 0;
 				background: @euscreen-white;
 				
 				// wrap
@@ -104,6 +89,7 @@
 			
 			// about section
 			&.about-section {
+				margin-top: 6px;
 			
 				// remove column padding inside row
 				.removeColumnPadding();
@@ -135,7 +121,7 @@
 							font-size: 1.429em;
 							color: @euscreen-white;
 							padding: 20px;
-							margin-top:33%;
+							margin-top:31%;
 							line-height: 1.4em;
 							text-align: center;
 						}
