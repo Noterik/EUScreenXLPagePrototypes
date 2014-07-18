@@ -16,7 +16,7 @@ $(document).ready(function () {
         this.$overlayContents = jQuery('.overlaycontent');
         this.$collectionViewerElements = jQuery('#collection-viewer-container');
 
-         // nav panel
+        // nav panel
         this.$navElement.slidePanelJS({
             openButton: '#menubutton',
             pageSection:'#page',

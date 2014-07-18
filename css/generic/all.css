@@ -53,6 +53,7 @@ body .page header .navbar ul li a {
   padding: 25px 30px 0px 30px;
   border-right: 1px solid #f2f2f2;
   height: 70px;
+  display: inline-block;
 }
 body .page header .navbar ul li a:hover {
   background: none;
@@ -89,24 +90,20 @@ body .page header .navbar .navbar-header a.navbar-brand {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  width: 172px;
-  height: 53px;
-  background: url("../../img/sprites.png") -321px 0;
-  margin: 8px auto ;
-  float: none;
   /*
-						font-size: 1.571em;
-						height: 70px;
-						color: @euscreen-blue;
-						padding-top:23px;
-						font-weight: 600;
+						.text-hide();
+						width: 172px;
+						height: 53px;
+						background: url(@sprites-path) -321px 0;
+						margin:8px auto ;
 						float: none;
 						*/
+  font-size: 1.571em;
+  height: 70px;
+  color: #00aeef;
+  padding-top: 23px;
+  font-weight: 600;
+  float: none;
 }
 body .page header .navbar .navbar-header .menuicon button {
   height: 70px;
@@ -209,6 +206,9 @@ body .page header .navbar .navbar-header.searchOpened a.navbar-brand {
 body .page .main {
   padding-top: 70px;
   padding-bottom: 6px;
+}
+body .page .main.no-top-padding {
+  padding-top: 0px;
 }
 body .page .main .ads {
   position: relative;
@@ -512,6 +512,10 @@ body .page .main .media-action .button-list > li button:hover i.icono-expand,
 body .page .main .media-action .button-list > li button:active i.icono-expand,
 body .page .main .media-action .button-list > li button.active i.icono-expand {
   background-position: 0px -106px;
+}
+body .page .jumbotron-wide {
+  margin-top: 70px;
+  width: 100%;
 }
 body .page footer {
   position: absolute;

@@ -24,8 +24,10 @@
 @euscreen-black:		#000;
 @euscreen-rgba-green-60:rgba(140, 198, 63, 0.6);
 @euscreen-rgba-blue-60:	rgba(0, 174, 239, 0.6);
+@euscreen-rgba-red-60: rgba(220, 109, 147, 0.6);
 @euscreen-rgba-green-90:rgba(140, 198, 63, 0.80);
 @euscreen-rgba-blue-90:	rgba(0, 174, 239, 0.80);
+@euscreen-rgba-red-90: rgba(220, 109, 147, 0.90);
 @euscreen-panel-gray:   #343434;
 
 // Sprites
@@ -93,7 +95,7 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    inherit;
+@headings-font-family:    @font-family-monospace;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;

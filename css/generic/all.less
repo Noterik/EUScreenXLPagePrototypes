@@ -75,6 +75,7 @@ body {
 							padding: 25px 30px 0px 30px;
 							border-right: 1px solid @border-color;
 							height: 70px;
+							display: inline-block;
 							
 							// on hover
 							&:hover {
@@ -126,22 +127,22 @@ body {
 					// the logo
 					a.navbar-brand {
 						.center-block();
-						
+						/*
 						.text-hide();
 						width: 172px;
 						height: 53px;
 						background: url(@sprites-path) -321px 0;
 						margin:8px auto ;
 						float: none;
-						
-						 /*
+						*/
+						 
 						font-size: 1.571em;
 						height: 70px;
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
 						float: none;
-						*/
+						
 					}
 					
 					// menu icon, shown on mobile, hidden on wide screens
@@ -232,6 +233,11 @@ body {
 			// it will be extended to 6px on wide screens, so set padding 75px on wide screens
 			padding-top: 70px;
 			padding-bottom: 6px; // default bottom space is 6px (mobile) 
+			
+			// no padding
+			&.no-top-padding {
+				padding-top: 0px;	
+			}
 			
 			// ads
 			.ads {
@@ -501,6 +507,12 @@ body {
 					}
 				}
 			}
+		}
+		
+		// jumbotron wide
+		.jumbotron-wide {
+			margin-top: 70px;
+			width: 100%;
 		}
 		
 		// footer

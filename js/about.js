@@ -5,6 +5,15 @@ $(document).ready(function () {
 
     EUScreenXL.AboutPage = function () {
         EUScreenXL.Page.apply(this, arguments);
+        this.$navElement = jQuery('#navpanel');
+        
+        // nav panel
+        this.$navElement.slidePanelJS({
+            openButton: '#menubutton',
+            pageSection:'#page',
+            navbarSection:'#navbar',
+            speed:200
+        });
     };
 
     EUScreenXL.AboutPage.prototype = Object.create(EUScreenXL.Page.prototype);

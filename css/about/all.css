@@ -1,45 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
 /**
 * css/item/all.less
 *
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
-.popover .login-form,
-.slide-panel .login-form {
-    display: none;
+.about .jumbotron-wide {
+  background: url('../../img/bg-about.gif') no-repeat;
+  background-size: cover;
+  height: 250px;
+  text-align: center;
 }
-
-.popover .login-form.visible,
-.slide-panel .login-form.visible {
-    display: block;
+.about .jumbotron-wide .navigate {
+  margin: 110px 0 0 0;
 }
-
-.popover .bookmarks,
-.slide-panel .bookmarks {
-    display: none;
+.about .jumbotron-wide .navigate span {
+  color: #ffffff;
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 1.141em;
+  padding: 0 15px 0 15px;
 }
-
-.popover .bookmarks.visible,
-.slide-panel .bookmarks.visible {
-    display: block;
+.about .jumbotron-wide .navigate a {
+  border: 2px solid #fff;
+  border-color: #fff;
+  border-radius: 2px;
+  padding: 6px 20px 5px 20px;
+  letter-spacing: 1.3px;
+  font-size: 0.929em;
+  color: #ffffff;
+  -webkit-transition: color 0.35s, border-color 0.35s;
+  transition: color 0.35s, border-color 0.35s;
 }
-
-.popover .menu,
-.slide-panel .menu {
-    width: 100%;
+.about .jumbotron-wide .navigate a.green-overlay:hover {
+  color: #8cc63f;
+  border-color: #8cc63f;
 }
-
-.page main.item .view-item {
-    background-color: black;
-    color: white;
-    width: 100%;
-    padding-bottom: 56%;
-    text-align: center;
-    position: relative;
+.about .jumbotron-wide .navigate a.blue-overlay:hover {
+  color: #00aeef;
+  border-color: #00aeef;
 }
-
-.page main.item .view-item > video {
-    top: 0;
-    left: 0;
-    position: absolute;
+.about .main .row .welcome-text {
+  margin: 6px 0 0 0;
+  background: #ffffff;
+}
+.about .main .row .welcome-text .wrap {
+  padding: 0 0 40px 0;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+.about .main .row .welcome-text .wrap h1 {
+  text-align: center;
+  color: #00aeef;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  margin: 40px 0 30px 0;
+}
+.about .main .row .welcome-text .wrap p {
+  margin-top: 20px;
+  font-size: 1.071em;
+  line-height: 2em;
+}
+.about .main .row.about-section [class*='col-'] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.about .main .row.about-section .left,
+.about .main .row.about-section .middle,
+.about .main .row.about-section .right {
+  position: relative;
+}
+.about .main .row.about-section .left a .img-section,
+.about .main .row.about-section .middle a .img-section,
+.about .main .row.about-section .right a .img-section {
+  width: 100%;
+}
+.about .main .row.about-section .left a .hue,
+.about .main .row.about-section .middle a .hue,
+.about .main .row.about-section .right a .hue {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about .main .row.about-section .left a h2,
+.about .main .row.about-section .middle a h2,
+.about .main .row.about-section .right a h2 {
+  font-size: 1.429em;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 33%;
+  line-height: 1.4em;
+  text-align: center;
+}
+.about .main .row.about-section .left {
+  border-bottom: 5px solid #00aeef;
+}
+.about .main .row.about-section .left a .hue {
+  background: rgba(0, 174, 239, 0.2);
+  -webkit-transition: background 0.35s;
+  transition: background 0.35s;
+}
+.about .main .row.about-section .left a:hover .hue {
+  background: rgba(0, 174, 239, 0.5);
+}
+.about .main .row.about-section .middle {
+  border-bottom: 5px solid #8cc63f;
+}
+.about .main .row.about-section .middle a .hue {
+  background: rgba(140, 198, 63, 0.2);
+  -webkit-transition: background 0.35s;
+  transition: background 0.35s;
+}
+.about .main .row.about-section .middle a:hover .hue {
+  background: rgba(140, 198, 63, 0.5);
+}
+.about .main .row.about-section .right {
+  border-bottom: 5px solid #ec008c;
+}
+.about .main .row.about-section .right a .hue {
+  background: rgba(220, 109, 147, 0.2);
+  -webkit-transition: background 0.35s;
+  transition: background 0.35s;
+}
+.about .main .row.about-section .right a:hover .hue {
+  background: rgba(220, 109, 147, 0.5);
 }
