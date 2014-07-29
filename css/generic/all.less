@@ -56,7 +56,7 @@ body {
 		
 		// header
 		header {
-		
+			
 			// navbar
 			.navbar {
 				background: @euscreen-white;
@@ -76,6 +76,7 @@ body {
 							border-right: 1px solid @border-color;
 							height: 70px;
 							display: inline-block;
+							.transition(color 0.2s);
 							
 							// on hover
 							&:hover {
@@ -111,6 +112,14 @@ body {
 								}
 							}
 						}
+
+						// active
+						&.active {
+							a {
+								color: @euscreen-blue;
+
+							}
+						}
 					}
 				}
 				
@@ -127,21 +136,21 @@ body {
 					// the logo
 					a.navbar-brand {
 						.center-block();
-						
+						/*
 						.text-hide();
 						width: 172px;
 						height: 53px;
 						background: url(@sprites-path) -321px 0;
 						margin:8px auto ;
 						float: none;
-						
-						/* 
+						*/
+						 
 						font-size: 1.571em;
 						height: 70px;
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
-						float: none;*/
+						float: none;
 						
 					}
 					
@@ -504,6 +513,79 @@ body {
 								}
 							}
 						}
+					}
+				}
+			}
+			
+			// small jumbotron, only heading a a few lines of texts
+			.jumbotron-small {
+				background-size: cover;
+				height: 168px;
+				text-align: center;
+				
+				// hue & wrapper
+				.hue {
+					display: block;
+					width: 100%;
+					height: 100%;
+					color: #fff;
+					text-align: left;
+					overflow: auto;
+					position: relative;
+					
+					// padding
+					.pads {
+						position: absolute;
+						top:50%;
+						margin-top:-52px;
+						left: 50px;
+						
+						// texts
+						h1 {
+							margin: 0px 0px 3px 0px;	
+							text-transform: uppercase;
+						}	
+						p {
+							width: 80%;
+							font-family: @font-family-monospace;
+							line-height: 1.35em;
+						}
+					}
+				}
+				
+				// explore euscreen map
+				&.map {
+					background: url('../../img/bg-about.gif') no-repeat;
+					.hue {
+						.pads {
+							h1, p {
+								background: @euscreen-rgba-green-70;
+								padding:10px 15px 10px 15px;
+								display: table;
+							}
+							p {
+								width: 80%;
+								padding:10px 15px 13px 15px;
+							}	
+						}
+					}
+				}
+				
+				// explore euscreen map
+				&.provider {
+					background: url('../../img/bg-about.gif') no-repeat;
+					border-bottom: 5px solid @euscreen-blue;
+					.hue {
+						background: rgba(0, 174, 239, 0.2);
+					}
+				}
+				
+				// explore euscreen map
+				&.selection {
+					background: url('../../img/bg-about.gif') no-repeat;
+					border-bottom: 5px solid @euscreen-green;
+					.hue {
+						background: rgba(140, 198, 63, 0.2);
 					}
 				}
 			}
