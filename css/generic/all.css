@@ -906,6 +906,10 @@ body .browsehappy {
   right: 10px;
   z-index: 10;
 }
+body .spinner {
+  text-align: center;
+  padding: 20px;
+}
 /**
 * responsive.less
 *

@@ -365,6 +365,9 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   padding-right: 20px;
   padding-bottom: 20px;
 }
+.search .main .right .row .results .spinner {
+  padding-bottom: 0px;
+}
 .search .main .right .row .results .no-results {
   text-align: center;
   font-size: 0.929em;
