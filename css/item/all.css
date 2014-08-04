@@ -27,10 +27,10 @@
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
 .item .main .row .left .row .media-metadata .row .item {
-  margin: 0 0 13px 0;
+  margin: 0 0 20px 0;
 }
 .item .main .row .left .row .media-metadata .row .item.space {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .item .main .row .left .row .media-metadata .row .header {
   display: block;
