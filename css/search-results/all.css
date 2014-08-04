@@ -93,6 +93,16 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   width: 100%;
   padding-top: 25px;
 }
+.search .main .left .row .selectedfilter.loading .tags {
+  display: none;
+}
+.search .main .left .row .selectedfilter.loading .spinner {
+  display: block;
+}
+.search .main .left .row .selectedfilter .spinner {
+  display: none;
+  padding-top: 0px;
+}
 .search .main .left .row .selectedfilter .tags {
   padding: 0 25px 25px 25px;
 }

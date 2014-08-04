@@ -79,6 +79,22 @@
 					width: 100%;
 					padding-top:25px;
 					
+					// loading
+					&.loading {
+						.tags {
+							display: none;
+						}
+						.spinner {
+							display: block;
+						}
+					}
+					
+					// spinner
+					.spinner {
+						display: none;
+						padding-top:0px;
+					}
+					
 					// tags
 					.tags {
 						padding: 0 25px 25px 25px;
