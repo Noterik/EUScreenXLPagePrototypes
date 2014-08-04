@@ -143,8 +143,25 @@
 					.row {
 						
 						// always show media tab on wide screens, hidden by default (mobile)
-						.mediatab {
-							display: block;
+						&.results-media {
+							
+							// tab
+							.mediatab {
+								display: block;
+								width: 494px;
+							}
+						}
+						
+						// results action
+						&.results-action {
+							padding-top:65px;
+							
+							// counter and sorting options
+							// make the size smaller and set margin top to 6px (spaces to the mediatab)
+							.counter {
+								font-size: 0.929em;
+								margin:6px 0 0 0;
+							}
 						}
 						
 						// results wrapper
@@ -175,12 +192,7 @@
 							}
 						}
 						
-						// counter and sorting options
-						// make the size smaller and set margin top to 6px (spaces to the mediatab)
-						.counter {
-							font-size: 0.929em;
-							margin:6px 0 0 0;
-						}
+						
 					}
 				}
 			}
@@ -324,6 +336,15 @@
 					
 					// rows
 					.row {
+						
+						// always show media tab on wide screens, hidden by default (mobile)
+						&.results-media {
+							
+							// tab
+							.mediatab {
+								width: 641px;
+							}
+						}
 						
 						// results wrapper
 						.results {
@@ -648,7 +669,7 @@
 	
 			// main
 			.main {
-	
+			
 				// row
 				.row {
 					
@@ -700,6 +721,31 @@
 										}
 									}
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		// page
+		.page {
+			
+			// main
+			.main {
+				
+				// right sections on the search page
+				.right {
+					
+					// rows
+					.row {
+						
+						// always show media tab on wide screens, hidden by default (mobile)
+						&.results-media {
+							
+							// tab
+							.mediatab {
+								width: 774px;
 							}
 						}
 					}

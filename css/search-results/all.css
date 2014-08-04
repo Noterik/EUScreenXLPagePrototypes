@@ -264,22 +264,24 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   border-left: 6px solid #f2f2f2;
   border-right: 6px solid #f2f2f2;
 }
-.search .main .right .row .mediatab {
+.search .main .right .row.results-media .mediatab {
   padding-left: 0px;
   padding-right: 0px;
   background: #ffffff;
   border-bottom: 5px solid #00aeef;
   display: none;
+  position: fixed;
+  z-index: 20;
 }
-.search .main .right .row .mediatab .nav {
+.search .main .right .row.results-media .mediatab .nav {
   margin-top: 0px;
   border: 0px;
 }
-.search .main .right .row .mediatab .nav li {
+.search .main .right .row.results-media .mediatab .nav li {
   margin: 0px;
   border-right: 1px solid #f2f2f2;
 }
-.search .main .right .row .mediatab .nav li a {
+.search .main .right .row.results-media .mediatab .nav li a {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   border: 0px;
   border-radius: 0px;
@@ -292,22 +294,22 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
-.search .main .right .row .mediatab .nav li a:hover {
+.search .main .right .row.results-media .mediatab .nav li a:hover {
   background: #00aeef;
   border-radius: 0px;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
-.search .main .right .row .mediatab .nav li.active {
+.search .main .right .row.results-media .mediatab .nav li.active {
   border-right: 1px solid #00aeef;
 }
-.search .main .right .row .mediatab .nav li.active a {
+.search .main .right .row.results-media .mediatab .nav li.active a {
   background: #00aeef;
   border-radius: 0px;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
 }
-.search .main .right .row .counter {
+.search .main .right .row.results-action .counter {
   background: #fff;
   font-size: 1.28em;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
@@ -315,22 +317,22 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   margin: 1px 0 0 0;
   padding: 20px;
 }
-.search .main .right .row .counter:before,
-.search .main .right .row .counter:after {
+.search .main .right .row.results-action .counter:before,
+.search .main .right .row.results-action .counter:after {
   content: " ";
   display: table;
 }
-.search .main .right .row .counter:after {
+.search .main .right .row.results-action .counter:after {
   clear: both;
 }
-.search .main .right .row .counter .pull-left .number {
+.search .main .right .row.results-action .counter .pull-left .number {
   color: #00aeef;
   font-weight: bold;
 }
-.search .main .right .row .counter .pull-right .dropdown {
+.search .main .right .row.results-action .counter .pull-right .dropdown {
   display: inline-block;
 }
-.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu {
+.search .main .right .row.results-action .counter .pull-right .dropdown ul.dropdown-menu {
   margin-top: 0px;
   margin-bottom: 0px;
   background: #ffffff;
@@ -339,20 +341,20 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   padding: 1px 1px 0px 1px;
   font-size: 1em;
 }
-.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu > .active > a,
-.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu > .active > a:hover,
-.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu > .active > a:active {
+.search .main .right .row.results-action .counter .pull-right .dropdown ul.dropdown-menu > .active > a,
+.search .main .right .row.results-action .counter .pull-right .dropdown ul.dropdown-menu > .active > a:hover,
+.search .main .right .row.results-action .counter .pull-right .dropdown ul.dropdown-menu > .active > a:active {
   background-image: none;
 }
-.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu a {
+.search .main .right .row.results-action .counter .pull-right .dropdown ul.dropdown-menu a {
   color: #808080;
   margin-bottom: 1px;
 }
-.search .main .right .row .counter .pull-right .dropdown ul.dropdown-menu a:hover {
+.search .main .right .row.results-action .counter .pull-right .dropdown ul.dropdown-menu a:hover {
   background-image: none;
   color: #ffffff;
 }
-.search .main .right .row .counter .pull-right .sortOption {
+.search .main .right .row.results-action .counter .pull-right .sortOption {
   display: inline-block;
   margin: 0 0 0 10px;
 }

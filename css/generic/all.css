@@ -977,8 +977,16 @@ body .browsehappy {
   body .page .main .right {
     border-right: 0px;
   }
-  body .page .main .right .row .mediatab {
+  body .page .main .right .row.results-media .mediatab {
     display: block;
+    width: 494px;
+  }
+  body .page .main .right .row.results-action {
+    padding-top: 65px;
+  }
+  body .page .main .right .row.results-action .counter {
+    font-size: 0.929em;
+    margin: 6px 0 0 0;
   }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading,
   body .page .main .right .row .media-relate .media-item .media-metadata h3.media-heading {
@@ -992,10 +1000,6 @@ body .browsehappy {
   body .page .main .right .row .results .media-item .media-metadata .line .label,
   body .page .main .right .row .media-relate .media-item .media-metadata .line .label {
     font-size: 0.929em;
-  }
-  body .page .main .right .row .counter {
-    font-size: 0.929em;
-    margin: 6px 0 0 0;
   }
   body .item .main .row .right {
     border-left: 0px;
@@ -1036,6 +1040,9 @@ body .browsehappy {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  body .page .main .right .row.results-media .mediatab {
+    width: 641px;
+  }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
     margin-bottom: 8px;
   }
@@ -1150,5 +1157,8 @@ body .browsehappy {
   body .home .main .row .collection-viewer .row .media-item.media-big .media-wrapper .media-hue i {
     margin: -30px 0 0 -20px;
     font-size: 2.2em;
+  }
+  body .page .main .right .row.results-media .mediatab {
+    width: 774px;
   }
 }
