@@ -170,8 +170,13 @@
 											color: @euscreen-gray;
 										}
 										
+										// active
+										&.active {
+											
+										}
+										
 										// hover
-										&:hover, &.active {
+										&:hover {
 											background: @euscreen-lightgreen;
 											color: #fff;
 											a {
@@ -181,6 +186,9 @@
 												color: @euscreen-lightgreen;
 												background: @euscreen-white;
 											}
+										}
+										&:first-child {
+											
 										}
 										
 										// counter
@@ -365,6 +373,16 @@
 					padding-left: 20px;
 					padding-right: 20px;
 					padding-bottom: 20px;
+					
+					// no results
+					.no-results {
+						text-align: center;
+						font-size: 0.929em;
+						letter-spacing: 1px;
+						font-weight: lighter;
+						padding: 23px 0 0 0;
+						color: @euscreen-blue;
+					}
 					
 					// media item
 					.media-item {

@@ -179,22 +179,16 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   color: #808080;
 }
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover,
-.search .main .left .row .filters .accordion .filter .filtercontent .listing li.active,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li.active {
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover {
   background: #a8d46d;
   color: #fff;
 }
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover a,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a,
-.search .main .left .row .filters .accordion .filter .filtercontent .listing li.active a,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li.active a {
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a {
   color: #ffffff;
 }
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover .badge,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge,
-.search .main .left .row .filters .accordion .filter .filtercontent .listing li.active .badge,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li.active .badge {
+.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge {
   color: #a8d46d;
   background: #ffffff;
 }
@@ -368,6 +362,14 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
+}
+.search .main .right .row .results .no-results {
+  text-align: center;
+  font-size: 0.929em;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  padding: 23px 0 0 0;
+  color: #00aeef;
 }
 .search .main .right .row .results .media-item {
   padding-top: 20px;
