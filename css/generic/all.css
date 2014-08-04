@@ -1098,6 +1098,9 @@ body .browsehappy {
   body .page .main {
     padding-bottom: 50px;
   }
+  body .page header .navbar .container .navbar-header {
+    width: 60%;
+  }
   body .page header .navbar .container .navbar-header .menuicon,
   body .page header .navbar .container .navbar-header .searchicon {
     display: none;
