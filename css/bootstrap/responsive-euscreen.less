@@ -22,9 +22,6 @@
 	// ze body
 	body {
 		
-		// the height of the footer, set in variables.less
-		margin-bottom: @euscreen-footer-height;	
-		
 		// general styling of all pages
 		// for specific style on each page, we use page name
 		.page {
@@ -32,7 +29,6 @@
 			// main
 			.main {
 				padding-top: 75px; // because the navbar is in fixed position, we need to add padding and create 6px gap between navbar and main
-				padding-bottom: 50px; // extend the bottom padding from 6px to 50px in big screens
 				
 				// left side in searchpage
 				.left {
@@ -319,70 +315,7 @@
 		
 		// main page
 		.page {
-			
-			// header
-			header {
-				
-				// navbar
-				.navbar {
-					
-					// the container
-					.container {
 						
-						// header
-						.navbar-header {
-							
-							// because of the added space, add margin right to make it more spacious
-							a.navbar-brand {
-								margin-right: 30px;
-								margin-left: -15px; // bootstrap adds another 15px padding on the left of navbar-brand, remove them on wide screen only
-								float: left; // float it to left, since there is search form next to it
-							}
-							
-							// gives the form right border, so the user knows the size of the text input
-							.navbar-form {
-								border-right: 1px solid @border-color;
-								width: auto; // set the form wrap to be bigger
-								
-								// make it visible on bigger screen, eventhough is hidden on small (default)
-								// and make the font smaller
-								display: inline-block;
-								input[type="text"] {
-									font-size: 1.071em;
-								}
-								
-								// add space to the brand on the left, make it more spacious
-								.form-group {
-									margin-left: 30px;
-									width: auto;
-									
-									// show the search icon on wider screens 
-									.glyphicon-search {
-										display: inline-block;
-									}
-									
-									// set the width to be wider, because we have unused spaces
-									input[type="text"] {
-										width: 280px;
-									}
-								}
-							}
-							
-							// when search is opened and the windows is stretch
-							&.searchOpened {
-								
-								
-								// eventhough brand is hidden when search is pressed, always show it when the windows is stretch
-								// overwrite the default styling on generic/all.css
-								a.navbar-brand {
-									display: block;
-								}
-							}
-						}
-					}				
-				}
-			}
-			
 			// main
 			.main {
 			
@@ -604,6 +537,99 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 1025px) {
+	
+	// body
+	body {
+		
+		// the height of the footer, set in variables.less
+		margin-bottom: @euscreen-footer-height;	
+		
+		// main page
+		.page {
+			
+			// main
+			.main {
+				padding-bottom: 50px; // extend the bottom padding from 6px to 50px in big screens
+			}
+			
+			// header
+			header {
+				
+				// navbar
+				.navbar {
+					
+					// the container
+					.container {
+						
+						// header
+						.navbar-header {
+							
+							// menu icon & search icon
+							.menuicon, .searchicon {
+								display: none;
+							}
+							
+							// because of the added space, add margin right to make it more spacious
+							a.navbar-brand {
+								margin-right: 30px;
+								margin-left: -15px; // bootstrap adds another 15px padding on the left of navbar-brand, remove them on wide screen only
+								float: left; // float it to left, since there is search form next to it
+							}
+							
+							// gives the form right border, so the user knows the size of the text input
+							.navbar-form {
+								border-right: 1px solid @border-color;
+								width: auto; // set the form wrap to be bigger
+								
+								// make it visible on bigger screen, eventhough is hidden on small (default)
+								// and make the font smaller
+								display: inline-block;
+								input[type="text"] {
+									font-size: 1.071em;
+								}
+								
+								// add space to the brand on the left, make it more spacious
+								.form-group {
+									margin-left: 30px;
+									width: auto;
+									
+									// show the search icon on wider screens 
+									.glyphicon-search {
+										display: inline-block;
+									}
+									
+									// set the width to be wider, because we have unused spaces
+									input[type="text"] {
+										width: 280px;
+									}
+								}
+							}
+							
+							// when search is opened and the windows is stretch
+							&.searchOpened {
+								
+								
+								// eventhough brand is hidden when search is pressed, always show it when the windows is stretch
+								// overwrite the default styling on generic/all.css
+								a.navbar-brand {
+									display: block;
+								}
+							}
+						}
+					}				
+				}
+			}
+			
+			// footer
+			footer {
+				display: block
 			}
 		}
 	}

@@ -136,22 +136,22 @@ body {
 					// the logo
 					a.navbar-brand {
 						.center-block();
-						/*
+						
 						.text-hide();
 						width: 172px;
 						height: 53px;
 						background: url(@sprites-path) -321px 0;
 						margin:8px auto ;
 						float: none;
-						*/
-						 
+						
+						 /*
 						font-size: 1.571em;
 						height: 70px;
 						color: @euscreen-blue;
 						padding-top:23px;
 						font-weight: 600;
 						float: none;
-						
+						*/
 					}
 					
 					// menu icon, shown on mobile, hidden on wide screens
@@ -544,11 +544,13 @@ body {
 						h1 {
 							margin: 0px 0px 3px 0px;	
 							text-transform: uppercase;
+							padding:10px 15px 10px 15px;
+							display: table;
 						}	
 						p {
 							width: 80%;
 							font-family: @font-family-monospace;
-							line-height: 1.35em;
+							padding:10px 15px 13px 15px;
 						}
 					}
 				}
@@ -556,36 +558,51 @@ body {
 				// explore euscreen map
 				&.map {
 					background: url('../../img/bg-about.gif') no-repeat;
+					
+					// hue
 					.hue {
 						.pads {
 							h1, p {
 								background: @euscreen-rgba-green-70;
-								padding:10px 15px 10px 15px;
-								display: table;
 							}
 							p {
 								width: 80%;
-								padding:10px 15px 13px 15px;
+							}	
+						}
+					}
+				}
+				
+				// explore content provider
+				&.provider {
+					background: url('../../img/bg-about.gif') no-repeat;
+					
+					// hue
+					.hue {
+						.pads {
+							h1, p {
+								background: @euscreen-rgba-blue-70;
+							}
+							p {
+								width: 80%;
 							}	
 						}
 					}
 				}
 				
 				// explore euscreen map
-				&.provider {
-					background: url('../../img/bg-about.gif') no-repeat;
-					border-bottom: 5px solid @euscreen-blue;
-					.hue {
-						background: rgba(0, 174, 239, 0.2);
-					}
-				}
-				
-				// explore euscreen map
 				&.selection {
 					background: url('../../img/bg-about.gif') no-repeat;
-					border-bottom: 5px solid @euscreen-green;
+					
+					// hue
 					.hue {
-						background: rgba(140, 198, 63, 0.2);
+						.pads {
+							h1, p {
+								background: @euscreen-rgba-red-70;
+							}
+							p {
+								width: 80%;
+							}	
+						}
 					}
 				}
 			}
@@ -604,6 +621,7 @@ body {
 			width: 100%;
 			height: @euscreen-footer-height; // fix height of the footer
 			background-color: @euscreen-white;
+			display: none;
 			
 			// remove bootstrap gutter padding to get the correct styling
 			[class*='col-'] {
