@@ -12,7 +12,7 @@
   margin-bottom: 0px;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg {
-  background: url('../../img/bg-home-1.gif') no-repeat;
+  background: url('../../img/content/bg-home-1.gif') no-repeat;
   width: 100%;
   height: 418px;
 }
@@ -46,21 +46,21 @@
   padding: 14px 20px 20px 20px;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-1 {
-  background: url('../../img/bg-home-1.gif') no-repeat;
+  background: url('../../img/content/bg-home-1.gif') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-2 {
-  background: url('../../img/bg-home-2.gif') no-repeat;
+  background: url('../../img/content/bg-home-2.gif') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-3 {
-  background: url('../../img/bg-home-3.gif') no-repeat;
+  background: url('../../img/content/bg-home-3.gif') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

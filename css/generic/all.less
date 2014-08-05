@@ -537,27 +537,31 @@ body {
 					.pads {
 						position: absolute;
 						top:50%;
-						margin-top:-52px;
-						left: 50px;
+						margin-top:-35px;
+						left: 20px;
+						
 						
 						// texts
 						h1 {
-							margin: 0px 0px 3px 0px;	
+							margin: 0px 20px 3px 0px;	
 							text-transform: uppercase;
 							padding:10px 15px 10px 15px;
 							display: table;
+							line-height: 1.3em;
 						}	
 						p {
-							width: 80%;
+							width: auto;
 							font-family: @font-family-monospace;
 							padding:10px 15px 13px 15px;
+							display: none;
+							font-size: 0.857em;
 						}
 					}
 				}
 				
 				// explore euscreen map
 				&.map {
-					background: url('../../img/bg-about.gif') no-repeat;
+					background: url('../../img/content/bg-about.gif') no-repeat;
 					
 					// hue
 					.hue {
@@ -565,16 +569,13 @@ body {
 							h1, p {
 								background: @euscreen-rgba-green-70;
 							}
-							p {
-								width: 80%;
-							}	
 						}
 					}
 				}
 				
 				// explore content provider
 				&.provider {
-					background: url('../../img/bg-about.gif') no-repeat;
+					background: url('../../img/content/bg-about.gif') no-repeat;
 					
 					// hue
 					.hue {
@@ -582,25 +583,19 @@ body {
 							h1, p {
 								background: @euscreen-rgba-blue-70;
 							}
-							p {
-								width: 80%;
-							}	
 						}
 					}
 				}
 				
 				// explore euscreen map
 				&.selection {
-					background: url('../../img/bg-about.gif') no-repeat;
+					background: url('../../img/content/bg-about.gif') no-repeat;
 					
 					// hue
 					.hue {
 						.pads {
 							h1, p {
 								background: @euscreen-rgba-red-70;
-							}
-							p {
-								width: 80%;
 							}	
 						}
 					}

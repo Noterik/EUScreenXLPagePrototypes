@@ -11,3 +11,100 @@
 
 // every page starts with .page class selector
 // for body element styling, go to generic/all.css
+.content-map {
+	
+	// main
+	.main {
+		
+		// row
+		.row {
+			
+			// content
+			&.content {
+				margin-top:6px;
+				
+				// left
+				.info {
+					border-right: 6px solid @body-bg;
+					border-left: 6px solid @body-bg;
+					background: #fff;
+					padding-left: 0px;
+					padding-right: 0px;
+					
+					// data
+					.data {
+						padding: 20px;
+						
+						// h1
+						h1 {
+							color: @euscreen-green;
+							font-size: 1.286em;
+							margin-top:0px;
+							margin-bottom: 20px;
+						}
+						
+						// texts
+						.counter {
+							font-size: 1.714em;
+							font-family: @font-family-monospace;
+							display: block;
+							margin-top:-5px;
+						}
+						
+						// header
+						.header {
+							.sectionHeading();
+							margin-top:10px;
+						}
+						
+						// provider
+						.provider {
+							font-family: @font-family-monospace;
+							display: block;
+						}
+					}
+					
+					// search link
+					.search-link {
+						margin: 0; padding: 0;
+						
+						// list
+						li {
+							border-top:1px solid @body-bg;
+							list-style: none;
+							
+							// anchor
+							a {
+								font-family: @font-family-monospace;
+								text-align: center;
+								width: 100%;
+								padding: 20px;
+								color: @euscreen-gray;
+								display: block;
+								
+								&:hover {
+									color: @euscreen-green;
+								}
+							}
+						}
+					}
+				}
+				
+				// maps
+				.maps {
+					background: #fff;
+					padding-left: 0px;
+					padding-right: 0px;
+					margin-top:6px;
+					border-left: 6px solid @body-bg;
+					border-right: 6px solid @body-bg;
+					
+					// img
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

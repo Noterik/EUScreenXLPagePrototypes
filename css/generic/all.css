@@ -539,49 +539,43 @@ body .page .main .jumbotron-small .hue {
 body .page .main .jumbotron-small .hue .pads {
   position: absolute;
   top: 50%;
-  margin-top: -52px;
-  left: 50px;
+  margin-top: -35px;
+  left: 20px;
 }
 body .page .main .jumbotron-small .hue .pads h1 {
-  margin: 0px 0px 3px 0px;
+  margin: 0px 20px 3px 0px;
   text-transform: uppercase;
   padding: 10px 15px 10px 15px;
   display: table;
+  line-height: 1.3em;
 }
 body .page .main .jumbotron-small .hue .pads p {
-  width: 80%;
+  width: auto;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   padding: 10px 15px 13px 15px;
+  display: none;
+  font-size: 0.857em;
 }
 body .page .main .jumbotron-small.map {
-  background: url('../../img/bg-about.gif') no-repeat;
+  background: url('../../img/content/bg-about.gif') no-repeat;
 }
 body .page .main .jumbotron-small.map .hue .pads h1,
 body .page .main .jumbotron-small.map .hue .pads p {
   background: rgba(140, 198, 63, 0.7);
 }
-body .page .main .jumbotron-small.map .hue .pads p {
-  width: 80%;
-}
 body .page .main .jumbotron-small.provider {
-  background: url('../../img/bg-about.gif') no-repeat;
+  background: url('../../img/content/bg-about.gif') no-repeat;
 }
 body .page .main .jumbotron-small.provider .hue .pads h1,
 body .page .main .jumbotron-small.provider .hue .pads p {
   background: rgba(0, 174, 239, 0.7);
 }
-body .page .main .jumbotron-small.provider .hue .pads p {
-  width: 80%;
-}
 body .page .main .jumbotron-small.selection {
-  background: url('../../img/bg-about.gif') no-repeat;
+  background: url('../../img/content/bg-about.gif') no-repeat;
 }
 body .page .main .jumbotron-small.selection .hue .pads h1,
 body .page .main .jumbotron-small.selection .hue .pads p {
   background: rgba(220, 109, 147, 0.7);
-}
-body .page .main .jumbotron-small.selection .hue .pads p {
-  width: 80%;
 }
 body .page .jumbotron-wide {
   margin-top: 70px;
@@ -1005,6 +999,22 @@ body .spinner {
   body .page .main .right .row .media-relate .media-item .media-metadata .line .label {
     font-size: 0.929em;
   }
+  body .page .main .jumbotron-small .hue .pads {
+    margin-top: -57px;
+    margin-right: 50px;
+    left: 50px;
+  }
+  body .page .main .jumbotron-small .hue .pads p {
+    display: block;
+  }
+  body .content-map .main .row.content .info {
+    border-left: 0px;
+  }
+  body .content-map .main .row.content .maps {
+    margin-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  }
   body .item .main .row .right {
     border-left: 0px;
     border-right: 0px;
@@ -1164,5 +1174,9 @@ body .spinner {
   }
   body .page .main .right .row.results-media .mediatab {
     width: 774px;
+  }
+  body .page .main .jumbotron-small .hue .pads p {
+    font-size: 1em;
+    width: 90%;
   }
 }

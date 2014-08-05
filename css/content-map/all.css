@@ -5,3 +5,69 @@
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
+.content-map .main .row.content {
+  margin-top: 6px;
+}
+.content-map .main .row.content .info {
+  border-right: 6px solid #f2f2f2;
+  border-left: 6px solid #f2f2f2;
+  background: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.content-map .main .row.content .info .data {
+  padding: 20px;
+}
+.content-map .main .row.content .info .data h1 {
+  color: #8cc63f;
+  font-size: 1.286em;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.content-map .main .row.content .info .data .counter {
+  font-size: 1.714em;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  display: block;
+  margin-top: -5px;
+}
+.content-map .main .row.content .info .data .header {
+  display: block;
+  font-size: 0.77em;
+  color: #808080;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.content-map .main .row.content .info .data .provider {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  display: block;
+}
+.content-map .main .row.content .info .search-link {
+  margin: 0;
+  padding: 0;
+}
+.content-map .main .row.content .info .search-link li {
+  border-top: 1px solid #f2f2f2;
+  list-style: none;
+}
+.content-map .main .row.content .info .search-link li a {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  color: #808080;
+  display: block;
+}
+.content-map .main .row.content .info .search-link li a:hover {
+  color: #8cc63f;
+}
+.content-map .main .row.content .maps {
+  background: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 6px;
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
+}
+.content-map .main .row.content .maps img {
+  width: 100%;
+}
