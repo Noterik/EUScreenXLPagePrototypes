@@ -16,9 +16,15 @@
 	// main
 	.main {
 		
+		// search results
+		&.search-results {
+			padding-top:70px;
+		}
+		
 		// left side (sidebars)
 		.left { 
-			 
+			border-top:5px solid @body-bg;
+			
 			// rows
 			.row {
 				
@@ -159,7 +165,18 @@
 							border-left: 1px solid @border-color;
 							border-right: 1px solid @border-color;
 							background: rgba(255,255,255,1);
-							margin-top:-1px;
+							margin-top: -1px;
+							
+							// inactive
+							&.inactive {
+								a {
+									color: @gray-light;
+									cursor: not-allowed;
+									.glyphicon {
+										display: none;
+									}
+								}
+							}
 							
 							// the wrapper of the filter
 							.filtercontent {
@@ -302,7 +319,7 @@
 		
 		// results
 		.right {
-		
+			
 			// create spacing on the left side, has to be the same with the background color
 			border-left: 6px solid @body-bg; 
 			border-right: 6px solid @body-bg; 
@@ -319,6 +336,7 @@
 						padding-right: 0px;
 						background: @euscreen-white;
 						border-bottom: 5px solid @euscreen-blue;
+						border-top:5px solid @body-bg;
 						display: none;
 						position: fixed;
 						z-index: 20;

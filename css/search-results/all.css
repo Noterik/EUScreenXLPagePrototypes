@@ -5,6 +5,12 @@
 * This file contains the search results styles which are to be applied on all devices specifically for search results page.
 * Certain device may override these styles in their own stylesheet.
 */
+.search .main.search-results {
+  padding-top: 70px;
+}
+.search .main .left {
+  border-top: 5px solid #f2f2f2;
+}
 .search .main .left .row [class*='col-'] {
   padding-left: 0px;
   padding-right: 0px;
@@ -156,6 +162,15 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   background: #ffffff;
   margin-top: -1px;
 }
+.search .main .left .row .filters .accordion .filter.inactive a,
+.search .main .left .row .mediaselector .accordion .filter.inactive a {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.search .main .left .row .filters .accordion .filter.inactive a .glyphicon,
+.search .main .left .row .mediaselector .accordion .filter.inactive a .glyphicon {
+  display: none;
+}
 .search .main .left .row .filters .accordion .filter .filtercontent,
 .search .main .left .row .mediaselector .accordion .filter .filtercontent {
   border-bottom: 1px solid #f2f2f2;
@@ -279,6 +294,7 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   padding-right: 0px;
   background: #ffffff;
   border-bottom: 5px solid #00aeef;
+  border-top: 5px solid #f2f2f2;
   display: none;
   position: fixed;
   z-index: 20;
@@ -318,6 +334,15 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   border-radius: 0px;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+.search .main .right .row.results-media .mediatab .nav li.inactive a {
+  color: #cccccc;
+}
+.search .main .right .row.results-media .mediatab .nav li.inactive a:hover,
+.search .main .right .row.results-media .mediatab .nav li.inactive a:visited,
+.search .main .right .row.results-media .mediatab .nav li.inactive a:active {
+  background: #fff;
+  cursor: not-allowed;
 }
 .search .main .right .row.results-action .counter {
   background: #fff;

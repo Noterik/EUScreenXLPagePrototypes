@@ -524,7 +524,7 @@ body .page .main .media-action .button-list > li button.active i.icono-expand {
 }
 body .page .main .jumbotron-small {
   background-size: cover;
-  height: 168px;
+  height: 150px;
   text-align: center;
 }
 body .page .main .jumbotron-small .hue {
@@ -537,17 +537,16 @@ body .page .main .jumbotron-small .hue {
   position: relative;
 }
 body .page .main .jumbotron-small .hue .pads {
-  position: absolute;
-  top: 50%;
-  margin-top: -35px;
-  left: 20px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 body .page .main .jumbotron-small .hue .pads h1 {
-  margin: 0px 20px 3px 0px;
   text-transform: uppercase;
   padding: 10px 15px 10px 15px;
   display: table;
   line-height: 1.3em;
+  margin-top: 0px;
 }
 body .page .main .jumbotron-small .hue .pads p {
   width: auto;
@@ -980,7 +979,7 @@ body .spinner {
     width: 494px;
   }
   body .page .main .right .row.results-action {
-    padding-top: 65px;
+    padding-top: 70px;
   }
   body .page .main .right .row.results-action .counter {
     font-size: 0.929em;
@@ -1000,12 +999,7 @@ body .spinner {
     font-size: 0.929em;
   }
   body .page .main .jumbotron-small .hue .pads {
-    margin-top: -57px;
-    margin-right: 50px;
-    left: 50px;
-  }
-  body .page .main .jumbotron-small .hue .pads p {
-    display: block;
+    padding: 50px 50px 0px 50px;
   }
   body .content-map .main .row.content .info {
     border-left: 0px;
@@ -1042,10 +1036,14 @@ body .spinner {
     margin: 1px 0 0 0;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption {
-    top: 30%;
+    top: 25%;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
-    font-size: 2.286em;
+    font-size: 1.8em;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1.big {
+    font-size: 2.23em;
+    margin-top: 50px;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
     font-size: 1.143em;
@@ -1174,9 +1172,5 @@ body .spinner {
   }
   body .page .main .right .row.results-media .mediatab {
     width: 774px;
-  }
-  body .page .main .jumbotron-small .hue .pads p {
-    font-size: 1em;
-    width: 90%;
   }
 }

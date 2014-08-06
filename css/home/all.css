@@ -24,15 +24,15 @@
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption {
   padding: 0px;
-  left: 7%;
-  right: 7%;
+  left: 5%;
+  right: 5%;
   text-align: left;
   bottom: auto;
   top: 17%;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1,
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
-  font-size: 1.8em;
+  font-size: 1.5em;
   padding: 11px 20px 15px 20px;
   margin-bottom: 0px;
   display: table;
@@ -44,6 +44,16 @@
   font-size: 1.071em;
   margin-top: 5px;
   padding: 14px 20px 20px 20px;
+}
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption a.link {
+  background: rgba(140, 198, 63, 0.7);
+  padding: 10px 30px 12px 30px;
+  display: table;
+  margin-top: 5px;
+  font-size: 1.143em;
+  color: #ffffff;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  text-shadow: none;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-1 {
   background: url('../../img/content/bg-home-1.gif') no-repeat;
@@ -124,6 +134,15 @@
   border-radius: 0px;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+.home .main .row .collection-viewer-tab .row.main-nav .tabs .nav li.inactive a {
+  color: #cccccc;
+}
+.home .main .row .collection-viewer-tab .row.main-nav .tabs .nav li.inactive a:hover,
+.home .main .row .collection-viewer-tab .row.main-nav .tabs .nav li.inactive a:visited,
+.home .main .row .collection-viewer-tab .row.main-nav .tabs .nav li.inactive a:active {
+  background: #fff;
+  cursor: not-allowed;
 }
 .home .main .row .collection-viewer-tab .row.second-nav {
   background-color: #ffffff;
