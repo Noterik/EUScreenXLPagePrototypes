@@ -25,7 +25,7 @@
 		// general styling of all pages
 		// for specific style on each page, we use page name
 		.page {
-			
+					
 			// main
 			.main {
 				padding-top: 75px; // because the navbar is in fixed position, we need to add padding and create 6px gap between navbar and main
@@ -709,9 +709,16 @@
 							
 							// because of the added space, add margin right to make it more spacious
 							a.navbar-brand {
+								width: 172px;
+								height: 53px;
+								background: url(@sprites-path) -321px 0;
+								margin: 0 auto;
+								margin-top:8px;
 								margin-right: 30px;
 								margin-left: -15px; // bootstrap adds another 15px padding on the left of navbar-brand, remove them on wide screen only
 								float: left; // float it to left, since there is search form next to it
+								
+								
 							}
 							
 							// gives the form right border, so the user knows the size of the text input
