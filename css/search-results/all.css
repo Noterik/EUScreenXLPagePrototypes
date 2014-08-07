@@ -121,7 +121,7 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   letter-spacing: 1px;
   border: 1px solid #ec008c;
   border-radius: 2px;
-  padding: 2px 5px 0px 6px;
+  padding: 2px 3px 1px 3px;
 }
 .search .main .left .row .selectedfilter .tags {
   padding: 0 25px 25px 25px;
