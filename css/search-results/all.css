@@ -106,8 +106,26 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   display: none;
   padding-top: 0px;
 }
+.search .main .left .row .selectedfilter .header {
+  display: table !important;
+  float: left;
+}
+.search .main .left .row .selectedfilter .clear {
+  float: right;
+  display: block;
+  margin: 21px 25px 0 0;
+}
+.search .main .left .row .selectedfilter .clear a {
+  color: #ec008c;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  border: 1px solid #ec008c;
+  border-radius: 2px;
+  padding: 2px 5px 0px 6px;
+}
 .search .main .left .row .selectedfilter .tags {
   padding: 0 25px 25px 25px;
+  clear: both;
 }
 .search .main .left .row .selectedfilter .tags .tag {
   display: inline-block;

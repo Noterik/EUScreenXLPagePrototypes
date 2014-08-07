@@ -100,9 +100,32 @@
 						padding-top:0px;
 					}
 					
+					// overwrite header for this section only
+					.header {
+						display: table !important;
+						float: left;
+					}
+					
+					// action
+					.clear {
+						float: right;	
+						display: block;
+						margin: 21px 25px 0 0;
+						
+						a {
+							color: @euscreen-red;
+							font-size: 0.7em;
+							letter-spacing: 1px;
+							border:1px solid @euscreen-red;
+							border-radius: 2px;
+							padding: 2px 5px 0px 6px;
+						}
+					}
+					
 					// tags
 					.tags {
 						padding: 0 25px 25px 25px;
+						clear: both;
 						
 						// tag
 						.tag {
