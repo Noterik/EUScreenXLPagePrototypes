@@ -17,6 +17,20 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+        
+        // only on tablet & desktop
+        if(EUScreenXL.Page.prototype.device != "mobile") {
+	       
+	       // sticky sidebar
+	       this.$sideBarElements.stickySidebarJS({
+	        	followParent : '#results',
+	        	device : EUScreenXL.Page.prototype.device,
+	        	sidebarHeight : $(window).height() - $('.navbar').height(),
+	        	bottom : 100,
+	        	startClass : 'fix',
+	        	endClass : 'fix-bottom'
+	        }); 
+        }
     };
 
     EUScreenXL.SearchResultsPage.prototype = Object.create(EUScreenXL.Page.prototype);

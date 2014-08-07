@@ -8,9 +8,6 @@
 .search .main.search-results {
   padding-top: 70px;
 }
-.search .main .left {
-  border-top: 5px solid #f2f2f2;
-}
 .search .main .left .row [class*='col-'] {
   padding-left: 0px;
   padding-right: 0px;

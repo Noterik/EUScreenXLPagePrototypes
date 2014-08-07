@@ -134,7 +134,7 @@
 				
 				// right side in searchpage
 				.right {
-					
+				
 					// remove border, previously border is added by default on mobile 
 					// to create spacing effect
 					border-right: 0px;
@@ -206,6 +206,41 @@
 						.pads {
 							padding: 50px 50px 0px 50px;
 						}
+					}
+				}
+			}
+		}
+		
+		// search page
+		.search {
+		
+			// main
+			.main {
+				
+				// left side in searchpage
+				.left {
+					border-top:5px solid @body-bg;
+					
+					// fix
+					&.fix {
+						position: fixed;
+						overflow: auto;
+						width: 250px; 
+					}
+					
+					// sidebar at the bottom position
+					&.fix-bottom {
+						position: absolute !important;
+						bottom: 6px !important;
+					}
+				}
+				
+				// right
+				.right {
+				
+					// set margin left due to sidebar fixed position
+					&.fix {
+						margin-left: 250px;
 					}
 				}
 			}
@@ -436,6 +471,34 @@
 						li {
 							margin-left: 30px;
 						}
+					}
+				}
+			}
+		}
+		
+		// search
+		.search {
+			
+			// main
+			.main {
+			
+				// left
+				.left {
+					
+					// fixed position
+					&.fix {
+						width: 323.333px;
+					}
+				}
+			
+				// right sections on the search page
+				.right {
+					
+					// fixed position
+					&.fix {
+					
+						// set margin left due to sidebar fixed position
+						margin-left: 323.333px;
 					}
 				}
 			}
@@ -700,6 +763,23 @@
 				display: block
 			}
 		}
+		
+		// search
+		.search {
+			
+			// main
+			.main {
+			
+				// left
+				.left {
+					
+					// sidebar at the bottom position
+					&.fix-bottom {
+						bottom: 233px !important;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -779,7 +859,7 @@
 			
 			// main
 			.main {
-				
+			
 				// right sections on the search page
 				.right {
 					
@@ -808,6 +888,34 @@
 						
 							
 						}
+					}
+				}
+			}
+		}
+		
+		// search
+		.search {
+			
+			// main
+			.main{
+				
+				// left section on search page
+				.left {
+					
+					// fixed position
+					&.fix {
+						width: 390px;
+					}
+				}
+				
+				// right sections on the search page
+				.right {
+					
+					// fixed position
+					&.fix {
+					
+						// set margin left due to sidebar fixed position
+						margin-left: 390px;
 					}
 				}
 			}

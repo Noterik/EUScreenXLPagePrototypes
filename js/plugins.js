@@ -104,28 +104,57 @@
 */
 (function($) {
 	$.fn.stickySidebarJS = function(customSettings) {
+		
+		// settings
 		var settings = $.extend({
-            parentElement:	'#parentDiv'             
+            followParent : '#main',
+        	device : 'desktop',
+        	sidebarHeight : 400,
+        	bottom : 0,
+        	startClass : 'fix',
+        	endClass : 'fix-bottom'             
         }, customSettings || {});
+        var obj = this;
         
-        // vars 
-        settings.parentElement = $(settings.parentElement);
-        obj = this;
+        // init
+        var init = function() {
+        	
+        	// add class
+        	addDefaultClass();
+        	
+        	// set height on desktop & mobile
+        	setFloatingHeight();
+        };
         
-        // do
-        var leftOffset = obj.offset().top,
-        	rightOffset = settings.parentElement.offset().top,
-        	leftHeight  = obj.height(),
-        	rightHeight  = settings.parentElement.height(),
-        	rightBottomPosition = rightOffset + rightHeight;
         
+        // add default class
+        var addDefaultClass = function(){
+	        obj.addClass(settings.startClass);
+        	$(settings.followParent).addClass(settings.startClass);
+        };
+        
+        // setFloatingHeight
+        var setFloatingHeight = function(){
+	        if(settings.device != 'mobile') {
+		        obj.css('height',settings.sidebarHeight+"px");
+	        }
+        }
+        
+        // scroll
         $(window).bind("scroll", function() {
-        	var offset = $(this).scrollTop(),
-        		leftPosition = offset + leftOffset;
-        	if((leftPosition + leftHeight) <= rightBottomPosition) {
-	        	obj.css({'margin-top':offset+'px'});
-        	}
+        	if($(this).scrollTop() + $(this).height() > $(document).height() - settings.bottom) {
+		    	if(!obj.hasClass('fix-bottom')) {
+		    		obj.addClass('fix-bottom');
+		    	}
+		    } else {
+		    	if(obj.hasClass('fix-bottom')) {
+				    obj.removeClass('fix-bottom');
+		    	}
+		    }
         });
+        
+        // init
+        init();
 	};
 })(jQuery);
 
