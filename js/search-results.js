@@ -30,6 +30,10 @@ $(document).ready(function () {
 	        	startClass : 'fix',
 	        	endClass : 'fix-bottom'
 	        }); 
+        } else {
+        
+	        // hide headroom
+	        $(".navbar").headroom();
         }
     };
 

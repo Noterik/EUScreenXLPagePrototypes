@@ -904,6 +904,15 @@ body .spinner {
   text-align: center;
   padding: 20px;
 }
+body .headroom {
+  transition: transform 200ms linear;
+}
+body .headroom--pinned {
+  transform: translateY(0%);
+}
+body .headroom--unpinned {
+  transform: translateY(-100%);
+}
 /**
 * responsive.less
 *
