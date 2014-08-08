@@ -269,13 +269,21 @@ body .page .main .media-item .media-metadata a h3.media-heading {
 body .page .main .media-item .media-metadata .line {
   display: block;
   margin: 0 0 2px 0;
-  font-size: 1.071em;
+}
+body .page .main .media-item .media-metadata .line a h3 {
+  font-size: 1.2em;
 }
 body .page .main .media-item .media-metadata .line .label {
   color: #808080;
   font-weight: normal;
   padding-left: 0px;
-  font-size: 1.071em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: table;
+}
+body .page .main .media-item .media-metadata .line .value {
+  font-size: 0.929em;
 }
 body .page .main .media-item .media-wrapper {
   position: relative;
@@ -1002,11 +1010,17 @@ body .headroom--unpinned {
   body .page .main .right .row .results .media-item .media-metadata .line,
   body .page .main .right .row .media-relate .media-item .media-metadata .line {
     margin: 0 0 0 0;
-    font-size: 0.929em;
   }
   body .page .main .right .row .results .media-item .media-metadata .line .label,
   body .page .main .right .row .media-relate .media-item .media-metadata .line .label {
-    font-size: 0.929em;
+    font-size: 1em;
+    display: inline;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+  }
+  body .page .main .right .row .results .media-item .media-metadata .line .value,
+  body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
+    font-size: 1em;
   }
   body .page .main .jumbotron-small .hue .pads {
     padding: 50px 50px 0px 50px;
@@ -1060,6 +1074,9 @@ body .headroom--unpinned {
   body .item .main .row .left .row .media-metadata {
     margin: 1px 0 0 0;
   }
+  body .home .main {
+    padding-bottom: 6px !important;
+  }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption {
     top: 25%;
   }
@@ -1084,11 +1101,7 @@ body .headroom--unpinned {
     margin-bottom: 8px;
   }
   body .page .main .right .row .results .media-item .media-metadata .line {
-    font-size: 1em;
     margin-bottom: 2px;
-  }
-  body .page .main .right .row .results .media-item .media-metadata .line .label {
-    font-size: 1em;
   }
   body .page footer .affiliates .list-inline li {
     margin-left: 30px;
@@ -1104,9 +1117,6 @@ body .headroom--unpinned {
   }
   body .item .main .row .left .row .media-action .overlaycontent .extra {
     font-size: 0.929em;
-  }
-  body .item .main .row .left .row .media-metadata {
-    font-size: 1em;
   }
   body .item .main .row .right {
     margin-top: 0px;
@@ -1146,7 +1156,7 @@ body .headroom--unpinned {
     margin-bottom: 183px;
   }
   body .page .main {
-    padding-bottom: 50px;
+    padding-bottom: 50px !important;
   }
   body .page header .navbar .container .navbar-header {
     width: 60%;

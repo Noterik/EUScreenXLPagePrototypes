@@ -69,6 +69,7 @@ $(document).ready(function () {
         	}
         },
         "click #searchbutton": function(event) {
+        	$(window).scrollTop(0);
 	        this.$searchInputElement.focus(); // focus on the search field, instead of opening the searchbox on top
         }
     }

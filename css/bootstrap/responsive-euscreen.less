@@ -182,10 +182,16 @@
 									// remove the margin and set the font smaller to accomodate tight spaces
 									.line {
 										margin: 0 0 0 0;
-										font-size: 0.929em;
+										;
 										
 										.label {
-											font-size: 0.929em;
+											font-size: 1em;
+											display: inline;
+											text-transform: capitalize;
+											letter-spacing: 0px;
+										}
+										.value {
+											font-size: 1em
 										}
 									}
 								}
@@ -349,7 +355,8 @@
 
 			// main
 			.main {
-
+				padding-bottom: 6px !important;
+				
 				// row
 				.row {
 
@@ -444,12 +451,7 @@
 									// each of the small metadata properties
 									// make the font bigger and add space below them
 									.line {
-										font-size: 1em;
 										margin-bottom: 2px;
-										
-										.label {
-											font-size: 1em;
-										}
 									}
 								}
 							}
@@ -530,12 +532,6 @@
 										font-size: 0.929em;
 									}
 								}
-							}
-
-							// media metadata
-							// make the font smaller also
-							.media-metadata {
-								font-size: 1em;
 							}
 						}
 					}
@@ -686,7 +682,7 @@
 			
 			// main
 			.main {
-				padding-bottom: 50px; // extend the bottom padding from 6px to 50px in big screens
+				padding-bottom: 50px !important; // extend the bottom padding from 6px to 50px in big screens
 			}
 			
 			// header
