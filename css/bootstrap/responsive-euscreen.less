@@ -380,19 +380,32 @@
 
 											// carousel caption
 											.carousel-caption {
-												top: 25%;
+												top: 14%;
+												left: 50px;
+
 
 												h1 {
 													font-size: 1.8em;
-													
+													width: 600px;
+
 													&.big {
-														font-size: 2.23em;
-														margin-top:50px;
+														width: auto;
+														margin-top:70px;
 													}
 												}
 												p {
 													font-size: 1.143em;
 													width: 87%;
+												}
+												a.link {
+													position: relative;
+													bottom: 0px;
+													left: 0px;
+													display: table;
+													margin-top:5px;
+													background: @euscreen-rgba-green-60;
+													border:0px;
+													font-size: 1.143em;
 												}
 											}
 										}
@@ -401,6 +414,37 @@
 							}
 						}
 					}
+				}
+			}
+		}
+
+		// about
+		.about {
+
+			// main
+			.main {
+
+				// about
+				.about-section {
+
+					// left, middle, right
+					.left, .middle, .right {
+						height: 250px;
+
+						a {
+							.hue {
+								.pads {
+									padding-top:94px;
+								}
+							}
+						}
+					}
+				}
+
+				// welcome text
+				.welcome-text {
+					border-left: 0px;
+					border-right: 0px;
 				}
 			}
 		}	
@@ -600,6 +644,38 @@
 				// row
 				.row {
 
+					// jumbo
+					.jumbotron {
+
+						// carousel
+						.carousel {
+
+							// inner
+							.carousel-inner {
+
+								// item
+								.item {
+
+									// bg 1
+									.bg {
+
+										// wrap
+										.wrap {
+
+											// carousel caption
+											.carousel-caption {
+
+												h1 {
+													width: 750px;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
 					// left
 					.collection-viewer-tab {
 						
@@ -659,6 +735,56 @@
 										}
 									}
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// about
+		.about {
+
+			// main
+			.main {
+
+				// about
+				.about-section {
+
+					// left, middle, right
+					.left, .middle, .right {
+						height: 278px;
+						a {
+							.hue {
+								.pads {
+									padding-top:110px;
+								}
+							}
+						}
+					}
+				}
+
+				// welcome text
+				.welcome-text {
+
+					// wrap
+					.wrap {
+
+						// link
+						.external-link {
+
+							// left
+							.left {
+								padding-right: 40px;
+								border-right: 1px solid @border-color;
+							}
+
+							// right
+							.right {
+								padding-left: 40px;
+								border-top:0px;
+								margin-top:0px;
+								padding-top:0px;
 							}
 						}
 					}
@@ -802,6 +928,41 @@
 				// row
 				.row {
 					
+					// jumbo
+					.jumbotron {
+
+						// carousel
+						.carousel {
+
+							// inner
+							.carousel-inner {
+
+								// item
+								.item {
+
+									// bg 1
+									.bg {
+
+										// wrap
+										.wrap {
+
+											// carousel caption
+											.carousel-caption {
+
+												h1 {
+													width: 850px;
+												}
+												p {
+													width: 950px;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
 					// collection viewer
 					.collection-viewer {
 
@@ -919,6 +1080,36 @@
 					
 						// set margin left due to sidebar fixed position
 						margin-left: 390px;
+					}
+				}
+			}
+		}
+
+		// about
+		.about {
+
+			// main
+			.main {
+
+				// welcome text
+				.welcome-text {
+
+					// wrap
+					.wrap {
+						width: 70%;
+					}
+				}
+
+				// about
+				.about-section {
+					.left, .right {
+						a {
+							.hue {
+								.pads {
+									padding-top:123px;
+								}
+							}
+						}
 					}
 				}
 			}

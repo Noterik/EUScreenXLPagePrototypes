@@ -1078,18 +1078,44 @@ body .headroom--unpinned {
     padding-bottom: 6px !important;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption {
-    top: 25%;
+    top: 14%;
+    left: 50px;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
     font-size: 1.8em;
+    width: 600px;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1.big {
-    font-size: 2.23em;
-    margin-top: 50px;
+    width: auto;
+    margin-top: 70px;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
     font-size: 1.143em;
     width: 87%;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption a.link {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    display: table;
+    margin-top: 5px;
+    background: rgba(140, 198, 63, 0.6);
+    border: 0px;
+    font-size: 1.143em;
+  }
+  body .about .main .about-section .left,
+  body .about .main .about-section .middle,
+  body .about .main .about-section .right {
+    height: 250px;
+  }
+  body .about .main .about-section .left a .hue .pads,
+  body .about .main .about-section .middle a .hue .pads,
+  body .about .main .about-section .right a .hue .pads {
+    padding-top: 94px;
+  }
+  body .about .main .welcome-text {
+    border-left: 0px;
+    border-right: 0px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -1134,6 +1160,9 @@ body .headroom--unpinned {
   body .search header .navbar .container .navbar-header .navbar-form {
     display: none;
   }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
+    width: 750px;
+  }
   body .home .main .row .collection-viewer-tab .row.main-nav .media-action .overlaycontent {
     font-size: 1em;
   }
@@ -1148,6 +1177,26 @@ body .headroom--unpinned {
   }
   body .home .main .row .collection-viewer .row .media-item .media-wrapper .media-title h3 {
     font-size: 1.1em;
+  }
+  body .about .main .about-section .left,
+  body .about .main .about-section .middle,
+  body .about .main .about-section .right {
+    height: 278px;
+  }
+  body .about .main .about-section .left a .hue .pads,
+  body .about .main .about-section .middle a .hue .pads,
+  body .about .main .about-section .right a .hue .pads {
+    padding-top: 110px;
+  }
+  body .about .main .welcome-text .wrap .external-link .left {
+    padding-right: 40px;
+    border-right: 1px solid #f2f2f2;
+  }
+  body .about .main .welcome-text .wrap .external-link .right {
+    padding-left: 40px;
+    border-top: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -1205,6 +1254,12 @@ body .headroom--unpinned {
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
+    width: 850px;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
+    width: 950px;
+  }
   body .home .main .row .collection-viewer .row .media-item .media-wrapper .media-title h3 {
     font-size: 1.2em;
   }
@@ -1227,5 +1282,12 @@ body .headroom--unpinned {
   }
   body .search .main .right.fix {
     margin-left: 390px;
+  }
+  body .about .main .welcome-text .wrap {
+    width: 70%;
+  }
+  body .about .main .about-section .left a .hue .pads,
+  body .about .main .about-section .right a .hue .pads {
+    padding-top: 123px;
   }
 }

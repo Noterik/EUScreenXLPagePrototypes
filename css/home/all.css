@@ -26,22 +26,29 @@ body .home .main {
   overflow: hidden;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption {
-  padding: 0px;
-  left: 5%;
-  right: 5%;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  z-index: 0;
   text-align: left;
-  bottom: auto;
-  top: auto;
+  position: relative;
+  height: 100%;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1,
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
-  font-size: 1.5em;
+  font-size: 1.4em;
   padding: 11px 20px 15px 20px;
   margin-bottom: 0px;
   display: table;
   background: rgba(140, 198, 63, 0.7);
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-shadow: none;
+  width: 95%;
+  line-height: 1.4em;
+}
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
+  margin-top: 15px;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
   font-size: 1.071em;
@@ -49,14 +56,20 @@ body .home .main {
   padding: 14px 20px 20px 20px;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption a.link {
-  background: rgba(140, 198, 63, 0.7);
   padding: 10px 30px 12px 30px;
-  display: table;
-  margin-top: 5px;
-  font-size: 1.143em;
+  font-size: 1em;
   color: #ffffff;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-shadow: none;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 58px;
+  right: 5%;
+  left: 5%;
+  text-align: center;
+}
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption a.small {
+  font-size: 1em;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-1 {
   background: url('../../img/content/bg-home-1.gif') no-repeat;
