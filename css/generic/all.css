@@ -914,12 +914,15 @@ body .spinner {
 }
 body .headroom {
   transition: transform 200ms linear;
+  -webkit-transition: -webkit-transform 200ms linear;
 }
 body .headroom--pinned {
   transform: translateY(0%);
+  -webkit-transform: translateY(0%);
 }
 body .headroom--unpinned {
   transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
 }
 /**
 * responsive.less
