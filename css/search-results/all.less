@@ -110,15 +110,21 @@
 					.clear {
 						float: right;	
 						display: block;
-						margin: 21px 25px 0 0;
+						margin: 20px 25px 0 0;
 						
 						a {
-							color: @euscreen-red;
-							font-size: 0.7em;
+							color: #a3a3a3;
+							font-size: 0.68em;
 							letter-spacing: 1px;
-							border:1px solid @euscreen-red;
+							border:1px solid;
+							border-color:  #a3a3a3;
 							border-radius: 2px;
 							padding: 2px 3px 1px 3px;
+							.transition-two(color, 0.35s, border-color, 0.35s);
+							&:hover {
+								color: @euscreen-green;
+								border-color: @euscreen-green;
+							}
 						}
 					}
 					

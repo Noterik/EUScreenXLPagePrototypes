@@ -9,7 +9,7 @@ $(document).ready(function () {
         this.$navElement = jQuery('#navpanel');
         this.$sideBarElements = jQuery('#sidebar');
         this.$searchInputElement = jQuery('#searchkeyword');
-        
+
         // nav panel
         this.$navElement.slidePanelJS({
 	        openButton: '#menubutton',

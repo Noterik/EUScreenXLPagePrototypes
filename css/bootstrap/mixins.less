@@ -22,6 +22,14 @@
 	}
 }
 
+// multiple treansition
+.transition-two(@transition1, @transition1-duration, @transition2, @transition2-duration) {
+ -webkit-transition: @transition1 @transition1-duration, @transition2 @transition2-duration;
+    -moz-transition: @transition1 @transition1-duration, @transition2 @transition2-duration;
+      -o-transition: @transition1 @transition1-duration, @transition2 @transition2-duration;
+          transition: @transition1 @transition1-duration, @transition2 @transition2-duration;
+}
+
 .navigation-tab() {
 	margin-top:0px;
 	border:0px;

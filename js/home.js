@@ -5,7 +5,6 @@ $(document).ready(function () {
 
     EUScreenXL.HomePage = function () {
         EUScreenXL.Page.apply(this, arguments);
-        this.$bodyElement = jQuery('body');
         this.$containerElement = jQuery('.main');
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
@@ -23,10 +22,11 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
-        
+
         // only activates tooltip on desktop
         // otherwise it takes two tap to view overlay content
         if(EUScreenXL.Page.prototype.device == "desktop") {
+
             // activate tooltip
             this.$tooltipButtons.tooltip();
         }
@@ -51,6 +51,8 @@ $(document).ready(function () {
                 this.$navbarElement.removeClass('searchOpened');
                 this.menuButton.show();
             } else {
+
+                // go to the top first
                 this.searchButton.addClass("active"); // toggle style
                 this.$navbarElement.addClass('searchOpened');
                 this.$formElement.find('input[type="text"]').focus();

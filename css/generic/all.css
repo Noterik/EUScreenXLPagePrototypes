@@ -41,6 +41,9 @@ html {
 body {
   height: 100%;
 }
+body.fixfixed .page header .navbar {
+  position: absolute !important;
+}
 body .page header .navbar {
   background: #ffffff;
   border-bottom: 1px solid #f2f2f2;
@@ -533,8 +536,9 @@ body .page .main .media-action .button-list > li button.active i.icono-expand {
 }
 body .page .main .jumbotron-small {
   background-size: cover;
-  height: 150px;
+  height: 130px;
   text-align: center;
+  display: none;
 }
 body .page .main .jumbotron-small .hue {
   display: block;
@@ -546,9 +550,9 @@ body .page .main .jumbotron-small .hue {
   position: relative;
 }
 body .page .main .jumbotron-small .hue .pads {
-  padding-top: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 body .page .main .jumbotron-small .hue .pads h1 {
   text-transform: uppercase;
@@ -584,6 +588,27 @@ body .page .main .jumbotron-small.selection {
 body .page .main .jumbotron-small.selection .hue .pads h1,
 body .page .main .jumbotron-small.selection .hue .pads p {
   background: rgba(220, 109, 147, 0.7);
+}
+body .page .main .content-text {
+  background: #fff;
+  line-height: 1.8em;
+  border-bottom: 5px solid #8cc63f;
+}
+body .page .main .content-text [class*='col-'] {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+body .page .main .content-text [class*='col-'] h1 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+body .page .main .content-text.red {
+  border-bottom: 5px solid #ec008c;
+}
+body .page .main .content-text.blue {
+  border-bottom: 5px solid #00aeef;
 }
 body .page .jumbotron-wide {
   margin-top: 70px;
@@ -913,6 +938,7 @@ body .spinner {
   padding: 20px;
 }
 body .headroom {
+  -webkit-transition: transform 200ms linear;
   transition: transform 200ms linear;
   -webkit-transition: -webkit-transform 200ms linear;
 }
@@ -1026,7 +1052,7 @@ body .headroom--unpinned {
     font-size: 1em;
   }
   body .page .main .jumbotron-small .hue .pads {
-    padding: 50px 50px 0px 50px;
+    padding: 45px 50px 0px 50px;
   }
   body .search .main .left {
     border-top: 5px solid #f2f2f2;
@@ -1161,7 +1187,7 @@ body .headroom--unpinned {
     font-size: 1em;
   }
   body .search header .navbar .container .navbar-header .navbar-form {
-    display: none;
+    display: none !important;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
     width: 750px;

@@ -48,6 +48,23 @@ html {
 // body
 body {
 
+	// fix for jumping search bar on ios
+	&.fixfixed {
+
+		// page
+		.page {
+
+			// header
+			header {
+
+				// navbar
+				.navbar {
+					position: absolute !important;
+				}
+			}
+		}
+	}
+
 	// height set to 100% to pushes the footer
 	height: 100%;
 	
@@ -538,8 +555,9 @@ body {
 			// small jumbotron, only heading a a few lines of texts
 			.jumbotron-small {
 				background-size: cover;
-				height: 150px;
+				height: 130px;
 				text-align: center;
+				display: none;
 				
 				// hue & wrapper
 				.hue {
@@ -554,9 +572,9 @@ body {
 					// padding
 					.pads {
 						
-						padding-top:40px;
-						padding-left: 30px;
-						padding-right: 30px;
+						padding-top:30px;
+						padding-left: 10px;
+						padding-right: 10px;
 						
 						
 						// texts
@@ -617,6 +635,35 @@ body {
 							}	
 						}
 					}
+				}
+			}
+
+			// text
+			.content-text {
+				background:#fff;
+				line-height: 1.8em;
+				border-bottom: 5px solid @euscreen-green;
+
+				[class*='col-'] {
+					padding-left: 20px;
+					padding-top:20px;
+					padding-right:20px;
+					padding-bottom: 10px;
+
+					h1 {
+						margin-top:5px;
+						margin-bottom: 15px;
+					}
+				}
+
+				// red
+				&.red {
+					border-bottom: 5px solid @euscreen-red;
+				}
+
+				// blue
+				&.blue {
+					border-bottom: 5px solid @euscreen-blue;
 				}
 			}
 		}

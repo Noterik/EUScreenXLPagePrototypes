@@ -4,11 +4,12 @@ $(document).ready(function () {
     }
 
     EUScreenXL.AboutPage = function () {
-        EUScreenXL.Page.apply(this, arguments);
+        EUScreenXL.Page.apply(this, arguments);        
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
-        
+        var obj = this;
+
         // nav panel
         this.$navElement.slidePanelJS({
             openButton: '#menubutton',
