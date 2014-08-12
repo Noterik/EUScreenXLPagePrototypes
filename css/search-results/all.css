@@ -438,8 +438,11 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.search .main .right .row .results .media-item .media-metadata {
-  padding-left: 5px;
+.search .main .right .row .results .media-item .media-image {
+  padding-right: 0px;
+}
+.search .main .right .row .results .media-item .media-metadata a h3.media-heading {
+  font-size: 1.2em;
 }
 .search .main .right .row .more {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
