@@ -1173,6 +1173,9 @@ body .headroom--unpinned {
   body .item .main .row .left .row .media-action .overlaycontent .extra {
     font-size: 0.929em;
   }
+  body .item .main .row .left .row .media-metadata {
+    font-size: 1em;
+  }
   body .item .main .row .right {
     margin-top: 0px;
     border-left: 6px solid #f2f2f2;
