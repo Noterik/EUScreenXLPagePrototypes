@@ -92,10 +92,18 @@
 			    		
 			    		<!-- player -->
 			    		<div class="row">
-			    			<div class="media-player col-md-12 aspect-ratio wide">
+			    			
+			    			<!-- image -->
+		    				<div class="col-md-12 image-player">
+		    					<a href="#image-modal" title="Zoom in" data-toggle="modal" data-img-url="img/content/raw3.png">
+		    						<span class="zoom"><i class="glyphicon glyphicon-search"></i></span>
+		    						<img src="img/content/raw3.png" class="img-responsive"/>	
+		    					</a>
+		    				</div>
+			    				
+		    				<!-- video
+		    				<div class="media-player col-md-12 aspect-ratio wide"> 
 			    				<div class="player" id="media-player">
-			    					
-			    					<!-- replace with actual video player -->
 			    					<video id="sampleMovie" width="640" poster="img/content/poster.gif" height="360" preload controls>
 			    						<source src=video/small.webm type=video/webm>
 										<source src=video/small.ogv type=video/ogg>
@@ -103,7 +111,60 @@
 										<source src=video/small.3gp type=video/3gp>
 			    					</video>
 			    				</div>
-			    			</div>
+			    			</div> -->
+			    			
+			    			<!-- normal html5 player 
+			    			<div class="col-md-12 audio-player-minimal">
+				    			<audio controls="controls">
+									<source type="audio/mp3" src="http://192.168.1.183:8888/ink.mp3"></source>
+								</audio>
+							</div>-->
+
+			    			<!-- audio
+			    			<div class="col-md-12 audio-player">
+			    				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+			    				<div id="jp_container_1" class="jp-audio">
+									<div class="jp-type-single">
+										<div class="jp-gui jp-interface row">
+											<ul class="jp-controls col-xs-2">
+												<li class="play-control">
+													<a href="javascript:;" class="jp-play" tabindex="1">
+														<i class="glyphicon glyphicon-play"></i>
+													</a>
+												</li>
+												<li class="play-control">
+													<a href="javascript:;" class="jp-pause" tabindex="1">
+														<i class="glyphicon glyphicon-pause"></i>	
+													</a>
+												</li>
+											</ul>
+											<div class="jp-progress col-xs-10 col-sm-10 col-md-10">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar"></div>
+												</div>
+												<div class="jp-time-holder">
+													<div class="jp-current-time"></div> / 
+													<div class="jp-duration"></div>
+												</div>
+											</div>
+											<div class="jp-volume col-md-3">
+												<ul class="volume-action">
+													<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="fa fa-volume-up"></i></a></li>
+													<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="fa fa-volume-off"></i></a></li>
+												</ul>
+												<div class="jp-volume-bar">
+													<div class="jp-volume-bar-value"></div>
+												</div>
+											</div>
+										</div>
+										<div class="jp-no-solution">
+											<span>Update Required</span>
+											To play the media you will need to either update your browser to a recent version or update your
+											<a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+										</div>
+									</div>
+								</div>
+			    			</div> -->
 			    		</div>
 			    		
 			    		<!-- player action -->
@@ -590,10 +651,48 @@
 			</span>
 		</div>
 
+		<!-- modal -->
+        <div class="modal fade bs-example-modal-lg" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="player-modalLabel" aria-hidden="true">
+            
+            <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal"><i class="icono icono-remove"></i></button>
+            
+            <!-- modal body -->
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                	
+                	<!-- modal header -->
+                    <div class="modal-header">
+                   		
+                    	<!-- new window -->
+                   		<div class="pull-right item-anchor">
+                        	<a id="image-modal-nav" href="#" target="_blank">
+                        		Open in new window
+	                        	<i class="fa fa-external-link"></i>
+                        	</a>
+                        </div>
+
+                        <!-- the title -->
+                        <h4 class="modal-title" id="player-modalLabel">&nbsp;</h4>
+                    </div>
+                    
+                    <!-- modal content -->
+                    <div class="modal-body">
+                    
+                        <!-- replace with actual video player -->
+                        <img src="#" id="image-modal-src" class="img-responsive"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
 		<!-- scripts -->
 		<script src="js/vendor/jquery-1.10.2.min.js"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/libs/SlidePanel/js/jquery.slide-panel.js"></script>
+		<script src="js/vendor/jquery.jplayer.min.js"></script>
 		<script src="js/vendor/promise-1.0.0.min.js"></script>
 		<script src="js/header.js"></script>
 		<script src="js/footer.js"></script>

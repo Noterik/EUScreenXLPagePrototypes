@@ -175,7 +175,7 @@
 									
 									// make the heading smaller, on mobile is 1.33em
 									h3.media-heading {
-										font-size: 1.286em;
+										font-size: 1.143em;
 									}
 									
 									// line is the space between metadata items (original title, provider, etc)
@@ -448,6 +448,13 @@
 				}
 			}
 		}	
+		
+		// audio player
+		.audio-player {
+			border-left: 0px;
+			border-right: 0px;
+			margin-top:0px;
+		}
 	}
 }
 
@@ -796,6 +803,15 @@
 				}
 			}
 		}
+		
+		// audio player
+		.audio-player {
+			.jp-type-single {
+				.jp-interface {
+					
+				}
+			}
+		}
 	}
 }
 
@@ -910,6 +926,29 @@
 					// sidebar at the bottom position
 					&.fix-bottom {
 						bottom: 233px !important;
+					}
+				}
+			}
+		}
+		
+		// audio player
+		.audio-player {
+			.jp-audio {
+				.jp-type-single {
+					.jp-interface {
+						.jp-controls {
+							li {
+								.jp-mute, .jp-unmute {
+									display: block;
+								}
+							}
+						}
+						.jp-progress {
+							width: 58.3333%;
+						}
+						.jp-volume {
+							display: block;
+						}
 					}
 				}
 			}

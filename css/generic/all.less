@@ -645,10 +645,7 @@ body {
 				border-bottom: 5px solid @euscreen-green;
 
 				[class*='col-'] {
-					padding-left: 20px;
-					padding-top:20px;
-					padding-right:20px;
-					padding-bottom: 10px;
+					padding: 20px 20px 15px 20px;
 
 					h1 {
 						margin-top:5px;
@@ -949,6 +946,164 @@ body {
 		}
 	}
 	
+	// minimal player
+	.audio-player-minimal {
+		background: #fff;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: 5px solid @euscreen-blue;
+		
+		// width
+		audio {
+			width: 100%;
+		}
+	}
+	
+	// audio player
+	.audio-player {
+		
+		// wrap border on mobile
+		border-left: 6px solid @body-bg;
+		border-right: 6px solid @body-bg;
+		margin-top:5px;
+
+		// jp audio
+		.jp-audio {
+			width: 100%;
+			border: 0px;
+			background: @body-bg;
+			
+			.jp-type-single {
+				.jp-interface {
+					margin-left: 0px;
+					margin-right: 0px;
+					
+					.jp-controls {
+						padding: 0px;
+						margin:0;
+						overflow:hidden;
+						float: left;
+						height: 80px;
+						
+						li {
+							list-style: none;
+							display: inline-block;
+							
+							&.play-control {
+								width: 100%;
+								float: left;
+								.jp-play, .jp-pause {
+									height: 80px;
+									display: block;
+									background: @euscreen-blue;
+									text-align: center;
+									
+									i {
+										color: #fff;
+										padding-top: 24px;
+										font-size: 1.7em;
+									}
+								}
+							}
+						}
+					}
+					.jp-progress {
+						height: 80px;
+						background: #fff;
+						float: left;
+						padding-left: 0px;
+						padding-right: 0px;
+						
+						.jp-seek-bar {
+							background: url(@sprites-path) 0 -130px repeat-x;
+							width:0px;
+							height:100%;
+							cursor: pointer;
+							
+							.jp-play-bar {
+								background: @euscreen-rgba-blue-60;
+								width:0px;
+								height:100%;
+							}
+						}
+						
+						.jp-time-holder {
+							position: absolute;
+							top:28px;
+							left: 20px;
+							background: rgba(0,0,0,0.5);
+							color: #fff;
+							padding:2px 10px 2px 10px;
+							border-radius: 2px;
+
+							.jp-current-time, .jp-duration {
+								display: inline-block;
+							}
+							.jp-toggles {
+								display: none !important;
+							}
+						}
+					}
+					
+					.jp-volume {
+						background: #fff;
+						height: 80px;
+						border-left: 1px solid @body-bg;
+						display: none;
+						
+						.volume-action {
+							margin:0;
+							padding: 28px 0 0 0px;
+							float: left;
+							
+							li {
+								list-style: none;
+								display: inline-block;
+							}
+							.jp-mute, .jp-unmute {
+								font-size: 1.4em;
+								color: #cccccc;
+							}
+						}
+						.jp-volume-bar {
+							height: 40px;
+							float: right;
+							width: 75%;
+							background: url(@sprites-path) 0 -210px repeat-x;
+							margin-top:21px;
+							
+							.jp-volume-bar-value {
+								height: 100%;
+								background: url(@sprites-path) 0 -250px repeat-x;
+							}
+						}
+					}
+					
+				}
+			}
+		}
+		
+		.jp-no-solution {
+			padding:5px;
+			font-size:.8em;
+			background-color:#eee;
+			border:2px solid #009be3;
+			color:#000;
+			display:none;
+		}
+		
+		.jp-no-solution a {
+			color:#000;
+		}
+		
+		.jp-no-solution span {
+			font-size:1em;
+			display:block;
+			text-align:center;
+			font-weight:bold;
+		}
+	}
+	
 	// modal
 	.modal {
 		
@@ -956,6 +1111,10 @@ body {
 		.close {
 			.opacity(1);
 			margin: 20px 20px 0 0;
+			position: absolute;
+			right: 0;
+			top:0;
+			z-index: 1000;
 		}
 		
 		// dialog
@@ -1043,6 +1202,22 @@ body {
 	.headroom--unpinned {
 		transform: translateY(-100%);
         -webkit-transform: translateY(-100%);
+	}
+
+	// box link
+	.box-link {
+		border:1px solid @gray-light;
+		padding: 5px 20px 4px 20px;
+		border-radius: 3px;
+		display: inline-block;
+		color: #aeaeae;
+		.transition-two(border-color, 0.35s, color, 0.35s); 
+
+		&:hover {
+
+			border-color: @euscreen-blue;
+			color: @euscreen-blue;
+		}
 	}
 }
 

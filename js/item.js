@@ -38,6 +38,28 @@ $(document).ready(function () {
             $overlayContents : this.$overlayContents,
             contentOverlayIdAttr : 'data-overlay'
         });
+
+        // image player
+        if($('.image-player').length != 0) {
+            $('.image-player a').click(function (e) {
+                $('#image-modal #image-modal-src').attr('src', $(this).attr('data-img-url'));
+                $('#image-modal #image-modal-nav').attr('href', $(this).attr('data-img-url'));
+            });
+        }
+        
+        // audio player
+        if($('.audio-player').length != 0) {
+        	
+        	// initialize jplayer
+            $("#jquery_jplayer_1").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						mp3: "http://192.168.1.183:8888/ink.mp3"
+					});
+				},
+				supplied: "mp3"
+			});
+        }
     };
     EUScreenXL.ItemPage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.ItemPage.prototype.searchButton = jQuery("#searchbutton");

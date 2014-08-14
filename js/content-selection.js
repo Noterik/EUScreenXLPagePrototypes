@@ -22,7 +22,7 @@ $(document).ready(function () {
     EUScreenXL.ContentSelectionPage.prototype.searchButton = jQuery("#searchbutton");
     EUScreenXL.ContentSelectionPage.prototype.menuButton = jQuery("#menubutton");
     EUScreenXL.ContentSelectionPage.prototype.name = "content-selection";
-    EUScreenXL.ContentMapPage.prototype.events = {
+    EUScreenXL.ContentSelectionPage.prototype.events = {
     	'click #searchbutton': function(event) {
             if(this.searchButton.hasClass("active")) {
                 this.searchButton.removeClass("active"); // toggle style

@@ -5,39 +5,10 @@
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
-.content-map .jumbotron-small {
-  background-size: cover;
-  height: 200px;
-  text-align: center;
+.content-selection .main .row.content-text .box-link {
+  margin-top: 7px;
 }
-.content-map .jumbotron-small .hue {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  text-align: left;
-  overflow: auto;
-  position: relative;
-}
-.content-map .jumbotron-small .hue .pads {
-  position: absolute;
-  top: 50%;
-  margin-top: -35px;
-  left: 50px;
-}
-.content-map .jumbotron-small .hue h1 {
-  margin: 0px 0px 5px 0px;
-  text-transform: uppercase;
-}
-.content-map .jumbotron-small .hue p {
-  width: 80%;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
-  font-size: 1.071em;
-}
-.content-map .jumbotron-small.map {
-  background: url('../../img/bg-about.gif') no-repeat;
-  border-bottom: 5px solid #ec008c;
-}
-.content-map .jumbotron-small.map .hue {
-  background: rgba(220, 109, 147, 0.5);
+.content-selection .main .row.content-text .box-link:hover {
+  color: #ec008c;
+  border-color: #ec008c;
 }

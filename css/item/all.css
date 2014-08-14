@@ -13,6 +13,42 @@
 .item .main .row .left .row .media-action .button-list > li {
   display: block;
 }
+.item .main .row .left .row .image-player {
+  background: #222;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  max-height: 500px;
+  position: relative;
+}
+.item .main .row .left .row .image-player a .zoom {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  padding: 10px 15px 8px 15px;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+.item .main .row .left .row .image-player a .zoom i {
+  font-size: 1.7em;
+  color: #333;
+}
+.item .main .row .left .row .image-player a img {
+  display: inline-block;
+}
+.item .main .row .left .row .image-player a:hover .zoom {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.item .main .row .left .row .audio-player {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .item .main .row .left .row .media-metadata {
   background: #ffffff;
   border-left: 6px solid #f2f2f2;
@@ -126,4 +162,12 @@
 }
 .item .main .row .right .row .ads {
   margin-top: 6px;
+}
+.modal .modal-dialog .modal-body {
+  padding: 0px;
+  text-align: center;
+  background: #000;
+}
+.modal .modal-dialog .modal-body img {
+  display: inline-block;
 }
