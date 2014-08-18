@@ -1213,7 +1213,7 @@ body .box-link:hover {
   }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading,
   body .page .main .right .row .media-relate .media-item .media-metadata h3.media-heading {
-    font-size: 1.143em;
+    font-size: 1.4em;
   }
   body .page .main .right .row .results .media-item .media-metadata .line,
   body .page .main .right .row .media-relate .media-item .media-metadata .line {
@@ -1339,6 +1339,13 @@ body .box-link:hover {
 @media (min-width: 992px) {
   body .page .main .right .row.results-media .mediatab {
     width: 641px;
+  }
+  body .page .main .right .row .media-relate .media-item .media-metadata h3.media-heading {
+    font-size: 1.1em;
+  }
+  body .page .main .right .row .media-relate .media-item .media-metadata .line .label,
+  body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
+    font-size: 0.929em;
   }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
     margin-bottom: 8px;
@@ -1506,6 +1513,13 @@ body .box-link:hover {
   }
   body .page .main .right .row.results-media .mediatab {
     width: 774px;
+  }
+  body .page .main .right .row .media-relate .media-item .media-metadata h3.media-heading {
+    font-size: 1.143em;
+  }
+  body .page .main .right .row .media-relate .media-item .media-metadata .line .label,
+  body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
+    font-size: 1em;
   }
   body .search .main .left.fix {
     width: 390px;
