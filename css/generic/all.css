@@ -1226,6 +1226,10 @@ body .box-link:hover {
     border-left: 0px;
     border-right: 0px;
   }
+  body .content-provider .main .provider-list {
+    border-left: 0px;
+    border-right: 0px;
+  }
   body .item .main .row .right {
     border-left: 0px;
     border-right: 0px;
