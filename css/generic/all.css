@@ -267,7 +267,7 @@ body .page .main .media-item .media-metadata a h3.media-heading {
   color: #333333;
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body .page .main .media-item .media-metadata .line {
   display: block;
@@ -329,7 +329,7 @@ body .page .main .media-item .media-wrapper .media-title:after {
 body .page .main .media-item .media-wrapper .media-title h3 {
   color: #ffffff;
   font-size: 1em;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 15px 0 0 0;
   width: 100%;
 }

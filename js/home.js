@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     EUScreenXL.HomePage = function () {
         EUScreenXL.Page.apply(this, arguments);
+        this.$bodyElement = jQuery('body');
         this.$containerElement = jQuery('.main');
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
