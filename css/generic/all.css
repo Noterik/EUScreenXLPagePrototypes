@@ -477,6 +477,35 @@ body .page .main .media-action .overlaycontent .list-group .plus-sign {
 body .page .main .media-action .overlaycontent .btn-euscreen {
   margin-top: 6px;
 }
+body .page .main .media-action .overlaycontent .select-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+body .page .main .media-action .overlaycontent .select-wrap select {
+  border: 0 none;
+  border-radius: 0px;
+  color: #fff;
+  width: 107%;
+  padding: 10px;
+  font-size: 1.1em;
+}
+body .page .main .media-action .overlaycontent .select-wrap i {
+  font-size: 1.2em;
+  right: 15px;
+  top: 15px;
+}
+body .page .main .media-action .overlaycontent .folder-action {
+  color: #8cc63f;
+  letter-spacing: 1px;
+  border: 1px solid #8cc63f;
+  font-size: 0.83em;
+  padding: 4px 10px 1px 10px;
+  border-radius: 3px;
+  float: right;
+  margin-top: -3px;
+  margin-bottom: 10px;
+}
 body .page .main .media-action .button-list {
   margin: 0;
   padding: 0;
