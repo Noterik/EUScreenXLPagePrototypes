@@ -1097,6 +1097,7 @@ body .browsehappy {
   z-index: 10;
 }
 body .spinner {
+  clear: both;
   text-align: center;
   padding: 20px;
 }
