@@ -5,6 +5,11 @@
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
+@-moz-document url-prefix() {
+  .warning-playout {
+    display: block;
+  }
+}
 .item .main .row .left .row .media-action {
   margin-top: 6px;
   border-left: 6px solid #f2f2f2;

@@ -34,6 +34,12 @@ input {
 .nomargin {
   margin: 0;
 }
+.warning-playout {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -1095,6 +1101,7 @@ body .browsehappy {
   left: 10px;
   right: 10px;
   z-index: 10;
+  background-image: none;
 }
 body .spinner {
   clear: both;

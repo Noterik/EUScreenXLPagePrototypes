@@ -36,8 +36,17 @@ input {
 .colorgray { color: @euscreen-gray; }
 .colorred { color: @euscreen-red; }
 
-// 
+// no margin
 .nomargin { margin:0; }
+
+// warning
+.warning-playout {
+	display: none;
+	position: absolute;
+	top:0;
+	left: 0px;
+}
+
 
 // main style
 html {
@@ -1214,6 +1223,7 @@ body {
 		top:80px;
 		left: 10px; right: 10px;
 		z-index: 10;
+		background-image: none;
 	}
 	
 	// spinner
