@@ -834,6 +834,41 @@ body div.icono-remove {
   width: 24px;
   height: 24px;
 }
+body i.icono-metadata,
+body span.icono-metadata,
+body div.icono-metadata {
+  background-position: 0 -290px;
+  width: 96px;
+  height: 80px;
+}
+body i.icono-ebu,
+body span.icono-ebu,
+body div.icono-ebu {
+  background-position: -96px -290px;
+  width: 109px;
+  height: 80px;
+}
+body i.icono-interoperable,
+body span.icono-interoperable,
+body div.icono-interoperable {
+  background-position: -205px -290px;
+  width: 86px;
+  height: 80px;
+}
+body i.icono-cc,
+body span.icono-cc,
+body div.icono-cc {
+  background-position: -291px -290px;
+  width: 93px;
+  height: 80px;
+}
+body i.icono-opendata,
+body span.icono-opendata,
+body div.icono-opendata {
+  background-position: -384px -290px;
+  width: 100px;
+  height: 80px;
+}
 body .more {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-align: center;
@@ -1267,6 +1302,12 @@ body .box-link:hover {
     border-left: 0px;
     border-right: 0px;
   }
+  body .content-selection .main .metadata-facts .heading {
+    text-align: left;
+  }
+  body .content-selection .main .metadata-facts .custom-row .custom-col-20 {
+    width: 20%;
+  }
   body .item .main .row .right {
     border-left: 0px;
     border-right: 0px;
@@ -1499,7 +1540,7 @@ body .box-link:hover {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
-    width: 850px;
+    width: 1000px;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
     width: 950px;

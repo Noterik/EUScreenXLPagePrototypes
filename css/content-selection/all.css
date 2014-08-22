@@ -5,10 +5,49 @@
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
-.content-selection .main .row.content-text .box-link {
+.content-selection .main .content-text .box-link {
   margin-top: 7px;
 }
-.content-selection .main .row.content-text .box-link:hover {
+.content-selection .main .content-text .box-link:hover {
   color: #ec008c;
   border-color: #ec008c;
+}
+.content-selection .main .metadata-facts {
+  background: #fff;
+  margin-top: 6px;
+}
+.content-selection .main .metadata-facts > [class*="col-"] {
+  padding: 20px 20px 0px;
+}
+.content-selection .main .metadata-facts .heading {
+  text-align: center;
+}
+.content-selection .main .metadata-facts .heading h2 {
+  font-size: 1.429em;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+.content-selection .main .metadata-facts .heading p {
+  color: #ec008c;
+  font-size: 0.786em;
+  letter-spacing: 1px;
+}
+.content-selection .main .metadata-facts .custom-row:before,
+.content-selection .main .metadata-facts .custom-row:after {
+  content: " ";
+  display: table;
+}
+.content-selection .main .metadata-facts .custom-row:after {
+  clear: both;
+}
+.content-selection .main .metadata-facts .custom-row .custom-col-20 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+}
+.content-selection .main .metadata-facts .custom-row .custom-col-20 p {
+  font-size: 0.786em;
+  letter-spacing: 1px;
+  margin-top: 10px;
 }

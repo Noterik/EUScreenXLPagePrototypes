@@ -16,19 +16,59 @@
 	// main
 	.main {
 		
-		// row
-		.row {
+		// text
+		.content-text {
 
-			// text
-			&.content-text {
+			// box
+			.box-link {
+				margin-top:7px;
 
-				// box
-				.box-link {
-					margin-top:7px;
-
-					&:hover {
-						color: @euscreen-red;
-						border-color: @euscreen-red;
+				&:hover {
+					color: @euscreen-red;
+					border-color: @euscreen-red;
+				}
+			}
+		}
+		
+		// metadata facts
+		.metadata-facts {
+			background: #fff;
+			margin-top:6px;
+			
+			> [class*="col-"] {
+			    padding: 20px 20px 0px;
+			}
+			
+			// heading
+			.heading {
+				text-align: center;
+				h2 {
+					font-size: 1.429em;
+					margin-bottom: 8px;
+					margin-top:10px;
+				}	
+				p {
+					color: @euscreen-red;
+					font-size: 0.786em;
+					letter-spacing: 1px;		
+				}
+			}
+			
+			// custom row
+			.custom-row {
+				.clearfix; 
+				
+				// column
+				.custom-col-20 {
+					width: 100%;
+					float: left;
+					text-align: center;
+					padding: 20px 10px 20px 10px;
+					
+					p {
+						font-size: 0.786em;
+						letter-spacing: 1px;
+						margin-top: 10px;
 					}
 				}
 			}
