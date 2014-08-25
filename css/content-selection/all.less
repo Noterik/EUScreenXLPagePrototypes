@@ -30,28 +30,224 @@
 			}
 		}
 		
+		// content-aggregate
+		.content-aggregate {
+			background: #fff;
+			margin-top: 6px;
+			
+			// left
+			.text {
+				//padding: 80px 20px 30px 20px;
+				padding: 20px 20px 30px 20px;
+					
+				// intro
+				.intro {
+					
+					// text
+					p {
+						margin-top:15px;
+						line-height: 1.7em;
+					}
+					.box-link {
+						margin-top:20px;
+						&:hover {
+							border-color: @euscreen-red;
+							color: @euscreen-red;
+						}
+					}
+					
+					// red button
+					.redbutton {
+						a {
+							margin-top:25px;
+							background: @euscreen-red;
+							//display: table;
+							text-align: center;
+							display: block;
+							color: #fff;
+							font-size: 1.1em;
+							padding: 8px 50px 8px 50px;
+							font-family: @font-family-monospace;
+						}
+					}
+				}
+			}
+			
+			// graph
+			.graph {
+				background: url('../../img/bg-map.png') no-repeat;
+				background-position: right center;	
+				padding-right: 1px;
+				height: 415px;
+				border-right: 1px solid #fff;
+				
+				// chart
+				.chart {
+					width: 236px;
+					height: 235px;
+					background: url(@sprites-path) 0 -406px no-repeat;
+					display: block;
+					margin: 80px 100px 0 0;
+					position: relative;
+					.opacity(0);
+					
+					// total
+					.total {
+						position: absolute;
+						text-align: left;
+						top:82px;
+						left: 50px;
+						
+						small {
+							font-size: 0.714em;
+							letter-spacing: 1px;
+							margin-left: 5px;
+							color: #8b8b8b;
+						}
+						h1 {
+							font-size: 3.571em;
+							margin:0;
+							line-height: 0.8em;
+						}
+					}
+					
+					// ingest
+					.ingest {
+						position: absolute;
+						bottom: -69px;
+						left: 39px;
+						text-align: center;
+						.opacity(0);
+						
+						.line {
+							width: 1px;
+							background: #c7c7c7;
+							height: 20px;
+							display: inline-block;
+						}
+						h1 {
+							font-size: 1.571em;
+							color: #c7c7c7;
+							border: 1px solid #c7c7c7;
+							padding: 6px 20px 6px 20px;
+							display: table;
+							border-radius: 3px;
+							margin-top:-6px;
+						}
+					}
+					
+					// document
+					.item {
+						position: absolute;
+						.opacity(0.6);
+						
+						// hover
+						&:hover {
+							.opacity(1);
+						}
+						
+						// liney
+						.line {
+							display: block;
+							background: url(@sprites-path) no-repeat;
+						}
+						
+						// text
+						h1 {
+							display: inline;
+							font-size: 2.143em;
+							margin:0;
+						}
+						small {
+							font-size: 0.714em;
+							letter-spacing: 1px;
+							margin-left: 5px;
+						}
+					}
+					
+					
+					// document
+					.document {
+						right: 135px;
+						top:-55px;
+						h1, small {
+							color: #ffcb16;
+						}
+						.line {
+							background-position: 0 -370px;
+							width: 268px;
+							height: 27px;
+						}
+					}
+					
+					// document
+					.audio {
+						right: 189px;
+						top:-6px;
+						h1, small {
+							color: @euscreen-green;
+						}
+						.line {
+							background-position: 0 -397px;
+							width: 215px;
+							height: 3px;
+						}
+					}
+					
+					// document
+					.image {
+						right: 230px;
+						top:58px;
+						h1, small {
+							color: @euscreen-red;
+						}
+						.line {
+							background-position: 0 -400px;
+							width: 175px;
+							height: 3px;
+						}
+					}
+					
+					// document
+					.video {
+						right: 189px;
+						top:150px;
+						h1, small {
+							color: @euscreen-blue;
+						}
+						.line {
+							background-position: 0 -403px;
+							width: 217px;
+							height: 3px;
+						}
+					}
+				}
+			}
+		}
+		
+		// heading
+		.heading {
+			text-align: center;
+			
+			h2 {
+				font-size: 1.429em;
+				margin-bottom: 8px;
+				margin-top:10px;
+			}	
+			p {
+				color: @euscreen-red;
+				font-size: 0.786em;
+				letter-spacing: 1px;		
+			}
+		}
+		
 		// metadata facts
 		.metadata-facts {
 			background: #fff;
-			margin-top:6px;
+			margin-top:1px;
 			
 			> [class*="col-"] {
-			    padding: 20px 20px 0px;
-			}
-			
-			// heading
-			.heading {
-				text-align: center;
-				h2 {
-					font-size: 1.429em;
-					margin-bottom: 8px;
-					margin-top:10px;
-				}	
-				p {
-					color: @euscreen-red;
-					font-size: 0.786em;
-					letter-spacing: 1px;		
-				}
+			    padding: 20px 20px 0px 20px;
 			}
 			
 			// custom row

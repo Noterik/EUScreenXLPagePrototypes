@@ -8,6 +8,7 @@ $(document).ready(function () {
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
+        this.$chartElement = jQuery('.chart');
         
         // nav panel
         this.$navElement.slidePanelJS({
@@ -16,6 +17,10 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+        
+       
+        
+        
     };
 
     EUScreenXL.ContentSelectionPage.prototype = Object.create(EUScreenXL.Page.prototype);
@@ -38,4 +43,16 @@ $(document).ready(function () {
     }
 
     new EUScreenXL.ContentSelectionPage();
+});
+
+// load chart
+$(window).load(function () {
+	$('.chart').animate({
+		opacity : 1,
+		marginTop : 80
+	},1000, function(){
+		$('.ingest').animate({
+			opacity : 1
+		},600);
+	});
 });
