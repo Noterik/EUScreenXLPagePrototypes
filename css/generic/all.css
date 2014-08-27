@@ -1520,6 +1520,9 @@ body .box-link:hover {
     margin-top: 0px;
     padding-top: 0px;
   }
+  body .about .main .content-partners .partners-filter .btn-default {
+    padding: 8px 20px 7px 20px;
+  }
   body .about .main .content-selection-aggregation {
     padding-bottom: 0px;
   }

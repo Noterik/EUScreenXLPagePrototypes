@@ -5,39 +5,6 @@
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
-.about .jumbotron-wide {
-  background: url('../../img/content/bg-about.gif') no-repeat;
-  background-size: cover;
-  height: 250px;
-  text-align: center;
-  display: none;
-}
-.about .jumbotron-wide .navigate {
-  margin: 110px 0 0 0;
-}
-.about .jumbotron-wide .navigate span {
-  color: #ffffff;
-  display: inline-block;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: 1.141em;
-  padding: 0 15px 0 15px;
-}
-.about .jumbotron-wide .navigate a {
-  border: 2px solid #fff;
-  border-color: #fff;
-  border-radius: 2px;
-  padding: 6px 20px 5px 20px;
-  letter-spacing: 1.3px;
-  font-size: 0.929em;
-  color: #ffffff;
-  -webkit-transition: color 0.35s, border-color 0.35s;
-  transition: color 0.35s, border-color 0.35s;
-}
-.about .jumbotron-wide .navigate a:hover {
-  color: #8cc63f;
-  border-color: #8cc63f;
-}
 .about .main .about-content {
   background: #ffffff;
   padding: 50px 0 50px 0;
@@ -312,20 +279,18 @@
   background: none;
   text-shadow: none;
   box-shadow: none;
-  border: 1px solid #cccccc;
-  color: #aeaeae;
+  border: 1px solid #00aeef;
+  color: #00aeef;
   letter-spacing: 1px;
   font-size: 0.857em;
   padding: 8px 12px 7px 12px;
   border-radius: 3px;
 }
-.about .main .content-partners .partners-filter .btn-default.active {
-  border-color: #00aeef;
-  color: #00aeef;
-}
+.about .main .content-partners .partners-filter .btn-default.active,
 .about .main .content-partners .partners-filter .btn-default:hover {
-  color: #00aeef;
+  background: #00aeef;
   border-color: #00aeef;
+  color: #fff;
 }
 .about .main .content-partners .partners-filter .btn-group:first-child .btn {
   border-bottom-right-radius: 0px;

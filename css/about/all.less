@@ -12,51 +12,7 @@
 // every page starts with .page class selector
 // for body element styling, go to generic/all.css
 .about {
-	
-	// jumbotron wide
-	.jumbotron-wide {
-		background: url('../../img/content/bg-about.gif') no-repeat;
-		background-size: cover;
-		height: 250px;
-		text-align: center;
-		display: none;
 		
-		// navigate
-		.navigate {
-		
-			// margin
-			margin: 110px 0 0 0;
-			
-			// elements
-			span {
-				color: @euscreen-white;
-				display: inline-block;
-				font-family: @font-family-serif;
-				font-style: italic;
-				font-size: 1.141em;
-				padding: 0 15px 0 15px;
-			}
-			
-			// anchor
-			a {
-				border: 2px solid #fff;
-				border-color: #fff;
-				border-radius: 2px;
-				padding: 6px 20px 5px 20px;
-				letter-spacing: 1.3px;
-				font-size: 0.929em;
-				color: @euscreen-white;
-				.transition(color 0.35s, border-color 0.35s;);
-				
-				// hover
-				&:hover {
-					color: @euscreen-green;
-					border-color: @euscreen-green;
-				}
-			}
-		}
-	}
-	
 	// main
 	.main {
 	
@@ -401,21 +357,17 @@
 					background: none;
 					text-shadow: none;
 					box-shadow: none;
-					border:1px solid @gray-light;
-					color: #aeaeae;
+					border:1px solid @euscreen-blue;
+					color: @euscreen-blue;
 					letter-spacing: 1px;
 					font-size: 0.857em;	
-					//res padding: 8px 20px 7px 20px;
+					//res 
 					padding: 8px 12px 7px 12px;
 					border-radius: 3px;
-					&.active {
-						//background: @euscreen-blue;
+					&.active, &:hover {
+						background: @euscreen-blue;
 						border-color: @euscreen-blue;
-						color: @euscreen-blue;
-					}
-					&:hover {
-						color: @euscreen-blue;
-						border-color: @euscreen-blue;
+						color: #fff;
 					}
 				}
 				
