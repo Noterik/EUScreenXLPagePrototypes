@@ -837,14 +837,14 @@ body div.icono-remove {
 body i.icono-metadata,
 body span.icono-metadata,
 body div.icono-metadata {
-  background-position: 0 -290px;
+  background-position: -396px -290px;
   width: 99px;
   height: 99px;
 }
 body i.icono-ebu,
 body span.icono-ebu,
 body div.icono-ebu {
-  background-position: -99px -290px;
+  background-position: 0px -290px;
   width: 99px;
   height: 99px;
 }
@@ -865,7 +865,7 @@ body div.icono-cc {
 body i.icono-opendata,
 body span.icono-opendata,
 body div.icono-opendata {
-  background-position: -396px -290px;
+  background-position: -99px -290px;
   width: 99px;
   height: 99px;
 }
@@ -1613,6 +1613,7 @@ body .box-link:hover {
 @media (min-width: 1200px) {
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
     width: 1000px;
+    margin-top: 50px;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption p {
     width: 950px;
@@ -1655,5 +1656,8 @@ body .box-link:hover {
   }
   body .about .main .content-selection-aggregation .items .graph .chart {
     margin-top: 50px;
+  }
+  body .about .main .partners-list .provider .wrap {
+    padding-top: 10px;
   }
 }

@@ -375,30 +375,10 @@
 }
 .about .main .partners-list .provider .wrap {
   display: block;
+  padding-top: 0px;
 }
 .about .main .partners-list .provider .wrap img {
   display: inline-block;
-}
-.about .main .partners-list .provider .wrap.bg {
-  padding-top: 17px;
-}
-.about .main .partners-list .provider .wrap.dw {
-  padding-top: 8px;
-}
-.about .main .partners-list .provider .wrap.cinne {
-  padding-top: 9px;
-}
-.about .main .partners-list .provider .wrap.ceska {
-  padding-top: 26px;
-}
-.about .main .partners-list .provider .wrap.rte {
-  padding-top: 1px;
-}
-.about .main .partners-list .provider .wrap.rtbf {
-  padding-top: 16px;
-}
-.about .main .partners-list .provider .wrap.dr {
-  padding-top: 15px;
 }
 .about .main .about-section [class*='col-'] {
   padding-left: 0px;

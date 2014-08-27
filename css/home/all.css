@@ -72,21 +72,28 @@ body .home .main {
   font-size: 1em;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-1 {
-  background: url('../../img/content/bg-home-1.gif') no-repeat;
+  background: url('../../img/content/homepage_banner_euscreen.png') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-2 {
-  background: url('../../img/content/bg-home-2.gif') no-repeat;
+  background: url('../../img/content/homepage_banner_collection.png') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg-3 {
-  background: url('../../img/content/bg-home-3.gif') no-repeat;
+  background: url('../../img/content/homepage_banner_blog.png') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg-4 {
+  background: url('../../img/content/homepage_banner_myeuscreen.png') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
