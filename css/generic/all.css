@@ -1362,6 +1362,9 @@ body .box-link:hover {
   body .item .main .row .left .row .media-metadata {
     margin: 1px 0 0 0;
   }
+  body .item .main .row .left .row .media-metadata h1 {
+    width: 100%;
+  }
   body .home .main {
     padding-bottom: 6px !important;
   }
