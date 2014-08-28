@@ -1293,13 +1293,6 @@ body .box-link:hover {
     display: block;
     width: 494px;
   }
-  body .page .main .right .row.results-action {
-    padding-top: 70px;
-  }
-  body .page .main .right .row.results-action .counter {
-    font-size: 0.929em;
-    margin: 6px 0 0 0;
-  }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading,
   body .page .main .right .row .media-relate .media-item .media-metadata h3.media-heading {
     font-size: 1.4em;
@@ -1337,6 +1330,23 @@ body .box-link:hover {
   }
   body .search .main .right.fix {
     margin-left: 250px;
+  }
+  body .search .main .right .row.results-action {
+    padding-top: 70px;
+  }
+  body .search .main .right .row.results-action .counter {
+    margin: 6px 0 0 0;
+  }
+  body .search .main .right .row.results-action .counter .pull-left {
+    margin-top: 18px;
+  }
+  body .search .main .right .row.results-action .counter .pull-right .wrap-dropdown {
+    padding: 18px 15px 0px 15px;
+  }
+  body .search .main .right .row.results-action .counter .pull-right .sort-option a {
+    width: 60px;
+    font-size: 1.286em;
+    padding-top: 16px;
   }
   body .content-map .main .row.content .info {
     border-left: 0px;
@@ -1641,6 +1651,36 @@ body .box-link:hover {
   }
   body .search .main .left.fix-bottom {
     bottom: 233px !important;
+  }
+  body .search .main .right.fix {
+    margin-left: 323.3333px;
+  }
+  body .search .main .right .row.results-action .counter .pull-left {
+    font-size: 0.84em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  body .search .main .right .row.results-action .counter .pull-right .wrap-dropdown {
+    padding-top: 20px;
+    border-left: 0px;
+    height: auto;
+    width: auto;
+    font-size: 0.84em;
+  }
+  body .search .main .right .row.results-action .counter .pull-right .sort-option {
+    margin-right: 20px;
+  }
+  body .search .main .right .row.results-action .counter .pull-right .sort-option a {
+    border-left: 0px;
+    height: auto;
+    width: auto;
+    font-size: 1em;
+    margin-top: 18px;
+    padding-top: 0px;
+  }
+  body .search .main .right .row.results-action .counter .pull-right .sort-option a:active {
+    background: #fff;
+    color: #00aeef;
   }
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-controls li .jp-mute,
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-controls li .jp-unmute {

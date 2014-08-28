@@ -152,18 +152,6 @@
 							}
 						}
 						
-						// results action
-						&.results-action {
-							padding-top:70px;
-							
-							// counter and sorting options
-							// make the size smaller and set margin top to 6px (spaces to the mediatab)
-							.counter {
-								font-size: 0.929em;
-								margin:6px 0 0 0;
-							}
-						}
-						
 						// results wrapper
 						.results, .media-relate {
 							
@@ -247,6 +235,38 @@
 					// set margin left due to sidebar fixed position
 					&.fix {
 						margin-left: 250px;
+					}
+					
+					// row
+					.row {
+						// results-action
+						&.results-action {
+							padding-top:70px;
+							
+							// counter
+							.counter {
+								margin:6px 0 0 0;
+									
+								// numbers
+								.pull-left {	
+									margin-top:18px;
+								}
+								
+								// action
+								.pull-right {
+									.wrap-dropdown {
+										padding: 18px 15px 0px 15px;
+									}
+									.sort-option {
+										a {
+											width: 60px;
+											font-size: 1.286em;
+											padding-top:16px;
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1126,8 +1146,62 @@
 						bottom: 233px !important;
 					}
 				}
+				
+				// right
+				.right {
+				
+					// set margin left due to sidebar fixed position
+					&.fix {
+						margin-left: 323.3333px;
+					}
+					
+					// row
+					.row {
+						// results-action
+						&.results-action {
+							
+							// counter
+							.counter {
+									
+								// numbers
+								.pull-left {
+									font-size: 0.84em;
+									margin-top:20px;
+									margin-bottom:20px;
+								}
+								
+								// action
+								.pull-right {
+									.wrap-dropdown {
+										padding-top:20px;
+										border-left: 0px;
+										height: auto;
+										width: auto;
+										font-size: 0.84em;
+									}
+									.sort-option {
+										margin-right: 20px;
+										a {
+											border-left: 0px;
+											height: auto;
+											width: auto;
+											font-size: 1em;
+											margin-top:18px;
+											padding-top:0px;
+											&:active {
+												background: #fff;
+												color: @euscreen-blue;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
+		
 		
 		// audio player
 		.audio-player {

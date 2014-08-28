@@ -384,14 +384,18 @@
 					.counter {
 						.clearfix;
 						background: #fff;
-						font-size: 1.28em;
+						font-size: 1.1em;
 						font-family: @font-family-monospace;
 						color: @euscreen-gray;
 						margin:1px 0 0 0;
-						padding: 20px;
+						padding-right: 0px;
+						padding-left: 0px;
 						
 						// left
 						.pull-left {
+							margin-top:17px;
+							margin-left: 20px;
+							
 							.number {
 								color: @euscreen-blue;
 								font-weight: bold;
@@ -401,39 +405,65 @@
 						// right
 						.pull-right {
 							
-							// dropdown
-							.dropdown {
-								display: inline-block;
+							// wrap
+							.wrap-dropdown {
+								float:right;
+								height: 60px;
+								border-left: 1px solid @body-bg;
+								padding: 17px 10px 0px 10px;
 								
-								// overwrite the default dropdown style
-								ul.dropdown-menu {
-									margin-top:0px;
-									margin-bottom: 0px;
-									background: @euscreen-white;
-									border-radius: 0px;
-									box-shadow: none;
-									padding: 1px 1px 0px 1px;
-									font-size: 1em;
-									> .active {
-										> a, > a:hover, > a:active {
-											background-image: none;
-										}
-									}
+								// dropdown
+								.dropdown {
+									
 									a {
-										color: @euscreen-gray;
-										margin-bottom: 1px;
-										&:hover {
-											background-image: none;
-											color: @euscreen-white;
+										padding-top:10px;
+									}
+									
+									// overwrite the default dropdown style
+									ul.dropdown-menu {
+										margin-top:0px;
+										margin-bottom: 0px;
+										background: @euscreen-white;
+										border-radius: 0px;
+										box-shadow: none;
+										padding: 1px 1px 0px 1px;
+										font-size: 1em;
+										> .active {
+											> a, > a:hover, > a:active {
+												background-image: none;
+											}
+										}
+										a {
+											color: @euscreen-gray;
+											margin-bottom: 1px;
+											&:hover, &:active {
+												background: @euscreen-blue;
+												color: @euscreen-white;
+											}
 										}
 									}
 								}
 							}
 							
+							
 							// sort option
-							.sortOption {
-								display: inline-block;
-								margin: 0 0 0 10px;	
+							.sort-option {
+								float:right;
+								
+								a {
+									width: 50px;
+									height: 60px;
+									display: inline-block;
+									border-left: 1px solid @body-bg;
+									text-align: center;
+									padding-top: 15px;
+									font-size: 1.2em;
+									
+									&:active {
+										background: @euscreen-blue;
+										color: #fff;
+									}
+								}
 							}
 						}
 					}
