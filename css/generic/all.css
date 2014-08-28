@@ -483,6 +483,34 @@ body .page .main .media-action .overlaycontent .list-group .plus-sign {
 body .page .main .media-action .overlaycontent .btn-euscreen {
   margin-top: 6px;
 }
+body .page .main .media-action .overlaycontent .permalink {
+  margin: 15px 0 0 0;
+}
+body .page .main .media-action .overlaycontent .permalink .input-group-addon {
+  border-color: #00aeef;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: #fff;
+  background: #00aeef;
+}
+body .page .main .media-action .overlaycontent .permalink .form-control {
+  border-color: #00aeef;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #555555;
+}
+body .page .main .media-action .overlaycontent .permalink .form-control[readonly] {
+  background: #fff;
+  cursor: inherit;
+}
 body .page .main .media-action .overlaycontent .select-wrap {
   position: relative;
   overflow: hidden;
