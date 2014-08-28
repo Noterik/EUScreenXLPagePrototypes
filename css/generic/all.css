@@ -266,10 +266,10 @@ body .page .main .media-item .media-metadata {
   color: #333333;
 }
 body .page .main .media-item .media-metadata a h3.media-heading {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.3em;
   font-weight: normal;
-  margin: -5px 0 9px 0;
+  margin: -3px 0 9px 0;
   color: #333333;
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
@@ -293,6 +293,7 @@ body .page .main .media-item .media-metadata .line .label {
 }
 body .page .main .media-item .media-metadata .line .value {
   font-size: 0.929em;
+  color: #808080;
 }
 body .page .main .media-item .media-wrapper {
   position: relative;
@@ -1309,6 +1310,7 @@ body .box-link:hover {
   body .page .main .right .row .results .media-item .media-metadata .line .value,
   body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
     font-size: 1em;
+    color: inherit;
   }
   body .page .main .jumbotron-small .hue .pads {
     padding: 45px 50px 0px 50px;
