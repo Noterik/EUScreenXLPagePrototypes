@@ -516,6 +516,7 @@ body .page .main .media-action .overlaycontent .select-wrap {
   position: relative;
   overflow: hidden;
   width: 100%;
+  background: #00aeef;
 }
 body .page .main .media-action .overlaycontent .select-wrap select {
   border: 0 none;
@@ -524,6 +525,10 @@ body .page .main .media-action .overlaycontent .select-wrap select {
   width: 107%;
   padding: 10px;
   font-size: 1.1em;
+  -webkit-appearance: none;
+}
+body .page .main .media-action .overlaycontent .select-wrap select option {
+  color: #00aeef;
 }
 body .page .main .media-action .overlaycontent .select-wrap i {
   font-size: 1.2em;
@@ -531,15 +536,18 @@ body .page .main .media-action .overlaycontent .select-wrap i {
   top: 15px;
 }
 body .page .main .media-action .overlaycontent .folder-action {
-  color: #8cc63f;
+  color: #00aeef;
   letter-spacing: 1px;
-  border: 1px solid #8cc63f;
-  font-size: 0.83em;
+  border: 1px solid #00aeef;
+  font-size: 0.8em;
   padding: 4px 10px 1px 10px;
   border-radius: 3px;
   float: right;
   margin-top: -3px;
   margin-bottom: 10px;
+}
+body .page .main .media-action .overlaycontent .btn-euscreen {
+  background: #00aeef;
 }
 body .page .main .media-action .button-list {
   margin: 0;
