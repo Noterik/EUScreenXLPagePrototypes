@@ -26,7 +26,7 @@ $(document).ready(function () {
 	        	followParent : '#results',
 	        	device : EUScreenXL.Page.prototype.device,
 	        	sidebarHeight : $(window).height() - $('.navbar').height(),
-	        	bottom : 200,
+	        	bottom : 120,
 	        	startClass : 'fix',
 	        	endClass : 'fix-bottom'
 	        }); 
