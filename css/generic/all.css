@@ -525,7 +525,7 @@ body .page .main .media-action .overlaycontent .select-wrap select {
   width: 107%;
   padding: 10px;
   font-size: 1.1em;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }
 body .page .main .media-action .overlaycontent .select-wrap select option {
   color: #00aeef;
