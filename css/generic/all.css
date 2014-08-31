@@ -55,7 +55,10 @@ body .page header .navbar {
   border-bottom: 1px solid #f2f2f2;
   height: 70px;
 }
-body .page header .navbar ul li a {
+body .page header .navbar > .container {
+  position: relative;
+}
+body .page header .navbar .navbar-collapse ul li a {
   font-size: 1.071em;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #808080;
@@ -66,17 +69,17 @@ body .page header .navbar ul li a {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-body .page header .navbar ul li a:hover {
+body .page header .navbar .navbar-collapse ul li a:hover {
   background: none;
   color: #00aeef;
 }
-body .page header .navbar ul li:first-child a {
+body .page header .navbar .navbar-collapse ul li:first-child a {
   border-left: 1px solid #f2f2f2;
 }
-body .page header .navbar ul li:last-child {
+body .page header .navbar .navbar-collapse ul li:last-child {
   padding: 17px 0 0 30px;
 }
-body .page header .navbar ul li:last-child a {
+body .page header .navbar .navbar-collapse ul li:last-child a {
   padding: 7px 26px 8px 26px;
   background-color: #00aeef;
   height: auto;
@@ -86,13 +89,42 @@ body .page header .navbar ul li:last-child a {
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
 }
-body .page header .navbar ul li:last-child a:hover {
+body .page header .navbar .navbar-collapse ul li:last-child a:hover {
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
   background-color: #0090c6;
 }
-body .page header .navbar ul li.active a {
+body .page header .navbar .navbar-collapse ul li.active a {
   color: #00aeef;
+}
+body .page header .navbar .user-thumbnail {
+  position: absolute;
+  right: -60px;
+  top: 17px;
+  width: 37px;
+  height: 37px;
+}
+body .page header .navbar .user-thumbnail .frame {
+  width: 37px;
+  height: 37px;
+  background: url("../../img/sprites.png") -236px -425px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+body .page header .navbar .user-thumbnail .status-icon {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 4px;
+  background: #8be415;
+}
+body .page header .navbar .user-thumbnail .dropdown-menu li a {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  padding: 5px 10px 5px 15px;
 }
 body .page header .navbar .navbar-header {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
@@ -680,8 +712,26 @@ body .page .main .content-text.blue {
   border-bottom: 5px solid #00aeef;
 }
 body .page .jumbotron-wide {
+  height: 200px;
   margin-top: 70px;
   width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+body .page .jumbotron-wide .wrap {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: block;
+  text-align: center;
+}
+body .page .jumbotron-wide .wrap h1 {
+  color: #fff;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  padding-top: 80px;
 }
 body .page footer {
   position: absolute;
@@ -1121,6 +1171,29 @@ body .audio-player .jp-no-solution span {
   text-align: center;
   font-weight: bold;
 }
+body ul.dropdown-menu {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 1px 1px 0px 1px;
+  font-size: 1em;
+}
+body ul.dropdown-menu > .active > a,
+body ul.dropdown-menu > .active > a:hover,
+body ul.dropdown-menu > .active > a:active {
+  background-image: none;
+}
+body ul.dropdown-menu a {
+  color: #808080;
+  margin-bottom: 1px;
+}
+body ul.dropdown-menu a:hover,
+body ul.dropdown-menu a:active {
+  background: #00aeef;
+  color: #ffffff;
+}
 body .modal .close {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -1316,6 +1389,9 @@ body .box-link:hover {
   body .page .main .jumbotron-small .hue .pads {
     padding: 45px 50px 0px 50px;
   }
+  body .page .jumbotron-wide .wrap h1 {
+    font-size: 2.5em;
+  }
   body .search .main .left {
     border-top: 5px solid #f2f2f2;
   }
@@ -1355,6 +1431,19 @@ body .box-link:hover {
     margin-top: 0px;
     border-left: 0px;
     border-right: 0px;
+  }
+  body .terms .main .static-page .content,
+  body .privacy .main .static-page .content {
+    width: 520px;
+  }
+  body .terms .main .static-page .content .pads,
+  body .privacy .main .static-page .content .pads {
+    padding: 50px;
+  }
+  body .terms .main .static-page .content .pads h1,
+  body .privacy .main .static-page .content .pads h1 {
+    font-size: 2em;
+    margin-top: 0px;
   }
   body .item .main .row .right {
     border-left: 0px;
@@ -1435,6 +1524,9 @@ body .box-link:hover {
   }
   body .about .main .content-selection-aggregation .intro h2 {
     text-align: center;
+  }
+  body .about .main .content-selection-aggregation .items {
+    padding-bottom: 50px;
   }
   body .about .main .content-selection-aggregation .items .graph .chart {
     margin: 0 auto;
@@ -1529,6 +1621,22 @@ body .box-link:hover {
   }
   body .item .main .row .right .row .section-content .discover-more {
     font-size: 1em;
+  }
+  body .terms .main .static-page .sidebar,
+  body .privacy .main .static-page .sidebar {
+    width: 250px;
+  }
+  body .terms .main .static-page .sidebar ul,
+  body .privacy .main .static-page .sidebar ul {
+    width: 250px;
+  }
+  body .terms .main .static-page .sidebar ul li a,
+  body .privacy .main .static-page .sidebar ul li a {
+    font-size: 1.087em;
+  }
+  body .terms .main .static-page .content,
+  body .privacy .main .static-page .content {
+    width: 690px;
   }
   body .search header .navbar .container .navbar-header .navbar-form {
     display: none !important;
@@ -1675,7 +1783,7 @@ body .box-link:hover {
     height: auto;
     width: auto;
     font-size: 1em;
-    margin-top: 18px;
+    margin-top: 16px;
     padding-top: 0px;
   }
   body .search .main .right .row.results-action .counter .pull-right .sort-option a:active {
@@ -1743,5 +1851,9 @@ body .box-link:hover {
   }
   body .about .main .partners-list .provider .wrap {
     padding-top: 10px;
+  }
+  body .terms .main .static-page .content,
+  body .privacy .main .static-page .content {
+    width: 890px;
   }
 }

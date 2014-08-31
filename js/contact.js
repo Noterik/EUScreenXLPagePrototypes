@@ -3,12 +3,13 @@ $(document).ready(function () {
         throw "EUScreenXL required libraries not there!";
     }
 
-    EUScreenXL.ContentProviderPage = function () {
-        EUScreenXL.Page.apply(this, arguments);
+    EUScreenXL.ContactPage = function () {
+        EUScreenXL.Page.apply(this, arguments);        
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
-        
+        var obj = this;
+
         // nav panel
         this.$navElement.slidePanelJS({
             openButton: '#menubutton',
@@ -18,11 +19,11 @@ $(document).ready(function () {
         });
     };
 
-    EUScreenXL.ContentProviderPage.prototype = Object.create(EUScreenXL.Page.prototype);
-    EUScreenXL.ContentProviderPage.prototype.searchButton = jQuery("#searchbutton");
-    EUScreenXL.ContentProviderPage.prototype.menuButton = jQuery("#menubutton");
-    EUScreenXL.ContentProviderPage.prototype.name = "content-provider";
-    EUScreenXL.ContentProviderPage.prototype.events = {
+    EUScreenXL.ContactPage.prototype = Object.create(EUScreenXL.Page.prototype);
+    EUScreenXL.ContactPage.prototype.searchButton = jQuery("#searchbutton");
+    EUScreenXL.ContactPage.prototype.menuButton = jQuery("#menubutton");
+    EUScreenXL.ContactPage.prototype.name = "contact";
+    EUScreenXL.ContactPage.prototype.events = {
     	'click #searchbutton': function(event) {
             if(this.searchButton.hasClass("active")) {
                 this.searchButton.removeClass("active"); // toggle style
@@ -37,5 +38,5 @@ $(document).ready(function () {
         }
     }
 
-    new EUScreenXL.ContentProviderPage();
+    new EUScreenXL.ContactPage();
 });

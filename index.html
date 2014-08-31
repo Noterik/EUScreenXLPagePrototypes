@@ -79,6 +79,20 @@
                                 <li><a href="myeuscreen.html">MYEUSCREEN</a></li>
                             </ul>
                         </div>
+                        
+                        <!-- my euscreen thumbnail, will be shown only when user has logged in on every page except on desktop -->
+                        <div class="user-thumbnail hidden-xs hidden-sm">
+                        	<a role="button" data-toggle="dropdown" data-target="login-action" href="/myeuscreen.html">
+						    	<img src="img/ic-user.png" alt="User"/>
+						    	<span class="frame"></span> <span class="status-icon"></span>
+						    </a>
+                        	
+                        	<!-- drop down -->
+                        	<ul id="login-action" class="dropdown-menu pull-right" role="menu" aria-labelledby="login-action">
+                				<li><a href="myeuscreen.html" value="TITLE">MYEUSCREEN</a></li>
+                				<li><a href="#" value="YEAR">LOGOUT</a></li>
+                			</ul>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -484,10 +498,10 @@
                             <span class="links">
                                 <ul class="list-inline">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="index.html">About</a></li>
-                                    <li><a href="index.html">Terms of Use</a></li>
-                                    <li><a href="index.html">Privacy</a></li>
-                                    <li><a href="index.html">Contact</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="terms.html">Terms of Use</a></li>
+                                    <li><a href="privacy.html">Privacy</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </span>
                             <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>

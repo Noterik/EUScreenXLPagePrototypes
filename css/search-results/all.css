@@ -400,30 +400,7 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   padding: 17px 10px 0px 10px;
 }
 .search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown a {
-  padding-top: 10px;
-}
-.search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown ul.dropdown-menu {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background: #ffffff;
-  border-radius: 0px;
-  box-shadow: none;
-  padding: 1px 1px 0px 1px;
-  font-size: 1em;
-}
-.search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown ul.dropdown-menu > .active > a,
-.search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown ul.dropdown-menu > .active > a:hover,
-.search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown ul.dropdown-menu > .active > a:active {
-  background-image: none;
-}
-.search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown ul.dropdown-menu a {
-  color: #808080;
-  margin-bottom: 1px;
-}
-.search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown ul.dropdown-menu a:hover,
-.search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown ul.dropdown-menu a:active {
-  background: #00aeef;
-  color: #ffffff;
+  padding: 5px 0px 5px 15px;
 }
 .search .main .right .row.results-action .counter .pull-right .sort-option {
   float: right;

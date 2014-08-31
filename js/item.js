@@ -54,7 +54,7 @@ $(document).ready(function () {
             $("#jquery_jplayer_1").jPlayer({
 				ready: function () {
 					$(this).jPlayer("setMedia", {
-						mp3: "http://192.168.1.183:8888/ink.mp3"
+						mp3: "http://localhost:8888/ink.mp3"
 					});
 				},
 				supplied: "mp3"

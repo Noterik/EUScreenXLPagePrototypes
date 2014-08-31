@@ -3,7 +3,7 @@ $(document).ready(function () {
         throw "EUScreenXL required libraries not there!";
     }
 
-    EUScreenXL.ContentSelectionPage = function () {
+    EUScreenXL.PrivacyPage = function () {
         EUScreenXL.Page.apply(this, arguments);
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
@@ -17,17 +17,13 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
-        
-       
-        
-        
     };
 
-    EUScreenXL.ContentSelectionPage.prototype = Object.create(EUScreenXL.Page.prototype);
-    EUScreenXL.ContentSelectionPage.prototype.searchButton = jQuery("#searchbutton");
-    EUScreenXL.ContentSelectionPage.prototype.menuButton = jQuery("#menubutton");
-    EUScreenXL.ContentSelectionPage.prototype.name = "content-selection";
-    EUScreenXL.ContentSelectionPage.prototype.events = {
+    EUScreenXL.PrivacyPage.prototype = Object.create(EUScreenXL.Page.prototype);
+    EUScreenXL.PrivacyPage.prototype.searchButton = jQuery("#searchbutton");
+    EUScreenXL.PrivacyPage.prototype.menuButton = jQuery("#menubutton");
+    EUScreenXL.PrivacyPage.prototype.name = "privacy";
+    EUScreenXL.PrivacyPage.prototype.events = {
     	'click #searchbutton': function(event) {
             if(this.searchButton.hasClass("active")) {
                 this.searchButton.removeClass("active"); // toggle style
@@ -42,17 +38,5 @@ $(document).ready(function () {
         }
     }
 
-    new EUScreenXL.ContentSelectionPage();
-});
-
-// load chart
-$(window).load(function () {
-	$('.chart').animate({
-		opacity : 1,
-		marginTop : 80
-	},1000, function(){
-		$('.ingest').animate({
-			opacity : 1
-		},600);
-	});
+    new EUScreenXL.PrivacyPage();
 });
