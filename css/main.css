@@ -11,6 +11,12 @@
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
+ 
+ /*
+ * EUscreen design by Akbar Khrisna
+ * Pinest Design (@pinestdesign)
+ */
+ 
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;

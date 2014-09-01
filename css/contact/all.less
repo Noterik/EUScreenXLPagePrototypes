@@ -12,7 +12,7 @@
 // every page starts with .page class selector
 // for body element styling, go to generic/all.css
 .contact {
-	
+
 	// jumbotron
 	.jumbotron-wide {
 		background: url('../../img/content/bg-terms.jpg');
@@ -20,7 +20,111 @@
 	
 	// main
 	.main {
-		
+		padding-top: 0px !important;
 
+		// page
+		.static-page {
+			background: #fff;
+			.clearfix;
+			
+			// sidebar
+			.sidebar {
+				width: 200px;
+				float: left;
+				min-height: 200px;
+				
+				// list
+				ul {
+					width: 200px;
+					margin: 0;
+					padding: 45px 0 0 0;
+					text-align: right;
+					
+					&.affix {
+						top:80px;
+					}
+					
+					li {
+						list-style: none;
+						
+						a {
+							color: #000;
+							font-size: 1em;
+							letter-spacing: 1px;
+							display: block;
+							text-align: right;
+							width: 85%;
+							padding: 12px 30px 10px 30px;
+							float: right;
+							margin-bottom: 1px;
+							
+							&:hover {
+								background: #f5f5f5;
+							}
+						}
+						
+						&.active {
+							a {
+								background: #f5f5f5;
+							}
+						}
+					}
+				}
+			}
+
+			// content
+			.content {
+				width: 100%;
+				border-left: 1px solid #e5e5e5;
+				float: left;
+				overflow: auto;
+				
+				// pads
+				.pads {
+					padding: 20px;
+					
+					// head
+					h1 {
+						margin-top:10px;
+						margin-bottom: 30px;
+						font-size: 1.6em;
+					}
+					p {
+						line-height: 1.8em;
+						color: #777;
+					}
+					h2 {
+						margin-bottom: 20px;
+						font-family: @font-family-base;
+						letter-spacing: 1px;
+						color: #000;
+						font-size: 1.143em;
+					}
+					h3 {
+						margin-bottom: 20px;
+						font-family: @font-family-base;
+						letter-spacing: 0.5px;
+						color: #000;
+						font-size: 1.02em;
+					}
+					a {
+						color: #000;
+						border-bottom: 1px dotted #000;
+					}
+					.box-link {
+						border:0px;
+						border:1px solid @gray-light;
+						color: #aeaeae;
+						font-size: 0.857em;
+						margin-top:30px;
+						
+						&:hover {
+							border-color: @euscreen-blue;
+							color: @euscreen-blue;
+						}
+					}
+				}
+			}
+		}
 	}
 }
