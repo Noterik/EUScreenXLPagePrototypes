@@ -1,0 +1,266 @@
+{
+    "gb": {
+        "id" : "gb",
+        "name" : "United Kingdom",
+        "providers" : {
+            "BBC" : {
+                "videos" : 2000,
+                "images" : 1200,
+                "texts" : 200,
+                "audios" : 80
+            },
+            "SASE" : {
+                "videos" : 124,
+                "images" : 875,
+                "texts" : 53,
+                "audios" : 9
+            }
+        }
+    },
+    "gr": {
+        "id" : "gr",
+        "name" : "Greece",
+        "providers" : {
+            "ERT" : {
+                "videos" : 2000,
+                "images" : 1200,
+                "texts" : 200,
+                "audios" : 80
+            },
+            "HENAA" : {
+                "videos" : 3000,
+                "images" : 2200,
+                "texts" : 300,
+                "audios" : 90
+            }
+        }
+    },
+    "cz": {
+        "id" : "cz",
+        "name" : "Czech Republic",
+        "providers" : {
+            "CT" : {
+                "videos" : 1921,
+                "images" : 432,
+                "texts" : 12,
+                "audios" : 1
+            }
+        }
+    },
+    "se": {
+        "id" : "se",
+        "name" : "Sweden",
+        "providers" : {
+            "KB" : {
+                "videos" : 1921,
+                "images" : 432,
+                "texts" : 12,
+                "audios" : 1
+            }
+        }
+    },
+    "lt": {
+        "id" : "lt",
+        "name" : "Lithuania",
+        "providers" : {
+            "LCVA" : {
+                "videos" : 1921,
+                "images" : 432,
+                "texts" : 12,
+                "audios" : 1
+            }
+        }
+    },
+    "pl": {
+        "id" : "pl",
+        "name" : "Poland",
+        "providers" : {
+            "NINA" : {
+                "videos" : 1921,
+                "images" : 432,
+                "texts" : 12,
+                "audios" : 1
+            },
+            "TVP" : {
+                "videos" : 23,
+                "images" : 87,
+                "texts" : 12,
+                "audios" : 77
+            }
+        }
+    },
+    "ch": {
+        "id" : "ch",
+        "name" : "Switzerland",
+        "providers" : {
+            "Memoriav" : {
+                "videos" : 1921,
+                "images" : 432,
+                "texts" : 12,
+                "audios" : 1
+            }
+        }
+    },
+    "at": {
+        "id" : "at",
+        "name" : "Austria",
+        "providers" : {
+            "ORF" : {
+                "videos" : 1921,
+                "images" : 432,
+                "texts" : 12,
+                "audios" : 1
+            }
+        }
+    },
+    "es": {
+        "id" : "es",
+        "name" : "Spain",
+        "providers" : {
+            "TVC" : {
+                "videos" : 21,
+                "images" : 34,
+                "texts" : 76,
+                "audios" : 88
+            }
+        }
+    },
+    "ro": {
+        "id" : "ro",
+        "name" : "Romania",
+        "providers" : {
+            "TVR" : {
+                "videos" : 21,
+                "images" : 34,
+                "texts" : 76,
+                "audios" : 88
+            }
+        }
+    },
+    "fr": {
+        "id" : "fr",
+        "name" : "France",
+        "providers" : {
+            "INA" : {
+                "videos" : 988,
+                "images" : 213,
+                "texts" : 18,
+                "audios" : 213
+            }
+        }
+    },
+    "nl": {
+        "id" : "nl",
+        "name" : "Netherlands",
+        "providers" : {
+            "NISV" : {
+                "videos" : 988,
+                "images" : 213,
+                "texts" : 18,
+                "audios" : 213
+            }
+        }
+    },
+    "hu": {
+        "id" : "hu",
+        "name" : "Hungary",
+        "providers" : {
+            "NAVA" : {
+                "videos" : 3000,
+                "images" : 200,
+                "texts" : 1200,
+                "audios" : 50
+            }
+        }
+    },
+    "dk": {
+        "id" : "dk",
+        "name" : "Denmark",
+        "providers" : {
+            "DR" : {
+                "videos" : 3000,
+                "images" : 200,
+                "texts" : 1200,
+                "audios" : 50
+            }
+        }
+    },
+    "pt": {
+        "id" : "pt",
+        "name" : "Portugal",
+        "providers" : {
+            "RTP" : {
+                "videos" : 400,
+                "images" : 100,
+                "texts" : 1800,
+                "audios" : 10
+            }
+        }
+    },
+    "be": {
+        "id" : "be",
+        "name" : "Belgium",
+        "providers" : {
+            "RTBF" : {
+                "videos" : 400,
+                "images" : 100,
+                "texts" : 1800,
+                "audios" : 10
+            },
+            "VRT" : {
+                "videos" : 8554,
+                "images" : 32,
+                "texts" : 141,
+                "audios" : 520
+            }
+        }
+    },
+    "si": {
+        "id" : "si",
+        "name" : "Slovenia",
+        "providers" : {
+            "RTVSLO" : {
+                "videos" : 400,
+                "images" : 100,
+                "texts" : 1800,
+                "audios" : 10
+            }
+        }
+    },
+    "ie": {
+        "id" : "ie",
+        "name" : "Ireland",
+        "providers" : {
+            "RTE" : {
+                "videos" : 400,
+                "images" : 100,
+                "texts" : 1800,
+                "audios" : 10
+            }
+        }
+    },
+    "it": {
+        "id" : "it",
+        "name" : "Italy",
+        "providers" : {
+            "Luce" : {
+                "videos" : 400,
+                "images" : 100,
+                "texts" : 1800,
+                "audios" : 10
+            }
+        }
+    },
+    "de": {
+        "id" : "de",
+        "name" : "Germany",
+        "providers" : {
+            "DW" : {
+                "videos" : 3400,
+                "images" : 230,
+                "texts" : 11,
+                "audios" : 9
+            }
+        }
+    }
+} 

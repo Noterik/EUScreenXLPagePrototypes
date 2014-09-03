@@ -61,12 +61,14 @@
   color: #8cc63f;
 }
 .content-map .main .row.content .maps {
-  background: #fff;
   padding-left: 0px;
   padding-right: 0px;
   margin-top: 6px;
   border-left: 6px solid #f2f2f2;
   border-right: 6px solid #f2f2f2;
+}
+.content-map .main .row.content .maps .alert {
+  display: none;
 }
 .content-map .main .row.content .maps img {
   width: 100%;

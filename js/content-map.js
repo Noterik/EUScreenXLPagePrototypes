@@ -8,6 +8,7 @@ $(document).ready(function () {
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
+        var mapData = {};
         
         // nav panel
         this.$navElement.slidePanelJS({
@@ -15,6 +16,86 @@ $(document).ready(function () {
             pageSection:'#page',
             navbarSection:'#navbar',
             speed:200
+        });
+
+        // load interactive map
+        // using jqvmap (MIT License)
+        $('#vmap').vectorMap({
+            map: 'europe_en',
+            enableZoom: false,
+            showTooltip: true,
+            backgroundColor: '#fff',
+            borderColor: '#fff',
+            color: '#dedede',
+            onRegionClick: function(element, code, region)
+            {
+                // on region click
+                // get region data
+                if(mapData[code] != undefined) {
+
+                    // variables
+                    var countryData = mapData[code],
+                        countryProvider = countryData['providers'],
+                        mediaAmount = {'videos': 0, 'audios': 0, 'images': 0, 'texts': 0},
+                        providers = [],
+                        providerLink = "",
+                        providerList = "";
+                
+                    // count
+                    for (var item in countryProvider) {
+                        providers.push(item);
+                        mediaAmount['videos'] += countryProvider[item].videos;
+                        mediaAmount['audios'] += countryProvider[item].audios;
+                        mediaAmount['images'] += countryProvider[item].images;
+                        mediaAmount['texts'] += countryProvider[item].texts;
+                    }
+
+                    // set providers
+                    $(providers).each(function(i){
+                        var url = "<li><a href='search-results.html?provider="+providers[i]+"'>SEARCH "+providers[i].toUpperCase()+" CONTENT</a></li>";
+                        providerLink += url;
+                        providerList += providers[i].toUpperCase() + "<br>";
+                    });
+
+                    // get general info like country name
+                    $('#selected-country').html(mapData[code].name);
+
+                    // set amount of medias
+                    $('#selected-videos').html(mediaAmount['videos']);
+                    $('#selected-audios').html(mediaAmount['audios']);
+                    $('#selected-images').html(mediaAmount['images']);
+                    $('#selected-texts').html(mediaAmount['texts']);
+
+                    // set providers info
+                    $('#selected-searchlink').html(providerLink);
+                    $('#selected-providers').html(providerList);
+                } else {
+
+                    // show alert when no provider
+                    alert("No EUscreen provider from "+region);
+                }
+            }
+        });
+
+        // retrieve providers data (country, the amount of videos, audios etc.) from json file
+        // file has to be updated
+        $.getJSON( "js/libs/jqvmap/data/euscreen.provider.data.json", function( data ) {
+            
+            // set variable
+            mapData = data;
+
+            // highlight countries in euscreen
+            // for easier search on the map
+            var colorsST = {},
+                highlightColor = "#c0c1c5";
+
+            // loop
+            for (var item in data) {
+                colorsST[item] = highlightColor;
+            }
+
+            // set
+            $('#vmap').vectorMap('set', 'colors', colorsST);
         });
     };
 
