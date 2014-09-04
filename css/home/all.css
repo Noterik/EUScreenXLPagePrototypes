@@ -205,7 +205,7 @@ body .home .main {
 }
 .home .main .row .collection-viewer .row .media-item.media-big .media-image .media-wrapper .media-title h3 {
   font-size: 1.3em;
-  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
 }
 .home .main .row .collection-viewer .row .media-item.media-big .media-image .media-wrapper .media-hue i {
   margin: -22px 0 0 -15px;

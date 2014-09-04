@@ -37,7 +37,7 @@
   transition: opacity 0.35s;
 }
 .content-provider .main .provider-list .provider a .info h2 {
-  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
   margin: 0 auto;
   letter-spacing: 1px;
   color: #fff;
