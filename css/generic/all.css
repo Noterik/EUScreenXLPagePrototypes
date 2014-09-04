@@ -1588,6 +1588,9 @@ body .box-link:hover {
   body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
     font-size: 0.929em;
   }
+  body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
+    color: #808080;
+  }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
     margin-bottom: 8px;
   }
@@ -1839,7 +1842,7 @@ body .box-link:hover {
   }
   body .page .main .right .row .media-relate .media-item .media-metadata .line .label,
   body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
-    font-size: 1em;
+    font-size: 0.929em;
   }
   body .search .main .left.fix {
     width: 390px;

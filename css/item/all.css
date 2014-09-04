@@ -99,8 +99,10 @@
   border-bottom: 5px solid #00aeef;
 }
 .item .main .row .right .row .sectiontab .nav li {
-  width: 1%;
-  display: table-cell;
+  /*
+								width: 1%;
+								display: table-cell;
+								*/
 }
 .item .main .row .right .row .sectiontab .nav li a {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
@@ -109,7 +111,7 @@
   background: #ffffff;
   border-radius: 0px;
   font-size: 1.286em;
-  padding: 15px;
+  padding: 15px 30px 15px 30px;
   margin-bottom: 0px;
 }
 .item .main .row .right .row .sectiontab .nav li a:hover {
