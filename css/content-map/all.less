@@ -67,11 +67,22 @@
 						.provider-list {
 							border-bottom: 1px solid #f2f2f2;
 							display: block;
-							padding: 5px 0 8px 0;
+							padding: 8px 0 15px 0;
 							
 							&:last-child {
 								border:0px;
 								padding-bottom: 0px;
+							}
+							.box-link {
+								font-family: @font-family-base;
+								font-size: 0.78em;
+								padding: 7px 10px 5px;
+								margin-top:5px;
+								
+								&:hover, &:active {
+									color: @euscreen-green;
+									border-color: @euscreen-green;
+								}
 							}
 						}
 					}

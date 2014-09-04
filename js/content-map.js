@@ -44,9 +44,9 @@ $(document).ready(function () {
                     for (var item in countryProvider) {
                         
                         // set url
-                        var url = "<li><a href='search-results.html?provider="+item+"'>SEARCH "+item.toUpperCase()+" CONTENT</a></li>";
-                        providerLink += url;
-                        providerList += "<span class='provider-list'>"+countryProvider[item].name+ " ("+item.toUpperCase()+") </span>";
+                        //var url = "<li><a href='search-results.html?provider="+item+"'>SEARCH "+item.toUpperCase()+" CONTENT</a></li>";
+                        //providerLink += url;
+                        providerList += "<span class='provider-list'>"+countryProvider[item].name+ " ("+item.toUpperCase()+") <a href='search-results.html?provider="+item+"' class='box-link'>SEARCH "+item.toUpperCase()+" CONTENT</a></span>";
                         
                         // add the media
                         mediaAmount['videos'] += countryProvider[item].videos;
@@ -65,7 +65,7 @@ $(document).ready(function () {
                     $('#selected-texts').html(mediaAmount['texts']);
 
                     // set providers info
-                    $('#selected-searchlink').html(providerLink);
+                    //$('#selected-searchlink').html(providerLink);
                     $('#selected-providers').html(providerList);
                 } else {
 

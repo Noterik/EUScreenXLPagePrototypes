@@ -24,7 +24,7 @@
         "country" : "Greece",
         "providers" : {
             "ERT" : {
-            	"name" : "Elliniki Radiofonia Tileorasi",
+            	"name" : "Ellinik&iacute; Radiofon&iacute;a Tile&oacute;rasi",
                 "videos" : 2000,
                 "images" : 1200,
                 "texts" : 200,
@@ -44,7 +44,7 @@
         "country" : "Czech Republic",
         "providers" : {
             "CT" : {
-            	"name" : "Cezka Televize",
+            	"name" : "Čezk&aacute; Televize",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -70,7 +70,7 @@
         "country" : "Lithuania",
         "providers" : {
             "LCVA" : {
-            	"name" : "Lietuvos Centrinis Valstybes Archyvas",
+            	"name" : "Lietuvos Centrinis Valstyb&ecirc;s Archyvas",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -103,7 +103,7 @@
         "country" : "Switzerland",
         "providers" : {
             "Memoriav" : {
-            	"name" : "Memoriav-Association pour la sauvegarde de la memoire audiovisuelle suisse",
+            	"name" : "Memoriav-Association pour la sauvegarde de la m&eacutemoire audiovisuelle suisse",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -116,7 +116,7 @@
         "country" : "Austria",
         "providers" : {
             "ORF" : {
-            	"name" : "Osterreichischer Rundfunk",
+            	"name" : "&Ouml;sterreichischer Rundfunk",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -129,7 +129,7 @@
         "country" : "Spain",
         "providers" : {
             "TVC" : {
-            	"name" : "Televisio de Catalunya",
+            	"name" : "Televisi&oacute; de Catalunya",
                 "videos" : 21,
                 "images" : 34,
                 "texts" : 76,
@@ -142,7 +142,7 @@
         "country" : "Romania",
         "providers" : {
             "TVR" : {
-            	"name" : "Televiziunea Romana",
+            	"name" : "Televiziunea Rom&acirc;nă",
                 "videos" : 21,
                 "images" : 34,
                 "texts" : 76,
@@ -181,7 +181,7 @@
         "country" : "Hungary",
         "providers" : {
             "NAVA" : {
-            	"name" : "Nemzeti Audiovizualis Archivum",
+            	"name" : "Nemzeti Audiovizu&aacute;lis Archivum",
                 "videos" : 3000,
                 "images" : 200,
                 "texts" : 1200,
@@ -207,7 +207,7 @@
         "country" : "Portugal",
         "providers" : {
             "RTP" : {
-            	"name" : "Radio e Televisao de Portugal",
+            	"name" : "R&aacute;dio e Televis&atilde;o de Portugal",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
@@ -220,7 +220,7 @@
         "country" : "Belgium",
         "providers" : {
             "RTBF" : {
-            	"name" : "Radio-Television Belge de la Communaute Francaise",
+            	"name" : "Radio-T&eacute;l&eacute;vision Belge de la Communaut&eacute; Fran&ccedil;aise",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
@@ -253,7 +253,7 @@
         "country" : "Ireland",
         "providers" : {
             "RTE" : {
-            	"name" : "Raidio Teilifis Eireann",
+            	"name" : "Raidi&oacute; Teilif&iacute;s &Eacute;ireann",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
@@ -266,7 +266,7 @@
         "country" : "Italy",
         "providers" : {
             "Luce" : {
-            	"name" : "Istituto Luce Cinecitta",
+            	"name" : "Istituto Luce Cinecitt&agrave;",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
