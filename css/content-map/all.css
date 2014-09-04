@@ -41,6 +41,15 @@
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   display: block;
 }
+.content-map .main .row.content .info .data .provider-list {
+  border-bottom: 1px solid #f2f2f2;
+  display: block;
+  padding: 5px 0 8px 0;
+}
+.content-map .main .row.content .info .data .provider-list:last-child {
+  border: 0px;
+  padding-bottom: 0px;
+}
 .content-map .main .row.content .info .search-link {
   margin: 0;
   padding: 0;

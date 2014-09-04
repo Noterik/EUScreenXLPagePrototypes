@@ -37,28 +37,26 @@ $(document).ready(function () {
                     var countryData = mapData[code],
                         countryProvider = countryData['providers'],
                         mediaAmount = {'videos': 0, 'audios': 0, 'images': 0, 'texts': 0},
-                        providers = [],
                         providerLink = "",
                         providerList = "";
                 
                     // count
                     for (var item in countryProvider) {
-                        providers.push(item);
+                        
+                        // set url
+                        var url = "<li><a href='search-results.html?provider="+item+"'>SEARCH "+item.toUpperCase()+" CONTENT</a></li>";
+                        providerLink += url;
+                        providerList += "<span class='provider-list'>"+countryProvider[item].name+ " ("+item.toUpperCase()+") </span>";
+                        
+                        // add the media
                         mediaAmount['videos'] += countryProvider[item].videos;
                         mediaAmount['audios'] += countryProvider[item].audios;
                         mediaAmount['images'] += countryProvider[item].images;
                         mediaAmount['texts'] += countryProvider[item].texts;
                     }
 
-                    // set providers
-                    $(providers).each(function(i){
-                        var url = "<li><a href='search-results.html?provider="+providers[i]+"'>SEARCH "+providers[i].toUpperCase()+" CONTENT</a></li>";
-                        providerLink += url;
-                        providerList += providers[i].toUpperCase() + "<br>";
-                    });
-
                     // get general info like country name
-                    $('#selected-country').html(mapData[code].name);
+                    $('#selected-country').html(mapData[code].country);
 
                     // set amount of medias
                     $('#selected-videos').html(mediaAmount['videos']);
@@ -91,6 +89,7 @@ $(document).ready(function () {
 
             // loop
             for (var item in data) {
+            	console.log(item);
                 colorsST[item] = highlightColor;
             }
 

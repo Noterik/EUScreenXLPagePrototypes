@@ -1,15 +1,17 @@
 {
     "gb": {
         "id" : "gb",
-        "name" : "United Kingdom",
+        "country" : "United Kingdom",
         "providers" : {
             "BBC" : {
+            	"name" : "British Broadcasting Corporation",
                 "videos" : 2000,
                 "images" : 1200,
                 "texts" : 200,
                 "audios" : 80
             },
             "SASE" : {
+            	"name" : "Screen Archive South East",
                 "videos" : 124,
                 "images" : 875,
                 "texts" : 53,
@@ -19,15 +21,17 @@
     },
     "gr": {
         "id" : "gr",
-        "name" : "Greece",
+        "country" : "Greece",
         "providers" : {
             "ERT" : {
+            	"name" : "Elliniki Radiofonia Tileorasi",
                 "videos" : 2000,
                 "images" : 1200,
                 "texts" : 200,
                 "audios" : 80
             },
             "HENAA" : {
+            	"name" : "Hellenic National Audiovisual Archive",
                 "videos" : 3000,
                 "images" : 2200,
                 "texts" : 300,
@@ -37,9 +41,10 @@
     },
     "cz": {
         "id" : "cz",
-        "name" : "Czech Republic",
+        "country" : "Czech Republic",
         "providers" : {
             "CT" : {
+            	"name" : "Cezka Televize",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -49,9 +54,10 @@
     },
     "se": {
         "id" : "se",
-        "name" : "Sweden",
+        "country" : "Sweden",
         "providers" : {
             "KB" : {
+            	"name" : "Kungliga Biblioteket",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -61,9 +67,10 @@
     },
     "lt": {
         "id" : "lt",
-        "name" : "Lithuania",
+        "country" : "Lithuania",
         "providers" : {
             "LCVA" : {
+            	"name" : "Lietuvos Centrinis Valstybes Archyvas",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -73,15 +80,17 @@
     },
     "pl": {
         "id" : "pl",
-        "name" : "Poland",
+        "country" : "Poland",
         "providers" : {
             "NINA" : {
+            	"name" : "Narodowy Instytut Audiowizualny",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
                 "audios" : 1
             },
             "TVP" : {
+            	"name" : "Telewizja Polska",
                 "videos" : 23,
                 "images" : 87,
                 "texts" : 12,
@@ -91,9 +100,10 @@
     },
     "ch": {
         "id" : "ch",
-        "name" : "Switzerland",
+        "country" : "Switzerland",
         "providers" : {
             "Memoriav" : {
+            	"name" : "Memoriav-Association pour la sauvegarde de la memoire audiovisuelle suisse",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -103,9 +113,10 @@
     },
     "at": {
         "id" : "at",
-        "name" : "Austria",
+        "country" : "Austria",
         "providers" : {
             "ORF" : {
+            	"name" : "Osterreichischer Rundfunk",
                 "videos" : 1921,
                 "images" : 432,
                 "texts" : 12,
@@ -115,9 +126,10 @@
     },
     "es": {
         "id" : "es",
-        "name" : "Spain",
+        "country" : "Spain",
         "providers" : {
             "TVC" : {
+            	"name" : "Televisio de Catalunya",
                 "videos" : 21,
                 "images" : 34,
                 "texts" : 76,
@@ -127,9 +139,10 @@
     },
     "ro": {
         "id" : "ro",
-        "name" : "Romania",
+        "country" : "Romania",
         "providers" : {
             "TVR" : {
+            	"name" : "Televiziunea Romana",
                 "videos" : 21,
                 "images" : 34,
                 "texts" : 76,
@@ -139,9 +152,10 @@
     },
     "fr": {
         "id" : "fr",
-        "name" : "France",
+        "country" : "France",
         "providers" : {
             "INA" : {
+            	"name" : "Institut national de l'audiovisuel",
                 "videos" : 988,
                 "images" : 213,
                 "texts" : 18,
@@ -151,9 +165,10 @@
     },
     "nl": {
         "id" : "nl",
-        "name" : "Netherlands",
+        "country" : "Netherlands",
         "providers" : {
             "NISV" : {
+            	"name" : "Nederlands Instituut voor Beeld en Geluid",
                 "videos" : 988,
                 "images" : 213,
                 "texts" : 18,
@@ -163,9 +178,10 @@
     },
     "hu": {
         "id" : "hu",
-        "name" : "Hungary",
+        "country" : "Hungary",
         "providers" : {
             "NAVA" : {
+            	"name" : "Nemzeti Audiovizualis Archivum",
                 "videos" : 3000,
                 "images" : 200,
                 "texts" : 1200,
@@ -175,9 +191,10 @@
     },
     "dk": {
         "id" : "dk",
-        "name" : "Denmark",
+        "country" : "Denmark",
         "providers" : {
             "DR" : {
+            	"name" : "Danmarks Radio",
                 "videos" : 3000,
                 "images" : 200,
                 "texts" : 1200,
@@ -187,9 +204,10 @@
     },
     "pt": {
         "id" : "pt",
-        "name" : "Portugal",
+        "country" : "Portugal",
         "providers" : {
             "RTP" : {
+            	"name" : "Radio e Televisao de Portugal",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
@@ -199,15 +217,17 @@
     },
     "be": {
         "id" : "be",
-        "name" : "Belgium",
+        "country" : "Belgium",
         "providers" : {
             "RTBF" : {
+            	"name" : "Radio-Television Belge de la Communaute Francaise",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
                 "audios" : 10
             },
             "VRT" : {
+            	"name" : "Vlaamse Radio- en Televisieomroeporganisatie",
                 "videos" : 8554,
                 "images" : 32,
                 "texts" : 141,
@@ -217,9 +237,10 @@
     },
     "si": {
         "id" : "si",
-        "name" : "Slovenia",
+        "country" : "Slovenia",
         "providers" : {
             "RTVSLO" : {
+            	"name" : "Radiotelevizija Slovenija",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
@@ -229,9 +250,10 @@
     },
     "ie": {
         "id" : "ie",
-        "name" : "Ireland",
+        "country" : "Ireland",
         "providers" : {
             "RTE" : {
+            	"name" : "Raidio Teilifis Eireann",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
@@ -241,21 +263,30 @@
     },
     "it": {
         "id" : "it",
-        "name" : "Italy",
+        "country" : "Italy",
         "providers" : {
             "Luce" : {
+            	"name" : "Istituto Luce Cinecitta",
                 "videos" : 400,
                 "images" : 100,
                 "texts" : 1800,
                 "audios" : 10
+            },
+            "RAI" : {
+            	"name" : "Radiotelevisione Italiana S.p.A.",
+                "videos" : 100,
+                "images" :87,
+                "texts" : 12,
+                "audios" : 4
             }
         }
     },
     "de": {
         "id" : "de",
-        "name" : "Germany",
+        "country" : "Germany",
         "providers" : {
             "DW" : {
+            	"name" : "Deutsche Welle",
                 "videos" : 3400,
                 "images" : 230,
                 "texts" : 11,
