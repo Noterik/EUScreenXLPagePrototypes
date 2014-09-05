@@ -1567,6 +1567,9 @@ body .box-link:hover {
     border-left: 6px solid #f2f2f2;
     border-right: 0px;
   }
+  body .about .main .partners-list .provider a .info h2 {
+    margin-top: 70px;
+  }
   body .audio-player {
     border-left: 0px;
     border-right: 0px;

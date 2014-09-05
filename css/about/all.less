@@ -126,6 +126,7 @@
 						font-size: 1.357em;
 						line-height: 1.3em;
 						color: @euscreen-red;
+						text-align: center;
 					}
 					// text
 					p {
@@ -371,36 +372,34 @@
 			.partners-filter {
 				margin-top:29px;
 				
-				// buttons
-				.btn-default {
-					background: none;
-					text-shadow: none;
-					box-shadow: none;
-					border:1px solid @euscreen-blue;
-					color: @euscreen-blue;
-					letter-spacing: 1px;
-					font-size: 0.857em;	
-					//res 
-					padding: 8px 12px 7px 12px;
-					border-radius: 3px;
-					&.active, &:hover {
-						background: @euscreen-blue;
-						border-color: @euscreen-blue;
-						color: #fff;
-					}
-				}
-				
-				.btn-group {
-					&:first-child {
-						.btn {
-							border-bottom-right-radius :0px;
-							border-top-right-radius :0px;
+				// navigation
+				.nav-tabs {
+					border-bottom: 0px;
+					
+					li {
+						margin-right: -4px;
+						
+						a {
+							border:1px solid @euscreen-blue;
+							border-radius: 3px !important;
+							background: none;
+							color: @euscreen-blue;
+							letter-spacing: 1px;
+							font-size: 0.857em;
+							padding: 8px 12px 7px 12px;
+							
+							&:hover {
+								background: @euscreen-blue;
+								border-color: @euscreen-blue;
+								color: #fff;
+							}
 						}
-					}
-					&:last-child {
-						.btn {
-							border-bottom-left-radius :0px;
-							border-top-left-radius :0px;
+						&.active {
+							a {
+								background: @euscreen-blue;
+								border-color: @euscreen-blue;
+								color: #fff;
+							}
 						}
 					}
 				}
@@ -410,6 +409,8 @@
 		// provider list
 		.partners-list {
 			margin-top:6px;
+			margin-left: -10px;
+			
 			//res margin-left: -21px;
 					
 			// provider
@@ -419,12 +420,12 @@
 				//res border-left: 6px solid @body-bg;
 				border-bottom: 6px solid @body-bg;
 				text-align: center;
-				height: 160px;
+				//height: 160px;
 				position: relative;
 				
 				// res
-				border-left: 5px solid @body-bg;
-				border-right: 5px solid @body-bg;
+				//border-left: 5px solid @body-bg;
+				border-right: 6px solid @body-bg;
 				
 				// anchor
 				a {
@@ -447,8 +448,10 @@
 							margin: 0 auto;
 							letter-spacing: 1px;
 							color: #fff;
-							font-size: 1em;
-							margin-top:70px;
+							font-size: 0.878em;
+							margin-top:53px;
+							padding-right: 10px;
+							padding-left: 10px;
 						}
 					}
 					
@@ -531,7 +534,7 @@
 			.left {
 
 				// set bg
-				background-image: url('../../img/content/bg-content-provider.gif');
+				background-image: url('../../img/content/bg-explore-map.gif');
 
 				// hue background & hover
 				a { .hue {
@@ -549,8 +552,8 @@
 			.middle {
 
 				// set bg
-				background-image: url('../../img/content/bg-explore-map.gif');
-				
+				background-image: url('../../img/content/bg-content-provider.gif');
+								
 				// hue background & hover
 				a { .hue {
 						background: rgba(0, 0, 0, 0.1);
