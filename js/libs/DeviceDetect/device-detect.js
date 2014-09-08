@@ -14,7 +14,7 @@ EUScreenXL.DeviceDetect = function () {
     			- When the screen is bigger than 1200, we shift the UI to a more bigger desktop version (>= 1200px) is Desktop [large]
     	*/
         var mobileMediaQuery = "(max-width: 768px)"; // less than 768, Mobile [portrait & landscape]
-        var tabletMediaQuery = "(max-width: 992px)"; // less than 992, Tablet [portrait]
+        var tabletMediaQuery = "(max-width: 1024px)"; // less than 992, Tablet [portrait]
         if (window.matchMedia(mobileMediaQuery).matches) {
             device = "mobile";
         } else if (window.matchMedia(tabletMediaQuery).matches) {

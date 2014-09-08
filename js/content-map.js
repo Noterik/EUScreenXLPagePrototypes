@@ -8,7 +8,8 @@ $(document).ready(function () {
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
-        var mapData = {};
+        var mapData = {},
+        	mapSize = {};
         
         // nav panel
         this.$navElement.slidePanelJS({
@@ -17,13 +18,23 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+        
+        // get vmap size
+        mapSize.width = $('.maps').width() + 30; // 30 is the padding
+        mapSize.height =  (mapSize.width * 3) / 4 + 15;
+        
+        // set map size
+        $('#vmap').css({
+	        width: mapSize.width +'px',
+	        height: mapSize.height +'px'
+        });
 
         // load interactive map
         // using jqvmap (MIT License)
         $('#vmap').vectorMap({
             map: 'europe_en',
             enableZoom: false,
-            showTooltip: true,
+            showTooltip: false,
             backgroundColor: '#fff',
             borderColor: '#fff',
             color: '#dedede',
@@ -89,7 +100,6 @@ $(document).ready(function () {
 
             // loop
             for (var item in data) {
-            	console.log(item);
                 colorsST[item] = highlightColor;
             }
 
