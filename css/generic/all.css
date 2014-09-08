@@ -464,6 +464,9 @@ body .page .main .media-action .overlaycontent:after {
 body .page .main .media-action .overlaycontent:after {
   clear: both;
 }
+body .page .main .media-action .overlaycontent.big {
+  width: 500px;
+}
 body .page .main .media-action .overlaycontent h3 {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #00aeef;
