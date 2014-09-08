@@ -760,6 +760,11 @@ body .page footer .links .list-inline li {
 }
 body .page footer .links .list-inline li a {
   color: #787878;
+  -webkit-transition: color 0.35s;
+  transition: color 0.35s;
+}
+body .page footer .links .list-inline li a:hover {
+  color: #222;
 }
 body .page footer .affiliates {
   text-align: right;
