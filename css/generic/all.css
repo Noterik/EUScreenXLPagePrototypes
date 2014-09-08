@@ -465,7 +465,7 @@ body .page .main .media-action .overlaycontent:after {
   clear: both;
 }
 body .page .main .media-action .overlaycontent.big {
-  width: 500px;
+  width: 300px;
 }
 body .page .main .media-action .overlaycontent h3 {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
@@ -1473,6 +1473,9 @@ body .box-link:hover {
   body .item .main .row .left .row .media-action .button-list > li {
     display: inline-block;
     border-bottom: 0px;
+  }
+  body .item .main .row .left .row .media-action .copyright .big {
+    width: 500px;
   }
   body .item .main .row .left .row .media-metadata {
     margin: 1px 0 0 0;
