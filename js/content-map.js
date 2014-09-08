@@ -34,7 +34,7 @@ $(document).ready(function () {
         $('#vmap').vectorMap({
             map: 'europe_en',
             enableZoom: false,
-            showTooltip: false,
+            showTooltip: true,
             backgroundColor: '#fff',
             borderColor: '#fff',
             color: '#dedede',
