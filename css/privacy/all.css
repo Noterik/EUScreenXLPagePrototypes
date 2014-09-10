@@ -92,3 +92,10 @@
   color: #000;
   border-bottom: 1px dotted #000;
 }
+.privacy .main .static-page .content .pads .head {
+  letter-spacing: 0.5px;
+  color: #000;
+}
+.privacy .main .static-page .content .pads ol li {
+  color: #777;
+}
