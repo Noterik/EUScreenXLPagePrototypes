@@ -44,10 +44,15 @@ $(document).ready(function () {
                 // get region data
                 if(mapData[code] != undefined) {
 
+                    // show result section
+                    if($('.results-section').css('display') != "block") {
+	                    $('.results-section').css({'display': 'block'});
+                    }
+                    
                     // variables
                     var countryData = mapData[code],
                         countryProvider = countryData['providers'],
-                        mediaAmount = {'videos': 0, 'audios': 0, 'images': 0, 'texts': 0},
+                        mediaAmount = {'videos': 0, 'audios': 0, 'images': 0, 'texts': 0, 'series': 0},
                         providerLink = "",
                         providerList = "";
                 
@@ -64,6 +69,7 @@ $(document).ready(function () {
                         mediaAmount['audios'] += countryProvider[item].audios;
                         mediaAmount['images'] += countryProvider[item].images;
                         mediaAmount['texts'] += countryProvider[item].texts;
+                        mediaAmount['series'] += countryProvider[item].series;
                     }
 
                     // get general info like country name
@@ -74,6 +80,7 @@ $(document).ready(function () {
                     $('#selected-audios').html(mediaAmount['audios']);
                     $('#selected-images').html(mediaAmount['images']);
                     $('#selected-texts').html(mediaAmount['texts']);
+                    $('#selected-series').html(mediaAmount['series']);
 
                     // set providers info
                     //$('#selected-searchlink').html(providerLink);
@@ -102,6 +109,8 @@ $(document).ready(function () {
             for (var item in data) {
                 colorsST[item] = highlightColor;
             }
+            
+            console.log(colorsST);
 
             // set
             $('#vmap').vectorMap('set', 'colors', colorsST);

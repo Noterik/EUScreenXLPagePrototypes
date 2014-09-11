@@ -5,17 +5,19 @@
         "providers" : {
             "BBC" : {
             	"name" : "British Broadcasting Corporation",
-                "videos" : 2000,
-                "images" : 1200,
-                "texts" : 200,
-                "audios" : 80
+                "videos" : 571,
+                "images" : 225,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             },
             "SASE" : {
             	"name" : "Screen Archive South East",
-                "videos" : 124,
-                "images" : 875,
-                "texts" : 53,
-                "audios" : 9
+                "videos" : 1000,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -25,17 +27,19 @@
         "providers" : {
             "ERT" : {
             	"name" : "Ellinik&iacute; Radiofon&iacute;a Tile&oacute;rasi",
-                "videos" : 2000,
-                "images" : 1200,
-                "texts" : 200,
-                "audios" : 80
+                "videos" : 104,
+                "images" : 100,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             },
             "HENAA" : {
             	"name" : "Hellenic National Audiovisual Archive",
-                "videos" : 3000,
-                "images" : 2200,
-                "texts" : 300,
-                "audios" : 90
+                "videos" : 3999,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -45,10 +49,11 @@
         "providers" : {
             "CT" : {
             	"name" : "Čezk&aacute; Televize",
-                "videos" : 1921,
-                "images" : 432,
-                "texts" : 12,
-                "audios" : 1
+                "videos" : 1817,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -58,10 +63,11 @@
         "providers" : {
             "KB" : {
             	"name" : "Kungliga Biblioteket",
-                "videos" : 1921,
-                "images" : 432,
-                "texts" : 12,
-                "audios" : 1
+                "videos" : 6176,
+                "images" : 273,
+                "texts" : 14,
+                "audios" : 32,
+                "series": 0
             }
         }
     },
@@ -71,10 +77,11 @@
         "providers" : {
             "LCVA" : {
             	"name" : "Lietuvos Centrinis Valstyb&ecirc;s Archyvas",
-                "videos" : 1921,
-                "images" : 432,
-                "texts" : 12,
-                "audios" : 1
+                "videos" : 45,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 600,
+                "series": 0
             }
         }
     },
@@ -84,17 +91,19 @@
         "providers" : {
             "NINA" : {
             	"name" : "Narodowy Instytut Audiowizualny",
-                "videos" : 1921,
-                "images" : 432,
-                "texts" : 12,
-                "audios" : 1
+                "videos" : 1000,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             },
             "TVP" : {
             	"name" : "Telewizja Polska",
-                "videos" : 23,
-                "images" : 87,
-                "texts" : 12,
-                "audios" : 77
+                "videos" : 1497,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -104,10 +113,11 @@
         "providers" : {
             "Memoriav" : {
             	"name" : "Memoriav-Association pour la sauvegarde de la m&eacutemoire audiovisuelle suisse",
-                "videos" : 1921,
-                "images" : 432,
-                "texts" : 12,
-                "audios" : 1
+                "videos" : 387,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -117,10 +127,11 @@
         "providers" : {
             "ORF" : {
             	"name" : "&Ouml;sterreichischer Rundfunk",
-                "videos" : 1921,
-                "images" : 432,
-                "texts" : 12,
-                "audios" : 1
+                "videos" : 2119,
+                "images" : 92,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -130,10 +141,11 @@
         "providers" : {
             "TVC" : {
             	"name" : "Televisi&oacute; de Catalunya",
-                "videos" : 21,
-                "images" : 34,
-                "texts" : 76,
-                "audios" : 88
+                "videos" : 2959,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -143,10 +155,11 @@
         "providers" : {
             "TVR" : {
             	"name" : "Televiziunea Rom&acirc;nă",
-                "videos" : 21,
-                "images" : 34,
-                "texts" : 76,
-                "audios" : 88
+                "videos" : 5884,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -156,10 +169,11 @@
         "providers" : {
             "INA" : {
             	"name" : "Institut national de l'audiovisuel",
-                "videos" : 988,
-                "images" : 213,
-                "texts" : 18,
-                "audios" : 213
+                "videos" : 1851,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -169,10 +183,11 @@
         "providers" : {
             "NISV" : {
             	"name" : "Nederlands Instituut voor Beeld en Geluid",
-                "videos" : 988,
-                "images" : 213,
-                "texts" : 18,
-                "audios" : 213
+                "videos" : 2538,
+                "images" : 3240,
+                "texts" : 104,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -182,10 +197,11 @@
         "providers" : {
             "NAVA" : {
             	"name" : "Nemzeti Audiovizu&aacute;lis Archivum",
-                "videos" : 3000,
-                "images" : 200,
-                "texts" : 1200,
-                "audios" : 50
+                "videos" : 1822,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -195,10 +211,11 @@
         "providers" : {
             "DR" : {
             	"name" : "Danmarks Radio",
-                "videos" : 3000,
-                "images" : 200,
-                "texts" : 1200,
-                "audios" : 50
+                "videos" : 4009,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -208,10 +225,11 @@
         "providers" : {
             "RTP" : {
             	"name" : "R&aacute;dio e Televis&atilde;o de Portugal",
-                "videos" : 400,
-                "images" : 100,
-                "texts" : 1800,
-                "audios" : 10
+                "videos" : 500,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -221,17 +239,19 @@
         "providers" : {
             "RTBF" : {
             	"name" : "Radio-T&eacute;l&eacute;vision Belge de la Communaut&eacute; Fran&ccedil;aise",
-                "videos" : 400,
-                "images" : 100,
-                "texts" : 1800,
-                "audios" : 10
+                "videos" : 2998,
+                "images" : 78,
+                "texts" : 1,
+                "audios" : 222,
+                "series": 0
             },
             "VRT" : {
             	"name" : "Vlaamse Radio- en Televisieomroeporganisatie",
-                "videos" : 8554,
-                "images" : 32,
-                "texts" : 141,
-                "audios" : 520
+                "videos" : 849,
+                "images" : 0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -241,10 +261,11 @@
         "providers" : {
             "RTVSLO" : {
             	"name" : "Radiotelevizija Slovenija",
-                "videos" : 400,
-                "images" : 100,
-                "texts" : 1800,
-                "audios" : 10
+                "videos" : 1509,
+                "images" : 88,
+                "texts" : 3,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -254,10 +275,11 @@
         "providers" : {
             "RTE" : {
             	"name" : "Raidi&oacute; Teilif&iacute;s &Eacute;ireann",
-                "videos" : 400,
-                "images" : 100,
-                "texts" : 1800,
-                "audios" : 10
+                "videos" : 1592,
+                "images" : 19,
+                "texts" : 1,
+                "audios" : 42,
+                "series": 0
             }
         }
     },
@@ -267,17 +289,19 @@
         "providers" : {
             "Luce" : {
             	"name" : "Istituto Luce Cinecitt&agrave;",
-                "videos" : 400,
-                "images" : 100,
-                "texts" : 1800,
-                "audios" : 10
+                "videos" : 3166,
+                "images" : 754,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             },
             "RAI" : {
             	"name" : "Radiotelevisione Italiana S.p.A.",
-                "videos" : 100,
-                "images" :87,
-                "texts" : 12,
-                "audios" : 4
+                "videos" : 1019,
+                "images" :0,
+                "texts" : 0,
+                "audios" : 0,
+                "series": 0
             }
         }
     },
@@ -287,10 +311,11 @@
         "providers" : {
             "DW" : {
             	"name" : "Deutsche Welle",
-                "videos" : 3400,
-                "images" : 230,
-                "texts" : 11,
-                "audios" : 9
+                "videos" : 2114,
+                "images" : 30,
+                "texts" : 402,
+                "audios" : 0,
+                "series": 0
             }
         }
     }
