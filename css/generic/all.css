@@ -401,6 +401,11 @@ body .page .main .media-item .media-wrapper .media-type.image {
   height: 14px;
   background-position: -271px 0;
 }
+body .page .main .media-item .media-wrapper .media-type.series {
+  width: 18px;
+  height: 18px;
+  background-position: -96px -82px;
+}
 body .page .main .media-item .media-wrapper .media-hue {
   background: rgba(140, 198, 63, 0.6);
   position: absolute;
