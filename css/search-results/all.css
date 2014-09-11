@@ -94,7 +94,6 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   border-left: 6px solid #f2f2f2;
   border-right: 6px solid #f2f2f2;
   width: 100%;
-  padding-top: 25px;
 }
 .search .main .left .row .selectedfilter.loading .tags {
   display: none;
@@ -109,11 +108,12 @@ textarea.search .main .left .row .searchbar input[type="text"] {
 .search .main .left .row .selectedfilter .header {
   display: table !important;
   float: left;
+  padding-right: 10px;
 }
 .search .main .left .row .selectedfilter .clear {
   float: right;
   display: block;
-  margin: 20px 25px 0 0;
+  margin: 21px 25px 0 0;
 }
 .search .main .left .row .selectedfilter .clear a {
   color: #a3a3a3;
