@@ -1437,13 +1437,8 @@ body .box-link:hover {
     font-size: 1.286em;
     padding-top: 16px;
   }
-  body .content-map .main .row.content .info {
-    border-left: 0px;
-  }
-  body .content-map .main .row.content .maps {
-    margin-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
+  body .content-map .main .content .maps {
+    width: 567.5px;
   }
   body .terms .main .static-page .content,
   body .privacy .main .static-page .content,
@@ -1736,6 +1731,15 @@ body .box-link:hover {
     margin: 70px 100px 0 0;
     float: right;
   }
+  body .content-map .main .content .info-wrap {
+    width: 242.5px;
+  }
+  body .content-map .main .content .info-wrap .info {
+    width: 242.5px;
+  }
+  body .content-map .main .content .maps {
+    width: 732.5px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 1025px) {
@@ -1885,5 +1889,14 @@ body .box-link:hover {
   body .privacy .main .static-page .content,
   body .contact .main .static-page .content {
     width: 890px;
+  }
+  body .content-map .main .content .info-wrap {
+    width: 292.5px;
+  }
+  body .content-map .main .content .info-wrap .info {
+    width: 292.5px;
+  }
+  body .content-map .main .content .maps {
+    width: 882.5px;
   }
 }

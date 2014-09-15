@@ -2,14 +2,16 @@ $(document).ready(function () {
     if (!EUScreenXL) {
         throw "EUScreenXL required libraries not there!";
     }
+    
+    // map data
+    var mapData = {},
+    	mapSize = {};
 
     EUScreenXL.ContentMapPage = function () {
         EUScreenXL.Page.apply(this, arguments);
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
-        var mapData = {},
-        	mapSize = {};
         
         // nav panel
         this.$navElement.slidePanelJS({
@@ -18,11 +20,11 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
-        
+
         // get vmap size
-        mapSize.width = $('.maps').width() + 30; // 30 is the padding
+        mapSize.width = $('.maps').outerWidth(); // 30 is the padding
         mapSize.height =  (mapSize.width * 3) / 4 + 15;
-        
+
         // set map size
         $('#vmap').css({
 	        width: mapSize.width +'px',
@@ -38,58 +40,15 @@ $(document).ready(function () {
             backgroundColor: '#fff',
             borderColor: '#fff',
             color: '#dedede',
-            onRegionClick: function(element, code, region)
-            {
-                // on region click
-                // get region data
-                if(mapData[code] != undefined) {
-
-                    // show result section
-                    if($('.results-section').css('display') != "block") {
-	                    $('.results-section').css({'display': 'block'});
-                    }
-                    
-                    // variables
-                    var countryData = mapData[code],
-                        countryProvider = countryData['providers'],
-                        mediaAmount = {'videos': 0, 'audios': 0, 'images': 0, 'texts': 0, 'series': 0},
-                        providerLink = "",
-                        providerList = "";
-                
-                    // count
-                    for (var item in countryProvider) {
-                        
-                        // set url
-                        //var url = "<li><a href='search-results.html?provider="+item+"'>SEARCH "+item.toUpperCase()+" CONTENT</a></li>";
-                        //providerLink += url;
-                        providerList += "<span class='provider-list'>"+countryProvider[item].name+ " ("+item.toUpperCase()+") <a href='search-results.html?provider="+item+"' class='box-link'>SEARCH "+item.toUpperCase()+" CONTENT</a></span>";
-                        
-                        // add the media
-                        mediaAmount['videos'] += countryProvider[item].videos;
-                        mediaAmount['audios'] += countryProvider[item].audios;
-                        mediaAmount['images'] += countryProvider[item].images;
-                        mediaAmount['texts'] += countryProvider[item].texts;
-                        mediaAmount['series'] += countryProvider[item].series;
-                    }
-
-                    // get general info like country name
-                    $('#selected-country').html(mapData[code].country);
-
-                    // set amount of medias
-                    $('#selected-videos').html(mediaAmount['videos']);
-                    $('#selected-audios').html(mediaAmount['audios']);
-                    $('#selected-images').html(mediaAmount['images']);
-                    $('#selected-texts').html(mediaAmount['texts']);
-                    $('#selected-series').html(mediaAmount['series']);
-
-                    // set providers info
-                    //$('#selected-searchlink').html(providerLink);
-                    $('#selected-providers').html(providerList);
-                } else {
-
-                    // show alert when no provider
-                    alert("No EUscreen provider from "+region);
-                }
+            onRegionOver: function(element, code, region) {
+	            
+	            // show info
+	            showMapInfo(element, code, region);
+            },
+            onRegionClick: function(element, code, region) {
+            
+                // show info
+	            showMapInfo(element, code, region);
             }
         });
 
@@ -109,13 +68,65 @@ $(document).ready(function () {
             for (var item in data) {
                 colorsST[item] = highlightColor;
             }
-            
-            console.log(colorsST);
 
             // set
             $('#vmap').vectorMap('set', 'colors', colorsST);
         });
     };
+    
+    // show map info
+    var showMapInfo = function(element, code, region){
+	    // on region click
+        // get region data
+        if(mapData[code] != undefined) {
+
+            // show result section
+            if($('.results-section').css('display') != "block") {
+                $('.results-section').css({'display': 'block'});
+            }
+            
+            // variables
+            var countryData = mapData[code],
+                countryProvider = countryData['providers'],
+                mediaAmount = {'videos': 0, 'audios': 0, 'images': 0, 'texts': 0, 'series': 0},
+                providerLink = "",
+                providerList = "";
+        
+            // count
+            for (var item in countryProvider) {
+                
+                // set url
+                providerList += "<span class='provider-list'>"+countryProvider[item].name+ " ("+item.toUpperCase()+") <a href='search-results.html?provider="+item+"' class='box-link'>SEARCH "+item.toUpperCase()+" CONTENT</a></span>";
+                
+                // add the media
+                mediaAmount['videos'] += countryProvider[item].videos;
+                mediaAmount['audios'] += countryProvider[item].audios;
+                mediaAmount['images'] += countryProvider[item].images;
+                mediaAmount['texts'] += countryProvider[item].texts;
+                mediaAmount['series'] += countryProvider[item].series;
+            }
+
+            // get general info like country name
+            $('#selected-country').html(mapData[code].country);
+
+            // set amount of medias
+            $('#selected-videos').html(mediaAmount['videos']);
+            $('#selected-audios').html(mediaAmount['audios']);
+            $('#selected-images').html(mediaAmount['images']);
+            $('#selected-texts').html(mediaAmount['texts']);
+            $('#selected-series').html(mediaAmount['series']);
+
+            // set providers info
+            //$('#selected-searchlink').html(providerLink);
+            $('#selected-providers').html(providerList);
+        } else {
+
+            // reset info
+            $('#selected-country').html("No EUscreen provider from "+region);
+            $('.results-section').css({'display': 'none'});
+            
+        }
+    }
 
     EUScreenXL.ContentMapPage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.ContentMapPage.prototype.searchButton = jQuery("#searchbutton");

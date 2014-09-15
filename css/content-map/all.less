@@ -16,15 +16,23 @@
 	// main
 	.main {
 		
-		// row
-		.row {
+		// content
+		.content {
+			margin-top:6px;
+			margin-left: -21px;
+			margin-right: -21px;
+
+			.clearfix;
 			
-			// content
-			&.content {
-				margin-top:6px;
-				
-				// left
+			// left
+			.info-wrap {
+				width: 187.5px;
+				float: left;
+				min-height: 200px;
+
+				// info
 				.info {
+					width: 187.5px;
 					border-right: 6px solid @body-bg;
 					border-left: 6px solid @body-bg;
 					background: #fff;
@@ -66,6 +74,18 @@
 						// results-section
 						.results-section {
 							display: none;
+
+							.country-counter {
+								.clearfix;
+								.item {
+									float: left;
+									width: 50%;
+								}
+							}
+							.providers {
+								margin-top:10px;
+								clear: both;
+							}
 						}
 						
 						// list
@@ -116,34 +136,47 @@
 							}
 						}
 					}
-				}
-				
-				// maps
-				.maps {
-					padding-left: 0px;
-					padding-right: 0px;
-					margin-top:6px;
-					border-left: 6px solid @body-bg;
-					border-right: 6px solid @body-bg;
-					
-					// vmap
-					.vmap {
-						
-					}
-					
-					// alert
-					.alert {
-						display: none;
-					}
 
-					// img
-					img {
-						width: 100%;
+					// affix
+					&.affix {
+						top:75px;
 					}
 				}
 			}
-
 			
+			// maps
+			.maps {
+				padding-left: 0px;
+				padding-right: 0px;
+				width: 567.5px;
+				float: left;
+				overflow: auto;
+				
+				// alert
+				.alert {
+					display: none;
+				}
+
+				// img
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		// row
+		.row {
+
+			// map notification
+			&.map-notification {
+				background: #fff;
+				margin-top:6px;
+				margin-right:-9px;
+				margin-left:-9px;
+				padding-top:10px;
+				padding-bottom: 5px;
+				border-bottom: 5px solid @euscreen-red;
+			}
 		}
 	}
 }

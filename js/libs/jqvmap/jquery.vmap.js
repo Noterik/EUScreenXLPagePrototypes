@@ -42,7 +42,7 @@
       backgroundColor: '#a5bfdd',
       color: '#f4f3f0',
       hoverColor: '#c9dfaf',
-      selectedColor: '#c9dfaf',
+      selectedColor: '#c0c1c5',
       scaleColors: ['#b6d6ff', '#005ace'],
       normalizeFunction: 'linear',
       enableZoom: true,
@@ -435,6 +435,8 @@
           map.highlight(code, path);
         }
         if (params.showTooltip) {
+        	// get content
+        	
           map.label.text(mapData.pathes[code].name);
           jQuery(params.container).trigger(labelShowEvent, [map.label, code]);
 
@@ -490,7 +492,8 @@
             
             map.label.css({
                 left: left,
-                top: top
+                top: top,
+                padding: '5px 10px 3px 10px'
           });
         }
       });

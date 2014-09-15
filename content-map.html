@@ -121,50 +121,63 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- selection -->
+                <div class="map-notification visible-xs row">
+                    <div class="col-md-12">
+                        <p>
+                            Unfortunately Explore The Euscreen Collection only works in tablet or desktop. Please use bigger devices to access this page.
+                        </p>
+                    </div>
+                </div>
             	
             	<!-- content -->
-            	<div class="content row">
+            	<div class="content hidden-xs">
             		
             		<!-- left side -->
-            		<div class="info col-md-3 col-sm-3">
-            			
-            			<!-- data -->
-            			<div class="data">
-	            			<h1 id="selected-country">Please select region on the map</h1>
-	            			<div id="results-section" class="results-section">
-		            			<div>
-		            				<span class="header">VIDEOS</span>
-		            				<span class="counter" id="selected-videos">0</span>
-		            			</div>
-		            			<div>
-		            				<span class="header">IMAGES</span>
-		            				<span class="counter" id="selected-images">0</span>
-		            			</div>
-		            			<div>
-		            				<span class="header">TEXTS</span>
-		            				<span class="counter" id="selected-texts">0</span>
-		            			</div>
-		            			<div>
-		            				<span class="header">AUDIO</span>
-		            				<span class="counter" id="selected-audios">0</span>
-		            			</div>
-		            			<div>
-		            				<span class="header">SERIES</span>
-		            				<span class="counter" id="selected-series">0</span>
-		            			</div>
-		            			<div>
-		            				<span class="header">PROVIDERS</span>
-		            				<span class="provider" id="selected-providers">-</span>
-		            			</div>
-	            			</div>
-            			</div>
-            			
-            			<!-- navigation -->
-            			<ul class="search-link" id="selected-searchlink"></ul>
-            		</div>
+                    <div class="info-wrap">
+                		<div class="info" data-spy="affix" data-offset-top="178" data-offset-bottom="0">
+                			
+                			<!-- data -->
+                			<div class="data">
+    	            			<h1 id="selected-country">Please select region on the map</h1>
+    	            			<div id="results-section" class="results-section">
+                                    <div class="country-counter">
+        		            			<div class="item">
+        		            				<span class="header">VIDEOS</span>
+        		            				<span class="counter" id="selected-videos">0</span>
+        		            			</div>
+        		            			<div class="item">
+        		            				<span class="header">IMAGES</span>
+        		            				<span class="counter" id="selected-images">0</span>
+        		            			</div>
+        		            			<div class="item">
+        		            				<span class="header">TEXTS</span>
+        		            				<span class="counter" id="selected-texts">0</span>
+        		            			</div>
+        		            			<div class="item">
+        		            				<span class="header">AUDIO</span>
+        		            				<span class="counter" id="selected-audios">0</span>
+        		            			</div>
+        		            			<div class="item">
+        		            				<span class="header">SERIES</span>
+        		            				<span class="counter" id="selected-series">0</span>
+        		            			</div>
+                                    </div>
+    		            			<div class="providers">
+    		            				<span class="header">PROVIDERS</span>
+    		            				<span class="provider" id="selected-providers">-</span>
+    		            			</div>
+    	            			</div>
+                			</div>
+                			
+                			<!-- navigation -->
+                			<ul class="search-link" id="selected-searchlink"></ul>
+                		</div>
+                    </div>
             		
             		<!-- the map -->
-            		<div class="maps col-md-9 col-sm-9">
+            		<div class="maps">
 	            		
                         <!-- map -->
                         <div class="vmap" id="vmap"></div>

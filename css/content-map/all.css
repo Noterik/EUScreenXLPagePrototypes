@@ -5,74 +5,106 @@
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
-.content-map .main .row.content {
+.content-map .main .content {
   margin-top: 6px;
+  margin-left: -21px;
+  margin-right: -21px;
 }
-.content-map .main .row.content .info {
+.content-map .main .content:before,
+.content-map .main .content:after {
+  content: " ";
+  display: table;
+}
+.content-map .main .content:after {
+  clear: both;
+}
+.content-map .main .content .info-wrap {
+  width: 187.5px;
+  float: left;
+  min-height: 200px;
+}
+.content-map .main .content .info-wrap .info {
+  width: 187.5px;
   border-right: 6px solid #f2f2f2;
   border-left: 6px solid #f2f2f2;
   background: #fff;
   padding-left: 0px;
   padding-right: 0px;
 }
-.content-map .main .row.content .info .data {
+.content-map .main .content .info-wrap .info .data {
   padding: 20px;
 }
-.content-map .main .row.content .info .data h1 {
+.content-map .main .content .info-wrap .info .data h1 {
   color: #8cc63f;
   font-size: 1.286em;
   margin-top: 0px;
   margin-bottom: 20px;
 }
-.content-map .main .row.content .info .data .counter {
+.content-map .main .content .info-wrap .info .data .counter {
   font-size: 1.714em;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   display: block;
   margin-top: -5px;
 }
-.content-map .main .row.content .info .data .header {
+.content-map .main .content .info-wrap .info .data .header {
   display: block;
   font-size: 0.77em;
   color: #808080;
   letter-spacing: 1px;
   margin-top: 10px;
 }
-.content-map .main .row.content .info .data .provider {
+.content-map .main .content .info-wrap .info .data .provider {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   display: block;
 }
-.content-map .main .row.content .info .data .results-section {
+.content-map .main .content .info-wrap .info .data .results-section {
   display: none;
 }
-.content-map .main .row.content .info .data .provider-list {
+.content-map .main .content .info-wrap .info .data .results-section .country-counter:before,
+.content-map .main .content .info-wrap .info .data .results-section .country-counter:after {
+  content: " ";
+  display: table;
+}
+.content-map .main .content .info-wrap .info .data .results-section .country-counter:after {
+  clear: both;
+}
+.content-map .main .content .info-wrap .info .data .results-section .country-counter .item {
+  float: left;
+  width: 50%;
+}
+.content-map .main .content .info-wrap .info .data .results-section .providers {
+  margin-top: 10px;
+  clear: both;
+}
+.content-map .main .content .info-wrap .info .data .provider-list {
   border-bottom: 1px solid #f2f2f2;
   display: block;
   padding: 8px 0 15px 0;
 }
-.content-map .main .row.content .info .data .provider-list:last-child {
+.content-map .main .content .info-wrap .info .data .provider-list:last-child {
   border: 0px;
   padding-bottom: 0px;
 }
-.content-map .main .row.content .info .data .provider-list .box-link {
+.content-map .main .content .info-wrap .info .data .provider-list .box-link {
   font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
   font-size: 0.78em;
   padding: 7px 10px 5px;
   margin-top: 5px;
 }
-.content-map .main .row.content .info .data .provider-list .box-link:hover,
-.content-map .main .row.content .info .data .provider-list .box-link:active {
+.content-map .main .content .info-wrap .info .data .provider-list .box-link:hover,
+.content-map .main .content .info-wrap .info .data .provider-list .box-link:active {
   color: #8cc63f;
   border-color: #8cc63f;
 }
-.content-map .main .row.content .info .search-link {
+.content-map .main .content .info-wrap .info .search-link {
   margin: 0;
   padding: 0;
 }
-.content-map .main .row.content .info .search-link li {
+.content-map .main .content .info-wrap .info .search-link li {
   border-top: 1px solid #f2f2f2;
   list-style: none;
 }
-.content-map .main .row.content .info .search-link li a {
+.content-map .main .content .info-wrap .info .search-link li a {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-align: center;
   width: 100%;
@@ -80,19 +112,31 @@
   color: #808080;
   display: block;
 }
-.content-map .main .row.content .info .search-link li a:hover {
+.content-map .main .content .info-wrap .info .search-link li a:hover {
   color: #8cc63f;
 }
-.content-map .main .row.content .maps {
+.content-map .main .content .info-wrap .info.affix {
+  top: 75px;
+}
+.content-map .main .content .maps {
   padding-left: 0px;
   padding-right: 0px;
-  margin-top: 6px;
-  border-left: 6px solid #f2f2f2;
-  border-right: 6px solid #f2f2f2;
+  width: 567.5px;
+  float: left;
+  overflow: auto;
 }
-.content-map .main .row.content .maps .alert {
+.content-map .main .content .maps .alert {
   display: none;
 }
-.content-map .main .row.content .maps img {
+.content-map .main .content .maps img {
   width: 100%;
+}
+.content-map .main .row.map-notification {
+  background: #fff;
+  margin-top: 6px;
+  margin-right: -9px;
+  margin-left: -9px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #ec008c;
 }
