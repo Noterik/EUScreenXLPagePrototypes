@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        
+        <!-- meta-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EUscreenXL - Series</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap/theme.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/generic/all.css">
+        <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
+    </head>
+    <body>
+        
+        <!-- update browser-->
+        <!--[if lt IE 7]>
+            <div class="browsehappy alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                You are using an <strong>outdated</strong> browser.
+                Please <a class="alert-link" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+            </div>
+        <![endif]-->
+        
+        <!-- warning on firefox user -->
+		<div class="warning-playout">
+			<div class="browsehappy alert alert-warning alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				You are using Firefox and unfortunally this browser does not support the video streaming format of the EUscreen portal. <br/> 
+				Please use another browser such as Google Chrome to work with the EUscreen portal. 
+				<a class="alert-link" href="http://browsehappy.com/">Click here to download Chrome</a>.
+			</div>
+		</div>
+        
+        <!-- container -->
+        <div class="page series" id="page">
+            
+            <!-- wrap -->
+            <header>
+                <div class="navbar navbar-fixed-top" role="navigation" id="navbar">
+                    <div class="container">
+                        
+                        <!-- header -->
+                        <div class="navbar-header">
+                            
+                            <!-- menu icon -->
+                            <div class="menuicon pull-left">
+                                <button type="button" id="menubutton" class="btn"><i class="fa fa-bars"></i></button>
+                            </div>
+                            
+                            <!-- search icon -->
+                            <div class="searchicon pull-right">
+                                <button type="button" id="searchbutton" class="btn"><i class="fa fa-search"></i></button>
+                            </div>
+                            
+                            <!-- logo -->
+                            <a class="navbar-brand" href="index.html"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>
+                            <!-- <a class="navbar-brand" href="#">EUSCREENXL</a> -->
+                            
+                            <!-- form -->
+                            <form class="navbar-form navbar-left" id="headerform" role="search">
+                                <div class="form-group">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                    <input type="text" class="form-control" placeholder="Search the collection">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </div>
+                        
+                        <!-- collapse -->
+                        <div class="navbar-collapse collapse">
+                            
+                            <!-- navigation -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="myeuscreen.html">MYEUSCREEN</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- my euscreen thumbnail, will be shown only when user has logged in on every page except on desktop -->
+                        <div class="user-thumbnail hidden-xs hidden-sm">
+                            <a role="button" data-toggle="dropdown" data-target="login-action" href="/myeuscreen.html">
+                                <img src="img/ic-user.png" alt="User"/>
+                                <span class="frame"></span> <span class="status-icon"></span>
+                            </a>
+                            
+                            <!-- drop down -->
+                            <ul id="login-action" class="dropdown-menu pull-right" role="menu" aria-labelledby="login-action">
+                                <li><a href="myeuscreen.html" value="TITLE">MYEUSCREEN</a></li>
+                                <li><a href="#" value="YEAR">LOGOUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- about content -->
+            <div class="container main">
+                <div class="row">
+                
+                	<!-- left -->
+			    	<div class="left col-md-8 col-sm-12">
+			    		
+			    		<!-- episode header -->
+		    			<div class="episode-header">
+		    				Episode
+		    			</div>
+		    			
+		    			<!-- episode title -->
+		    			<div class="episode-title">
+		    				This is the episode title it can also be two lines
+		    			</div>
+			    		
+			    		
+			    		<!-- player -->
+			    		<div class="row">
+			    			
+			    			<!-- video -->
+		    				<div class="media-player col-md-12 aspect-ratio wide"> 
+			    				<div class="player" id="media-player">
+			    					<video id="sampleMovie" width="640" poster="img/content/poster.gif" height="360" preload controls>
+			    						<source src=video/small.webm type=video/webm>
+										<source src=video/small.ogv type=video/ogg>
+										<source src=video/small.mp4 type=video/mp4>
+										<source src=video/small.3gp type=video/3gp>
+			    					</video>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		
+			    		<!-- episode action --> 
+		    			<div class="col-md-12 episode-action">
+		    				<div class="push-left">
+			    				<a href="item.html">GO TO EPISODE PAGE</a>
+		    				</div>
+		    				<div class="push-right">
+			    				
+			    				<!-- sort by options -->
+	                			<div class="wrap-dropdown">
+		                			<div class="dropdown">
+										<a role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+									    	<span class="colorgray">SORT BY</span> TITLE <span class="caret"></span>
+									    </a>
+									    <ul id="sortBy" class="dropdown-menu pull-right" role="menu" aria-labelledby="sortBy">
+			                				<li><a href="#" value="TITLE">TITLE</a></li>
+			                				<li><a href="#" value="YEAR">YEAR</a></li>
+			                			</ul>
+		                			</div>
+	                			</div>
+		    				</div>
+		    			</div>
+		    			
+		    			<!-- one row of small thumbnail -->
+                        <div class="episode-list row">   
+                                                 
+                            <!-- item -->
+                            <div class="media-item col-md-4 col-sm-4">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+                                            <img src="img/content/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- item -->
+                            <div class="media-item col-md-4 col-sm-4">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+                                            <img src="img/content/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- item -->
+                            <div class="media-item col-md-4 col-sm-4">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+                                            <img src="img/content/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- item -->
+                            <div class="media-item col-md-4 col-sm-4">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+                                            <img src="img/content/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- item -->
+                            <div class="media-item col-md-4 col-sm-4">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+                                            <img src="img/content/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- item -->
+                            <div class="media-item col-md-4 col-sm-4">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+                                            <img src="img/content/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- results -->
+		                <div class="row">
+		                    <div class="more col-md-12">
+		                        <a href="#">SHOW MORE</a>
+		                    </div>
+		                </div>
+			    	</div>
+			    	
+			    	<!-- right -->
+			    	<div class="right col-md-4 col-sm-12">
+			    		
+			    		<!-- row -->
+                        <div class="row series-header">
+
+                            <!-- tabs -->
+                            <div class="col-md-9 col-sm-8 tabs">
+                                <ul class="nav nav-tabs">
+		            				<li class="active"><a href="#">Series Info</a></li>
+		            			</ul>
+                            </div>
+
+                            <!-- action icons -->
+                            <div class="col-md-3 col-sm-4 media-action">
+                            	<ul class="list-inline pull-right button-list">
+			    				
+			    					<!-- share buttons -->
+			    					<li class="share">
+			    						<button data-toggle="tooltip" data-placement="top" data-title="SHARE" data-overlay="#share-content">
+			    							<i class="icono icono-share"></i>
+			    						</button>
+
+			    						<!-- share item content -->
+			    						<div class="overlaycontent" id="share-content">
+			    							<h3>SHARE THIS ITEM</h3>
+											<ul class="list-inline">	
+												<li><a href="#" title="Share to Facebook">
+													<span class="fa-stack fa-lg">
+														<i class="fa fa-circle fa-stack-2x"></i>
+														<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+													</span>
+												</a></li>
+												<li><a href="#" title="Share to Twitter">
+													<span class="fa-stack fa-lg">
+														<i class="fa fa-circle fa-stack-2x"></i>
+														<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+													</span>
+												</a></li>
+												<li><a href="#" title="Share to Google +">
+													<span class="fa-stack fa-lg">
+														<i class="fa fa-circle fa-stack-2x"></i>
+														<i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+													</span>
+												</a></li>
+											</ul>
+											
+											<!-- permalink -->
+											<div class="permalink input-group">
+												<span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+												<input type="text" class="form-control" readonly value="http://loremipsum.com/v/12412"/>
+											</div>
+										</div>
+			    					</li>
+
+			    					<!-- bookmark button -->
+			    					<li class="bookmark">
+			    						<button data-toggle="tooltip" data-placement="top" data-title="ADD TO BOOKMARK" data-overlay="#bookmark-content">
+			    							<i class="icono icono-bookmark"></i>
+			    						</button>
+			    						<div class="overlaycontent" id="bookmark-content">
+
+			    							<!-- login form when user has not logged in -->
+			    							<div id="login-form" class="hidden">
+			    								<h3>SIGN IN TO BOOKMARK</h3>
+												<div class="login-form visible">
+											        <form class="login">
+										                <input id="bookmark-user-email" placeholder="Email" class="form-control" type="text"/>
+										                <input id="bookmark-user-password" placeholder="Password" class="form-control" type="password" />
+										                <input type="submit" value="LOGIN" class="btn btn-primary btn-euscreen btn-block"/>
+										            </form>
+											        <span class="extra">
+											        	<a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a>
+											        </span>
+											    </div>
+											</div>
+
+											<!-- bookmark form -->
+											<div id="bookmark-form">
+			    								<h3>ADD ITEM TO</h3>
+			    								<div>
+			    									<div class="list-group hidden">
+														<a href="#" class="list-group-item active">My first folder</a>
+														<a href="#" class="list-group-item ">My second folder</a>
+  														<a href="#" class="list-group-item disabled">
+  															<i class="fa fa-plus"></i> &nbsp; Add new folder 
+  														</a>
+													</div>
+													<div class="select-wrap">
+														<select>
+															<option>My first collection</option>
+															<option>My second collection</option>
+														</select>
+														<i class="glyphicon glyphicon-chevron-down"></i>
+													</div>
+													<a href="#" class="folder-action">ADD NEW COLLECTION</a> 
+													<input type="submit" value="DONE" class="btn btn-primary btn-euscreen btn-block"/>
+			    								</div>
+											</div>
+										</div>
+			    					</li>
+			    				</ul>
+                            </div>
+                        </div>
+                        
+                        <!--  series metadata -->
+                        <div class="series-metadata">
+                        	<h1>This is the series title</h1>
+                        	<div class="item">
+    							<span class="header">ORIGINAL TITLE</span>
+	    						<span>Lorem ipsum dolor sit amet</span>
+	    					</div>
+	    					<div class="item">
+    							<span class="header">PROVIDER</span>
+	    						<span>Cinnecita Luce</span>
+	    					</div>
+	    					<div class="item">
+    							<span class="header">PRODUCTION YEAR</span>
+	    						<span>1992</span>
+	    					</div>
+	    					<div class="item">
+    							<span class="header">LANGUAGE</span>
+	    						<span>Channel V</span>
+	    					</div>
+	    					<div class="item">
+    							<span class="header">SUMMARY</span>
+	    						<span>
+	    							<p>
+		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+		    							quis nostrud exerci tation ullamcorper suscipit lobortis
+	    							</p>
+	    							<p>
+		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+		    							quis nostrud exerci tation ullamcorper suscipit lobortis
+	    							</p>	    						
+	    						</span>
+	    					</div>
+	    					
+	    					<!-- results -->
+			                <div class="more-button">
+			                	<a href="#">SHOW MORE</a>
+			                </div>
+                        </div>
+			    	</div>
+                </div>
+            </div>
+            
+            
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    
+                    <!-- footer content -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-7">
+                            <span class="links">
+                                <ul class="list-inline">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="terms.html">Terms of Use</a></li>
+                                    <li><a href="privacy.html">Privacy</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </span>
+                            <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
+                        </div>
+                        <div class="col-md-6 col-sm-5">
+                            <div class="affiliates">
+                                <ul class="list-inline">
+                                    <li class="europeana"><a href="http://www.europeana.eu" target="_blank"></a></li>
+                                    <li class="europeancomission"><a href="http://ec.europa.eu/index_en.htm" target="_blank"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- mobile navigation, will slide -->
+        <div id="navpanel" class="mobilenav">
+            <ul class="main">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="myeuscreen.html">MYEUSCREEN</a></li>
+            </ul>
+            <ul class="secondary">
+                <li><a href="terms.html">Terms of use</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <span class="info">
+                Funded by the European Commission within the eContentplus programme 
+            </span>
+        </div>
+
+        <!-- scripts -->
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/libs/SlidePanel/js/jquery.slide-panel.js"></script>
+        <script src="js/vendor/promise-1.0.0.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="js/libs/DeviceDetect/device-detect.js"></script>
+        <script src="js/libs/Page/page.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/series.js"></script>
+    </body>
+</html>
