@@ -340,7 +340,7 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   line-height: inherit;
   font-size: 1.071em;
   color: #808080;
-  padding: 20px;
+  padding: 20px 18px 20px 18px;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }

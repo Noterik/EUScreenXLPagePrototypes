@@ -1686,6 +1686,9 @@ body .box-link:hover {
   body .search .main .right.fix {
     margin-left: 323.333px;
   }
+  body .search .main .right .row.results-media .mediatab .nav li a {
+    padding: 20px;
+  }
   body .item .main .row .left .row .media-action .overlaycontent {
     font-size: 1em;
   }
