@@ -469,9 +469,17 @@
 													left: 0px;
 													display: table;
 													margin-top:5px;
-													background: @euscreen-rgba-green-60;
-													border:0px;
+													background: rgba(0, 0, 0, 0.25);
+													border-color: @euscreen-green;
+													border-width: 2px;
+													padding: 5px 35px 7px 35px;
+													color: @euscreen-green;
 													font-size: 1.143em;
+													.transition(background 0.3s);
+													
+													&:hover {
+														background: rgba(0, 0, 0, 0.4);
+													}
 												}
 											}
 										}
