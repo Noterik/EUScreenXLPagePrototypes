@@ -65,7 +65,7 @@ body {
 
 			// header
 			header {
-
+				
 				// navbar
 				.navbar {
 					position: absolute !important;
@@ -406,6 +406,23 @@ body {
 						z-index: 7;
 					}
 
+					// media playing
+					.media-playing {
+						color: #fff;
+						background: rgba(0,0,0,0.6);
+						position: absolute;
+						top:10px;
+						left: 10px;
+						font-size: 0.76em;
+						letter-spacing: 1px;
+						display: block;
+						padding: 5px 9px 3px 10px;
+						border-radius: 2px;
+						z-index: 8;
+						.opacity(0);
+						.transition(opacity 0.3s);
+					}
+
 					// title
 					.media-title {
 						.clearfix;
@@ -653,6 +670,11 @@ body {
 						margin-left: -4px;
 						padding:0px;
 						position: relative;
+
+						// tooltip
+						.tooltip {
+							z-index: 1031 !important;
+						}
 
 						// anchor elements
 						button {

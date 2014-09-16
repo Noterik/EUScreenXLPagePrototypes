@@ -3,13 +3,16 @@ $(document).ready(function () {
         throw "EUScreenXL required libraries not there!";
     }
 
-    EUScreenXL.PrivacyPage = function () {
+    EUScreenXL.SeriesPage = function () {
         EUScreenXL.Page.apply(this, arguments);
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
         this.$chartElement = jQuery('.chart');
-        
+        this.$overlayContents = jQuery('.overlaycontent');
+        this.$overlayButtons = jQuery('button[data-overlay]');
+        this.$tooltipButtons = jQuery('button[data-toggle]');
+
         // nav panel
         this.$navElement.slidePanelJS({
             openButton: '#menubutton',
@@ -17,13 +20,39 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+
+        // only activates tooltip on desktop
+        // otherwise it takes two tap to view overlay content
+        if(EUScreenXL.Page.prototype.device == "desktop") {
+
+            // activate tooltip
+           this.$tooltipButtons.tooltip();
+        }
+
+        // popover overlay
+        // bootstrap popover doesn't play too nicely with mobile version
+        // and it doesnt fit with euscreenxl the mobile designs
+        this.$overlayButtons.popupOverlayJS({
+            $overlayContents : this.$overlayContents,
+            contentOverlayIdAttr : 'data-overlay'
+        });
     };
 
-    EUScreenXL.PrivacyPage.prototype = Object.create(EUScreenXL.Page.prototype);
-    EUScreenXL.PrivacyPage.prototype.searchButton = jQuery("#searchbutton");
-    EUScreenXL.PrivacyPage.prototype.menuButton = jQuery("#menubutton");
-    EUScreenXL.PrivacyPage.prototype.name = "series";
-    EUScreenXL.PrivacyPage.prototype.events = {
+    EUScreenXL.SeriesPage.prototype = Object.create(EUScreenXL.Page.prototype);
+    EUScreenXL.SeriesPage.prototype.searchButton = jQuery("#searchbutton");
+    EUScreenXL.SeriesPage.prototype.menuButton = jQuery("#menubutton");
+    EUScreenXL.SeriesPage.prototype.showExtraMetadataButton = jQuery("#show-extra-metadata");
+    EUScreenXL.SeriesPage.prototype.hideExtraMetadataButton = jQuery("#hide-extra-metadata");
+    EUScreenXL.SeriesPage.prototype.name = "series";
+    EUScreenXL.SeriesPage.prototype.events = {
+        "click #show-extra-metadata": function (event) {
+            this.showExtraMetadataButton.hide();
+            this.hideExtraMetadataButton.show();
+        },
+        "click #hide-extra-metadata": function (event) {
+            this.hideExtraMetadataButton.hide();
+            this.showExtraMetadataButton.show();
+        },
     	'click #searchbutton': function(event) {
             if(this.searchButton.hasClass("active")) {
                 this.searchButton.removeClass("active"); // toggle style
@@ -38,5 +67,5 @@ $(document).ready(function () {
         }
     }
 
-    new EUScreenXL.PrivacyPage();
+    new EUScreenXL.SeriesPage();
 });

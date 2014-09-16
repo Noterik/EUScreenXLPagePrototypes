@@ -613,6 +613,113 @@
 					}
 				}
 			}
+		}
+		
+		// series page
+		.series {
+			
+			// main
+			.main {
+				
+				// row
+				.row {
+					
+					// left
+					.left {
+					
+						// header
+						.episode-header {
+							display: block;
+						}
+						
+						// player
+						.player-wrap {
+							margin-top:6px;
+						}
+						
+						// title
+						.episode-title {
+							margin-top:1px;
+							
+							// col
+							[class*='col-'] {
+								
+								// counter
+								.episode-counter {
+									display: none;
+								}
+							}
+						}
+						
+						// episode action
+						.episode-action {
+							border-left: 0px;
+							border-right: 0px;
+						}
+						
+						// episodes list
+						.episode-list {
+							border-left: 0px;
+							border-right: 0px;
+							
+							// media item
+							.media-item {
+							
+								// image
+								.media-image {
+								
+									// wrapper
+									.media-wrapper {
+										a {
+											.media-title {
+												bottom: 20px;
+												left: 20px;
+												
+												// set font
+												h3 {
+													font-size: 1em;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						
+						// more
+						.more {
+							border-left: 0px;
+							border-right: 0px;
+						}
+					}
+					
+					// right
+					.right {
+						border-right: 0px;
+						border-left: 0px;
+						
+						// series header
+						.series-header {
+							//margin-top:px;
+							
+							// col
+							[class*='col-'] {
+								
+								// media action
+								.media-action {
+									ul {
+										li {
+											.overlaycontent {
+												width: 300px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}	
 		
 		// audio player
@@ -1141,6 +1248,28 @@
 					.maps {
 						
 						width: 732.5px;
+					}
+				}
+			}
+		}
+		
+		// series
+		.series {
+			
+			// main
+			.main {
+				
+				// row
+				.row {
+					
+					// right
+					.right {
+						border-left: 6px solid @body-bg;
+						
+						// series header
+						.series-header {
+							margin-top:0px;
+						}
 					}
 				}
 			}

@@ -347,6 +347,23 @@ body .page .main .media-item .media-wrapper .media-length {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   z-index: 7;
 }
+body .page .main .media-item .media-wrapper .media-playing {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.76em;
+  letter-spacing: 1px;
+  display: block;
+  padding: 5px 9px 3px 10px;
+  border-radius: 2px;
+  z-index: 8;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
 body .page .main .media-item .media-wrapper .media-title {
   position: absolute;
   bottom: 20px;
@@ -603,6 +620,9 @@ body .page .main .media-action .button-list > li {
   margin-left: -4px;
   padding: 0px;
   position: relative;
+}
+body .page .main .media-action .button-list > li .tooltip {
+  z-index: 1031 !important;
 }
 body .page .main .media-action .button-list > li button {
   padding-top: 5px;
@@ -1581,6 +1601,44 @@ body .box-link:hover {
   body .about .main .partners-list .provider a .info h2 {
     margin-top: 70px;
   }
+  body .series .main .row .left .episode-header {
+    display: block;
+  }
+  body .series .main .row .left .player-wrap {
+    margin-top: 6px;
+  }
+  body .series .main .row .left .episode-title {
+    margin-top: 1px;
+  }
+  body .series .main .row .left .episode-title [class*='col-'] .episode-counter {
+    display: none;
+  }
+  body .series .main .row .left .episode-action {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  body .series .main .row .left .episode-list {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  body .series .main .row .left .episode-list .media-item .media-image .media-wrapper a .media-title {
+    bottom: 20px;
+    left: 20px;
+  }
+  body .series .main .row .left .episode-list .media-item .media-image .media-wrapper a .media-title h3 {
+    font-size: 1em;
+  }
+  body .series .main .row .left .more {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  body .series .main .row .right {
+    border-right: 0px;
+    border-left: 0px;
+  }
+  body .series .main .row .right .series-header [class*='col-'] .media-action ul li .overlaycontent {
+    width: 300px;
+  }
   body .audio-player {
     border-left: 0px;
     border-right: 0px;
@@ -1739,6 +1797,12 @@ body .box-link:hover {
   }
   body .content-map .main .content .maps {
     width: 732.5px;
+  }
+  body .series .main .row .right {
+    border-left: 6px solid #f2f2f2;
+  }
+  body .series .main .row .right .series-header {
+    margin-top: 0px;
   }
 }
 /* Medium devices (desktops, 992px and up) */

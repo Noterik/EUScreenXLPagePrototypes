@@ -5,3 +5,157 @@
 * This file contains the generic styles for the item page. These styles should be applied on all devices,
 * but might be overwritten in specific cases for certain devices.
 */
+.series .main .row .left .episode-header {
+  background: #fff;
+  display: none;
+}
+.series .main .row .left .episode-header [class*='col-'] {
+  padding-left: 0px;
+}
+.series .main .row .left .episode-header [class*='col-'] .tab {
+  background: #00aeef;
+  color: #fff;
+  display: inline-block;
+  height: 60px;
+  padding: 17px 20px 0 20px;
+  font-size: 1.071em;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+.series .main .row .left .episode-header [class*='col-'] .tab .episode-counter {
+  background: #fff;
+  color: #00aeef;
+  border-radius: 3px;
+  padding: 3px 10px 2px 10px;
+  display: inline-block;
+  font-size: 0.922em;
+  margin-left: 10px;
+}
+.series .main .row .left .episode-title [class*='col-'] {
+  background: #fff;
+  border-bottom: 5px solid #00aeef;
+  font-size: 1.143em;
+  padding: 15px 20px 14px 20px;
+}
+.series .main .row .left .episode-title [class*='col-'] .episode-counter {
+  background: #00aeef;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 2px 6px 1px 6px;
+  margin-right: 5px;
+}
+.series .main .row .left .episode-action {
+  background: #fff;
+  margin-top: 6px;
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
+}
+.series .main .row .left .episode-action [class*='col-'] {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.series .main .row .left .episode-action [class*='col-'] .episode-link {
+  padding: 17px 0 17px 0px;
+}
+.series .main .row .left .episode-action [class*='col-'] .episodes-sort {
+  text-align: right;
+  border-left: 1px solid #f2f2f2;
+  padding: 17px 0 17px 20px;
+}
+.series .main .row .left .episode-list {
+  margin-top: 6px;
+  margin-left: -21px;
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
+}
+.series .main .row .left .episode-list .media-item {
+  padding-left: 6px;
+  padding-right: 0px;
+  margin-bottom: 6px;
+}
+.series .main .row .left .episode-list .media-item.active .media-playing {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.series .main .row .left .episode-list .media-item .media-image .media-wrapper a .media-title {
+  bottom: 10px;
+  left: 10px;
+}
+.series .main .row .left .episode-list .media-item .media-image .media-wrapper a .media-title h3 {
+  font-size: 0.922em;
+}
+.series .main .row .left .more {
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
+}
+.series .main .row .right {
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
+}
+.series .main .row .right .series-header {
+  background: #fff;
+  border-bottom: 5px solid #00aeef;
+  margin-top: 6px;
+}
+.series .main .row .right .series-header [class*='col-'] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.series .main .row .right .series-header [class*='col-']:before,
+.series .main .row .right .series-header [class*='col-']:after {
+  content: " ";
+  display: table;
+}
+.series .main .row .right .series-header [class*='col-']:after {
+  clear: both;
+}
+.series .main .row .right .series-header [class*='col-'] .nav li {
+  background: #00aeef;
+  color: #fff;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  height: 60px;
+  padding: 17px 20px 0 20px;
+  font-size: 1.071em;
+}
+.series .main .row .right .series-header [class*='col-'] .media-action ul li {
+  border-bottom: 0px;
+}
+.series .main .row .right .series-header [class*='col-'] .media-action ul li .overlaycontent {
+  width: 262px;
+}
+.series .main .row .right .series-metadata {
+  background: #fff;
+  margin-top: 6px;
+}
+.series .main .row .right .series-metadata [class*='col-'] h1 {
+  font-size: 1.286em;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
+.series .main .row .right .series-metadata [class*='col-'] .item {
+  margin: 0 0 15px 0;
+}
+.series .main .row .right .series-metadata [class*='col-'] .item.space {
+  margin-bottom: 30px;
+}
+.series .main .row .right .series-metadata [class*='col-'] .header {
+  display: block;
+  font-size: 0.77em;
+  color: #808080;
+  letter-spacing: 1px;
+}
+.series .main .row .right .more {
+  margin-top: 1px;
+}
+.series .main .row .right .more .more-button #hide-extra-metadata {
+  display: none;
+}
+.series .main .row .right .ads-wrap {
+  margin-top: 6px;
+}
+.series .main .row .right .ads-wrap .ads {
+  padding-left: 0px;
+  padding-right: 0px;
+}

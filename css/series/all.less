@@ -12,10 +12,259 @@
 // every page starts with .page class selector
 // for body element styling, go to generic/all.css
 .series {
-
 	
 	// main
 	.main {
 		
+		// row
+		.row {
+
+			// left
+			.left {
+
+				// episode
+				.episode-header {
+					background: #fff;
+					display: none;
+
+					// col
+					[class*='col-'] {
+						padding-left: 0px;
+
+						// tab
+						.tab {
+							background: @euscreen-blue;
+							color: #fff;
+							display: inline-block;
+							height: 60px;
+							padding: 17px 20px 0 20px;
+							font-size: 1.071em;
+							font-family: @font-family-monospace;
+
+							// episode counter
+							.episode-counter {
+								background: #fff;
+								color: @euscreen-blue;
+								border-radius: 3px;
+								padding: 3px 10px 2px 10px;
+								display: inline-block;
+								font-size: 0.922em;
+								margin-left: 10px;
+							}
+						}
+					}
+				}
+
+				// title
+				.episode-title {
+					
+					// column
+					[class*='col-'] {
+						background: #fff;
+						border-bottom: 5px solid @euscreen-blue;
+						font-size: 1.143em;
+						padding: 15px 20px 14px 20px;	
+						
+						// counter
+						.episode-counter {
+							background: @euscreen-blue;
+							color: #fff;
+							border-radius: 3px;
+							display: inline-block;
+							padding: 2px 6px 1px 6px;
+							margin-right: 5px;
+							
+						}
+					}
+				}
+
+				// player
+				.player-wrap {
+				}
+
+				// action
+				.episode-action {
+					background: #fff;
+					margin-top:6px;
+					border-left: 6px solid @body-bg;
+					border-right: 6px solid @body-bg;
+					
+					// column
+					[class*='col-'] {
+						font-family: @font-family-monospace;
+						padding-right: 20px;
+						padding-left: 20px;
+
+						// episode link
+						.episode-link {
+							padding: 17px 0 17px 0px;
+						}
+
+						// episode sort
+						.episodes-sort {
+							text-align: right;
+							border-left: 1px solid @body-bg;
+							padding: 17px 0 17px 20px;
+						}
+					}
+				}
+
+				// episode list
+				.episode-list {
+					margin-top:6px;
+					margin-left: -21px;
+					border-left: 6px solid @body-bg;
+					border-right: 6px solid @body-bg;
+					
+					// media item
+					.media-item {
+						padding-left: 6px;
+						padding-right: 0px;
+						margin-bottom: 6px;	
+
+						// active
+						&.active {
+
+							// media playing
+							.media-playing {
+								.opacity(1);
+							}
+						}
+						
+						// image
+						.media-image {
+						
+							// wrapper
+							.media-wrapper {
+								a {
+									.media-title {
+										bottom: 10px;
+										left: 10px;
+										
+										// set font
+										h3 {
+											font-size: 0.922em;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				// more
+				.more {
+					border-left: 6px solid @body-bg;
+					border-right: 6px solid @body-bg;
+				}
+			}
+
+			// right
+			.right {
+
+				// create space between left & right
+				border-left: 6px solid @body-bg;
+				border-right: 6px solid @body-bg;
+				
+				// right
+				.series-header {
+					background: #fff;
+					border-bottom: 5px solid @euscreen-blue;
+					margin-top:6px;
+
+					// column
+					[class*='col-'] {
+						padding-left: 0px;
+						padding-right: 0px;
+						.clearfix;
+
+						// nav
+						.nav {
+							li {
+								background: @euscreen-blue;	
+								color: #fff;
+								font-family: @font-family-monospace;
+								height: 60px;
+								padding: 17px 20px 0 20px;
+								font-size: 1.071em;
+							}
+						}
+
+						// media action
+						.media-action {
+							ul {
+								li {
+									border-bottom: 0px;
+									
+									// overlay
+									.overlaycontent {
+										width: 262px;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				// metadata
+				.series-metadata {
+					background: #fff;
+					margin-top:6px;
+
+					// column
+					[class*='col-'] {
+
+						// head
+						h1 {
+							font-size: 1.286em;
+							font-family: @font-family-base;
+							line-height: 1.4em;
+							margin-bottom: 15px;
+						}
+
+						// item
+						.item {
+							margin: 0 0 15px 0;
+							
+							// apply margin to add a bit of space, after the item
+							// if the user wants it.
+							&.space {
+								margin-bottom: 30px;
+							}
+						}
+						
+						// header, styling is in bootstrap/mixins.less
+						.header {
+							.sectionHeading();
+						}
+					}
+				}
+
+				// more
+				.more {
+					margin-top:1px;
+
+					// button
+					.more-button {
+
+						// hide the less button
+						#hide-extra-metadata {
+							display: none;
+						}
+					}
+				}
+
+				// ads
+				.ads-wrap {
+					margin-top:6px;
+
+					// ads
+					.ads {
+						padding-left: 0px;
+						padding-right: 0px;
+					}
+				}
+			}
+		}
 	}
 }

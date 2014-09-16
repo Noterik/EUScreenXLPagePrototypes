@@ -115,18 +115,22 @@
 			    	<div class="left col-md-8 col-sm-12">
 			    		
 			    		<!-- episode header -->
-		    			<div class="episode-header">
-		    				Episode
+		    			<div class="row episode-header">
+                            <div class="col-md-12">
+		    			       <div class="tab">EPISODE <span class="episode-counter">1/23</span></div>
+                            </div>
 		    			</div>
 		    			
 		    			<!-- episode title -->
-		    			<div class="episode-title">
-		    				This is the episode title it can also be two lines
-		    			</div>
+		    			<div class="row episode-title">
+                            <div class="col-md-12">
+		    		            <span class="episode-counter">1/23</span> This is the episode title it can also be two lines
+		    		        </div>
+                        </div>
 			    		
 			    		
 			    		<!-- player -->
-			    		<div class="row">
+			    		<div class="row player-wrap">
 			    			
 			    			<!-- video -->
 		    				<div class="media-player col-md-12 aspect-ratio wide"> 
@@ -142,32 +146,34 @@
 			    		</div>
 			    		
 			    		<!-- episode action --> 
-		    			<div class="col-md-12 episode-action">
-		    				<div class="push-left">
-			    				<a href="item.html">GO TO EPISODE PAGE</a>
-		    				</div>
-		    				<div class="push-right">
-			    				
-			    				<!-- sort by options -->
-	                			<div class="wrap-dropdown">
-		                			<div class="dropdown">
-										<a role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-									    	<span class="colorgray">SORT BY</span> TITLE <span class="caret"></span>
-									    </a>
-									    <ul id="sortBy" class="dropdown-menu pull-right" role="menu" aria-labelledby="sortBy">
-			                				<li><a href="#" value="TITLE">TITLE</a></li>
-			                				<li><a href="#" value="YEAR">YEAR</a></li>
-			                			</ul>
-		                			</div>
-	                			</div>
-		    				</div>
+		    			<div class="row episode-action">
+                            <div class="col-md-12">
+    		    				<div class="episode-link pull-left">
+    			    				<a href="item.html">GO TO EPISODE PAGE</a>
+    		    				</div>
+    		    				<div class="episodes-sort pull-right">
+    			    				
+    			    				<!-- sort by options -->
+    	                			<div class="wrap-dropdown">
+    		                			<div class="dropdown">
+    										<a role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    									    	<span class="colorgray">SORT BY</span> OLDEST <span class="caret"></span>
+    									    </a>
+    									    <ul id="sortBy" class="dropdown-menu pull-right" role="menu" aria-labelledby="sortBy">
+    			                				<li><a href="#" value="OLDEST">OLDEST</a></li>
+    			                				<li><a href="#" value="NEWEST">NEWEST</a></li>
+    			                			</ul>
+    		                			</div>
+    	                			</div>
+    		    				</div>
+                            </div>
 		    			</div>
 		    			
 		    			<!-- one row of small thumbnail -->
                         <div class="episode-list row">   
                                                  
                             <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4">
+                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
                                 <div class="media-image">
                                     <div class="media-wrapper">
                                         <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
@@ -182,7 +188,23 @@
                             </div>
                             
                             <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4">
+                            <div class="media-item col-md-4 col-sm-4 col-xs-6 active">
+                                <div class="media-image">
+                                    <div class="media-wrapper">
+                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+                                            <span class="media-playing">NOW PLAYING</span>
+                                            <img src="img/content/ic_thumbnail.gif" class="media-object img-responsive" />
+                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                            <span class="media-title">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- item -->
+                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
                                 <div class="media-image">
                                     <div class="media-wrapper">
                                         <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
@@ -197,7 +219,7 @@
                             </div>
                             
                             <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4">
+                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
                                 <div class="media-image">
                                     <div class="media-wrapper">
                                         <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
@@ -212,7 +234,7 @@
                             </div>
                             
                             <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4">
+                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
                                 <div class="media-image">
                                     <div class="media-wrapper">
                                         <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
@@ -227,22 +249,7 @@
                             </div>
                             
                             <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4">
-                                <div class="media-image">
-                                    <div class="media-wrapper">
-                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
-                                            <img src="img/content/ic_thumbnail.gif" class="media-object img-responsive" />
-                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                            <span class="media-title">
-                                                <h3>Lorem ipsum dolor sit</h3>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4">
+                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
                                 <div class="media-image">
                                     <div class="media-wrapper">
                                         <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
@@ -257,12 +264,12 @@
                             </div>
                         </div>
                         
-                        <!-- results -->
-		                <div class="row">
-		                    <div class="more col-md-12">
-		                        <a href="#">SHOW MORE</a>
-		                    </div>
-		                </div>
+		                <!-- results -->
+                        <div class="row more">
+                            <div class="col-md-12 more-button">
+                                <a href="#">SHOW MORE</a>
+                            </div>
+                        </div>
 			    	</div>
 			    	
 			    	<!-- right -->
@@ -271,144 +278,185 @@
 			    		<!-- row -->
                         <div class="row series-header">
 
-                            <!-- tabs -->
-                            <div class="col-md-9 col-sm-8 tabs">
-                                <ul class="nav nav-tabs">
-		            				<li class="active"><a href="#">Series Info</a></li>
+                            <!-- column -->
+                            <div class="col-md-12">
+
+                                <!-- tabs-->
+                                <ul class="nav nav-tabs pull-left">
+		            				<li class="active">SERIES INFO</li>
 		            			</ul>
-                            </div>
 
-                            <!-- action icons -->
-                            <div class="col-md-3 col-sm-4 media-action">
-                            	<ul class="list-inline pull-right button-list">
-			    				
-			    					<!-- share buttons -->
-			    					<li class="share">
-			    						<button data-toggle="tooltip" data-placement="top" data-title="SHARE" data-overlay="#share-content">
-			    							<i class="icono icono-share"></i>
-			    						</button>
+                                <!-- action icons -->
+                                <div class="media-action">
+                                    <ul class="list-inline pull-right button-list">
+                                    
+                                        <!-- share buttons -->
+                                        <li class="share">
+                                            <button data-toggle="tooltip" data-placement="bottom" data-title="SHARE" data-overlay="#share-content">
+                                                <i class="icono icono-share"></i>
+                                            </button>
 
-			    						<!-- share item content -->
-			    						<div class="overlaycontent" id="share-content">
-			    							<h3>SHARE THIS ITEM</h3>
-											<ul class="list-inline">	
-												<li><a href="#" title="Share to Facebook">
-													<span class="fa-stack fa-lg">
-														<i class="fa fa-circle fa-stack-2x"></i>
-														<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-													</span>
-												</a></li>
-												<li><a href="#" title="Share to Twitter">
-													<span class="fa-stack fa-lg">
-														<i class="fa fa-circle fa-stack-2x"></i>
-														<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-													</span>
-												</a></li>
-												<li><a href="#" title="Share to Google +">
-													<span class="fa-stack fa-lg">
-														<i class="fa fa-circle fa-stack-2x"></i>
-														<i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-													</span>
-												</a></li>
-											</ul>
-											
-											<!-- permalink -->
-											<div class="permalink input-group">
-												<span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
-												<input type="text" class="form-control" readonly value="http://loremipsum.com/v/12412"/>
-											</div>
-										</div>
-			    					</li>
+                                            <!-- share item content -->
+                                            <div class="overlaycontent" id="share-content">
+                                                <h3>SHARE THIS ITEM</h3>
+                                                <ul class="list-inline">    
+                                                    <li><a href="#" title="Share to Facebook">
+                                                        <span class="fa-stack fa-lg">
+                                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                                        </span>
+                                                    </a></li>
+                                                    <li><a href="#" title="Share to Twitter">
+                                                        <span class="fa-stack fa-lg">
+                                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                                        </span>
+                                                    </a></li>
+                                                    <li><a href="#" title="Share to Google +">
+                                                        <span class="fa-stack fa-lg">
+                                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                                            <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                                        </span>
+                                                    </a></li>
+                                                </ul>
+                                                
+                                                <!-- permalink -->
+                                                <div class="permalink input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                                    <input type="text" class="form-control" readonly value="http://loremipsum.com/v/12412"/>
+                                                </div>
+                                            </div>
+                                        </li>
 
-			    					<!-- bookmark button -->
-			    					<li class="bookmark">
-			    						<button data-toggle="tooltip" data-placement="top" data-title="ADD TO BOOKMARK" data-overlay="#bookmark-content">
-			    							<i class="icono icono-bookmark"></i>
-			    						</button>
-			    						<div class="overlaycontent" id="bookmark-content">
+                                        <!-- bookmark button -->
+                                        <li class="bookmark">
+                                            <button data-toggle="tooltip" data-placement="bottom" data-title="ADD TO BOOKMARK" data-overlay="#bookmark-content">
+                                                <i class="icono icono-bookmark"></i>
+                                            </button>
+                                            <div class="overlaycontent" id="bookmark-content">
 
-			    							<!-- login form when user has not logged in -->
-			    							<div id="login-form" class="hidden">
-			    								<h3>SIGN IN TO BOOKMARK</h3>
-												<div class="login-form visible">
-											        <form class="login">
-										                <input id="bookmark-user-email" placeholder="Email" class="form-control" type="text"/>
-										                <input id="bookmark-user-password" placeholder="Password" class="form-control" type="password" />
-										                <input type="submit" value="LOGIN" class="btn btn-primary btn-euscreen btn-block"/>
-										            </form>
-											        <span class="extra">
-											        	<a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a>
-											        </span>
-											    </div>
-											</div>
+                                                <!-- login form when user has not logged in -->
+                                                <div id="login-form" class="hidden">
+                                                    <h3>SIGN IN TO BOOKMARK</h3>
+                                                    <div class="login-form visible">
+                                                        <form class="login">
+                                                            <input id="bookmark-user-email" placeholder="Email" class="form-control" type="text"/>
+                                                            <input id="bookmark-user-password" placeholder="Password" class="form-control" type="password" />
+                                                            <input type="submit" value="LOGIN" class="btn btn-primary btn-euscreen btn-block"/>
+                                                        </form>
+                                                        <span class="extra">
+                                                            <a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
 
-											<!-- bookmark form -->
-											<div id="bookmark-form">
-			    								<h3>ADD ITEM TO</h3>
-			    								<div>
-			    									<div class="list-group hidden">
-														<a href="#" class="list-group-item active">My first folder</a>
-														<a href="#" class="list-group-item ">My second folder</a>
-  														<a href="#" class="list-group-item disabled">
-  															<i class="fa fa-plus"></i> &nbsp; Add new folder 
-  														</a>
-													</div>
-													<div class="select-wrap">
-														<select>
-															<option>My first collection</option>
-															<option>My second collection</option>
-														</select>
-														<i class="glyphicon glyphicon-chevron-down"></i>
-													</div>
-													<a href="#" class="folder-action">ADD NEW COLLECTION</a> 
-													<input type="submit" value="DONE" class="btn btn-primary btn-euscreen btn-block"/>
-			    								</div>
-											</div>
-										</div>
-			    					</li>
-			    				</ul>
+                                                <!-- bookmark form -->
+                                                <div id="bookmark-form">
+                                                    <h3>ADD ITEM TO</h3>
+                                                    <div>
+                                                        <div class="list-group hidden">
+                                                            <a href="#" class="list-group-item active">My first folder</a>
+                                                            <a href="#" class="list-group-item ">My second folder</a>
+                                                            <a href="#" class="list-group-item disabled">
+                                                                <i class="fa fa-plus"></i> &nbsp; Add new folder 
+                                                            </a>
+                                                        </div>
+                                                        <div class="select-wrap">
+                                                            <select>
+                                                                <option>My first collection</option>
+                                                                <option>My second collection</option>
+                                                            </select>
+                                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                                        </div>
+                                                        <a href="#" class="folder-action">ADD NEW COLLECTION</a> 
+                                                        <input type="submit" value="DONE" class="btn btn-primary btn-euscreen btn-block"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         
                         <!--  series metadata -->
-                        <div class="series-metadata">
-                        	<h1>This is the series title</h1>
-                        	<div class="item">
-    							<span class="header">ORIGINAL TITLE</span>
-	    						<span>Lorem ipsum dolor sit amet</span>
-	    					</div>
-	    					<div class="item">
-    							<span class="header">PROVIDER</span>
-	    						<span>Cinnecita Luce</span>
-	    					</div>
-	    					<div class="item">
-    							<span class="header">PRODUCTION YEAR</span>
-	    						<span>1992</span>
-	    					</div>
-	    					<div class="item">
-    							<span class="header">LANGUAGE</span>
-	    						<span>Channel V</span>
-	    					</div>
-	    					<div class="item">
-    							<span class="header">SUMMARY</span>
-	    						<span>
-	    							<p>
-		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
-		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
-		    							quis nostrud exerci tation ullamcorper suscipit lobortis
-	    							</p>
-	    							<p>
-		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
-		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
-		    							quis nostrud exerci tation ullamcorper suscipit lobortis
-	    							</p>	    						
-	    						</span>
-	    					</div>
-	    					
-	    					<!-- results -->
-			                <div class="more-button">
-			                	<a href="#">SHOW MORE</a>
-			                </div>
+                        <div class="row series-metadata">
+                            <div class="col-md-12">
+                            	<h1>This is the series title it can also be longer than one line</h1>
+                            	<div class="item">
+        							<span class="header">ORIGINAL TITLE</span>
+    	    						<span>Lorem ipsum dolor sit amet</span>
+    	    					</div>
+    	    					<div class="item">
+        							<span class="header">PROVIDER</span>
+    	    						<span>Cinnecita Luce</span>
+    	    					</div>
+    	    					<div class="item">
+        							<span class="header">PRODUCTION YEAR</span>
+    	    						<span>1992</span>
+    	    					</div>
+    	    					<div class="item">
+        							<span class="header">LANGUAGE</span>
+    	    						<span>Channel V</span>
+    	    					</div>
+    	    					<div class="item">
+        							<span class="header">SUMMARY</span>
+    	    						<span>
+    	    							<p>
+    		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+    		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+    		    							quis nostrud exerci tation ullamcorper suscipit lobortis
+    	    							</p>
+    	    							<p>
+    		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+    		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+    		    							quis nostrud exerci tation ullamcorper suscipit lobortis
+    	    							</p>	    						
+    	    						</span>
+    	    					</div>
+
+                                <!-- extra information-->
+                                <div id="extra-metadata" class="collapse extra-info">
+                                    <div class="item">
+                                        <span class="header">COUNTRY OF PRODUCTION</span>
+                                        <span>United Kingdom</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="header">ORIGINAL LANGUAGE</span>
+                                        <span>English</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="header">SUBTITLE LANGUAGE</span>
+                                        <span>Italian</span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="header">GEOGRAPHICAL COVERAGE</span>
+                                        <span>Europe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- results -->
+                        <div class="row more">
+                            <div class="col-md-12 more-button">
+                                <a data-toggle="collapse" id="show-extra-metadata" data-target="#extra-metadata">SHOW MORE</a>
+                                <a data-toggle="collapse" id="hide-extra-metadata" data-target="#extra-metadata">SHOW LESS</a>
+                            </div>
+                        </div>
+                        
+                        <!-- ads 2 -->
+                        <div class="row ads-wrap  hidden-sm hidden-xs">
+                            <div class="ads col-md-12">
+                                <span class="wrap">
+                                    <a href="myeuscreen.html" target="_blank">
+                                        <span class="text">
+                                            SIGN UP FOR MYEUSCREEN
+                                        </span>
+                                    </a>
+                                </span>
+                                <img src="img/content/itempage_sign.png" class="img-responsive"/>
+                            </div>
                         </div>
 			    	</div>
                 </div>
