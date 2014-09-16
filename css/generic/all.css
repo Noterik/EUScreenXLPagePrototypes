@@ -1211,7 +1211,7 @@ body ul.dropdown-menu {
   border-radius: 0px;
   box-shadow: none;
   padding: 1px 1px 0px 1px;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 body ul.dropdown-menu > .active > a,
 body ul.dropdown-menu > .active > a:hover,
@@ -1221,6 +1221,10 @@ body ul.dropdown-menu > .active > a:active {
 body ul.dropdown-menu a {
   color: #808080;
   margin-bottom: 1px;
+  padding: 8px 10px 8px 15px;
+  background: #ffffff;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
 body ul.dropdown-menu a:hover,
 body ul.dropdown-menu a:active {
@@ -1907,6 +1911,12 @@ body .box-link:hover {
   }
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-volume {
     display: block;
+  }
+  body ul.dropdown-menu {
+    font-size: 1em;
+  }
+  body ul.dropdown-menu a {
+    padding: 5px 10px 5px 15px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

@@ -1336,7 +1336,8 @@ body {
 		border-radius: 0px;
 		box-shadow: none;
 		padding: 1px 1px 0px 1px;
-		font-size: 1em;
+		font-size: 1.3em;
+		
 		> .active {
 			> a, > a:hover, > a:active {
 				background-image: none;
@@ -1345,11 +1346,15 @@ body {
 		a {
 			color: @euscreen-gray;
 			margin-bottom: 1px;
+			padding: 8px 10px 8px 15px;
+			background: @euscreen-white;
+			.transition(background 0.3s);
+			
 			&:hover, &:active {
 				background: @euscreen-blue;
 				color: @euscreen-white;
 			}
-		}
+		}	
 	}
 	
 	// modal

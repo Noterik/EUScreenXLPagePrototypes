@@ -413,7 +413,10 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   text-align: center;
   padding-top: 15px;
   font-size: 1.2em;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
+.search .main .right .row.results-action .counter .pull-right .sort-option a:hover,
 .search .main .right .row.results-action .counter .pull-right .sort-option a:active {
   background: #00aeef;
   color: #fff;
