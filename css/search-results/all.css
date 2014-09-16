@@ -113,7 +113,7 @@ textarea.search .main .left .row .searchbar input[type="text"] {
 .search .main .left .row .selectedfilter .clear {
   float: right;
   display: block;
-  margin: 21px 25px 0 0;
+  margin: 21px 20px 0 0;
 }
 .search .main .left .row .selectedfilter .clear a {
   color: #a3a3a3;
