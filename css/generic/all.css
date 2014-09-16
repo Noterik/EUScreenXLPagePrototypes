@@ -103,6 +103,7 @@ body .page header .navbar .user-thumbnail {
   top: 17px;
   width: 37px;
   height: 37px;
+  display: none;
 }
 body .page header .navbar .user-thumbnail .frame {
   width: 37px;
@@ -1866,6 +1867,9 @@ body .box-link:hover {
   body .page header .navbar .container .navbar-header.searchOpened a.navbar-brand {
     display: block;
   }
+  body .page header .navbar .container .user-thumbnail {
+    display: block;
+  }
   body .page footer {
     display: block;
   }
@@ -1898,6 +1902,7 @@ body .box-link:hover {
     margin-top: 16px;
     padding-top: 0px;
   }
+  body .search .main .right .row.results-action .counter .pull-right .sort-option a:hover,
   body .search .main .right .row.results-action .counter .pull-right .sort-option a:active {
     background: #fff;
     color: #00aeef;

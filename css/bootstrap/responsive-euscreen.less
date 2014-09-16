@@ -1389,6 +1389,11 @@
 								}
 							}
 						}
+						
+						// show user profile
+						.user-thumbnail {
+							display: block;
+						}
 					}				
 				}
 			}
@@ -1455,7 +1460,7 @@
 											font-size: 1em;
 											margin-top:16px;
 											padding-top:0px;
-											&:active {
+											&:hover, &:active {
 												background: #fff;
 												color: @euscreen-blue;
 											}
@@ -1493,7 +1498,9 @@
 			}
 		}
 		
+		// drop down menu
 		ul.dropdown-menu {
+		
 			font-size: 1em;
 			a {
 				padding: 5px 10px 5px 15px;
