@@ -5,7 +5,7 @@ $(document).ready(function () {
     
     // map data
     var mapData = {},
-    	mapSize = {};
+    	mapSettings = {};
 
     EUScreenXL.ContentMapPage = function () {
         EUScreenXL.Page.apply(this, arguments);
@@ -20,30 +20,40 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+        
+        // only activates map tooltip on desktop
+        // otherwise it takes two tap to view overlay content
+        if(EUScreenXL.Page.prototype.device == "desktop") {
+
+            // activate tooltip
+            mapSettings.tooltip = true; 
+        } else {
+	        mapSettings.tooltip = false;
+        }
 
         // get vmap size
-        mapSize.width = $('.maps').outerWidth(); // 30 is the padding
-        mapSize.height =  (mapSize.width * 3) / 4 + 15;
+        mapSettings.width = $('.maps').outerWidth(); // 30 is the padding
+        mapSettings.height =  (mapSettings.width * 3) / 4 + 15;
 
         // set map size
         $('#vmap').css({
-	        width: mapSize.width +'px',
-	        height: mapSize.height +'px'
+	        width: mapSettings.width +'px',
+	        height: mapSettings.height +'px'
         });
 
         // load interactive map
         // using jqvmap (MIT License)
         $('#vmap').vectorMap({
             map: 'europe_en',
-            enableZoom: false,
-            showTooltip: true,
+            enableZoom: true,
+            showTooltip: mapSettings.tooltip,
             backgroundColor: '#fff',
             borderColor: '#fff',
             color: '#dedede',
             onRegionOver: function(element, code, region) {
 	            
 	            // show info
-	            showMapInfo(element, code, region);
+	            // showMapInfo(element, code, region);
             },
             onRegionClick: function(element, code, region) {
             
