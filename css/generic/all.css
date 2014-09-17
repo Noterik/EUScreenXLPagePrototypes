@@ -627,7 +627,7 @@ body .page .main .media-action .button-list > li .tooltip {
   z-index: 1031 !important;
 }
 body .page .main .media-action .button-list > li button {
-  padding-top: 5px;
+  padding-top: 10px;
   height: 60px;
   width: 60px;
   display: block;
@@ -1902,6 +1902,7 @@ body .box-link:hover {
   }
   body .search .main .right .row.results-action .counter .pull-right .sort-option {
     margin-right: 20px;
+    margin-top: 3px;
   }
   body .search .main .right .row.results-action .counter .pull-right .sort-option a {
     border-left: 0px;
