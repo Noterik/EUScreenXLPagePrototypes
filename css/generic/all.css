@@ -744,7 +744,6 @@ body .page .jumbotron-wide {
   height: 200px;
   margin-top: 70px;
   width: 100%;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -1834,6 +1833,9 @@ body .box-link:hover {
   }
   body .page .main {
     padding-bottom: 50px !important;
+  }
+  body .page .jumbotron-wide {
+    background-attachment: fixed;
   }
   body .page header .navbar .container .navbar-header {
     width: 60%;
