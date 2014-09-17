@@ -115,12 +115,13 @@ body .page header .navbar .user-thumbnail .frame {
   left: 0px;
 }
 body .page header .navbar .user-thumbnail .status-icon {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   position: absolute;
-  bottom: 0px;
-  right: 0px;
-  border-radius: 4px;
+  border: 2px solid #fff;
+  bottom: -2px;
+  right: -2px;
+  border-radius: 6px;
   background: #8be415;
 }
 body .page header .navbar .user-thumbnail .dropdown-menu li a {

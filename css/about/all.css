@@ -6,7 +6,7 @@
 * but might be overwritten in specific cases for certain devices.
 */
 .about .jumbotron-wide {
-  background: url('../../img/content/bg-terms.jpg');
+  background: url('../../img/content/banners/bg-about.jpg');
 }
 .about .main {
   padding-top: 0px !important;
@@ -413,7 +413,7 @@
   width: 80%;
 }
 .about .main .about-section .left {
-  background-image: url('../../img/content/bg-explore-map.gif');
+  background-image: url('../../img/content/banners/bg-about-explore.gif');
 }
 .about .main .about-section .left a .hue {
   background: rgba(0, 0, 0, 0.1);
@@ -424,7 +424,7 @@
   background: rgba(140, 198, 63, 0.5);
 }
 .about .main .about-section .middle {
-  background-image: url('../../img/content/bg-content-provider.gif');
+  background-image: url('../../img/content/banners/bg-about-provider.gif');
 }
 .about .main .about-section .middle a .hue {
   background: rgba(0, 0, 0, 0.1);
@@ -435,7 +435,7 @@
   background: rgba(0, 174, 239, 0.5);
 }
 .about .main .about-section .right {
-  background-image: url('../../img/content/bg-content-selection.gif');
+  background-image: url('../../img/content/banners/bg-about-selection.gif');
 }
 .about .main .about-section .right a .hue {
   background: rgba(0, 0, 0, 0.1);

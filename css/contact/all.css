@@ -6,7 +6,7 @@
 * but might be overwritten in specific cases for certain devices.
 */
 .contact .jumbotron-wide {
-  background: url('../../img/content/bg-terms.jpg');
+  background: url('../../img/content/banners/bg-contact.jpg');
 }
 .contact .main {
   padding-top: 0px !important;
