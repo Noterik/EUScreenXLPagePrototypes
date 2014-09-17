@@ -901,7 +901,7 @@ body .mobilenav .info li.active a {
   color: #ffffff;
 }
 body .mobilenav .secondary li a {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 body .mobilenav .info {
   border-bottom: 0px;
@@ -1464,6 +1464,12 @@ body .box-link:hover {
   }
   body .content-map .main .content .maps {
     width: 567.5px;
+  }
+  body .terms .main .static-page,
+  body .privacy .main .static-page,
+  body .contact .main .static-page {
+    border-left: 0px;
+    border-right: 0px;
   }
   body .terms .main .static-page .content,
   body .privacy .main .static-page .content,

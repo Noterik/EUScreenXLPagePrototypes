@@ -13,6 +13,10 @@
 }
 .contact .main .static-page {
   background: #fff;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
 }
 .contact .main .static-page:before,
 .contact .main .static-page:after {

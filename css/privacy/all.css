@@ -13,6 +13,10 @@
 }
 .privacy .main .static-page {
   background: #fff;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-left: 6px solid #f2f2f2;
+  border-right: 6px solid #f2f2f2;
 }
 .privacy .main .static-page:before,
 .privacy .main .static-page:after {
