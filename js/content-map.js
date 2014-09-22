@@ -25,9 +25,19 @@ $(document).ready(function () {
         // otherwise it takes two tap to view overlay content
         if(EUScreenXL.Page.prototype.device == "desktop") {
 
-            // activate tooltip
-            mapSettings.tooltip = true; 
+            // window width
+            if($(window).width() <= 1025) {
+
+                // this is tablet horizontal 
+                mapSettings.tooltip = false;
+             } else {
+
+                // activate tooltip, this is desktop
+                mapSettings.tooltip = true; 
+             }
         } else {
+
+            // tablet vertical
 	        mapSettings.tooltip = false;
         }
 
