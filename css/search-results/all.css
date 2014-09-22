@@ -8,6 +8,9 @@
 .search .main.search-results {
   padding-top: 70px;
 }
+.search .main .left {
+  -webkit-overflow-scrolling: touch;
+}
 .search .main .left .row [class*='col-'] {
   padding-left: 0px;
   padding-right: 0px;
@@ -207,6 +210,30 @@ textarea.search .main .left .row .searchbar input[type="text"] {
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li,
 .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li {
   list-style: none;
+  /* active
+										&:active {
+											background: @euscreen-lightgreen;
+											color: #fff;
+											a {
+												color: @euscreen-white;
+											}
+											.badge {
+												color: @euscreen-lightgreen;
+												background: @euscreen-white;
+											}
+										}*/
+  /* hover
+										&:hover {
+											background: @euscreen-lightgreen;
+											color: #fff;
+											a {
+												color: @euscreen-white;
+											}
+											.badge {
+												color: @euscreen-lightgreen;
+												background: @euscreen-white;
+											}
+										}*/
 }
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li:before,
 .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:before,
@@ -226,20 +253,6 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   width: 70%;
   float: left;
   color: #808080;
-}
-.search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover {
-  background: #a8d46d;
-  color: #fff;
-}
-.search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover a,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a {
-  color: #ffffff;
-}
-.search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover .badge,
-.search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge {
-  color: #a8d46d;
-  background: #ffffff;
 }
 .search .main .left .row .filters .accordion .filter .filtercontent .listing li .badge,
 .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li .badge {

@@ -1424,6 +1424,45 @@
 					&.fix-bottom {
 						bottom: 233px !important;
 					}
+
+					// row
+					.row {
+
+						// filters
+						.filters, .mediaselector {
+
+							// accordion
+							.accordion {
+
+								// filter
+								.filter {
+
+									// the wrapper of the filter
+									.filtercontent {
+
+										// listing
+										.listing {
+
+											// li
+											li {
+												&:hover, &:active {
+													background: @euscreen-lightgreen;
+													color: #fff;
+													a {
+														color: @euscreen-white;
+													}
+													.badge {
+														color: @euscreen-lightgreen;
+														background: @euscreen-white;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 				
 				// right
@@ -1538,7 +1577,6 @@
 				}
 			}
 		}
-		
 		
 		// audio player
 		.audio-player {

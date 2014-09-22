@@ -1888,6 +1888,26 @@ body .box-link:hover {
   body .search .main .left.fix-bottom {
     bottom: 233px !important;
   }
+  body .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover,
+  body .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover,
+  body .search .main .left .row .filters .accordion .filter .filtercontent .listing li:active,
+  body .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:active {
+    background: #a8d46d;
+    color: #fff;
+  }
+  body .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover a,
+  body .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover a,
+  body .search .main .left .row .filters .accordion .filter .filtercontent .listing li:active a,
+  body .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:active a {
+    color: #ffffff;
+  }
+  body .search .main .left .row .filters .accordion .filter .filtercontent .listing li:hover .badge,
+  body .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:hover .badge,
+  body .search .main .left .row .filters .accordion .filter .filtercontent .listing li:active .badge,
+  body .search .main .left .row .mediaselector .accordion .filter .filtercontent .listing li:active .badge {
+    color: #a8d46d;
+    background: #ffffff;
+  }
   body .search .main .right.fix {
     margin-left: 323.3333px;
   }
