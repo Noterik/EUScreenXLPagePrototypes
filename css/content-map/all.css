@@ -136,20 +136,21 @@
   background: rgba(140, 198, 63, 0.6);
   color: #fff;
   border-radius: 3px;
-  padding: 10px 8px 7px 9px;
   height: auto;
   width: auto;
-  font-size: 1.5em;
+  font-size: 20px;
   font-weight: bold;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
+  line-height: 20px;
+  padding: 5px 10px 5px 10px;
 }
 .content-map .main .content .maps .jqvmap-zoomin:hover,
 .content-map .main .content .maps .jqvmap-zoomout:hover {
   background: rgba(140, 198, 63, 0.8);
 }
 .content-map .main .content .maps .jqvmap-zoomout {
-  top: 42px !important;
+  top: 45px !important;
 }
 .content-map .main .row.map-notification {
   background: #fff;
