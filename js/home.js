@@ -30,6 +30,10 @@ $(document).ready(function () {
 
             // activate tooltip
             this.$tooltipButtons.tooltip();
+        } 
+
+        // on desktop
+        if($(window).width() > 1025) {
 
             // modal
             $('.media-item a').click(function(){
