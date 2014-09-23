@@ -448,14 +448,25 @@ body .page .main .media-item .media-wrapper .media-hue i {
   margin: -15px 0 0 -12px;
   position: absolute;
 }
-body .page .main .media-item:hover .media-wrapper .media-hue {
-  opacity: 1;
-}
-body .page .main .media-item:hover .media-wrapper .media-title {
-  opacity: 1;
-}
-body .page .main .media-item:hover .media-metadata a h3.media-heading {
-  color: #71a230;
+body .page .main .media-item:hover {
+  /*
+					.media-wrapper {
+						.media-hue {
+							opacity: 1;
+						}
+
+						.media-title {
+							opacity: 1;
+						}
+					}
+					
+					// media metadata
+					.media-metadata {
+						a h3.media-heading {
+							color: darken(@euscreen-green, 10%);
+						}
+					}
+					*/
 }
 body .page .main .media-action {
   background: #ffffff;
@@ -1939,17 +1950,6 @@ body .box-link:hover {
   body .search .main .right .row.results-action .counter .pull-right .sort-option a:active {
     background: #fff;
     color: #00aeef;
-  }
-  body .home .main .row .collection-viewer .row .media-item .media-image .media-wrapper .media-title {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
-    background: none;
-  }
-  body .home .main .row .collection-viewer .row .media-item:hover .media-image .media-wrapper .media-title {
-    opacity: 1;
-    filter: alpha(opacity=100);
   }
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-controls li .jp-mute,
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-controls li .jp-unmute {

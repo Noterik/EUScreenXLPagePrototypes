@@ -30,6 +30,21 @@ $(document).ready(function () {
 
             // activate tooltip
             this.$tooltipButtons.tooltip();
+
+            // modal
+            $('.media-item a').click(function(){
+                $('#player-modal').modal({backdrop:'static'});
+            });
+        } else {
+
+            // modal
+            $('.media-item a').click(function(){
+
+                // show 
+                if($('.media-hue',this).css('opacity') == 1) {
+                    $('#player-modal').modal({backdrop:'static'});
+                }
+            });
         }
 
         // popop overlay
