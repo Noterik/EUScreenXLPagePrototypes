@@ -15,6 +15,11 @@ $(document).ready(function () {
         this.$modalButtons = jQuery('.modal-button');
         this.$overlayContents = jQuery('.overlaycontent');
         this.$collectionViewerElements = jQuery('#collection-viewer-container');
+        this.$modalPlayerElements = jQuery('#player-modal');
+        this.$mediaItemLinkElements = jQuery('.media-item a');
+
+        // var
+        var obj = this;
 
         // nav panel
         this.$navElement.slidePanelJS({
@@ -24,29 +29,27 @@ $(document).ready(function () {
             speed:200
         });
 
-        // only activates tooltip on desktop
-        // otherwise it takes two tap to view overlay content
+        // device specific initiation
         if(EUScreenXL.Page.prototype.device == "desktop") {
 
-            // activate tooltip
+            // only activates tooltip on desktop
+            // otherwise it takes two tap to view overlay content
             this.$tooltipButtons.tooltip();
-        } 
 
-        // on desktop
-        if($(window).width() > 1025) {
-
-            // modal
-            $('.media-item a').click(function(){
-                $('#player-modal').modal({backdrop:'static'});
+            // initialize modal on click
+            this.$mediaItemLinkElements.click(function(){
+                obj.$modalPlayerElements.modal({ backdrop:'static' });
             });
+
         } else {
 
-            // modal
-            $('.media-item a').click(function(){
+            // initialize modal on second click
+            // CSS hover works on first tap (show media-hue)
+            this.$mediaItemLinkElements.click(function(){
 
                 // show 
                 if($('.media-hue',this).css('opacity') == 1) {
-                    $('#player-modal').modal({backdrop:'static'});
+                    obj.$modalPlayerElements.modal({ backdrop:'static' });
                 }
             });
         }

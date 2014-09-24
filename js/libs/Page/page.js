@@ -7,6 +7,7 @@ EUScreenXL.Page = function (options) {
 };
 
 EUScreenXL.Page.prototype.device = new EUScreenXL.DeviceDetect().getDevice();
+EUScreenXL.Page.prototype.orientation = new EUScreenXL.DeviceDetect().getOrientation();
 EUScreenXL.Page.prototype.name = null;
 EUScreenXL.Page.prototype.init = function () {
     //BIND EVENTS

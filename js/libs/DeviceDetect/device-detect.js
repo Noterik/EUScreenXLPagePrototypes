@@ -3,7 +3,8 @@ if (!window.EUScreenXL) {
 }
 
 EUScreenXL.DeviceDetect = function () {
-    var device;
+    var device,
+        orientation = "landscape";
 
     var detectDeviceContext = function () {
     	/*
@@ -14,11 +15,16 @@ EUScreenXL.DeviceDetect = function () {
     			- When the screen is bigger than 1200, we shift the UI to a more bigger desktop version (>= 1200px) is Desktop [large]
     	*/
         var mobileMediaQuery = "(max-width: 768px)"; // less than 768, Mobile [portrait & landscape]
-        var tabletMediaQuery = "(max-width: 1024px)"; // less than 992, Tablet [portrait]
+        var tabletPortraitMediaQuery = "(max-width: 992px)"; // less than 992, Tablet [portrait]
+        var tabletLandscapeMediaQuery = "(max-width: 1025px)"; // less than 1025, Tablet [landscape]
         if (window.matchMedia(mobileMediaQuery).matches) {
             device = "mobile";
-        } else if (window.matchMedia(tabletMediaQuery).matches) {
+        } else if (window.matchMedia(tabletPortraitMediaQuery).matches) {
             device = "tablet";
+            orientation = "portrait";
+        } else if (window.matchMedia(tabletLandscapeMediaQuery).matches) {
+            device = "tablet";
+            orientation = "landscape";
         } else {
             device = "desktop"; // more than 992, Tablet [landscape] and Desktop [small & large]
         }
@@ -31,6 +37,10 @@ EUScreenXL.DeviceDetect = function () {
 
     this.getDevice = function () {
         return device;
+    }
+
+    this.getOrientation = function(){
+        return orientation;
     }
 
     detectDeviceContext();

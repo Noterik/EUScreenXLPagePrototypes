@@ -21,24 +21,16 @@ $(document).ready(function () {
             speed:200
         });
         
-        // only activates map tooltip on desktop
-        // otherwise it takes two tap to view overlay content
+        // device specific initiation
         if(EUScreenXL.Page.prototype.device == "desktop") {
 
-            // window width
-            if($(window).width() <= 1025) {
+            // activate tooltip, this is desktop
+            mapSettings.tooltip = true;
 
-                // this is tablet horizontal 
-                mapSettings.tooltip = false;
-             } else {
-
-                // activate tooltip, this is desktop
-                mapSettings.tooltip = true; 
-             }
         } else {
 
-            // tablet vertical
-	        mapSettings.tooltip = false;
+            // this is tablet & mobile 
+            mapSettings.tooltip = false;
         }
 
         // get vmap size
@@ -60,11 +52,6 @@ $(document).ready(function () {
             backgroundColor: '#fff',
             borderColor: '#fff',
             color: '#dedede',
-            onRegionOver: function(element, code, region) {
-	            
-	            // show info
-	            // showMapInfo(element, code, region);
-            },
             onRegionClick: function(element, code, region) {
             
                 // show info
