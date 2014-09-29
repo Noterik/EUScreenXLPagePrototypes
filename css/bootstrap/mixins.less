@@ -3,6 +3,48 @@
 // Do not change anything below this customs mixin
 // --------------------------------------------------
 
+// fullscreen styling
+// on homepage
+.fullscreenStyling() {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+	
+	// collection viewer
+	.row-collection-viewer {
+		padding-left: 5px;
+		padding-right: 5px;
+		background: @body-bg;
+		overflow: auto;
+		
+		// more
+		.more {
+			border-bottom: 6px solid @body-bg;
+		}
+	}
+	
+	// remove the margin
+	// because the tab will be the header
+	.collection-viewer-tab {
+		margin-top: 0px;
+
+		// here, we will switch the fullscreen icon
+		// to the minimize icon
+		.main-nav {
+			.media-action {
+				.button-list {
+					.exit-fullscreen {
+						display: inline-block;
+					}
+					.fullscreen {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
 // Menu button
 .btn-eumenu() {
 	height: 70px;

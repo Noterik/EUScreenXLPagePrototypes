@@ -669,6 +669,11 @@ body .page .main .media-action .button-list > li button:active i.icono-expand,
 body .page .main .media-action .button-list > li button.active i.icono-expand {
   background-position: 0px -106px;
 }
+body .page .main .media-action .button-list > li button:hover i.icono-minimize,
+body .page .main .media-action .button-list > li button:active i.icono-minimize,
+body .page .main .media-action .button-list > li button.active i.icono-minimize {
+  background-position: -48px -106px;
+}
 body .page .main .jumbotron-small {
   background-size: cover;
   height: 130px;
@@ -946,6 +951,13 @@ body i.icono-expand,
 body span.icono-expand,
 body div.icono-expand {
   background-position: 0px -82px;
+  width: 24px;
+  height: 24px;
+}
+body i.icono-minimize,
+body span.icono-minimize,
+body div.icono-minimize {
+  background-position: -48px -82px;
   width: 24px;
   height: 24px;
 }

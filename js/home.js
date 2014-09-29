@@ -59,12 +59,74 @@ $(document).ready(function () {
             $overlayContents : this.$overlayContents,
             contentOverlayIdAttr : 'data-overlay'
         });
+        
+        // fullscreen event
+        $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange',function(e){
+	    	
+	    	// check 
+	    	if(isFullscreen()) {
+		    	
+		    	var tabHeight = $('.collection-viewer-tab').height(),
+		    		winHeight = $(window).height(),
+		    		viewerHeight = winHeight - tabHeight + 80;
+		    	console.log('WIN: '+winHeight);
+		    	console.log('TAB: '+tabHeight);
+		    	console.log('VIEWER: '+viewerHeight);
+		    	$('.row-collection-viewer').css({
+			    	height : viewerHeight+'px'
+		    	});
+		    	
+	    	} else {
+		    	$('.row-collection-viewer').css({
+			    	height : 'auto'
+		    	});
+	    	}
+	    	
+        });
+    };
+    
+    // fullscreen
+    var goFullScreen = function(el){
+	    
+	    // check fullscreen
+	    if(el.requestFullscreen) {
+		    el.requestFullscreen();
+		} else if(el.mozRequestFullScreen) {
+		    el.mozRequestFullScreen();
+		} else if(el.webkitRequestFullscreen) {
+		    el.webkitRequestFullscreen();
+		} else if(el.msRequestFullscreen) {
+		    el.msRequestFullscreen();
+		}
+    };
+    
+    // exit fullscreen
+    var exitFullScreen = function() {
+    	if(document.webkitExitFullscreen) {
+		    document.webkitExitFullscreen();
+		} else if(document.mozCancelFullScreen) {
+		    document.mozCancelFullScreen();
+		} else if(document.exitFullscreen) {
+		    document.exitFullscreen();
+		} else if(document.msExitFullscreen) {
+		    document.msExitFullscreen();
+		}
+    };
+    
+    // check state
+    var isFullscreen = function() {
+	  	if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement ) {
+			return true;
+		} else {
+			return false;
+		}
     };
 
     EUScreenXL.HomePage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.HomePage.prototype.searchButton = jQuery("#searchbutton");
     EUScreenXL.HomePage.prototype.menuButton = jQuery("#menubutton");
     EUScreenXL.HomePage.prototype.fullscreenButton = jQuery("#fullscreen-button");
+    EUScreenXL.HomePage.prototype.exitFullscreenButton = jQuery("#exitfullscreen-button");
     EUScreenXL.HomePage.prototype.name = "home";
     EUScreenXL.HomePage.prototype.events = {
 
@@ -83,14 +145,10 @@ $(document).ready(function () {
             }
         },
         "click #fullscreen-button": function (event) {
-            // check
-            if(this.$bodyElement.hasClass('fs')) {
-                this.$bodyElement.removeClass('fs'); 
-                this.$containerElement.removeClass('container-fluid').addClass('container');
-            } else {
-                this.$bodyElement.addClass('fs'); 
-                this.$containerElement.removeClass('container').addClass('container-fluid');
-            }
+            goFullScreen(document.getElementById("collection-viewer-element"));
+        },
+        "click #exitfullscreen-button": function (event) {
+            exitFullScreen();
         }
     }
 

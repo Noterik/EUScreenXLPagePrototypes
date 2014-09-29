@@ -20,11 +20,38 @@ body {
 	}
 }
 
+.modal {
+	background: rgba(0,0,0,0.7);
+}
+
 .home {
 	
 	// main
 	.main {
 		
+		// collection viewer
+		#collection-viewer-element {
+			
+			// webkit (safari / chrome)
+			&:-webkit-full-screen {
+				.fullscreenStyling();
+			}
+			
+			// microsoft (internet explorer)
+			&:-ms-full-screen {
+				.fullscreenStyling();
+			}
+			
+			// mozilla (firefox)
+			&:-moz-full-screen {
+				.fullscreenStyling();
+			}
+			
+			// collectiom viewer content
+			#collection-viewer-content {
+				overflow: auto;
+			}
+		}
 		
 		// row
 		.row {
@@ -185,13 +212,26 @@ body {
 								.navigation-tab();
 							}
 						}
+						
+						// media action
+						.media-action {
+							
+							// button
+							.button-list {
+								
+								// hide minimize
+								.exit-fullscreen {
+									display: none;
+								}
+							}
+						}
 					}
 					
 					// themes
 					&.second-nav {
 						background-color: @euscreen-white;
 						border-bottom: 5px solid @euscreen-blue;
-						margin-top:1px;
+						border-top:1px solid @body-bg;
 						
 						// list
 						.list-inline {
@@ -229,18 +269,18 @@ body {
 					}
 				}
 			}
-
+			
 			// collection viewer styling
 			.collection-viewer {
 				
 				// set spacing to the top
-				margin-top:3px;
+				margin-top:4px;
 
 				// row
 				.row {
-
+					
 					// remove column padding inside row
-					.removeColumnPadding();
+					//.removeColumnPadding();
 					
 					// media item styling is on
 					// generic/all.less and it is being used
@@ -249,11 +289,12 @@ body {
 
 						// padding 2px to create some spaces between item
 						padding: 2px;
+						
 
 						// add media-big class to make the icon and text bigger (assigned to media-image class selector)
 						// the actual styling to make it bigger is using bootstrap's row and column
 						&.media-big {
-							
+						
 							// image
 							.media-image {
 								
@@ -303,82 +344,14 @@ body {
 			&.row-collection-viewer {
 				margin-left: -17px;
 				margin-right: -17px;
+				overflow: auto;
 			}
 
 			// more button
 			.more {
-				margin-top:3px;
-			}
-		}
-	}
-}
-
-// when fullscreen
-// add this class to the body to adjust all elements
-.fs {
-
-	// add space to the top and hide horizontal scrolling
-	margin-bottom: 6px;
-	overflow-x: hidden;
-	
-	// page
-	.home {
-
-		// hide header and footer on fullscreen
-		header, footer {
-			display: none;
-		}
-
-		// remove padding top and bottom
-		.main {
-			padding-top: 0px;
-			padding-bottom: 0px !important;
-
-			// row
-			.row {
-
-				// hide jumbotron
-				.jumbotron {
-					display: none;
-				}
-
-				// remove the margin
-				// because the tab will be the header
-				.collection-viewer-tab {
-					margin-top: 0px;
-
-					// here, we will switch the fullscreen icon
-					// to the minimize icon
-					.main-nav {
-						.media-action {
-							.button-list {
-								li {
-									button {
-										
-										// change the icon to minimize
-										.icono-expand {
-											background-position: -48px -82px;
-										}
-
-										// on hover also
-										&:hover, &:active, &.active {
-											.icono-expand {
-												background-position: -48px -106px;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-
-				// add right and left spacing
-				// to the collection viewer and more button
-				.collection-viewer, .more {
-					border-left: 6px solid @body-bg;
-					border-right: 6px solid @body-bg;
-				}
+				border-top:4px solid @body-bg;
+				border-left: 2px solid @body-bg;
+				border-right: 2px solid @body-bg;
 			}
 		}
 	}
