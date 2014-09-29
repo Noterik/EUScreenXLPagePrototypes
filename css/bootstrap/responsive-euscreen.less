@@ -257,22 +257,13 @@
 							// counter
 							.counter {
 								margin:6px 0 0 0;
-									
-								// numbers
-								.pull-left {	
-									margin-top:18px;
-								}
 								
 								// action
 								.pull-right {
-									.wrap-dropdown {
-										padding: 18px 15px 0px 15px;
-									}
 									.sort-option {
 										a {
 											width: 60px;
-											font-size: 1.286em;
-											padding-top:16px;
+											//font-size: 1.14em;
 										}
 									}
 								}
@@ -639,7 +630,7 @@
 					
 						// header
 						.episode-header {
-							display: block;
+							
 						}
 						
 						// player
@@ -671,6 +662,12 @@
 						.episode-list {
 							border-left: 0px;
 							border-right: 0px;
+							height: 183px;
+							
+							// list
+							li {
+								width: 33.3333%;
+							}
 							
 							// media item
 							.media-item {
@@ -682,8 +679,6 @@
 									.media-wrapper {
 										a {
 											.media-title {
-												bottom: 20px;
-												left: 20px;
 												
 												// set font
 												h3 {
@@ -1294,11 +1289,68 @@
 						// series header
 						.series-header {
 							margin-top:0px;
+							
+							// column
+							[class*='col-'] {
+								
+								// media action
+								.media-action {
+									ul {
+										li {
+											
+											// overlay
+											// make the font smaller on wide screens
+											.overlaycontent {
+												font-size: 1em;
+												.extra {
+													font-size: 0.929em;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					
+					// left
+					.left {
+					
+						// header
+						.episode-header {
+							
+							// col
+							[class*='col-'] {
+								
+								// tab
+								.tab {
+									padding: 20px 20px 0 20px;
+								}
+							}
+						}
+						
+						// episode list
+						.episode-list {
+							height: auto;
+							white-space: normal;
+							overflow-x: auto;
+							overflow-y: auto;
+							margin-left: -21px;
+							
+							// list element
+							li {
+								float: left;
+								padding-left: 6px;
+								padding-right: 0px;
+								margin-bottom: 6px;
+								
+							}
 						}
 					}
 				}
 			}
 		}
+		
 	}
 }
 
@@ -1480,38 +1532,27 @@
 							
 							// counter
 							.counter {
-									
+								//font-size: 1.14em;
+								
 								// numbers
 								.pull-left {
-									font-size: 0.84em;
-									margin-top:20px;
-									margin-bottom:20px;
+									//font-size: 0.84em;
+									//margin-top:21px;
+									//margin-bottom:20px;
 								}
 								
 								// action
 								.pull-right {
 									.wrap-dropdown {
-										padding-top:20px;
-										border-left: 0px;
-										height: auto;
-										width: auto;
-										font-size: 0.84em;
+										//padding-top:21px;
+										//border-left: 0px;
+										//height: auto;
+										//width: auto;
+										//font-size: 0.84em;
 									}
 									.sort-option {
-										margin-right: 20px;
-										margin-top:3px;
-										
 										a {
-											border-left: 0px;
-											height: auto;
-											width: auto;
-											font-size: 1em;
-											margin-top:16px;
-											padding-top:0px;
-											&:hover, &:active {
-												background: #fff;
-												color: @euscreen-blue;
-											}
+											padding-top: 18px;
 										}
 									}
 								}

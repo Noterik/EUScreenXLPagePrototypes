@@ -353,7 +353,7 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   line-height: inherit;
   font-size: 1.071em;
   color: #808080;
-  padding: 20px 18px 20px 18px;
+  padding: 20px 12px 20px 12px;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
@@ -383,7 +383,6 @@ textarea.search .main .left .row .searchbar input[type="text"] {
 }
 .search .main .right .row.results-action .counter {
   background: #fff;
-  font-size: 1.1em;
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #808080;
   margin: 1px 0 0 0;
@@ -399,7 +398,7 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   clear: both;
 }
 .search .main .right .row.results-action .counter .pull-left {
-  margin-top: 17px;
+  margin-top: 19px;
   margin-left: 20px;
 }
 .search .main .right .row.results-action .counter .pull-left .number {
@@ -410,7 +409,7 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   float: right;
   height: 60px;
   border-left: 1px solid #f2f2f2;
-  padding: 17px 10px 0px 10px;
+  padding: 19px 10px 0px 10px;
 }
 .search .main .right .row.results-action .counter .pull-right .wrap-dropdown .dropdown a {
   padding: 5px 0px 5px 15px;
@@ -424,8 +423,8 @@ textarea.search .main .left .row .searchbar input[type="text"] {
   display: inline-block;
   border-left: 1px solid #f2f2f2;
   text-align: center;
-  padding-top: 15px;
-  font-size: 1.2em;
+  padding-top: 17px;
+  font-size: 1.14em;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }

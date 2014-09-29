@@ -117,18 +117,13 @@
 			    		<!-- episode header -->
 		    			<div class="row episode-header">
                             <div class="col-md-12">
-		    			       <div class="tab">EPISODE <span class="episode-counter">1/23</span></div>
+                            	<div class="episode-link pull-right hidden-xs">
+    			    				<a href="item.html">GO TO ITEM PAGE</a>
+    		    				</div>
+		    			    	<div class="tab">Item in this Series / Collection</div>
                             </div>
 		    			</div>
 		    			
-		    			<!-- episode title -->
-		    			<div class="row episode-title">
-                            <div class="col-md-12">
-		    		            <span class="episode-counter">1/23</span> This is the episode title it can also be two lines
-		    		        </div>
-                        </div>
-			    		
-			    		
 			    		<!-- player -->
 			    		<div class="row player-wrap">
 			    			
@@ -148,124 +143,193 @@
 			    		<!-- episode action --> 
 		    			<div class="row episode-action">
                             <div class="col-md-12">
-    		    				<div class="episode-link pull-left">
-    			    				<a href="item.html">GO TO EPISODE PAGE</a>
-    		    				</div>
+                            
+                            	<!-- episode sort -->
     		    				<div class="episodes-sort pull-right">
-    			    				
-    			    				<!-- sort by options -->
-    	                			<div class="wrap-dropdown">
-    		                			<div class="dropdown">
-    										<a role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-    									    	<span class="colorgray">SORT BY</span> OLDEST <span class="caret"></span>
-    									    </a>
-    									    <ul id="sortBy" class="dropdown-menu pull-right" role="menu" aria-labelledby="sortBy">
-    			                				<li><a href="#" value="OLDEST">OLDEST</a></li>
-    			                				<li><a href="#" value="NEWEST">NEWEST</a></li>
-    			                			</ul>
-    		                			</div>
-    	                			</div>
+    			    				<a href="#"  class="hide"><i class="fa fa-sort-alpha-desc"></i></a>
+		                			<a href="#"><i class="fa fa-sort-alpha-asc"></i></a>
+    		    				</div>
+                            	
+                            	<!-- episode title -->
+                            	<div class="episode-title">
+                            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.                            	
+                            	</div>
+                            	
+                            	<!-- only in mobile -->
+                            	<div class="episode-link visible-xs">
+    			    				<a class="box-link" href="item.html">GO TO ITEM PAGE</a>
     		    				</div>
                             </div>
 		    			</div>
 		    			
-		    			<!-- one row of small thumbnail -->
-                        <div class="episode-list row">   
-                                                 
-                            <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
-                                <div class="media-image">
-                                    <div class="media-wrapper">
-                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
-                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
-                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                            <span class="media-title">
-                                                <h3>Lorem ipsum dolor sit</h3>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4 col-xs-6 active">
-                                <div class="media-image">
-                                    <div class="media-wrapper">
-                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
-                                            <span class="media-playing">NOW PLAYING</span>
-                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
-                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                            <span class="media-title">
-                                                <h3>Lorem ipsum dolor sit</h3>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
-                                <div class="media-image">
-                                    <div class="media-wrapper">
-                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
-                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
-                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                            <span class="media-title">
-                                                <h3>Lorem ipsum dolor sit</h3>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
-                                <div class="media-image">
-                                    <div class="media-wrapper">
-                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
-                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
-                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                            <span class="media-title">
-                                                <h3>Lorem ipsum dolor sit</h3>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
-                                <div class="media-image">
-                                    <div class="media-wrapper">
-                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
-                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
-                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                            <span class="media-title">
-                                                <h3>Lorem ipsum dolor sit</h3>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- item -->
-                            <div class="media-item col-md-4 col-sm-4 col-xs-6">
-                                <div class="media-image">
-                                    <div class="media-wrapper">
-                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
-                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
-                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                            <span class="media-title">
-                                                <h3>Lorem ipsum dolor sit</h3>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- row -->
+                        <ul class="episode-list">
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item active">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                        	<span class="media-playing">NOW PLAYING</span>
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item ">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-playing">NOW PLAYING</span>
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-playing">NOW PLAYING</span>
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-playing">NOW PLAYING</span>
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-playing">NOW PLAYING</span>
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-playing">NOW PLAYING</span>
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-playing">NOW PLAYING</span>
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-playing">NOW PLAYING</span>
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        	
+                        	<!-- item -->
+                        	<li >
+                            	<div class="media-item">
+	                                <div class="media-image">
+	                                    <div class="media-wrapper">
+	                                        <a class="modal-button" data-toggle="modal" data-target="#player-modal" data-backdrop="static">
+	                                            <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+	                                            <span class="media-playing">NOW PLAYING</span>
+	                                            <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+	                                            <span class="media-title">
+	                                                <h3>Lorem ipsum dolor sit</h3>
+	                                            </span>
+	                                        </a>
+	                                    </div>
+	                                </div>
+	                            </div>
+                        	</li>
+                        </ul>
                         
 		                <!-- results -->
-                        <div class="row more">
+                        <div class="row more hidden-xs hidden-sm">
                             <div class="col-md-12 more-button">
                                 <a href="#">SHOW MORE</a>
                             </div>
@@ -283,7 +347,7 @@
 
                                 <!-- tabs-->
                                 <ul class="nav nav-tabs pull-left">
-		            				<li class="active">SERIES INFO</li>
+		            				<li class="active">Series / Collection Info</li>
 		            			</ul>
 
                                 <!-- action icons -->
@@ -381,59 +445,109 @@
                         
                         <!--  series metadata -->
                         <div class="row series-metadata">
-                            <div class="col-md-12">
-                            	<h1>This is the series title it can also be longer than one line</h1>
-                            	<div class="item">
-        							<span class="header">ORIGINAL TITLE</span>
-    	    						<span>Lorem ipsum dolor sit amet</span>
-    	    					</div>
-    	    					<div class="item">
-        							<span class="header">PROVIDER</span>
-    	    						<span>Cinnecita Luce</span>
-    	    					</div>
-    	    					<div class="item">
-        							<span class="header">PRODUCTION YEAR</span>
-    	    						<span>1992</span>
-    	    					</div>
-    	    					<div class="item">
-        							<span class="header">LANGUAGE</span>
-    	    						<span>Channel V</span>
-    	    					</div>
-    	    					<div class="item">
-        							<span class="header">SUMMARY</span>
-    	    						<span>
-    	    							<p>
-    		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
-    		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
-    		    							quis nostrud exerci tation ullamcorper suscipit lobortis
-    	    							</p>
-    	    							<p>
-    		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
-    		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
-    		    							quis nostrud exerci tation ullamcorper suscipit lobortis
-    	    							</p>	    						
-    	    						</span>
-    	    					</div>
-
-                                <!-- extra information-->
-                                <div id="extra-metadata" class="collapse extra-info">
-                                    <div class="item">
-                                        <span class="header">COUNTRY OF PRODUCTION</span>
-                                        <span>United Kingdom</span>
-                                    </div>
-                                    <div class="item">
-                                        <span class="header">ORIGINAL LANGUAGE</span>
-                                        <span>English</span>
-                                    </div>
-                                    <div class="item">
-                                        <span class="header">SUBTITLE LANGUAGE</span>
-                                        <span>Italian</span>
-                                    </div>
-                                    <div class="item">
-                                        <span class="header">GEOGRAPHICAL COVERAGE</span>
-                                        <span>Europe</span>
-                                    </div>
-                                </div>
+                        	
+                        	<!-- series title -->
+                            <div class="col-md-12"><h1>This is the series title it can also be longer than one line</h1></div>
+                            
+                            <!-- series metadata -->
+                        	<div class="item col-md-12 col-sm-6">
+    							<span class="header">ORIGINAL TITLE</span>
+	    						<span>Lorem ipsum dolor sit amet</span>
+	    					</div>
+	    					<div class="item col-md-12 col-sm-6">
+    							<span class="header">PROVIDER</span>
+	    						<span>Cinnecita Luce</span>
+	    					</div>
+	    					<div class="item col-md-12 col-sm-6">
+    							<span class="header">PRODUCTION YEAR</span>
+	    						<span>1992</span>
+	    					</div>
+	    					<div class="item col-md-12 col-sm-6">
+    							<span class="header">LANGUAGE</span>
+	    						<span>Channel V</span>
+	    					</div>
+	    					<div class="item col-md-12 col-sm-6">
+    							<span class="header">SUMMARY</span>
+	    						<span>
+	    							<p>
+		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+		    							quis nostrud exerci tation ullamcorper suscipit lobortis
+	    							</p>	    						
+	    						</span>
+	    					</div>
+                        </div>
+                        
+                        <!-- extra information-->
+                        <div id="extra-metadata" class="row collapse extra-info">
+                        	<div class="item col-md-12 col-sm-6">
+	    						<span>
+	    							<p>
+		    							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+		    							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+		    							quis nostrud exerci tation ullamcorper suscipit lobortis
+	    							</p>	    						
+	    						</span>
+	    					</div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">ALTERNATIVE SERIES / COLLECTION TITLE</span>
+                                <span>United Kingdom</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">PUBLISHER / BROADCASTER</span>
+                                <span>English</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">FIRST BROADCAST CHANNEL</span>
+                                <span>Italian</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">BROADCAST DATE</span>
+                                <span>Europe</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">LAST BROADCAST DATE</span>
+                                <span>United Kingdom</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">LAST PRODUCTION YEAR</span>
+                                <span>English</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">ORIGINAL LANGUAGE</span>
+                                <span>Italian</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">CONTRIBUTORS</span>
+                                <span>Europe</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">EXTENDED DESCRIPTION</span>
+                                <span>English</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">FURTHER INFORMATION</span>
+                                <span>Italian</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">KEYWORDS</span>
+                                <span>Europe</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">LANDING PAGE URL</span>
+                                <span>Europe</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">MATERIAL TYPE</span>
+                                <span>English</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">RECORD TYPE</span>
+                                <span>Italian</span>
+                            </div>
+                            <div class="item col-md-12 col-sm-6">
+                                <span class="header">IDENTIFIER</span>
+                                <span>Europe</span>
                             </div>
                         </div>
 

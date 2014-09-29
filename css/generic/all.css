@@ -448,25 +448,14 @@ body .page .main .media-item .media-wrapper .media-hue i {
   margin: -15px 0 0 -12px;
   position: absolute;
 }
-body .page .main .media-item:hover {
-  /*
-					.media-wrapper {
-						.media-hue {
-							opacity: 1;
-						}
-
-						.media-title {
-							opacity: 1;
-						}
-					}
-					
-					// media metadata
-					.media-metadata {
-						a h3.media-heading {
-							color: darken(@euscreen-green, 10%);
-						}
-					}
-					*/
+body .page .main .media-item:hover .media-wrapper .media-hue {
+  opacity: 1;
+}
+body .page .main .media-item:hover .media-wrapper .media-title {
+  opacity: 1;
+}
+body .page .main .media-item:hover .media-metadata a h3.media-heading {
+  color: #71a230;
 }
 body .page .main .media-action {
   background: #ffffff;
@@ -1465,16 +1454,8 @@ body .box-link:hover {
   body .search .main .right .row.results-action .counter {
     margin: 6px 0 0 0;
   }
-  body .search .main .right .row.results-action .counter .pull-left {
-    margin-top: 18px;
-  }
-  body .search .main .right .row.results-action .counter .pull-right .wrap-dropdown {
-    padding: 18px 15px 0px 15px;
-  }
   body .search .main .right .row.results-action .counter .pull-right .sort-option a {
     width: 60px;
-    font-size: 1.286em;
-    padding-top: 16px;
   }
   body .content-map .main .content .maps {
     width: 567.5px;
@@ -1634,9 +1615,6 @@ body .box-link:hover {
   body .about .main .partners-list .provider a .info h2 {
     margin-top: 70px;
   }
-  body .series .main .row .left .episode-header {
-    display: block;
-  }
   body .series .main .row .left .player-wrap {
     margin-top: 6px;
   }
@@ -1653,10 +1631,10 @@ body .box-link:hover {
   body .series .main .row .left .episode-list {
     border-left: 0px;
     border-right: 0px;
+    height: 183px;
   }
-  body .series .main .row .left .episode-list .media-item .media-image .media-wrapper a .media-title {
-    bottom: 20px;
-    left: 20px;
+  body .series .main .row .left .episode-list li {
+    width: 33.3333%;
   }
   body .series .main .row .left .episode-list .media-item .media-image .media-wrapper a .media-title h3 {
     font-size: 1em;
@@ -1840,6 +1818,28 @@ body .box-link:hover {
   body .series .main .row .right .series-header {
     margin-top: 0px;
   }
+  body .series .main .row .right .series-header [class*='col-'] .media-action ul li .overlaycontent {
+    font-size: 1em;
+  }
+  body .series .main .row .right .series-header [class*='col-'] .media-action ul li .overlaycontent .extra {
+    font-size: 0.929em;
+  }
+  body .series .main .row .left .episode-header [class*='col-'] .tab {
+    padding: 20px 20px 0 20px;
+  }
+  body .series .main .row .left .episode-list {
+    height: auto;
+    white-space: normal;
+    overflow-x: auto;
+    overflow-y: auto;
+    margin-left: -21px;
+  }
+  body .series .main .row .left .episode-list li {
+    float: left;
+    padding-left: 6px;
+    padding-right: 0px;
+    margin-bottom: 6px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 1025px) {
@@ -1922,34 +1922,8 @@ body .box-link:hover {
   body .search .main .right.fix {
     margin-left: 323.3333px;
   }
-  body .search .main .right .row.results-action .counter .pull-left {
-    font-size: 0.84em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  body .search .main .right .row.results-action .counter .pull-right .wrap-dropdown {
-    padding-top: 20px;
-    border-left: 0px;
-    height: auto;
-    width: auto;
-    font-size: 0.84em;
-  }
-  body .search .main .right .row.results-action .counter .pull-right .sort-option {
-    margin-right: 20px;
-    margin-top: 3px;
-  }
   body .search .main .right .row.results-action .counter .pull-right .sort-option a {
-    border-left: 0px;
-    height: auto;
-    width: auto;
-    font-size: 1em;
-    margin-top: 16px;
-    padding-top: 0px;
-  }
-  body .search .main .right .row.results-action .counter .pull-right .sort-option a:hover,
-  body .search .main .right .row.results-action .counter .pull-right .sort-option a:active {
-    background: #fff;
-    color: #00aeef;
+    padding-top: 18px;
   }
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-controls li .jp-mute,
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-controls li .jp-unmute {

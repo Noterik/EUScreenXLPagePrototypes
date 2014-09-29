@@ -25,19 +25,19 @@
 				// episode
 				.episode-header {
 					background: #fff;
-					display: none;
-
+					border-bottom: 5px solid @euscreen-blue;
+					
 					// col
 					[class*='col-'] {
 						padding-left: 0px;
-
+						
 						// tab
 						.tab {
 							background: @euscreen-blue;
 							color: #fff;
 							display: inline-block;
 							height: 60px;
-							padding: 17px 20px 0 20px;
+							padding: 20px 10px 0 10px;
 							font-size: 1.071em;
 							font-family: @font-family-monospace;
 
@@ -52,59 +52,72 @@
 								margin-left: 10px;
 							}
 						}
-					}
-				}
-
-				// title
-				.episode-title {
-					
-					// column
-					[class*='col-'] {
-						background: #fff;
-						border-bottom: 5px solid @euscreen-blue;
-						font-size: 1.143em;
-						padding: 15px 20px 14px 20px;	
 						
-						// counter
-						.episode-counter {
-							background: @euscreen-blue;
-							color: #fff;
-							border-radius: 3px;
-							display: inline-block;
-							padding: 2px 6px 1px 6px;
-							margin-right: 5px;
-							
+						// episode link
+						.episode-link {
+							font-family: @font-family-monospace;
+							padding: 21px 0 0 5px;
 						}
+						
 					}
 				}
-
-				// player
-				.player-wrap {
-				}
-
+				
 				// action
 				.episode-action {
 					background: #fff;
-					margin-top:6px;
 					border-left: 6px solid @body-bg;
 					border-right: 6px solid @body-bg;
+					margin-top:6px;
 					
 					// column
 					[class*='col-'] {
 						font-family: @font-family-monospace;
-						padding-right: 20px;
-						padding-left: 20px;
-
-						// episode link
-						.episode-link {
-							padding: 17px 0 17px 0px;
+						padding-right: 0px;
+						padding-left: 0px;
+						.clearfix;
+						position: relative;
+						
+						// title
+						.episode-title {
+							font-family: @font-family-base;
+							font-size: 1.14em;
+							padding: 15px 20px 19px 20px;
+							line-height: 1.6em;
+							width: 90%;
 						}
 
 						// episode sort
 						.episodes-sort {
-							text-align: right;
-							border-left: 1px solid @body-bg;
-							padding: 17px 0 17px 20px;
+							margin-left: 20px;
+							position: absolute;
+							right: 0px;
+							top:0px;
+							
+							a {
+								text-align: right;
+								border-left: 1px solid @body-bg;
+								border-bottom: 1px solid @body-bg;
+								padding: 17px 22px 0px 22px;
+								display: block;
+								height: 61px;
+								font-size: 1.14em;
+								
+								
+								&:hover {
+									background: @euscreen-blue;
+									color: #fff;
+									border-left: 1px solid @euscreen-blue;
+									border-bottom: 1px solid @euscreen-blue;
+								}
+							}
+						}
+						
+						// link
+						.episode-link {
+							padding: 0 20px 20px 20px;
+							font-family: @font-family-base;
+							font-size: 0.877em;
+							width: 200px;
 						}
 					}
 				}
@@ -112,15 +125,35 @@
 				// episode list
 				.episode-list {
 					margin-top:6px;
-					margin-left: -21px;
+					margin-left: -15px;
+					margin-right: -15px;
+					padding-left: 0px;
+					margin-bottom: 0px;
 					border-left: 6px solid @body-bg;
 					border-right: 6px solid @body-bg;
+					height: 149px;
+					margin-left: -15px;
+					margin-right: -15px;
+					white-space: nowrap;
+					overflow-x: scroll;
+					overflow-y: hidden;
+					-webkit-overflow-scrolling: touch;
+					
+					// list element
+					li {
+						display: inline-block;
+						list-style: none;
+						padding-left: 0px;
+						float: none;
+						padding-right: 2px;
+						width: 200px;
+					}
 					
 					// media item
 					.media-item {
-						padding-left: 6px;
-						padding-right: 0px;
-						margin-bottom: 6px;	
+						padding-left: 0px;
+						padding-right: 0px;	
+						width: 100%;
 
 						// active
 						&.active {
@@ -138,8 +171,8 @@
 							.media-wrapper {
 								a {
 									.media-title {
-										bottom: 10px;
-										left: 10px;
+										bottom: 0;
+										left: 0;
 										
 										// set font
 										h3 {
@@ -150,12 +183,6 @@
 							}
 						}
 					}
-				}
-				
-				// more
-				.more {
-					border-left: 6px solid @body-bg;
-					border-right: 6px solid @body-bg;
 				}
 			}
 
@@ -185,7 +212,7 @@
 								color: #fff;
 								font-family: @font-family-monospace;
 								height: 60px;
-								padding: 17px 20px 0 20px;
+								padding: 20px 20px 0 20px;
 								font-size: 1.071em;
 							}
 						}
@@ -207,7 +234,7 @@
 				}
 
 				// metadata
-				.series-metadata {
+				.series-metadata, .extra-info {
 					background: #fff;
 					margin-top:6px;
 
@@ -223,7 +250,7 @@
 						}
 
 						// item
-						.item {
+						&.item {
 							margin: 0 0 15px 0;
 							
 							// apply margin to add a bit of space, after the item
@@ -239,7 +266,12 @@
 						}
 					}
 				}
-
+				
+				// extra info
+				.extra-info {
+					margin-top:0px;
+				}
+				
 				// more
 				.more {
 					margin-top:1px;
