@@ -16,6 +16,11 @@ $(document).ready(function () {
         this.$overlayButtons = jQuery('button[data-overlay]');
         this.$tooltipButtons = jQuery('button[data-toggle]');
         
+        // sharing buttons
+        this.$twitterButton = jQuery('#button-twitter');
+        this.$facebookButton = jQuery('#button-facebook');
+        this.$googleButton = jQuery('#button-google');
+        
         // nav panel
         this.$navElement.slidePanelJS({
 	        openButton: '#menubutton',
@@ -60,6 +65,11 @@ $(document).ready(function () {
 				supplied: "mp3"
 			});
         }
+        
+        // social buttons
+        this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : $('#media-title').html() });
+        this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : $('#media-title').html() });
+        this.$googleButton.SocialSharing({ type : 'google', url : document.location, text : $('#media-title').html() });
     };
     EUScreenXL.ItemPage.prototype = Object.create(EUScreenXL.Page.prototype);
     EUScreenXL.ItemPage.prototype.searchButton = jQuery("#searchbutton");

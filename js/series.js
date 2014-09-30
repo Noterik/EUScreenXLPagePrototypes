@@ -12,6 +12,11 @@ $(document).ready(function () {
         this.$overlayContents = jQuery('.overlaycontent');
         this.$overlayButtons = jQuery('button[data-overlay]');
         this.$tooltipButtons = jQuery('button[data-toggle]');
+        
+        // sharing buttons
+        this.$twitterButton = jQuery('#button-twitter');
+        this.$facebookButton = jQuery('#button-facebook');
+        this.$googleButton = jQuery('#button-google');
 
         // nav panel
         this.$navElement.slidePanelJS({
@@ -36,6 +41,11 @@ $(document).ready(function () {
             $overlayContents : this.$overlayContents,
             contentOverlayIdAttr : 'data-overlay'
         });
+        
+        // social buttons
+        this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : $('#media-title').html() });
+        this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : $('#media-title').html() });
+        this.$googleButton.SocialSharing({ type : 'google', url : document.location, text : $('#media-title').html() });
     };
 
     EUScreenXL.SeriesPage.prototype = Object.create(EUScreenXL.Page.prototype);
