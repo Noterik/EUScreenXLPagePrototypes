@@ -14,10 +14,13 @@ $(document).ready(function () {
         this.$tooltipButtons = jQuery('button[data-toggle]');
         this.$modalButtons = jQuery('.modal-button');
         this.$overlayContents = jQuery('.overlaycontent');
-        this.$collectionViewerElements = jQuery('#collection-viewer-container');
         this.$modalPlayerElements = jQuery('#player-modal');
         this.$mediaItemLinkElements = jQuery('.media-item a');
-
+        
+        // collection viewers elements (big & small)
+        this.$collectionViewerSmall = jQuery('#small-collection');
+        this.$collectionViewerBig = jQuery('#big-collection');
+        
         // var
         var obj = this;
 
@@ -59,29 +62,22 @@ $(document).ready(function () {
             $overlayContents : this.$overlayContents,
             contentOverlayIdAttr : 'data-overlay'
         });
-        
+
         // fullscreen event
         $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange',function(e){
-	    	
-	    	// check 
-	    	if(isFullscreen()) {
-		    	
-		    	var tabHeight = $('.collection-viewer-tab').height(),
-		    		winHeight = $(window).height(),
-		    		viewerHeight = winHeight - tabHeight + 80;
-		    	console.log('WIN: '+winHeight);
-		    	console.log('TAB: '+tabHeight);
-		    	console.log('VIEWER: '+viewerHeight);
-		    	$('.row-collection-viewer').css({
-			    	height : viewerHeight+'px'
-		    	});
-		    	
-	    	} else {
-		    	$('.row-collection-viewer').css({
-			    	height : 'auto'
-		    	});
-	    	}
-	    	
+            
+            // toggle view on collection viewer
+            if(obj.$collectionViewerSmall.is(":visible")) {
+
+                // when fullscreen is active, hide small collection and show big
+                obj.$collectionViewerSmall.css('display','none');
+                obj.$collectionViewerBig.css('display','block');
+            } else {
+
+                // on exit fullscreen, show small collection
+                obj.$collectionViewerSmall.css('display','block');
+                obj.$collectionViewerBig.css('display','none');
+            }
         });
     };
     
@@ -145,7 +141,23 @@ $(document).ready(function () {
             }
         },
         "click #fullscreen-button": function (event) {
-            goFullScreen(document.getElementById("collection-viewer-element"));
+           
+            // check device
+            if(EUScreenXL.Page.prototype.device == "desktop") {
+
+                // on desktop, use HTML5 fullscreen
+                goFullScreen(document.getElementById("collection-viewer-element"));
+            } else {
+
+                // use on-window fullscreen
+                if(this.$bodyElement.hasClass('fs')) {
+                    this.$bodyElement.removeClass('fs'); 
+                    this.$containerElement.removeClass('container-fluid').addClass('container');
+                } else {
+                    this.$bodyElement.addClass('fs'); 
+                    this.$containerElement.removeClass('container').addClass('container-fluid');
+                }
+            }
         },
         "click #exitfullscreen-button": function (event) {
             exitFullScreen();

@@ -194,7 +194,7 @@
                 <div id="collection-viewer-element" class="hidden-xs">
                 
                 	<!-- the tab -->
-	                <div class="row">
+	                <div class="row row-collection-viewer-tab">
 	                    <div class="col-md-12 collection-viewer-tab">
 	                        
 	                        <!-- row -->
@@ -263,7 +263,9 @@
 	                
 	                <!-- collection viewer content -->
 	                <div class="row hidden-xs row-collection-viewer">
-	                    <div class="col-md-12 collection-viewer ">
+	                    
+                        <!-- small collection viewer, normal layout -->
+                        <div class="col-md-12 collection-viewer" id="small-collection">
 	                        
 	                        <!-- big thumbnail at the start, the rest is small, starts with a row -->
 	                        <div class="row">
@@ -499,6 +501,349 @@
 	                            </div>
 	                        </div>
 	                    </div>
+
+                        <!-- big collection viewer, fullscreen layout -->
+                        <div class="col-md-12 collection-viewer collection-viewer-big" id="big-collection"  style="display:none;">
+
+                            <!-- 1x4x1 -->
+                            <div class="row">
+                                
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item media-big col-md-12 col-sm-12">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item media-big col-md-12 col-sm-12">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4x1x4 -->
+                            <div class="row">
+                                
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item media-big col-md-12 col-sm-12">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 1x4x1 -->
+                            <div class="row">
+                                
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item media-big col-md-12 col-sm-12">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media-item col-md-6 col-sm-6">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="row">
+                                        <div class="media-item media-big col-md-12 col-sm-12">
+                                            <div class="media-image">
+                                                <div class="media-wrapper">
+                                                    <a class="media-link">
+                                                        <img src="img/ic_thumbnail.gif" class="media-object img-responsive" />
+                                                        <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                        <span class="media-title">
+                                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 	                    
 	                    <!-- more button-->
 	                    <div class="more hidden-xs col-md-12">

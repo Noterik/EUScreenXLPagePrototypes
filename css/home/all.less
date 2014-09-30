@@ -20,10 +20,6 @@ body {
 	}
 }
 
-.modal {
-	background: rgba(0,0,0,0.7);
-}
-
 .home {
 	
 	// main
@@ -45,11 +41,6 @@ body {
 			// mozilla (firefox)
 			&:-moz-full-screen {
 				.fullscreenStyling();
-			}
-			
-			// collectiom viewer content
-			#collection-viewer-content {
-				overflow: auto;
 			}
 		}
 		
@@ -304,7 +295,7 @@ body {
 									// make title bigger
 									.media-title {
 										h3 {
-											font-size: 1.3em;
+											font-size: 1.3em !important;
 											font-family: @font-family-base;
 										}
 									}
@@ -337,6 +328,37 @@ body {
 						}
 					}
 				}
+
+				// big collectiom viewer
+				&.collection-viewer-big {
+
+					// row
+					.row {
+						
+						// throughout the sites, here we just adjust them for the collection viewer
+						.media-item {
+
+							// make the title smaller
+							&.media-big {
+							
+								// image
+								.media-image {
+									
+									// elements wrapper
+									.media-wrapper {
+
+										// make title bigger
+										.media-title {
+											h3 {
+												font-size: 1em;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 			
 			// we make the row slighty wider (default is -15px) to accomodate
@@ -356,3 +378,87 @@ body {
 		}
 	}
 }
+
+// when fullscreen on tablet
+.fs {
+
+	// add space to the top and hide horizontal scrolling 	
+    margin-bottom: 6px; 	
+	overflow-x: hidden;
+
+	// page
+	.home {
+
+		// hide header and footer on fullscreen 	
+		header, footer { 	
+			display: none; 	
+		}
+
+		// remove padding top and bottom
+		.main {
+			padding-top: 0px; 	
+			padding-bottom: 0px !important;
+
+			// row
+			.row {
+
+				// hide jumbotron
+				.jumbotron {
+					display: none;
+				}
+
+				// remove the margin 	
+				// because the tab will be the header
+				.collection-viewer-tab {
+					margin-top: 0px;
+					position: fixed;
+					width: 100%;
+					top:0;
+					left: 0;
+					z-index: 10;
+
+					// here, we will switch the fullscreen icon 	
+					// to the minimize icon
+					.main-nav { 	
+						.media-action { 	
+							.button-list { 	
+								li {
+									button {
+
+										// change the icon to minimize
+										.icono-expand {
+											background-position: -48px -82px;
+										}
+
+										// on hover also 	
+										&:hover, &:active, &.active {
+											.icono-expand {
+												background-position: -48px -106px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				// add padding to the collection viewer because of fixed position
+				.collection-viewer {
+					padding-top: 113px;
+					-webkit-overflow-scrolling: touch;
+				}
+
+				// add right and left spacing 	
+				// to the collection viewer and more button 	
+				.collection-viewer, .more {
+					border-left: 6px solid @body-bg;
+					border-right: 6px solid @body-bg;
+				}
+			}
+		}
+	}
+}
+
+
+

@@ -50,6 +50,9 @@ body {
 body.fixfixed .page header .navbar {
   position: absolute !important;
 }
+body .modal {
+  background: rgba(0, 0, 0, 0.7);
+}
 body .page header .navbar {
   background: #ffffff;
   border-bottom: 1px solid #f2f2f2;
@@ -1551,17 +1554,14 @@ body .box-link:hover {
     left: 0px;
     display: table;
     margin-top: 5px;
-    background: rgba(0, 0, 0, 0.25);
-    border-color: #8cc63f;
-    border-width: 2px;
+    background: rgba(0, 0, 0, 0.1);
     padding: 5px 35px 7px 35px;
-    color: #8cc63f;
     font-size: 1.143em;
     -webkit-transition: background 0.3s;
     transition: background 0.3s;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption a.link:hover {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
   }
   body .about .main .about-section .left,
   body .about .main .about-section .middle,
@@ -1976,6 +1976,9 @@ body .box-link:hover {
   body .home .main .row .collection-viewer .row .media-item.media-big .media-wrapper .media-hue i {
     margin: -30px 0 0 -20px;
     font-size: 2.2em;
+  }
+  body .home .main .row .collection-viewer.collection-viewer-big .row .media-item .media-wrapper .media-title h3 {
+    font-size: 1.1em;
   }
   body .page .main .right .row.results-media .mediatab {
     width: 774px;
