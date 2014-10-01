@@ -1185,6 +1185,51 @@ body {
 			// 4:3 ratio, apply this class to aspect-ratio selector in HTML to give 4:3 aspect ratio
 			&.normal { padding-bottom:75%; }
 		}
+		
+		// video copyright
+		.videocopyright {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top:0px;
+			z-index: 10;
+			height: 100%;
+			background: rgba(206,110,147,0.75);
+			
+			// content
+			#copyrightBox {
+				padding: 20px;
+				color: #fff;
+				font-size: 1.14em;
+				
+				// dismiss
+				.dismiss {
+					text-align: right;
+					width: 100%;
+					display: inline-block;
+					
+					// link
+					a {
+						border: 1px solid #fff;
+						border-radius: 3px;
+						padding: 5px 10px 5px 10px;
+						color: #fff;
+					}
+				}
+				
+				// content
+				div {
+					margin-top:20px;
+					padding: 20px;
+					line-height: 1.7em;
+					a {
+						color: #fff;
+						border-bottom: 1px dotted #fff;
+					}
+				}
+				
+			}
+		}
 	}
 	
 	// minimal player

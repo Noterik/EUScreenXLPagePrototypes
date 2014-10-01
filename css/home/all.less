@@ -86,6 +86,16 @@ body {
 										text-align: left;
 										position: relative;
 										height: 100%;
+										
+										// mobile text
+										&.desktop-text {
+											display: none;
+										}
+										
+										// mobile text
+										&.mobile-text {
+											display: block;
+										}
 
 										// style of header and text on jumbotron
 										h1, p {
@@ -111,17 +121,25 @@ body {
 										// link
 										a {
 											&.link {
-												padding: 10px 30px 12px 30px;
 												font-size: 1em;
 												color: @euscreen-white;
 												font-family: @font-family-monospace;
 												text-shadow: none;
 												border:1px solid #fff;
-												position: absolute;
-												bottom: 58px;
-												right: 5%;
-												left: 5%;
 												text-align: center;
+												position: relative;
+												bottom: 0px;
+												left: 20px;
+												display: table;
+												top:15px;
+												background: rgba(0, 0, 0, 0.1);
+												padding: 5px 35px 7px 35px;
+												font-size: 1.143em;
+												.transition(background 0.3s);
+												
+												&:hover {
+													background: rgba(0, 0, 0, 0.3);
+												}
 											}
 											&.small {
 												font-size: 1em;

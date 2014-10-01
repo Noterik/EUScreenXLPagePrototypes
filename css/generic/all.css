@@ -1088,6 +1088,40 @@ body .media-player.aspect-ratio.wide {
 body .media-player.aspect-ratio.normal {
   padding-bottom: 75%;
 }
+body .media-player .videocopyright {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 10;
+  height: 100%;
+  background: rgba(206, 110, 147, 0.75);
+}
+body .media-player .videocopyright #copyrightBox {
+  padding: 20px;
+  color: #fff;
+  font-size: 1.14em;
+}
+body .media-player .videocopyright #copyrightBox .dismiss {
+  text-align: right;
+  width: 100%;
+  display: inline-block;
+}
+body .media-player .videocopyright #copyrightBox .dismiss a {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+}
+body .media-player .videocopyright #copyrightBox div {
+  margin-top: 20px;
+  padding: 20px;
+  line-height: 1.7em;
+}
+body .media-player .videocopyright #copyrightBox div a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
 body .audio-player-minimal {
   background: #fff;
   padding-top: 15px;
@@ -1536,6 +1570,12 @@ body .box-link:hover {
     top: 14%;
     left: 50px;
   }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption.desktop-text {
+    display: block;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption.mobile-text {
+    display: none;
+  }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption h1 {
     font-size: 1.8em;
     width: 600px;
@@ -1549,19 +1589,8 @@ body .box-link:hover {
     width: 87%;
   }
   body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption a.link {
-    position: relative;
-    bottom: 0px;
+    top: 7px;
     left: 0px;
-    display: table;
-    margin-top: 5px;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 5px 35px 7px 35px;
-    font-size: 1.143em;
-    -webkit-transition: background 0.3s;
-    transition: background 0.3s;
-  }
-  body .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap .carousel-caption a.link:hover {
-    background: rgba(0, 0, 0, 0.3);
   }
   body .about .main .about-section .left,
   body .about .main .about-section .middle,
