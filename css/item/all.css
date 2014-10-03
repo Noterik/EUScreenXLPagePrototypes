@@ -73,6 +73,11 @@
 .item .main .row .left .row .media-metadata .row .item.space {
   margin-bottom: 40px;
 }
+.item .main .row .left .row .media-metadata .row span {
+  overflow: auto;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
 .item .main .row .left .row .media-metadata .row .header {
   display: block;
   font-size: 0.77em;
