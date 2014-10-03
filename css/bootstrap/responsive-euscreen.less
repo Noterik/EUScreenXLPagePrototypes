@@ -652,7 +652,23 @@
 						.episode-action {
 							border-left: 0px;
 							border-right: 0px;
+
+							// column
+							[class*='col-'] {
+
+								// ul
+								ul {
+									position: absolute;
+									top:0;
+									right: 0;
+
+									li {
+										display: inline-block;
+									}
+								}
+							}
 						}
+
 						
 						// episodes list
 						.episode-list {
@@ -1602,6 +1618,44 @@
 			font-size: 1em;
 			a {
 				padding: 5px 10px 5px 15px;
+			}
+		}
+
+		// series page
+		.series {
+			
+			// main
+			.main {
+				
+				// row
+				.row {
+					
+					// left
+					.left {
+						
+						// episode action
+						.episode-action {
+
+							// column
+							[class*='col-'] {
+
+								// ul
+								ul {
+									li {
+										
+										// episode sort
+										&.episodes-sort, &.episode-link  {
+											
+											a {
+												font-size: 1.14em;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}

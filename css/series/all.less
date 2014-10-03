@@ -52,13 +52,6 @@
 								margin-left: 10px;
 							}
 						}
-						
-						// episode link
-						.episode-link {
-							font-family: @font-family-monospace;
-							padding: 21px 0 0 5px;
-						}
-						
 					}
 				}
 				
@@ -76,6 +69,50 @@
 						padding-left: 0px;
 						.clearfix;
 						position: relative;
+
+						// ul
+						ul {
+							margin: 0; padding:0px;
+
+							li {
+								padding: 0px;
+								list-style: none;
+								display: block;
+
+								.tooltip {
+									z-index: 1031 !important;
+									font-family: @font-family-base;
+								}
+
+								// episode sort
+								&.episodes-sort, &.episode-link  {
+									
+									a {
+										border-left: 1px solid @body-bg;
+										display: block;
+										height: 61px;
+										width: 60px;
+										font-size: 1.3em;
+										text-align: center;
+										border-bottom: 1px solid @body-bg;
+										padding-top: 17px;
+										.transition(all 0.35s);
+										
+										&:hover {
+											background: @euscreen-blue;
+											color: #fff;
+											border-left: 1px solid @euscreen-blue;
+											border-bottom: 1px solid @euscreen-blue;
+										}
+									}
+								}
+								
+								// link
+								&.episode-link {
+									margin-right: -4px;
+								}
+							}
+						}
 						
 						// title
 						.episode-title {
@@ -83,42 +120,10 @@
 							font-size: 1.14em;
 							padding: 15px 20px 19px 20px;
 							line-height: 1.6em;
-							width: 90%;
+							width: 80%;
 						}
 
-						// episode sort
-						.episodes-sort {
-							margin-left: 20px;
-							position: absolute;
-							right: 0px;
-							top:0px;
-							
-							a {
-								text-align: right;
-								border-left: 1px solid @body-bg;
-								border-bottom: 1px solid @body-bg;
-								padding: 17px 22px 0px 22px;
-								display: block;
-								height: 61px;
-								font-size: 1.14em;
-								
-								
-								&:hover {
-									background: @euscreen-blue;
-									color: #fff;
-									border-left: 1px solid @euscreen-blue;
-									border-bottom: 1px solid @euscreen-blue;
-								}
-							}
-						}
 						
-						// link
-						.episode-link {
-							padding: 0 20px 20px 20px;
-							font-family: @font-family-base;
-							font-size: 0.877em;
-							width: 200px;
-						}
 					}
 				}
 

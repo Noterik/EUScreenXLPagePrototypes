@@ -117,9 +117,6 @@
 			    		<!-- episode header -->
 		    			<div class="row episode-header">
                             <div class="col-md-12">
-                            	<div class="episode-link pull-right hidden-xs">
-    			    				<a href="item.html">GO TO ITEM PAGE</a>
-    		    				</div>
 		    			    	<div class="tab">Items in this Series / Collection</div>
                             </div>
 		    			</div>
@@ -143,22 +140,28 @@
 			    		<!-- episode action --> 
 		    			<div class="row episode-action">
                             <div class="col-md-12">
-                            
-                            	<!-- episode sort -->
-    		    				<div class="episodes-sort pull-right">
-    			    				<a href="#"  class="hide"><i class="fa fa-sort-alpha-desc"></i></a>
-		                			<a href="#"><i class="fa fa-sort-alpha-asc"></i></a>
-    		    				</div>
-                            	
+
+                                <!-- button list -->
+                                <ul class="pull-right">
+
+                                    <!-- episode link -->
+                                    <li class="episode-link">
+                                        <a href="item.html"data-toggle="tooltip" data-placement="top" data-title="VISIT ITEM PAGE"><i class="fa fa-external-link"></i></a>
+                                    </li>
+
+                                    <!-- episode sort -->
+                                    <li class="episodes-sort">
+                                        <a href="#"  class="hide" data-toggle="tooltip" data-placement="top" data-title="SORT DESCENDING"><i class="fa fa-sort-alpha-desc"></i></a>
+                                        <a href="#" data-toggle="tooltip" data-placement="top" data-title="SORT ASCENDING"><i class="fa fa-sort-alpha-asc"></i></a>
+                                    </li>
+                                </ul>
+
                             	<!-- episode title -->
                             	<div class="episode-title">
                             		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.                            	
                             	</div>
                             	
-                            	<!-- only in mobile -->
-                            	<div class="episode-link visible-xs">
-    			    				<a class="box-link" href="item.html">GO TO ITEM PAGE</a>
-    		    				</div>
+                            	
                             </div>
 		    			</div>
 		    			

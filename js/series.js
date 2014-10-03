@@ -11,7 +11,7 @@ $(document).ready(function () {
         this.$chartElement = jQuery('.chart');
         this.$overlayContents = jQuery('.overlaycontent');
         this.$overlayButtons = jQuery('button[data-overlay]');
-        this.$tooltipButtons = jQuery('button[data-toggle]');
+        this.$tooltipButtons = jQuery('[data-toggle]');
         
         // sharing buttons
         this.$twitterButton = jQuery('#button-twitter');

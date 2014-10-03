@@ -1669,6 +1669,14 @@ body .box-link:hover {
     border-left: 0px;
     border-right: 0px;
   }
+  body .series .main .row .left .episode-action [class*='col-'] ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  body .series .main .row .left .episode-action [class*='col-'] ul li {
+    display: inline-block;
+  }
   body .series .main .row .left .episode-list {
     border-left: 0px;
     border-right: 0px;
@@ -1981,6 +1989,10 @@ body .box-link:hover {
   }
   body ul.dropdown-menu a {
     padding: 5px 10px 5px 15px;
+  }
+  body .series .main .row .left .episode-action [class*='col-'] ul li.episodes-sort a,
+  body .series .main .row .left .episode-action [class*='col-'] ul li.episode-link a {
+    font-size: 1.14em;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
