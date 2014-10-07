@@ -58,7 +58,13 @@ $(document).ready(function () {
 	            showMapInfo(element, code, region);
             },
             onRegionOver: function (event, code, region) {
-               document.body.style.cursor = "pointer";
+
+                // show pointer on euscreen country
+                if(mapData[code] != undefined) {
+                    document.body.style.cursor = "pointer"; 
+                } else {
+                    event.preventDefault();
+                }
             },
             onRegionOut: function (element, code, region) {
                document.body.style.cursor = "default";
