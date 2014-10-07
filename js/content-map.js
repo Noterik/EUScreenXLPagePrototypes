@@ -56,6 +56,12 @@ $(document).ready(function () {
             
                 // show info
 	            showMapInfo(element, code, region);
+            },
+            onRegionOver: function (event, code, region) {
+               document.body.style.cursor = "pointer";
+            },
+            onRegionOut: function (element, code, region) {
+               document.body.style.cursor = "default";
             }
         });
 
