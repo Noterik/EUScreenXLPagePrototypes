@@ -37,7 +37,7 @@
 		<![endif]-->
 		
 		<!-- warning on firefox user -->
-		<div class="warning-playout">
+		<div class="warning-playout hidden" >
 			<div class="browsehappy alert alert-warning alert-dismissable">
 				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 				You are using Firefox and unfortunally this browser does not support the video streaming format of the EUscreen portal. <br/> 
@@ -227,15 +227,62 @@
 
 			    						<!-- terms of use content -->
 			    						<div class="overlaycontent big" id="terms-content">
-											<h3>TERMS OF USE</h3>
-											<p>
-										    	 The EUscreen portal offers free online access to thousands of items of archive moving image material. It brings together clips that provide an insight into the social, cultural, political and economic events that have shaped the 20th and 21st centuries. As well as chronicling important historical events, the EUscreen portal allows you to explore television programmes that focus on everyday experience. EUscreen is also intended to be a resource for educators, researchers and media professionals and allow them access to audiovisual content from across Europe.
+			    							<div id="terms-of-use">
 
-The EUscreen portal was built by a consortium of European audiovisual archives, academic and technical partners. It has been supported through two projects funded by the European Commission. The EUscreen project ran from 2009 - 2012 and its successor, EUscreenXL, began in 2013 and runs until 2016 under the CIP ICT-PSP support programme. 
-										    </p>
-										    <p>
-										   		<a href="#">Contact the provider</a>
-										    </p>
+			    								<!-- title -->
+												<h3>TERMS OF USE</h3>
+												<p>
+											    	The EUscreen portal offers free online access to thousands of items of archive moving image material. It brings together clips that provide an insight into the social, cultural, political and economic events that have shaped the 20th and 21st centuries. As well as chronicling important historical events, the EUscreen portal allows you to explore television programmes that focus on everyday experience. EUscreen is also intended to be a resource for educators, researchers and media professionals and allow 	them access to audiovisual content from across Europe.
+											    <p>
+											    <p>
+													The EUscreen portal was built by a consortium of European audiovisual archives, academic and technical partners. It has been supported through two projects funded by the European Commission. The EUscreen project ran from 2009 - 2012 and its successor, EUscreenXL, began in 2013 and runs until 2016 under the CIP ICT-PSP support programme. 
+											    </p>
+
+											    <!-- toggle button -->
+											    <p>
+											   		<a href="#media-action" id="contact-button">Contact the provider</a>
+											    </p>
+											</div>
+											<div id="contact-provider" style="display:none;" >
+
+												<!-- title -->
+												<h3>CONTACT PROVIDER</h3>
+												<p>
+													Please fill in the form below to contact the provider of this item.
+													A copy of the message will be sent to the email address that you provide in the form
+												</p>
+
+												<!-- contact form -->
+												<form class="contact-provider-form">
+													
+													<!-- info -->
+													<div class="form-group">
+												    	<label>IDENTIFIER</label>
+												    	<span>EUS_8D4A3D3653D74EA4A984470E9E6A0E4B</span>
+												    	<input type="hidden" name="identifier" value="EUS_8D4A3D3653D74EA4A984470E9E6A0E4B">
+												  	</div>
+												  	<div class="form-group">
+												    	<label>CLIP TITLE</label>
+												    	<span>The state of the world</span>
+												    	<input type="hidden" name="title" value="The state of the world">
+												  	</div>
+
+												  	<!-- user input -->
+												  	<div class="form-group space">
+														<input type="email" class="form-control" id="input-email" placeholder="Your email">
+													  	<input type="text" class="form-control" id="input-subject" placeholder="Subject">
+													  	<textarea class="form-control" id="input-message" placeholder="Message"></textarea>
+													</div>
+
+													<!-- submit -->
+												  	<button type="submit" class="btn btn-euscreen">SUBMIT</button>
+												</form>
+
+												<!-- back button -->
+											    <p>
+											   		<a href="#media-action" id="terms-button">Back to terms of use</a>
+											    </p>
+											</div>
 										</div>
 			    					</li>
 
@@ -285,22 +332,24 @@ The EUscreen portal was built by a consortium of European audiovisual archives, 
 			    						<div class="overlaycontent" id="bookmark-content">
 
 			    							<!-- login form when user has not logged in -->
-			    							<div id="login-form" class="hidden">
+			    							<div id="login-form" class="login-form visible">
+			    								
+			    								<!-- heading -->
 			    								<h3>SIGN IN TO BOOKMARK</h3>
-												<div class="login-form visible">
-											        <form class="login">
-										                <input id="bookmark-user-email" placeholder="Email" class="form-control" type="text"/>
-										                <input id="bookmark-user-password" placeholder="Password" class="form-control" type="password" />
-										                <input type="submit" value="LOGIN" class="btn btn-primary btn-euscreen btn-block"/>
-										            </form>
-											        <span class="extra">
-											        	<a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a>
-											        </span>
-											    </div>
+												
+												<!-- form -->
+										        <form class="login">
+									                <input id="bookmark-user-email" placeholder="Email" class="form-control" type="text"/>
+									                <input id="bookmark-user-password" placeholder="Password" class="form-control" type="password" />
+									                <input type="submit" value="LOGIN" class="btn btn-primary btn-euscreen btn-block"/>
+									            </form>
+										        <span class="extra">
+										        	<a href="forgot-password.html">Forgot password?</a> | <a href="sign-up.html">Sign up</a>
+										        </span>
 											</div>
 
 											<!-- bookmark form -->
-											<div id="bookmark-form">
+											<div id="bookmark-form" class="hidden">
 			    								<h3>ADD ITEM TO</h3>
 			    								<div>
 			    									<div class="list-group hidden">

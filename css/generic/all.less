@@ -564,16 +564,59 @@ body {
 						}
 					}
 
-					// bookmark's login
-					.login {
-						input[type="text"], input[type="password"] {
+					// the forms
+					.login-form, .contact-provider-form {
+
+						// form styling
+						input[type="text"],input[type="email"],textarea, input[type="password"] {
 							.placeholderItalic(#d2d2d2,italic);
-							margin-bottom: 5px;
+							margin-bottom: 8px;
 							border-radius: 0px;
 							padding: 10px;
 							height: auto;
 							font-size:1.071em; 
 							background: rgba(255, 255, 254, 0.6);
+						}
+
+						// form group
+						.form-group {
+							margin-bottom: 8px;
+
+							// label
+							label {
+								font-size: 0.77em;
+								font-weight: normal;
+								letter-spacing: 1px;
+								color: #808080;
+								display: block;
+								margin-bottom: 0px;
+							}
+							span {
+								word-wrap : break-word;
+							}
+
+							// space
+							&.space {
+								margin-top: 10px;
+							}
+						}
+					}
+
+					// contact provider form
+					.contact-provider-form {
+						padding-top:5px;
+						margin-bottom: 15px;
+
+						// textarea
+						textarea {
+							height: 100px;
+						}
+
+						// button
+						.btn-euscreen {
+							text-align: center;
+							width: 200px;
+							height: auto;
 						}
 					}
 

@@ -20,6 +20,10 @@ $(document).ready(function () {
         this.$twitterButton = jQuery('#button-twitter');
         this.$facebookButton = jQuery('#button-facebook');
         this.$googleButton = jQuery('#button-google');
+
+        // terms ofuse
+        this.$termsOfUseElement = jQuery('#terms-of-use');
+        this.$contactProviderElement = jQuery('#contact-provider');
         
         // nav panel
         this.$navElement.slidePanelJS({
@@ -76,6 +80,8 @@ $(document).ready(function () {
     EUScreenXL.ItemPage.prototype.showExtraFiltersButton = jQuery("#show-extra-filters");
     EUScreenXL.ItemPage.prototype.hideExtraFiltersButton = jQuery("#hide-extra-filters");
     EUScreenXL.ItemPage.prototype.menuButton = jQuery("#menubutton");
+    EUScreenXL.ItemPage.prototype.contactButton = jQuery("#contact-button");
+    EUScreenXL.ItemPage.prototype.termsButton = jQuery("#terms-button");
     EUScreenXL.ItemPage.prototype.events = {
     	"click #show-extra-filters": function (event) {
             this.showExtraFiltersButton.hide();
@@ -104,6 +110,14 @@ $(document).ready(function () {
 	        	this.$formElement.find('input[type="text"]').focus();
 	        	this.menuButton.hide();
         	}
+        },
+        'click #contact-button': function(event) {
+            this.$termsOfUseElement.hide();
+            this.$contactProviderElement.show();
+        },
+        'click #terms-button': function(event) {
+            this.$contactProviderElement.hide();
+            this.$termsOfUseElement.show();
         }
     };
     EUScreenXL.ItemPage.prototype.name = "item";
