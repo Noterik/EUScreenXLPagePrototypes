@@ -1,0 +1,100 @@
+// Import generic variables & mixins
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+
+/**
+* css/item/all.less
+*
+* This file contains the generic styles for the item page. These styles should be applied on all devices,
+* but might be overwritten in specific cases for certain devices.
+*/
+
+// every page starts with .page class selector
+// for body element styling, go to generic/all.css
+.contest {
+		
+	// jumbotron
+	.jumbotron-wide {
+		background: url('../../img/content/banners/bg-about.jpg');
+	}
+	
+	// main
+	.main {
+		padding-top:0px !important;
+		
+		// background
+		>.row {
+			background: #fff;
+		}
+
+		// contest-content
+		.contest-content {
+			padding: 60px 0 55px 0;
+
+			// p
+			p {
+				line-height: 2.1em;
+				font-size: 1.04em;
+				font-weight: lighter;
+				
+				a {
+					color: inherit;
+					border-bottom: 1px dotted #000;
+				}
+			}
+
+			// left
+			.left {
+				padding-right: 30px;
+			}
+
+			// right
+			.right {
+				padding-top: 7px;
+				padding-left: 30px;
+
+				// form
+				form {
+
+					// form styling
+					input[type="text"],input[type="email"],textarea, input[type="password"] {
+						.placeholderItalic(#d2d2d2,italic);
+						margin-bottom: 8px;
+						border-radius: 0px;
+						padding: 10px;
+						height: auto;
+						font-size:1.071em; 
+						background: rgba(255, 255, 254, 0.6);
+					}
+					textarea {
+						height: 150px;
+					}
+					.btn-euscreen {
+						width: 200px;
+					}
+				}
+			}
+		}
+
+		// disclaimer
+		.disclaimer {
+
+			// col
+			[class*='col-'] {	
+				padding-bottom: 50px;
+				
+				// content
+				.content {
+					border-top:1px solid @body-bg;
+					padding-top:50px;
+
+					p {
+						color: #808080;
+						font-style: italic;
+						line-height: 1.8em;
+					}
+				}
+			}
+		}
+	}
+}

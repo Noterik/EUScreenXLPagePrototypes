@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
+/**
+* css/item/all.less
+*
+* This file contains the generic styles for the item page. These styles should be applied on all devices,
+* but might be overwritten in specific cases for certain devices.
+*/
+.contest .jumbotron-wide {
+  background: url('../../img/content/banners/bg-about.jpg');
+}
+.contest .main {
+  padding-top: 0px !important;
+}
+.contest .main > .row {
+  background: #fff;
+}
+.contest .main .contest-content {
+  padding: 60px 0 55px 0;
+}
+.contest .main .contest-content p {
+  line-height: 2.1em;
+  font-size: 1.04em;
+  font-weight: lighter;
+}
+.contest .main .contest-content p a {
+  color: inherit;
+  border-bottom: 1px dotted #000;
+}
+.contest .main .contest-content .left {
+  padding-right: 30px;
+}
+.contest .main .contest-content .right {
+  padding-top: 7px;
+  padding-left: 30px;
+}
+.contest .main .contest-content .right form input[type="text"],
+.contest .main .contest-content .right form input[type="email"],
+.contest .main .contest-content .right form textarea,
+.contest .main .contest-content .right form input[type="password"] {
+  margin-bottom: 8px;
+  border-radius: 0px;
+  padding: 10px;
+  height: auto;
+  font-size: 1.071em;
+  background: rgba(255, 255, 254, 0.6);
+}
+.contest .main .contest-content .right form input[type="text"]::-moz-placeholder,
+.contest .main .contest-content .right form input[type="email"]::-moz-placeholder,
+.contest .main .contest-content .right form textarea::-moz-placeholder,
+.contest .main .contest-content .right form input[type="password"]::-moz-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+  opacity: 1;
+}
+.contest .main .contest-content .right form input[type="text"]:-ms-input-placeholder,
+.contest .main .contest-content .right form input[type="email"]:-ms-input-placeholder,
+.contest .main .contest-content .right form textarea:-ms-input-placeholder,
+.contest .main .contest-content .right form input[type="password"]:-ms-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.contest .main .contest-content .right form input[type="text"]::-webkit-input-placeholder,
+.contest .main .contest-content .right form input[type="email"]::-webkit-input-placeholder,
+.contest .main .contest-content .right form textarea::-webkit-input-placeholder,
+.contest .main .contest-content .right form input[type="password"]::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.contest .main .contest-content .right form textarea {
+  height: 150px;
+}
+.contest .main .contest-content .right form .btn-euscreen {
+  width: 200px;
+}
+.contest .main .disclaimer [class*='col-'] {
+  padding-bottom: 50px;
+}
+.contest .main .disclaimer [class*='col-'] .content {
+  border-top: 1px solid #f2f2f2;
+  padding-top: 50px;
+}
+.contest .main .disclaimer [class*='col-'] .content p {
+  color: #808080;
+  font-style: italic;
+  line-height: 1.8em;
+}
