@@ -6,7 +6,7 @@
 * but might be overwritten in specific cases for certain devices.
 */
 .contest .jumbotron-wide {
-  background: url('../../img/content/banners/bg-about.jpg');
+  background: url('../../img/content/banners/bg-contest.jpg');
 }
 .contest .main {
   padding-top: 0px !important;
@@ -15,7 +15,7 @@
   background: #fff;
 }
 .contest .main .contest-content {
-  padding: 60px 0 55px 0;
+  padding: 50px 0 40px 0;
 }
 .contest .main .contest-content p {
   line-height: 2.1em;
@@ -26,12 +26,42 @@
   color: inherit;
   border-bottom: 1px dotted #000;
 }
-.contest .main .contest-content .left {
-  padding-right: 30px;
+.contest .main .contest-content .left .share {
+  margin: 20px 0 0 0;
+}
+.contest .main .contest-content .left .share ul {
+  margin-right: 20px;
+}
+.contest .main .contest-content .left .share ul li {
+  padding: 0px;
+}
+.contest .main .contest-content .left .share .permalink .input-group-addon {
+  border-color: #00aeef;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: #fff;
+  background: #00aeef;
+}
+.contest .main .contest-content .left .share .permalink .form-control {
+  border-color: #00aeef;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #555555;
+}
+.contest .main .contest-content .left .share .permalink .form-control[readonly] {
+  background: #fff;
+  cursor: inherit;
 }
 .contest .main .contest-content .right {
-  padding-top: 7px;
-  padding-left: 30px;
+  padding-top: 30px;
 }
 .contest .main .contest-content .right form input[type="text"],
 .contest .main .contest-content .right form input[type="email"],
@@ -70,14 +100,14 @@
   height: 150px;
 }
 .contest .main .contest-content .right form .btn-euscreen {
-  width: 200px;
+  width: 100%;
 }
 .contest .main .disclaimer [class*='col-'] {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .contest .main .disclaimer [class*='col-'] .content {
   border-top: 1px solid #f2f2f2;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .contest .main .disclaimer [class*='col-'] .content p {
   color: #808080;

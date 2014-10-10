@@ -15,7 +15,7 @@
 		
 	// jumbotron
 	.jumbotron-wide {
-		background: url('../../img/content/banners/bg-about.jpg');
+		background: url('../../img/content/banners/bg-contest.jpg');
 	}
 	
 	// main
@@ -29,7 +29,7 @@
 
 		// contest-content
 		.contest-content {
-			padding: 60px 0 55px 0;
+			padding: 50px 0 40px 0;
 
 			// p
 			p {
@@ -45,13 +45,54 @@
 
 			// left
 			.left {
-				padding-right: 30px;
+
+				// share
+				.share {
+					margin: 20px 0 0 0;
+					ul {
+						margin-right: 20px;
+						li {
+							padding: 0px;
+						}
+					}
+
+					// permalink
+					.permalink {
+						
+						.input-group-addon {
+							border-color: @euscreen-blue;
+							-webkit-border-top-left-radius: 3px;
+							-webkit-border-bottom-left-radius: 3px;
+							-moz-border-radius-topleft: 3px;
+							-moz-border-radius-bottomleft: 3px;
+							border-top-left-radius: 3px;
+							border-bottom-left-radius: 3px;
+							color: #fff;
+							background: @euscreen-blue;
+						}
+						.form-control {
+							border-color: @euscreen-blue;
+							-webkit-border-top-right-radius: 3px;
+							-webkit-border-bottom-right-radius: 3px;
+							-moz-border-radius-topright: 3px;
+							-moz-border-radius-bottomright: 3px;
+							border-top-right-radius: 3px;
+							border-bottom-right-radius: 3px;
+							color: @gray;
+							
+							&[readonly] {
+								background: #fff;
+								cursor: inherit;
+							}
+							
+						}
+					}
+				}
 			}
 
 			// right
 			.right {
-				padding-top: 7px;
-				padding-left: 30px;
+				padding-top: 30px;
 
 				// form
 				form {
@@ -70,7 +111,7 @@
 						height: 150px;
 					}
 					.btn-euscreen {
-						width: 200px;
+						width: 100%;
 					}
 				}
 			}
@@ -81,13 +122,12 @@
 
 			// col
 			[class*='col-'] {	
-				padding-bottom: 50px;
-				
+				padding-bottom: 20px;
+
 				// content
 				.content {
 					border-top:1px solid @body-bg;
-					padding-top:50px;
-
+					padding-top:40px;
 					p {
 						color: #808080;
 						font-style: italic;

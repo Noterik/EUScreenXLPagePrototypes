@@ -1946,6 +1946,19 @@ body .box-link:hover {
     padding-right: 0px;
     margin-bottom: 6px;
   }
+  body .contest .main .contest-content .left {
+    padding-right: 30px;
+  }
+  body .contest .main .contest-content .right {
+    padding-left: 30px;
+    padding-top: 7px;
+  }
+  body .contest .main .contest-content .right form .btn-euscreen {
+    width: 200px;
+  }
+  body .contest .main .disclaimer [class*='col-'] {
+    padding-bottom: 40px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 1025px) {

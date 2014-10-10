@@ -8,6 +8,12 @@ $(document).ready(function () {
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
+
+        // sharing buttons
+        this.$twitterButton = jQuery('#button-twitter');
+        this.$facebookButton = jQuery('#button-facebook');
+        this.$googleButton = jQuery('#button-google');
+
         var obj = this;
 
         // nav panel
@@ -17,6 +23,11 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+
+        // social buttons
+        this.$twitterButton.SocialSharing({ type : 'twitter', url : document.location, text : 'Join EUscreen Video Contest' });
+        this.$facebookButton.SocialSharing({ type : 'facebook', url : document.location, text : 'Join EUscreen Video Contest' });
+        this.$googleButton.SocialSharing({ type : 'google', url : document.location, text : 'Join EUscreen Video Contest' });
     };
 
     EUScreenXL.ContestPage.prototype = Object.create(EUScreenXL.Page.prototype);
