@@ -35,7 +35,7 @@
         <![endif]-->
         
         <!-- container -->
-        <div class="page contact" id="page">
+        <div class="page myeuscreen" id="page">
             
             <!-- wrap -->
             <header>
@@ -99,9 +99,344 @@
             
             <!-- about content -->
             <div class="container main">
+                <div class="row">
 
+                    <!-- left -->
+                    <div class="left col-sm-12 col-md-8 col-lg-8">
+
+                        <!-- collection action -->
+                        <div class="row collection-content">
+
+                            <!-- header -->
+                            <div class="collection-header col-md-12">
+                                
+                                <!-- collection selector -->
+                                <div class="select-wrap">
+                                    <select>
+                                        <option>My First Collection</option>
+                                        <option>My Second Collection</option>
+                                        <option>My Third Collection</option>
+                                    </select>
+                                    <i class="glyphicon glyphicon-chevron-down"></i>
+                                </div>
+
+                                <!-- action icons -->
+                                <div class="media-action">
+                                    <ul class="list-inline pull-right button-list">
+                                        <li>
+                                            <!-- button info -->
+                                            <button data-toggle="tooltip" data-placement="top" data-title="SECTION INFO" data-overlay="#info-content">
+                                                <i class="icono icono-info"></i>
+                                            </button>
+                                            
+                                            <!-- info content -->
+                                            <div class="overlaycontent" id="info-content">
+                                                <h3>Video Highlights</h3>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Dolore 
+                                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="fullscreen">
+                                            <button data-toggle="tooltip" data-placement="top" data-title="EXPAND TO FULLSCREEN" id="fullscreen-button">
+                                                <i class="icono icono-expand"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- results counter -->
+                            <div class="collection-counter col-md-12">
+                                <span class="pull-left"><span class="number">210</span> RESULTS</span>
+                                <span class="pull-right">
+
+                                    <!-- switch the order -->
+                                    <div class="sort-option">
+                                        <a href="#"  class="hide"><i class="fa fa-sort-alpha-desc"></i></a>
+                                        <a href="#"><i class="fa fa-sort-alpha-asc"></i></a>
+                                    </div>
+                                    
+                                    <!-- sort by options -->
+                                    <div class="wrap-dropdown">
+                                        <div class="dropdown">
+                                            <a role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+                                                <span class="colorgray">SORT BY</span> TITLE <span class="caret"></span>
+                                            </a>
+                                            <ul id="sortBy" class="dropdown-menu pull-right" role="menu" aria-labelledby="sortBy">
+                                                <li><a href="#" value="TITLE">TITLE</a></li>
+                                                <li><a href="#" value="YEAR">YEAR</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+
+                            <!-- results content -->
+                            <div class="col-md-12 collection-list results">
+
+                                <!-- spinner -->
+                                <div class="spinner hidden">
+                                    <img src="img/spinner.gif" />
+                                </div>
+                                
+                                <!-- no results -->
+                                <div class="no-results hidden">
+                                    START BY ENTERING SEARCH TERMS
+                                </div>
+                                
+                                <!-- hide -->
+                                <div>
+                                
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="series.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <i class="media-type series"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="series.html"><h3 class="media-heading">Bread of Altamura</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="item.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
+                                                    <i class="media-type text"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="item.html"><h3 class="media-heading">58 million Dutch people and the beautiful nature</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="item.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    <span class="media-length">
+                                                        12:32
+                                                    </span>
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-type audio"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="item.html"><h3 class="media-heading">Reimer Bo. Illegaly into hiding</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="item.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
+                                                    <span class="media-type image"></span>
+                                                </a>                                        
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="item.html"><h3 class="media-heading">Kolaric's heirs</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="item.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    <span class="media-length">
+                                                        12:32
+                                                    </span>
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-type audio"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="item.html"><h3 class="media-heading">Reimer Bo. Illegaly into hiding</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="item.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
+                                                    <span class="media-type image"></span>
+                                                </a>                                        
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="item.html"><h3 class="media-heading">Kolaric's heirs</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="item.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    <span class="media-length">
+                                                        12:32
+                                                    </span>
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <i class="media-type video"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="item.html"><h3 class="media-heading">Bread of Altamura</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="item.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
+                                                    <i class="media-type text"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="item.html"><h3 class="media-heading">58 million Dutch people and the beautiful nature</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- media -->
+                                    <div class="row media-item">
+                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
+                                            <div class="media-wrapper">
+                                                <a href="item.html">
+                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                    <span class="media-length">
+                                                        12:32
+                                                    </span>
+                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                    <span class="media-type audio"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
+                                            <a href="item.html"><h3 class="media-heading">Reimer Bo. Illegaly into hiding</h3></a>
+                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
+                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
+                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
+                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- more -->
+                            <div class="more col-md-12">
+                                <a href="#">SHOW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="right col-sm-12 col-md-4 col-lg-4">
+
+                        <!-- notification -->
+                        <div class="row notification">
+                            <div class="col-md-12">
+
+                            </div>
+                        </div>
+
+                        <!-- user profile -->
+                        <div class="row user-profile">
+                            <div class="col-md-12">
+
+                            </div>
+                        </div>
+
+                        <!-- history -->
+                        <div class="row history">
+
+                            <!-- header -->
+                            <div class="col-md-12 history-header">
+
+                                <!-- tabs-->
+                                <ul class="nav nav-header nav-tabs">
+                                    <li class="active">Viewing History</li>
+                                </ul>
+                            </div>
+
+                            <!-- list -->
+                            <div class="col-md-12 history-list">
+
+                            </div>
+
+                            <!-- more -->
+                            <div class="more col-md-12">
+                                <a href="#">SHOW MORE</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
-            
             
             <!-- footer -->
             <footer>

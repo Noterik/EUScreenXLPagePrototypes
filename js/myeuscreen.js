@@ -17,6 +17,13 @@ $(document).ready(function () {
             navbarSection:'#navbar',
             speed:200
         });
+
+        // only on tablet & desktop
+        if(EUScreenXL.Page.prototype.device == "mobile") {
+           
+            // hide headroom
+            $(".navbar").headroom();
+        }
     };
 
     EUScreenXL.MYEUscreenPage.prototype = Object.create(EUScreenXL.Page.prototype);

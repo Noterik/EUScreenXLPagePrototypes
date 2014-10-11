@@ -1080,6 +1080,17 @@ body .more a:hover {
 body .more #hide-extra-filters {
   display: none;
 }
+body .nav-header {
+  border-bottom: 0px;
+}
+body .nav-header li {
+  background: #00aeef;
+  color: #fff;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  height: 60px;
+  padding: 20px 20px 0 20px;
+  font-size: 1.071em;
+}
 body .select-wrap {
   width: 100%;
   background: #8cc63f;
@@ -1756,6 +1767,31 @@ body .box-link:hover {
   body .series .main .row .right .series-header [class*='col-'] .media-action ul li .overlaycontent {
     width: 300px;
   }
+  body .myeuscreen .main .row .left {
+    border-right: 6px solid #f2f2f2;
+  }
+  body .myeuscreen .main .row .left .collection-content .collection-counter,
+  body .myeuscreen .main .row .left .collection-content .collection-list,
+  body .myeuscreen .main .row .left .collection-content .more {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  body .myeuscreen .main .row .left .collection-content .collection-counter .pull-right .sort-option a {
+    width: 60px;
+  }
+  body .myeuscreen .main .row .left .collection-content .collection-list .media-item .media-metadata h3 {
+    font-size: 1.4em;
+  }
+  body .myeuscreen .main .row .left .collection-content .collection-list .media-item .media-metadata .label {
+    display: inline;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-size: 1em;
+  }
+  body .myeuscreen .main .row .left .collection-content .collection-list .media-item .media-metadata .value {
+    color: inherit;
+    font-size: 1em;
+  }
   body .audio-player {
     border-left: 0px;
     border-right: 0px;
@@ -2063,6 +2099,9 @@ body .box-link:hover {
   body .series .main .row .left .episode-action [class*='col-'] ul li.episodes-sort a,
   body .series .main .row .left .episode-action [class*='col-'] ul li.episode-link a {
     font-size: 1.14em;
+  }
+  body .myeuscreen .main .row .left .collection-content .collection-list .media-item .media-metadata h3 {
+    font-size: 1.2em;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
