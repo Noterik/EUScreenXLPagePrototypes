@@ -1815,6 +1815,10 @@ body .box-link:hover {
     color: inherit;
     font-size: 1em;
   }
+  body .myeuscreen .main .row .right .user-profile-edit .photo .form-group .photo-label {
+    display: inline-block;
+    float: left;
+  }
   body .audio-player {
     border-left: 0px;
     border-right: 0px;

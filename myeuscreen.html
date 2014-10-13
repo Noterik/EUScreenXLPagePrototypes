@@ -313,8 +313,6 @@
                             </div>
                         </div>
 
-                        
-
                         <!-- user profile -->
                         <div class="row user-profile">
                             
@@ -332,9 +330,80 @@
                             <!-- profile action -->
                             <div class="user-profile-action col-md-12">
                                 <ul>
-                                    <li><a href="#">EDIT PROFILE</a></li>
+                                    <li><a href="javascript:void(null);" class="edit-anchor" data-toggle="collapse" data-target="#edit-profile">EDIT PROFILE</a></li>
                                     <li><a href="#">SIGN OUT</a></li>
                                 </ul>
+                            </div>
+                        </div>
+
+                        <!-- user profile -->
+                        <div class="row user-profile-edit collapse" id="edit-profile">
+                            
+                            <!-- photo  -->
+                            <div class="photo col-md-12">
+
+                                <!-- info -->
+                                <div class="form-group">
+                                    <label class="photo-label">PHOTO</label>
+                                    <img src="img/ic-profile.jpg" class="profile-pic"/>
+
+                                    <!-- sort by options -->
+                                    <div class="wrap-dropdown">
+                                        <div class="dropdown">
+                                            <a role="button" data-toggle="dropdown" data-target="#" href="/page.html" class="anchor">
+                                                CHANGE PHOTO <span class="caret"></span>
+                                            </a>
+                                            <ul id="sortBy" class="dropdown-menu pull-right" role="menu" aria-labelledby="sortBy">
+                                                <li><a href="#" value="TITLE">REMOVE</a></li>
+                                                <li><a href="#" value="YEAR">ADD PHOTO URL</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- name -->
+                            <div class="info col-md-12">
+
+                                <!-- info -->
+                                <div class="form-group">
+                                    <label>NAME</label>
+                                    <input type="text" class="form-control" value="Petra Novakova"/>
+                                </div>
+
+                                <!-- info -->
+                                <div class="form-group">
+                                    <label>LOCATION</label>
+                                    <input type="text" class="form-control" value="Amsterdam"/>
+                                </div>
+                            </div>
+
+                            <!-- password -->
+                            <div class="password col-md-12 collapse" id="edit-password">
+                                
+                                <!-- info -->
+                                <div class="form-group">
+                                    <label>OLD PASSWORD</label>
+                                    <input type="password" class="form-control" />
+                                </div>
+
+                                <!-- info -->
+                                <div class="form-group">
+                                    <label>NEW PASSWORD</label>
+                                    <input type="password" class="form-control" />
+                                </div>
+
+                                <!-- info -->
+                                <div class="form-group">
+                                    <label>REPEAT PASSWORD</label>
+                                    <input type="password" class="form-control" />
+                                </div>
+                            </div>
+
+                            <!-- buttons -->
+                            <div class="action col-md-12">
+                                <span class="change-password"><a href="javascript:void(null);" data-toggle="collapse" data-target="#edit-password">CHANGE PASSWORD</a></span>
+                                <button type="submit" class="btn btn-euscreen">SAVE CHANGES</button>
                             </div>
                         </div>
 

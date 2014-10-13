@@ -238,10 +238,168 @@
   height: 60px;
   display: block;
   padding: 21px 25px 0px 25px;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 .myeuscreen .main .right .user-profile .user-profile-action ul li a:hover {
+  color: #0089bc;
+}
+.myeuscreen .main .right .user-profile .user-profile-action ul li a:active {
   background: #00aeef;
   color: #fff;
+}
+.myeuscreen .main .right .user-profile-edit .photo,
+.myeuscreen .main .right .user-profile-edit .info,
+.myeuscreen .main .right .user-profile-edit .password,
+.myeuscreen .main .right .user-profile-edit .action {
+  background: #fff;
+  margin-top: 1px;
+  padding: 20px;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group label,
+.myeuscreen .main .right .user-profile-edit .info .form-group label,
+.myeuscreen .main .right .user-profile-edit .password .form-group label,
+.myeuscreen .main .right .user-profile-edit .action .form-group label {
+  font-size: 0.77em;
+  color: #808080;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="text"],
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="text"],
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="text"],
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="text"],
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="email"],
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="email"],
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="email"],
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="email"],
+.myeuscreen .main .right .user-profile-edit .photo .form-group textarea,
+.myeuscreen .main .right .user-profile-edit .info .form-group textarea,
+.myeuscreen .main .right .user-profile-edit .password .form-group textarea,
+.myeuscreen .main .right .user-profile-edit .action .form-group textarea,
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="password"],
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="password"],
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="password"],
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="password"] {
+  border-radius: 0px;
+  padding: 10px;
+  height: auto;
+  font-size: 1.071em;
+  background: rgba(255, 255, 254, 0.6);
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="text"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="text"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="text"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="text"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="email"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="email"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="email"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="email"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group textarea::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group textarea::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group textarea::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group textarea::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="password"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="password"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="password"]::-moz-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="password"]::-moz-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+  opacity: 1;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="text"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="text"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="text"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="text"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="email"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="email"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="email"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="email"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group textarea:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group textarea:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group textarea:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group textarea:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="password"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="password"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="password"]:-ms-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="password"]:-ms-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="text"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="text"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="text"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="text"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="email"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="email"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="email"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="email"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group textarea::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group textarea::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group textarea::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group textarea::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .photo .form-group input[type="password"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .info .form-group input[type="password"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .password .form-group input[type="password"]::-webkit-input-placeholder,
+.myeuscreen .main .right .user-profile-edit .action .form-group input[type="password"]::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.myeuscreen .main .right .user-profile-edit .photo .change-password,
+.myeuscreen .main .right .user-profile-edit .info .change-password,
+.myeuscreen .main .right .user-profile-edit .password .change-password,
+.myeuscreen .main .right .user-profile-edit .action .change-password {
+  color: #00aeef;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-size: 0.857em;
+}
+.myeuscreen .main .right .user-profile-edit .photo .btn-euscreen,
+.myeuscreen .main .right .user-profile-edit .info .btn-euscreen,
+.myeuscreen .main .right .user-profile-edit .password .btn-euscreen,
+.myeuscreen .main .right .user-profile-edit .action .btn-euscreen {
+  background: #00aeef;
+  width: 150px;
+  margin-left: 10px;
+}
+.myeuscreen .main .right .user-profile-edit .photo {
+  margin-top: 6px;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group:before,
+.myeuscreen .main .right .user-profile-edit .photo .form-group:after {
+  content: " ";
+  display: table;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group:after {
+  clear: both;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group label {
+  float: left;
+  margin-right: 15px;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group .photo-label {
+  display: block;
+  float: none;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group .profile-pic {
+  width: 106px;
+  height: 106px;
+  float: left;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group .wrap-dropdown {
+  float: left;
+  margin-left: 10px;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group .wrap-dropdown .dropdown .anchor {
+  background: #00aeef;
+  color: #fff;
+  display: block;
+  padding: 7px 20px 6px 20px;
+}
+.myeuscreen .main .right .user-profile-edit .photo .form-group .wrap-dropdown .dropdown a {
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+}
+.myeuscreen .main .right .user-profile-edit .action {
+  text-align: right;
 }
 .myeuscreen .main .right .history {
   margin-top: 6px;

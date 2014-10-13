@@ -331,8 +331,12 @@
 								height: 60px;
 								display: block;
 								padding: 21px 25px 0px 25px;
+								.transition(all 0.35s);
 
 								&:hover {
+									color: darken(@euscreen-blue, 10%)
+								}
+								&:active {
 									background: @euscreen-blue;
 									color: #fff;
 								}
@@ -340,6 +344,106 @@
 						}
 					}
 				}
+			}
+
+			// user profile edit
+			.user-profile-edit {
+				
+				// photo
+				.photo, .info, .password, .action {
+					background: #fff;
+					margin-top: 1px;
+					padding: 20px;
+					
+					// form group
+					.form-group {
+						
+						// label
+						label {
+							font-size: 0.77em;
+							color: #808080;
+							letter-spacing: 1px;
+							font-weight: normal;
+						}
+						
+						// input
+						input[type="text"],input[type="email"],textarea, input[type="password"] {
+							.placeholderItalic(#d2d2d2,italic);
+							border-radius: 0px;
+							padding: 10px;
+							height: auto;
+							font-size:1.071em; 
+							background: rgba(255, 255, 254, 0.6);
+						}
+					}
+					
+					// change password
+					.change-password {
+						color: @euscreen-blue;
+						font-family: @font-family-monospace;
+						font-size: 0.857em;
+					}
+					.btn-euscreen {
+						background: @euscreen-blue;
+						width: 150px;
+						margin-left: 10px;
+					}
+				}
+
+				// info
+				.photo {
+					margin-top: 6px;
+					
+					// form group
+					.form-group {
+						.clearfix;
+						
+						// label
+						label {
+							float: left;
+							margin-right: 15px;	
+						}
+						
+						// photo label
+						.photo-label {
+							display: block;
+							float: none;
+						}
+						
+						// pic
+						.profile-pic {
+							width: 106px;
+							height: 106px;
+							float: left;
+						}
+						
+						// drop down
+						.wrap-dropdown {
+							float: left;
+							margin-left: 10px;
+							
+							.dropdown {
+							
+								.anchor {
+									background: @euscreen-blue;
+									color: #fff;
+									display: block;
+									
+									padding: 7px 20px 6px 20px;
+								}
+								a {
+									font-family: @font-family-monospace;
+								}
+							}
+						}
+					}
+				}
+				
+				// action
+				.action {
+					text-align: right;
+				}
+				
 			}
 
 			// hostory
@@ -360,7 +464,6 @@
 					margin: 6px 0 0 0;
 					padding-left: 0px;
 					padding-bottom: 20px;
-
 					padding-right: 0px;
 
 					// media
