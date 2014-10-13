@@ -8,6 +8,8 @@ $(document).ready(function () {
         this.$navElement = jQuery('#navpanel');
         this.$navbarElement = jQuery('.navbar-header');
         this.$formElement = jQuery('#headerform');
+        this.$overlayContents = jQuery('.overlaycontent');
+        this.$overlayButtons = jQuery('button[data-overlay]');
         var obj = this;
 
         // nav panel
@@ -24,6 +26,15 @@ $(document).ready(function () {
             // hide headroom
             $(".navbar").headroom();
         }
+
+        // popover overlay
+        // bootstrap popover doesn't play too nicely with mobile version
+        // and it doesnt fit with euscreenxl the mobile designs
+        this.$overlayButtons.popupOverlayJS({
+           
+            $overlayContents : this.$overlayContents,
+            contentOverlayIdAttr : 'data-overlay'
+        });
     };
 
     EUScreenXL.MYEUscreenPage.prototype = Object.create(EUScreenXL.Page.prototype);

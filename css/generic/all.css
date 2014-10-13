@@ -516,14 +516,10 @@ body .page .main .media-action .overlaycontent .extra {
 body .page .main .media-action .overlaycontent .extra a {
   color: inherit;
 }
-body .page .main .media-action .overlaycontent .login-form input[type="text"],
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="text"],
-body .page .main .media-action .overlaycontent .login-form input[type="email"],
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="email"],
-body .page .main .media-action .overlaycontent .login-form textarea,
-body .page .main .media-action .overlaycontent .contact-provider-form textarea,
-body .page .main .media-action .overlaycontent .login-form input[type="password"],
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="password"] {
+body .page .main .media-action .overlaycontent input[type="text"],
+body .page .main .media-action .overlaycontent input[type="email"],
+body .page .main .media-action .overlaycontent textarea,
+body .page .main .media-action .overlaycontent input[type="password"] {
   margin-bottom: 8px;
   border-radius: 0px;
   padding: 10px;
@@ -531,46 +527,32 @@ body .page .main .media-action .overlaycontent .contact-provider-form input[type
   font-size: 1.071em;
   background: rgba(255, 255, 254, 0.6);
 }
-body .page .main .media-action .overlaycontent .login-form input[type="text"]::-moz-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="text"]::-moz-placeholder,
-body .page .main .media-action .overlaycontent .login-form input[type="email"]::-moz-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="email"]::-moz-placeholder,
-body .page .main .media-action .overlaycontent .login-form textarea::-moz-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form textarea::-moz-placeholder,
-body .page .main .media-action .overlaycontent .login-form input[type="password"]::-moz-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="password"]::-moz-placeholder {
+body .page .main .media-action .overlaycontent input[type="text"]::-moz-placeholder,
+body .page .main .media-action .overlaycontent input[type="email"]::-moz-placeholder,
+body .page .main .media-action .overlaycontent textarea::-moz-placeholder,
+body .page .main .media-action .overlaycontent input[type="password"]::-moz-placeholder {
   color: #d2d2d2;
   font-style: italic;
   opacity: 1;
 }
-body .page .main .media-action .overlaycontent .login-form input[type="text"]:-ms-input-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="text"]:-ms-input-placeholder,
-body .page .main .media-action .overlaycontent .login-form input[type="email"]:-ms-input-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="email"]:-ms-input-placeholder,
-body .page .main .media-action .overlaycontent .login-form textarea:-ms-input-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form textarea:-ms-input-placeholder,
-body .page .main .media-action .overlaycontent .login-form input[type="password"]:-ms-input-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="password"]:-ms-input-placeholder {
+body .page .main .media-action .overlaycontent input[type="text"]:-ms-input-placeholder,
+body .page .main .media-action .overlaycontent input[type="email"]:-ms-input-placeholder,
+body .page .main .media-action .overlaycontent textarea:-ms-input-placeholder,
+body .page .main .media-action .overlaycontent input[type="password"]:-ms-input-placeholder {
   color: #d2d2d2;
   font-style: italic;
 }
-body .page .main .media-action .overlaycontent .login-form input[type="text"]::-webkit-input-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="text"]::-webkit-input-placeholder,
-body .page .main .media-action .overlaycontent .login-form input[type="email"]::-webkit-input-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="email"]::-webkit-input-placeholder,
-body .page .main .media-action .overlaycontent .login-form textarea::-webkit-input-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form textarea::-webkit-input-placeholder,
-body .page .main .media-action .overlaycontent .login-form input[type="password"]::-webkit-input-placeholder,
-body .page .main .media-action .overlaycontent .contact-provider-form input[type="password"]::-webkit-input-placeholder {
+body .page .main .media-action .overlaycontent input[type="text"]::-webkit-input-placeholder,
+body .page .main .media-action .overlaycontent input[type="email"]::-webkit-input-placeholder,
+body .page .main .media-action .overlaycontent textarea::-webkit-input-placeholder,
+body .page .main .media-action .overlaycontent input[type="password"]::-webkit-input-placeholder {
   color: #d2d2d2;
   font-style: italic;
 }
-body .page .main .media-action .overlaycontent .login-form .form-group,
-body .page .main .media-action .overlaycontent .contact-provider-form .form-group {
+body .page .main .media-action .overlaycontent .form-group {
   margin-bottom: 8px;
 }
-body .page .main .media-action .overlaycontent .login-form .form-group label,
-body .page .main .media-action .overlaycontent .contact-provider-form .form-group label {
+body .page .main .media-action .overlaycontent .form-group label {
   font-size: 0.77em;
   font-weight: normal;
   letter-spacing: 1px;
@@ -578,12 +560,10 @@ body .page .main .media-action .overlaycontent .contact-provider-form .form-grou
   display: block;
   margin-bottom: 0px;
 }
-body .page .main .media-action .overlaycontent .login-form .form-group span,
-body .page .main .media-action .overlaycontent .contact-provider-form .form-group span {
+body .page .main .media-action .overlaycontent .form-group span {
   word-wrap: break-word;
 }
-body .page .main .media-action .overlaycontent .login-form .form-group.space,
-body .page .main .media-action .overlaycontent .contact-provider-form .form-group.space {
+body .page .main .media-action .overlaycontent .form-group.space {
   margin-top: 10px;
 }
 body .page .main .media-action .overlaycontent .contact-provider-form {
@@ -603,6 +583,9 @@ body .page .main .media-action .overlaycontent .list-group .plus-sign {
 }
 body .page .main .media-action .overlaycontent .btn-euscreen {
   margin-top: 6px;
+}
+body .page .main .media-action .overlaycontent .btn-euscreen:active {
+  background: #0089bc;
 }
 body .page .main .media-action .overlaycontent .permalink {
   margin: 15px 0 0 0;
@@ -733,6 +716,16 @@ body .page .main .media-action .button-list > li button:hover i.icono-minimize,
 body .page .main .media-action .button-list > li button:active i.icono-minimize,
 body .page .main .media-action .button-list > li button.active i.icono-minimize {
   background-position: -48px -106px;
+}
+body .page .main .media-action .button-list > li button:hover i.icono-setting,
+body .page .main .media-action .button-list > li button:active i.icono-setting,
+body .page .main .media-action .button-list > li button.active i.icono-setting {
+  background-position: -118px -106px;
+}
+body .page .main .media-action .button-list > li button:hover i.icono-add,
+body .page .main .media-action .button-list > li button:active i.icono-add,
+body .page .main .media-action .button-list > li button.active i.icono-add {
+  background-position: -142px -106px;
 }
 body .page .main .jumbotron-small {
   background-size: cover;
@@ -1062,6 +1055,20 @@ body div.icono-opendata {
   background-position: -99px -290px;
   width: 99px;
   height: 99px;
+}
+body i.icono-setting,
+body span.icono-setting,
+body div.icono-setting {
+  background-position: -118px -82px;
+  width: 24px;
+  height: 24px;
+}
+body i.icono-add,
+body span.icono-add,
+body div.icono-add {
+  background-position: -142px -82px;
+  width: 24px;
+  height: 24px;
 }
 body .more {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
@@ -1768,7 +1775,10 @@ body .box-link:hover {
     width: 300px;
   }
   body .myeuscreen .main .row .left {
-    border-right: 6px solid #f2f2f2;
+    border-right: 0px;
+  }
+  body .myeuscreen .main .row .left .collection-header .media-action ul li .small {
+    width: 300px;
   }
   body .myeuscreen .main .row .left .collection-content .collection-counter,
   body .myeuscreen .main .row .left .collection-content .collection-list,
@@ -1789,6 +1799,19 @@ body .box-link:hover {
     font-size: 1em;
   }
   body .myeuscreen .main .row .left .collection-content .collection-list .media-item .media-metadata .value {
+    color: inherit;
+    font-size: 1em;
+  }
+  body .myeuscreen .main .row .right .history .history-list .media-item .media-metadata h3 {
+    font-size: 1.4em;
+  }
+  body .myeuscreen .main .row .right .history .history-list .media-item .media-metadata .label {
+    display: inline;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-size: 1em;
+  }
+  body .myeuscreen .main .row .right .history .history-list .media-item .media-metadata .value {
     color: inherit;
     font-size: 1em;
   }
@@ -1995,6 +2018,12 @@ body .box-link:hover {
   body .contest .main .disclaimer [class*='col-'] {
     padding-bottom: 40px;
   }
+  body .myeuscreen .main .row .left .collection-content .collection-header .media-action ul li .overlaycontent {
+    font-size: 1em;
+  }
+  body .myeuscreen .main .row .right .notification {
+    margin-top: 0px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 1025px) {
@@ -2102,6 +2131,13 @@ body .box-link:hover {
   }
   body .myeuscreen .main .row .left .collection-content .collection-list .media-item .media-metadata h3 {
     font-size: 1.2em;
+  }
+  body .myeuscreen .main .row .right .history .history-list .media-item .media-metadata h3 {
+    font-size: 1.143em;
+  }
+  body .myeuscreen .main .row .right .history .history-list .media-item .media-metadata .line .value {
+    font-size: 0.929em;
+    color: #808080;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

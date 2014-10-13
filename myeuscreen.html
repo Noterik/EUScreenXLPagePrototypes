@@ -123,26 +123,41 @@
                                 <!-- action icons -->
                                 <div class="media-action">
                                     <ul class="list-inline pull-right button-list">
+
+                                        <!-- setting icon-->
                                         <li>
-                                            <!-- button info -->
-                                            <button data-toggle="tooltip" data-placement="top" data-title="SECTION INFO" data-overlay="#info-content">
-                                                <i class="icono icono-info"></i>
+                                            <button data-toggle="tooltip" data-placement="top" data-title="COLLECTION SETTING" data-overlay="#collectionsetting-content">
+                                                <i class="icono icono-setting"></i>
                                             </button>
-                                            
-                                            <!-- info content -->
-                                            <div class="overlaycontent" id="info-content">
-                                                <h3>Video Highlights</h3>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Dolore 
-                                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                                                </p>
+
+                                            <!-- collection setting content -->
+                                            <div class="overlaycontent small" id="collectionsetting-content">
+                                                <h3>CREATE NEW COLLECTION</h3>
+                                                <div class="action-form">
+                                                    <input type="text" class="form-control" placeholder="Enter name for your collection"/>
+                                                    <!-- submit -->
+                                                    <button type="submit" class="btn btn-euscreen">CREATE</button>
+                                                </div>
                                             </div>
                                         </li>
-                                        <li class="fullscreen">
-                                            <button data-toggle="tooltip" data-placement="top" data-title="EXPAND TO FULLSCREEN" id="fullscreen-button">
-                                                <i class="icono icono-expand"></i>
+
+                                        <!-- add new icon -->
+                                        <li>
+                                            <!-- button info -->
+                                            <button data-toggle="tooltip" data-placement="top" data-title="ADD NEW COLLECTION" data-overlay="#addcollection-content">
+                                                <i class="icono icono-add"></i>
                                             </button>
+                                            
+                                            <!-- add collection content -->
+                                            <div class="overlaycontent" id="addcollection-content">
+                                                <h3>COLLECTION TITLE</h3>
+                                                <div class="action-form">
+                                                    <input type="text" class="form-control" value="My First Collection"/>
+                                                    <!-- submit -->
+                                                    <button type="submit" class="btn btn-euscreen">DONE</button>
+                                                    <button type="button" class="btn btn-delete"><i class="glyphicon glyphicon-trash"></i></button>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -273,115 +288,6 @@
                                             <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
                                         </div>
                                     </div>
-                                    
-                                    <!-- media -->
-                                    <div class="row media-item">
-                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
-                                            <div class="media-wrapper">
-                                                <a href="item.html">
-                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
-                                                    <span class="media-length">
-                                                        12:32
-                                                    </span>
-                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                                    <span class="media-type audio"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
-                                            <a href="item.html"><h3 class="media-heading">Reimer Bo. Illegaly into hiding</h3></a>
-                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
-                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
-                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
-                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- media -->
-                                    <div class="row media-item">
-                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
-                                            <div class="media-wrapper">
-                                                <a href="item.html">
-                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
-                                                    <span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
-                                                    <span class="media-type image"></span>
-                                                </a>                                        
-                                            </div>
-                                        </div>
-                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
-                                            <a href="item.html"><h3 class="media-heading">Kolaric's heirs</h3></a>
-                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
-                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
-                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
-                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- media -->
-                                    <div class="row media-item">
-                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
-                                            <div class="media-wrapper">
-                                                <a href="item.html">
-                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
-                                                    <span class="media-length">
-                                                        12:32
-                                                    </span>
-                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                                    <i class="media-type video"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
-                                            <a href="item.html"><h3 class="media-heading">Bread of Altamura</h3></a>
-                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
-                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
-                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
-                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- media -->
-                                    <div class="row media-item">
-                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
-                                            <div class="media-wrapper">
-                                                <a href="item.html">
-                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
-                                                    <span class="media-hue"><i class="glyphicon glyphicon-search"></i></span>
-                                                    <i class="media-type text"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
-                                            <a href="item.html"><h3 class="media-heading">58 million Dutch people and the beautiful nature</h3></a>
-                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
-                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
-                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
-                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- media -->
-                                    <div class="row media-item">
-                                        <div class="media-image col-md-4 col-sm-5 col-xs-6">
-                                            <div class="media-wrapper">
-                                                <a href="item.html">
-                                                    <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
-                                                    <span class="media-length">
-                                                        12:32
-                                                    </span>
-                                                    <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
-                                                    <span class="media-type audio"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="media-metadata col-md-8 col-sm-7 col-xs-6">
-                                            <a href="item.html"><h3 class="media-heading">Reimer Bo. Illegaly into hiding</h3></a>
-                                            <span class="line hidden-xs"><span class="label">Original Title: </span><span class="value">Airplanes</span></span>
-                                            <span class="line"><span class="label hidden-xs">Provider: </span><span class="value">BBC/United Kingdom</span></span>
-                                            <span class="line"><span class="label hidden-xs">Year: </span><span class="value">1954</span></span>
-                                            <span class="line hidden-xs"><span class="label">Language: </span><span class="value">English</span></span>
-                                        </div>
-                                    </div>
                                 </div>
 
                             </div>
@@ -398,15 +304,37 @@
 
                         <!-- notification -->
                         <div class="row notification">
-                            <div class="col-md-12">
-
+                            <div class="col-md-12 alert alert-warning fade in" role="alert">
+                                <button class="close" data-dismiss="alert" type="button">x</button>
+                                <span class="header">WELCOME TO YOUR EUSCREEN</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                </p>
                             </div>
                         </div>
 
+                        
+
                         <!-- user profile -->
                         <div class="row user-profile">
-                            <div class="col-md-12">
+                            
+                            <!-- profile box -->
+                            <div class="user-profile-box col-md-12">
+                                <img src="img/ic-profile.jpg" class="profile-pic" />
+                                <div class="profile-detail">
+                                    <span class="name">Petra Novakova</span>
+                                    <span class="join">
+                                        MEMBERS SINCE 9 AUGUST 2014
+                                    </span>
+                                </div>
+                            </div>
 
+                            <!-- profile action -->
+                            <div class="user-profile-action col-md-12">
+                                <ul>
+                                    <li><a href="#">EDIT PROFILE</a></li>
+                                    <li><a href="#">SIGN OUT</a></li>
+                                </ul>
                             </div>
                         </div>
 
@@ -425,6 +353,97 @@
                             <!-- list -->
                             <div class="col-md-12 history-list">
 
+                                <!-- media -->
+                                <div class="row media-item">
+                                    <div class="media-image col-md-6 col-sm-5 col-xs-6">
+                                        <div class="media-wrapper">
+                                            <a href="#">
+                                                <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                <span class="media-length">
+                                                    12:32
+                                                </span>
+                                                <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                <i class="media-type video"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="media-metadata col-md-6 col-sm-7 col-xs-6">
+                                        <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
+                                        <span class="line visible-sm"><span class="label">Original title</span><span class="value">Sandwich of Holland</span></span>
+                                        <span class="line"><span class="label hidden-xs hidden-lg hidden-md">Provider</span><span class="value">BBC/United Kingdom</span></span>
+                                        <span class="line visible-sm"><span class="label">Year</span><span class="value">1980</span></span>
+                                        <span class="line visible-sm"><span class="label">Language</span><span class="value">English</span></span>
+                                    </div>
+                                </div>
+                                
+                                <!-- media -->
+                                <div class="row media-item">
+                                    <div class="media-image col-md-6 col-sm-5 col-xs-6">
+                                        <div class="media-wrapper">
+                                            <a href="#">
+                                                <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                <span class="media-length">
+                                                    12:32
+                                                </span>
+                                                <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                <i class="media-type video"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="media-metadata col-md-6 col-sm-7 col-xs-6">
+                                        <a href="#"><h3 class="media-heading">Defence Forces Celebrates 50 Years of Peacekeeping Duties</h3></a>
+                                        <span class="line visible-sm"><span class="label">Original title</span><span class="value">Sandwich of Holland</span></span>
+                                        <span class="line"><span class="label hidden-xs hidden-lg hidden-md">Provider</span><span class="value">BBC/United Kingdom</span></span>
+                                        <span class="line visible-sm"><span class="label">Year</span><span class="value">1980</span></span>
+                                        <span class="line visible-sm"><span class="label">Language</span><span class="value">English</span></span>
+                                    </div>
+                                </div>
+                                
+                                <!-- media -->
+                                <div class="row media-item">
+                                    <div class="media-image col-md-6 col-sm-5 col-xs-6">
+                                        <div class="media-wrapper">
+                                            <a href="#">
+                                                <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                <span class="media-length">
+                                                    12:32
+                                                </span>
+                                                <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                <i class="media-type video"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="media-metadata col-md-6 col-sm-7 col-xs-6">
+                                        <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
+                                        <span class="line visible-sm"><span class="label">Original title</span><span class="value">Sandwich of Holland</span></span>
+                                        <span class="line"><span class="label hidden-xs hidden-lg hidden-md">Provider</span><span class="value">BBC/United Kingdom</span></span>
+                                        <span class="line visible-sm"><span class="label">Year</span><span class="value">1980</span></span>
+                                        <span class="line visible-sm"><span class="label">Language</span><span class="value">English</span></span>
+                                    </div>
+                                </div>
+                                
+                                <!-- media -->
+                                <div class="row media-item">
+                                    <div class="media-image col-md-6 col-sm-5 col-xs-6">
+                                        <div class="media-wrapper">
+                                            <a href="#">
+                                                <img class="media-object img-responsive" src="img/ic_thumbnail.gif" alt="Airplanes">
+                                                <span class="media-length">
+                                                    12:32
+                                                </span>
+                                                <span class="media-hue"><i class="glyphicon glyphicon-play"></i></span>
+                                                <i class="media-type video"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="media-metadata col-md-6 col-sm-7 col-xs-6">
+                                        <a href="#"><h3 class="media-heading">Bread of Altamura</h3></a>
+                                        <span class="line visible-sm"><span class="label">Original title</span><span class="value">Sandwich of Holland</span></span>
+                                        <span class="line"><span class="label hidden-xs hidden-lg hidden-md">Provider</span><span class="value">BBC/United Kingdom</span></span>
+                                        <span class="line visible-sm"><span class="label">Year</span><span class="value">1980</span></span>
+                                        <span class="line visible-sm"><span class="label">Language</span><span class="value">English</span></span>
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- more -->

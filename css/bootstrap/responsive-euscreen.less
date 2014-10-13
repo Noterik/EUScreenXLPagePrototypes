@@ -750,7 +750,24 @@
 
 					// left
 					.left {
-						border-right: 6px solid @body-bg;
+						border-right: 0px;
+
+						// header
+						.collection-header {
+
+							// media-action
+							.media-action {
+								ul {
+									li {
+
+										// content
+										.small {
+											width: 300px;
+										}
+									}
+								}
+							}
+						}
 
 						// collection
 						.collection-content {
@@ -795,6 +812,38 @@
 									}
 								}
 							}
+						}
+					}
+
+					// right
+					.right {
+
+						// history
+						.history {
+
+							// list
+							.history-list {
+
+								// item
+								.media-item {
+									.media-metadata {
+										h3 {
+											font-size: 1.4em;
+										}
+										.label {
+											display: inline;
+											text-transform: capitalize;
+											letter-spacing: 0px;
+											font-size: 1em;
+										}
+										.value {
+											color: inherit;
+											font-size: 1em;
+										}
+									}
+								}	
+							}
+							
 						}
 					}
 				}
@@ -1465,6 +1514,52 @@
 				}
 			}
 		}
+
+		// myeuscreen page
+		.myeuscreen {
+
+			// main
+			.main {
+
+				// row
+				.row {
+
+					// left
+					.left {
+
+						// content
+						.collection-content {
+
+							// header
+							.collection-header {
+
+								// media action
+								.media-action {
+									ul {
+										li {
+
+											// overlay content
+											.overlaycontent {
+												font-size: 1em;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					// right
+					.right {
+
+						// notification
+						.notification {
+							margin-top:0px;
+						}
+					}
+				}
+			}
+		}
 		
 	}
 }
@@ -1784,6 +1879,32 @@
 									.media-metadata {
 										h3 {
 											font-size: 1.2em;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					// left
+					.right {
+
+						// collection
+						.history {
+
+							
+							// list
+							.history-list {
+								.media-item {
+									.media-metadata {
+										h3 {
+											font-size: 1.143em;
+										}
+										.line {
+											.value {
+												font-size: 0.929em;
+												color: #808080;
+											}
 										}
 									}
 								}

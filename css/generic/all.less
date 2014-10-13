@@ -564,41 +564,37 @@ body {
 						}
 					}
 
-					// the forms
-					.login-form, .contact-provider-form {
+					// form styling
+					input[type="text"],input[type="email"],textarea, input[type="password"] {
+						.placeholderItalic(#d2d2d2,italic);
+						margin-bottom: 8px;
+						border-radius: 0px;
+						padding: 10px;
+						height: auto;
+						font-size:1.071em; 
+						background: rgba(255, 255, 254, 0.6);
+					}
 
-						// form styling
-						input[type="text"],input[type="email"],textarea, input[type="password"] {
-							.placeholderItalic(#d2d2d2,italic);
-							margin-bottom: 8px;
-							border-radius: 0px;
-							padding: 10px;
-							height: auto;
-							font-size:1.071em; 
-							background: rgba(255, 255, 254, 0.6);
+					// form group
+					.form-group {
+						margin-bottom: 8px;
+
+						// label
+						label {
+							font-size: 0.77em;
+							font-weight: normal;
+							letter-spacing: 1px;
+							color: #808080;
+							display: block;
+							margin-bottom: 0px;
+						}
+						span {
+							word-wrap : break-word;
 						}
 
-						// form group
-						.form-group {
-							margin-bottom: 8px;
-
-							// label
-							label {
-								font-size: 0.77em;
-								font-weight: normal;
-								letter-spacing: 1px;
-								color: #808080;
-								display: block;
-								margin-bottom: 0px;
-							}
-							span {
-								word-wrap : break-word;
-							}
-
-							// space
-							&.space {
-								margin-top: 10px;
-							}
+						// space
+						&.space {
+							margin-top: 10px;
 						}
 					}
 
@@ -628,6 +624,10 @@ body {
 					// button
 					.btn-euscreen {
 						margin-top:6px;
+
+						&:active {
+							background: darken(@euscreen-blue, 10%);
+						}
 					}
 					
 					// permalink
@@ -668,6 +668,7 @@ body {
 						overflow: hidden;
 						width: 100%;
 						background: @euscreen-blue;
+
 						
 						select {
 							border: 0 none;
@@ -677,6 +678,7 @@ body {
 							padding: 10px;
 							font-size: 1.1em;
 							-webkit-appearance: none !important;
+							
 							
 							option {
 								color: @euscreen-blue;
@@ -762,6 +764,12 @@ body {
 								}
 								i.icono-minimize {
 									background-position: -48px -106px;
+								}
+								i.icono-setting {
+									background-position: -118px -106px;
+								}
+								i.icono-add {
+									background-position: -142px -106px;
 								}
 							}
 						}
@@ -1126,6 +1134,18 @@ body {
 		&.icono-opendata {
 			background-position: -99px -290px;
 			width: 99px; height: 99px;
+		}
+
+		// setitngs
+		&.icono-setting {
+			background-position: -118px -82px;
+			width: 24px; height: 24px;
+		}
+		
+		// metadata
+		&.icono-add {
+			background-position: -142px -82px;
+			width: 24px; height: 24px;
 		}
 	}
 
