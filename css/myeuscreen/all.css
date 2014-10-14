@@ -345,6 +345,12 @@
   color: #d2d2d2;
   font-style: italic;
 }
+.myeuscreen .main .right .user-profile-edit .photo .form-group.photo-url,
+.myeuscreen .main .right .user-profile-edit .info .form-group.photo-url,
+.myeuscreen .main .right .user-profile-edit .password .form-group.photo-url,
+.myeuscreen .main .right .user-profile-edit .action .form-group.photo-url {
+  margin-top: 22px;
+}
 .myeuscreen .main .right .user-profile-edit .photo .change-password,
 .myeuscreen .main .right .user-profile-edit .info .change-password,
 .myeuscreen .main .right .user-profile-edit .password .change-password,
