@@ -40,6 +40,12 @@
 .about .main .about-content .box-link {
   margin-top: 30px;
   font-size: 0.857em;
+  color: #00aeef;
+  border-color: #00aeef;
+}
+.about .main .about-content .box-link:active {
+  color: #fff;
+  background: #00aeef;
 }
 .about .main .welcome-text h1 {
   text-align: center;
