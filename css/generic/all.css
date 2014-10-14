@@ -1962,7 +1962,7 @@ body .box-link:hover {
     padding: 8px 20px 7px 20px;
   }
   body .about .main .content-selection-aggregation {
-    padding-bottom: 0px;
+    padding-bottom: 50px;
   }
   body .about .main .content-selection-aggregation .items .intro h2 {
     text-align: left;
@@ -2199,9 +2199,6 @@ body .box-link:hover {
   }
   body .search .main .right.fix {
     margin-left: 390px;
-  }
-  body .about .main .content-selection-aggregation {
-    padding-bottom: 50px;
   }
   body .about .main .content-selection-aggregation .items {
     padding-top: 40px;
