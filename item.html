@@ -257,14 +257,18 @@
 													
 													<!-- info -->
 													<div class="form-group">
+												    	<label>TITLE</label>
+												    	<span>The state of the world</span>
+												    	<input type="hidden" name="title" value="The state of the world">
+												  	</div>
+													<div class="form-group">
 												    	<label>IDENTIFIER</label>
 												    	<span>EUS_8D4A3D3653D74EA4A984470E9E6A0E4B</span>
 												    	<input type="hidden" name="identifier" value="EUS_8D4A3D3653D74EA4A984470E9E6A0E4B">
 												  	</div>
 												  	<div class="form-group">
-												    	<label>TITLE</label>
-												    	<span>The state of the world</span>
-												    	<input type="hidden" name="title" value="The state of the world">
+												    	<label>TO</label>
+												    	<span>BBC / United Kingdom</span>
 												  	</div>
 
 												  	<!-- user input -->
@@ -275,7 +279,12 @@
 													</div>
 
 													<!-- submit -->
-												  	<button type="submit" class="btn btn-euscreen">SUBMIT</button>
+												  	<button type="button" class="btn btn-euscreen" id="btn-submit-contact" data-loading-text="SENDING...">SUBMIT</button>
+												  	
+												  	<!-- notification -->
+												  	<div class="form-notification">
+												  		Your message has been succesfully sent.
+												  	</div>
 												</form>
 
 												<!-- back button -->

@@ -578,6 +578,19 @@ body .page .main .media-action .overlaycontent .contact-provider-form .btn-euscr
   width: 200px;
   height: auto;
 }
+body .page .main .media-action .overlaycontent .contact-provider-form .form-notification {
+  color: #8cc63f;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-size: 1.2em;
+  margin-top: 20px;
+  display: none;
+}
+body .page .main .media-action .overlaycontent .contact-provider-form.form-sent .btn-euscreen {
+  display: none;
+}
+body .page .main .media-action .overlaycontent .contact-provider-form.form-sent .form-notification {
+  display: block;
+}
 body .page .main .media-action .overlaycontent .list-group .plus-sign {
   margin-top: 5px;
 }
@@ -610,6 +623,7 @@ body .page .main .media-action .overlaycontent .permalink .form-control {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   color: #555555;
+  margin-bottom: 0px;
 }
 body .page .main .media-action .overlaycontent .permalink .form-control[readonly] {
   background: #fff;

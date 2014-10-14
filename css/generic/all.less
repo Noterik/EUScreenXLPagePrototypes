@@ -614,6 +614,29 @@ body {
 							width: 200px;
 							height: auto;
 						}
+						
+						// form notification
+						.form-notification {
+							color: @euscreen-green;
+							font-family: @font-family-monospace;
+							font-size: 1.2em;
+							margin-top:20px;
+							display: none;
+						}
+						
+						// on form sent
+						&.form-sent {
+							
+							// hide the submit button
+							.btn-euscreen {
+								display: none;
+							}
+							
+							// replace it with notification
+							.form-notification {
+								display: block;
+							}
+						}
 					}
 
 					// list-group
@@ -653,6 +676,7 @@ body {
 							border-top-right-radius: 3px;
 							border-bottom-right-radius: 3px;
 							color: @gray;
+							margin-bottom: 0px;
 							
 							&[readonly] {
 								background: #fff;

@@ -82,6 +82,7 @@ $(document).ready(function () {
     EUScreenXL.ItemPage.prototype.menuButton = jQuery("#menubutton");
     EUScreenXL.ItemPage.prototype.contactButton = jQuery("#contact-button");
     EUScreenXL.ItemPage.prototype.termsButton = jQuery("#terms-button");
+    EUScreenXL.ItemPage.prototype.submitContactButton = jQuery("#btn-submit-contact");
     EUScreenXL.ItemPage.prototype.events = {
     	"click #show-extra-filters": function (event) {
             this.showExtraFiltersButton.hide();
@@ -118,6 +119,11 @@ $(document).ready(function () {
         'click #terms-button': function(event) {
             this.$contactProviderElement.hide();
             this.$termsOfUseElement.show();
+        },
+        'click #btn-submit-contact': function(event) {
+        	var btn = this.submitContactButton;
+		    btn.button('loading');
+		    
         }
     };
     EUScreenXL.ItemPage.prototype.name = "item";
