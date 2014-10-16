@@ -1833,6 +1833,34 @@ body .box-link:hover {
     display: inline-block;
     float: left;
   }
+  body .intro .main .row.login-feature .login {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  body .intro .main .row.login-feature .login .tab-content .btn-euscreen {
+    width: 250px;
+  }
+  body .intro .main .row.login-feature .login .tab-content .forgotpassword {
+    text-align: left;
+  }
+  body .intro .main .row.login-feature .feature {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  body .intro .main .row.login-feature .feature .create-collection {
+    height: 200px;
+  }
+  body .intro .main .row.login-feature .feature .create-collection .img {
+    margin: 34px 40px 10px 15px;
+  }
+  body .intro .main .row.login-feature .feature .create-collection .text h4 {
+    margin-top: 48px;
+  }
+  body .intro .main .row.login-feature .ads .text {
+    left: 180px;
+    top: 41px;
+    right: 30px;
+  }
   body .audio-player {
     border-left: 0px;
     border-right: 0px;
@@ -2040,6 +2068,15 @@ body .box-link:hover {
     font-size: 1em;
   }
   body .myeuscreen .main .row .right .notification {
+    margin-top: 0px;
+  }
+  body .intro .main .row.login-feature .login {
+    border-right: 6px solid #f2f2f2;
+  }
+  body .intro .main .row.login-feature .login .tab-content .btn-euscreen {
+    width: 100%;
+  }
+  body .intro .main .row.login-feature .feature {
     margin-top: 0px;
   }
 }
