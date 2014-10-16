@@ -50,6 +50,9 @@ body {
 body.fixfixed .page header .navbar {
   position: absolute !important;
 }
+body.action {
+  background: #fff;
+}
 body .modal {
   background: rgba(0, 0, 0, 0.7);
 }
@@ -842,6 +845,7 @@ body .page footer {
   height: 183px;
   background-color: #ffffff;
   display: none;
+  border-top: 1px solid #f2f2f2;
 }
 body .page footer [class*='col-'] {
   padding-left: 0px;
@@ -2076,6 +2080,9 @@ body .box-link:hover {
   body .intro .main .row.login-feature .login .tab-content .btn-euscreen {
     width: 100%;
   }
+  body .intro .main .row.login-feature .login .tab-content .forgotpassword {
+    text-align: right;
+  }
   body .intro .main .row.login-feature .feature {
     margin-top: 0px;
   }
@@ -2127,9 +2134,6 @@ body .box-link:hover {
     width: 280px;
   }
   body .page header .navbar .container .navbar-header.searchOpened a.navbar-brand {
-    display: block;
-  }
-  body .page header .navbar .container .user-thumbnail {
     display: block;
   }
   body .page footer {

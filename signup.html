@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        
+        <!-- meta-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EUscreenXL - Signup</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap/theme.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/generic/all.css">
+        <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
+    </head>
+    <body class="action">
+        
+        <!-- update browser-->
+        <!--[if lt IE 7]>
+            <div class="browsehappy alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                You are using an <strong>outdated</strong> browser.
+                Please <a class="alert-link" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+            </div>
+        <![endif]-->
+        
+        <!-- container -->
+        <div class="page signup" id="page">
+            
+            <!-- wrap -->
+            <header>
+                <div class="navbar navbar-fixed-top" role="navigation" id="navbar">
+                    <div class="container">
+                        
+                        <!-- header -->
+                        <div class="navbar-header">
+                            
+                            <!-- menu icon -->
+                            <div class="menuicon pull-left">
+                                <button type="button" id="menubutton" class="btn"><i class="fa fa-bars"></i></button>
+                            </div>
+                            
+                            <!-- search icon -->
+                            <div class="searchicon pull-right">
+                                <button type="button" id="searchbutton" class="btn"><i class="fa fa-search"></i></button>
+                            </div>
+                            
+                            <!-- logo -->
+                            <a class="navbar-brand" href="index.html"><span class="colorblack">EU</span>SCREEN<span class="colorred">XL</span></a>
+                            <!-- <a class="navbar-brand" href="#">EUSCREENXL</a> -->
+                            
+                            <!-- form -->
+                            <form class="navbar-form navbar-left" id="headerform" role="search">
+                                <div class="form-group">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                    <input type="text" class="form-control" placeholder="Search the collection">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </div>
+                        
+                        <!-- collapse -->
+                        <div class="navbar-collapse collapse">
+                            
+                            <!-- navigation -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="myeuscreen.html">MYEUSCREEN</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- my euscreen thumbnail, will be shown only when user has logged in on every page except on desktop -->
+                        <div class="user-thumbnail">
+                        	<a role="button" data-toggle="dropdown" data-target="login-action" href="/myeuscreen.html">
+						    	<img src="img/ic-user.jpg" alt="User"/>
+						    	<span class="frame"></span> <span class="status-icon"></span>
+						    </a>
+                        	
+                        	<!-- drop down -->
+                        	<ul id="login-action" class="dropdown-menu pull-right" role="menu" aria-labelledby="login-action">
+                				<li><a href="myeuscreen.html" value="TITLE">MYEUSCREEN</a></li>
+                				<li><a href="#" value="YEAR">LOGOUT</a></li>
+                			</ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- about content -->
+            <div class="container main">
+            	
+            	<!-- sign up form -->
+                <div class="row">
+                    <div class="col-md-5">
+                    
+                        <!-- login form -->
+                        <form class="signup-form tab-pane" id="signup">
+                        
+                            <!-- username -->
+                            <div class="form-group">
+                                <label>USERNAME</label>
+                                <input type="text" class="form-control"/>
+                            </div>
+                            
+                            <!-- email -->
+                            <div class="form-group">
+                                <label>EMAIl</label>
+                                <input type="text" class="form-control"/>
+                            </div>
+
+                            <!-- password -->
+                            <div class="form-group">
+                                <label>PASSWORD</label>
+                                <input type="password" class="form-control" />
+                            </div>
+                            
+                            <!-- password -->
+                            <div class="form-group">
+                                <label>REPEAT PASSWORD</label>
+                                <input type="password" class="form-control" />
+                            </div>
+                            
+                            <!-- keep logged in -->
+                            <span class="notification">
+                                BY SIGNING UP I AGREE TO THE <a href="terms.html" target="_blank">EUSCREEN TERMS OF USE</a>
+                            </span>
+                            
+                            <!-- submit button -->
+                            <input type="button" value="SIGN UP" id="signup-button" class="btn btn-primary btn-euscreen btn-block"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    
+                    <!-- footer content -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-7">
+                            <span class="links">
+                                <ul class="list-inline">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="terms.html">Terms of Use</a></li>
+                                    <li><a href="privacy.html">Privacy</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </span>
+                            <span class="footer-note">Funded by the European Commission within the eContentplus programme</span>
+                        </div>
+                        <div class="col-md-6 col-sm-5">
+                            <div class="affiliates">
+                                <ul class="list-inline">
+                                    <li class="europeana"><a href="http://www.europeana.eu" target="_blank"></a></li>
+                                    <li class="europeancomission"><a href="http://ec.europa.eu/index_en.htm" target="_blank"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- mobile navigation, will slide -->
+        <div id="navpanel" class="mobilenav">
+            <ul class="main">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="myeuscreen.html">MYEUSCREEN</a></li>
+            </ul>
+            <ul class="secondary">
+                <li><a href="terms.html">Terms of use</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <span class="info">
+                Funded by the European Commission within the eContentplus programme 
+            </span>
+        </div>
+
+        <!-- scripts -->
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/libs/SlidePanel/js/jquery.slide-panel.js"></script>
+        <script src="js/vendor/promise-1.0.0.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="js/libs/DeviceDetect/device-detect.js"></script>
+        <script src="js/libs/Page/page.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/signup.js"></script>
+    </body>
+</html>

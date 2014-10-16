@@ -73,6 +73,11 @@ body {
 			}
 		}
 	}
+
+	// action
+	&.action {
+		background: #fff;
+	}
 	
 	// modal
 	.modal {
@@ -949,6 +954,7 @@ body {
 			height: @euscreen-footer-height; // fix height of the footer
 			background-color: @euscreen-white;
 			display: none;
+			border-top:1px solid @body-bg;
 			
 			// remove bootstrap gutter padding to get the correct styling
 			[class*='col-'] {

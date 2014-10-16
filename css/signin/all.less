@@ -1,0 +1,251 @@
+// Import generic variables & mixins
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+
+/**
+* css/item/all.less
+*
+* This file contains the generic styles for the item page. These styles should be applied on all devices,
+* but might be overwritten in specific cases for certain devices.
+*/
+
+// every page starts with .page class selector
+// for body element styling, go to generic/all.css
+.intro {
+	
+	// jumbotron
+	.jumbotron-wide {
+		background: url('../../img/content/banners/bg-contact.jpg');
+	}
+	
+	// main
+	.main {
+		padding-top:0px !important;
+		
+		// row
+		.intro-text {
+			background: #fff;
+			padding: 50px 0 40px 0;
+			
+			p {
+				line-height: 2.1em;
+				font-size: 1.05em;
+				font-weight: lighter;
+				
+				a {
+					color: inherit;
+					border-bottom: 1px dotted #000;
+				}
+			}
+		}
+		
+		// row
+		.login-feature {
+			margin-top:6px;
+			
+			// left
+			.login {
+				background: #fff;
+				border-right: 6px solid @body-bg;
+				border-left: 6px solid @body-bg;
+				
+				// form 
+				.sectiontab {
+					padding:0px;
+					border-bottom: 5px solid @euscreen-blue;
+					
+					// nav
+					.nav {
+						li {
+							margin-bottom: 0px;
+							display: table-cell;
+							width: 1%;
+							
+							a {
+								margin-bottom: 0px;
+								border-radius: 0px;
+								border: 0px;
+								font-family: @font-family-monospace;
+								color: @euscreen-gray;
+								background: #fff;
+								font-size: 1.071em;
+								height: 60px;
+								padding: 20px 12px;
+								.transition(all 0.3s);
+								line-height: inherit;
+							}
+							
+							// active
+							&.active {
+								a {
+									background: @euscreen-blue;
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+				
+				// tab content
+				.tab-content {
+					padding: 20px;
+					
+					// form group
+					.form-group, .check {
+						
+						// label
+						label {
+							font-size: 0.77em;
+							color: #808080;
+							letter-spacing: 1px;
+							font-weight: normal;
+						}
+						
+						// input
+						input[type="text"],input[type="email"],textarea, input[type="password"] {
+							.placeholderItalic(#d2d2d2,italic);
+							border-radius: 0px;
+							padding: 10px;
+							height: auto;
+							font-size:1.071em; 
+							background: rgba(255, 255, 254, 0.6);
+						}
+					}
+					
+					// check
+					.check {
+						label {
+							padding-left: 10px;
+						}
+					}
+					
+					// btn
+					.btn-euscreen {
+						margin: 10px 0 0 0;
+						background: @euscreen-blue;
+						height: 45px;
+						font-size: 1.143em;
+						box-shadow: none;
+					}
+					
+					// forgotpassword
+					.notification {
+						font-size: 0.77em;
+						color: #808080;
+						letter-spacing: 1px;
+						font-weight: normal;
+						display: block;
+						margin-top:10px;
+						
+						// anchor
+						a {
+							color: @euscreen-blue;
+						}
+						
+						// forgot password
+						&.forgotpassword {
+							text-align: right;
+						}
+					}
+				}
+			}
+			
+			// feature
+			.feature {
+				margin-top:6px;
+				border-right: 6px solid @body-bg;
+				border-left: 6px solid @body-bg;
+				
+				// create collection
+				.create-collection {
+					background: #fff;
+					.clearfix;
+					padding: 20px;
+					height: auto;
+					
+					[class*="col-"] {
+						padding-left: 0px;
+						padding-right: 0px;
+					}
+					
+					// img
+					.img {
+						width: 99px;
+						height: 99px;
+						background: url(@sprites-path) -273px -425px;
+						display: block;
+						float: left;
+						margin: 0 20px 0 0;
+					}
+					
+					// text 
+					.text {
+						display: block;
+						//margin-top:48px;
+						overflow: auto;
+						p {
+							color: @euscreen-gray;
+						}
+						h4 {
+							margin-top:0px;
+							color: @euscreen-blue;
+						}
+					}
+				}
+				
+				// ads
+				.ads {
+					margin-top:6px;
+					height: 200px;
+					background: url('../../img/content/advertising/bg-ads-contest.jpg');
+					background-size: cover;
+					color: #fff;
+					position: relative;
+					
+					// decoration
+					.decoration {
+						position: absolute;
+						left: 0;
+						top:0;
+						width: 197px;
+						height: 200px;
+						display: block;
+						background: url(@sprites-path) -236px -525px;
+					}
+					
+					// text
+					.text {
+						z-index: 1;
+						display: block;
+						position: absolute;
+						left: 20px;
+						top:20px;
+						right: 20px;
+						
+						// header
+						h4 {
+							margin: 0px 0 10px 0;
+						}
+						
+						// link
+						.link {
+							a {
+								background: @euscreen-red;
+								color: #fff;
+								font-family: @font-family-monospace;
+								padding: 7px 40px 7px 40px;
+								margin-top:13px;
+								display: table;
+								.transition(all 0.3s);
+								
+								&:active {
+									background: darken(@euscreen-red,10%);
+								}
+							}
+						}					
+					}
+				}
+			}
+		}
+	}
+}

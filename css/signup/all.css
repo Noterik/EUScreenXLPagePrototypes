@@ -1,0 +1,225 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
+/**
+* css/item/all.less
+*
+* This file contains the generic styles for the item page. These styles should be applied on all devices,
+* but might be overwritten in specific cases for certain devices.
+*/
+.intro .jumbotron-wide {
+  background: url('../../img/content/banners/bg-contact.jpg');
+}
+.intro .main {
+  padding-top: 0px !important;
+}
+.intro .main .intro-text {
+  background: #fff;
+  padding: 50px 0 40px 0;
+}
+.intro .main .intro-text p {
+  line-height: 2.1em;
+  font-size: 1.05em;
+  font-weight: lighter;
+}
+.intro .main .intro-text p a {
+  color: inherit;
+  border-bottom: 1px dotted #000;
+}
+.intro .main .login-feature {
+  margin-top: 6px;
+}
+.intro .main .login-feature .login {
+  background: #fff;
+  border-right: 6px solid #f2f2f2;
+  border-left: 6px solid #f2f2f2;
+}
+.intro .main .login-feature .login .sectiontab {
+  padding: 0px;
+  border-bottom: 5px solid #00aeef;
+}
+.intro .main .login-feature .login .sectiontab .nav li {
+  margin-bottom: 0px;
+  display: table-cell;
+  width: 1%;
+}
+.intro .main .login-feature .login .sectiontab .nav li a {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  border: 0px;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  color: #808080;
+  background: #fff;
+  font-size: 1.071em;
+  height: 60px;
+  padding: 20px 12px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  line-height: inherit;
+}
+.intro .main .login-feature .login .sectiontab .nav li.active a {
+  background: #00aeef;
+  color: #fff;
+}
+.intro .main .login-feature .login .tab-content {
+  padding: 20px;
+}
+.intro .main .login-feature .login .tab-content .form-group label,
+.intro .main .login-feature .login .tab-content .check label {
+  font-size: 0.77em;
+  color: #808080;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+.intro .main .login-feature .login .tab-content .form-group input[type="text"],
+.intro .main .login-feature .login .tab-content .check input[type="text"],
+.intro .main .login-feature .login .tab-content .form-group input[type="email"],
+.intro .main .login-feature .login .tab-content .check input[type="email"],
+.intro .main .login-feature .login .tab-content .form-group textarea,
+.intro .main .login-feature .login .tab-content .check textarea,
+.intro .main .login-feature .login .tab-content .form-group input[type="password"],
+.intro .main .login-feature .login .tab-content .check input[type="password"] {
+  border-radius: 0px;
+  padding: 10px;
+  height: auto;
+  font-size: 1.071em;
+  background: rgba(255, 255, 254, 0.6);
+}
+.intro .main .login-feature .login .tab-content .form-group input[type="text"]::-moz-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="text"]::-moz-placeholder,
+.intro .main .login-feature .login .tab-content .form-group input[type="email"]::-moz-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="email"]::-moz-placeholder,
+.intro .main .login-feature .login .tab-content .form-group textarea::-moz-placeholder,
+.intro .main .login-feature .login .tab-content .check textarea::-moz-placeholder,
+.intro .main .login-feature .login .tab-content .form-group input[type="password"]::-moz-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="password"]::-moz-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+  opacity: 1;
+}
+.intro .main .login-feature .login .tab-content .form-group input[type="text"]:-ms-input-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="text"]:-ms-input-placeholder,
+.intro .main .login-feature .login .tab-content .form-group input[type="email"]:-ms-input-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="email"]:-ms-input-placeholder,
+.intro .main .login-feature .login .tab-content .form-group textarea:-ms-input-placeholder,
+.intro .main .login-feature .login .tab-content .check textarea:-ms-input-placeholder,
+.intro .main .login-feature .login .tab-content .form-group input[type="password"]:-ms-input-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="password"]:-ms-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.intro .main .login-feature .login .tab-content .form-group input[type="text"]::-webkit-input-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="text"]::-webkit-input-placeholder,
+.intro .main .login-feature .login .tab-content .form-group input[type="email"]::-webkit-input-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="email"]::-webkit-input-placeholder,
+.intro .main .login-feature .login .tab-content .form-group textarea::-webkit-input-placeholder,
+.intro .main .login-feature .login .tab-content .check textarea::-webkit-input-placeholder,
+.intro .main .login-feature .login .tab-content .form-group input[type="password"]::-webkit-input-placeholder,
+.intro .main .login-feature .login .tab-content .check input[type="password"]::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+.intro .main .login-feature .login .tab-content .check label {
+  padding-left: 10px;
+}
+.intro .main .login-feature .login .tab-content .btn-euscreen {
+  margin: 10px 0 0 0;
+  background: #00aeef;
+  height: 45px;
+  font-size: 1.143em;
+  box-shadow: none;
+}
+.intro .main .login-feature .login .tab-content .notification {
+  font-size: 0.77em;
+  color: #808080;
+  letter-spacing: 1px;
+  font-weight: normal;
+  display: block;
+  margin-top: 10px;
+}
+.intro .main .login-feature .login .tab-content .notification a {
+  color: #00aeef;
+}
+.intro .main .login-feature .login .tab-content .notification.forgotpassword {
+  text-align: right;
+}
+.intro .main .login-feature .feature {
+  margin-top: 6px;
+  border-right: 6px solid #f2f2f2;
+  border-left: 6px solid #f2f2f2;
+}
+.intro .main .login-feature .feature .create-collection {
+  background: #fff;
+  padding: 20px;
+  height: auto;
+}
+.intro .main .login-feature .feature .create-collection:before,
+.intro .main .login-feature .feature .create-collection:after {
+  content: " ";
+  display: table;
+}
+.intro .main .login-feature .feature .create-collection:after {
+  clear: both;
+}
+.intro .main .login-feature .feature .create-collection [class*="col-"] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.intro .main .login-feature .feature .create-collection .img {
+  width: 99px;
+  height: 99px;
+  background: url("../../img/sprites.png") -273px -425px;
+  display: block;
+  float: left;
+  margin: 0 20px 0 0;
+}
+.intro .main .login-feature .feature .create-collection .text {
+  display: block;
+  overflow: auto;
+}
+.intro .main .login-feature .feature .create-collection .text p {
+  color: #808080;
+}
+.intro .main .login-feature .feature .create-collection .text h4 {
+  margin-top: 0px;
+  color: #00aeef;
+}
+.intro .main .login-feature .feature .ads {
+  margin-top: 6px;
+  height: 200px;
+  background: url('../../img/content/advertising/bg-ads-contest.jpg');
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+.intro .main .login-feature .feature .ads .decoration {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 197px;
+  height: 200px;
+  display: block;
+  background: url("../../img/sprites.png") -236px -525px;
+}
+.intro .main .login-feature .feature .ads .text {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+}
+.intro .main .login-feature .feature .ads .text h4 {
+  margin: 0px 0 10px 0;
+}
+.intro .main .login-feature .feature .ads .text .link a {
+  background: #ec008c;
+  color: #fff;
+  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  padding: 7px 40px 7px 40px;
+  margin-top: 13px;
+  display: table;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.intro .main .login-feature .feature .ads .text .link a:active {
+  background: #b9006e;
+}

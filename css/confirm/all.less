@@ -1,0 +1,38 @@
+// Import generic variables & mixins
+@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+
+/**
+* css/item/all.less
+*
+* This file contains the generic styles for the item page. These styles should be applied on all devices,
+* but might be overwritten in specific cases for certain devices.
+*/
+
+// every page starts with .page class selector
+// for body element styling, go to generic/all.css
+.confirm {
+	
+	// main
+	.main {
+		
+		// block
+		.block {
+			width: 540px;
+			margin: auto;
+			position: absolute;
+			top:50%;
+			left: 50%;
+			margin-top:-110px;
+			margin-left: -270px;
+
+			h1 {
+				font-size: 1.286em;
+			}
+			p {
+				color: @euscreen-gray;
+			}
+		}
+		
+	}
+}
