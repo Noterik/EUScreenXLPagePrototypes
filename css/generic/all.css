@@ -819,12 +819,13 @@ body .page .main .content-text.blue {
 }
 body .page .main .static-block .heading h2 {
   font-size: 1.286em;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 body .page .main .static-block .heading p {
   color: #808080;
   margin-bottom: 15px;
   margin-top: 0px;
+  letter-spacing: 1px;
 }
 body .page .main .static-block.col-center {
   padding-left: 15px;
@@ -885,6 +886,9 @@ body .page .main .static-block .action .btn-euscreen {
 body .page .main .static-block .action .notification {
   color: #808080;
   margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-size: 0.77em;
+  text-transform: uppercase;
 }
 body .page .jumbotron-wide {
   height: 200px;
@@ -1965,7 +1969,7 @@ body .box-link:hover {
   body .signin .main .static-block .action .notification,
   body .passwordreset .main .static-block .action .notification,
   body .signup .main .static-block .action .notification {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
