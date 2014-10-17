@@ -917,6 +917,83 @@ body {
 					border-bottom: 5px solid @euscreen-blue;
 				}
 			}
+
+			// static page block
+			// signin.html, signup.html, passwordreset.html and confirm.html
+			.static-block {
+
+				// heading
+				.heading {
+
+					// textual
+					h2 {
+						font-size: 1.286em;
+						margin-bottom: 7px;
+					}
+					p {
+						color: @euscreen-gray;
+						margin-bottom: 15px;
+						margin-top: 0px;
+					}
+				}
+
+				// center col
+				&.col-center {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+				
+
+				// form
+				.form {
+
+					// input
+					input[type="text"],input[type="email"],textarea, input[type="password"] {
+						.placeholderItalic(#d2d2d2,italic);
+						border-radius: 0px;
+						padding: 10px;
+						height: auto;
+						font-size:1.071em; 
+						background: rgba(255, 255, 254, 0.6);
+					}
+
+					// space
+					.nopadding {
+						margin-top: 10px;
+					}
+					.next-line {
+						margin-top: 10px;
+					}
+				}
+				
+
+				// bottom
+				.action {
+					margin-top: 20px;
+
+					// liney
+					.liney {
+						width: 100%;
+						border-top:1px solid @body-bg;
+						display: block;
+						margin-bottom: 20px;
+					}
+
+					// btn
+					.btn-euscreen {
+						background: @euscreen-blue;
+						width: 100%;
+						margin-bottom: 10px;
+					}
+
+					// notification
+					.notification {
+						color: @euscreen-gray;
+						//margin-top: 8px;
+						margin-bottom: 10px;
+					}
+				}
+			}
 		}
 		
 		// jumbotron

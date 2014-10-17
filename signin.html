@@ -100,39 +100,44 @@
             <!-- about content -->
             <div class="container main">
             	
-                <!-- sign up form -->
+                <!-- block -->
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-8 col-lg-7 col-sm-12 col-center static-block">
 
-                        <!-- login form -->
-                        <form class="signin-form tab-pane active" id="signin">
-                        
-                            <!-- username -->
-                            <div class="form-group">
-                                <label>USERNAME OR EMAIL</label>
-                                <input type="text" class="form-control"/>
-                            </div>
+                        <!-- header -->
+                        <div class="col-md-12 heading">
+                            <h2>SIGN IN TO YOUR ACCOUNT</h2>
+                            <p>
+                                Please enter your email or username and your password
+                            </p>
+                        </div>
 
-                            <!-- password -->
-                            <div class="form-group">
-                                <label>PASSWORD</label>
-                                <input type="password" class="form-control" />
+                        <!-- form -->
+                        <div class="col-md-12 form">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Email or username"/>
+                                </div>
+                                <div class="col-md-6 col-sm-6 nopadding">
+                                    <input type="password" class="form-control" placeholder="Password"/>
+                                </div>
                             </div>
-                            
-                            <!-- keep logged in -->
-                            <div class="check">
-                                <input type="checkbox" value="None" id="keep-logged" name="check"/>
-                                <label for="keep-logged">KEEP ME LOGGED IN</label>
-                            </div>
+                        </div>
+
+                        <!-- bottom -->
+                        <div class="col-md-12 action">
+                            <span class="liney"></span>
                             
                             <!-- submit button -->
-                            <input type="button" value="SIGN IN" id="signin-button" class="btn btn-primary btn-euscreen btn-block"/>
-                            
-                            <!-- forgot password -->
-                            <span class="notification forgotpassword"><a href="forgotpassword.html">FORGOT YOUR PASSWORD?</a></span>
-                        </form>
+                            <input type="button" value="SIGN IN" class="btn btn-primary btn-euscreen pull-right"/>
+
+                            <!-- notification -->
+                            <div class="notification pull-left">
+                                <a href="passwordreset.html">Forgot your password?</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </div> 
             </div>
             
             <!-- footer -->

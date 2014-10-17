@@ -817,6 +817,75 @@ body .page .main .content-text.red {
 body .page .main .content-text.blue {
   border-bottom: 5px solid #00aeef;
 }
+body .page .main .static-block .heading h2 {
+  font-size: 1.286em;
+  margin-bottom: 7px;
+}
+body .page .main .static-block .heading p {
+  color: #808080;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+body .page .main .static-block.col-center {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body .page .main .static-block .form input[type="text"],
+body .page .main .static-block .form input[type="email"],
+body .page .main .static-block .form textarea,
+body .page .main .static-block .form input[type="password"] {
+  border-radius: 0px;
+  padding: 10px;
+  height: auto;
+  font-size: 1.071em;
+  background: rgba(255, 255, 254, 0.6);
+}
+body .page .main .static-block .form input[type="text"]::-moz-placeholder,
+body .page .main .static-block .form input[type="email"]::-moz-placeholder,
+body .page .main .static-block .form textarea::-moz-placeholder,
+body .page .main .static-block .form input[type="password"]::-moz-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+  opacity: 1;
+}
+body .page .main .static-block .form input[type="text"]:-ms-input-placeholder,
+body .page .main .static-block .form input[type="email"]:-ms-input-placeholder,
+body .page .main .static-block .form textarea:-ms-input-placeholder,
+body .page .main .static-block .form input[type="password"]:-ms-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+body .page .main .static-block .form input[type="text"]::-webkit-input-placeholder,
+body .page .main .static-block .form input[type="email"]::-webkit-input-placeholder,
+body .page .main .static-block .form textarea::-webkit-input-placeholder,
+body .page .main .static-block .form input[type="password"]::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-style: italic;
+}
+body .page .main .static-block .form .nopadding {
+  margin-top: 10px;
+}
+body .page .main .static-block .form .next-line {
+  margin-top: 10px;
+}
+body .page .main .static-block .action {
+  margin-top: 20px;
+}
+body .page .main .static-block .action .liney {
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+  display: block;
+  margin-bottom: 20px;
+}
+body .page .main .static-block .action .btn-euscreen {
+  background: #00aeef;
+  width: 100%;
+  margin-bottom: 10px;
+}
+body .page .main .static-block .action .notification {
+  color: #808080;
+  margin-bottom: 10px;
+}
 body .page .jumbotron-wide {
   height: 200px;
   margin-top: 70px;
@@ -1872,6 +1941,31 @@ body .box-link:hover {
   }
   body .box-link {
     display: table;
+  }
+  body .confirm .main .static-block,
+  body .signin .main .static-block,
+  body .passwordreset .main .static-block,
+  body .signup .main .static-block {
+    margin-top: 100px;
+  }
+  body .confirm .main .static-block .form .nopadding,
+  body .signin .main .static-block .form .nopadding,
+  body .passwordreset .main .static-block .form .nopadding,
+  body .signup .main .static-block .form .nopadding {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  body .confirm .main .static-block .action .btn-euscreen,
+  body .signin .main .static-block .action .btn-euscreen,
+  body .passwordreset .main .static-block .action .btn-euscreen,
+  body .signup .main .static-block .action .btn-euscreen {
+    width: 200px;
+  }
+  body .confirm .main .static-block .action .notification,
+  body .signin .main .static-block .action .notification,
+  body .passwordreset .main .static-block .action .notification,
+  body .signup .main .static-block .action .notification {
+    margin-top: 8px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
