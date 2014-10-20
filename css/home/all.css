@@ -323,8 +323,7 @@ body .home .main {
   font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
 }
 .home .main .row .collection-viewer .row .media-item.media-big .media-image .media-wrapper .media-hue i {
-  margin: -22px 0 0 -15px;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 .home .main .row .collection-viewer .row .media-item .media-image .media-wrapper a:hover .media-hue,
 .home .main .row .collection-viewer .row .media-item .media-image .media-wrapper a:hover .media-title {
