@@ -90,10 +90,12 @@
   font-size: 0.78em;
   padding: 7px 10px 5px;
   margin-top: 5px;
-}
-.content-map .main .content .info-wrap .info .data .provider-list .box-link:hover,
-.content-map .main .content .info-wrap .info .data .provider-list .box-link:active {
   color: #8cc63f;
+  border-color: #8cc63f;
+}
+.content-map .main .content .info-wrap .info .data .provider-list .box-link:active {
+  color: #fff;
+  background: #8cc63f;
   border-color: #8cc63f;
 }
 .content-map .main .content .info-wrap .info .search-link {
