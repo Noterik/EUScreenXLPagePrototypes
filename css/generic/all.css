@@ -1766,6 +1766,27 @@ body .box-link:hover {
     top: 7px;
     left: 0px;
   }
+  body .home .main .row .jumbotron .carousel .carousel-indicators {
+    bottom: 10px;
+    width: 60%;
+    margin-left: -30%;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    margin: 1px;
+    border-radius: 5px;
+  }
+  body .home .main .row .jumbotron .carousel .carousel-indicators li.active {
+    border: 0px;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    background: rgba(255, 255, 255, 0.8);
+  }
   body .about .main .about-section .left,
   body .about .main .about-section .middle,
   body .about .main .about-section .right {

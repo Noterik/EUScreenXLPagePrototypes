@@ -113,6 +113,7 @@ body .home .main {
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg {
   width: 100%;
   height: 418px;
+  background-position: center !important;
 }
 .home .main .row .jumbotron .carousel .carousel-inner .item .bg .wrap {
   width: 100%;
@@ -219,14 +220,24 @@ body .home .main {
   width: 6%;
 }
 .home .main .row .jumbotron .carousel .carousel-indicators {
-  bottom: 10px;
+  width: 80%;
   opacity: 0.5;
   filter: alpha(opacity=50);
+  margin-left: -40%;
+}
+.home .main .row .jumbotron .carousel .carousel-indicators li {
+  width: 20%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 0px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 1px 5px 1px 1px;
+  border-radius: 20px;
 }
 .home .main .row .jumbotron .carousel .carousel-indicators li.active {
-  margin: 1px;
-  width: 10px;
-  height: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 4px solid #8cc63f;
 }
 .home .main .row .collection-viewer-tab {
   margin-top: 6px;
