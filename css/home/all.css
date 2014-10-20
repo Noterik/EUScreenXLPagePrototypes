@@ -330,6 +330,9 @@ body .home .main {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+.home .main .row .collection-viewer .row .media-item .media-image .media-wrapper .media-hue i {
+  display: none;
+}
 .home .main .row .collection-viewer.collection-viewer-big .row .media-item.media-big .media-image .media-wrapper .media-title h3 {
   font-size: 1em;
 }
