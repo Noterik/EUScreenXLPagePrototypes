@@ -9,7 +9,7 @@
         <!-- meta-->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>EUscreenXL - Content Map</title>
+        <title>EUscreenXL - Not Available</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name='apple-mobile-web-app-capable' content='yes'>
@@ -22,9 +22,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/generic/all.css">
         <link rel="stylesheet" href="js/libs/SlidePanel/css/jquery.slide-panel.css">
-        <link rel="stylesheet" href="js/libs/jqvmap/jqvmap.css">
     </head>
-    <body>
+    <body class="action">
         
         <!-- update browser-->
         <!--[if lt IE 7]>
@@ -36,7 +35,7 @@
         <![endif]-->
         
         <!-- container -->
-        <div class="page content-map" id="page">
+        <div class="page confirm" id="page">
             
             <!-- wrap -->
             <header>
@@ -101,89 +100,22 @@
             <!-- about content -->
             <div class="container main">
             	
-            	<!-- selection -->
-            	<div class="row">
-            		<div class="col-md-12 jumbotron-small map">
-            			<span class="hue green">
-            				<div class="pads">
-	            				<h1>Explore The EUscreen Collection</h1>
-            				</div>
-            			</span>
-            		</div>
-            	</div>
+                <!-- block -->
+                <div class="row">
+                    <div class="col-md-8 col-lg-7 col-sm-12 col-center static-block">
 
-                <!-- selection -->
-                <div class="content-text row">
-                    <div class="col-md-12">
-                        <h1>Explore The EUscreen Collection</h1>
-                        <p>
-                            The EUscreen portal provides access to television clips and programmes from 24 broadcasters and audiovisual archives from 
-                            20 European countries. The EUscreen collection comprises thousands of media items and as well as videos it includes 
-                            photographs, audio files and documents. All items have been hand-picked by experienced archivists and researchers for 
-                            inclusion in this collection. Select a country to find out more about the EUscreen collection.
-                        </p>
-                        <p class="visible-xs map-notification">
-                            Unfortunately Explore The Euscreen Collection only works in tablet or desktop. Please use bigger devices to access this page.
-                        </p>
+                        <!-- header -->
+                        <div class="col-md-12 heading">
+                            <h2>NOT AVAILABLE</h2>
+                            <p>
+                                We are in the process of releasing a new version of EUscreen, and MyEUscreen is not quite finished yet. 
+                                Apologies for the inconvenience and welcome back in few days when MyEUscreen will be online.
+
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                
-            	<!-- content -->
-            	<div class="content hidden-xs">
-            		
-            		<!-- left side -->
-                    <div class="info-wrap">
-                		<div class="info" data-spy="affix" data-offset-top="178" data-offset-bottom="0">
-                			
-                			<!-- data -->
-                			<div class="data">
-    	            			<h1 id="selected-country">Please select region on the map</h1>
-    	            			<div id="results-section" class="results-section">
-                                    <div class="country-counter">
-        		            			<div class="item">
-        		            				<span class="header">VIDEOS</span>
-        		            				<span class="counter" id="selected-videos">0</span>
-        		            			</div>
-        		            			<div class="item">
-        		            				<span class="header">IMAGES</span>
-        		            				<span class="counter" id="selected-images">0</span>
-        		            			</div>
-        		            			<div class="item">
-        		            				<span class="header hidden-sm">DOCUMENTS</span>
-                                            <span class="header visible-sm">DOCS</span>
-        		            				<span class="counter" id="selected-texts">0</span>
-        		            			</div>
-        		            			<div class="item">
-        		            				<span class="header">AUDIO</span>
-        		            				<span class="counter" id="selected-audios">0</span>
-        		            			</div>
-        		            			<div class="item">
-        		            				<span class="header">SERIES</span>
-        		            				<span class="counter" id="selected-series">0</span>
-        		            			</div>
-                                    </div>
-    		            			<div class="providers">
-    		            				<span class="header">PROVIDERS</span>
-    		            				<span class="provider" id="selected-providers">-</span>
-    		            			</div>
-    	            			</div>
-                			</div>
-                			
-                			<!-- navigation -->
-                			<ul class="search-link" id="selected-searchlink"></ul>
-                		</div>
-                    </div>
-            		
-            		<!-- the map -->
-            		<div class="maps">
-	            		
-                        <!-- map -->
-                        <div class="vmap" id="vmap"></div>
-            		</div>
-            	</div>
             </div>
-            
             
             <!-- footer -->
             <footer>
@@ -219,7 +151,7 @@
         <!-- mobile navigation, will slide -->
         <div id="navpanel" class="mobilenav">
             <ul class="main">
-                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="myeuscreen.html">MYEUSCREEN</a></li>
             </ul>
@@ -243,10 +175,6 @@
         <script src="js/libs/DeviceDetect/device-detect.js"></script>
         <script src="js/libs/Page/page.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/content-map.js"></script>
-
-        <!-- map -->
-        <script src="js/libs/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-        <script src="js/libs/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+        <script src="js/notavailable.js"></script>
     </body>
 </html>

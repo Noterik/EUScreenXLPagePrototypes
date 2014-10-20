@@ -154,12 +154,6 @@
 .content-map .main .content .maps .jqvmap-zoomout {
   top: 45px !important;
 }
-.content-map .main .row.map-notification {
-  background: #fff;
-  margin-top: 6px;
-  margin-right: -9px;
-  margin-left: -9px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  border-bottom: 5px solid #ec008c;
+.content-map .main .map-notification {
+  color: #8cc63f;
 }
