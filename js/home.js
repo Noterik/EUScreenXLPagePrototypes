@@ -16,7 +16,8 @@ $(document).ready(function () {
         this.$overlayContents = jQuery('.overlaycontent');
         this.$modalPlayerElements = jQuery('#player-modal');
         this.$mediaItemLinkElements = jQuery('.media-item a');
-        
+        this.$secondaryLogoElements = jQuery('.logo-second');
+
         // collection viewers elements (big & small)
         this.$collectionViewerSmall = jQuery('#small-collection');
         this.$collectionViewerBig = jQuery('#big-collection');
@@ -72,11 +73,13 @@ $(document).ready(function () {
                 // when fullscreen is active, hide small collection and show big
                 obj.$collectionViewerSmall.css('display','none');
                 obj.$collectionViewerBig.css('display','block');
+                obj.$secondaryLogoElements.show();
             } else {
 
                 // on exit fullscreen, show small collection
                 obj.$collectionViewerSmall.css('display','block');
                 obj.$collectionViewerBig.css('display','none');
+                obj.$secondaryLogoElements.hide();
             }
         });
     };
@@ -153,9 +156,11 @@ $(document).ready(function () {
                 if(this.$bodyElement.hasClass('fs')) {
                     this.$bodyElement.removeClass('fs'); 
                     this.$containerElement.removeClass('container-fluid').addClass('container');
+                    this.$secondaryLogoElements.hide();
                 } else {
                     this.$bodyElement.addClass('fs'); 
                     this.$containerElement.removeClass('container').addClass('container-fluid');
+                    this.$secondaryLogoElements.show();
                 }
             }
         },

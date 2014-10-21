@@ -291,6 +291,36 @@ body .home .main {
   background: #fff;
   cursor: not-allowed;
 }
+.home .main .row .collection-viewer-tab .row.main-nav .media-action:before,
+.home .main .row .collection-viewer-tab .row.main-nav .media-action:after {
+  content: " ";
+  display: table;
+}
+.home .main .row .collection-viewer-tab .row.main-nav .media-action:after {
+  clear: both;
+}
+.home .main .row .collection-viewer-tab .row.main-nav .media-action .logo-second {
+  display: none;
+  float: right;
+  margin: 0px;
+}
+.home .main .row .collection-viewer-tab .row.main-nav .media-action .logo-second h1 {
+  background: url("../../img/sprites.png") -321px -53px;
+  width: 143px;
+  height: 44px;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  margin: 9px 20px 0 0;
+  display: inline-block;
+  float: right;
+}
+.home .main .row .collection-viewer-tab .row.main-nav .media-action .button-list {
+  position: relative;
+  height: 60px;
+}
 .home .main .row .collection-viewer-tab .row.main-nav .media-action .button-list .exit-fullscreen {
   display: none;
 }
