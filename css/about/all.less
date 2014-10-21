@@ -402,12 +402,12 @@
 						
 						a {
 							border:1px solid @euscreen-blue;
-							border-radius: 3px !important;
+							//border-radius: 3px !important;
 							background: none;
 							color: @euscreen-blue;
 							letter-spacing: 1px;
 							font-size: 0.857em;
-							padding: 8px 12px 7px 12px;
+							padding: 8px 10px 7px 10px;
 							
 							&:hover {
 								background: @euscreen-blue;
@@ -420,6 +420,28 @@
 								background: @euscreen-blue;
 								border-color: @euscreen-blue;
 								color: #fff;
+							}
+						}
+
+						&:first-child {
+							a {
+								-webkit-border-top-left-radius: 3px;
+								-webkit-border-bottom-left-radius: 3px;
+								-moz-border-radius-topleft: 3px;
+								-moz-border-radius-bottomleft: 3px;
+								border-top-left-radius: 3px;
+								border-bottom-left-radius: 3px;
+							}
+						}
+
+						&:last-child {
+							a {
+								-webkit-border-top-right-radius: 3px;
+								-webkit-border-bottom-right-radius: 3px;
+								-moz-border-radius-topright: 3px;
+								-moz-border-radius-bottomright: 3px;
+								border-top-right-radius: 3px;
+								border-bottom-right-radius: 3px;
 							}
 						}
 					}
