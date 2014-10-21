@@ -475,6 +475,22 @@ body {
 						z-index: 7;
 					}
 					
+					// logo on empty thumbnail
+					.media-logo {
+
+						// wave form
+						&.audio {
+							width: 100%;
+							height: 80px;
+							background: url(@sprites-path) 0 -726px;
+							background-repeat: repeat-x;
+							position: absolute;
+							top:50%;
+							margin-top:-40px;
+							left: 0;	
+						}
+					}
+
 					// hue
 					.media-hue {
 						background: @euscreen-rgba-green-60;

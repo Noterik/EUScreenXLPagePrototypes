@@ -440,6 +440,16 @@ body .page .main .media-item .media-wrapper .media-type.series {
   height: 18px;
   background-position: -96px -82px;
 }
+body .page .main .media-item .media-wrapper .media-logo.audio {
+  width: 100%;
+  height: 80px;
+  background: url("../../img/sprites.png") 0 -726px;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  left: 0;
+}
 body .page .main .media-item .media-wrapper .media-hue {
   background: rgba(140, 198, 63, 0.6);
   position: absolute;
