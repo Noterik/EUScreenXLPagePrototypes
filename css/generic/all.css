@@ -450,6 +450,17 @@ body .page .main .media-item .media-wrapper .media-logo.audio {
   margin-top: -40px;
   left: 0;
 }
+body .page .main .media-item .media-wrapper .media-logo.text {
+  width: 58px;
+  height: 66px;
+  background: url("../../img/sprites.png") -434px -525px;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 50%;
+  margin-left: -29px;
+  margin-top: -33px;
+  left: 50%;
+}
 body .page .main .media-item .media-wrapper .media-hue {
   background: rgba(140, 198, 63, 0.6);
   position: absolute;
