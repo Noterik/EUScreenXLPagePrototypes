@@ -125,6 +125,13 @@ $(document).ready(function () {
                 mediaAmount['series'] += countryProvider[item].series;
             }
 
+            // replace 0 with "-"
+            $.each(mediaAmount, function(key, value) {
+                if(value == 0) {
+                    mediaAmount[key] = "-";
+                }
+            });
+
             // get general info like country name
             $('#selected-country').html(mapData[code].country);
 
