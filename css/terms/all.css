@@ -55,10 +55,10 @@
   margin-bottom: 1px;
 }
 .terms .main .static-page .sidebar ul li a:hover {
-  background: #f5f5f5;
+  background: #e5e5e5;
 }
 .terms .main .static-page .sidebar ul li.active a {
-  background: #f5f5f5;
+  background: #e5e5e5;
 }
 .terms .main .static-page .content {
   width: 100%;
