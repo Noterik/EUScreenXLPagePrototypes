@@ -135,6 +135,7 @@
 }
 .content-map .main .content .maps .jqvmap-zoomin,
 .content-map .main .content .maps .jqvmap-zoomout {
+  display: none;
   background: rgba(140, 198, 63, 0.6);
   color: #fff;
   border-radius: 3px;

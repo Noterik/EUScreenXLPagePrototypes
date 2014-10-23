@@ -2349,6 +2349,10 @@ body .box-link:hover {
     font-size: 0.929em;
     color: #808080;
   }
+  body .content-map .main .content .maps .jqvmap-zoomin,
+  body .content-map .main .content .maps .jqvmap-zoomout {
+    display: block;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
