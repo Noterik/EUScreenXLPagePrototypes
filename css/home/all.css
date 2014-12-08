@@ -216,6 +216,13 @@ body .home .main {
   -o-background-size: cover;
   background-size: cover;
 }
+.home .main .row .jumbotron .carousel .carousel-inner .item .bg-6 {
+  background: url('../../img/content/banners/bg-homepage-viewjournal.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .home .main .row .jumbotron .carousel .carousel-control {
   width: 6%;
 }
